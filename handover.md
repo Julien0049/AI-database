@@ -24,6 +24,7 @@ Die Semesterarbeit soll einen einfachen Prototyp einer AI Database für Fragen z
 5. Provenienz wurde besprochen: persönliche Rohmaterialien, Gesprächsprotokolle und Agentenentwürfe getrennt halten. `project_brainstorming.md` ist die eigene Kurzbeschreibung mit persönlichen Stichwortergänzungen.
 6. `project_brainstorming.md` wurde mit dem Zusatzdatum `19.10.2026` aktualisiert.
 7. Als mögliche Modellarbeit wurde ein kleiner Klassifikator besprochen, der zwei Textpassagen als ergänzend, widersprüchlich oder unterschiedlichen Kontexten zugehörig einordnet. Das ist noch nicht als endgültiger Projektumfang beschlossen; Datumsvergleich und Priorisierung sollen transparente Programmregeln bleiben.
+8. Mehrnutzerbetrieb auf einem lokalen Server mit Anmeldung und Zugriffsrechten wurde als mögliche spätere Erweiterung eingeordnet. Der Nutzer würde es gern ausprobieren, falls Zeit und Infrastruktur es erlauben; es ist kein Muss. Dafür wären mindestens ein Serverrechner und zusätzliche Clientgeräte nötig. Der Ein-Rechner-Prototyp bleibt das ausreichende Kernziel.
 
 ## Wichtige Dateien
 
@@ -42,6 +43,7 @@ Die Semesterarbeit soll einen einfachen Prototyp einer AI Database für Fragen z
 5. Rechner und Betriebssystem genau feststellen und lokale Modell-/Laufzeitoptionen auf tatsächlicher Hardware testen; Offline-Einrichtung, Modelllizenzen und lokale Ressourcen prüfen.
 6. Erst danach den minimalen Prototypumfang und konkrete Abhängigkeiten festlegen.
 7. Offlinebetrieb praktisch testen und begrenzt dokumentieren; anschließend prüfen, wie sich die Suche mit mehr Dokumenten verhält.
+8. Nur wenn nach Fertigstellung des Kernprototyps Zeit und geeignete Infrastruktur verfügbar sind: Mehrgerätezugriff im abgeschotteten lokalen Netzwerk mit Anmeldung/Zugriffsrechten ausprobieren. Andernfalls beim Ein-Rechner-Prototyp bleiben; Mehrnutzerbetrieb ist kein Muss.
 
 ## Relevante bisherige Commits
 

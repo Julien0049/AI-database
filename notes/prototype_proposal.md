@@ -31,6 +31,12 @@ Diese Regeln beschreiben Quellenverhalten, nicht die Wahrheit oder Gültigkeit e
 
 Für zehn kurze Dokumente ist dies ein Vorschlag für einen verständlichen Start, kein bereits getesteter Entwurf. SQLite FTS5 und lokale Embeddings sind mögliche Komponenten; die Laufzeit- und Modellwahl muss auf der verfügbaren Hardware ausprobiert werden.
 
+## Optionale spätere Ausbaustufe: Mehrnutzerbetrieb
+
+Ein lokal gehosteter Dienst, auf den mehrere Geräte in einem abgeschotteten Netzwerk zugreifen, könnte den Prototyp realistischer machen. Dafür braucht es mindestens einen Rechner als lokalen Server und weitere Geräte als Clients; eine geeignete Maschine kann zunächst sowohl die Anwendung als auch das lokale Modell hosten. Als weitere Stufe wären Anmeldung und einfache Zugriffsrechte zu prüfen. Das ist ausdrücklich kein Muss für den Semestererfolg und soll nur ausprobiert werden, wenn Kernfunktion, Zeit und verfügbare Infrastruktur es erlauben.
+
+Ein begrenzter Lasttest könnte Antwortzeit und Fehlerrate bei einer, zwei und fünf gleichzeitigen Anfragen vergleichen. Dabei ist zu beachten, dass ein lokales Antwortmodell auf einem einzelnen Rechner zum Engpass werden kann. Wenn keine geeignete Mehrgeräte-Infrastruktur verfügbar ist, bleibt der Ein-Rechner-Prototyp vollständig ausreichend; ein Parallel-Lasttest kann höchstens als begrenzter Ersatzversuch dienen. Ein echter Mehrnutzerbetrieb erfordert außerdem eine sorgfältige Begrenzung des Netzwerkzugriffs und grundlegende Schutzmaßnahmen für Konten und Daten; er ist nicht gleichbedeutend mit einer Sicherheitsfreigabe für eingestufte Inhalte.
+
 ## Lokalbetrieb und Grenzen
 
 Vor dem Offline-Test müssten Laufzeit, Bibliotheken, Modell für Antwortgenerierung, Embedding-Modell und alle UI-Ressourcen kontrolliert lokal bereitgestellt werden. Antwortmodell und Embedding-Modell erfüllen unterschiedliche Aufgaben und müssen beide verfügbar sein.
@@ -81,12 +87,14 @@ Eine mögliche Forschungsfrage lautet: **Kann ein trainierter Textklassifikator 
 6. Lokale Antwortgenerierung mit Quellenhinweisen ergänzen; Verhalten an den vereinbarten Antwortregeln messen.
 7. Semantische bzw. kombinierte Suche nur ergänzen, wenn der Vergleich einen begründeten Nutzen zeigt.
 8. Offline-Kaltstart und Antwortverhalten dokumentieren; danach mit mehr Dokumenten erneut messen, statt Skalierbarkeit vorauszusetzen.
+9. Nur falls Zeit bleibt: lokalen Mehrnutzerzugriff mit einfacher Anmeldung und Zugriffsrechten als separate Ausbaustufe prüfen und parallelisierte Anfragen messen.
 
 ## Offene Entscheidungen
 
 - Welche konkreten Fassungen der zehn Beispielberichte bilden das kanonische Testset?
 - Welche lokale Laufzeit sowie welches Antwort- und Embedding-Modell laufen akzeptabel auf der vorhandenen Hardware?
 - Ist ein kleiner Klassifikator für Aussagenbeziehungen ein realistischer Modellbeitrag angesichts des Datenbedarfs und der verfügbaren Zeit?
+- Ist nach Fertigstellung des Kernprototyps noch Zeit für einen lokal gehosteten Mehrnutzerbetrieb mit Anmeldung und Zugriffsrechten?
 - Genügt Volltextsuche zunächst, oder verbessert semantische Suche die gemessenen Fälle?
 - Wie viele Testfragen sind im Semesterzeitraum realistisch manuell zu annotieren und bewerten?
 - Welche Dokumentformate jenseits von Markdown/Text sind Teil des Semesterumfangs?
