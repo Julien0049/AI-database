@@ -37,3 +37,4 @@ Der Prototyp muss zur Laufzeit ohne Internetzugriff funktionieren. Für die Entw
 - Richte Beispiele und Antworten auf Informationsabruf, Quellenbelege, Zeitbezug, Widerspruchserkennung und Evaluation aus, nicht auf die praktische Durchführung militärischer oder gewaltsamer Handlungen.
 - Prüfe getrennt, ob relevante Quellen gefunden, Aussagen ausreichend belegt, zeitliche Konflikte erkannt und unbelegte Fragen korrekt zurückgewiesen werden.
 - Berichte die Grenzen des kleinen synthetischen Datensatzes und der verwendeten Metriken.
+- Als mögliche, noch nicht festgelegte Modellarbeit wird ein kleiner Klassifikator erwogen, der zwei Textstellen als ergänzend, widersprüchlich oder unterschiedlichen Kontexten zugehörig einordnet. Datumsvergleich und Priorisierung bleiben davon getrennte, transparente Programmregeln.

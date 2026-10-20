@@ -61,20 +61,32 @@ Für jede Frage werden erwartete Belegpassagen, unterstützte Kernaussagen, Konf
 
 Als Vergleich eignen sich zunächst Volltextsuche allein und semantische Suche allein; eine kombinierte Variante kann danach ergänzt werden. Dokumente, Fragen, Modell und Einstellungen während des Vergleichs konstant halten. Die Bewertungen sind ein kleines projektspezifisches Diagnose-Set, kein allgemeiner Benchmark. Bei der Bewertung kann eine zweite Person einen Teil der Antworten unabhängig prüfen.
 
+## Mögliche Modellarbeit: Beziehungen zwischen Aussagen klassifizieren
+
+Als möglicher Semester-Schwerpunkt kam ein kleiner Textklassifikator hinzu. Er könnte zwei bereits abgerufene Textstellen als **ergänzend**, **widersprüchlich** oder **unterschiedlicher Kontext** einordnen. Das ist eine Option zur Prüfung, noch keine endgültige Technologie- oder Umfangsentscheidung.
+
+Der Klassifikator würde nicht entscheiden, welche Aussage wahr oder verbindlich ist. Er schätzt nur die Beziehung zwischen zwei Passagen ein. Datumsauswertung und Priorisierung bleiben getrennte, nachvollziehbare Programmregeln: Nur wenn zwei Aussagen vergleichbar sind und sich widersprechen, wird die jüngere passend priorisiert und die ältere als früherer Stand gekennzeichnet.
+
+Für Training und aussagekräftige Tests wären gelabelte, fiktive Textpaare erforderlich. Die zehn vorhandenen Berichte bieten Startmaterial, reichen allein aber voraussichtlich nicht aus, um die Zuverlässigkeit eines trainierten Modells zu belegen. Zusätzliche synthetische Beispiele müssten sorgfältig erstellt und in getrennte Trainings- und Testgruppen aufgeteilt werden, damit sehr ähnliche Varianten nicht in beiden Gruppen landen. Ein sinnvoller Vergleich wäre ein einfacher regelbasierter oder promptbasierter Ansatz gegen den trainierten Klassifikator. Zu prüfen wären unter anderem Label-Genauigkeit, Verwechslungen zwischen Widerspruch und anderem Kontext sowie der Effekt auf die Gesamtantwort.
+
+Eine mögliche Forschungsfrage lautet: **Kann ein trainierter Textklassifikator Beziehungen zwischen Aussagen erkennen, und verbessert er die Ergebnisse gegenüber einer einfachen Baseline?** Vor der Umsetzung muss geklärt werden, ob genügend Beispiele erstellt und unabhängig bewertet werden können und ob ein geeignetes kleines Modell auf der vorhandenen Hardware läuft.
+
 ## Mögliche Arbeitsschritte
 
 1. Die zehn überarbeiteten Beispieldokumente aus dem Gemini-Verlauf abgleichen und eine eindeutige Testfassung festlegen.
 2. Eine kleine Fragen- und Belegsammlung anlegen, einschließlich Ergänzungs-, Konflikt-, Neutral- und Evidenzlückenfällen.
 3. Offline-Laufzeit und Modelloption auf dem eigenen Rechner prüfen; Abhängigkeiten und Modelle dokumentieren.
 4. Lokalen Import, Passagen- und Metadatenspeicherung sowie eine einfache Volltextsuche umsetzen.
-5. Lokale Antwortgenerierung mit Quellenhinweisen ergänzen; Verhalten an den vereinbarten Antwortregeln messen.
-6. Semantische bzw. kombinierte Suche nur ergänzen, wenn der Vergleich einen begründeten Nutzen zeigt.
-7. Offline-Kaltstart und Antwortverhalten dokumentieren; danach mit mehr Dokumenten erneut messen, statt Skalierbarkeit vorauszusetzen.
+5. Prüfen, ob ein kleiner Klassifikator als Modellarbeit in den Semesterumfang passt; Datenbedarf, Modell und Baseline festlegen.
+6. Lokale Antwortgenerierung mit Quellenhinweisen ergänzen; Verhalten an den vereinbarten Antwortregeln messen.
+7. Semantische bzw. kombinierte Suche nur ergänzen, wenn der Vergleich einen begründeten Nutzen zeigt.
+8. Offline-Kaltstart und Antwortverhalten dokumentieren; danach mit mehr Dokumenten erneut messen, statt Skalierbarkeit vorauszusetzen.
 
 ## Offene Entscheidungen
 
 - Welche konkreten Fassungen der zehn Beispielberichte bilden das kanonische Testset?
 - Welche lokale Laufzeit sowie welches Antwort- und Embedding-Modell laufen akzeptabel auf der vorhandenen Hardware?
+- Ist ein kleiner Klassifikator für Aussagenbeziehungen ein realistischer Modellbeitrag angesichts des Datenbedarfs und der verfügbaren Zeit?
 - Genügt Volltextsuche zunächst, oder verbessert semantische Suche die gemessenen Fälle?
 - Wie viele Testfragen sind im Semesterzeitraum realistisch manuell zu annotieren und bewerten?
 - Welche Dokumentformate jenseits von Markdown/Text sind Teil des Semesterumfangs?
