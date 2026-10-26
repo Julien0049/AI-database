@@ -2,12 +2,13 @@
 
 **Stand:** 19. Oktober 2026
 **Status:** Agentenentwurf auf Basis des Projektinterviews und einer Quellenrecherche. Kein endgültiger Technologieentscheid und keine Sicherheitsfreigabe.
+**Änderung 26. Oktober 2026:** Das Projekt ist jetzt ein Proof of Concept mit einem Frontier-Modell über Cloud-API, vorläufig Gemini 3.8 Flash im kostenlosen Kontingent der Gemini-API. Offlinebetrieb mit lokalem, mittelgroßem Modell ist eine spätere Ausbaustufe.
 
 ## Ziel
 
 Eine einzelne Person soll in einer einfachen lokalen Browseroberfläche Fragen zu ungefähr zehn fiktiven After-Action-Reports stellen können. Das System soll eine klare, zusammengeführte Antwort aus den Dokumenten geben, die verwendeten Quellen knapp nennen und passende zeitliche Änderungen verständlich behandeln.
 
-Der Prototyp soll während der Nutzung ohne Internetzugriff funktionieren. Die Beispieldokumente sind synthetische Testdaten und keine echten Berichte, gültige Doktrin oder geprüften Empfehlungen.
+Der PoC darf zur Laufzeit Internet für die Modell-API nutzen; Dokumente, Index und Oberfläche bleiben lokal. Die Beispieldokumente sind synthetische Testdaten und keine echten Berichte, gültige Doktrin oder geprüften Empfehlungen.
 
 ## Geplante Antwortregeln
 
@@ -26,7 +27,7 @@ Diese Regeln beschreiben Quellenverhalten, nicht die Wahrheit oder Gültigkeit e
 2. **Lokaler Dokumentenspeicher:** Eine kleine SQLite-Datenbank kann Dokumentmetadaten und Textpassagen speichern. Für Volltextsuche bietet SQLite FTS5; bei zehn kurzen Dokumenten ist zunächst keine separate Vektordatenbank nötig.
 3. **Passagen und Provenienz:** Texte werden anhand von Überschriften in sinnvolle Passagen aufgeteilt. Zu jeder Passage bleiben mindestens Dateiname, Dokumentdatum, Abschnitt und stabiler Quellenbezeichner erhalten. Das Dokumentdatum wird aus dem Dokumentinhalt bzw. expliziten Metadaten gelesen, nicht aus dem Änderungsdatum der Datei abgeleitet.
 4. **Suche:** Als einfache Baseline dient Volltextsuche. Als Vergleich oder Erweiterung kann lokale semantische Suche über Embeddings hinzukommen. Eine kombinierte Suche ist ein möglicher nächster Schritt, wenn die Baseline relevante Belege verfehlt.
-5. **Antwortgenerierung:** Eine lokale Anwendung übergibt einer lokal laufenden Sprachmodell- und Embedding-Laufzeit ausschließlich die gefundenen Passagen. Quellenbezeichner werden von der Anwendung verwaltet und aus geprüften Metadaten in der Antwort dargestellt, nicht frei vom Modell erfunden.
+5. **Antwortgenerierung:** Die lokale Anwendung übergibt dem Frontier-Modell über die API ausschließlich die gefundenen Passagen; das Modell erhält keinen Websuche-Zugriff. Später kann hier ein lokales, mittelgroßes Modell eingesetzt werden. Quellenbezeichner werden von der Anwendung verwaltet und aus geprüften Metadaten in der Antwort dargestellt, nicht frei vom Modell erfunden.
 6. **Oberfläche:** Eine einfache Browser-Chatoberfläche wird lokal bereitgestellt. Benutzeroberfläche, Schriftarten und Bibliotheken dürfen zur Laufzeit keine externen Ressourcen laden.
 
 Für zehn kurze Dokumente ist dies ein Vorschlag für einen verständlichen Start, kein bereits getesteter Entwurf. SQLite FTS5 und lokale Embeddings sind mögliche Komponenten; die Laufzeit- und Modellwahl muss auf der verfügbaren Hardware ausprobiert werden.
@@ -37,9 +38,9 @@ Ein lokal gehosteter Dienst, auf den mehrere Geräte in einem abgeschotteten Net
 
 Ein begrenzter Lasttest könnte Antwortzeit und Fehlerrate bei einer, zwei und fünf gleichzeitigen Anfragen vergleichen. Dabei ist zu beachten, dass ein lokales Antwortmodell auf einem einzelnen Rechner zum Engpass werden kann. Wenn keine geeignete Mehrgeräte-Infrastruktur verfügbar ist, bleibt der Ein-Rechner-Prototyp vollständig ausreichend; ein Parallel-Lasttest kann höchstens als begrenzter Ersatzversuch dienen. Ein echter Mehrnutzerbetrieb erfordert außerdem eine sorgfältige Begrenzung des Netzwerkzugriffs und grundlegende Schutzmaßnahmen für Konten und Daten; er ist nicht gleichbedeutend mit einer Sicherheitsfreigabe für eingestufte Inhalte.
 
-## Lokalbetrieb und Grenzen
+## Spätere Ausbaustufe: Lokalbetrieb und Grenzen
 
-Vor dem Offline-Test müssten Laufzeit, Bibliotheken, Modell für Antwortgenerierung, Embedding-Modell und alle UI-Ressourcen kontrolliert lokal bereitgestellt werden. Antwortmodell und Embedding-Modell erfüllen unterschiedliche Aufgaben und müssen beide verfügbar sein.
+Dieser Abschnitt gilt nicht für den PoC, sondern für den späteren Umstieg auf ein lokales Modell. Vor dem Offline-Test müssten Laufzeit, Bibliotheken, Modell für Antwortgenerierung, Embedding-Modell und alle UI-Ressourcen kontrolliert lokal bereitgestellt werden. Antwortmodell und Embedding-Modell erfüllen unterschiedliche Aufgaben und müssen beide verfügbar sein.
 
 Der Offlinebetrieb sollte praktisch geprüft werden: Netzverbindung trennen oder ausgehende Verbindungen blockieren, die Anwendung kalt starten, Dokumente importieren, eine Suche ausführen und eine Frage beantworten. Netzwerkzugriffe von Anwendung und Laufzeit beobachten, soweit das Betriebssystem dies erlaubt. Das Ergebnis ist ein begrenzter Testnachweis, keine allgemeine Sicherheitszertifizierung. Offlinebetrieb allein macht ein System nicht für eingestufte Inhalte zugelassen. Für die Kursarbeit ausschließlich fiktive oder ausdrücklich unklassifizierte Daten verwenden.
 
@@ -81,18 +82,19 @@ Eine mögliche Forschungsfrage lautet: **Kann ein trainierter Textklassifikator 
 
 1. Die zehn überarbeiteten Beispieldokumente aus dem Gemini-Verlauf abgleichen und eine eindeutige Testfassung festlegen.
 2. Eine kleine Fragen- und Belegsammlung anlegen, einschließlich Ergänzungs-, Konflikt-, Neutral- und Evidenzlückenfällen.
-3. Offline-Laufzeit und Modelloption auf dem eigenen Rechner prüfen; Abhängigkeiten und Modelle dokumentieren.
+3. Gemini 3.8 Flash an den Testfragen prüfen; Abhängigkeiten dokumentieren.
 4. Lokalen Import, Passagen- und Metadatenspeicherung sowie eine einfache Volltextsuche umsetzen.
 5. Prüfen, ob ein kleiner Klassifikator als Modellarbeit in den Semesterumfang passt; Datenbedarf, Modell und Baseline festlegen.
-6. Lokale Antwortgenerierung mit Quellenhinweisen ergänzen; Verhalten an den vereinbarten Antwortregeln messen.
+6. Antwortgenerierung über die Modell-API mit Quellenhinweisen ergänzen; Verhalten an den vereinbarten Antwortregeln messen.
 7. Semantische bzw. kombinierte Suche nur ergänzen, wenn der Vergleich einen begründeten Nutzen zeigt.
-8. Offline-Kaltstart und Antwortverhalten dokumentieren; danach mit mehr Dokumenten erneut messen, statt Skalierbarkeit vorauszusetzen.
+8. Mit mehr Dokumenten erneut messen, statt Skalierbarkeit vorauszusetzen. Später: lokales, mittelgroßes Modell gegen die Frontier-Ergebnisse vergleichen und Offline-Kaltstart dokumentieren.
 9. Nur falls Zeit bleibt: lokalen Mehrnutzerzugriff mit einfacher Anmeldung und Zugriffsrechten als separate Ausbaustufe prüfen und parallelisierte Anfragen messen.
 
 ## Offene Entscheidungen
 
 - Welche konkreten Fassungen der zehn Beispielberichte bilden das kanonische Testset?
-- Welche lokale Laufzeit sowie welches Antwort- und Embedding-Modell laufen akzeptabel auf der vorhandenen Hardware?
+- Reicht Gemini 3.8 Flash (kostenloses Kontingent) für die Testfragen, und reichen die Limits (laut Drittquellen ca. 20 Anfragen pro Tag; in AI Studio prüfen)? Später optional: einmaliger kostenpflichtiger Referenzlauf mit Gemini 4 Argon oder Claude Opus 5.5.
+- Später: Welche lokale Laufzeit sowie welches mittelgroße Antwort- und Embedding-Modell laufen akzeptabel auf der vorhandenen Hardware?
 - Ist ein kleiner Klassifikator für Aussagenbeziehungen ein realistischer Modellbeitrag angesichts des Datenbedarfs und der verfügbaren Zeit?
 - Ist nach Fertigstellung des Kernprototyps noch Zeit für einen lokal gehosteten Mehrnutzerbetrieb mit Anmeldung und Zugriffsrechten?
 - Genügt Volltextsuche zunächst, oder verbessert semantische Suche die gemessenen Fälle?

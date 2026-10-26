@@ -2,19 +2,20 @@
 
 ## Projektziel
 
-Die Semesterarbeit soll einen einfachen, lokal betriebenen Prototyp einer AI Database hervorbringen. Einzelne Nutzer sollen Fragen zu einer Sammlung von After-Action-Reports (AARs) stellen können. Der Prototyp soll passende Aussagen aus mehreren Dokumenten zusammenführen, zeitliche Änderungen berücksichtigen und die verwendeten Quellen knapp nennen.
+Die Semesterarbeit soll einen Proof of Concept (PoC) einer AI Database hervorbringen. Einzelne Nutzer sollen Fragen zu einer Sammlung von After-Action-Reports (AARs) stellen können. Der PoC soll passende Aussagen aus mehreren Dokumenten zusammenführen, zeitliche Änderungen berücksichtigen und die verwendeten Quellen knapp nennen.
 
-Der Prototyp muss zur Laufzeit ohne Internetzugriff funktionieren. Für die Entwicklung sind zunächst zehn fiktive Beispieldokumente vorgesehen. Sie sind Testdaten, keine echten Berichte, gültige Doktrin oder fachlich geprüfte Empfehlungen.
+Für den PoC wird vorläufig die Gemini-API (Google) im kostenlosen Kontingent verwendet; vorläufiges Modell ist Gemini 3.8 Flash, noch an den Testfragen zu prüfen. Der PoC bleibt bewusst kostenlos. Im kostenlosen Kontingent kann Google Eingaben zur Produktverbesserung nutzen, und es gelten Nutzungslimits. Der API-Schlüssel wird nur lokal (Umgebungsvariable oder `.env`) gespeichert und nie ins Repository übernommen. Der PoC darf zur Laufzeit Internet für die Modell-API nutzen. Offlinebetrieb mit einem lokalen, mittelgroßen Modell ist eine spätere Ausbaustufe, nicht Teil des PoC. Für die Entwicklung sind zunächst zehn fiktive Beispieldokumente vorgesehen. Sie sind Testdaten, keine echten Berichte, gültige Doktrin oder fachlich geprüfte Empfehlungen.
 
 ## Bestätigte Anforderungen
 
-- Die lokale Dokumentensammlung ist die einzige Wissensquelle für Antworten. Keine Websuche und kein nicht belegtes Ergänzen aus Modellwissen.
+- Die lokale Dokumentensammlung ist die einzige Wissensquelle für Antworten. Keine Websuche und kein nicht belegtes Ergänzen aus Modellwissen. Das gilt auch, wenn das Antwortmodell über eine Cloud-API läuft.
 - Bei vergleichbarem Kontext soll die jüngste passende Aussage die praktische Antwort bestimmen. Die Nutzerantwort soll keine älteren Verfahren als gleichrangige Alternativen auflisten; sie nennt knapp die Quellen, die die Antwort stützen. Die Erkennung älterer Widersprüche wird separat in der Evaluation bewertet. Keine Quelle als formell gültig oder verbindlich bezeichnen, wenn das Material das nicht belegt.
 - Wenn Dokumente unterschiedliche Kontexte betreffen oder keine sichere Priorisierung zulassen, darf der Agent keine Priorität behaupten. Ein jüngeres Dokument beweist nicht, dass eine Aussage wahr oder verbindlich ist.
 - Ergänzende Aussagen aus mehreren Quellen dürfen zu einer klaren Antwort zusammengeführt werden. Die Antwort steht im Vordergrund; kompakte Quellenhinweise (mindestens Dokument und Datum) folgen am Ende.
 - Bei unzureichender Evidenz muss der Prototyp dies offen sagen und darf Lücken nicht auffüllen.
 - Für die erste Version sind Markdown-/Textdateien vorgesehen. Neue Dokumente liegen in einem festgelegten lokalen Ordner; der Import wird gezielt gestartet.
-- Als erste Oberfläche ist eine einfache lokale Browser-Chat-Oberfläche vorgesehen. Zielhardware ist der eigene Mac/Computer ohne zusätzliche GPU.
+- Als erste Oberfläche ist eine einfache lokale Browser-Chat-Oberfläche vorgesehen. Anwendung, Dokumente und Index laufen auf dem eigenen Mac/Computer ohne zusätzliche GPU; nur die Antwortgenerierung läuft über die Modell-API.
+- Spätere Ausbaustufen (nicht Teil des PoC): Umstieg auf ein lokales, mittelgroßes Modell mit Offlinebetrieb und Vergleich gegen die Frontier-Ergebnisse; optional Aussagen-Klassifikator und lokaler Mehrnutzerbetrieb.
 - Der erste Datensatz umfasst zehn Beispiele. Spätere Skalierung bedeutet zunächst mehr Dokumente; sie muss separat geprüft werden und ist mit zehn Beispielen nicht belegt.
 
 ## Projektdateien und Provenienz
@@ -33,8 +34,8 @@ Der Prototyp muss zur Laufzeit ohne Internetzugriff funktionieren. Für die Entw
 
 ## Inhaltliche und Evaluationsleitplanken
 
-- Verwende für Prototyp und Experimente ausschließlich ausdrücklich fiktive oder unklassifizierte Beispieldaten. Keine eingestuften Inhalte in Agenten, Modell- oder Webdiensten verwenden.
+- Verwende für Prototyp und Experimente ausschließlich ausdrücklich fiktive oder unklassifizierte Beispieldaten. Keine eingestuften Inhalte in Agenten, Modell- oder Webdiensten verwenden. Da der PoC Dokumentpassagen an eine Cloud-API sendet, gilt das besonders für alle importierten Dokumente.
 - Richte Beispiele und Antworten auf Informationsabruf, Quellenbelege, Zeitbezug, Widerspruchserkennung und Evaluation aus, nicht auf die praktische Durchführung militärischer oder gewaltsamer Handlungen.
 - Prüfe getrennt, ob relevante Quellen gefunden, Aussagen ausreichend belegt, zeitliche Konflikte erkannt und unbelegte Fragen korrekt zurückgewiesen werden.
 - Berichte die Grenzen des kleinen synthetischen Datensatzes und der verwendeten Metriken.
-- Als mögliche, noch nicht festgelegte Modellarbeit wird ein kleiner Klassifikator erwogen, der zwei Textstellen als ergänzend, widersprüchlich oder unterschiedlichen Kontexten zugehörig einordnet. Datumsvergleich und Priorisierung bleiben davon getrennte, transparente Programmregeln.
+- Als mögliche, noch nicht festgelegte spätere Modellarbeit (nicht Teil des PoC) wird ein kleiner Klassifikator erwogen, der zwei Textstellen als ergänzend, widersprüchlich oder unterschiedlichen Kontexten zugehörig einordnet. Datumsvergleich und Priorisierung bleiben davon getrennte, transparente Programmregeln.
