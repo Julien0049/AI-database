@@ -2,7 +2,7 @@
 
 **Stand:** 19. Oktober 2026
 **Status:** Agentenentwurf auf Basis des Projektinterviews und einer Quellenrecherche. Kein endgültiger Technologieentscheid und keine Sicherheitsfreigabe.
-**Änderung 26. Oktober 2026:** Das Projekt ist jetzt ein Proof of Concept mit einem Frontier-Modell über Cloud-API, vorläufig Gemini 3.8 Flash im kostenlosen Kontingent der Gemini-API. Offlinebetrieb mit lokalem, mittelgroßem Modell ist eine spätere Ausbaustufe.
+**Änderung 26. Oktober 2026:** Das Projekt ist jetzt ein Proof of Concept mit einem Frontier-Modell über Cloud-API, vorläufig Gemini 2.5 Pro über OpenRouter (vorhandenes Guthaben). Offlinebetrieb mit lokalem, mittelgroßem Modell ist eine spätere Ausbaustufe.
 
 ## Ziel
 
@@ -82,7 +82,7 @@ Eine mögliche Forschungsfrage lautet: **Kann ein trainierter Textklassifikator 
 
 1. Die zehn überarbeiteten Beispieldokumente aus dem Gemini-Verlauf abgleichen und eine eindeutige Testfassung festlegen.
 2. Eine kleine Fragen- und Belegsammlung anlegen, einschließlich Ergänzungs-, Konflikt-, Neutral- und Evidenzlückenfällen.
-3. Gemini 3.8 Flash an den Testfragen prüfen; Abhängigkeiten dokumentieren.
+3. Gemini 2.5 Pro an den Testfragen prüfen; Abhängigkeiten dokumentieren.
 4. Lokalen Import, Passagen- und Metadatenspeicherung sowie eine einfache Volltextsuche umsetzen.
 5. Prüfen, ob ein kleiner Klassifikator als Modellarbeit in den Semesterumfang passt; Datenbedarf, Modell und Baseline festlegen.
 6. Antwortgenerierung über die Modell-API mit Quellenhinweisen ergänzen; Verhalten an den vereinbarten Antwortregeln messen.
@@ -93,7 +93,7 @@ Eine mögliche Forschungsfrage lautet: **Kann ein trainierter Textklassifikator 
 ## Offene Entscheidungen
 
 - Welche konkreten Fassungen der zehn Beispielberichte bilden das kanonische Testset?
-- Reicht Gemini 3.8 Flash (kostenloses Kontingent) für die Testfragen, und reichen die Limits (laut Drittquellen ca. 20 Anfragen pro Tag; in AI Studio prüfen)? Später optional: einmaliger kostenpflichtiger Referenzlauf mit Gemini 4 Argon oder Claude Opus 5.5.
+- Reicht Gemini 2.5 Pro über OpenRouter für die Testfragen, und reicht das vorhandene Guthaben? Später optional: einmaliger kostenpflichtiger Referenzlauf mit Gemini 4 Argon oder Claude Opus 5.5.
 - Später: Welche lokale Laufzeit sowie welches mittelgroße Antwort- und Embedding-Modell laufen akzeptabel auf der vorhandenen Hardware?
 - Ist ein kleiner Klassifikator für Aussagenbeziehungen ein realistischer Modellbeitrag angesichts des Datenbedarfs und der verfügbaren Zeit?
 - Ist nach Fertigstellung des Kernprototyps noch Zeit für einen lokal gehosteten Mehrnutzerbetrieb mit Anmeldung und Zugriffsrechten?

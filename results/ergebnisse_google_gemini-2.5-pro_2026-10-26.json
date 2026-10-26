@@ -1,0 +1,37 @@
+{
+  "modell": "google/gemini-2.5-pro",
+  "zeitpunkt": "2026-10-26T21:07:06",
+  "systemprompt": "Du beantwortest Fragen ausschließlich auf Grundlage der mitgelieferten Berichte.\nDie Berichte sind fiktive Testdaten.\n\nRegeln:\n1. Verwende nur Aussagen aus den Berichten. Ergänze nichts aus eigenem Wissen.\n2. Ergänzende Aussagen aus mehreren Berichten darfst du zu einer klaren Antwort zusammenführen.\n3. Wenn Berichte mit vergleichbarem Kontext sich widersprechen, bestimmt die jüngste passende Aussage die Antwort.\n   Nenne ältere abweichende Verfahren nicht als gleichrangige Alternativen.\n4. Wenn Berichte unterschiedliche Kontexte betreffen oder keine sichere Priorisierung zulassen, behaupte keine Priorität.\n5. Bezeichne keine Quelle als gültig oder verbindlich; die Berichte belegen das nicht.\n6. Wenn die Berichte die Frage nicht ausreichend beantworten, sag das offen und fülle keine Lücken.\n\nFormat: Zuerst die knappe Antwort. Danach eine Zeile \"Quellen:\" mit Dateiname und Datum der Berichte, die die Antwort stützen.",
+  "ergebnisse": [
+    {
+      "nr": 1,
+      "frage": "Ich nehme an einem dreitägigen Seminar teil. Unsere Gruppe hat ein Materialset gemeinsam genutzt. Wie wird die Rückgabe bestätigt?",
+      "antwort": "Jede teilnehmende Person bestätigt die Rückgabe der von ihr genutzten Bestandteile auf der persönlichen Liste. Zusätzlich reicht die Gruppenvertretung eine Gesamtübersicht des gemeinsam genutzten Sets ein.\n\nQuellen: AAR-2025-01-20-shared-set-returns.md (20.01.2025)"
+    },
+    {
+      "nr": 2,
+      "frage": "Bei unserem dreitägigen Seminar fehlt nach der gemeinsamen Nutzung ein Adapter aus dem Materialset. Wie dokumentieren wir die Rückgabe und den fehlenden Adapter?",
+      "antwort": "Bei der Rückgabe des gemeinsam genutzten Sets bestätigt jede teilnehmende Person auf ihrer persönlichen Liste die Rückgabe der von ihr genutzten Bestandteile. Zusätzlich reicht die Gruppenvertretung eine Gesamtübersicht des Sets ein.\n\nDer fehlende Adapter wird mit Set-Kennung, Gegenstandsbezeichnung und Entdeckungsdatum im Abweichungsprotokoll erfasst. Die Materialverwaltung wird noch am selben Tag informiert. Aus dem Fehlen wird keine persönliche Verantwortung abgeleitet.\n\nQuellen:\nAAR-2025-01-20-shared-set-returns.md (20.01.2025)\nAAR-2025-02-04-missing-items.md (04.02.2025)"
+    },
+    {
+      "nr": 3,
+      "frage": "Ich nehme an einem eintägigen Einführungsseminar teil und habe Gegenstände auf meiner persönlichen Ausgabeliste. Wie bestätige ich die Rückgabe?",
+      "antwort": "Bei eintägigen Einführungsveranstaltungen bestätigen die Teilnehmenden zum Veranstaltungsende die Rückgabe der ausgegebenen Gegenstände anhand ihrer persönlichen Ausgabelisten.\n\nQuellen: AAR-2025-06-10-one-day-seminars.md (10.06.2025)"
+    },
+    {
+      "nr": 4,
+      "frage": "Ein einzeln nummeriertes Gerät wurde einer Person zugeordnet, aber während des Seminars gemeinsam genutzt. Wer bestätigt die Rückgabe?",
+      "antwort": "Die Rückgabe wird von der Person bestätigt, der das einzeln nummerierte Gerät zugeordnet wurde. Solche Geräte bleiben der eingetragenen Person zugeordnet und werden von dieser zurückgegeben.\n\nQuellen: AAR-2022-09-14-material-return.md"
+    },
+    {
+      "nr": 5,
+      "frage": "Ein Adapter fehlt, nachdem mehrere Gruppen das Set gemeinsam genutzt haben. Welche Person ist dafür verantwortlich?",
+      "antwort": "Aus dem Fehlen eines Gegenstandes allein wird keine persönliche Verantwortung abgeleitet. Fehlende Gegenstände werden mit Set-Kennung, Gegenstandsbezeichnung und Entdeckungsdatum in einem Abweichungsprotokoll erfasst.\n\nQuellen: AAR-2025-02-04-missing-items.md (04.02.2025)"
+    },
+    {
+      "nr": 6,
+      "frage": "Welches konkrete Formularfeld oder welche interne Kennziffer muss ich verwenden, wenn ich den fehlenden Adapter melde?",
+      "antwort": "Die Berichte nennen kein konkretes Formularfeld und keine interne Kennziffer für die Meldung. Fehlende Gegenstände werden im Abweichungsprotokoll mit Set-Kennung, Gegenstandsbezeichnung und Entdeckungsdatum erfasst.\n\nQuellen: AAR-2025-02-04-missing-items.md (04.02.2025)"
+    }
+  ]
+}
