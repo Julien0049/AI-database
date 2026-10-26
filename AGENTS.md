@@ -9,7 +9,7 @@ Der Prototyp muss zur Laufzeit ohne Internetzugriff funktionieren. Für die Entw
 ## Bestätigte Anforderungen
 
 - Die lokale Dokumentensammlung ist die einzige Wissensquelle für Antworten. Keine Websuche und kein nicht belegtes Ergänzen aus Modellwissen.
-- Bei vergleichbarem Kontext soll die jüngste passende Aussage priorisiert werden. Ältere abweichende Aussagen samt Datum und Quelle sollen als überholte frühere Stände erkennbar bleiben, nicht als gleichrangige Handlungsoptionen.
+- Bei vergleichbarem Kontext soll die jüngste passende Aussage die praktische Antwort bestimmen. Die Nutzerantwort soll keine älteren Verfahren als gleichrangige Alternativen auflisten; sie nennt knapp die Quellen, die die Antwort stützen. Die Erkennung älterer Widersprüche wird separat in der Evaluation bewertet. Keine Quelle als formell gültig oder verbindlich bezeichnen, wenn das Material das nicht belegt.
 - Wenn Dokumente unterschiedliche Kontexte betreffen oder keine sichere Priorisierung zulassen, darf der Agent keine Priorität behaupten. Ein jüngeres Dokument beweist nicht, dass eine Aussage wahr oder verbindlich ist.
 - Ergänzende Aussagen aus mehreren Quellen dürfen zu einer klaren Antwort zusammengeführt werden. Die Antwort steht im Vordergrund; kompakte Quellenhinweise (mindestens Dokument und Datum) folgen am Ende.
 - Bei unzureichender Evidenz muss der Prototyp dies offen sagen und darf Lücken nicht auffüllen.

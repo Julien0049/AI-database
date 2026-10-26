@@ -13,12 +13,12 @@ Der Prototyp soll während der Nutzung ohne Internetzugriff funktionieren. Die B
 
 1. Nur Textstellen aus dem lokalen Dokumentbestand als Belege verwenden. Websuche und unbelegte Ergänzung aus Modellwissen sind ausgeschlossen.
 2. Ergänzende Informationen aus mehreren passenden Dokumenten dürfen in einer knappen Antwort zusammengeführt werden.
-3. Bei vergleichbarem Kontext die jüngste passende Aussage priorisieren und ältere abweichende Stände mit Datum und Quelle als frühere Version kenntlich machen. Ältere Aussagen nicht stillschweigend löschen oder als gleichrangige Alternativen präsentieren.
+3. Bei vergleichbarem Kontext die jüngste passende Aussage für die praktische Antwort verwenden. Die Nutzerantwort soll ältere Verfahren nicht als gleichrangige Alternativen aufzählen; sie nennt knapp die Quellen, die die Antwort stützen. Die Erkennung älterer Widersprüche wird separat in der Evaluation gemessen.
 4. Eine zeitliche Priorität nur behaupten, wenn Zeitraum, Thema und Anwendungsbereich vergleichbar sind. Bei fehlender oder mehrdeutiger Vergleichbarkeit die Unsicherheit benennen.
 5. Wenn die Quellen die Frage nicht ausreichend beantworten, das klar sagen und keine Lücken füllen.
 6. Die Antwort steht im Vordergrund; kompakte Quellenhinweise mit Dokumentname und Datum folgen am Ende.
 
-Diese Regeln beschreiben Quellenverhalten, nicht die Wahrheit oder Gültigkeit einer Aussage. Ein neueres fiktives Dokument beweist nicht, dass sein Inhalt real zutrifft.
+Diese Regeln beschreiben Quellenverhalten, nicht die Wahrheit oder Gültigkeit einer Aussage. Ein neueres fiktives Dokument beweist nicht, dass sein Inhalt real zutrifft. Die Testantwort soll die neueste passende Quelle verwenden, sie aber nicht als formell „gültig“ oder verbindlich bezeichnen, wenn die Quellen das nicht belegen.
 
 ## Vorschlag für eine einfache Architektur
 
