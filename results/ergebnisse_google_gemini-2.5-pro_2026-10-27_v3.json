@@ -1,0 +1,57 @@
+{
+  "modell": "google/gemini-2.5-pro",
+  "zeitpunkt": "2026-10-27T02:48:27",
+  "systemprompt": "Du beantwortest Fragen ausschließlich auf Grundlage der mitgelieferten Berichte.\nDie Berichte sind fiktive Testdaten.\n\nRegeln:\n1. Verwende nur Aussagen aus den Berichten. Ergänze nichts aus eigenem Wissen.\n2. Ergänzende Aussagen aus mehreren Berichten darfst du zu einer klaren Antwort zusammenführen.\n3. Wenn Berichte mit vergleichbarem Kontext sich widersprechen, bestimmt die jüngste passende Aussage die Antwort.\n   Nenne ältere abweichende Verfahren nicht als gleichrangige Alternativen.\n4. Wenn Berichte unterschiedliche Kontexte betreffen oder keine sichere Priorisierung zulassen, behaupte keine Priorität.\n5. Bezeichne keine Quelle als gültig oder verbindlich; die Berichte belegen das nicht.\n6. Wenn die Berichte die Frage nicht ausreichend beantworten, sag das offen und fülle keine Lücken.\n   Das gilt auch für jede Teilfrage: Wenn zu einem Teil der Frage keine Informationen vorliegen, schreibe ausdrücklich,\n   dass die Berichte dazu nichts sagen. Gib dann nicht stattdessen eine verwandte Aussage als Antwort aus.\n\nFormat: Zuerst die knappe Antwort. Danach eine Zeile \"Quellen:\" mit Dateiname und Datum der Berichte, die die Antwort stützen.",
+  "ergebnisse": [
+    {
+      "nr": 1,
+      "frage": "Ich nehme an einem dreitägigen Seminar teil. Unsere Gruppe hat ein Materialset gemeinsam genutzt. Wie wird die Rückgabe bestätigt?",
+      "antwort": "Bei mehrtägigen Seminaren bestätigt jede teilnehmende Person die Rückgabe der von ihr genutzten Bestandteile auf ihrer persönlichen Liste. Zusätzlich reicht die Gruppenvertretung eine Gesamtübersicht des gemeinsam genutzten Sets ein.\n\nQuellen: AAR-2025-01-20-shared-set-returns.md (20.01.2025)"
+    },
+    {
+      "nr": 2,
+      "frage": "Bei unserem dreitägigen Seminar fehlt nach der gemeinsamen Nutzung ein Adapter aus dem Materialset. Wie dokumentieren wir die Rückgabe und den fehlenden Adapter?",
+      "antwort": "Bei mehrtägigen Seminaren bestätigt jede teilnehmende Person die Rückgabe der von ihr genutzten Bestandteile auf einer persönlichen Liste. Zusätzlich reicht die Gruppenvertretung eine Gesamtübersicht des gemeinsam genutzten Sets ein. Der fehlende Gegenstand wird mit Set-Kennung, Gegenstandsbezeichnung und dem Entdeckungsdatum im Abweichungsprotokoll erfasst. Die Materialverwaltung muss noch am selben Tag informiert werden. Aus dem Fehlen allein wird keine persönliche Verantwortung abgeleitet.\n\nQuellen: AAR-2025-01-20-shared-set-returns.md (20.01.2025), AAR-2025-02-04-missing-items.md (04.02.2025)"
+    },
+    {
+      "nr": 3,
+      "frage": "Ich nehme an einem eintägigen Einführungsseminar teil und habe Gegenstände auf meiner persönlichen Ausgabeliste. Wie bestätige ich die Rückgabe?",
+      "antwort": "Zum Veranstaltungsende werden die ausgegebenen Gegenstände anhand Ihrer persönlichen Ausgabeliste zurückgenommen und von Ihnen bestätigt.\n\nQuellen: AAR-2025-06-10-one-day-seminars.md (10.06.2025)"
+    },
+    {
+      "nr": 4,
+      "frage": "Ein einzeln nummeriertes Gerät wurde einer Person zugeordnet, aber während des Seminars gemeinsam genutzt. Wer bestätigt die Rückgabe?",
+      "antwort": "Die Rückgabe wird von der Person bestätigt, der das Gerät zugeordnet wurde. Einzeln nummerierte Geräte bleiben der eingetragenen Person zugeordnet und werden von dieser zurückgegeben, auch wenn sie gemeinsam genutzt werden.\n\nQuellen:\n*   AAR-2022-09-14-material-return.md (14.09.2022)\n*   AAR-2025-09-15-vehicles-multi-day-seminars.md (15.09.2025)"
+    },
+    {
+      "nr": 5,
+      "frage": "Ein Adapter fehlt, nachdem mehrere Gruppen das Set gemeinsam genutzt haben. Welche Person ist dafür verantwortlich?",
+      "antwort": "Aus dem Fehlen eines Gegenstandes allein wird keine persönliche Verantwortung abgeleitet. Fehlende Gegenstände werden mit Set-Kennung, Gegenstandsbezeichnung und Entdeckungsdatum in einem Abweichungsprotokoll erfasst.\n\nQuellen: AAR-2025-02-04-missing-items.md"
+    },
+    {
+      "nr": 6,
+      "frage": "Welches konkrete Formularfeld oder welche interne Kennziffer muss ich verwenden, wenn ich den fehlenden Adapter melde?",
+      "antwort": "Die Berichte nennen kein konkretes Formularfeld und keine interne Kennziffer für die Meldung eines fehlenden Adapters. Fehlende Gegenstände werden mit Set-Kennung, Gegenstandsbezeichnung und Entdeckungsdatum im Abweichungsprotokoll erfasst.\n\nQuellen:\nAAR-2025-02-04-missing-items.md (04.02.2025)"
+    },
+    {
+      "nr": 7,
+      "frage": "Muss ich das Dienstfahrzeug vollgetankt zurückgeben?",
+      "antwort": "Nein, das Betanken übernimmt nach der Rückgabe die Fahrbereitschaft. Bei der Rückgabe wird der Tankstand vermerkt.\n\nQuellen: AAR-2025-03-18-logbook-form.md"
+    },
+    {
+      "nr": 8,
+      "frage": "Wir haben bei einem dreitägigen Seminar ein Fahrzeug gemeinsam genutzt. Wer bestätigt die Rückgabe?",
+      "antwort": "Auch bei gemeinsamer Nutzung bleibt das Fahrzeug der ausleihenden Person zugeordnet. Diese Person gibt das Fahrzeug zurück und bestätigt die Rückgabe gegenüber der Fahrbereitschaft.\n\nQuellen:\n*   AAR-2025-09-15-vehicles-multi-day-seminars.md (15.09.2025)"
+    },
+    {
+      "nr": 9,
+      "frage": "Bei der Rückgabe ist ein Kratzer am Fahrzeug. Was ist zu tun, und wer ist verantwortlich?",
+      "antwort": "Ein Schaden am Fahrzeug wird bei der Rückgabe mit Kennzeichen und Datum im Schadensformular erfasst. Das Formular wird mit dem Fahrzeugschlüssel bei der Fahrbereitschaft abgegeben. Aus einem festgestellten Schaden allein wird keine persönliche Verantwortung abgeleitet.\n\nQuellen: AAR-2024-11-05-vehicle-damage.md"
+    },
+    {
+      "nr": 10,
+      "frage": "Wie früh muss ich ein Fahrzeug reservieren, und was kostet die Ausleihe?",
+      "antwort": "Fahrzeuge müssen mindestens zwei Werktage vor der geplanten Fahrt bei der Fahrbereitschaft reserviert werden. Die Berichte enthalten keine Angaben zu den Kosten der Ausleihe.\n\nQuellen:\n*   AAR-2024-01-08-vehicle-reservations.md (08.01.2024)"
+    }
+  ]
+}

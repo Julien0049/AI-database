@@ -9,7 +9,8 @@ Für den PoC wird vorläufig Gemini 2.5 Pro (`google/gemini-2.5-pro`) über Open
 ## Bestätigte Anforderungen
 
 - Die lokale Dokumentensammlung ist die einzige Wissensquelle für Antworten. Keine Websuche und kein nicht belegtes Ergänzen aus Modellwissen. Das gilt auch, wenn das Antwortmodell über eine Cloud-API läuft.
-- Bei vergleichbarem Kontext soll die jüngste passende Aussage die praktische Antwort bestimmen. Die Nutzerantwort soll keine älteren Verfahren als gleichrangige Alternativen auflisten; sie nennt knapp die Quellen, die die Antwort stützen. Die Erkennung älterer Widersprüche wird separat in der Evaluation bewertet. Keine Quelle als formell gültig oder verbindlich bezeichnen, wenn das Material das nicht belegt.
+- Bei Regeln und Verfahren bestimmt der jüngste vergleichbare Stand die Antwort. Bei Erfahrungen und Einschätzungen werden unterschiedliche Sichtweisen mit Quelle und Datum nebeneinander genannt, mit dem Hinweis, dass die Berichte auseinandergehen; das Datum allein begründet dort keine Priorität.
+- Für Regeln und Verfahren gilt außerdem: Die Nutzerantwort soll keine älteren Verfahren als gleichrangige Alternativen auflisten; sie nennt knapp die Quellen, die die Antwort stützen. Die Erkennung älterer Widersprüche wird separat in der Evaluation bewertet. Keine Quelle als formell gültig oder verbindlich bezeichnen, wenn das Material das nicht belegt.
 - Wenn Dokumente unterschiedliche Kontexte betreffen oder keine sichere Priorisierung zulassen, darf der Agent keine Priorität behaupten. Ein jüngeres Dokument beweist nicht, dass eine Aussage wahr oder verbindlich ist.
 - Ergänzende Aussagen aus mehreren Quellen dürfen zu einer klaren Antwort zusammengeführt werden. Die Antwort steht im Vordergrund; kompakte Quellenhinweise (mindestens Dokument und Datum) folgen am Ende.
 - Bei unzureichender Evidenz muss der Prototyp dies offen sagen und darf Lücken nicht auffüllen.

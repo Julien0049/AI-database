@@ -14,7 +14,7 @@ Der PoC darf zur Laufzeit Internet für die Modell-API nutzen; Dokumente, Index 
 
 1. Nur Textstellen aus dem lokalen Dokumentbestand als Belege verwenden. Websuche und unbelegte Ergänzung aus Modellwissen sind ausgeschlossen.
 2. Ergänzende Informationen aus mehreren passenden Dokumenten dürfen in einer knappen Antwort zusammengeführt werden.
-3. Bei vergleichbarem Kontext die jüngste passende Aussage für die praktische Antwort verwenden. Die Nutzerantwort soll ältere Verfahren nicht als gleichrangige Alternativen aufzählen; sie nennt knapp die Quellen, die die Antwort stützen. Die Erkennung älterer Widersprüche wird separat in der Evaluation gemessen.
+3. Bei Regeln und Verfahren mit vergleichbarem Kontext die jüngste passende Aussage für die praktische Antwort verwenden. Bei Erfahrungen und Einschätzungen unterschiedliche Sichtweisen mit Quelle und Datum nebeneinander nennen und darauf hinweisen, dass die Berichte auseinandergehen. Die Nutzerantwort soll ältere Verfahren nicht als gleichrangige Alternativen aufzählen; sie nennt knapp die Quellen, die die Antwort stützen. Die Erkennung älterer Widersprüche wird separat in der Evaluation gemessen.
 4. Eine zeitliche Priorität nur behaupten, wenn Zeitraum, Thema und Anwendungsbereich vergleichbar sind. Bei fehlender oder mehrdeutiger Vergleichbarkeit die Unsicherheit benennen.
 5. Wenn die Quellen die Frage nicht ausreichend beantworten, das klar sagen und keine Lücken füllen.
 6. Die Antwort steht im Vordergrund; kompakte Quellenhinweise mit Dokumentname und Datum folgen am Ende.
