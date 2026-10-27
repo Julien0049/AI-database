@@ -1,0 +1,242 @@
+{
+  "modell": "google/gemini-2.5-pro",
+  "zeitpunkt": "2026-10-27T03:37:46",
+  "durchlaeufe": 3,
+  "systemprompt": "Du beantwortest Fragen ausschließlich auf Grundlage der mitgelieferten Berichte.\nDie Berichte sind fiktive Testdaten.\n\nRegeln:\n1. Verwende nur Aussagen aus den Berichten. Ergänze nichts aus eigenem Wissen.\n2. Ergänzende Aussagen aus mehreren Berichten darfst du zu einer klaren Antwort zusammenführen.\n3. Bei Regeln und Verfahren: Wenn Berichte mit vergleichbarem Kontext sich widersprechen, bestimmt die jüngste passende Aussage die Antwort.\n   Nenne ältere abweichende Verfahren nicht als gleichrangige Alternativen.\n   Bei Erfahrungen und Einschätzungen (zum Beispiel, was sich bewährt hat): Gib unterschiedliche Sichtweisen nebeneinander wieder,\n   jede mit Titel und Datum des Berichts, und weise darauf hin, dass die Berichte auseinandergehen. Das Datum allein begründet hier keine Priorität.\n4. Wenn Berichte unterschiedliche Kontexte betreffen oder keine sichere Priorisierung zulassen, behaupte keine Priorität.\n5. Bezeichne keine Quelle als gültig oder verbindlich; die Berichte belegen das nicht.\n6. Wenn die Berichte die Frage nicht ausreichend beantworten, sag das offen und fülle keine Lücken.\n   Das gilt auch für jede Teilfrage: Wenn zu einem Teil der Frage keine Informationen vorliegen, schreibe ausdrücklich,\n   dass die Berichte dazu nichts sagen. Gib dann nicht stattdessen eine verwandte Aussage als Antwort aus.\n\nFormat: Zuerst die knappe Antwort. Danach eine Zeile \"Quellen:\" mit Titel und Datum jedes Berichts, der die Antwort stützt,\nin der Form: „Titel des Berichts“ (TT.MM.JJJJ).",
+  "ergebnisse": [
+    {
+      "durchlauf": 1,
+      "nr": 1,
+      "frage": "Ich nehme an einem dreitägigen Seminar teil. Unsere Gruppe hat ein Materialset gemeinsam genutzt. Wie wird die Rückgabe bestätigt?",
+      "antwort": "Bei mehrtägigen Seminaren bestätigt jede teilnehmende Person die Rückgabe der von ihr genutzten Bestandteile auf ihrer persönlichen Liste. Die Gruppenvertretung reicht zusätzlich eine Gesamtübersicht des gemeinsam genutzten Sets ein.\n\nQuellen:\n*   „After-Action-Report: Rückgabe gemeinsamer Sets im Seminarbetrieb“ (20.01.2025)"
+    },
+    {
+      "durchlauf": 1,
+      "nr": 2,
+      "frage": "Bei unserem dreitägigen Seminar fehlt nach der gemeinsamen Nutzung ein Adapter aus dem Materialset. Wie dokumentieren wir die Rückgabe und den fehlenden Adapter?",
+      "antwort": "Bei der Rückgabe des gemeinsam genutzten Materialsets bestätigt jede teilnehmende Person die von ihr genutzten Bestandteile auf ihrer persönlichen Liste. Zusätzlich reicht die Gruppenvertretung eine Gesamtübersicht des Sets ein.\n\nDer fehlende Adapter wird mit der Set-Kennung, der Gegenstandsbezeichnung und dem Entdeckungsdatum im Abweichungsprotokoll erfasst. Die Materialverwaltung muss noch am selben Tag darüber informiert werden. Aus dem Fehlen des Adapters allein wird keine persönliche Verantwortung abgeleitet.\n\nQuellen:\n* „After-Action-Report: Rückgabe gemeinsamer Sets im Seminarbetrieb“ (20.01.2025)\n* „After-Action-Report: Umgang mit fehlenden Bestandteilen“ (04.02.2025)"
+    },
+    {
+      "durchlauf": 1,
+      "nr": 3,
+      "frage": "Ich nehme an einem eintägigen Einführungsseminar teil und habe Gegenstände auf meiner persönlichen Ausgabeliste. Wie bestätige ich die Rückgabe?",
+      "antwort": "Bei eintägigen Einführungsveranstaltungen bestätigen Sie die Rückgabe der ausgegebenen Gegenstände am Veranstaltungsende. Die Rücknahme erfolgt anhand Ihrer persönlichen Ausgabeliste.\n\nQuellen:\n* „After-Action-Report: Materialrückgabe nach eintägigen Einführungsveranstaltungen“ (10.06.2025)"
+    },
+    {
+      "durchlauf": 1,
+      "nr": 4,
+      "frage": "Ein einzeln nummeriertes Gerät wurde einer Person zugeordnet, aber während des Seminars gemeinsam genutzt. Wer bestätigt die Rückgabe?",
+      "antwort": "Die Person, der das einzeln nummerierte Gerät zugeordnet wurde, bestätigt die Rückgabe. Solche Geräte bleiben der eingetragenen Person zugeordnet und werden von dieser zurückgegeben.\n\nQuellen:\n*   „After-Action-Report: Rückgabe ausgegebener Materialsets“ (14.09.2022)"
+    },
+    {
+      "durchlauf": 1,
+      "nr": 5,
+      "frage": "Ein Adapter fehlt, nachdem mehrere Gruppen das Set gemeinsam genutzt haben. Welche Person ist dafür verantwortlich?",
+      "antwort": "Aus dem alleinigen Fehlen eines Gegenstandes wird keine persönliche Verantwortung abgeleitet. Die Berichte benennen keine Person, die in diesem Fall verantwortlich ist.\n\nFehlende Gegenstände werden im Abweichungsprotokoll erfasst und der Materialverwaltung gemeldet.\n\nQuellen:\n* „Umgang mit fehlenden Bestandteilen“ (04.02.2025)"
+    },
+    {
+      "durchlauf": 1,
+      "nr": 6,
+      "frage": "Welches konkrete Formularfeld oder welche interne Kennziffer muss ich verwenden, wenn ich den fehlenden Adapter melde?",
+      "antwort": "Die Berichte nennen kein konkretes Formularfeld oder eine interne Kennziffer für die Meldung eines fehlenden Adapters. Sie geben an, dass fehlende Gegenstände im Abweichungsprotokoll mit der Set-Kennung, der Gegenstandsbezeichnung und dem Entdeckungsdatum erfasst werden.\n\nQuellen:\n„After-Action-Report: Umgang mit fehlenden Bestandteilen“ (04.02.2025)"
+    },
+    {
+      "durchlauf": 1,
+      "nr": 7,
+      "frage": "Muss ich das Dienstfahrzeug vollgetankt zurückgeben?",
+      "antwort": "Nein, bei der Rückgabe wird der Tankstand im Fahrtenbuch vermerkt und die Fahrbereitschaft übernimmt das Betanken.\n\nQuellen:\n* „Erfahrungen mit dem Fahrtenbuch-Formular“ (18.03.2025)"
+    },
+    {
+      "durchlauf": 1,
+      "nr": 8,
+      "frage": "Wir haben bei einem dreitägigen Seminar ein Fahrzeug gemeinsam genutzt. Wer bestätigt die Rückgabe?",
+      "antwort": "Die Person, die das Fahrzeug ausgeliehen hat, bestätigt die Rückgabe. Auch bei gemeinsamer Nutzung während eines mehrtägigen Seminars bleibt das Fahrzeug der ausleihenden Person zugeordnet. Diese Person gibt das Fahrzeug zurück und bestätigt die Rückgabe gegenüber der Fahrbereitschaft.\n\nQuellen: „After-Action-Report: Fahrzeugnutzung bei mehrtägigen Seminaren“ (15.09.2025), „After-Action-Report: Rückgabe von Dienstfahrzeugen“ (12.04.2023)"
+    },
+    {
+      "durchlauf": 1,
+      "nr": 9,
+      "frage": "Bei der Rückgabe ist ein Kratzer am Fahrzeug. Was ist zu tun, und wer ist verantwortlich?",
+      "antwort": "Ein Kratzer wird bei der Rückgabe mit Kennzeichen und Datum im Schadensformular erfasst. Dieses wird zusammen mit dem Fahrzeugschlüssel bei der Fahrbereitschaft abgegeben. Aus dem festgestellten Schaden allein wird keine persönliche Verantwortung abgeleitet.\n\nQuellen:\n* „After-Action-Report: Erfassung von Fahrzeugschäden“ (05.11.2024)"
+    },
+    {
+      "durchlauf": 1,
+      "nr": 10,
+      "frage": "Wie früh muss ich ein Fahrzeug reservieren, und was kostet die Ausleihe?",
+      "antwort": "Fahrzeuge müssen mindestens zwei Werktage vor der geplanten Fahrt reserviert werden. Zu den Kosten für die Ausleihe machen die Berichte keine Angaben.\n\nQuellen:\n*   „After-Action-Report: Reservierung von Fahrzeugen“ (08.01.2024)"
+    },
+    {
+      "durchlauf": 1,
+      "nr": 11,
+      "frage": "Welche Kleidung hat sich bei mehrtägigen Winter-Außenseminaren bewährt?",
+      "antwort": "Bei mehrtägigen Winter-Außenseminaren haben sich Wollsocken, Ersatzsocken und zwei Paar Handschuhe zum Wechseln bewährt. Eine wasserdichte Überjacke ist für alle Teilnehmenden vorgeschrieben. Bei der Wahl zwischen einer Daunenjacke und mehreren dünnen Schichten gehen die Erfahrungen auseinander:\n\n*   Der Bericht „After-Action-Report: Kleidung bei mehrtägigen Winter-Außenseminaren“ (15.02.2023) hält fest, dass sich mehrere dünne Kleidungsschichten bewährt haben, da sie sich beim Gehen leicht anpassen ließen. Eine dicke Daunenjacke wurde beim Gehen als meist zu warm empfunden.\n*   Laut dem Bericht „After-Action-Report: Wartezeiten im Freien bei Winterseminaren“ (25.01.2024) war bei langen Wartezeiten eine warme Daunenjacke nach Erfahrung der meisten Teilnehmenden unverzichtbar, während mehrere dünne Schichten allein nicht ausreichten.\n*   Der Bericht „After-Action-Report: Ausrüstung beim Winter-Außenseminar“ (10.12.2025) stellt fest, dass die Teilnehmenden bei den Jacken uneinig waren: Einige bevorzugten eine Daunenjacke, andere mehrere dünne Schichten.\n\nQuellen:\n*   „After-Action-Report: Kleidung bei mehrtägigen Winter-Außenseminaren“ (15.02.2023)\n*   „After-Action-Report: Wartezeiten im Freien bei Winterseminaren“ (25.01.2024)\n*   „After-Action-Report: Ausrüstung beim Winter-Außenseminar“ (10.12.2025)"
+    },
+    {
+      "durchlauf": 1,
+      "nr": 12,
+      "frage": "Brauche ich bei einem mehrtägigen Winter-Außenseminar eine dicke Daunenjacke?",
+      "antwort": "Die Berichte geben unterschiedliche Einschätzungen dazu, ob eine dicke Daunenjacke bei einem mehrtägigen Winter-Außenseminar benötigt wird. Eine wasserdichte Überjacke ist jedoch für alle Teilnehmenden vorgeschrieben.\n\nDie Berichte gehen auf unterschiedliche Erfahrungen ein:\n\n*   **After-Action-Report: Kleidung bei mehrtägigen Winter-Außenseminaren (15.02.2023):** Bei einem Seminar haben sich mehrere dünne Kleidungsschichten bewährt, da sie sich beim Gehen leicht anpassen ließen. Eine dicke Daunenjacke wurde beim Gehen als meist zu warm empfunden.\n*   **After-Action-Report: Wartezeiten im Freien bei Winterseminaren (25.01.2024):** Bei einem Seminar mit langen Wartezeiten im Freien war eine warme Daunenjacke nach Erfahrung der meisten Teilnehmenden unverzichtbar. Mehrere dünne Kleidungsschichten allein reichten den meisten nicht aus.\n*   **After-Action-Report: Ausrüstung beim Winter-Außenseminar (10.12.2025):** Bei einem Seminar waren die Teilnehmenden bei den Jacken uneinig. Einige bevorzugten eine Daunenjacke, andere mehrere dünne Schichten.\n\nQuellen:\n*   „After-Action-Report: Kleidung bei mehrtägigen Winter-Außenseminaren“ (15.02.2023)\n*   „After-Action-Report: Wartezeiten im Freien bei Winterseminaren“ (25.01.2024)\n*   „After-Action-Report: Ausrüstung beim Winter-Außenseminar“ (10.12.2025)"
+    },
+    {
+      "durchlauf": 1,
+      "nr": 13,
+      "frage": "Welche Marke wird für die Winterjacke empfohlen, und ab welcher Temperatur sollte man sie tragen?",
+      "antwort": "Die Berichte enthalten keine Informationen dazu, welche Marke für eine Winterjacke empfohlen wird oder ab welcher Temperatur man sie tragen sollte."
+    },
+    {
+      "durchlauf": 2,
+      "nr": 1,
+      "frage": "Ich nehme an einem dreitägigen Seminar teil. Unsere Gruppe hat ein Materialset gemeinsam genutzt. Wie wird die Rückgabe bestätigt?",
+      "antwort": "Jede teilnehmende Person bestätigt die Rückgabe der von ihr genutzten Bestandteile auf einer persönlichen Liste. Zusätzlich reicht die Gruppenvertretung eine Gesamtübersicht des gemeinsam genutzten Sets ein.\n\nQuellen:\n*   „Rückgabe gemeinsamer Sets im Seminarbetrieb“ (20.01.2025)"
+    },
+    {
+      "durchlauf": 2,
+      "nr": 2,
+      "frage": "Bei unserem dreitägigen Seminar fehlt nach der gemeinsamen Nutzung ein Adapter aus dem Materialset. Wie dokumentieren wir die Rückgabe und den fehlenden Adapter?",
+      "antwort": "Für die Rückgabe bestätigt jede teilnehmende Person die Rückgabe der von ihr genutzten Bestandteile auf ihrer persönlichen Liste. Zusätzlich reicht die Gruppenvertretung eine Gesamtübersicht des gemeinsam genutzten Sets ein.\n\nDer fehlende Adapter wird mit Set-Kennung, Gegenstandsbezeichnung und Entdeckungsdatum im Abweichungsprotokoll erfasst. Die Materialverwaltung wird noch am selben Tag darüber informiert. Aus dem Fehlen allein wird keine persönliche Verantwortung abgeleitet.\n\nQuellen:\n„After-Action-Report: Rückgabe gemeinsamer Sets im Seminarbetrieb“ (20.01.2025)\n„After-Action-Report: Umgang mit fehlenden Bestandteilen“ (04.02.2025)"
+    },
+    {
+      "durchlauf": 2,
+      "nr": 3,
+      "frage": "Ich nehme an einem eintägigen Einführungsseminar teil und habe Gegenstände auf meiner persönlichen Ausgabeliste. Wie bestätige ich die Rückgabe?",
+      "antwort": "Bei eintägigen Einführungsveranstaltungen bestätigen Sie zum Veranstaltungsende die Rückgabe der ausgegebenen Gegenstände, die anhand Ihrer persönlichen Ausgabeliste zurückgenommen werden.\n\nQuellen:\n*   „Materialrückgabe nach eintägigen Einführungsveranstaltungen“ (10.06.2025)\n*   „After-Action-Report: Rückgabe ausgegebener Materialsets“ (14.09.2022)"
+    },
+    {
+      "durchlauf": 2,
+      "nr": 4,
+      "frage": "Ein einzeln nummeriertes Gerät wurde einer Person zugeordnet, aber während des Seminars gemeinsam genutzt. Wer bestätigt die Rückgabe?",
+      "antwort": "Einzeln nummerierte Geräte werden von der Person zurückgegeben und bestätigt, der sie zugeordnet sind.\n\nQuellen:\n*   „After-Action-Report: Rückgabe ausgegebener Materialsets“ (14.09.2022)"
+    },
+    {
+      "durchlauf": 2,
+      "nr": 5,
+      "frage": "Ein Adapter fehlt, nachdem mehrere Gruppen das Set gemeinsam genutzt haben. Welche Person ist dafür verantwortlich?",
+      "antwort": "Den Berichten zufolge wird aus dem Fehlen eines Gegenstandes allein keine persönliche Verantwortung abgeleitet. Fehlende Gegenstände werden im Abweichungsprotokoll erfasst.\n\nQuellen:\n*   „After-Action-Report: Umgang mit fehlenden Bestandteilen“ (04.02.2025)"
+    },
+    {
+      "durchlauf": 2,
+      "nr": 6,
+      "frage": "Welches konkrete Formularfeld oder welche interne Kennziffer muss ich verwenden, wenn ich den fehlenden Adapter melde?",
+      "antwort": "Die Berichte nennen kein konkretes Formularfeld und keine interne Kennziffer für die Meldung eines fehlenden Adapters. Sie geben an, dass fehlende Gegenstände im Abweichungsprotokoll mit der Set-Kennung, der Gegenstandsbezeichnung und dem Entdeckungsdatum erfasst werden.\n\nQuellen:\n*   „After-Action-Report: Umgang mit fehlenden Bestandteilen“ (04.02.2025)"
+    },
+    {
+      "durchlauf": 2,
+      "nr": 7,
+      "frage": "Muss ich das Dienstfahrzeug vollgetankt zurückgeben?",
+      "antwort": "Nein, bei der Rückgabe wird der Tankstand im Fahrtenbuch-Formular vermerkt und die Fahrbereitschaft übernimmt das Betanken.\n\nQuellen:\n*   „After-Action-Report: Erfahrungen mit dem Fahrtenbuch-Formular“ (18.03.2025)"
+    },
+    {
+      "durchlauf": 2,
+      "nr": 8,
+      "frage": "Wir haben bei einem dreitägigen Seminar ein Fahrzeug gemeinsam genutzt. Wer bestätigt die Rückgabe?",
+      "antwort": "Auch bei gemeinsamer Nutzung gibt die Person, die das Fahrzeug ausgeliehen hat, das Fahrzeug zurück und bestätigt die Rückgabe gegenüber der Fahrbereitschaft.\n\nQuellen:\n*   „After-Action-Report: Fahrzeugnutzung bei mehrtägigen Seminaren“ (15.09.2025)"
+    },
+    {
+      "durchlauf": 2,
+      "nr": 9,
+      "frage": "Bei der Rückgabe ist ein Kratzer am Fahrzeug. Was ist zu tun, und wer ist verantwortlich?",
+      "antwort": "Der Kratzer muss als Schaden bei der Rückgabe mit Kennzeichen und Datum im Schadensformular erfasst werden. Das Formular wird mit dem Fahrzeugschlüssel bei der Fahrbereitschaft abgegeben. Aus einem festgestellten Schaden allein wird keine persönliche Verantwortung abgeleitet.\n\nQuellen:\n* „After-Action-Report: Erfassung von Fahrzeugschäden“ (05.11.2024)"
+    },
+    {
+      "durchlauf": 2,
+      "nr": 10,
+      "frage": "Wie früh muss ich ein Fahrzeug reservieren, und was kostet die Ausleihe?",
+      "antwort": "Fahrzeuge müssen mindestens zwei Werktage vor der geplanten Fahrt reserviert werden. Zu den Kosten für die Ausleihe machen die Berichte keine Angaben.\n\nQuellen:\n„After-Action-Report: Reservierung von Fahrzeugen“ (08.01.2024)"
+    },
+    {
+      "durchlauf": 2,
+      "nr": 11,
+      "frage": "Welche Kleidung hat sich bei mehrtägigen Winter-Außenseminaren bewährt?",
+      "antwort": "Bei mehrtägigen Winter-Außenseminaren haben sich Wollsocken, Ersatzsocken und zwei Paar Handschuhe zum Wechseln bewährt. Eine wasserdichte Überjacke ist für alle Teilnehmenden vorgeschrieben.\n\nBei den Jacken gehen die Einschätzungen in den Berichten auseinander:\n*   Der Bericht „After-Action-Report: Kleidung bei mehrtägigen Winter-Außenseminaren“ (15.02.2023) gibt an, dass sich mehrere dünne Kleidungsschichten bewährt haben, da sie sich beim Gehen leicht anpassen ließen. Eine dicke Daunenjacke wurde beim Gehen als meist zu warm empfunden.\n*   Laut dem Bericht „After-Action-Report: Wartezeiten im Freien bei Winterseminaren“ (25.01.2024) war bei langen Wartezeiten eine warme Daunenjacke nach Erfahrung der meisten Teilnehmenden unverzichtbar, da mehrere dünne Schichten allein nicht ausreichten.\n*   Der Bericht „After-Action-Report: Ausrüstung beim Winter-Außenseminar“ (10.12.2025) stellt fest, dass die Teilnehmenden bei den Jacken uneinig waren: Einige bevorzugten eine Daunenjacke, andere mehrere dünne Schichten.\n\nQuellen:\n*   „After-Action-Report: Kleidung bei mehrtägigen Winter-Außenseminaren“ (15.02.2023)\n*   „After-Action-Report: Wartezeiten im Freien bei Winterseminaren“ (25.01.2024)\n*   „After-Action-Report: Ausrüstung beim Winter-Außenseminar“ (10.12.2025)"
+    },
+    {
+      "durchlauf": 2,
+      "nr": 12,
+      "frage": "Brauche ich bei einem mehrtägigen Winter-Außenseminar eine dicke Daunenjacke?",
+      "antwort": "Die Berichte geben unterschiedliche Einschätzungen dazu ab, ob eine dicke Daunenjacke bei einem mehrtägigen Winter-Außenseminar benötigt wird.\n\nEine wasserdichte Überjacke ist für alle Teilnehmenden vorgeschrieben.\n\n*   Einem Bericht zufolge war eine warme Daunenjacke bei langen Wartezeiten im Freien nach Erfahrung der meisten Teilnehmenden unverzichtbar, da mehrere dünne Schichten allein nicht ausreichten.\n*   Ein anderer Bericht stellt fest, dass sich mehrere dünne Kleidungsschichten bewährt haben. Wer eine dicke Daunenjacke trug, fand diese beim Gehen meist zu warm.\n*   Laut einem weiteren Bericht waren die Teilnehmenden bei den Jacken uneinig: Einige bevorzugten eine Daunenjacke, andere mehrere dünne Schichten.\n\nQuellen:\n*   „After-Action-Report: Kleidung bei mehrtägigen Winter-Außenseminaren“ (15.02.2023)\n*   „After-Action-Report: Wartezeiten im Freien bei Winterseminaren“ (25.01.2024)\n*   „After-Action-Report: Ausrüstung beim Winter-Außenseminar“ (10.12.2025)"
+    },
+    {
+      "durchlauf": 2,
+      "nr": 13,
+      "frage": "Welche Marke wird für die Winterjacke empfohlen, und ab welcher Temperatur sollte man sie tragen?",
+      "antwort": "Die Berichte enthalten keine Informationen darüber, welche Marke für eine Winterjacke empfohlen wird oder ab welcher Temperatur man sie tragen sollte."
+    },
+    {
+      "durchlauf": 3,
+      "nr": 1,
+      "frage": "Ich nehme an einem dreitägigen Seminar teil. Unsere Gruppe hat ein Materialset gemeinsam genutzt. Wie wird die Rückgabe bestätigt?",
+      "antwort": "Jede teilnehmende Person bestätigt die Rückgabe der von ihr genutzten Bestandteile auf der persönlichen Liste. Zusätzlich reicht die Gruppenvertretung eine Gesamtübersicht des gemeinsam genutzten Sets ein.\n\nQuellen: „After-Action-Report: Rückgabe gemeinsamer Sets im Seminarbetrieb“ (20.01.2025)."
+    },
+    {
+      "durchlauf": 3,
+      "nr": 2,
+      "frage": "Bei unserem dreitägigen Seminar fehlt nach der gemeinsamen Nutzung ein Adapter aus dem Materialset. Wie dokumentieren wir die Rückgabe und den fehlenden Adapter?",
+      "antwort": "Bei der Rückgabe des gemeinsam genutzten Sets bestätigt jede teilnehmende Person die Rückgabe der von ihr genutzten Bestandteile auf ihrer persönlichen Liste. Zusätzlich reicht die Gruppenvertretung eine Gesamtübersicht des Sets ein.\n\nDer fehlende Adapter wird mit Set-Kennung, Gegenstandsbezeichnung und dem Entdeckungsdatum im Abweichungsprotokoll erfasst. Die Materialverwaltung wird noch am selben Tag darüber informiert. Aus dem Fehlen allein wird keine persönliche Verantwortung abgeleitet.\n\nQuellen:\n„Rückgabe gemeinsamer Sets im Seminarbetrieb“ (20.01.2025)\n„Umgang mit fehlenden Bestandteilen“ (04.02.2025)"
+    },
+    {
+      "durchlauf": 3,
+      "nr": 3,
+      "frage": "Ich nehme an einem eintägigen Einführungsseminar teil und habe Gegenstände auf meiner persönlichen Ausgabeliste. Wie bestätige ich die Rückgabe?",
+      "antwort": "Bei eintägigen Einführungsveranstaltungen werden die ausgegebenen Gegenstände zum Veranstaltungsende anhand der persönlichen Ausgabelisten zurückgenommen und von Ihnen bestätigt.\n\nQuellen:\n* „After-Action-Report: Materialrückgabe nach eintägigen Einführungsveranstaltungen“ (10.06.2025)"
+    },
+    {
+      "durchlauf": 3,
+      "nr": 4,
+      "frage": "Ein einzeln nummeriertes Gerät wurde einer Person zugeordnet, aber während des Seminars gemeinsam genutzt. Wer bestätigt die Rückgabe?",
+      "antwort": "Die Person, der das einzeln nummerierte Gerät zugeordnet wurde, bestätigt die Rückgabe. Dies gilt auch dann, wenn das Gerät gemeinsam genutzt wurde.\n\nQuellen:\n* „After-Action-Report: Rückgabe ausgegebener Materialsets“ (14.09.2022)\n* „After-Action-Report: Fahrzeugnutzung bei mehrtägigen Seminaren“ (15.09.2025)"
+    },
+    {
+      "durchlauf": 3,
+      "nr": 5,
+      "frage": "Ein Adapter fehlt, nachdem mehrere Gruppen das Set gemeinsam genutzt haben. Welche Person ist dafür verantwortlich?",
+      "antwort": "Aus dem Fehlen eines Gegenstandes allein wird keine persönliche Verantwortung abgeleitet. Fehlende Gegenstände werden mit Set-Kennung, Gegenstandsbezeichnung und Entdeckungsdatum in einem Abweichungsprotokoll erfasst und die Materialverwaltung wird informiert.\n\nQuellen:\n* „After-Action-Report: Umgang mit fehlenden Bestandteilen“ (04.02.2025)\n* „After-Action-Report: Erfassung von Fahrzeugschäden“ (05.11.2024)"
+    },
+    {
+      "durchlauf": 3,
+      "nr": 6,
+      "frage": "Welches konkrete Formularfeld oder welche interne Kennziffer muss ich verwenden, wenn ich den fehlenden Adapter melde?",
+      "antwort": "Die Berichte geben kein konkretes Formularfeld oder eine interne Kennziffer an, die bei der Meldung eines fehlenden Adapters zu verwenden ist. Es wird jedoch beschrieben, dass fehlende Gegenstände mit Set-Kennung, Gegenstandsbezeichnung und Entdeckungsdatum im Abweichungsprotokoll erfasst werden.\n\nQuellen:\n*   „After-Action-Report: Umgang mit fehlenden Bestandteilen“ (04.02.2025)"
+    },
+    {
+      "durchlauf": 3,
+      "nr": 7,
+      "frage": "Muss ich das Dienstfahrzeug vollgetankt zurückgeben?",
+      "antwort": "Nein, bei der Rückgabe wird der Tankstand im Fahrtenbuch-Formular vermerkt und das Betanken wird anschließend von der Fahrbereitschaft übernommen.\n\nQuellen:\n*   „After-Action-Report: Erfahrungen mit dem Fahrtenbuch-Formular“ (18.03.2025)"
+    },
+    {
+      "durchlauf": 3,
+      "nr": 8,
+      "frage": "Wir haben bei einem dreitägigen Seminar ein Fahrzeug gemeinsam genutzt. Wer bestätigt die Rückgabe?",
+      "antwort": "Auch bei gemeinsamer Nutzung gibt die Person das Fahrzeug zurück und bestätigt die Rückgabe, der das Fahrzeug zugeordnet ist.\n\nQuellen:\n*   „After-Action-Report: Fahrzeugnutzung bei mehrtägigen Seminaren“ (15.09.2025)\n*   „After-Action-Report: Rückgabe von Dienstfahrzeugen“ (12.04.2023)"
+    },
+    {
+      "durchlauf": 3,
+      "nr": 9,
+      "frage": "Bei der Rückgabe ist ein Kratzer am Fahrzeug. Was ist zu tun, und wer ist verantwortlich?",
+      "antwort": "Der Schaden muss mit Kennzeichen und Datum im Schadensformular erfasst werden. Dieses Formular wird zusammen mit dem Fahrzeugschlüssel bei der Fahrbereitschaft abgegeben. Aus einem festgestellten Schaden allein wird keine persönliche Verantwortung abgeleitet.\n\nQuellen:\n* „After-Action-Report: Erfassung von Fahrzeugschäden“ (05.11.2024)"
+    },
+    {
+      "durchlauf": 3,
+      "nr": 10,
+      "frage": "Wie früh muss ich ein Fahrzeug reservieren, und was kostet die Ausleihe?",
+      "antwort": "Fahrzeuge müssen mindestens zwei Werktage vor der geplanten Fahrt bei der Fahrbereitschaft reserviert werden. Zu den Kosten für die Ausleihe machen die Berichte keine Angaben.\n\nQuellen:\n*   „After-Action-Report: Reservierung von Fahrzeugen“ (08.01.2024)"
+    },
+    {
+      "durchlauf": 3,
+      "nr": 11,
+      "frage": "Welche Kleidung hat sich bei mehrtägigen Winter-Außenseminaren bewährt?",
+      "antwort": "Für mehrtägige Winter-Außenseminare ist eine wasserdichte Überjacke für alle Teilnehmenden vorgeschrieben. Zudem haben sich Wollsocken besser bewährt als Baumwollsocken; Ersatzsocken wurden häufig gebraucht. Auch zwei Paar Handschuhe zum Wechseln waren hilfreich.\n\nBei den Jacken gibt es unterschiedliche Einschätzungen in den Berichten:\n*   Laut dem Bericht „After-Action-Report: Kleidung bei mehrtägigen Winter-Außenseminaren“ (15.02.2023) haben sich mehrere dünne Kleidungsschichten bewährt, weil sie sich beim Gehen leicht anpassen ließen. Eine dicke Daunenjacke wurde beim Gehen als meist zu warm empfunden.\n*   Der Bericht „After-Action-Report: Wartezeiten im Freien bei Winterseminaren“ (25.01.2024) stellt fest, dass bei langen Wartezeiten eine warme Daunenjacke nach Erfahrung der meisten Teilnehmenden unverzichtbar war und mehrere dünne Schichten allein den meisten nicht ausreichten.\n*   Im Bericht „After-Action-Report: Ausrüstung beim Winter-Außenseminar“ (10.12.2025) wird berichtet, dass die Teilnehmenden bei den Jacken uneinig waren: Einige bevorzugten eine Daunenjacke, andere mehrere dünne Schichten.\n\nQuellen:\n*   „After-Action-Report: Kleidung bei mehrtägigen Winter-Außenseminaren“ (15.02.2023)\n*   „After-Action-Report: Wartezeiten im Freien bei Winterseminaren“ (25.01.2024)\n*   „After-Action-Report: Ausrüstung beim Winter-Außenseminar“ (10.12.2025)"
+    },
+    {
+      "durchlauf": 3,
+      "nr": 12,
+      "frage": "Brauche ich bei einem mehrtägigen Winter-Außenseminar eine dicke Daunenjacke?",
+      "antwort": "Die Berichte sind sich uneinig darüber, ob eine dicke Daunenjacke bei einem mehrtägigen Winter-Außenseminar benötigt wird. Die Einschätzungen hängen von der jeweiligen Situation und den persönlichen Vorlieben ab. Eine wasserdichte Überjacke ist jedoch für alle Teilnehmenden vorgeschrieben.\n\nDie Berichte geben folgende unterschiedliche Erfahrungen wieder:\n*   Laut dem „After-Action-Report: Kleidung bei mehrtägigen Winter-Außenseminaren“ (15.02.2023) haben sich mehrere dünne Kleidungsschichten bewährt, da sie sich beim Gehen leicht anpassen ließen. Eine dicke Daunenjacke wurde beim Gehen meist als zu warm empfunden.\n*   Im Gegensatz dazu hält der „After-Action-Report: Wartezeiten im Freien bei Winterseminaren“ (25.01.2024) fest, dass bei langen Wartezeiten im Freien eine warme Daunenjacke nach Erfahrung der meisten Teilnehmenden unverzichtbar war. Mehrere dünne Schichten allein reichten den meisten nicht aus.\n*   Der „After-Action-Report: Ausrüstung beim Winter-Außenseminar“ (10.12.2025) berichtet, dass die Teilnehmenden bei den Jacken uneinig waren: Einige bevorzugten eine Daunenjacke, andere mehrere dünne Schichten.\n\nQuellen:\n*   „After-Action-Report: Kleidung bei mehrtägigen Winter-Außenseminaren“ (15.02.2023)\n*   „After-Action-Report: Wartezeiten im Freien bei Winterseminaren“ (25.01.2024)\n*   „After-Action-Report: Ausrüstung beim Winter-Außenseminar“ (10.12.2025)"
+    },
+    {
+      "durchlauf": 3,
+      "nr": 13,
+      "frage": "Welche Marke wird für die Winterjacke empfohlen, und ab welcher Temperatur sollte man sie tragen?",
+      "antwort": "Die Berichte enthalten keine Informationen zu einer empfohlenen Marke für Winterjacken. Sie geben auch keine Auskunft darüber, ab welcher Temperatur eine Winterjacke getragen werden sollte."
+    }
+  ]
+}
