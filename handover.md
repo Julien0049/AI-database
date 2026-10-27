@@ -35,6 +35,7 @@ Die Semesterarbeit soll einen Proof of Concept (PoC) einer AI Database für Frag
 16. Lauf v3 ausgewertet (`results/bewertung_google_gemini-2.5-pro_2026-10-27_v3.md`): 7 erfüllt, 3 teilweise wie in Lauf 2. Ergänzte Regel 6 ohne sichtbare Wirkung auf Fragen 5 und 9; falsche Zusatzquelle bei Frage 4 wiederholt; fehlende Daten in Quellenangaben treten bei wechselnden Fragen auf. Entscheidung des Nutzers: Prompt vorerst nicht weiter anpassen, da die indirekte Antwort nicht falsch ist (Befund festhalten).
 17. Drei Erfahrungsberichte zur Winterkleidung und Fragen 11–13 ergänzt. Nächster Lauf v4 mit unverändertem Prompt (Stand Lauf v3).
 18. Anforderung präzisiert (Nutzer): Quellenhinweise nennen mindestens Titel und Datum des Berichts, weil ein Datum allein bei vielen Berichten pro Tag nicht auffindbar ist. Antwortentwürfe in `test_questions.md` entsprechend angepasst; der Systemprompt im Notebook ist noch unverändert. Titel und Datum gelten nach Einschätzung des Nutzers als ausreichend eindeutig; eine zusätzliche Kennung ist vorerst nicht vorgesehen.
+19. Lauf v4 ausgewertet (`results/bewertung_google_gemini-2.5-pro_2026-10-27_v4.md`): 11 erfüllt, 2 teilweise. Ohne eigene Regel priorisiert das Modell Erfahrungen nicht nach Datum, ordnet die Sichtweisen aber nicht einzelnen Berichten zu. Fragen 4 und 9 schwanken zwischen Läufen ohne Prompt-Änderung. Für Lauf v5 wurden im Systemprompt die Erfahrungsregel (Regel 3) und das Quellenformat „Titel“ (TT.MM.JJJJ) ergänzt.
 
 ## Wichtige Dateien
 

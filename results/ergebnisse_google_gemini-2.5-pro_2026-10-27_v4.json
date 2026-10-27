@@ -1,0 +1,72 @@
+{
+  "modell": "google/gemini-2.5-pro",
+  "zeitpunkt": "2026-10-27T03:19:40",
+  "systemprompt": "Du beantwortest Fragen ausschließlich auf Grundlage der mitgelieferten Berichte.\nDie Berichte sind fiktive Testdaten.\n\nRegeln:\n1. Verwende nur Aussagen aus den Berichten. Ergänze nichts aus eigenem Wissen.\n2. Ergänzende Aussagen aus mehreren Berichten darfst du zu einer klaren Antwort zusammenführen.\n3. Wenn Berichte mit vergleichbarem Kontext sich widersprechen, bestimmt die jüngste passende Aussage die Antwort.\n   Nenne ältere abweichende Verfahren nicht als gleichrangige Alternativen.\n4. Wenn Berichte unterschiedliche Kontexte betreffen oder keine sichere Priorisierung zulassen, behaupte keine Priorität.\n5. Bezeichne keine Quelle als gültig oder verbindlich; die Berichte belegen das nicht.\n6. Wenn die Berichte die Frage nicht ausreichend beantworten, sag das offen und fülle keine Lücken.\n   Das gilt auch für jede Teilfrage: Wenn zu einem Teil der Frage keine Informationen vorliegen, schreibe ausdrücklich,\n   dass die Berichte dazu nichts sagen. Gib dann nicht stattdessen eine verwandte Aussage als Antwort aus.\n\nFormat: Zuerst die knappe Antwort. Danach eine Zeile \"Quellen:\" mit Dateiname und Datum der Berichte, die die Antwort stützen.",
+  "ergebnisse": [
+    {
+      "nr": 1,
+      "frage": "Ich nehme an einem dreitägigen Seminar teil. Unsere Gruppe hat ein Materialset gemeinsam genutzt. Wie wird die Rückgabe bestätigt?",
+      "antwort": "Bei einem mehrtägigen Seminar bestätigt jede teilnehmende Person die Rückgabe der von ihr genutzten Bestandteile auf einer persönlichen Liste. Zusätzlich reicht die Gruppenvertretung eine Gesamtübersicht des gemeinsam genutzten Sets ein.\n\nQuellen:\nAAR-2025-01-20-shared-set-returns.md (20.01.2025)"
+    },
+    {
+      "nr": 2,
+      "frage": "Bei unserem dreitägigen Seminar fehlt nach der gemeinsamen Nutzung ein Adapter aus dem Materialset. Wie dokumentieren wir die Rückgabe und den fehlenden Adapter?",
+      "antwort": "Jede teilnehmende Person bestätigt die Rückgabe der von ihr genutzten Bestandteile auf ihrer persönlichen Liste. Zusätzlich reicht die Gruppenvertretung eine Gesamtübersicht des gemeinsam genutzten Sets ein.\n\nDer fehlende Adapter wird mit Set-Kennung, Gegenstandsbezeichnung und dem Entdeckungsdatum im Abweichungsprotokoll erfasst. Die Materialverwaltung wird noch am selben Tag informiert. Aus dem Fehlen allein wird keine persönliche Verantwortung abgeleitet.\n\nQuellen:\nAAR-2025-01-20-shared-set-returns.md (20.01.2025)\nAAR-2025-02-04-missing-items.md (04.02.2025)"
+    },
+    {
+      "nr": 3,
+      "frage": "Ich nehme an einem eintägigen Einführungsseminar teil und habe Gegenstände auf meiner persönlichen Ausgabeliste. Wie bestätige ich die Rückgabe?",
+      "antwort": "Bei eintägigen Einführungsveranstaltungen werden die ausgegebenen Gegenstände zum Veranstaltungsende anhand der persönlichen Ausgabelisten zurückgenommen und von den Teilnehmenden bestätigt.\n\nQuellen: AAR-2025-06-10-one-day-seminars.md"
+    },
+    {
+      "nr": 4,
+      "frage": "Ein einzeln nummeriertes Gerät wurde einer Person zugeordnet, aber während des Seminars gemeinsam genutzt. Wer bestätigt die Rückgabe?",
+      "antwort": "Einzeln nummerierte Geräte werden von der Person zurückgegeben und bestätigt, der sie zugeordnet sind.\n\nQuellen: AAR-2022-09-14-material-return.md"
+    },
+    {
+      "nr": 5,
+      "frage": "Ein Adapter fehlt, nachdem mehrere Gruppen das Set gemeinsam genutzt haben. Welche Person ist dafür verantwortlich?",
+      "antwort": "Aus dem Fehlen eines Gegenstandes allein wird keine persönliche Verantwortung abgeleitet. Fehlende Gegenstände werden mit Set-Kennung, Gegenstandsbezeichnung und Entdeckungsdatum im Abweichungsprotokoll erfasst.\n\nQuellen: AAR-2025-02-04-missing-items.md"
+    },
+    {
+      "nr": 6,
+      "frage": "Welches konkrete Formularfeld oder welche interne Kennziffer muss ich verwenden, wenn ich den fehlenden Adapter melde?",
+      "antwort": "Fehlende Gegenstände werden mit Set-Kennung und Gegenstandsbezeichnung im Abweichungsprotokoll erfasst. Die Berichte nennen kein konkretes Formularfeld oder eine interne Kennziffer für den Adapter.\n\nQuellen:\n* AAR-2025-02-04-missing-items.md (04.02.2025)"
+    },
+    {
+      "nr": 7,
+      "frage": "Muss ich das Dienstfahrzeug vollgetankt zurückgeben?",
+      "antwort": "Nein, bei der Rückgabe wird der Tankstand vermerkt und die Fahrbereitschaft übernimmt das Betanken.\n\nQuellen:\nAAR-2025-03-18-logbook-form.md (18.03.2025)"
+    },
+    {
+      "nr": 8,
+      "frage": "Wir haben bei einem dreitägigen Seminar ein Fahrzeug gemeinsam genutzt. Wer bestätigt die Rückgabe?",
+      "antwort": "Bei mehrtägigen Seminaren bleibt das Fahrzeug auch bei gemeinsamer Nutzung der ausleihenden Person zugeordnet. Diese Person gibt das Fahrzeug zurück und bestätigt die Rückgabe.\n\nQuellen:\nAAR-2025-09-15-vehicles-multi-day-seminars.md (15.09.2025)"
+    },
+    {
+      "nr": 9,
+      "frage": "Bei der Rückgabe ist ein Kratzer am Fahrzeug. Was ist zu tun, und wer ist verantwortlich?",
+      "antwort": "Der Schaden wird mit Kennzeichen und Datum im Schadensformular erfasst. Das Formular wird mit dem Fahrzeugschlüssel bei der Fahrbereitschaft abgegeben. Aus dem festgestellten Schaden allein wird keine persönliche Verantwortung abgeleitet. Die Berichte machen keine Angaben dazu, wie die Verantwortung stattdessen festgestellt wird.\n\nQuellen: AAR-2024-11-05-vehicle-damage.md (05.11.2024)"
+    },
+    {
+      "nr": 10,
+      "frage": "Wie früh muss ich ein Fahrzeug reservieren, und was kostet die Ausleihe?",
+      "antwort": "Fahrzeuge müssen mindestens zwei Werktage vor der geplanten Fahrt reserviert werden. Die Berichte enthalten keine Informationen über die Kosten für die Ausleihe.\n\nQuellen:\nAAR-2024-01-08-vehicle-reservations.md"
+    },
+    {
+      "nr": 11,
+      "frage": "Welche Kleidung hat sich bei mehrtägigen Winter-Außenseminaren bewährt?",
+      "antwort": "Bei mehrtägigen Winter-Außenseminaren haben sich Wollsocken besser bewährt als Baumwollsocken; Ersatzsocken wurden häufig gebraucht. Hinsichtlich der Jacken waren die Teilnehmenden uneinig, ob eine Daunenjacke oder mehrere dünne Schichten zu bevorzugen sind. Eine wasserdichte Überjacke ist für alle vorgeschrieben. Zudem waren zwei Paar Handschuhe zum Wechseln hilfreich.\n\nQuellen: AAR-2025-12-10-winter-socks-and-jackets.md (10.12.2025), AAR-2023-02-15-winter-clothing-layers.md (15.02.2023)"
+    },
+    {
+      "nr": 12,
+      "frage": "Brauche ich bei einem mehrtägigen Winter-Außenseminar eine dicke Daunenjacke?",
+      "antwort": "Die Berichte sind sich bei dieser Frage nicht einig. Einige Teilnehmende bevorzugten eine Daunenjacke, andere mehrere dünne Schichten. Eine Daunenjacke wurde als unverzichtbar bei langen Wartezeiten im Freien empfunden, während sich mehrere dünne Schichten beim Gehen bewährt haben. Für alle Teilnehmenden ist eine wasserdichte Überjacke vorgeschrieben.\n\nQuellen:\n- AAR-2025-12-10-winter-socks-and-jackets.md (10.12.2025)\n- AAR-2024-01-25-winter-waiting-times.md (25.01.2024)\n- AAR-2023-02-15-winter-clothing-layers.md (15.02.2023)"
+    },
+    {
+      "nr": 13,
+      "frage": "Welche Marke wird für die Winterjacke empfohlen, und ab welcher Temperatur sollte man sie tragen?",
+      "antwort": "Die Berichte enthalten keine Informationen darüber, welche Marke für eine Winterjacke empfohlen wird oder ab welcher Temperatur sie getragen werden sollte."
+    }
+  ]
+}
