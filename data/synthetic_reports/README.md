@@ -9,7 +9,8 @@ Die einheitlichen Markdown-Dateien bilden zunächst eine kontrollierte Textbasis
 - eintägige und mehrtägige Veranstaltungen als unterschiedliche Kontexte behandelt.
 - einen nicht als Änderung gekennzeichneten Widerspruch zur Tankregel erkennt;
 - Fahrzeug- und Materialberichte trotz ähnlicher Stichworte („mehrtägig“, „gemeinsam genutzt“, „keine persönliche Verantwortung“) auseinanderhält.
-- bei Erfahrungsberichten unterschiedliche Sichtweisen nebeneinander nennt, statt den jüngsten Bericht als gültigen Stand zu behandeln, und eine darin enthaltene Vorgabe als solche erkennt.
+- bei Erfahrungsberichten unterschiedliche Sichtweisen nebeneinander nennt, statt den jüngsten Bericht als gültigen Stand zu behandeln, und eine darin enthaltene Vorgabe als solche erkennt;
+- Zusammenfassungen zu einem Thema vollständig und ohne überholte Verfahren liefert und Änderungen nur auf ausdrückliche Frage chronologisch darstellt.
 
 Der Stand mit nur den fünf Materialberichten und sechs Fragen ist als Git-Tag `dataset-v1` markiert.
 

@@ -1,6 +1,6 @@
 # Testfragen und Antwortentwürfe
 
-**Status:** Fragen 1–6 und ihre Antwortentwürfe wurden mit dem Nutzer einzeln geprüft (Stand `dataset-v1`). Fragen 7–10 zur Fahrzeugausleihe wurden vom Nutzer durchgesehen und als passend bestätigt. Fragen 11–13 zu Erfahrungsberichten folgen einem mit dem Nutzer abgestimmten Entwurf; der endgültige Wortlaut ist noch durchzusehen. Vor einem Modellvergleich sollen sie nach Abschluss der weiteren Testdatensatz-Arbeit eingefroren werden.
+**Status:** Fragen 1–6 und ihre Antwortentwürfe wurden mit dem Nutzer einzeln geprüft (Stand `dataset-v1`). Fragen 7–10 zur Fahrzeugausleihe wurden vom Nutzer durchgesehen und als passend bestätigt. Fragen 11–13 zu Erfahrungsberichten folgen einem mit dem Nutzer abgestimmten Entwurf; der endgültige Wortlaut ist noch durchzusehen. Fragen 14–17 (Zusammenfassungen und Änderungsverlauf) sind Agentenentwürfe nach Vorgabe des Nutzers und noch zu prüfen. Vor einem Modellvergleich sollen sie nach Abschluss der weiteren Testdatensatz-Arbeit eingefroren werden.
 **Datensatz:** Die dreizehn synthetischen Markdown-AARs in diesem Ordner (fünf zur Materialrückgabe, fünf zur Fahrzeugausleihe, drei Erfahrungsberichte zur Winterkleidung).
 **Zweck:** Prüfen, ob ein System direkte Belege findet, Widersprüche und Ergänzungen unterscheidet, den passenden Kontext berücksichtigt und bei fehlender Evidenz nicht rät.
 
@@ -280,6 +280,102 @@ Quellen werden in den Antwortentwürfen mit Titel und Datum angegeben, weil ein 
 - Erfindet weder Temperaturgrenzen noch Marken.
 - Darf knapp auf die belegten Erfahrungen zu Jacken verweisen, ohne sie als Antwort auf diese Frage auszugeben.
 
+## Frage 14 – Zusammenfassung eines Themas mit Verfahren
+
+**Frage**
+
+> Fasse alles zusammen, was die Berichte zur Fahrzeugausleihe sagen.
+
+**Erwartete Belege**
+
+Alle fünf Fahrzeugberichte (12.04.2023, 08.01.2024, 05.11.2024, 18.03.2025, 15.09.2025).
+
+**Checkliste der Kernaussagen**
+
+- Reservierung mindestens zwei Werktage vorher bei der Fahrbereitschaft, mit Datum, voraussichtlicher Rückgabezeit und Fahrtziel – „Reservierung von Fahrzeugen“ (08.01.2024).
+- Rückgabe durch die ausleihende Person: Schlüssel bei der Fahrbereitschaft abgeben, Kilometerstand ins Fahrtenbuch – „Rückgabe von Dienstfahrzeugen“ (12.04.2023).
+- Tankstand bei der Rückgabe vermerken, die Fahrbereitschaft tankt; Kilometerstand und Fahrtzweck in getrennten Feldern – „Erfahrungen mit dem Fahrtenbuch-Formular“ (18.03.2025).
+- Schäden vor Fahrtantritt und bei Rückgabe mit Kennzeichen und Datum im Schadensformular erfassen, Formular mit dem Schlüssel abgeben; aus einem Schaden allein keine persönliche Verantwortung – „Erfassung von Fahrzeugschäden“ (05.11.2024).
+- Bei gemeinsamer Nutzung in mehrtägigen Seminaren bleibt das Fahrzeug der ausleihenden Person zugeordnet; sie gibt es zurück und bestätigt die Rückgabe – „Fahrzeugnutzung bei mehrtägigen Seminaren“ (15.09.2025).
+
+**Woran eine gute Antwort erkennbar ist**
+
+- Deckt alle Punkte der Checkliste ab.
+- Nennt nur den aktuellen Stand zur Tankregel; „vollgetankt zurückgeben“ erscheint nicht.
+- Übernimmt nichts aus den Material- oder Kleidungsberichten.
+
+## Frage 15 – Zusammenfassung von Erfahrungen
+
+**Frage**
+
+> Gib mir eine Zusammenfassung der Erfahrungen mit Winter-Außenseminaren.
+
+**Erwartete Belege**
+
+Alle drei Erfahrungsberichte zur Winterkleidung (15.02.2023, 25.01.2024, 10.12.2025).
+
+**Checkliste der Kernaussagen**
+
+- Mehrere dünne Schichten haben sich beim Gehen bewährt; eine dicke Daunenjacke war dabei meist zu warm – „Kleidung bei mehrtägigen Winter-Außenseminaren“ (15.02.2023).
+- Zwei Paar Handschuhe zum Wechseln waren hilfreich – ebenda.
+- Bei langen Wartezeiten im Freien war eine Daunenjacke unverzichtbar; Schichten allein reichten den meisten nicht – „Wartezeiten im Freien bei Winterseminaren“ (25.01.2024).
+- Wollsocken besser als Baumwollsocken, Ersatzsocken häufig gebraucht – „Ausrüstung beim Winter-Außenseminar“ (10.12.2025).
+- Bei Jacken waren die Teilnehmenden uneinig – ebenda.
+- Vorgabe: Eine wasserdichte Überjacke ist für alle vorgeschrieben – ebenda.
+
+**Woran eine gute Antwort erkennbar ist**
+
+- Deckt alle Punkte der Checkliste ab.
+- Stellt die abweichenden Erfahrungen zur Daunenjacke nebeneinander, jeweils mit Titel und Datum, ohne Priorität nach Datum.
+- Trennt die Vorgabe zur Überjacke erkennbar von den Erfahrungen.
+
+## Frage 16 – Themenübergreifende Zusammenfassung
+
+**Frage**
+
+> Fasse zusammen, was bei mehrtägigen Seminaren zu beachten ist.
+
+**Erwartete Belege**
+
+- [AAR-2025-01-20-shared-set-returns.md](./AAR-2025-01-20-shared-set-returns.md)
+- [AAR-2025-09-15-vehicles-multi-day-seminars.md](./AAR-2025-09-15-vehicles-multi-day-seminars.md)
+- Die drei Erfahrungsberichte zur Winterkleidung (beziehen sich auf mehrtägige Außenseminare)
+- Ergänzend möglich: allgemeine Berichte zu fehlendem Material, Schäden oder Fahrzeugrückgabe
+
+**Checkliste der Kernaussagen**
+
+- Gemeinsam genutzte Materialsets: Jede Person bestätigt die von ihr genutzten Bestandteile auf der persönlichen Liste, die Gruppenvertretung reicht zusätzlich eine Gesamtübersicht ein – „Rückgabe gemeinsamer Sets im Seminarbetrieb“ (20.01.2025).
+- Gemeinsam genutzte Fahrzeuge bleiben der ausleihenden Person zugeordnet; sie gibt sie zurück und bestätigt die Rückgabe – „Fahrzeugnutzung bei mehrtägigen Seminaren“ (15.09.2025).
+- Bei Winter-Außenseminaren: Erfahrungen zur Kleidung mit abweichenden Sichtweisen zur Daunenjacke und vorgeschriebener wasserdichter Überjacke (drei Kleidungsberichte).
+
+**Woran eine gute Antwort erkennbar ist**
+
+- Ordnet Material, Fahrzeuge und Kleidung jeweils richtig zu und vermischt die Verfahren nicht.
+- Nennt beim Material nur den aktuellen Stand, nicht das Verfahren vom 02.03.2024.
+- Übernimmt nicht die Regel für eintägige Einführungsveranstaltungen.
+
+## Frage 17 – Ausdrückliche Frage nach Änderungen
+
+**Frage**
+
+> Wie hat sich das Verfahren zur Rückgabe gemeinsam genutzter Materialsets bei mehrtägigen Seminaren über die Zeit verändert?
+
+**Erwartete Belege**
+
+- [AAR-2022-09-14-material-return.md](./AAR-2022-09-14-material-return.md)
+- [AAR-2024-03-02-multi-day-seminar-returns.md](./AAR-2024-03-02-multi-day-seminar-returns.md)
+- [AAR-2025-01-20-shared-set-returns.md](./AAR-2025-01-20-shared-set-returns.md)
+
+**Antwortentwurf**
+
+> Laut „Rückgabe ausgegebener Materialsets“ (14.09.2022) wurden auch gemeinsam genutzte Sets einer Person zugeordnet, die die Rückgabe bestätigte; dieser Bericht bezieht sich nicht ausdrücklich auf mehrtägige Seminare. Laut „Materialrückgabe bei mehrtägigen Seminaren“ (02.03.2024) prüfte die Gruppenvertretung das Set und führte eine gemeinsame Rückgabeliste; eine persönliche Bestätigung war nicht vorgesehen. Laut „Rückgabe gemeinsamer Sets im Seminarbetrieb“ (20.01.2025) bestätigt jede Person die von ihr genutzten Bestandteile, und die Gruppenvertretung reicht zusätzlich eine Gesamtübersicht ein, weil Bestandteile zuvor nicht immer eindeutig zuzuordnen waren.
+
+**Woran eine gute Antwort erkennbar ist**
+
+- Nennt die Stände in zeitlicher Reihenfolge mit Titel und Datum.
+- Gibt den Grund für die jüngste Änderung nur so wieder, wie er im Bericht steht, und erfindet keine weiteren Gründe.
+- Weist darauf hin, dass der Bericht von 2022 nicht ausdrücklich mehrtägige Seminare betrifft, oder behauptet zumindest nichts anderes.
+
 ## Vorgeschlagene Auswertung
 
 Pro Frage getrennt festhalten:
@@ -289,5 +385,6 @@ Pro Frage getrennt festhalten:
 3. Wurden Widerspruch, Ergänzung und Kontext richtig behandelt?
 4. Wurde unbelegte Information vermieden?
 5. Ist die Antwort knapp genug, um die konkrete Frage direkt zu beantworten?
+6. Bei Zusammenfassungen: Welcher Anteil der Checkliste ist abgedeckt?
 
 Vor einem Modellvergleich sollten Frageformulierungen, erwartete Belege und Antwortentwürfe geprüft und danach eingefroren werden. Kleine Modellantworten lassen sich dann anhand derselben Kriterien vergleichen.
