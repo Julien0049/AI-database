@@ -1,7 +1,7 @@
 # Testfragen und Antwortentwürfe
 
-**Status:** Fragen 1–6 und ihre Antwortentwürfe wurden mit dem Nutzer einzeln geprüft (Stand `dataset-v1`). Fragen 7–10 zur Fahrzeugausleihe wurden vom Nutzer durchgesehen und als passend bestätigt. Vor einem Modellvergleich sollen sie nach Abschluss der weiteren Testdatensatz-Arbeit eingefroren werden.
-**Datensatz:** Die zehn synthetischen Markdown-AARs in diesem Ordner (fünf zur Materialrückgabe, fünf zur Fahrzeugausleihe).
+**Status:** Fragen 1–6 und ihre Antwortentwürfe wurden mit dem Nutzer einzeln geprüft (Stand `dataset-v1`). Fragen 7–10 zur Fahrzeugausleihe wurden vom Nutzer durchgesehen und als passend bestätigt. Fragen 11–13 zu Erfahrungsberichten folgen einem mit dem Nutzer abgestimmten Entwurf; der endgültige Wortlaut ist noch durchzusehen. Vor einem Modellvergleich sollen sie nach Abschluss der weiteren Testdatensatz-Arbeit eingefroren werden.
+**Datensatz:** Die dreizehn synthetischen Markdown-AARs in diesem Ordner (fünf zur Materialrückgabe, fünf zur Fahrzeugausleihe, drei Erfahrungsberichte zur Winterkleidung).
 **Zweck:** Prüfen, ob ein System direkte Belege findet, Widersprüche und Ergänzungen unterscheidet, den passenden Kontext berücksichtigt und bei fehlender Evidenz nicht rät.
 
 Die Zielantworten sind bewusst knapp und auf den geschilderten Anwendungsfall ausgerichtet. Die Hinweise zur Bewertung sind für die Auswertung gedacht und sollen nicht zwingend in der Nutzerantwort erscheinen. Bei Konfliktfällen kann das System den älteren Widerspruch intern erkennen und dafür bewertet werden, während die Nutzerantwort nur das passende Verfahren und dessen stützende Quelle(n) nennt.
@@ -214,6 +214,71 @@ Die Zielantworten sind bewusst knapp und auf den geschilderten Anwendungsfall au
 
 - Beantwortet den belegten Teil.
 - Sagt offen, dass zu Kosten nichts belegt ist, und erfindet keinen Betrag.
+
+## Frage 11 – Erfahrungen zusammenführen, Abweichung benennen
+
+**Frage**
+
+> Welche Kleidung hat sich bei mehrtägigen Winter-Außenseminaren bewährt?
+
+**Erwartete Belege**
+
+- [AAR-2023-02-15-winter-clothing-layers.md](./AAR-2023-02-15-winter-clothing-layers.md)
+- [AAR-2024-01-25-winter-waiting-times.md](./AAR-2024-01-25-winter-waiting-times.md)
+- [AAR-2025-12-10-winter-socks-and-jackets.md](./AAR-2025-12-10-winter-socks-and-jackets.md)
+
+**Antwortentwurf**
+
+> Bewährt haben sich mehrere dünne Kleidungsschichten und zwei Paar Handschuhe zum Wechseln (15.02.2023) sowie Wollsocken statt Baumwollsocken mit Ersatzsocken (10.12.2025). Eine wasserdichte Überjacke ist laut Bericht vom 10.12.2025 für alle Teilnehmenden vorgeschrieben. Bei der Daunenjacke gehen die Erfahrungen auseinander: beim Gehen meist zu warm (15.02.2023), bei langen Wartezeiten im Freien unverzichtbar (25.01.2024); zuletzt waren die Teilnehmenden uneinig (10.12.2025).
+> **Quellen:** AAR 2023-02-15, AAR 2024-01-25, AAR 2025-12-10.
+
+**Woran eine gute Antwort erkennbar ist**
+
+- Führt die ergänzenden Erfahrungen zusammen.
+- Kennzeichnet die wasserdichte Überjacke als Vorgabe, nicht als bloße Erfahrung.
+- Nennt bei der Daunenjacke beide Sichtweisen mit Quelle und Datum und weist auf die Abweichung hin.
+
+## Frage 12 – Abweichende Erfahrungen ohne Priorität nach Datum
+
+**Frage**
+
+> Brauche ich bei einem mehrtägigen Winter-Außenseminar eine dicke Daunenjacke?
+
+**Erwartete Belege**
+
+- [AAR-2023-02-15-winter-clothing-layers.md](./AAR-2023-02-15-winter-clothing-layers.md)
+- [AAR-2024-01-25-winter-waiting-times.md](./AAR-2024-01-25-winter-waiting-times.md)
+- [AAR-2025-12-10-winter-socks-and-jackets.md](./AAR-2025-12-10-winter-socks-and-jackets.md)
+
+**Antwortentwurf**
+
+> Die Berichte gehen auseinander. Beim Gehen fanden die meisten eine dicke Daunenjacke zu warm und haben darin geschwitzt (15.02.2023). Bei langen Wartezeiten im Freien war sie nach Erfahrung der meisten unverzichtbar (25.01.2024). Zuletzt waren die Teilnehmenden uneinig (10.12.2025). Eine klare Empfehlung lässt sich daraus nicht ableiten.
+> **Quellen:** AAR 2023-02-15, AAR 2024-01-25, AAR 2025-12-10.
+
+**Woran eine gute Antwort erkennbar ist**
+
+- Behandelt den jüngeren Bericht nicht als „aktuellen Stand“, der ältere Erfahrungen ersetzt.
+- Nennt die unterschiedlichen Situationen (Gehen gegenüber langen Wartezeiten), soweit die Berichte sie beschreiben.
+- Gibt keine eigene Empfehlung, die über die Berichte hinausgeht.
+
+## Frage 13 – Nicht belegtes Detail
+
+**Frage**
+
+> Welche Marke wird für die Winterjacke empfohlen, und ab welcher Temperatur sollte man sie tragen?
+
+**Erwartete Belege**
+
+- Keine; die Erfahrungsberichte zur Winterkleidung nennen weder Temperaturen noch Marken.
+
+**Antwortentwurf**
+
+> Dazu enthalten die Berichte keine Angaben.
+
+**Woran eine gute Antwort erkennbar ist**
+
+- Erfindet weder Temperaturgrenzen noch Marken.
+- Darf knapp auf die belegten Erfahrungen zu Jacken verweisen, ohne sie als Antwort auf diese Frage auszugeben.
 
 ## Vorgeschlagene Auswertung
 
