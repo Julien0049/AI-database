@@ -17,7 +17,7 @@ Der PoC darf zur Laufzeit Internet für die Modell-API nutzen; Dokumente, Index 
 3. Bei Regeln und Verfahren mit vergleichbarem Kontext die jüngste passende Aussage für die praktische Antwort verwenden. Bei Erfahrungen und Einschätzungen unterschiedliche Sichtweisen mit Quelle und Datum nebeneinander nennen und darauf hinweisen, dass die Berichte auseinandergehen. Die Nutzerantwort soll ältere Verfahren nicht als gleichrangige Alternativen aufzählen; sie nennt knapp die Quellen, die die Antwort stützen. Die Erkennung älterer Widersprüche wird separat in der Evaluation gemessen.
 4. Eine zeitliche Priorität nur behaupten, wenn Zeitraum, Thema und Anwendungsbereich vergleichbar sind. Bei fehlender oder mehrdeutiger Vergleichbarkeit die Unsicherheit benennen.
 5. Wenn die Quellen die Frage nicht ausreichend beantworten, das klar sagen und keine Lücken füllen.
-6. Die Antwort steht im Vordergrund; kompakte Quellenhinweise mit Dokumentname und Datum folgen am Ende.
+6. Die Antwort steht im Vordergrund; kompakte Quellenhinweise mit Titel und Datum des Berichts folgen am Ende. Ein Datum allein ist bei vielen Berichten pro Tag nicht eindeutig.
 
 Diese Regeln beschreiben Quellenverhalten, nicht die Wahrheit oder Gültigkeit einer Aussage. Ein neueres fiktives Dokument beweist nicht, dass sein Inhalt real zutrifft. Die Testantwort soll die neueste passende Quelle verwenden, sie aber nicht als formell „gültig“ oder verbindlich bezeichnen, wenn die Quellen das nicht belegen.
 
@@ -25,7 +25,7 @@ Diese Regeln beschreiben Quellenverhalten, nicht die Wahrheit oder Gültigkeit e
 
 1. **Dokumentenordner:** Markdown- und Textdateien liegen lokal in einem festgelegten Eingabeordner. Ein bewusst gestarteter Import liest neue oder geänderte Dateien ein.
 2. **Lokaler Dokumentenspeicher:** Eine kleine SQLite-Datenbank kann Dokumentmetadaten und Textpassagen speichern. Für Volltextsuche bietet SQLite FTS5; bei zehn kurzen Dokumenten ist zunächst keine separate Vektordatenbank nötig.
-3. **Passagen und Provenienz:** Texte werden anhand von Überschriften in sinnvolle Passagen aufgeteilt. Zu jeder Passage bleiben mindestens Dateiname, Dokumentdatum, Abschnitt und stabiler Quellenbezeichner erhalten. Das Dokumentdatum wird aus dem Dokumentinhalt bzw. expliziten Metadaten gelesen, nicht aus dem Änderungsdatum der Datei abgeleitet.
+3. **Passagen und Provenienz:** Texte werden anhand von Überschriften in sinnvolle Passagen aufgeteilt. Zu jeder Passage bleiben mindestens Dateiname, Berichtstitel, Dokumentdatum, Abschnitt und stabiler Quellenbezeichner erhalten. Das Dokumentdatum wird aus dem Dokumentinhalt bzw. expliziten Metadaten gelesen, nicht aus dem Änderungsdatum der Datei abgeleitet.
 4. **Suche:** Als einfache Baseline dient Volltextsuche. Als Vergleich oder Erweiterung kann lokale semantische Suche über Embeddings hinzukommen. Eine kombinierte Suche ist ein möglicher nächster Schritt, wenn die Baseline relevante Belege verfehlt.
 5. **Antwortgenerierung:** Die lokale Anwendung übergibt dem Frontier-Modell über die API ausschließlich die gefundenen Passagen; das Modell erhält keinen Websuche-Zugriff. Später kann hier ein lokales, mittelgroßes Modell eingesetzt werden. Quellenbezeichner werden von der Anwendung verwaltet und aus geprüften Metadaten in der Antwort dargestellt, nicht frei vom Modell erfunden.
 6. **Oberfläche:** Eine einfache Browser-Chatoberfläche wird lokal bereitgestellt. Benutzeroberfläche, Schriftarten und Bibliotheken dürfen zur Laufzeit keine externen Ressourcen laden.

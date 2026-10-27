@@ -4,7 +4,7 @@
 **Datensatz:** Die dreizehn synthetischen Markdown-AARs in diesem Ordner (fünf zur Materialrückgabe, fünf zur Fahrzeugausleihe, drei Erfahrungsberichte zur Winterkleidung).
 **Zweck:** Prüfen, ob ein System direkte Belege findet, Widersprüche und Ergänzungen unterscheidet, den passenden Kontext berücksichtigt und bei fehlender Evidenz nicht rät.
 
-Die Zielantworten sind bewusst knapp und auf den geschilderten Anwendungsfall ausgerichtet. Die Hinweise zur Bewertung sind für die Auswertung gedacht und sollen nicht zwingend in der Nutzerantwort erscheinen. Bei Konfliktfällen kann das System den älteren Widerspruch intern erkennen und dafür bewertet werden, während die Nutzerantwort nur das passende Verfahren und dessen stützende Quelle(n) nennt.
+Quellen werden in den Antwortentwürfen mit Titel und Datum angegeben, weil ein Datum allein bei vielen Berichten pro Tag nicht eindeutig ist. Die Zielantworten sind bewusst knapp und auf den geschilderten Anwendungsfall ausgerichtet. Die Hinweise zur Bewertung sind für die Auswertung gedacht und sollen nicht zwingend in der Nutzerantwort erscheinen. Bei Konfliktfällen kann das System den älteren Widerspruch intern erkennen und dafür bewertet werden, während die Nutzerantwort nur das passende Verfahren und dessen stützende Quelle(n) nennt.
 
 ## Frage 1 – Widerspruch und neuester passender Stand
 
@@ -21,7 +21,7 @@ Die Zielantworten sind bewusst knapp und auf den geschilderten Anwendungsfall au
 **Geprüfter Antwortentwurf**
 
 > Jede teilnehmende Person bestätigt die Rückgabe der von ihr genutzten Bestandteile. Die Gruppenvertretung reicht zusätzlich eine Gesamtübersicht des gemeinsam genutzten Sets ein.
-> **Quelle:** AAR 3 (20.01.2025).
+> **Quelle:** „Rückgabe gemeinsamer Sets im Seminarbetrieb“ (20.01.2025).
 
 **Woran eine gute Antwort erkennbar ist**
 
@@ -46,7 +46,7 @@ Die Zielantworten sind bewusst knapp und auf den geschilderten Anwendungsfall au
 **Geprüfter Antwortentwurf**
 
 > Jede teilnehmende Person bestätigt die Rückgabe der von ihr genutzten Bestandteile; die Gruppenvertretung reicht zusätzlich die Gesamtübersicht ein. Den fehlenden Adapter mit Set-Kennung und Entdeckungsdatum im Abweichungsprotokoll erfassen und noch am selben Tag der Materialverwaltung melden.
-> **Quellen:** AAR 3 (20.01.2025), AAR 4 (04.02.2025).
+> **Quellen:** „Rückgabe gemeinsamer Sets im Seminarbetrieb“ (20.01.2025); „Umgang mit fehlenden Bestandteilen“ (04.02.2025).
 
 **Woran eine gute Antwort erkennbar ist**
 
@@ -146,7 +146,7 @@ Die Zielantworten sind bewusst knapp und auf den geschilderten Anwendungsfall au
 **Antwortentwurf**
 
 > Nein. Bei der Rückgabe wird der Tankstand im Fahrtenbuch vermerkt; das Betanken übernimmt anschließend die Fahrbereitschaft.
-> **Quelle:** AAR 2025-03-18 (18.03.2025).
+> **Quelle:** „Erfahrungen mit dem Fahrtenbuch-Formular“ (18.03.2025).
 
 **Woran eine gute Antwort erkennbar ist**
 
@@ -168,7 +168,7 @@ Die Zielantworten sind bewusst knapp und auf den geschilderten Anwendungsfall au
 **Antwortentwurf**
 
 > Die Person, die das Fahrzeug ausgeliehen hat. Das Fahrzeug bleibt ihr auch bei gemeinsamer Nutzung zugeordnet; sie gibt es zurück und bestätigt die Rückgabe gegenüber der Fahrbereitschaft.
-> **Quelle:** AAR 2025-09-15 (15.09.2025).
+> **Quelle:** „Fahrzeugnutzung bei mehrtägigen Seminaren“ (15.09.2025).
 
 **Woran eine gute Antwort erkennbar ist**
 
@@ -188,7 +188,7 @@ Die Zielantworten sind bewusst knapp und auf den geschilderten Anwendungsfall au
 **Antwortentwurf**
 
 > Den Schaden mit Kennzeichen und Datum im Schadensformular erfassen und das Formular mit dem Fahrzeugschlüssel bei der Fahrbereitschaft abgeben. Wer verantwortlich ist, lässt sich aus den Berichten nicht feststellen; aus dem Schaden allein wird keine persönliche Verantwortung abgeleitet.
-> **Quelle:** AAR 2024-11-05 (05.11.2024).
+> **Quelle:** „Erfassung von Fahrzeugschäden“ (05.11.2024).
 
 **Woran eine gute Antwort erkennbar ist**
 
@@ -208,7 +208,7 @@ Die Zielantworten sind bewusst knapp und auf den geschilderten Anwendungsfall au
 **Antwortentwurf**
 
 > Mindestens zwei Werktage vor der geplanten Fahrt bei der Fahrbereitschaft. Zu Kosten der Ausleihe enthalten die Berichte keine Angaben.
-> **Quelle:** AAR 2024-01-08 (08.01.2024).
+> **Quelle:** „Reservierung von Fahrzeugen“ (08.01.2024).
 
 **Woran eine gute Antwort erkennbar ist**
 
@@ -230,7 +230,7 @@ Die Zielantworten sind bewusst knapp und auf den geschilderten Anwendungsfall au
 **Antwortentwurf**
 
 > Bewährt haben sich mehrere dünne Kleidungsschichten und zwei Paar Handschuhe zum Wechseln (15.02.2023) sowie Wollsocken statt Baumwollsocken mit Ersatzsocken (10.12.2025). Eine wasserdichte Überjacke ist laut Bericht vom 10.12.2025 für alle Teilnehmenden vorgeschrieben. Bei der Daunenjacke gehen die Erfahrungen auseinander: beim Gehen meist zu warm (15.02.2023), bei langen Wartezeiten im Freien unverzichtbar (25.01.2024); zuletzt waren die Teilnehmenden uneinig (10.12.2025).
-> **Quellen:** AAR 2023-02-15, AAR 2024-01-25, AAR 2025-12-10.
+> **Quellen:** „Kleidung bei mehrtägigen Winter-Außenseminaren“ (15.02.2023); „Wartezeiten im Freien bei Winterseminaren“ (25.01.2024); „Ausrüstung beim Winter-Außenseminar“ (10.12.2025).
 
 **Woran eine gute Antwort erkennbar ist**
 
@@ -253,7 +253,7 @@ Die Zielantworten sind bewusst knapp und auf den geschilderten Anwendungsfall au
 **Antwortentwurf**
 
 > Die Berichte gehen auseinander. Beim Gehen fanden die meisten eine dicke Daunenjacke zu warm und haben darin geschwitzt (15.02.2023). Bei langen Wartezeiten im Freien war sie nach Erfahrung der meisten unverzichtbar (25.01.2024). Zuletzt waren die Teilnehmenden uneinig (10.12.2025). Eine klare Empfehlung lässt sich daraus nicht ableiten.
-> **Quellen:** AAR 2023-02-15, AAR 2024-01-25, AAR 2025-12-10.
+> **Quellen:** „Kleidung bei mehrtägigen Winter-Außenseminaren“ (15.02.2023); „Wartezeiten im Freien bei Winterseminaren“ (25.01.2024); „Ausrüstung beim Winter-Außenseminar“ (10.12.2025).
 
 **Woran eine gute Antwort erkennbar ist**
 
