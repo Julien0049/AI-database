@@ -1,7 +1,7 @@
 # Testfragen und Antwortentwürfe
 
-**Status:** Fragen 1–6 und ihre Antwortentwürfe wurden mit dem Nutzer einzeln geprüft (Stand `dataset-v1`). Fragen 7–10 zur Fahrzeugausleihe wurden vom Nutzer durchgesehen und als passend bestätigt. Fragen 11–13 zu Erfahrungsberichten folgen einem mit dem Nutzer abgestimmten Entwurf; der endgültige Wortlaut ist noch durchzusehen. Fragen 14–17 (Zusammenfassungen und Änderungsverlauf) sind Agentenentwürfe nach Vorgabe des Nutzers; vom Nutzer durchgesehen und vorläufig bestätigt. Vor einem Modellvergleich sollen sie nach Abschluss der weiteren Testdatensatz-Arbeit eingefroren werden.
-**Datensatz:** Die dreizehn synthetischen Markdown-AARs in diesem Ordner (fünf zur Materialrückgabe, fünf zur Fahrzeugausleihe, drei Erfahrungsberichte zur Winterkleidung).
+**Status:** Fragen 1–6 und ihre Antwortentwürfe wurden mit dem Nutzer einzeln geprüft (Stand `dataset-v1`). Fragen 7–10 zur Fahrzeugausleihe wurden vom Nutzer durchgesehen und als passend bestätigt. Fragen 11–13 zu Erfahrungsberichten folgen einem mit dem Nutzer abgestimmten Entwurf; der endgültige Wortlaut ist noch durchzusehen. Fragen 14–17 (Zusammenfassungen und Änderungsverlauf) sind Agentenentwürfe nach Vorgabe des Nutzers; vom Nutzer durchgesehen und vorläufig bestätigt. Fragen 18–19 (Datumstest) sind Agentenentwürfe, vom Nutzer noch zu prüfen. Vor einem Modellvergleich sollen sie nach Abschluss der weiteren Testdatensatz-Arbeit eingefroren werden.
+**Datensatz:** Die fünfzehn synthetischen Markdown-AARs in diesem Ordner (fünf zur Materialrückgabe, fünf zur Fahrzeugausleihe, drei Erfahrungsberichte zur Winterkleidung, zwei zur Schlüsselrückgabe für den Datumstest).
 **Zweck:** Prüfen, ob ein System direkte Belege findet, Widersprüche und Ergänzungen unterscheidet, den passenden Kontext berücksichtigt und bei fehlender Evidenz nicht rät.
 
 Quellen werden in den Antwortentwürfen mit Titel und Datum angegeben, weil ein Datum allein bei vielen Berichten pro Tag nicht eindeutig ist. Die Zielantworten sind bewusst knapp und auf den geschilderten Anwendungsfall ausgerichtet. Die Hinweise zur Bewertung sind für die Auswertung gedacht und sollen nicht zwingend in der Nutzerantwort erscheinen. Bei Konfliktfällen kann das System den älteren Widerspruch intern erkennen und dafür bewertet werden, während die Nutzerantwort nur das passende Verfahren und dessen stützende Quelle(n) nennt.
@@ -376,6 +376,47 @@ Alle drei Erfahrungsberichte zur Winterkleidung (15.02.2023, 25.01.2024, 10.12.2
 - Der Stand von 2022 darf fehlen, weil der Bericht mehrtägige Seminare nicht ausdrücklich nennt (Nutzerentscheidung nach Lauf v8). Wird er genannt, gilt das nächste Kriterium.
 - Gibt den Grund für die jüngste Änderung nur so wieder, wie er im Bericht steht, und erfindet keine weiteren Gründe.
 - Wenn der Bericht von 2022 genannt wird: Weist darauf hin, dass er nicht ausdrücklich mehrtägige Seminare betrifft, oder behauptet zumindest nichts anderes.
+
+## Frage 18 – Widerspruch, nur über das Datum auflösbar
+
+**Frage**
+
+> Wo gebe ich nach einem Abendseminar den Raumschlüssel ab?
+
+**Erwartete Belege**
+
+- [AAR-evening-keys-a.md](./AAR-evening-keys-a.md) (14.10.2025)
+- Älterer abweichender Stand: [AAR-evening-keys-b.md](./AAR-evening-keys-b.md) (03.04.2024)
+
+**Antwortentwurf**
+
+> Im Schlüsselkasten des Seminarbüros; die Seminarleitung trägt die Rückgabe in die Schlüsselliste ein.
+> **Quelle:** „Schlüsselrückgabe nach Abendseminaren“ (14.10.2025).
+
+**Woran eine gute Antwort erkennbar ist**
+
+- Folgt dem jüngeren Bericht und nennt die Pforte nicht als gleichrangige Alternative.
+- Testaufbau: Keiner der beiden Berichte deutet sprachlich an, welcher neuer ist (kein „künftig“, „jetzt“, „geändert“). Der neuere Bericht steht in der Sammlung vor dem älteren und hat die kleinere Kennung, damit Reihenfolge oder Kennung nicht auf die richtige Antwort führen.
+
+## Frage 19 – Änderung ohne genannten Grund
+
+**Frage**
+
+> Wie hat sich die Rückgabe der Raumschlüssel nach Abendseminaren über die Zeit verändert?
+
+**Erwartete Belege**
+
+- [AAR-evening-keys-b.md](./AAR-evening-keys-b.md) (03.04.2024)
+- [AAR-evening-keys-a.md](./AAR-evening-keys-a.md) (14.10.2025)
+
+**Antwortentwurf**
+
+> Laut „Raumschlüssel bei Abendseminaren“ (03.04.2024) wurden die Schlüssel an der Pforte abgegeben, die die Rückgabe in die Schlüsselliste eintrug. Laut „Schlüsselrückgabe nach Abendseminaren“ (14.10.2025) werden sie im Schlüsselkasten des Seminarbüros abgelegt, und die Seminarleitung trägt die Rückgabe ein. Einen Grund für die Änderung nennen die Berichte nicht.
+
+**Woran eine gute Antwort erkennbar ist**
+
+- Nennt die Stände in richtiger zeitlicher Reihenfolge, obwohl der ältere Bericht in der Sammlung hinten steht.
+- Erfindet keinen Grund für die Änderung.
 
 ## Vorgeschlagene Auswertung
 
