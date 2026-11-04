@@ -2,3 +2,9 @@ Whenever I get a task in the military, it feels as if I would be the first one g
 19.10.2026 Ideen aus Gemini uebernommen. Wichtig,: Offline, skalierbar, antworten aus mehreren quellen moeglich, erkennen, wenn infos outdated sind, fuer spaeter: verschiedene dokumenten type muessen moeglich sein und auch ohne klare struktur
 26.10. erst schweíerige tests mit einem frontier ai model durchfuehren, um die fahigkeiten zu und gute losungen zu erzeugen und dann andere modelle dagegen testen.
 fuer die testmodelle langsam die schwierigkeit steigern, um zu erkennen, wodurch die fehler entstehen (Inhalt, format, form, etc)
+26.10. nach R mit Sue, nutzen eines frontier AI model just to do a Proof of Concept and leave the engineering for later. just show that it works and write it in the policy brief
+26.10. 5 aar mit 6 fragen getestet. kombi mehrere resourcen, updates, nicht vorhandene infos und single dokument infos
+26.10. weitere 5 aar zu anderem thema hinzugefügt und ahenliche fragen.
+kleine ungenauigkeiten, einmal fehlt das datum.
+wichtig, regeln o.ä. wird nur das neueste betrachtet, bei meinungen oder erfahrungen müssen alle genannt werden, um dem endanwender optionen zu geben (anzeigen von datum und titel der quelle)
+26.10 für große mengen, die zusammengefasst werden soll, muss ein anderer ansatz gewählt werden, da nicht alle quellen in den prompt passen. Für die reale welt, auf jeden fall wichtig.
