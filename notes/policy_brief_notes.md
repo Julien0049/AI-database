@@ -15,7 +15,10 @@ Laufend gepflegte Sammlung, gegliedert wie das spätere Policy Brief. Jeder Punk
 
 ## Vorgehen
 
-- **Daten:** Fiktive, harmlose Testberichte (Materialrückgabe, Fahrzeugausleihe, Winterkleidung, Schlüsselrückgabe), derzeit 15. Gezielt eingebaut: Widersprüche mit neuerem Stand, unterschiedliche Kontexte (eintägig/mehrtägig), abweichende Erfahrungen, nebenbei erwähnte Regeln, variierte und fehlende Metadaten.
+- **Daten:** Fiktive, harmlose Testberichte zu Verwaltungsabläufen, derzeit 35 (Ziel etwa 50). Vollständiger Katalog der eingebauten Testfälle: `data/synthetic_reports/README.md`. Gezielt eingebaute Fälle:
+  - *Inhalt:* Widersprüche mit neuerem Stand, auch ohne Kennzeichnung als Änderung und nur über das Datum auflösbar; unterschiedliche Kontexte (eintägig/mehrtägig); ergänzende Aussagen; abweichende Erfahrungen mit einer Vorgabe darin; Fragen ohne Antwort in den Berichten.
+  - *Störberichte für die Suche:* ähnliche Wörter in anderem Kontext (z. B. Fahrradgarage mit „Schlüssel“ und „Pforte“, Erste-Hilfe-Formular „HV-7“ als falsche Kennziffer); fremde Themen als Rauschen; geplant: mehrere Stände zu einem Thema, lange Berichte mit mehreren Themen.
+  - *Format und Metadaten:* fehlende Überschrift, Datum in verschiedenen Formaten und an verschiedenen Stellen (auch nur als Unterschrift), fehlendes Datum, nur Monat und Jahr, Ereignisdatum vor dem Berichtsdatum, fehlender oder abgekürzter Name, Dateinamen ohne Datum.
 - **Testfragen:** 19 Fragen mit erwarteten Belegen, Antwortentwürfen und Kriterien; die meisten vom Nutzer geprüft.
 - **Antwortregeln (bestätigte Anforderungen):** nur die Berichte als Quelle; bei Regeln gilt der jüngste vergleichbare Stand; bei Erfahrungen Sichtweisen nebeneinander; Lücken offen benennen; exakt und knapp; Quellen als Fußnoten mit Titel und Datum.
 - **Versuchsweise Entwicklung:** pro Version möglichst nur eine Änderung, ab v5 drei Durchläufe je Version, Bewertung je Antwort (erfüllt/teilweise).
