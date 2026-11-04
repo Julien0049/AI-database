@@ -1,0 +1,2591 @@
+{
+  "versuch": "v8 Zitatprüfung",
+  "modell": "google/gemini-2.5-pro",
+  "zeitpunkt": "2026-11-04T18:00:14",
+  "durchlaeufe": 3,
+  "dauer_s": 190,
+  "systemprompt": "Du beantwortest Fragen ausschließlich auf Grundlage der mitgelieferten Berichte.\nDie Berichte sind fiktive Testdaten. Jeder Bericht hat eine Kennung wie B1, B2.\n\nRegeln:\n1. Verwende nur Aussagen aus den Berichten. Ergänze nichts aus eigenem Wissen.\n2. Ergänzende Aussagen aus mehreren Berichten darfst du zu einer klaren Antwort zusammenführen.\n3. Bei Regeln und Verfahren: Wenn Berichte mit vergleichbarem Kontext sich widersprechen, bestimmt die jüngste passende Aussage die Antwort.\n   Nenne ältere abweichende Verfahren nicht als gleichrangige Alternativen.\n   Bei Erfahrungen und Einschätzungen (zum Beispiel, was sich bewährt hat): Gib unterschiedliche Sichtweisen nebeneinander wieder\n   und weise darauf hin, dass die Berichte auseinandergehen. Das Datum allein begründet hier keine Priorität.\n4. Wenn Berichte unterschiedliche Kontexte betreffen oder keine sichere Priorisierung zulassen, behaupte keine Priorität.\n5. Bezeichne keine Quelle als gültig oder verbindlich; die Berichte belegen das nicht.\n6. Wenn die Berichte die Frage nicht ausreichend beantworten, sag das offen und fülle keine Lücken.\n   Das gilt auch für jede Teilfrage: Wenn zu einem Teil der Frage keine Informationen vorliegen, schreibe ausdrücklich,\n   dass die Berichte dazu nichts sagen. Gib dann nicht stattdessen eine verwandte Aussage als Antwort aus.\n7. Antworte exakt und knapp: nur was zur Frage gehört, ohne Einleitung und ohne Wiederholungen.\n   Schreibe nicht, aus welchem Bericht eine Aussage stammt (zum Beispiel \"ein Bericht\", \"ein anderer Bericht\"); die Zuordnung wird automatisch als Fußnote ergänzt.\n   Hinweise, dass die Berichte auseinandergehen oder zu etwas nichts sagen, gehören weiterhin in die Antwort.\n\nFormat: Antworte nur mit JSON in dieser Form:\n{\"saetze\": [{\"text\": \"Ein Satz der Antwort.\", \"belege\": [{\"bericht\": \"B3\", \"zitat\": \"wörtliche Stelle aus B3\"}]}]}\n- Jeder Satz, der eine Aussage aus den Berichten enthält, bekommt mindestens einen Beleg.\n- Das Zitat ist eine kurze, wörtlich kopierte Stelle aus genau dem genannten Bericht (einige Wörter bis ein Satz).\n- Nenne nur Berichte, aus denen die Aussage des Satzes stammt.\n- Sätze, die eine Lücke benennen (die Berichte sagen dazu nichts), haben eine leere Beleg-Liste.\n- Nenne in den Sätzen keine Titel, Daten oder Kennungen; die Quellen werden automatisch ergänzt.",
+  "berichte": {
+    "B1": {
+      "datei": "AAR-2022-09-14-material-return.md",
+      "titel": "Rückgabe ausgegebener Materialsets",
+      "datum": "14.09.2022"
+    },
+    "B2": {
+      "datei": "AAR-2023-02-15-winter-clothing-layers.md",
+      "titel": "Kleidung bei mehrtägigen Winter-Außenseminaren",
+      "datum": "15.02.2023"
+    },
+    "B3": {
+      "datei": "AAR-2023-04-12-vehicle-returns.md",
+      "titel": "Rückgabe von Dienstfahrzeugen",
+      "datum": "12.04.2023"
+    },
+    "B4": {
+      "datei": "AAR-2024-01-08-vehicle-reservations.md",
+      "titel": "Reservierung von Fahrzeugen",
+      "datum": "08.01.2024"
+    },
+    "B5": {
+      "datei": "AAR-2024-01-25-winter-waiting-times.md",
+      "titel": "Wartezeiten im Freien bei Winterseminaren",
+      "datum": "25.01.2024"
+    },
+    "B6": {
+      "datei": "AAR-2024-03-02-multi-day-seminar-returns.md",
+      "titel": "Materialrückgabe bei mehrtägigen Seminaren",
+      "datum": "02.03.2024"
+    },
+    "B7": {
+      "datei": "AAR-2024-11-05-vehicle-damage.md",
+      "titel": "Erfassung von Fahrzeugschäden",
+      "datum": "05.11.2024"
+    },
+    "B8": {
+      "datei": "AAR-2025-01-20-shared-set-returns.md",
+      "titel": "Rückgabe gemeinsamer Sets im Seminarbetrieb",
+      "datum": "20.01.2025"
+    },
+    "B9": {
+      "datei": "AAR-2025-02-04-missing-items.md",
+      "titel": "Umgang mit fehlenden Bestandteilen",
+      "datum": "04.02.2025"
+    },
+    "B10": {
+      "datei": "AAR-2025-03-18-logbook-form.md",
+      "titel": "Erfahrungen mit dem Fahrtenbuch-Formular",
+      "datum": "18.03.2025"
+    },
+    "B11": {
+      "datei": "AAR-2025-06-10-one-day-seminars.md",
+      "titel": "Materialrückgabe nach eintägigen Einführungsveranstaltungen",
+      "datum": "10.06.2025"
+    },
+    "B12": {
+      "datei": "AAR-2025-09-15-vehicles-multi-day-seminars.md",
+      "titel": "Fahrzeugnutzung bei mehrtägigen Seminaren",
+      "datum": "15.09.2025"
+    },
+    "B13": {
+      "datei": "AAR-2025-12-10-winter-socks-and-jackets.md",
+      "titel": "Ausrüstung beim Winter-Außenseminar",
+      "datum": "10.12.2025"
+    }
+  },
+  "kennzahlen": {
+    "antworten": 51,
+    "nicht_auswertbar": 0,
+    "belege": {
+      "gültig": 208
+    },
+    "anteil_gueltig": 1.0,
+    "saetze_ohne_beleg": 15
+  },
+  "ergebnisse": [
+    {
+      "durchlauf": 1,
+      "nr": 1,
+      "frage": "Ich nehme an einem dreitägigen Seminar teil. Unsere Gruppe hat ein Materialset gemeinsam genutzt. Wie wird die Rückgabe bestätigt?",
+      "roh": "```json\n{\n  \"saetze\": [\n    {\n      \"text\": \"Jede teilnehmende Person bestätigt die Rückgabe der von ihr genutzten Bestandteile auf der persönlichen Liste.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B8\",\n          \"zitat\": \"Für kommende mehrtägige Seminare bestätigt deshalb jede teilnehmende Person die Rückgabe der von ihr genutzten Bestandteile auf der persönlichen Liste.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Die Gruppenvertretung reicht zusätzlich eine Gesamtübersicht des gemeinsam genutzten Sets ein.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B8\",\n          \"zitat\": \"Die Gruppenvertretung reicht zusätzlich eine Gesamtübersicht des gemeinsam genutzten Sets ein.\"\n        }\n      ]\n    }\n  ]\n}\n```",
+      "antwort": {
+        "saetze": [
+          {
+            "text": "Jede teilnehmende Person bestätigt die Rückgabe der von ihr genutzten Bestandteile auf der persönlichen Liste.",
+            "belege": [
+              {
+                "bericht": "B8",
+                "zitat": "Für kommende mehrtägige Seminare bestätigt deshalb jede teilnehmende Person die Rückgabe der von ihr genutzten Bestandteile auf der persönlichen Liste.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Die Gruppenvertretung reicht zusätzlich eine Gesamtübersicht des gemeinsam genutzten Sets ein.",
+            "belege": [
+              {
+                "bericht": "B8",
+                "zitat": "Die Gruppenvertretung reicht zusätzlich eine Gesamtübersicht des gemeinsam genutzten Sets ein.",
+                "status": "gültig"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "durchlauf": 1,
+      "nr": 2,
+      "frage": "Bei unserem dreitägigen Seminar fehlt nach der gemeinsamen Nutzung ein Adapter aus dem Materialset. Wie dokumentieren wir die Rückgabe und den fehlenden Adapter?",
+      "roh": "```json\n{\n  \"saetze\": [\n    {\n      \"text\": \"Jede teilnehmende Person bestätigt die Rückgabe der von ihr genutzten Bestandteile auf ihrer persönlichen Liste.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B8\",\n          \"zitat\": \"Für kommende mehrtägige Seminare bestätigt deshalb jede teilnehmende Person die Rückgabe der von ihr genutzten Bestandteile auf der persönlichen Liste.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Die Gruppenvertretung reicht zusätzlich eine Gesamtübersicht des gemeinsam genutzten Sets ein.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B8\",\n          \"zitat\": \"Die Gruppenvertretung reicht zusätzlich eine Gesamtübersicht des gemeinsam genutzten Sets ein.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Der fehlende Gegenstand wird mit der Set-Kennung, der Gegenstandsbezeichnung und dem Entdeckungsdatum in einem Abweichungsprotokoll erfasst.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B9\",\n          \"zitat\": \"Fehlende Gegenstände werden mit Set-Kennung, Gegenstandsbezeichnung und Entdeckungsdatum im Abweichungsprotokoll erfasst.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Die Materialverwaltung wird noch am selben Tag informiert.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B9\",\n          \"zitat\": \"Die Materialverwaltung wird noch am selben Tag informiert.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Aus dem Fehlen allein wird keine persönliche Verantwortung abgeleitet.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B9\",\n          \"zitat\": \"Aus dem Fehlen allein wird keine persönliche Verantwortung abgeleitet.\"\n        }\n      ]\n    }\n  ]\n}\n```",
+      "antwort": {
+        "saetze": [
+          {
+            "text": "Jede teilnehmende Person bestätigt die Rückgabe der von ihr genutzten Bestandteile auf ihrer persönlichen Liste.",
+            "belege": [
+              {
+                "bericht": "B8",
+                "zitat": "Für kommende mehrtägige Seminare bestätigt deshalb jede teilnehmende Person die Rückgabe der von ihr genutzten Bestandteile auf der persönlichen Liste.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Die Gruppenvertretung reicht zusätzlich eine Gesamtübersicht des gemeinsam genutzten Sets ein.",
+            "belege": [
+              {
+                "bericht": "B8",
+                "zitat": "Die Gruppenvertretung reicht zusätzlich eine Gesamtübersicht des gemeinsam genutzten Sets ein.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Der fehlende Gegenstand wird mit der Set-Kennung, der Gegenstandsbezeichnung und dem Entdeckungsdatum in einem Abweichungsprotokoll erfasst.",
+            "belege": [
+              {
+                "bericht": "B9",
+                "zitat": "Fehlende Gegenstände werden mit Set-Kennung, Gegenstandsbezeichnung und Entdeckungsdatum im Abweichungsprotokoll erfasst.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Die Materialverwaltung wird noch am selben Tag informiert.",
+            "belege": [
+              {
+                "bericht": "B9",
+                "zitat": "Die Materialverwaltung wird noch am selben Tag informiert.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Aus dem Fehlen allein wird keine persönliche Verantwortung abgeleitet.",
+            "belege": [
+              {
+                "bericht": "B9",
+                "zitat": "Aus dem Fehlen allein wird keine persönliche Verantwortung abgeleitet.",
+                "status": "gültig"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "durchlauf": 1,
+      "nr": 3,
+      "frage": "Ich nehme an einem eintägigen Einführungsseminar teil und habe Gegenstände auf meiner persönlichen Ausgabeliste. Wie bestätige ich die Rückgabe?",
+      "roh": "```json\n{\n  \"saetze\": [\n    {\n      \"text\": \"Zum Veranstaltungsende werden die ausgegebenen Gegenstände anhand der persönlichen Ausgabelisten zurückgenommen und von den Teilnehmenden bestätigt.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B11\",\n          \"zitat\": \"Zum Veranstaltungsende werden die ausgegebenen Gegenstände anhand dieser Listen zurückgenommen und von den Teilnehmenden bestätigt.\"\n        }\n      ]\n    }\n  ]\n}\n```",
+      "antwort": {
+        "saetze": [
+          {
+            "text": "Zum Veranstaltungsende werden die ausgegebenen Gegenstände anhand der persönlichen Ausgabelisten zurückgenommen und von den Teilnehmenden bestätigt.",
+            "belege": [
+              {
+                "bericht": "B11",
+                "zitat": "Zum Veranstaltungsende werden die ausgegebenen Gegenstände anhand dieser Listen zurückgenommen und von den Teilnehmenden bestätigt.",
+                "status": "gültig"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "durchlauf": 1,
+      "nr": 4,
+      "frage": "Ein einzeln nummeriertes Gerät wurde einer Person zugeordnet, aber während des Seminars gemeinsam genutzt. Wer bestätigt die Rückgabe?",
+      "roh": "```json\n{\n  \"saetze\": [\n    {\n      \"text\": \"Einzeln nummerierte Geräte werden von der Person zurückgegeben, der sie zugeordnet sind.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B1\",\n          \"zitat\": \"Einzeln nummerierte Geräte bleiben der jeweils eingetragenen Person zugeordnet und werden von dieser zurückgegeben.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Die zugeordnete Person bestätigt die Rückgabe.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B1\",\n          \"zitat\": \"Die zugeordnete Person bestätigt die Rückgabe der aufgeführten Gegenstände.\"\n        }\n      ]\n    }\n  ]\n}\n```",
+      "antwort": {
+        "saetze": [
+          {
+            "text": "Einzeln nummerierte Geräte werden von der Person zurückgegeben, der sie zugeordnet sind.",
+            "belege": [
+              {
+                "bericht": "B1",
+                "zitat": "Einzeln nummerierte Geräte bleiben der jeweils eingetragenen Person zugeordnet und werden von dieser zurückgegeben.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Die zugeordnete Person bestätigt die Rückgabe.",
+            "belege": [
+              {
+                "bericht": "B1",
+                "zitat": "Die zugeordnete Person bestätigt die Rückgabe der aufgeführten Gegenstände.",
+                "status": "gültig"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "durchlauf": 1,
+      "nr": 5,
+      "frage": "Ein Adapter fehlt, nachdem mehrere Gruppen das Set gemeinsam genutzt haben. Welche Person ist dafür verantwortlich?",
+      "roh": "```json\n{\n  \"saetze\": [\n    {\n      \"text\": \"Aus dem Fehlen eines Gegenstandes allein wird keine persönliche Verantwortung abgeleitet.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B9\",\n          \"zitat\": \"Aus dem Fehlen allein wird keine persönliche Verantwortung abgeleitet.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Fehlende Gegenstände werden in einem Abweichungsprotokoll erfasst und die Materialverwaltung wird darüber informiert.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B9\",\n          \"zitat\": \"Fehlende Gegenstände werden mit Set-Kennung, Gegenstandsbezeichnung und Entdeckungsdatum im Abweichungsprotokoll erfasst.\"\n        },\n        {\n          \"bericht\": \"B9\",\n          \"zitat\": \"Die Materialverwaltung wird noch am selben Tag informiert.\"\n        }\n      ]\n    }\n  ]\n}\n```",
+      "antwort": {
+        "saetze": [
+          {
+            "text": "Aus dem Fehlen eines Gegenstandes allein wird keine persönliche Verantwortung abgeleitet.",
+            "belege": [
+              {
+                "bericht": "B9",
+                "zitat": "Aus dem Fehlen allein wird keine persönliche Verantwortung abgeleitet.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Fehlende Gegenstände werden in einem Abweichungsprotokoll erfasst und die Materialverwaltung wird darüber informiert.",
+            "belege": [
+              {
+                "bericht": "B9",
+                "zitat": "Fehlende Gegenstände werden mit Set-Kennung, Gegenstandsbezeichnung und Entdeckungsdatum im Abweichungsprotokoll erfasst.",
+                "status": "gültig"
+              },
+              {
+                "bericht": "B9",
+                "zitat": "Die Materialverwaltung wird noch am selben Tag informiert.",
+                "status": "gültig"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "durchlauf": 1,
+      "nr": 6,
+      "frage": "Welches konkrete Formularfeld oder welche interne Kennziffer muss ich verwenden, wenn ich den fehlenden Adapter melde?",
+      "roh": "```json\n{\n  \"saetze\": [\n    {\n      \"text\": \"Fehlende Gegenstände werden im Abweichungsprotokoll mit der Set-Kennung, der Gegenstandsbezeichnung und dem Entdeckungsdatum erfasst.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B9\",\n          \"zitat\": \"Fehlende Gegenstände werden mit Set-Kennung, Gegenstandsbezeichnung und Entdeckungsdatum im Abweichungsprotokoll erfasst.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Die Berichte nennen keine Bezeichnungen für konkrete Formularfelder oder eine interne Kennziffer für den Adapter selbst.\",\n      \"belege\": []\n    }\n  ]\n}\n```",
+      "antwort": {
+        "saetze": [
+          {
+            "text": "Fehlende Gegenstände werden im Abweichungsprotokoll mit der Set-Kennung, der Gegenstandsbezeichnung und dem Entdeckungsdatum erfasst.",
+            "belege": [
+              {
+                "bericht": "B9",
+                "zitat": "Fehlende Gegenstände werden mit Set-Kennung, Gegenstandsbezeichnung und Entdeckungsdatum im Abweichungsprotokoll erfasst.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Die Berichte nennen keine Bezeichnungen für konkrete Formularfelder oder eine interne Kennziffer für den Adapter selbst.",
+            "belege": []
+          }
+        ]
+      }
+    },
+    {
+      "durchlauf": 1,
+      "nr": 7,
+      "frage": "Muss ich das Dienstfahrzeug vollgetankt zurückgeben?",
+      "roh": "```json\n{\n  \"saetze\": [\n    {\n      \"text\": \"Bei der Rückgabe wird der Tankstand vermerkt.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B10\",\n          \"zitat\": \"Bei der Rückgabe wird außerdem der Tankstand vermerkt\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Anschließend übernimmt die Fahrbereitschaft das Betanken.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B10\",\n          \"zitat\": \"das Betanken übernimmt anschließend die Fahrbereitschaft\"\n        }\n      ]\n    }\n  ]\n}\n```",
+      "antwort": {
+        "saetze": [
+          {
+            "text": "Bei der Rückgabe wird der Tankstand vermerkt.",
+            "belege": [
+              {
+                "bericht": "B10",
+                "zitat": "Bei der Rückgabe wird außerdem der Tankstand vermerkt",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Anschließend übernimmt die Fahrbereitschaft das Betanken.",
+            "belege": [
+              {
+                "bericht": "B10",
+                "zitat": "das Betanken übernimmt anschließend die Fahrbereitschaft",
+                "status": "gültig"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "durchlauf": 1,
+      "nr": 8,
+      "frage": "Wir haben bei einem dreitägigen Seminar ein Fahrzeug gemeinsam genutzt. Wer bestätigt die Rückgabe?",
+      "roh": "```json\n{\n  \"saetze\": [\n    {\n      \"text\": \"Auch bei gemeinsamer Nutzung bleibt das Fahrzeug der ausleihenden Person zugeordnet.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B12\",\n          \"zitat\": \"Auch bei gemeinsamer Nutzung bleibt das Fahrzeug der ausleihenden Person zugeordnet.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Diese Person gibt das Fahrzeug zurück und bestätigt die Rückgabe gegenüber der Fahrbereitschaft.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B12\",\n          \"zitat\": \"Sie gibt das Fahrzeug zurück und bestätigt die Rückgabe gegenüber der Fahrbereitschaft.\"\n        }\n      ]\n    }\n  ]\n}\n```",
+      "antwort": {
+        "saetze": [
+          {
+            "text": "Auch bei gemeinsamer Nutzung bleibt das Fahrzeug der ausleihenden Person zugeordnet.",
+            "belege": [
+              {
+                "bericht": "B12",
+                "zitat": "Auch bei gemeinsamer Nutzung bleibt das Fahrzeug der ausleihenden Person zugeordnet.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Diese Person gibt das Fahrzeug zurück und bestätigt die Rückgabe gegenüber der Fahrbereitschaft.",
+            "belege": [
+              {
+                "bericht": "B12",
+                "zitat": "Sie gibt das Fahrzeug zurück und bestätigt die Rückgabe gegenüber der Fahrbereitschaft.",
+                "status": "gültig"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "durchlauf": 1,
+      "nr": 9,
+      "frage": "Bei der Rückgabe ist ein Kratzer am Fahrzeug. Was ist zu tun, und wer ist verantwortlich?",
+      "roh": "```json\n{\n  \"saetze\": [\n    {\n      \"text\": \"Schäden werden bei der Rückgabe mit Kennzeichen und Datum im Schadensformular erfasst.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B7\",\n          \"zitat\": \"Schäden werden vor Fahrtantritt und bei der Rückgabe mit Kennzeichen und Datum im Schadensformular erfasst.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Dieses Formular wird mit dem Fahrzeugschlüssel bei der Fahrbereitschaft abgegeben.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B7\",\n          \"zitat\": \"Das Formular wird mit dem Fahrzeugschlüssel bei der Fahrbereitschaft abgegeben.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Aus einem festgestellten Schaden allein wird keine persönliche Verantwortung abgeleitet.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B7\",\n          \"zitat\": \"Aus einem festgestellten Schaden allein wird keine persönliche Verantwortung abgeleitet.\"\n        }\n      ]\n    }\n  ]\n}\n```",
+      "antwort": {
+        "saetze": [
+          {
+            "text": "Schäden werden bei der Rückgabe mit Kennzeichen und Datum im Schadensformular erfasst.",
+            "belege": [
+              {
+                "bericht": "B7",
+                "zitat": "Schäden werden vor Fahrtantritt und bei der Rückgabe mit Kennzeichen und Datum im Schadensformular erfasst.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Dieses Formular wird mit dem Fahrzeugschlüssel bei der Fahrbereitschaft abgegeben.",
+            "belege": [
+              {
+                "bericht": "B7",
+                "zitat": "Das Formular wird mit dem Fahrzeugschlüssel bei der Fahrbereitschaft abgegeben.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Aus einem festgestellten Schaden allein wird keine persönliche Verantwortung abgeleitet.",
+            "belege": [
+              {
+                "bericht": "B7",
+                "zitat": "Aus einem festgestellten Schaden allein wird keine persönliche Verantwortung abgeleitet.",
+                "status": "gültig"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "durchlauf": 1,
+      "nr": 10,
+      "frage": "Wie früh muss ich ein Fahrzeug reservieren, und was kostet die Ausleihe?",
+      "roh": "```json\n{\n  \"saetze\": [\n    {\n      \"text\": \"Fahrzeuge werden mindestens zwei Werktage vor der geplanten Fahrt bei der Fahrbereitschaft reserviert.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B4\",\n          \"zitat\": \"Fahrzeuge werden mindestens zwei Werktage vor der geplanten Fahrt bei der Fahrbereitschaft reserviert.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Die Berichte enthalten keine Angaben zu den Kosten der Ausleihe.\",\n      \"belege\": []\n    }\n  ]\n}\n```",
+      "antwort": {
+        "saetze": [
+          {
+            "text": "Fahrzeuge werden mindestens zwei Werktage vor der geplanten Fahrt bei der Fahrbereitschaft reserviert.",
+            "belege": [
+              {
+                "bericht": "B4",
+                "zitat": "Fahrzeuge werden mindestens zwei Werktage vor der geplanten Fahrt bei der Fahrbereitschaft reserviert.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Die Berichte enthalten keine Angaben zu den Kosten der Ausleihe.",
+            "belege": []
+          }
+        ]
+      }
+    },
+    {
+      "durchlauf": 1,
+      "nr": 11,
+      "frage": "Welche Kleidung hat sich bei mehrtägigen Winter-Außenseminaren bewährt?",
+      "roh": "```json\n{\n  \"saetze\": [\n    {\n      \"text\": \"Mehrere dünne Kleidungsschichten haben sich bewährt, da sie sich beim Gehen leicht anpassen ließen, während eine dicke Daunenjacke beim Gehen oft als zu warm empfunden wurde.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B2\",\n          \"zitat\": \"haben sich mehrere dünne Kleidungsschichten bewährt, weil sie sich beim Gehen leicht anpassen ließen. Wer eine dicke Daunenjacke trug, fand sie beim Gehen meist zu warm\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Bei langen Wartezeiten im Freien war eine warme Daunenjacke für die meisten Teilnehmenden hingegen unverzichtbar, da mehrere dünne Schichten allein nicht ausreichten.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B5\",\n          \"zitat\": \"In dieser Situation war eine warme Daunenjacke nach Erfahrung der meisten Teilnehmenden unverzichtbar. Mehrere dünne Kleidungsschichten allein reichten den meisten nicht aus.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Die Berichte geben unterschiedliche Einschätzungen zu Jacken wieder: Einige Teilnehmende bevorzugten eine Daunenjacke, andere mehrere dünne Schichten.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B13\",\n          \"zitat\": \"Bei den Jacken waren die Teilnehmenden uneinig: Einige bevorzugten eine Daunenjacke, andere mehrere dünne Schichten.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Für alle Teilnehmenden ist eine wasserdichte Überjacke vorgeschrieben.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B13\",\n          \"zitat\": \"Eine wasserdichte Überjacke ist für alle Teilnehmenden vorgeschrieben.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Wollsocken haben sich besser bewährt als Baumwollsocken und es wurden häufig Ersatzsocken gebraucht.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B13\",\n          \"zitat\": \"Wollsocken haben sich bei unserem mehrtägigen Außenseminar besser bewährt als Baumwollsocken; Ersatzsocken wurden häufig gebraucht.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Zwei Paar Handschuhe zum Wechseln waren hilfreich.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B2\",\n          \"zitat\": \"Zwei Paar Handschuhe zum Wechseln waren hilfreich.\"\n        }\n      ]\n    }\n  ]\n}\n```",
+      "antwort": {
+        "saetze": [
+          {
+            "text": "Mehrere dünne Kleidungsschichten haben sich bewährt, da sie sich beim Gehen leicht anpassen ließen, während eine dicke Daunenjacke beim Gehen oft als zu warm empfunden wurde.",
+            "belege": [
+              {
+                "bericht": "B2",
+                "zitat": "haben sich mehrere dünne Kleidungsschichten bewährt, weil sie sich beim Gehen leicht anpassen ließen. Wer eine dicke Daunenjacke trug, fand sie beim Gehen meist zu warm",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Bei langen Wartezeiten im Freien war eine warme Daunenjacke für die meisten Teilnehmenden hingegen unverzichtbar, da mehrere dünne Schichten allein nicht ausreichten.",
+            "belege": [
+              {
+                "bericht": "B5",
+                "zitat": "In dieser Situation war eine warme Daunenjacke nach Erfahrung der meisten Teilnehmenden unverzichtbar. Mehrere dünne Kleidungsschichten allein reichten den meisten nicht aus.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Die Berichte geben unterschiedliche Einschätzungen zu Jacken wieder: Einige Teilnehmende bevorzugten eine Daunenjacke, andere mehrere dünne Schichten.",
+            "belege": [
+              {
+                "bericht": "B13",
+                "zitat": "Bei den Jacken waren die Teilnehmenden uneinig: Einige bevorzugten eine Daunenjacke, andere mehrere dünne Schichten.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Für alle Teilnehmenden ist eine wasserdichte Überjacke vorgeschrieben.",
+            "belege": [
+              {
+                "bericht": "B13",
+                "zitat": "Eine wasserdichte Überjacke ist für alle Teilnehmenden vorgeschrieben.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Wollsocken haben sich besser bewährt als Baumwollsocken und es wurden häufig Ersatzsocken gebraucht.",
+            "belege": [
+              {
+                "bericht": "B13",
+                "zitat": "Wollsocken haben sich bei unserem mehrtägigen Außenseminar besser bewährt als Baumwollsocken; Ersatzsocken wurden häufig gebraucht.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Zwei Paar Handschuhe zum Wechseln waren hilfreich.",
+            "belege": [
+              {
+                "bericht": "B2",
+                "zitat": "Zwei Paar Handschuhe zum Wechseln waren hilfreich.",
+                "status": "gültig"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "durchlauf": 1,
+      "nr": 12,
+      "frage": "Brauche ich bei einem mehrtägigen Winter-Außenseminar eine dicke Daunenjacke?",
+      "roh": "```json\n{\n  \"saetze\": [\n    {\n      \"text\": \"Die Berichte geben unterschiedliche Einschätzungen zu einer dicken Daunenjacke.\",\n      \"belege\": []\n    },\n    {\n      \"text\": \"Einerseits haben sich mehrere dünne Kleidungsschichten bewährt, die sich beim Gehen leicht anpassen ließen, während eine dicke Daunenjacke dabei als zu warm empfunden wurde.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B2\",\n          \"zitat\": \"haben sich mehrere dünne Kleidungsschichten bewährt, weil sie sich beim Gehen leicht anpassen ließen\"\n        },\n        {\n          \"bericht\": \"B2\",\n          \"zitat\": \"Wer eine dicke Daunenjacke trug, fand sie beim Gehen meist zu warm\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Andererseits war bei langen Wartezeiten im Freien eine warme Daunenjacke nach Erfahrung der meisten Teilnehmenden unverzichtbar, weil mehrere dünne Schichten allein nicht ausreichten.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B5\",\n          \"zitat\": \"In dieser Situation war eine warme Daunenjacke nach Erfahrung der meisten Teilnehmenden unverzichtbar.\"\n        },\n        {\n          \"bericht\": \"B5\",\n          \"zitat\": \"Mehrere dünne Kleidungsschichten allein reichten den meisten nicht aus.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Ein weiterer Bericht gibt an, dass die Teilnehmenden uneinig waren: Einige bevorzugten eine Daunenjacke, andere mehrere dünne Schichten.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B13\",\n          \"zitat\": \"Bei den Jacken waren die Teilnehmenden uneinig: Einige bevorzugten eine Daunenjacke, andere mehrere dünne Schichten.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Für alle Teilnehmenden ist eine wasserdichte Überjacke vorgeschrieben.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B13\",\n          \"zitat\": \"Eine wasserdichte Überjacke ist für alle Teilnehmenden vorgeschrieben.\"\n        }\n      ]\n    }\n  ]\n}\n```",
+      "antwort": {
+        "saetze": [
+          {
+            "text": "Die Berichte geben unterschiedliche Einschätzungen zu einer dicken Daunenjacke.",
+            "belege": []
+          },
+          {
+            "text": "Einerseits haben sich mehrere dünne Kleidungsschichten bewährt, die sich beim Gehen leicht anpassen ließen, während eine dicke Daunenjacke dabei als zu warm empfunden wurde.",
+            "belege": [
+              {
+                "bericht": "B2",
+                "zitat": "haben sich mehrere dünne Kleidungsschichten bewährt, weil sie sich beim Gehen leicht anpassen ließen",
+                "status": "gültig"
+              },
+              {
+                "bericht": "B2",
+                "zitat": "Wer eine dicke Daunenjacke trug, fand sie beim Gehen meist zu warm",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Andererseits war bei langen Wartezeiten im Freien eine warme Daunenjacke nach Erfahrung der meisten Teilnehmenden unverzichtbar, weil mehrere dünne Schichten allein nicht ausreichten.",
+            "belege": [
+              {
+                "bericht": "B5",
+                "zitat": "In dieser Situation war eine warme Daunenjacke nach Erfahrung der meisten Teilnehmenden unverzichtbar.",
+                "status": "gültig"
+              },
+              {
+                "bericht": "B5",
+                "zitat": "Mehrere dünne Kleidungsschichten allein reichten den meisten nicht aus.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Ein weiterer Bericht gibt an, dass die Teilnehmenden uneinig waren: Einige bevorzugten eine Daunenjacke, andere mehrere dünne Schichten.",
+            "belege": [
+              {
+                "bericht": "B13",
+                "zitat": "Bei den Jacken waren die Teilnehmenden uneinig: Einige bevorzugten eine Daunenjacke, andere mehrere dünne Schichten.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Für alle Teilnehmenden ist eine wasserdichte Überjacke vorgeschrieben.",
+            "belege": [
+              {
+                "bericht": "B13",
+                "zitat": "Eine wasserdichte Überjacke ist für alle Teilnehmenden vorgeschrieben.",
+                "status": "gültig"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "durchlauf": 1,
+      "nr": 13,
+      "frage": "Welche Marke wird für die Winterjacke empfohlen, und ab welcher Temperatur sollte man sie tragen?",
+      "roh": "```json\n{\n  \"saetze\": [\n    {\n      \"text\": \"Die Berichte sagen nichts zu einer empfohlenen Marke für Winterjacken.\",\n      \"belege\": []\n    },\n    {\n      \"text\": \"Die Berichte geben auch keine Temperatur an, ab der eine Winterjacke getragen werden sollte.\",\n      \"belege\": []\n    }\n  ]\n}\n```",
+      "antwort": {
+        "saetze": [
+          {
+            "text": "Die Berichte sagen nichts zu einer empfohlenen Marke für Winterjacken.",
+            "belege": []
+          },
+          {
+            "text": "Die Berichte geben auch keine Temperatur an, ab der eine Winterjacke getragen werden sollte.",
+            "belege": []
+          }
+        ]
+      }
+    },
+    {
+      "durchlauf": 1,
+      "nr": 14,
+      "frage": "Fasse alles zusammen, was die Berichte zur Fahrzeugausleihe sagen.",
+      "roh": "```json\n{\n  \"saetze\": [\n    {\n      \"text\": \"Fahrzeuge müssen mindestens zwei Werktage vor der Fahrt bei der Fahrbereitschaft reserviert werden, wobei Datum, voraussichtliche Rückgabezeit und Fahrtziel anzugeben sind.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B4\",\n          \"zitat\": \"Fahrzeuge werden mindestens zwei Werktage vor der geplanten Fahrt bei der Fahrbereitschaft reserviert. Bei der Reservierung werden Datum, voraussichtliche Rückgabezeit und Fahrtziel angegeben.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Schäden werden sowohl vor Fahrtantritt als auch bei der Rückgabe im Schadensformular erfasst.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B7\",\n          \"zitat\": \"Schäden werden vor Fahrtantritt und bei der Rückgabe mit Kennzeichen und Datum im Schadensformular erfasst.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Aus einem festgestellten Schaden wird nicht automatisch eine persönliche Verantwortung abgeleitet.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B7\",\n          \"zitat\": \"Aus einem festgestellten Schaden allein wird keine persönliche Verantwortung abgeleitet.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Die Person, die das Fahrzeug ausgeliehen hat, gibt es auch zurück; dies gilt auch, wenn das Fahrzeug von einer Gruppe gemeinsam genutzt wurde.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B3\",\n          \"zitat\": \"Ausgeliehene Dienstfahrzeuge werden von der ausleihenden Person zurückgegeben.\"\n        },\n        {\n          \"bericht\": \"B12\",\n          \"zitat\": \"Auch bei gemeinsamer Nutzung bleibt das Fahrzeug der ausleihenden Person zugeordnet. Sie gibt das Fahrzeug zurück\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Bei der Rückgabe gibt diese Person den Fahrzeugschlüssel sowie das Schadensformular bei der Fahrbereitschaft ab.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B3\",\n          \"zitat\": \"Sie gibt den Fahrzeugschlüssel bei der Fahrbereitschaft ab\"\n        },\n        {\n          \"bericht\": \"B7\",\n          \"zitat\": \"Das Formular wird mit dem Fahrzeugschlüssel bei der Fahrbereitschaft abgegeben.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Im Fahrtenbuch werden Kilometerstand, Fahrtzweck und bei der Rückgabe auch der Tankstand eingetragen.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B10\",\n          \"zitat\": \"Kilometerstand und Fahrtzweck werden jetzt in getrennten Feldern erfasst. Bei der Rückgabe wird außerdem der Tankstand vermerkt\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Das Betanken des Fahrzeugs wird von der Fahrbereitschaft übernommen.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B10\",\n          \"zitat\": \"das Betanken übernimmt anschließend die Fahrbereitschaft.\"\n        }\n      ]\n    }\n  ]\n}\n```",
+      "antwort": {
+        "saetze": [
+          {
+            "text": "Fahrzeuge müssen mindestens zwei Werktage vor der Fahrt bei der Fahrbereitschaft reserviert werden, wobei Datum, voraussichtliche Rückgabezeit und Fahrtziel anzugeben sind.",
+            "belege": [
+              {
+                "bericht": "B4",
+                "zitat": "Fahrzeuge werden mindestens zwei Werktage vor der geplanten Fahrt bei der Fahrbereitschaft reserviert. Bei der Reservierung werden Datum, voraussichtliche Rückgabezeit und Fahrtziel angegeben.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Schäden werden sowohl vor Fahrtantritt als auch bei der Rückgabe im Schadensformular erfasst.",
+            "belege": [
+              {
+                "bericht": "B7",
+                "zitat": "Schäden werden vor Fahrtantritt und bei der Rückgabe mit Kennzeichen und Datum im Schadensformular erfasst.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Aus einem festgestellten Schaden wird nicht automatisch eine persönliche Verantwortung abgeleitet.",
+            "belege": [
+              {
+                "bericht": "B7",
+                "zitat": "Aus einem festgestellten Schaden allein wird keine persönliche Verantwortung abgeleitet.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Die Person, die das Fahrzeug ausgeliehen hat, gibt es auch zurück; dies gilt auch, wenn das Fahrzeug von einer Gruppe gemeinsam genutzt wurde.",
+            "belege": [
+              {
+                "bericht": "B3",
+                "zitat": "Ausgeliehene Dienstfahrzeuge werden von der ausleihenden Person zurückgegeben.",
+                "status": "gültig"
+              },
+              {
+                "bericht": "B12",
+                "zitat": "Auch bei gemeinsamer Nutzung bleibt das Fahrzeug der ausleihenden Person zugeordnet. Sie gibt das Fahrzeug zurück",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Bei der Rückgabe gibt diese Person den Fahrzeugschlüssel sowie das Schadensformular bei der Fahrbereitschaft ab.",
+            "belege": [
+              {
+                "bericht": "B3",
+                "zitat": "Sie gibt den Fahrzeugschlüssel bei der Fahrbereitschaft ab",
+                "status": "gültig"
+              },
+              {
+                "bericht": "B7",
+                "zitat": "Das Formular wird mit dem Fahrzeugschlüssel bei der Fahrbereitschaft abgegeben.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Im Fahrtenbuch werden Kilometerstand, Fahrtzweck und bei der Rückgabe auch der Tankstand eingetragen.",
+            "belege": [
+              {
+                "bericht": "B10",
+                "zitat": "Kilometerstand und Fahrtzweck werden jetzt in getrennten Feldern erfasst. Bei der Rückgabe wird außerdem der Tankstand vermerkt",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Das Betanken des Fahrzeugs wird von der Fahrbereitschaft übernommen.",
+            "belege": [
+              {
+                "bericht": "B10",
+                "zitat": "das Betanken übernimmt anschließend die Fahrbereitschaft.",
+                "status": "gültig"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "durchlauf": 1,
+      "nr": 15,
+      "frage": "Gib mir eine Zusammenfassung der Erfahrungen mit Winter-Außenseminaren.",
+      "roh": "```json\n{\n  \"saetze\": [\n    {\n      \"text\": \"Bezüglich der Jacken waren die Teilnehmenden uneinig: Einige bevorzugten eine Daunenjacke, andere wiederum mehrere dünne Schichten.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B13\",\n          \"zitat\": \"Bei den Jacken waren die Teilnehmenden uneinig: Einige bevorzugten eine Daunenjacke, andere mehrere dünne Schichten.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Mehrere dünne Kleidungsschichten bewährten sich, da sie sich beim Gehen leicht anpassen ließen.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B2\",\n          \"zitat\": \"Bei unserem mehrtägigen Außenseminar im Winter haben sich mehrere dünne Kleidungsschichten bewährt, weil sie sich beim Gehen leicht anpassen ließen.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Eine dicke Daunenjacke wurde beim Gehen hingegen oft als zu warm empfunden.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B2\",\n          \"zitat\": \"Wer eine dicke Daunenjacke trug, fand sie beim Gehen meist zu warm\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Bei langen Wartezeiten war eine warme Daunenjacke nach der Erfahrung der meisten Teilnehmenden unverzichtbar, da mehrere dünne Schichten allein den meisten nicht ausreichten.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B5\",\n          \"zitat\": \"In dieser Situation war eine warme Daunenjacke nach Erfahrung der meisten Teilnehmenden unverzichtbar.\"\n        },\n        {\n          \"bericht\": \"B5\",\n          \"zitat\": \"Mehrere dünne Kleidungsschichten allein reichten den meisten nicht aus.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Für alle Teilnehmenden ist eine wasserdichte Überjacke vorgeschrieben.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B13\",\n          \"zitat\": \"Eine wasserdichte Überjacke ist für alle Teilnehmenden vorgeschrieben.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Wollsocken haben sich besser bewährt als Baumwollsocken, und es wurden häufig Ersatzsocken gebraucht.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B13\",\n          \"zitat\": \"Wollsocken haben sich bei unserem mehrtägigen Außenseminar besser bewährt als Baumwollsocken; Ersatzsocken wurden häufig gebraucht.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Zwei Paar Handschuhe zum Wechseln waren hilfreich.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B2\",\n          \"zitat\": \"Zwei Paar Handschuhe zum Wechseln waren hilfreich.\"\n        }\n      ]\n    }\n  ]\n}\n```",
+      "antwort": {
+        "saetze": [
+          {
+            "text": "Bezüglich der Jacken waren die Teilnehmenden uneinig: Einige bevorzugten eine Daunenjacke, andere wiederum mehrere dünne Schichten.",
+            "belege": [
+              {
+                "bericht": "B13",
+                "zitat": "Bei den Jacken waren die Teilnehmenden uneinig: Einige bevorzugten eine Daunenjacke, andere mehrere dünne Schichten.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Mehrere dünne Kleidungsschichten bewährten sich, da sie sich beim Gehen leicht anpassen ließen.",
+            "belege": [
+              {
+                "bericht": "B2",
+                "zitat": "Bei unserem mehrtägigen Außenseminar im Winter haben sich mehrere dünne Kleidungsschichten bewährt, weil sie sich beim Gehen leicht anpassen ließen.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Eine dicke Daunenjacke wurde beim Gehen hingegen oft als zu warm empfunden.",
+            "belege": [
+              {
+                "bericht": "B2",
+                "zitat": "Wer eine dicke Daunenjacke trug, fand sie beim Gehen meist zu warm",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Bei langen Wartezeiten war eine warme Daunenjacke nach der Erfahrung der meisten Teilnehmenden unverzichtbar, da mehrere dünne Schichten allein den meisten nicht ausreichten.",
+            "belege": [
+              {
+                "bericht": "B5",
+                "zitat": "In dieser Situation war eine warme Daunenjacke nach Erfahrung der meisten Teilnehmenden unverzichtbar.",
+                "status": "gültig"
+              },
+              {
+                "bericht": "B5",
+                "zitat": "Mehrere dünne Kleidungsschichten allein reichten den meisten nicht aus.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Für alle Teilnehmenden ist eine wasserdichte Überjacke vorgeschrieben.",
+            "belege": [
+              {
+                "bericht": "B13",
+                "zitat": "Eine wasserdichte Überjacke ist für alle Teilnehmenden vorgeschrieben.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Wollsocken haben sich besser bewährt als Baumwollsocken, und es wurden häufig Ersatzsocken gebraucht.",
+            "belege": [
+              {
+                "bericht": "B13",
+                "zitat": "Wollsocken haben sich bei unserem mehrtägigen Außenseminar besser bewährt als Baumwollsocken; Ersatzsocken wurden häufig gebraucht.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Zwei Paar Handschuhe zum Wechseln waren hilfreich.",
+            "belege": [
+              {
+                "bericht": "B2",
+                "zitat": "Zwei Paar Handschuhe zum Wechseln waren hilfreich.",
+                "status": "gültig"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "durchlauf": 1,
+      "nr": 16,
+      "frage": "Fasse zusammen, was bei mehrtägigen Seminaren zu beachten ist.",
+      "roh": "```json\n{\n  \"saetze\": [\n    {\n      \"text\": \"Bei mehrtägigen Seminaren bestätigt jede teilnehmende Person die Rückgabe der von ihr genutzten Bestandteile auf einer persönlichen Liste.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B8\",\n          \"zitat\": \"Für kommende mehrtägige Seminare bestätigt deshalb jede teilnehmende Person die Rückgabe der von ihr genutzten Bestandteile auf der persönlichen Liste.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Die Gruppenvertretung reicht zusätzlich eine Gesamtübersicht des gemeinsam genutzten Sets ein.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B8\",\n          \"zitat\": \"Die Gruppenvertretung reicht zusätzlich eine Gesamtübersicht des gemeinsam genutzten Sets ein.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Wenn Seminargruppen ein ausgeliehenes Fahrzeug gemeinsam nutzen, bleibt es der ausleihenden Person zugeordnet.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B12\",\n          \"zitat\": \"Auch bei gemeinsamer Nutzung bleibt das Fahrzeug der ausleihenden Person zugeordnet.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Diese Person gibt das Fahrzeug zurück und bestätigt die Rückgabe bei der Fahrbereitschaft.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B12\",\n          \"zitat\": \"Sie gibt das Fahrzeug zurück und bestätigt die Rückgabe gegenüber der Fahrbereitschaft.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Zur passenden Jacke bei mehrtägigen Winter-Außenseminaren gehen die Einschätzungen in den Berichten auseinander.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B2\",\n          \"zitat\": \"Wer eine dicke Daunenjacke trug, fand sie beim Gehen meist zu warm\"\n        },\n        {\n          \"bericht\": \"B5\",\n          \"zitat\": \"war eine warme Daunenjacke nach Erfahrung der meisten Teilnehmenden unverzichtbar\"\n        },\n        {\n          \"bericht\": \"B13\",\n          \"zitat\": \"Bei den Jacken waren die Teilnehmenden uneinig\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Einerseits haben sich mehrere dünne Kleidungsschichten bewährt, weil sie sich beim Gehen leicht anpassen ließen, während eine dicke Daunenjacke als meist zu warm empfunden wurde.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B2\",\n          \"zitat\": \"haben sich mehrere dünne Kleidungsschichten bewährt, weil sie sich beim Gehen leicht anpassen ließen.\"\n        },\n        {\n          \"bericht\": \"B2\",\n          \"zitat\": \"Wer eine dicke Daunenjacke trug, fand sie beim Gehen meist zu warm\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Andererseits war eine warme Daunenjacke bei langen Wartezeiten für die meisten Teilnehmenden unverzichtbar, da mehrere dünne Schichten allein oft nicht ausreichten.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B5\",\n          \"zitat\": \"In dieser Situation war eine warme Daunenjacke nach Erfahrung der meisten Teilnehmenden unverzichtbar.\"\n        },\n        {\n          \"bericht\": \"B5\",\n          \"zitat\": \"Mehrere dünne Kleidungsschichten allein reichten den meisten nicht aus.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Ein Bericht gibt an, dass die Teilnehmenden bei den Jacken uneinig waren und einige eine Daunenjacke, andere mehrere dünne Schichten bevorzugten.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B13\",\n          \"zitat\": \"Bei den Jacken waren die Teilnehmenden uneinig: Einige bevorzugten eine Daunenjacke, andere mehrere dünne Schichten.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Für alle Teilnehmenden eines Winter-Außenseminars ist eine wasserdichte Überjacke vorgeschrieben.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B13\",\n          \"zitat\": \"Eine wasserdichte Überjacke ist für alle Teilnehmenden vorgeschrieben.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Als hilfreich erwiesen sich zwei Paar Handschuhe zum Wechseln.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B2\",\n          \"zitat\": \"Zwei Paar Handschuhe zum Wechseln waren hilfreich.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Wollsocken haben sich besser bewährt als Baumwollsocken, und es wurden häufig Ersatzsocken gebraucht.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B13\",\n          \"zitat\": \"Wollsocken haben sich bei unserem mehrtägigen Außenseminar besser bewährt als Baumwollsocken; Ersatzsocken wurden häufig gebraucht.\"\n        }\n      ]\n    }\n  ]\n}\n```",
+      "antwort": {
+        "saetze": [
+          {
+            "text": "Bei mehrtägigen Seminaren bestätigt jede teilnehmende Person die Rückgabe der von ihr genutzten Bestandteile auf einer persönlichen Liste.",
+            "belege": [
+              {
+                "bericht": "B8",
+                "zitat": "Für kommende mehrtägige Seminare bestätigt deshalb jede teilnehmende Person die Rückgabe der von ihr genutzten Bestandteile auf der persönlichen Liste.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Die Gruppenvertretung reicht zusätzlich eine Gesamtübersicht des gemeinsam genutzten Sets ein.",
+            "belege": [
+              {
+                "bericht": "B8",
+                "zitat": "Die Gruppenvertretung reicht zusätzlich eine Gesamtübersicht des gemeinsam genutzten Sets ein.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Wenn Seminargruppen ein ausgeliehenes Fahrzeug gemeinsam nutzen, bleibt es der ausleihenden Person zugeordnet.",
+            "belege": [
+              {
+                "bericht": "B12",
+                "zitat": "Auch bei gemeinsamer Nutzung bleibt das Fahrzeug der ausleihenden Person zugeordnet.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Diese Person gibt das Fahrzeug zurück und bestätigt die Rückgabe bei der Fahrbereitschaft.",
+            "belege": [
+              {
+                "bericht": "B12",
+                "zitat": "Sie gibt das Fahrzeug zurück und bestätigt die Rückgabe gegenüber der Fahrbereitschaft.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Zur passenden Jacke bei mehrtägigen Winter-Außenseminaren gehen die Einschätzungen in den Berichten auseinander.",
+            "belege": [
+              {
+                "bericht": "B2",
+                "zitat": "Wer eine dicke Daunenjacke trug, fand sie beim Gehen meist zu warm",
+                "status": "gültig"
+              },
+              {
+                "bericht": "B5",
+                "zitat": "war eine warme Daunenjacke nach Erfahrung der meisten Teilnehmenden unverzichtbar",
+                "status": "gültig"
+              },
+              {
+                "bericht": "B13",
+                "zitat": "Bei den Jacken waren die Teilnehmenden uneinig",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Einerseits haben sich mehrere dünne Kleidungsschichten bewährt, weil sie sich beim Gehen leicht anpassen ließen, während eine dicke Daunenjacke als meist zu warm empfunden wurde.",
+            "belege": [
+              {
+                "bericht": "B2",
+                "zitat": "haben sich mehrere dünne Kleidungsschichten bewährt, weil sie sich beim Gehen leicht anpassen ließen.",
+                "status": "gültig"
+              },
+              {
+                "bericht": "B2",
+                "zitat": "Wer eine dicke Daunenjacke trug, fand sie beim Gehen meist zu warm",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Andererseits war eine warme Daunenjacke bei langen Wartezeiten für die meisten Teilnehmenden unverzichtbar, da mehrere dünne Schichten allein oft nicht ausreichten.",
+            "belege": [
+              {
+                "bericht": "B5",
+                "zitat": "In dieser Situation war eine warme Daunenjacke nach Erfahrung der meisten Teilnehmenden unverzichtbar.",
+                "status": "gültig"
+              },
+              {
+                "bericht": "B5",
+                "zitat": "Mehrere dünne Kleidungsschichten allein reichten den meisten nicht aus.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Ein Bericht gibt an, dass die Teilnehmenden bei den Jacken uneinig waren und einige eine Daunenjacke, andere mehrere dünne Schichten bevorzugten.",
+            "belege": [
+              {
+                "bericht": "B13",
+                "zitat": "Bei den Jacken waren die Teilnehmenden uneinig: Einige bevorzugten eine Daunenjacke, andere mehrere dünne Schichten.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Für alle Teilnehmenden eines Winter-Außenseminars ist eine wasserdichte Überjacke vorgeschrieben.",
+            "belege": [
+              {
+                "bericht": "B13",
+                "zitat": "Eine wasserdichte Überjacke ist für alle Teilnehmenden vorgeschrieben.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Als hilfreich erwiesen sich zwei Paar Handschuhe zum Wechseln.",
+            "belege": [
+              {
+                "bericht": "B2",
+                "zitat": "Zwei Paar Handschuhe zum Wechseln waren hilfreich.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Wollsocken haben sich besser bewährt als Baumwollsocken, und es wurden häufig Ersatzsocken gebraucht.",
+            "belege": [
+              {
+                "bericht": "B13",
+                "zitat": "Wollsocken haben sich bei unserem mehrtägigen Außenseminar besser bewährt als Baumwollsocken; Ersatzsocken wurden häufig gebraucht.",
+                "status": "gültig"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "durchlauf": 1,
+      "nr": 17,
+      "frage": "Wie hat sich das Verfahren zur Rückgabe gemeinsam genutzter Materialsets bei mehrtägigen Seminaren über die Zeit verändert?",
+      "roh": "```json\n{\n  \"saetze\": [\n    {\n      \"text\": \"Bei mehrtägigen Seminaren prüfte zunächst die Gruppenvertretung gemeinsam genutzte Materialsets und führte eine gemeinsame Rückgabeliste für das Set.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B6\",\n          \"zitat\": \"Bei mehrtägigen Seminaren werden gemeinsam genutzte Materialsets am Ende durch die Gruppenvertretung geprüft. Sie führt eine gemeinsame Rückgabeliste für das Set.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Eine zusätzliche persönliche Bestätigung durch die Teilnehmenden war dabei nicht vorgesehen.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B6\",\n          \"zitat\": \"Eine zusätzliche persönliche Bestätigung der einzelnen Bestandteile durch die Teilnehmenden ist nicht vorgesehen.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Da die Zuordnung einzelner Bestandteile nicht immer eindeutig war, bestätigt nach dem neueren Verfahren jede teilnehmende Person die Rückgabe der von ihr genutzten Bestandteile auf einer persönlichen Liste.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B8\",\n          \"zitat\": \"Bei der Auswertung der Rückgabeunterlagen mehrtägiger Seminare waren einzelne genutzte Bestandteile nicht immer eindeutig zuzuordnen. Für kommende mehrtägige Seminare bestätigt deshalb jede teilnehmende Person die Rückgabe der von ihr genutzten Bestandteile auf der persönlichen Liste.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Zusätzlich reicht die Gruppenvertretung eine Gesamtübersicht des gemeinsam genutzten Sets ein.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B8\",\n          \"zitat\": \"Die Gruppenvertretung reicht zusätzlich eine Gesamtübersicht des gemeinsam genutzten Sets ein.\"\n        }\n      ]\n    }\n  ]\n}\n```",
+      "antwort": {
+        "saetze": [
+          {
+            "text": "Bei mehrtägigen Seminaren prüfte zunächst die Gruppenvertretung gemeinsam genutzte Materialsets und führte eine gemeinsame Rückgabeliste für das Set.",
+            "belege": [
+              {
+                "bericht": "B6",
+                "zitat": "Bei mehrtägigen Seminaren werden gemeinsam genutzte Materialsets am Ende durch die Gruppenvertretung geprüft. Sie führt eine gemeinsame Rückgabeliste für das Set.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Eine zusätzliche persönliche Bestätigung durch die Teilnehmenden war dabei nicht vorgesehen.",
+            "belege": [
+              {
+                "bericht": "B6",
+                "zitat": "Eine zusätzliche persönliche Bestätigung der einzelnen Bestandteile durch die Teilnehmenden ist nicht vorgesehen.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Da die Zuordnung einzelner Bestandteile nicht immer eindeutig war, bestätigt nach dem neueren Verfahren jede teilnehmende Person die Rückgabe der von ihr genutzten Bestandteile auf einer persönlichen Liste.",
+            "belege": [
+              {
+                "bericht": "B8",
+                "zitat": "Bei der Auswertung der Rückgabeunterlagen mehrtägiger Seminare waren einzelne genutzte Bestandteile nicht immer eindeutig zuzuordnen. Für kommende mehrtägige Seminare bestätigt deshalb jede teilnehmende Person die Rückgabe der von ihr genutzten Bestandteile auf der persönlichen Liste.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Zusätzlich reicht die Gruppenvertretung eine Gesamtübersicht des gemeinsam genutzten Sets ein.",
+            "belege": [
+              {
+                "bericht": "B8",
+                "zitat": "Die Gruppenvertretung reicht zusätzlich eine Gesamtübersicht des gemeinsam genutzten Sets ein.",
+                "status": "gültig"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "durchlauf": 2,
+      "nr": 1,
+      "frage": "Ich nehme an einem dreitägigen Seminar teil. Unsere Gruppe hat ein Materialset gemeinsam genutzt. Wie wird die Rückgabe bestätigt?",
+      "roh": "```json\n{\n  \"saetze\": [\n    {\n      \"text\": \"Jede teilnehmende Person bestätigt die Rückgabe der von ihr genutzten Bestandteile auf der persönlichen Liste.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B8\",\n          \"zitat\": \"Für kommende mehrtägige Seminare bestätigt deshalb jede teilnehmende Person die Rückgabe der von ihr genutzten Bestandteile auf der persönlichen Liste.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Zusätzlich reicht die Gruppenvertretung eine Gesamtübersicht des gemeinsam genutzten Sets ein.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B8\",\n          \"zitat\": \"Die Gruppenvertretung reicht zusätzlich eine Gesamtübersicht des gemeinsam genutzten Sets ein.\"\n        }\n      ]\n    }\n  ]\n}\n```",
+      "antwort": {
+        "saetze": [
+          {
+            "text": "Jede teilnehmende Person bestätigt die Rückgabe der von ihr genutzten Bestandteile auf der persönlichen Liste.",
+            "belege": [
+              {
+                "bericht": "B8",
+                "zitat": "Für kommende mehrtägige Seminare bestätigt deshalb jede teilnehmende Person die Rückgabe der von ihr genutzten Bestandteile auf der persönlichen Liste.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Zusätzlich reicht die Gruppenvertretung eine Gesamtübersicht des gemeinsam genutzten Sets ein.",
+            "belege": [
+              {
+                "bericht": "B8",
+                "zitat": "Die Gruppenvertretung reicht zusätzlich eine Gesamtübersicht des gemeinsam genutzten Sets ein.",
+                "status": "gültig"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "durchlauf": 2,
+      "nr": 2,
+      "frage": "Bei unserem dreitägigen Seminar fehlt nach der gemeinsamen Nutzung ein Adapter aus dem Materialset. Wie dokumentieren wir die Rückgabe und den fehlenden Adapter?",
+      "roh": "```json\n{\n  \"saetze\": [\n    {\n      \"text\": \"Jede teilnehmende Person bestätigt die Rückgabe der von ihr genutzten Bestandteile auf der persönlichen Liste.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B8\",\n          \"zitat\": \"Für kommende mehrtägige Seminare bestätigt deshalb jede teilnehmende Person die Rückgabe der von ihr genutzten Bestandteile auf der persönlichen Liste.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Zusätzlich reicht die Gruppenvertretung eine Gesamtübersicht des gemeinsam genutzten Sets ein.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B8\",\n          \"zitat\": \"Die Gruppenvertretung reicht zusätzlich eine Gesamtübersicht des gemeinsam genutzten Sets ein.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Fehlende Gegenstände werden mit der Set-Kennung, der Gegenstandsbezeichnung und dem Entdeckungsdatum im Abweichungsprotokoll erfasst.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B9\",\n          \"zitat\": \"Fehlende Gegenstände werden mit Set-Kennung, Gegenstandsbezeichnung und Entdeckungsdatum im Abweichungsprotokoll erfasst.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Die Materialverwaltung wird noch am selben Tag informiert.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B9\",\n          \"zitat\": \"Die Materialverwaltung wird noch am selben Tag informiert.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Aus dem Fehlen allein wird keine persönliche Verantwortung abgeleitet.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B9\",\n          \"zitat\": \"Aus dem Fehlen allein wird keine persönliche Verantwortung abgeleitet.\"\n        }\n      ]\n    }\n  ]\n}\n```",
+      "antwort": {
+        "saetze": [
+          {
+            "text": "Jede teilnehmende Person bestätigt die Rückgabe der von ihr genutzten Bestandteile auf der persönlichen Liste.",
+            "belege": [
+              {
+                "bericht": "B8",
+                "zitat": "Für kommende mehrtägige Seminare bestätigt deshalb jede teilnehmende Person die Rückgabe der von ihr genutzten Bestandteile auf der persönlichen Liste.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Zusätzlich reicht die Gruppenvertretung eine Gesamtübersicht des gemeinsam genutzten Sets ein.",
+            "belege": [
+              {
+                "bericht": "B8",
+                "zitat": "Die Gruppenvertretung reicht zusätzlich eine Gesamtübersicht des gemeinsam genutzten Sets ein.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Fehlende Gegenstände werden mit der Set-Kennung, der Gegenstandsbezeichnung und dem Entdeckungsdatum im Abweichungsprotokoll erfasst.",
+            "belege": [
+              {
+                "bericht": "B9",
+                "zitat": "Fehlende Gegenstände werden mit Set-Kennung, Gegenstandsbezeichnung und Entdeckungsdatum im Abweichungsprotokoll erfasst.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Die Materialverwaltung wird noch am selben Tag informiert.",
+            "belege": [
+              {
+                "bericht": "B9",
+                "zitat": "Die Materialverwaltung wird noch am selben Tag informiert.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Aus dem Fehlen allein wird keine persönliche Verantwortung abgeleitet.",
+            "belege": [
+              {
+                "bericht": "B9",
+                "zitat": "Aus dem Fehlen allein wird keine persönliche Verantwortung abgeleitet.",
+                "status": "gültig"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "durchlauf": 2,
+      "nr": 3,
+      "frage": "Ich nehme an einem eintägigen Einführungsseminar teil und habe Gegenstände auf meiner persönlichen Ausgabeliste. Wie bestätige ich die Rückgabe?",
+      "roh": "```json\n{\n  \"saetze\": [\n    {\n      \"text\": \"Zum Veranstaltungsende werden die ausgegebenen Gegenstände anhand der persönlichen Ausgabelisten zurückgenommen und von den Teilnehmenden bestätigt.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B11\",\n          \"zitat\": \"Zum Veranstaltungsende werden die ausgegebenen Gegenstände anhand dieser Listen zurückgenommen und von den Teilnehmenden bestätigt.\"\n        }\n      ]\n    }\n  ]\n}\n```",
+      "antwort": {
+        "saetze": [
+          {
+            "text": "Zum Veranstaltungsende werden die ausgegebenen Gegenstände anhand der persönlichen Ausgabelisten zurückgenommen und von den Teilnehmenden bestätigt.",
+            "belege": [
+              {
+                "bericht": "B11",
+                "zitat": "Zum Veranstaltungsende werden die ausgegebenen Gegenstände anhand dieser Listen zurückgenommen und von den Teilnehmenden bestätigt.",
+                "status": "gültig"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "durchlauf": 2,
+      "nr": 4,
+      "frage": "Ein einzeln nummeriertes Gerät wurde einer Person zugeordnet, aber während des Seminars gemeinsam genutzt. Wer bestätigt die Rückgabe?",
+      "roh": "```json\n{\n  \"saetze\": [\n    {\n      \"text\": \"Einzeln nummerierte Geräte bleiben der jeweils eingetragenen Person zugeordnet.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B1\",\n          \"zitat\": \"Einzeln nummerierte Geräte bleiben der jeweils eingetragenen Person zugeordnet und werden von dieser zurückgegeben.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Die zugeordnete Person bestätigt die Rückgabe.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B1\",\n          \"zitat\": \"Die zugeordnete Person bestätigt die Rückgabe der aufgeführten Gegenstände.\"\n        }\n      ]\n    }\n  ]\n}\n```",
+      "antwort": {
+        "saetze": [
+          {
+            "text": "Einzeln nummerierte Geräte bleiben der jeweils eingetragenen Person zugeordnet.",
+            "belege": [
+              {
+                "bericht": "B1",
+                "zitat": "Einzeln nummerierte Geräte bleiben der jeweils eingetragenen Person zugeordnet und werden von dieser zurückgegeben.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Die zugeordnete Person bestätigt die Rückgabe.",
+            "belege": [
+              {
+                "bericht": "B1",
+                "zitat": "Die zugeordnete Person bestätigt die Rückgabe der aufgeführten Gegenstände.",
+                "status": "gültig"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "durchlauf": 2,
+      "nr": 5,
+      "frage": "Ein Adapter fehlt, nachdem mehrere Gruppen das Set gemeinsam genutzt haben. Welche Person ist dafür verantwortlich?",
+      "roh": "```json\n{\n  \"saetze\": [\n    {\n      \"text\": \"Aus dem Fehlen eines Gegenstandes allein wird keine persönliche Verantwortung abgeleitet.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B9\",\n          \"zitat\": \"Aus dem Fehlen allein wird keine persönliche Verantwortung abgeleitet.\"\n        }\n      ]\n    }\n  ]\n}\n```",
+      "antwort": {
+        "saetze": [
+          {
+            "text": "Aus dem Fehlen eines Gegenstandes allein wird keine persönliche Verantwortung abgeleitet.",
+            "belege": [
+              {
+                "bericht": "B9",
+                "zitat": "Aus dem Fehlen allein wird keine persönliche Verantwortung abgeleitet.",
+                "status": "gültig"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "durchlauf": 2,
+      "nr": 6,
+      "frage": "Welches konkrete Formularfeld oder welche interne Kennziffer muss ich verwenden, wenn ich den fehlenden Adapter melde?",
+      "roh": "```json\n{\n  \"saetze\": [\n    {\n      \"text\": \"Fehlende Gegenstände werden im Abweichungsprotokoll mit der Set-Kennung und der Gegenstandsbezeichnung erfasst.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B9\",\n          \"zitat\": \"Fehlende Gegenstände werden mit Set-Kennung, Gegenstandsbezeichnung und Entdeckungsdatum im Abweichungsprotokoll erfasst.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Die Berichte enthalten keine Angaben zu einer spezifischen internen Kennziffer für den Adapter selbst.\",\n      \"belege\": []\n    }\n  ]\n}\n```",
+      "antwort": {
+        "saetze": [
+          {
+            "text": "Fehlende Gegenstände werden im Abweichungsprotokoll mit der Set-Kennung und der Gegenstandsbezeichnung erfasst.",
+            "belege": [
+              {
+                "bericht": "B9",
+                "zitat": "Fehlende Gegenstände werden mit Set-Kennung, Gegenstandsbezeichnung und Entdeckungsdatum im Abweichungsprotokoll erfasst.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Die Berichte enthalten keine Angaben zu einer spezifischen internen Kennziffer für den Adapter selbst.",
+            "belege": []
+          }
+        ]
+      }
+    },
+    {
+      "durchlauf": 2,
+      "nr": 7,
+      "frage": "Muss ich das Dienstfahrzeug vollgetankt zurückgeben?",
+      "roh": "```json\n{\n  \"saetze\": [\n    {\n      \"text\": \"Bei der Rückgabe wird der Tankstand vermerkt.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B10\",\n          \"zitat\": \"Bei der Rückgabe wird außerdem der Tankstand vermerkt\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Das Betanken übernimmt anschließend die Fahrbereitschaft.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B10\",\n          \"zitat\": \"das Betanken übernimmt anschließend die Fahrbereitschaft\"\n        }\n      ]\n    }\n  ]\n}\n```",
+      "antwort": {
+        "saetze": [
+          {
+            "text": "Bei der Rückgabe wird der Tankstand vermerkt.",
+            "belege": [
+              {
+                "bericht": "B10",
+                "zitat": "Bei der Rückgabe wird außerdem der Tankstand vermerkt",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Das Betanken übernimmt anschließend die Fahrbereitschaft.",
+            "belege": [
+              {
+                "bericht": "B10",
+                "zitat": "das Betanken übernimmt anschließend die Fahrbereitschaft",
+                "status": "gültig"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "durchlauf": 2,
+      "nr": 8,
+      "frage": "Wir haben bei einem dreitägigen Seminar ein Fahrzeug gemeinsam genutzt. Wer bestätigt die Rückgabe?",
+      "roh": "```json\n{\n  \"saetze\": [\n    {\n      \"text\": \"Auch bei gemeinsamer Nutzung bleibt das Fahrzeug der ausleihenden Person zugeordnet.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B12\",\n          \"zitat\": \"Auch bei gemeinsamer Nutzung bleibt das Fahrzeug der ausleihenden Person zugeordnet.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Diese Person gibt das Fahrzeug zurück und bestätigt die Rückgabe gegenüber der Fahrbereitschaft.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B12\",\n          \"zitat\": \"Sie gibt das Fahrzeug zurück und bestätigt die Rückgabe gegenüber der Fahrbereitschaft.\"\n        }\n      ]\n    }\n  ]\n}\n```",
+      "antwort": {
+        "saetze": [
+          {
+            "text": "Auch bei gemeinsamer Nutzung bleibt das Fahrzeug der ausleihenden Person zugeordnet.",
+            "belege": [
+              {
+                "bericht": "B12",
+                "zitat": "Auch bei gemeinsamer Nutzung bleibt das Fahrzeug der ausleihenden Person zugeordnet.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Diese Person gibt das Fahrzeug zurück und bestätigt die Rückgabe gegenüber der Fahrbereitschaft.",
+            "belege": [
+              {
+                "bericht": "B12",
+                "zitat": "Sie gibt das Fahrzeug zurück und bestätigt die Rückgabe gegenüber der Fahrbereitschaft.",
+                "status": "gültig"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "durchlauf": 2,
+      "nr": 9,
+      "frage": "Bei der Rückgabe ist ein Kratzer am Fahrzeug. Was ist zu tun, und wer ist verantwortlich?",
+      "roh": "```json\n{\n  \"saetze\": [\n    {\n      \"text\": \"Schäden werden bei der Rückgabe mit Kennzeichen und Datum im Schadensformular erfasst.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B7\",\n          \"zitat\": \"Schäden werden vor Fahrtantritt und bei der Rückgabe mit Kennzeichen und Datum im Schadensformular erfasst.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Das Formular wird mit dem Fahrzeugschlüssel bei der Fahrbereitschaft abgegeben.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B7\",\n          \"zitat\": \"Das Formular wird mit dem Fahrzeugschlüssel bei der Fahrbereitschaft abgegeben.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Aus einem festgestellten Schaden allein wird keine persönliche Verantwortung abgeleitet.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B7\",\n          \"zitat\": \"Aus einem festgestellten Schaden allein wird keine persönliche Verantwortung abgeleitet.\"\n        }\n      ]\n    }\n  ]\n}\n```",
+      "antwort": {
+        "saetze": [
+          {
+            "text": "Schäden werden bei der Rückgabe mit Kennzeichen und Datum im Schadensformular erfasst.",
+            "belege": [
+              {
+                "bericht": "B7",
+                "zitat": "Schäden werden vor Fahrtantritt und bei der Rückgabe mit Kennzeichen und Datum im Schadensformular erfasst.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Das Formular wird mit dem Fahrzeugschlüssel bei der Fahrbereitschaft abgegeben.",
+            "belege": [
+              {
+                "bericht": "B7",
+                "zitat": "Das Formular wird mit dem Fahrzeugschlüssel bei der Fahrbereitschaft abgegeben.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Aus einem festgestellten Schaden allein wird keine persönliche Verantwortung abgeleitet.",
+            "belege": [
+              {
+                "bericht": "B7",
+                "zitat": "Aus einem festgestellten Schaden allein wird keine persönliche Verantwortung abgeleitet.",
+                "status": "gültig"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "durchlauf": 2,
+      "nr": 10,
+      "frage": "Wie früh muss ich ein Fahrzeug reservieren, und was kostet die Ausleihe?",
+      "roh": "```json\n{\n  \"saetze\": [\n    {\n      \"text\": \"Fahrzeuge müssen mindestens zwei Werktage vor der geplanten Fahrt bei der Fahrbereitschaft reserviert werden.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B4\",\n          \"zitat\": \"Fahrzeuge werden mindestens zwei Werktage vor der geplanten Fahrt bei der Fahrbereitschaft reserviert.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Die Berichte enthalten keine Informationen zu den Kosten der Ausleihe.\",\n      \"belege\": []\n    }\n  ]\n}\n```",
+      "antwort": {
+        "saetze": [
+          {
+            "text": "Fahrzeuge müssen mindestens zwei Werktage vor der geplanten Fahrt bei der Fahrbereitschaft reserviert werden.",
+            "belege": [
+              {
+                "bericht": "B4",
+                "zitat": "Fahrzeuge werden mindestens zwei Werktage vor der geplanten Fahrt bei der Fahrbereitschaft reserviert.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Die Berichte enthalten keine Informationen zu den Kosten der Ausleihe.",
+            "belege": []
+          }
+        ]
+      }
+    },
+    {
+      "durchlauf": 2,
+      "nr": 11,
+      "frage": "Welche Kleidung hat sich bei mehrtägigen Winter-Außenseminaren bewährt?",
+      "roh": "```json\n{\n  \"saetze\": [\n    {\n      \"text\": \"Bei Jacken gehen die Einschätzungen auseinander: Einige Teilnehmende bevorzugten eine Daunenjacke, andere mehrere dünne Schichten.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B13\",\n          \"zitat\": \"Bei den Jacken waren die Teilnehmenden uneinig: Einige bevorzugten eine Daunenjacke, andere mehrere dünne Schichten.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Mehrere dünne Kleidungsschichten haben sich bewährt, da sie sich beim Gehen leicht anpassen ließen.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B2\",\n          \"zitat\": \"haben sich mehrere dünne Kleidungsschichten bewährt, weil sie sich beim Gehen leicht anpassen ließen\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Eine dicke Daunenjacke wurde beim Gehen hingegen oft als zu warm empfunden.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B2\",\n          \"zitat\": \"Wer eine dicke Daunenjacke trug, fand sie beim Gehen meist zu warm; viele haben darin geschwitzt.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Bei langen Wartezeiten im Freien war eine warme Daunenjacke nach Erfahrung der meisten Teilnehmenden unverzichtbar, während mehrere dünne Schichten allein nicht ausreichten.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B5\",\n          \"zitat\": \"In dieser Situation war eine warme Daunenjacke nach Erfahrung der meisten Teilnehmenden unverzichtbar.\"\n        },\n        {\n          \"bericht\": \"B5\",\n          \"zitat\": \"Mehrere dünne Kleidungsschichten allein reichten den meisten nicht aus.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Für alle Teilnehmenden ist eine wasserdichte Überjacke vorgeschrieben.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B13\",\n          \"zitat\": \"Eine wasserdichte Überjacke ist für alle Teilnehmenden vorgeschrieben.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Wollsocken haben sich besser bewährt als Baumwollsocken und Ersatzsocken wurden häufig gebraucht.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B13\",\n          \"zitat\": \"Wollsocken haben sich bei unserem mehrtägigen Außenseminar besser bewährt als Baumwollsocken; Ersatzsocken wurden häufig gebraucht.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Es war hilfreich, zwei Paar Handschuhe zum Wechseln zu haben.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B2\",\n          \"zitat\": \"Zwei Paar Handschuhe zum Wechseln waren hilfreich.\"\n        }\n      ]\n    }\n  ]\n}\n```",
+      "antwort": {
+        "saetze": [
+          {
+            "text": "Bei Jacken gehen die Einschätzungen auseinander: Einige Teilnehmende bevorzugten eine Daunenjacke, andere mehrere dünne Schichten.",
+            "belege": [
+              {
+                "bericht": "B13",
+                "zitat": "Bei den Jacken waren die Teilnehmenden uneinig: Einige bevorzugten eine Daunenjacke, andere mehrere dünne Schichten.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Mehrere dünne Kleidungsschichten haben sich bewährt, da sie sich beim Gehen leicht anpassen ließen.",
+            "belege": [
+              {
+                "bericht": "B2",
+                "zitat": "haben sich mehrere dünne Kleidungsschichten bewährt, weil sie sich beim Gehen leicht anpassen ließen",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Eine dicke Daunenjacke wurde beim Gehen hingegen oft als zu warm empfunden.",
+            "belege": [
+              {
+                "bericht": "B2",
+                "zitat": "Wer eine dicke Daunenjacke trug, fand sie beim Gehen meist zu warm; viele haben darin geschwitzt.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Bei langen Wartezeiten im Freien war eine warme Daunenjacke nach Erfahrung der meisten Teilnehmenden unverzichtbar, während mehrere dünne Schichten allein nicht ausreichten.",
+            "belege": [
+              {
+                "bericht": "B5",
+                "zitat": "In dieser Situation war eine warme Daunenjacke nach Erfahrung der meisten Teilnehmenden unverzichtbar.",
+                "status": "gültig"
+              },
+              {
+                "bericht": "B5",
+                "zitat": "Mehrere dünne Kleidungsschichten allein reichten den meisten nicht aus.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Für alle Teilnehmenden ist eine wasserdichte Überjacke vorgeschrieben.",
+            "belege": [
+              {
+                "bericht": "B13",
+                "zitat": "Eine wasserdichte Überjacke ist für alle Teilnehmenden vorgeschrieben.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Wollsocken haben sich besser bewährt als Baumwollsocken und Ersatzsocken wurden häufig gebraucht.",
+            "belege": [
+              {
+                "bericht": "B13",
+                "zitat": "Wollsocken haben sich bei unserem mehrtägigen Außenseminar besser bewährt als Baumwollsocken; Ersatzsocken wurden häufig gebraucht.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Es war hilfreich, zwei Paar Handschuhe zum Wechseln zu haben.",
+            "belege": [
+              {
+                "bericht": "B2",
+                "zitat": "Zwei Paar Handschuhe zum Wechseln waren hilfreich.",
+                "status": "gültig"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "durchlauf": 2,
+      "nr": 12,
+      "frage": "Brauche ich bei einem mehrtägigen Winter-Außenseminar eine dicke Daunenjacke?",
+      "roh": "```json\n{\n  \"saetze\": [\n    {\n      \"text\": \"Die Berichte geben hierzu unterschiedliche Einschätzungen.\",\n      \"belege\": []\n    },\n    {\n      \"text\": \"Bei den Jacken waren Teilnehmende uneinig: Einige bevorzugten eine Daunenjacke, andere mehrere dünne Schichten.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B13\",\n          \"zitat\": \"Bei den Jacken waren die Teilnehmenden uneinig: Einige bevorzugten eine Daunenjacke, andere mehrere dünne Schichten.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Nach Erfahrung der meisten Teilnehmenden war eine warme Daunenjacke bei langen Wartezeiten im Freien unverzichtbar, da mehrere dünne Kleidungsschichten allein nicht ausreichten.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B5\",\n          \"zitat\": \"In dieser Situation war eine warme Daunenjacke nach Erfahrung der meisten Teilnehmenden unverzichtbar. Mehrere dünne Kleidungsschichten allein reichten den meisten nicht aus.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Dagegen wird berichtet, dass sich mehrere dünne Kleidungsschichten bewährt haben, da sie sich beim Gehen leicht anpassen ließen.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B2\",\n          \"zitat\": \"Bei unserem mehrtägigen Außenseminar im Winter haben sich mehrere dünne Kleidungsschichten bewährt, weil sie sich beim Gehen leicht anpassen ließen.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Wer eine dicke Daunenjacke trug, empfand sie beim Gehen meist als zu warm und schwitzte darin.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B2\",\n          \"zitat\": \"Wer eine dicke Daunenjacke trug, fand sie beim Gehen meist zu warm; viele haben darin geschwitzt.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Für alle Teilnehmenden ist eine wasserdichte Überjacke vorgeschrieben.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B13\",\n          \"zitat\": \"Eine wasserdichte Überjacke ist für alle Teilnehmenden vorgeschrieben.\"\n        }\n      ]\n    }\n  ]\n}\n```",
+      "antwort": {
+        "saetze": [
+          {
+            "text": "Die Berichte geben hierzu unterschiedliche Einschätzungen.",
+            "belege": []
+          },
+          {
+            "text": "Bei den Jacken waren Teilnehmende uneinig: Einige bevorzugten eine Daunenjacke, andere mehrere dünne Schichten.",
+            "belege": [
+              {
+                "bericht": "B13",
+                "zitat": "Bei den Jacken waren die Teilnehmenden uneinig: Einige bevorzugten eine Daunenjacke, andere mehrere dünne Schichten.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Nach Erfahrung der meisten Teilnehmenden war eine warme Daunenjacke bei langen Wartezeiten im Freien unverzichtbar, da mehrere dünne Kleidungsschichten allein nicht ausreichten.",
+            "belege": [
+              {
+                "bericht": "B5",
+                "zitat": "In dieser Situation war eine warme Daunenjacke nach Erfahrung der meisten Teilnehmenden unverzichtbar. Mehrere dünne Kleidungsschichten allein reichten den meisten nicht aus.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Dagegen wird berichtet, dass sich mehrere dünne Kleidungsschichten bewährt haben, da sie sich beim Gehen leicht anpassen ließen.",
+            "belege": [
+              {
+                "bericht": "B2",
+                "zitat": "Bei unserem mehrtägigen Außenseminar im Winter haben sich mehrere dünne Kleidungsschichten bewährt, weil sie sich beim Gehen leicht anpassen ließen.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Wer eine dicke Daunenjacke trug, empfand sie beim Gehen meist als zu warm und schwitzte darin.",
+            "belege": [
+              {
+                "bericht": "B2",
+                "zitat": "Wer eine dicke Daunenjacke trug, fand sie beim Gehen meist zu warm; viele haben darin geschwitzt.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Für alle Teilnehmenden ist eine wasserdichte Überjacke vorgeschrieben.",
+            "belege": [
+              {
+                "bericht": "B13",
+                "zitat": "Eine wasserdichte Überjacke ist für alle Teilnehmenden vorgeschrieben.",
+                "status": "gültig"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "durchlauf": 2,
+      "nr": 13,
+      "frage": "Welche Marke wird für die Winterjacke empfohlen, und ab welcher Temperatur sollte man sie tragen?",
+      "roh": "```json\n{\n  \"saetze\": [\n    {\n      \"text\": \"Die Berichte geben keine Empfehlung für eine bestimmte Marke für Winterjacken.\",\n      \"belege\": []\n    },\n    {\n      \"text\": \"Zu der Temperatur, ab der eine Winterjacke getragen werden sollte, machen die Berichte keine Angaben.\",\n      \"belege\": []\n    }\n  ]\n}\n```",
+      "antwort": {
+        "saetze": [
+          {
+            "text": "Die Berichte geben keine Empfehlung für eine bestimmte Marke für Winterjacken.",
+            "belege": []
+          },
+          {
+            "text": "Zu der Temperatur, ab der eine Winterjacke getragen werden sollte, machen die Berichte keine Angaben.",
+            "belege": []
+          }
+        ]
+      }
+    },
+    {
+      "durchlauf": 2,
+      "nr": 14,
+      "frage": "Fasse alles zusammen, was die Berichte zur Fahrzeugausleihe sagen.",
+      "roh": "```json\n{\n  \"saetze\": [\n    {\n      \"text\": \"Fahrzeuge werden mindestens zwei Werktage vor der geplanten Fahrt bei der Fahrbereitschaft reserviert, wobei Datum, voraussichtliche Rückgabezeit und Fahrtziel anzugeben sind.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B4\",\n          \"zitat\": \"Fahrzeuge werden mindestens zwei Werktage vor der geplanten Fahrt bei der Fahrbereitschaft reserviert.\"\n        },\n        {\n          \"bericht\": \"B4\",\n          \"zitat\": \"Bei der Reservierung werden Datum, voraussichtliche Rückgabezeit und Fahrtziel angegeben.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Sowohl vor Fahrtantritt als auch bei der Rückgabe werden Schäden mit Kennzeichen und Datum im Schadensformular erfasst.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B7\",\n          \"zitat\": \"Schäden werden vor Fahrtantritt und bei der Rückgabe mit Kennzeichen und Datum im Schadensformular erfasst.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Ausgeliehene Fahrzeuge werden von der ausleihenden Person zurückgegeben, auch wenn sie bei mehrtägigen Seminaren gemeinsam genutzt wurden.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B3\",\n          \"zitat\": \"Ausgeliehene Dienstfahrzeuge werden von der ausleihenden Person zurückgegeben.\"\n        },\n        {\n          \"bericht\": \"B12\",\n          \"zitat\": \"Auch bei gemeinsamer Nutzung bleibt das Fahrzeug der ausleihenden Person zugeordnet.\"\n        },\n        {\n          \"bericht\": \"B12\",\n          \"zitat\": \"Sie gibt das Fahrzeug zurück\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Bei der Rückgabe werden der Fahrzeugschlüssel und das Schadensformular bei der Fahrbereitschaft abgegeben.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B3\",\n          \"zitat\": \"Sie gibt den Fahrzeugschlüssel bei der Fahrbereitschaft ab\"\n        },\n        {\n          \"bericht\": \"B7\",\n          \"zitat\": \"Das Formular wird mit dem Fahrzeugschlüssel bei der Fahrbereitschaft abgegeben.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Kilometerstand und Fahrtzweck werden in getrennten Feldern des Fahrtenbuchs erfasst.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B10\",\n          \"zitat\": \"Kilometerstand und Fahrtzweck werden jetzt in getrennten Feldern erfasst.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Bei der Rückgabe wird der Tankstand vermerkt und das Betanken anschließend von der Fahrbereitschaft übernommen.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B10\",\n          \"zitat\": \"Bei der Rückgabe wird außerdem der Tankstand vermerkt, das Betanken übernimmt anschließend die Fahrbereitschaft.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Aus einem festgestellten Schaden wird nicht allein auf eine persönliche Verantwortung geschlossen.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B7\",\n          \"zitat\": \"Aus einem festgestellten Schaden allein wird keine persönliche Verantwortung abgeleitet.\"\n        }\n      ]\n    }\n  ]\n}\n```",
+      "antwort": {
+        "saetze": [
+          {
+            "text": "Fahrzeuge werden mindestens zwei Werktage vor der geplanten Fahrt bei der Fahrbereitschaft reserviert, wobei Datum, voraussichtliche Rückgabezeit und Fahrtziel anzugeben sind.",
+            "belege": [
+              {
+                "bericht": "B4",
+                "zitat": "Fahrzeuge werden mindestens zwei Werktage vor der geplanten Fahrt bei der Fahrbereitschaft reserviert.",
+                "status": "gültig"
+              },
+              {
+                "bericht": "B4",
+                "zitat": "Bei der Reservierung werden Datum, voraussichtliche Rückgabezeit und Fahrtziel angegeben.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Sowohl vor Fahrtantritt als auch bei der Rückgabe werden Schäden mit Kennzeichen und Datum im Schadensformular erfasst.",
+            "belege": [
+              {
+                "bericht": "B7",
+                "zitat": "Schäden werden vor Fahrtantritt und bei der Rückgabe mit Kennzeichen und Datum im Schadensformular erfasst.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Ausgeliehene Fahrzeuge werden von der ausleihenden Person zurückgegeben, auch wenn sie bei mehrtägigen Seminaren gemeinsam genutzt wurden.",
+            "belege": [
+              {
+                "bericht": "B3",
+                "zitat": "Ausgeliehene Dienstfahrzeuge werden von der ausleihenden Person zurückgegeben.",
+                "status": "gültig"
+              },
+              {
+                "bericht": "B12",
+                "zitat": "Auch bei gemeinsamer Nutzung bleibt das Fahrzeug der ausleihenden Person zugeordnet.",
+                "status": "gültig"
+              },
+              {
+                "bericht": "B12",
+                "zitat": "Sie gibt das Fahrzeug zurück",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Bei der Rückgabe werden der Fahrzeugschlüssel und das Schadensformular bei der Fahrbereitschaft abgegeben.",
+            "belege": [
+              {
+                "bericht": "B3",
+                "zitat": "Sie gibt den Fahrzeugschlüssel bei der Fahrbereitschaft ab",
+                "status": "gültig"
+              },
+              {
+                "bericht": "B7",
+                "zitat": "Das Formular wird mit dem Fahrzeugschlüssel bei der Fahrbereitschaft abgegeben.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Kilometerstand und Fahrtzweck werden in getrennten Feldern des Fahrtenbuchs erfasst.",
+            "belege": [
+              {
+                "bericht": "B10",
+                "zitat": "Kilometerstand und Fahrtzweck werden jetzt in getrennten Feldern erfasst.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Bei der Rückgabe wird der Tankstand vermerkt und das Betanken anschließend von der Fahrbereitschaft übernommen.",
+            "belege": [
+              {
+                "bericht": "B10",
+                "zitat": "Bei der Rückgabe wird außerdem der Tankstand vermerkt, das Betanken übernimmt anschließend die Fahrbereitschaft.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Aus einem festgestellten Schaden wird nicht allein auf eine persönliche Verantwortung geschlossen.",
+            "belege": [
+              {
+                "bericht": "B7",
+                "zitat": "Aus einem festgestellten Schaden allein wird keine persönliche Verantwortung abgeleitet.",
+                "status": "gültig"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "durchlauf": 2,
+      "nr": 15,
+      "frage": "Gib mir eine Zusammenfassung der Erfahrungen mit Winter-Außenseminaren.",
+      "roh": "```json\n{\n  \"saetze\": [\n    {\n      \"text\": \"Bei der Wahl der Jacken waren die Teilnehmenden uneinig, wobei einige eine Daunenjacke und andere mehrere dünne Schichten bevorzugten.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B13\",\n          \"zitat\": \"Bei den Jacken waren die Teilnehmenden uneinig: Einige bevorzugten eine Daunenjacke, andere mehrere dünne Schichten.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Mehrere dünne Kleidungsschichten bewährten sich beim Gehen, da sie sich leicht anpassen ließen, während eine dicke Daunenjacke dabei oft als zu warm empfunden wurde.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B2\",\n          \"zitat\": \"haben sich mehrere dünne Kleidungsschichten bewährt, weil sie sich beim Gehen leicht anpassen ließen.\"\n        },\n        {\n          \"bericht\": \"B2\",\n          \"zitat\": \"Wer eine dicke Daunenjacke trug, fand sie beim Gehen meist zu warm\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Bei langen Wartezeiten im Freien war eine warme Daunenjacke für die meisten Teilnehmenden hingegen unverzichtbar, da mehrere dünne Schichten allein oft nicht ausreichten.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B5\",\n          \"zitat\": \"In dieser Situation war eine warme Daunenjacke nach Erfahrung der meisten Teilnehmenden unverzichtbar.\"\n        },\n        {\n          \"bericht\": \"B5\",\n          \"zitat\": \"Mehrere dünne Kleidungsschichten allein reichten den meisten nicht aus.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Eine wasserdichte Überjacke ist für alle Teilnehmenden vorgeschrieben.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B13\",\n          \"zitat\": \"Eine wasserdichte Überjacke ist für alle Teilnehmenden vorgeschrieben.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Wollsocken haben sich besser bewährt als Baumwollsocken, und Ersatzsocken wurden häufig gebraucht.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B13\",\n          \"zitat\": \"Wollsocken haben sich bei unserem mehrtägigen Außenseminar besser bewährt als Baumwollsocken; Ersatzsocken wurden häufig gebraucht.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Es war hilfreich, zwei Paar Handschuhe zum Wechseln zu haben.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B2\",\n          \"zitat\": \"Zwei Paar Handschuhe zum Wechseln waren hilfreich.\"\n        }\n      ]\n    }\n  ]\n}\n```",
+      "antwort": {
+        "saetze": [
+          {
+            "text": "Bei der Wahl der Jacken waren die Teilnehmenden uneinig, wobei einige eine Daunenjacke und andere mehrere dünne Schichten bevorzugten.",
+            "belege": [
+              {
+                "bericht": "B13",
+                "zitat": "Bei den Jacken waren die Teilnehmenden uneinig: Einige bevorzugten eine Daunenjacke, andere mehrere dünne Schichten.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Mehrere dünne Kleidungsschichten bewährten sich beim Gehen, da sie sich leicht anpassen ließen, während eine dicke Daunenjacke dabei oft als zu warm empfunden wurde.",
+            "belege": [
+              {
+                "bericht": "B2",
+                "zitat": "haben sich mehrere dünne Kleidungsschichten bewährt, weil sie sich beim Gehen leicht anpassen ließen.",
+                "status": "gültig"
+              },
+              {
+                "bericht": "B2",
+                "zitat": "Wer eine dicke Daunenjacke trug, fand sie beim Gehen meist zu warm",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Bei langen Wartezeiten im Freien war eine warme Daunenjacke für die meisten Teilnehmenden hingegen unverzichtbar, da mehrere dünne Schichten allein oft nicht ausreichten.",
+            "belege": [
+              {
+                "bericht": "B5",
+                "zitat": "In dieser Situation war eine warme Daunenjacke nach Erfahrung der meisten Teilnehmenden unverzichtbar.",
+                "status": "gültig"
+              },
+              {
+                "bericht": "B5",
+                "zitat": "Mehrere dünne Kleidungsschichten allein reichten den meisten nicht aus.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Eine wasserdichte Überjacke ist für alle Teilnehmenden vorgeschrieben.",
+            "belege": [
+              {
+                "bericht": "B13",
+                "zitat": "Eine wasserdichte Überjacke ist für alle Teilnehmenden vorgeschrieben.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Wollsocken haben sich besser bewährt als Baumwollsocken, und Ersatzsocken wurden häufig gebraucht.",
+            "belege": [
+              {
+                "bericht": "B13",
+                "zitat": "Wollsocken haben sich bei unserem mehrtägigen Außenseminar besser bewährt als Baumwollsocken; Ersatzsocken wurden häufig gebraucht.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Es war hilfreich, zwei Paar Handschuhe zum Wechseln zu haben.",
+            "belege": [
+              {
+                "bericht": "B2",
+                "zitat": "Zwei Paar Handschuhe zum Wechseln waren hilfreich.",
+                "status": "gültig"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "durchlauf": 2,
+      "nr": 16,
+      "frage": "Fasse zusammen, was bei mehrtägigen Seminaren zu beachten ist.",
+      "roh": "```json\n{\n  \"saetze\": [\n    {\n      \"text\": \"Bei zukünftigen mehrtägigen Seminaren bestätigt jede teilnehmende Person die Rückgabe der von ihr genutzten Bestandteile auf einer persönlichen Liste.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B8\",\n          \"zitat\": \"Für kommende mehrtägige Seminare bestätigt deshalb jede teilnehmende Person die Rückgabe der von ihr genutzten Bestandteile auf der persönlichen Liste.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Die Gruppenvertretung reicht zusätzlich eine Gesamtübersicht des gemeinsam genutzten Sets ein.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B8\",\n          \"zitat\": \"Die Gruppenvertretung reicht zusätzlich eine Gesamtübersicht des gemeinsam genutzten Sets ein.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Auch wenn Seminargruppen ausgeliehene Fahrzeuge gemeinsam nutzen, bleibt das Fahrzeug der ausleihenden Person zugeordnet.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B12\",\n          \"zitat\": \"Auch bei gemeinsamer Nutzung bleibt das Fahrzeug der ausleihenden Person zugeordnet.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Diese Person gibt das Fahrzeug zurück und bestätigt die Rückgabe gegenüber der Fahrbereitschaft.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B12\",\n          \"zitat\": \"Sie gibt das Fahrzeug zurück und bestätigt die Rückgabe gegenüber der Fahrbereitschaft.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Zur passenden Jacke bei Winter-Außenseminaren gehen die Erfahrungen auseinander.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B13\",\n          \"zitat\": \"Bei den Jacken waren die Teilnehmenden uneinig\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Einigen Berichten zufolge haben sich mehrere dünne Kleidungsschichten bewährt, da sie sich beim Gehen leicht anpassen ließen, während eine dicke Daunenjacke dabei als zu warm empfunden wurde.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B2\",\n          \"zitat\": \"Bei unserem mehrtägigen Außenseminar im Winter haben sich mehrere dünne Kleidungsschichten bewährt, weil sie sich beim Gehen leicht anpassen ließen.\"\n        },\n        {\n          \"bericht\": \"B2\",\n          \"zitat\": \"Wer eine dicke Daunenjacke trug, fand sie beim Gehen meist zu warm\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Bei langen Wartezeiten war nach Erfahrung der meisten Teilnehmenden hingegen eine warme Daunenjacke unverzichtbar und mehrere dünne Schichten allein reichten nicht aus.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B5\",\n          \"zitat\": \"In dieser Situation war eine warme Daunenjacke nach Erfahrung der meisten Teilnehmenden unverzichtbar. Mehrere dünne Kleidungsschichten allein reichten den meisten nicht aus.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Eine wasserdichte Überjacke ist für alle Teilnehmenden vorgeschrieben.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B13\",\n          \"zitat\": \"Eine wasserdichte Überjacke ist für alle Teilnehmenden vorgeschrieben.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Wollsocken haben sich besser bewährt als Baumwollsocken und es wurden häufig Ersatzsocken gebraucht.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B13\",\n          \"zitat\": \"Wollsocken haben sich bei unserem mehrtägigen Außenseminar besser bewährt als Baumwollsocken; Ersatzsocken wurden häufig gebraucht.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Zwei Paar Handschuhe zum Wechseln waren hilfreich.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B2\",\n          \"zitat\": \"Zwei Paar Handschuhe zum Wechseln waren hilfreich.\"\n        }\n      ]\n    }\n  ]\n}\n```",
+      "antwort": {
+        "saetze": [
+          {
+            "text": "Bei zukünftigen mehrtägigen Seminaren bestätigt jede teilnehmende Person die Rückgabe der von ihr genutzten Bestandteile auf einer persönlichen Liste.",
+            "belege": [
+              {
+                "bericht": "B8",
+                "zitat": "Für kommende mehrtägige Seminare bestätigt deshalb jede teilnehmende Person die Rückgabe der von ihr genutzten Bestandteile auf der persönlichen Liste.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Die Gruppenvertretung reicht zusätzlich eine Gesamtübersicht des gemeinsam genutzten Sets ein.",
+            "belege": [
+              {
+                "bericht": "B8",
+                "zitat": "Die Gruppenvertretung reicht zusätzlich eine Gesamtübersicht des gemeinsam genutzten Sets ein.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Auch wenn Seminargruppen ausgeliehene Fahrzeuge gemeinsam nutzen, bleibt das Fahrzeug der ausleihenden Person zugeordnet.",
+            "belege": [
+              {
+                "bericht": "B12",
+                "zitat": "Auch bei gemeinsamer Nutzung bleibt das Fahrzeug der ausleihenden Person zugeordnet.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Diese Person gibt das Fahrzeug zurück und bestätigt die Rückgabe gegenüber der Fahrbereitschaft.",
+            "belege": [
+              {
+                "bericht": "B12",
+                "zitat": "Sie gibt das Fahrzeug zurück und bestätigt die Rückgabe gegenüber der Fahrbereitschaft.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Zur passenden Jacke bei Winter-Außenseminaren gehen die Erfahrungen auseinander.",
+            "belege": [
+              {
+                "bericht": "B13",
+                "zitat": "Bei den Jacken waren die Teilnehmenden uneinig",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Einigen Berichten zufolge haben sich mehrere dünne Kleidungsschichten bewährt, da sie sich beim Gehen leicht anpassen ließen, während eine dicke Daunenjacke dabei als zu warm empfunden wurde.",
+            "belege": [
+              {
+                "bericht": "B2",
+                "zitat": "Bei unserem mehrtägigen Außenseminar im Winter haben sich mehrere dünne Kleidungsschichten bewährt, weil sie sich beim Gehen leicht anpassen ließen.",
+                "status": "gültig"
+              },
+              {
+                "bericht": "B2",
+                "zitat": "Wer eine dicke Daunenjacke trug, fand sie beim Gehen meist zu warm",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Bei langen Wartezeiten war nach Erfahrung der meisten Teilnehmenden hingegen eine warme Daunenjacke unverzichtbar und mehrere dünne Schichten allein reichten nicht aus.",
+            "belege": [
+              {
+                "bericht": "B5",
+                "zitat": "In dieser Situation war eine warme Daunenjacke nach Erfahrung der meisten Teilnehmenden unverzichtbar. Mehrere dünne Kleidungsschichten allein reichten den meisten nicht aus.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Eine wasserdichte Überjacke ist für alle Teilnehmenden vorgeschrieben.",
+            "belege": [
+              {
+                "bericht": "B13",
+                "zitat": "Eine wasserdichte Überjacke ist für alle Teilnehmenden vorgeschrieben.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Wollsocken haben sich besser bewährt als Baumwollsocken und es wurden häufig Ersatzsocken gebraucht.",
+            "belege": [
+              {
+                "bericht": "B13",
+                "zitat": "Wollsocken haben sich bei unserem mehrtägigen Außenseminar besser bewährt als Baumwollsocken; Ersatzsocken wurden häufig gebraucht.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Zwei Paar Handschuhe zum Wechseln waren hilfreich.",
+            "belege": [
+              {
+                "bericht": "B2",
+                "zitat": "Zwei Paar Handschuhe zum Wechseln waren hilfreich.",
+                "status": "gültig"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "durchlauf": 2,
+      "nr": 17,
+      "frage": "Wie hat sich das Verfahren zur Rückgabe gemeinsam genutzter Materialsets bei mehrtägigen Seminaren über die Zeit verändert?",
+      "roh": "```json\n{\n  \"saetze\": [\n    {\n      \"text\": \"Bei mehrtägigen Seminaren wurden gemeinsam genutzte Materialsets von der Gruppenvertretung geprüft, die eine gemeinsame Rückgabeliste für das Set führte.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B6\",\n          \"zitat\": \"Bei mehrtägigen Seminaren werden gemeinsam genutzte Materialsets am Ende durch die Gruppenvertretung geprüft. Sie führt eine gemeinsame Rückgabeliste für das Set.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Eine persönliche Bestätigung durch die Teilnehmenden war dabei nicht vorgesehen.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B6\",\n          \"zitat\": \"Eine zusätzliche persönliche Bestätigung der einzelnen Bestandteile durch die Teilnehmenden ist nicht vorgesehen.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Später wurde das Verfahren dahingehend geändert, dass jede teilnehmende Person die Rückgabe der von ihr genutzten Bestandteile auf einer persönlichen Liste bestätigt.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B8\",\n          \"zitat\": \"Für kommende mehrtägige Seminare bestätigt deshalb jede teilnehmende Person die Rückgabe der von ihr genutzten Bestandteile auf der persönlichen Liste.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Zusätzlich reicht die Gruppenvertretung eine Gesamtübersicht des Sets ein.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B8\",\n          \"zitat\": \"Die Gruppenvertretung reicht zusätzlich eine Gesamtübersicht des gemeinsam genutzten Sets ein.\"\n        }\n      ]\n    }\n  ]\n}\n```",
+      "antwort": {
+        "saetze": [
+          {
+            "text": "Bei mehrtägigen Seminaren wurden gemeinsam genutzte Materialsets von der Gruppenvertretung geprüft, die eine gemeinsame Rückgabeliste für das Set führte.",
+            "belege": [
+              {
+                "bericht": "B6",
+                "zitat": "Bei mehrtägigen Seminaren werden gemeinsam genutzte Materialsets am Ende durch die Gruppenvertretung geprüft. Sie führt eine gemeinsame Rückgabeliste für das Set.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Eine persönliche Bestätigung durch die Teilnehmenden war dabei nicht vorgesehen.",
+            "belege": [
+              {
+                "bericht": "B6",
+                "zitat": "Eine zusätzliche persönliche Bestätigung der einzelnen Bestandteile durch die Teilnehmenden ist nicht vorgesehen.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Später wurde das Verfahren dahingehend geändert, dass jede teilnehmende Person die Rückgabe der von ihr genutzten Bestandteile auf einer persönlichen Liste bestätigt.",
+            "belege": [
+              {
+                "bericht": "B8",
+                "zitat": "Für kommende mehrtägige Seminare bestätigt deshalb jede teilnehmende Person die Rückgabe der von ihr genutzten Bestandteile auf der persönlichen Liste.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Zusätzlich reicht die Gruppenvertretung eine Gesamtübersicht des Sets ein.",
+            "belege": [
+              {
+                "bericht": "B8",
+                "zitat": "Die Gruppenvertretung reicht zusätzlich eine Gesamtübersicht des gemeinsam genutzten Sets ein.",
+                "status": "gültig"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "durchlauf": 3,
+      "nr": 1,
+      "frage": "Ich nehme an einem dreitägigen Seminar teil. Unsere Gruppe hat ein Materialset gemeinsam genutzt. Wie wird die Rückgabe bestätigt?",
+      "roh": "```json\n{\n  \"saetze\": [\n    {\n      \"text\": \"Jede teilnehmende Person bestätigt die Rückgabe der von ihr genutzten Bestandteile auf der persönlichen Liste.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B8\",\n          \"zitat\": \"Für kommende mehrtägige Seminare bestätigt deshalb jede teilnehmende Person die Rückgabe der von ihr genutzten Bestandteile auf der persönlichen Liste.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Zusätzlich reicht die Gruppenvertretung eine Gesamtübersicht des gemeinsam genutzten Sets ein.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B8\",\n          \"zitat\": \"Die Gruppenvertretung reicht zusätzlich eine Gesamtübersicht des gemeinsam genutzten Sets ein.\"\n        }\n      ]\n    }\n  ]\n}\n```",
+      "antwort": {
+        "saetze": [
+          {
+            "text": "Jede teilnehmende Person bestätigt die Rückgabe der von ihr genutzten Bestandteile auf der persönlichen Liste.",
+            "belege": [
+              {
+                "bericht": "B8",
+                "zitat": "Für kommende mehrtägige Seminare bestätigt deshalb jede teilnehmende Person die Rückgabe der von ihr genutzten Bestandteile auf der persönlichen Liste.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Zusätzlich reicht die Gruppenvertretung eine Gesamtübersicht des gemeinsam genutzten Sets ein.",
+            "belege": [
+              {
+                "bericht": "B8",
+                "zitat": "Die Gruppenvertretung reicht zusätzlich eine Gesamtübersicht des gemeinsam genutzten Sets ein.",
+                "status": "gültig"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "durchlauf": 3,
+      "nr": 2,
+      "frage": "Bei unserem dreitägigen Seminar fehlt nach der gemeinsamen Nutzung ein Adapter aus dem Materialset. Wie dokumentieren wir die Rückgabe und den fehlenden Adapter?",
+      "roh": "```json\n{\n  \"saetze\": [\n    {\n      \"text\": \"Jede teilnehmende Person bestätigt die Rückgabe der von ihr genutzten Bestandteile auf der persönlichen Liste.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B8\",\n          \"zitat\": \"Für kommende mehrtägige Seminare bestätigt deshalb jede teilnehmende Person die Rückgabe der von ihr genutzten Bestandteile auf der persönlichen Liste.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Zusätzlich reicht die Gruppenvertretung eine Gesamtübersicht des gemeinsam genutzten Sets ein.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B8\",\n          \"zitat\": \"Die Gruppenvertretung reicht zusätzlich eine Gesamtübersicht des gemeinsam genutzten Sets ein.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Der fehlende Adapter wird mit Set-Kennung, Gegenstandsbezeichnung und Entdeckungsdatum im Abweichungsprotokoll erfasst.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B9\",\n          \"zitat\": \"Fehlende Gegenstände werden mit Set-Kennung, Gegenstandsbezeichnung und Entdeckungsdatum im Abweichungsprotokoll erfasst.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Die Materialverwaltung wird noch am selben Tag informiert.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B9\",\n          \"zitat\": \"Die Materialverwaltung wird noch am selben Tag informiert.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Aus dem Fehlen allein wird keine persönliche Verantwortung abgeleitet.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B9\",\n          \"zitat\": \"Aus dem Fehlen allein wird keine persönliche Verantwortung abgeleitet.\"\n        }\n      ]\n    }\n  ]\n}\n```",
+      "antwort": {
+        "saetze": [
+          {
+            "text": "Jede teilnehmende Person bestätigt die Rückgabe der von ihr genutzten Bestandteile auf der persönlichen Liste.",
+            "belege": [
+              {
+                "bericht": "B8",
+                "zitat": "Für kommende mehrtägige Seminare bestätigt deshalb jede teilnehmende Person die Rückgabe der von ihr genutzten Bestandteile auf der persönlichen Liste.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Zusätzlich reicht die Gruppenvertretung eine Gesamtübersicht des gemeinsam genutzten Sets ein.",
+            "belege": [
+              {
+                "bericht": "B8",
+                "zitat": "Die Gruppenvertretung reicht zusätzlich eine Gesamtübersicht des gemeinsam genutzten Sets ein.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Der fehlende Adapter wird mit Set-Kennung, Gegenstandsbezeichnung und Entdeckungsdatum im Abweichungsprotokoll erfasst.",
+            "belege": [
+              {
+                "bericht": "B9",
+                "zitat": "Fehlende Gegenstände werden mit Set-Kennung, Gegenstandsbezeichnung und Entdeckungsdatum im Abweichungsprotokoll erfasst.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Die Materialverwaltung wird noch am selben Tag informiert.",
+            "belege": [
+              {
+                "bericht": "B9",
+                "zitat": "Die Materialverwaltung wird noch am selben Tag informiert.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Aus dem Fehlen allein wird keine persönliche Verantwortung abgeleitet.",
+            "belege": [
+              {
+                "bericht": "B9",
+                "zitat": "Aus dem Fehlen allein wird keine persönliche Verantwortung abgeleitet.",
+                "status": "gültig"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "durchlauf": 3,
+      "nr": 3,
+      "frage": "Ich nehme an einem eintägigen Einführungsseminar teil und habe Gegenstände auf meiner persönlichen Ausgabeliste. Wie bestätige ich die Rückgabe?",
+      "roh": "```json\n{\n  \"saetze\": [\n    {\n      \"text\": \"Zum Veranstaltungsende werden die ausgegebenen Gegenstände anhand der persönlichen Ausgabelisten zurückgenommen und von den Teilnehmenden bestätigt.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B11\",\n          \"zitat\": \"Zum Veranstaltungsende werden die ausgegebenen Gegenstände anhand dieser Listen zurückgenommen und von den Teilnehmenden bestätigt.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Auch gemeinsam verwendetes Material wird auf den persönlichen Listen der eingetragenen Personen geführt.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B11\",\n          \"zitat\": \"Gemeinsam verwendetes Material wird ebenfalls auf den persönlichen Listen der eingetragenen Personen geführt.\"\n        }\n      ]\n    }\n  ]\n}\n```",
+      "antwort": {
+        "saetze": [
+          {
+            "text": "Zum Veranstaltungsende werden die ausgegebenen Gegenstände anhand der persönlichen Ausgabelisten zurückgenommen und von den Teilnehmenden bestätigt.",
+            "belege": [
+              {
+                "bericht": "B11",
+                "zitat": "Zum Veranstaltungsende werden die ausgegebenen Gegenstände anhand dieser Listen zurückgenommen und von den Teilnehmenden bestätigt.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Auch gemeinsam verwendetes Material wird auf den persönlichen Listen der eingetragenen Personen geführt.",
+            "belege": [
+              {
+                "bericht": "B11",
+                "zitat": "Gemeinsam verwendetes Material wird ebenfalls auf den persönlichen Listen der eingetragenen Personen geführt.",
+                "status": "gültig"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "durchlauf": 3,
+      "nr": 4,
+      "frage": "Ein einzeln nummeriertes Gerät wurde einer Person zugeordnet, aber während des Seminars gemeinsam genutzt. Wer bestätigt die Rückgabe?",
+      "roh": "```json\n{\n  \"saetze\": [\n    {\n      \"text\": \"Einzeln nummerierte Geräte bleiben der Person zugeordnet, bei der sie eingetragen sind, und werden von dieser zurückgegeben.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B1\",\n          \"zitat\": \"Einzeln nummerierte Geräte bleiben der jeweils eingetragenen Person zugeordnet und werden von dieser zurückgegeben.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Die zugeordnete Person bestätigt die Rückgabe der aufgeführten Gegenstände.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B1\",\n          \"zitat\": \"Die zugeordnete Person bestätigt die Rückgabe der aufgeführten Gegenstände.\"\n        }\n      ]\n    }\n  ]\n}\n```",
+      "antwort": {
+        "saetze": [
+          {
+            "text": "Einzeln nummerierte Geräte bleiben der Person zugeordnet, bei der sie eingetragen sind, und werden von dieser zurückgegeben.",
+            "belege": [
+              {
+                "bericht": "B1",
+                "zitat": "Einzeln nummerierte Geräte bleiben der jeweils eingetragenen Person zugeordnet und werden von dieser zurückgegeben.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Die zugeordnete Person bestätigt die Rückgabe der aufgeführten Gegenstände.",
+            "belege": [
+              {
+                "bericht": "B1",
+                "zitat": "Die zugeordnete Person bestätigt die Rückgabe der aufgeführten Gegenstände.",
+                "status": "gültig"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "durchlauf": 3,
+      "nr": 5,
+      "frage": "Ein Adapter fehlt, nachdem mehrere Gruppen das Set gemeinsam genutzt haben. Welche Person ist dafür verantwortlich?",
+      "roh": "```json\n{\n  \"saetze\": [\n    {\n      \"text\": \"Aus dem Fehlen eines Gegenstandes allein wird keine persönliche Verantwortung abgeleitet.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B9\",\n          \"zitat\": \"Aus dem Fehlen allein wird keine persönliche Verantwortung abgeleitet.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Die Berichte sagen nicht, wer verantwortlich ist, falls eine Verantwortung zugewiesen wird.\",\n      \"belege\": []\n    }\n  ]\n}\n```",
+      "antwort": {
+        "saetze": [
+          {
+            "text": "Aus dem Fehlen eines Gegenstandes allein wird keine persönliche Verantwortung abgeleitet.",
+            "belege": [
+              {
+                "bericht": "B9",
+                "zitat": "Aus dem Fehlen allein wird keine persönliche Verantwortung abgeleitet.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Die Berichte sagen nicht, wer verantwortlich ist, falls eine Verantwortung zugewiesen wird.",
+            "belege": []
+          }
+        ]
+      }
+    },
+    {
+      "durchlauf": 3,
+      "nr": 6,
+      "frage": "Welches konkrete Formularfeld oder welche interne Kennziffer muss ich verwenden, wenn ich den fehlenden Adapter melde?",
+      "roh": "```json\n{\n  \"saetze\": [\n    {\n      \"text\": \"Fehlende Gegenstände werden mit der Set-Kennung, der Gegenstandsbezeichnung und dem Entdeckungsdatum im Abweichungsprotokoll erfasst.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B9\",\n          \"zitat\": \"Fehlende Gegenstände werden mit Set-Kennung, Gegenstandsbezeichnung und Entdeckungsdatum im Abweichungsprotokoll erfasst.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Die Berichte nennen kein konkretes Formularfeld oder eine interne Kennziffer für den Adapter.\",\n      \"belege\": []\n    }\n  ]\n}\n```",
+      "antwort": {
+        "saetze": [
+          {
+            "text": "Fehlende Gegenstände werden mit der Set-Kennung, der Gegenstandsbezeichnung und dem Entdeckungsdatum im Abweichungsprotokoll erfasst.",
+            "belege": [
+              {
+                "bericht": "B9",
+                "zitat": "Fehlende Gegenstände werden mit Set-Kennung, Gegenstandsbezeichnung und Entdeckungsdatum im Abweichungsprotokoll erfasst.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Die Berichte nennen kein konkretes Formularfeld oder eine interne Kennziffer für den Adapter.",
+            "belege": []
+          }
+        ]
+      }
+    },
+    {
+      "durchlauf": 3,
+      "nr": 7,
+      "frage": "Muss ich das Dienstfahrzeug vollgetankt zurückgeben?",
+      "roh": "```json\n{\n  \"saetze\": [\n    {\n      \"text\": \"Bei der Rückgabe wird der Tankstand vermerkt und die Fahrbereitschaft übernimmt anschließend das Betanken.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B10\",\n          \"zitat\": \"Bei der Rückgabe wird außerdem der Tankstand vermerkt, das Betanken übernimmt anschließend die Fahrbereitschaft.\"\n        }\n      ]\n    }\n  ]\n}\n```",
+      "antwort": {
+        "saetze": [
+          {
+            "text": "Bei der Rückgabe wird der Tankstand vermerkt und die Fahrbereitschaft übernimmt anschließend das Betanken.",
+            "belege": [
+              {
+                "bericht": "B10",
+                "zitat": "Bei der Rückgabe wird außerdem der Tankstand vermerkt, das Betanken übernimmt anschließend die Fahrbereitschaft.",
+                "status": "gültig"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "durchlauf": 3,
+      "nr": 8,
+      "frage": "Wir haben bei einem dreitägigen Seminar ein Fahrzeug gemeinsam genutzt. Wer bestätigt die Rückgabe?",
+      "roh": "```json\n{\n  \"saetze\": [\n    {\n      \"text\": \"Bei mehrtägigen Seminaren bleibt das Fahrzeug auch bei gemeinsamer Nutzung der ausleihenden Person zugeordnet.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B12\",\n          \"zitat\": \"Bei mehrtägigen Seminaren nutzen Seminargruppen ausgeliehene Fahrzeuge häufig gemeinsam. Auch bei gemeinsamer Nutzung bleibt das Fahrzeug der ausleihenden Person zugeordnet.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Diese Person gibt das Fahrzeug zurück und bestätigt die Rückgabe gegenüber der Fahrbereitschaft.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B12\",\n          \"zitat\": \"Sie gibt das Fahrzeug zurück und bestätigt die Rückgabe gegenüber der Fahrbereitschaft.\"\n        }\n      ]\n    }\n  ]\n}\n```",
+      "antwort": {
+        "saetze": [
+          {
+            "text": "Bei mehrtägigen Seminaren bleibt das Fahrzeug auch bei gemeinsamer Nutzung der ausleihenden Person zugeordnet.",
+            "belege": [
+              {
+                "bericht": "B12",
+                "zitat": "Bei mehrtägigen Seminaren nutzen Seminargruppen ausgeliehene Fahrzeuge häufig gemeinsam. Auch bei gemeinsamer Nutzung bleibt das Fahrzeug der ausleihenden Person zugeordnet.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Diese Person gibt das Fahrzeug zurück und bestätigt die Rückgabe gegenüber der Fahrbereitschaft.",
+            "belege": [
+              {
+                "bericht": "B12",
+                "zitat": "Sie gibt das Fahrzeug zurück und bestätigt die Rückgabe gegenüber der Fahrbereitschaft.",
+                "status": "gültig"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "durchlauf": 3,
+      "nr": 9,
+      "frage": "Bei der Rückgabe ist ein Kratzer am Fahrzeug. Was ist zu tun, und wer ist verantwortlich?",
+      "roh": "```json\n{\n  \"saetze\": [\n    {\n      \"text\": \"Schäden werden bei der Rückgabe mit Kennzeichen und Datum im Schadensformular erfasst.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B7\",\n          \"zitat\": \"Schäden werden vor Fahrtantritt und bei der Rückgabe mit Kennzeichen und Datum im Schadensformular erfasst.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Dieses Formular wird zusammen mit dem Fahrzeugschlüssel bei der Fahrbereitschaft abgegeben.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B7\",\n          \"zitat\": \"Das Formular wird mit dem Fahrzeugschlüssel bei der Fahrbereitschaft abgegeben.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Aus einem festgestellten Schaden allein wird keine persönliche Verantwortung abgeleitet.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B7\",\n          \"zitat\": \"Aus einem festgestellten Schaden allein wird keine persönliche Verantwortung abgeleitet.\"\n        }\n      ]\n    }\n  ]\n}\n```",
+      "antwort": {
+        "saetze": [
+          {
+            "text": "Schäden werden bei der Rückgabe mit Kennzeichen und Datum im Schadensformular erfasst.",
+            "belege": [
+              {
+                "bericht": "B7",
+                "zitat": "Schäden werden vor Fahrtantritt und bei der Rückgabe mit Kennzeichen und Datum im Schadensformular erfasst.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Dieses Formular wird zusammen mit dem Fahrzeugschlüssel bei der Fahrbereitschaft abgegeben.",
+            "belege": [
+              {
+                "bericht": "B7",
+                "zitat": "Das Formular wird mit dem Fahrzeugschlüssel bei der Fahrbereitschaft abgegeben.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Aus einem festgestellten Schaden allein wird keine persönliche Verantwortung abgeleitet.",
+            "belege": [
+              {
+                "bericht": "B7",
+                "zitat": "Aus einem festgestellten Schaden allein wird keine persönliche Verantwortung abgeleitet.",
+                "status": "gültig"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "durchlauf": 3,
+      "nr": 10,
+      "frage": "Wie früh muss ich ein Fahrzeug reservieren, und was kostet die Ausleihe?",
+      "roh": "```json\n{\n  \"saetze\": [\n    {\n      \"text\": \"Fahrzeuge müssen mindestens zwei Werktage vor der geplanten Fahrt bei der Fahrbereitschaft reserviert werden.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B4\",\n          \"zitat\": \"Fahrzeuge werden mindestens zwei Werktage vor der geplanten Fahrt bei der Fahrbereitschaft reserviert.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Zu den Kosten für die Ausleihe sagen die Berichte nichts.\",\n      \"belege\": []\n    }\n  ]\n}\n```",
+      "antwort": {
+        "saetze": [
+          {
+            "text": "Fahrzeuge müssen mindestens zwei Werktage vor der geplanten Fahrt bei der Fahrbereitschaft reserviert werden.",
+            "belege": [
+              {
+                "bericht": "B4",
+                "zitat": "Fahrzeuge werden mindestens zwei Werktage vor der geplanten Fahrt bei der Fahrbereitschaft reserviert.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Zu den Kosten für die Ausleihe sagen die Berichte nichts.",
+            "belege": []
+          }
+        ]
+      }
+    },
+    {
+      "durchlauf": 3,
+      "nr": 11,
+      "frage": "Welche Kleidung hat sich bei mehrtägigen Winter-Außenseminaren bewährt?",
+      "roh": "```json\n{\n  \"saetze\": [\n    {\n      \"text\": \"Die Berichte geben unterschiedliche Erfahrungen zu Jacken wieder.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B2\",\n          \"zitat\": \"Bei unserem mehrtägigen Außenseminar im Winter haben sich mehrere dünne Kleidungsschichten bewährt\"\n        },\n        {\n          \"bericht\": \"B5\",\n          \"zitat\": \"In dieser Situation war eine warme Daunenjacke nach Erfahrung der meisten Teilnehmenden unverzichtbar.\"\n        },\n        {\n          \"bericht\": \"B13\",\n          \"zitat\": \"Bei den Jacken waren die Teilnehmenden uneinig: Einige bevorzugten eine Daunenjacke, andere mehrere dünne Schichten.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Mehrere dünne Kleidungsschichten bewährten sich beim Gehen, da sie sich leicht anpassen ließen, während eine dicke Daunenjacke als zu warm empfunden wurde.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B2\",\n          \"zitat\": \"mehrere dünne Kleidungsschichten bewährt, weil sie sich beim Gehen leicht anpassen ließen\"\n        },\n        {\n          \"bericht\": \"B2\",\n          \"zitat\": \"Wer eine dicke Daunenjacke trug, fand sie beim Gehen meist zu warm\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Bei langen Wartezeiten war hingegen eine warme Daunenjacke für die meisten Teilnehmenden unverzichtbar und mehrere dünne Schichten allein reichten nicht aus.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B5\",\n          \"zitat\": \"In dieser Situation war eine warme Daunenjacke nach Erfahrung der meisten Teilnehmenden unverzichtbar.\"\n        },\n        {\n          \"bericht\": \"B5\",\n          \"zitat\": \"Mehrere dünne Kleidungsschichten allein reichten den meisten nicht aus.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Für alle Teilnehmenden ist eine wasserdichte Überjacke vorgeschrieben.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B13\",\n          \"zitat\": \"Eine wasserdichte Überjacke ist für alle Teilnehmenden vorgeschrieben.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Zwei Paar Handschuhe zum Wechseln waren hilfreich.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B2\",\n          \"zitat\": \"Zwei Paar Handschuhe zum Wechseln waren hilfreich.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Wollsocken haben sich besser bewährt als Baumwollsocken, und es wurden häufig Ersatzsocken gebraucht.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B13\",\n          \"zitat\": \"Wollsocken haben sich bei unserem mehrtägigen Außenseminar besser bewährt als Baumwollsocken; Ersatzsocken wurden häufig gebraucht.\"\n        }\n      ]\n    }\n  ]\n}\n```",
+      "antwort": {
+        "saetze": [
+          {
+            "text": "Die Berichte geben unterschiedliche Erfahrungen zu Jacken wieder.",
+            "belege": [
+              {
+                "bericht": "B2",
+                "zitat": "Bei unserem mehrtägigen Außenseminar im Winter haben sich mehrere dünne Kleidungsschichten bewährt",
+                "status": "gültig"
+              },
+              {
+                "bericht": "B5",
+                "zitat": "In dieser Situation war eine warme Daunenjacke nach Erfahrung der meisten Teilnehmenden unverzichtbar.",
+                "status": "gültig"
+              },
+              {
+                "bericht": "B13",
+                "zitat": "Bei den Jacken waren die Teilnehmenden uneinig: Einige bevorzugten eine Daunenjacke, andere mehrere dünne Schichten.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Mehrere dünne Kleidungsschichten bewährten sich beim Gehen, da sie sich leicht anpassen ließen, während eine dicke Daunenjacke als zu warm empfunden wurde.",
+            "belege": [
+              {
+                "bericht": "B2",
+                "zitat": "mehrere dünne Kleidungsschichten bewährt, weil sie sich beim Gehen leicht anpassen ließen",
+                "status": "gültig"
+              },
+              {
+                "bericht": "B2",
+                "zitat": "Wer eine dicke Daunenjacke trug, fand sie beim Gehen meist zu warm",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Bei langen Wartezeiten war hingegen eine warme Daunenjacke für die meisten Teilnehmenden unverzichtbar und mehrere dünne Schichten allein reichten nicht aus.",
+            "belege": [
+              {
+                "bericht": "B5",
+                "zitat": "In dieser Situation war eine warme Daunenjacke nach Erfahrung der meisten Teilnehmenden unverzichtbar.",
+                "status": "gültig"
+              },
+              {
+                "bericht": "B5",
+                "zitat": "Mehrere dünne Kleidungsschichten allein reichten den meisten nicht aus.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Für alle Teilnehmenden ist eine wasserdichte Überjacke vorgeschrieben.",
+            "belege": [
+              {
+                "bericht": "B13",
+                "zitat": "Eine wasserdichte Überjacke ist für alle Teilnehmenden vorgeschrieben.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Zwei Paar Handschuhe zum Wechseln waren hilfreich.",
+            "belege": [
+              {
+                "bericht": "B2",
+                "zitat": "Zwei Paar Handschuhe zum Wechseln waren hilfreich.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Wollsocken haben sich besser bewährt als Baumwollsocken, und es wurden häufig Ersatzsocken gebraucht.",
+            "belege": [
+              {
+                "bericht": "B13",
+                "zitat": "Wollsocken haben sich bei unserem mehrtägigen Außenseminar besser bewährt als Baumwollsocken; Ersatzsocken wurden häufig gebraucht.",
+                "status": "gültig"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "durchlauf": 3,
+      "nr": 12,
+      "frage": "Brauche ich bei einem mehrtägigen Winter-Außenseminar eine dicke Daunenjacke?",
+      "roh": "```json\n{\n  \"saetze\": [\n    {\n      \"text\": \"Die Berichte sind sich uneinig, ob eine Daunenjacke oder mehrere dünne Schichten zu bevorzugen sind.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B13\",\n          \"zitat\": \"Bei den Jacken waren die Teilnehmenden uneinig: Einige bevorzugten eine Daunenjacke, andere mehrere dünne Schichten.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Während eine dicke Daunenjacke beim Gehen oft als zu warm empfunden wurde, haben sich mehrere dünne Kleidungsschichten bewährt, weil sie sich leicht anpassen ließen.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B2\",\n          \"zitat\": \"Bei unserem mehrtägigen Außenseminar im Winter haben sich mehrere dünne Kleidungsschichten bewährt, weil sie sich beim Gehen leicht anpassen ließen. Wer eine dicke Daunenjacke trug, fand sie beim Gehen meist zu warm\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Bei langen Wartezeiten im Freien war eine warme Daunenjacke nach Erfahrung der meisten Teilnehmenden hingegen unverzichtbar, da mehrere dünne Schichten allein den meisten nicht ausreichten.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B5\",\n          \"zitat\": \"In dieser Situation war eine warme Daunenjacke nach Erfahrung der meisten Teilnehmenden unverzichtbar. Mehrere dünne Kleidungsschichten allein reichten den meisten nicht aus.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Für alle Teilnehmenden ist eine wasserdichte Überjacke vorgeschrieben.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B13\",\n          \"zitat\": \"Eine wasserdichte Überjacke ist für alle Teilnehmenden vorgeschrieben.\"\n        }\n      ]\n    }\n  ]\n}\n```",
+      "antwort": {
+        "saetze": [
+          {
+            "text": "Die Berichte sind sich uneinig, ob eine Daunenjacke oder mehrere dünne Schichten zu bevorzugen sind.",
+            "belege": [
+              {
+                "bericht": "B13",
+                "zitat": "Bei den Jacken waren die Teilnehmenden uneinig: Einige bevorzugten eine Daunenjacke, andere mehrere dünne Schichten.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Während eine dicke Daunenjacke beim Gehen oft als zu warm empfunden wurde, haben sich mehrere dünne Kleidungsschichten bewährt, weil sie sich leicht anpassen ließen.",
+            "belege": [
+              {
+                "bericht": "B2",
+                "zitat": "Bei unserem mehrtägigen Außenseminar im Winter haben sich mehrere dünne Kleidungsschichten bewährt, weil sie sich beim Gehen leicht anpassen ließen. Wer eine dicke Daunenjacke trug, fand sie beim Gehen meist zu warm",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Bei langen Wartezeiten im Freien war eine warme Daunenjacke nach Erfahrung der meisten Teilnehmenden hingegen unverzichtbar, da mehrere dünne Schichten allein den meisten nicht ausreichten.",
+            "belege": [
+              {
+                "bericht": "B5",
+                "zitat": "In dieser Situation war eine warme Daunenjacke nach Erfahrung der meisten Teilnehmenden unverzichtbar. Mehrere dünne Kleidungsschichten allein reichten den meisten nicht aus.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Für alle Teilnehmenden ist eine wasserdichte Überjacke vorgeschrieben.",
+            "belege": [
+              {
+                "bericht": "B13",
+                "zitat": "Eine wasserdichte Überjacke ist für alle Teilnehmenden vorgeschrieben.",
+                "status": "gültig"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "durchlauf": 3,
+      "nr": 13,
+      "frage": "Welche Marke wird für die Winterjacke empfohlen, und ab welcher Temperatur sollte man sie tragen?",
+      "roh": "```json\n{\n\"saetze\": [\n{\n\"text\": \"Die Berichte geben keine Empfehlung für eine bestimmte Marke von Winterjacken.\",\n\"belege\": []\n},\n{\n\"text\": \"Zu der Frage, ab welcher Temperatur eine Winterjacke getragen werden sollte, enthalten die Berichte keine Angaben.\",\n\"belege\": []\n}\n]\n}\n```",
+      "antwort": {
+        "saetze": [
+          {
+            "text": "Die Berichte geben keine Empfehlung für eine bestimmte Marke von Winterjacken.",
+            "belege": []
+          },
+          {
+            "text": "Zu der Frage, ab welcher Temperatur eine Winterjacke getragen werden sollte, enthalten die Berichte keine Angaben.",
+            "belege": []
+          }
+        ]
+      }
+    },
+    {
+      "durchlauf": 3,
+      "nr": 14,
+      "frage": "Fasse alles zusammen, was die Berichte zur Fahrzeugausleihe sagen.",
+      "roh": "```json\n{\n  \"saetze\": [\n    {\n      \"text\": \"Fahrzeuge müssen mindestens zwei Werktage vor der geplanten Fahrt bei der Fahrbereitschaft reserviert werden, wobei Datum, voraussichtliche Rückgabezeit und Fahrtziel anzugeben sind.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B4\",\n          \"zitat\": \"Fahrzeuge werden mindestens zwei Werktage vor der geplanten Fahrt bei der Fahrbereitschaft reserviert.\"\n        },\n        {\n          \"bericht\": \"B4\",\n          \"zitat\": \"Bei der Reservierung werden Datum, voraussichtliche Rückgabezeit und Fahrtziel angegeben.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Schäden werden vor Fahrtantritt mit Kennzeichen und Datum in einem Schadensformular erfasst.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B7\",\n          \"zitat\": \"Schäden werden vor Fahrtantritt und bei der Rückgabe mit Kennzeichen und Datum im Schadensformular erfasst.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Die ausleihende Person gibt das Fahrzeug zurück, was auch bei gemeinsamer Nutzung durch Seminargruppen gilt, da das Fahrzeug dieser Person zugeordnet bleibt.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B3\",\n          \"zitat\": \"Ausgeliehene Dienstfahrzeuge werden von der ausleihenden Person zurückgegeben.\"\n        },\n        {\n          \"bericht\": \"B12\",\n          \"zitat\": \"Auch bei gemeinsamer Nutzung bleibt das Fahrzeug der ausleihenden Person zugeordnet. Sie gibt das Fahrzeug zurück und bestätigt die Rückgabe gegenüber der Fahrbereitschaft.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Bei der Rückgabe werden der Fahrzeugschlüssel bei der Fahrbereitschaft abgegeben sowie Kilometerstand und Fahrtzweck in getrennten Feldern im Fahrtenbuch eingetragen.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B3\",\n          \"zitat\": \"Sie gibt den Fahrzeugschlüssel bei der Fahrbereitschaft ab und trägt den Kilometerstand ins Fahrtenbuch ein.\"\n        },\n        {\n          \"bericht\": \"B10\",\n          \"zitat\": \"Kilometerstand und Fahrtzweck werden jetzt in getrennten Feldern erfasst.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Außerdem wird der Tankstand vermerkt; das Betanken wird von der Fahrbereitschaft übernommen.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B10\",\n          \"zitat\": \"Bei der Rückgabe wird außerdem der Tankstand vermerkt, das Betanken übernimmt anschließend die Fahrbereitschaft.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Schäden werden auch bei der Rückgabe im Schadensformular erfasst, das zusammen mit dem Fahrzeugschlüssel abgegeben wird.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B7\",\n          \"zitat\": \"Schäden werden vor Fahrtantritt und bei der Rückgabe mit Kennzeichen und Datum im Schadensformular erfasst.\"\n        },\n        {\n          \"bericht\": \"B7\",\n          \"zitat\": \"Das Formular wird mit dem Fahrzeugschlüssel bei der Fahrbereitschaft abgegeben.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Aus einem festgestellten Schaden allein wird keine persönliche Verantwortung abgeleitet.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B7\",\n          \"zitat\": \"Aus einem festgestellten Schaden allein wird keine persönliche Verantwortung abgeleitet.\"\n        }\n      ]\n    }\n  ]\n}\n```",
+      "antwort": {
+        "saetze": [
+          {
+            "text": "Fahrzeuge müssen mindestens zwei Werktage vor der geplanten Fahrt bei der Fahrbereitschaft reserviert werden, wobei Datum, voraussichtliche Rückgabezeit und Fahrtziel anzugeben sind.",
+            "belege": [
+              {
+                "bericht": "B4",
+                "zitat": "Fahrzeuge werden mindestens zwei Werktage vor der geplanten Fahrt bei der Fahrbereitschaft reserviert.",
+                "status": "gültig"
+              },
+              {
+                "bericht": "B4",
+                "zitat": "Bei der Reservierung werden Datum, voraussichtliche Rückgabezeit und Fahrtziel angegeben.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Schäden werden vor Fahrtantritt mit Kennzeichen und Datum in einem Schadensformular erfasst.",
+            "belege": [
+              {
+                "bericht": "B7",
+                "zitat": "Schäden werden vor Fahrtantritt und bei der Rückgabe mit Kennzeichen und Datum im Schadensformular erfasst.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Die ausleihende Person gibt das Fahrzeug zurück, was auch bei gemeinsamer Nutzung durch Seminargruppen gilt, da das Fahrzeug dieser Person zugeordnet bleibt.",
+            "belege": [
+              {
+                "bericht": "B3",
+                "zitat": "Ausgeliehene Dienstfahrzeuge werden von der ausleihenden Person zurückgegeben.",
+                "status": "gültig"
+              },
+              {
+                "bericht": "B12",
+                "zitat": "Auch bei gemeinsamer Nutzung bleibt das Fahrzeug der ausleihenden Person zugeordnet. Sie gibt das Fahrzeug zurück und bestätigt die Rückgabe gegenüber der Fahrbereitschaft.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Bei der Rückgabe werden der Fahrzeugschlüssel bei der Fahrbereitschaft abgegeben sowie Kilometerstand und Fahrtzweck in getrennten Feldern im Fahrtenbuch eingetragen.",
+            "belege": [
+              {
+                "bericht": "B3",
+                "zitat": "Sie gibt den Fahrzeugschlüssel bei der Fahrbereitschaft ab und trägt den Kilometerstand ins Fahrtenbuch ein.",
+                "status": "gültig"
+              },
+              {
+                "bericht": "B10",
+                "zitat": "Kilometerstand und Fahrtzweck werden jetzt in getrennten Feldern erfasst.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Außerdem wird der Tankstand vermerkt; das Betanken wird von der Fahrbereitschaft übernommen.",
+            "belege": [
+              {
+                "bericht": "B10",
+                "zitat": "Bei der Rückgabe wird außerdem der Tankstand vermerkt, das Betanken übernimmt anschließend die Fahrbereitschaft.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Schäden werden auch bei der Rückgabe im Schadensformular erfasst, das zusammen mit dem Fahrzeugschlüssel abgegeben wird.",
+            "belege": [
+              {
+                "bericht": "B7",
+                "zitat": "Schäden werden vor Fahrtantritt und bei der Rückgabe mit Kennzeichen und Datum im Schadensformular erfasst.",
+                "status": "gültig"
+              },
+              {
+                "bericht": "B7",
+                "zitat": "Das Formular wird mit dem Fahrzeugschlüssel bei der Fahrbereitschaft abgegeben.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Aus einem festgestellten Schaden allein wird keine persönliche Verantwortung abgeleitet.",
+            "belege": [
+              {
+                "bericht": "B7",
+                "zitat": "Aus einem festgestellten Schaden allein wird keine persönliche Verantwortung abgeleitet.",
+                "status": "gültig"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "durchlauf": 3,
+      "nr": 15,
+      "frage": "Gib mir eine Zusammenfassung der Erfahrungen mit Winter-Außenseminaren.",
+      "roh": "```json\n{\n  \"saetze\": [\n    {\n      \"text\": \"Bei der Wahl der Jacken gingen die Meinungen der Teilnehmenden auseinander: Manche zogen eine Daunenjacke vor, andere bevorzugten mehrere dünne Schichten.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B13\",\n          \"zitat\": \"Bei den Jacken waren die Teilnehmenden uneinig: Einige bevorzugten eine Daunenjacke, andere mehrere dünne Schichten.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Mehrere dünne Kleidungsschichten bewährten sich, weil sie sich beim Gehen leicht anpassen ließen.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B2\",\n          \"zitat\": \"haben sich mehrere dünne Kleidungsschichten bewährt, weil sie sich beim Gehen leicht anpassen ließen\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Eine dicke Daunenjacke wurde beim Gehen hingegen meist als zu warm empfunden.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B2\",\n          \"zitat\": \"Wer eine dicke Daunenjacke trug, fand sie beim Gehen meist zu warm\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Bei langen Wartezeiten im Freien war eine warme Daunenjacke nach der Erfahrung der meisten Teilnehmenden unverzichtbar, da mehrere dünne Kleidungsschichten allein den meisten nicht ausreichten.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B5\",\n          \"zitat\": \"In dieser Situation war eine warme Daunenjacke nach Erfahrung der meisten Teilnehmenden unverzichtbar.\"\n        },\n        {\n          \"bericht\": \"B5\",\n          \"zitat\": \"Mehrere dünne Kleidungsschichten allein reichten den meisten nicht aus.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Für alle Teilnehmenden ist eine wasserdichte Überjacke vorgeschrieben.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B13\",\n          \"zitat\": \"Eine wasserdichte Überjacke ist für alle Teilnehmenden vorgeschrieben.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Wollsocken haben sich besser bewährt als Baumwollsocken, und es wurden häufig Ersatzsocken gebraucht.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B13\",\n          \"zitat\": \"Wollsocken haben sich bei unserem mehrtägigen Außenseminar besser bewährt als Baumwollsocken; Ersatzsocken wurden häufig gebraucht.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Zwei Paar Handschuhe zum Wechseln waren hilfreich.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B2\",\n          \"zitat\": \"Zwei Paar Handschuhe zum Wechseln waren hilfreich.\"\n        }\n      ]\n    }\n  ]\n}\n```",
+      "antwort": {
+        "saetze": [
+          {
+            "text": "Bei der Wahl der Jacken gingen die Meinungen der Teilnehmenden auseinander: Manche zogen eine Daunenjacke vor, andere bevorzugten mehrere dünne Schichten.",
+            "belege": [
+              {
+                "bericht": "B13",
+                "zitat": "Bei den Jacken waren die Teilnehmenden uneinig: Einige bevorzugten eine Daunenjacke, andere mehrere dünne Schichten.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Mehrere dünne Kleidungsschichten bewährten sich, weil sie sich beim Gehen leicht anpassen ließen.",
+            "belege": [
+              {
+                "bericht": "B2",
+                "zitat": "haben sich mehrere dünne Kleidungsschichten bewährt, weil sie sich beim Gehen leicht anpassen ließen",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Eine dicke Daunenjacke wurde beim Gehen hingegen meist als zu warm empfunden.",
+            "belege": [
+              {
+                "bericht": "B2",
+                "zitat": "Wer eine dicke Daunenjacke trug, fand sie beim Gehen meist zu warm",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Bei langen Wartezeiten im Freien war eine warme Daunenjacke nach der Erfahrung der meisten Teilnehmenden unverzichtbar, da mehrere dünne Kleidungsschichten allein den meisten nicht ausreichten.",
+            "belege": [
+              {
+                "bericht": "B5",
+                "zitat": "In dieser Situation war eine warme Daunenjacke nach Erfahrung der meisten Teilnehmenden unverzichtbar.",
+                "status": "gültig"
+              },
+              {
+                "bericht": "B5",
+                "zitat": "Mehrere dünne Kleidungsschichten allein reichten den meisten nicht aus.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Für alle Teilnehmenden ist eine wasserdichte Überjacke vorgeschrieben.",
+            "belege": [
+              {
+                "bericht": "B13",
+                "zitat": "Eine wasserdichte Überjacke ist für alle Teilnehmenden vorgeschrieben.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Wollsocken haben sich besser bewährt als Baumwollsocken, und es wurden häufig Ersatzsocken gebraucht.",
+            "belege": [
+              {
+                "bericht": "B13",
+                "zitat": "Wollsocken haben sich bei unserem mehrtägigen Außenseminar besser bewährt als Baumwollsocken; Ersatzsocken wurden häufig gebraucht.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Zwei Paar Handschuhe zum Wechseln waren hilfreich.",
+            "belege": [
+              {
+                "bericht": "B2",
+                "zitat": "Zwei Paar Handschuhe zum Wechseln waren hilfreich.",
+                "status": "gültig"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "durchlauf": 3,
+      "nr": 16,
+      "frage": "Fasse zusammen, was bei mehrtägigen Seminaren zu beachten ist.",
+      "roh": "```json\n{\n  \"saetze\": [\n    {\n      \"text\": \"Bei mehrtägigen Seminaren bestätigt jede teilnehmende Person die Rückgabe der von ihr genutzten Bestandteile auf der persönlichen Liste.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B8\",\n          \"zitat\": \"Für kommende mehrtägige Seminare bestätigt deshalb jede teilnehmende Person die Rückgabe der von ihr genutzten Bestandteile auf der persönlichen Liste.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Die Gruppenvertretung reicht zusätzlich eine Gesamtübersicht des gemeinsam genutzten Sets ein.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B8\",\n          \"zitat\": \"Die Gruppenvertretung reicht zusätzlich eine Gesamtübersicht des gemeinsam genutzten Sets ein.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Ausgeliehene Fahrzeuge werden bei mehrtägigen Seminaren häufig von Seminargruppen gemeinsam genutzt, bleiben aber der ausleihenden Person zugeordnet.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B12\",\n          \"zitat\": \"Bei mehrtägigen Seminaren nutzen Seminargruppen ausgeliehene Fahrzeuge häufig gemeinsam. Auch bei gemeinsamer Nutzung bleibt das Fahrzeug der ausleihenden Person zugeordnet.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Diese Person gibt das Fahrzeug zurück und bestätigt die Rückgabe gegenüber der Fahrbereitschaft.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B12\",\n          \"zitat\": \"Sie gibt das Fahrzeug zurück und bestätigt die Rückgabe gegenüber der Fahrbereitschaft.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Zur Wahl der Jacken bei mehrtägigen Winter-Außenseminaren gibt es unterschiedliche Einschätzungen.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B2\",\n          \"zitat\": \"haben sich mehrere dünne Kleidungsschichten bewährt\"\n        },\n        {\n          \"bericht\": \"B5\",\n          \"zitat\": \"war eine warme Daunenjacke nach Erfahrung der meisten Teilnehmenden unverzichtbar\"\n        },\n        {\n          \"bericht\": \"B13\",\n          \"zitat\": \"Bei den Jacken waren die Teilnehmenden uneinig\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Einige Teilnehmende bevorzugten eine Daunenjacke, andere mehrere dünne Schichten.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B13\",\n          \"zitat\": \"Bei den Jacken waren die Teilnehmenden uneinig: Einige bevorzugten eine Daunenjacke, andere mehrere dünne Schichten.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Mehrere dünne Schichten bewährten sich beim Gehen, während eine dicke Daunenjacke dabei oft als zu warm empfunden wurde.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B2\",\n          \"zitat\": \"haben sich mehrere dünne Kleidungsschichten bewährt, weil sie sich beim Gehen leicht anpassen ließen. Wer eine dicke Daunenjacke trug, fand sie beim Gehen meist zu warm\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Bei langen Wartezeiten war nach Erfahrung der meisten Teilnehmenden jedoch eine warme Daunenjacke unverzichtbar, da mehrere dünne Schichten allein nicht ausreichten.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B5\",\n          \"zitat\": \"In dieser Situation war eine warme Daunenjacke nach Erfahrung der meisten Teilnehmenden unverzichtbar. Mehrere dünne Kleidungsschichten allein reichten den meisten nicht aus.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Eine wasserdichte Überjacke ist für alle Teilnehmenden vorgeschrieben.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B13\",\n          \"zitat\": \"Eine wasserdichte Überjacke ist für alle Teilnehmenden vorgeschrieben.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Wollsocken haben sich besser bewährt als Baumwollsocken und es wurden häufig Ersatzsocken gebraucht.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B13\",\n          \"zitat\": \"Wollsocken haben sich bei unserem mehrtägigen Außenseminar besser bewährt als Baumwollsocken; Ersatzsocken wurden häufig gebraucht.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Zwei Paar Handschuhe zum Wechseln erwiesen sich als hilfreich.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B2\",\n          \"zitat\": \"Zwei Paar Handschuhe zum Wechseln waren hilfreich.\"\n        }\n      ]\n    }\n  ]\n}\n```",
+      "antwort": {
+        "saetze": [
+          {
+            "text": "Bei mehrtägigen Seminaren bestätigt jede teilnehmende Person die Rückgabe der von ihr genutzten Bestandteile auf der persönlichen Liste.",
+            "belege": [
+              {
+                "bericht": "B8",
+                "zitat": "Für kommende mehrtägige Seminare bestätigt deshalb jede teilnehmende Person die Rückgabe der von ihr genutzten Bestandteile auf der persönlichen Liste.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Die Gruppenvertretung reicht zusätzlich eine Gesamtübersicht des gemeinsam genutzten Sets ein.",
+            "belege": [
+              {
+                "bericht": "B8",
+                "zitat": "Die Gruppenvertretung reicht zusätzlich eine Gesamtübersicht des gemeinsam genutzten Sets ein.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Ausgeliehene Fahrzeuge werden bei mehrtägigen Seminaren häufig von Seminargruppen gemeinsam genutzt, bleiben aber der ausleihenden Person zugeordnet.",
+            "belege": [
+              {
+                "bericht": "B12",
+                "zitat": "Bei mehrtägigen Seminaren nutzen Seminargruppen ausgeliehene Fahrzeuge häufig gemeinsam. Auch bei gemeinsamer Nutzung bleibt das Fahrzeug der ausleihenden Person zugeordnet.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Diese Person gibt das Fahrzeug zurück und bestätigt die Rückgabe gegenüber der Fahrbereitschaft.",
+            "belege": [
+              {
+                "bericht": "B12",
+                "zitat": "Sie gibt das Fahrzeug zurück und bestätigt die Rückgabe gegenüber der Fahrbereitschaft.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Zur Wahl der Jacken bei mehrtägigen Winter-Außenseminaren gibt es unterschiedliche Einschätzungen.",
+            "belege": [
+              {
+                "bericht": "B2",
+                "zitat": "haben sich mehrere dünne Kleidungsschichten bewährt",
+                "status": "gültig"
+              },
+              {
+                "bericht": "B5",
+                "zitat": "war eine warme Daunenjacke nach Erfahrung der meisten Teilnehmenden unverzichtbar",
+                "status": "gültig"
+              },
+              {
+                "bericht": "B13",
+                "zitat": "Bei den Jacken waren die Teilnehmenden uneinig",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Einige Teilnehmende bevorzugten eine Daunenjacke, andere mehrere dünne Schichten.",
+            "belege": [
+              {
+                "bericht": "B13",
+                "zitat": "Bei den Jacken waren die Teilnehmenden uneinig: Einige bevorzugten eine Daunenjacke, andere mehrere dünne Schichten.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Mehrere dünne Schichten bewährten sich beim Gehen, während eine dicke Daunenjacke dabei oft als zu warm empfunden wurde.",
+            "belege": [
+              {
+                "bericht": "B2",
+                "zitat": "haben sich mehrere dünne Kleidungsschichten bewährt, weil sie sich beim Gehen leicht anpassen ließen. Wer eine dicke Daunenjacke trug, fand sie beim Gehen meist zu warm",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Bei langen Wartezeiten war nach Erfahrung der meisten Teilnehmenden jedoch eine warme Daunenjacke unverzichtbar, da mehrere dünne Schichten allein nicht ausreichten.",
+            "belege": [
+              {
+                "bericht": "B5",
+                "zitat": "In dieser Situation war eine warme Daunenjacke nach Erfahrung der meisten Teilnehmenden unverzichtbar. Mehrere dünne Kleidungsschichten allein reichten den meisten nicht aus.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Eine wasserdichte Überjacke ist für alle Teilnehmenden vorgeschrieben.",
+            "belege": [
+              {
+                "bericht": "B13",
+                "zitat": "Eine wasserdichte Überjacke ist für alle Teilnehmenden vorgeschrieben.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Wollsocken haben sich besser bewährt als Baumwollsocken und es wurden häufig Ersatzsocken gebraucht.",
+            "belege": [
+              {
+                "bericht": "B13",
+                "zitat": "Wollsocken haben sich bei unserem mehrtägigen Außenseminar besser bewährt als Baumwollsocken; Ersatzsocken wurden häufig gebraucht.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Zwei Paar Handschuhe zum Wechseln erwiesen sich als hilfreich.",
+            "belege": [
+              {
+                "bericht": "B2",
+                "zitat": "Zwei Paar Handschuhe zum Wechseln waren hilfreich.",
+                "status": "gültig"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "durchlauf": 3,
+      "nr": 17,
+      "frage": "Wie hat sich das Verfahren zur Rückgabe gemeinsam genutzter Materialsets bei mehrtägigen Seminaren über die Zeit verändert?",
+      "roh": "```json\n{\n  \"saetze\": [\n    {\n      \"text\": \"Zunächst prüfte bei mehrtägigen Seminaren die Gruppenvertretung die gemeinsam genutzten Materialsets und führte dafür eine gemeinsame Rückgabeliste.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B6\",\n          \"zitat\": \"Bei mehrtägigen Seminaren werden gemeinsam genutzte Materialsets am Ende durch die Gruppenvertretung geprüft. Sie führt eine gemeinsame Rückgabeliste für das Set.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Eine zusätzliche persönliche Bestätigung durch die Teilnehmenden war dabei nicht vorgesehen.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B6\",\n          \"zitat\": \"Eine zusätzliche persönliche Bestätigung der einzelnen Bestandteile durch die Teilnehmenden ist nicht vorgesehen.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Da bei diesem Vorgehen einzelne Bestandteile nicht immer eindeutig zuzuordnen waren, wurde das Verfahren geändert.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B8\",\n          \"zitat\": \"Bei der Auswertung der Rückgabeunterlagen mehrtägiger Seminare waren einzelne genutzte Bestandteile nicht immer eindeutig zuzuordnen.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Nach dem neueren Verfahren bestätigt jede teilnehmende Person die Rückgabe der von ihr genutzten Bestandteile auf einer persönlichen Liste.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B8\",\n          \"zitat\": \"Für kommende mehrtägige Seminare bestätigt deshalb jede teilnehmende Person die Rückgabe der von ihr genutzten Bestandteile auf der persönlichen Liste.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Zusätzlich reicht die Gruppenvertretung eine Gesamtübersicht des gemeinsam genutzten Sets ein.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B8\",\n          \"zitat\": \"Die Gruppenvertretung reicht zusätzlich eine Gesamtübersicht des gemeinsam genutzten Sets ein.\"\n        }\n      ]\n    }\n  ]\n}\n```",
+      "antwort": {
+        "saetze": [
+          {
+            "text": "Zunächst prüfte bei mehrtägigen Seminaren die Gruppenvertretung die gemeinsam genutzten Materialsets und führte dafür eine gemeinsame Rückgabeliste.",
+            "belege": [
+              {
+                "bericht": "B6",
+                "zitat": "Bei mehrtägigen Seminaren werden gemeinsam genutzte Materialsets am Ende durch die Gruppenvertretung geprüft. Sie führt eine gemeinsame Rückgabeliste für das Set.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Eine zusätzliche persönliche Bestätigung durch die Teilnehmenden war dabei nicht vorgesehen.",
+            "belege": [
+              {
+                "bericht": "B6",
+                "zitat": "Eine zusätzliche persönliche Bestätigung der einzelnen Bestandteile durch die Teilnehmenden ist nicht vorgesehen.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Da bei diesem Vorgehen einzelne Bestandteile nicht immer eindeutig zuzuordnen waren, wurde das Verfahren geändert.",
+            "belege": [
+              {
+                "bericht": "B8",
+                "zitat": "Bei der Auswertung der Rückgabeunterlagen mehrtägiger Seminare waren einzelne genutzte Bestandteile nicht immer eindeutig zuzuordnen.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Nach dem neueren Verfahren bestätigt jede teilnehmende Person die Rückgabe der von ihr genutzten Bestandteile auf einer persönlichen Liste.",
+            "belege": [
+              {
+                "bericht": "B8",
+                "zitat": "Für kommende mehrtägige Seminare bestätigt deshalb jede teilnehmende Person die Rückgabe der von ihr genutzten Bestandteile auf der persönlichen Liste.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Zusätzlich reicht die Gruppenvertretung eine Gesamtübersicht des gemeinsam genutzten Sets ein.",
+            "belege": [
+              {
+                "bericht": "B8",
+                "zitat": "Die Gruppenvertretung reicht zusätzlich eine Gesamtübersicht des gemeinsam genutzten Sets ein.",
+                "status": "gültig"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
