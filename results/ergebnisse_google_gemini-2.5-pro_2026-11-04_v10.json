@@ -1,0 +1,286 @@
+{
+  "versuch": "v10 Zitatprüfung",
+  "modell": "google/gemini-2.5-pro",
+  "zeitpunkt": "2026-11-04T18:54:55",
+  "durchlaeufe": 3,
+  "dauer_s": 29,
+  "systemprompt": "Du beantwortest Fragen ausschließlich auf Grundlage der mitgelieferten Berichte.\nDie Berichte sind fiktive Testdaten. Jeder Bericht hat eine Kennung wie B1, B2.\n\nRegeln:\n1. Verwende nur Aussagen aus den Berichten. Ergänze nichts aus eigenem Wissen.\n2. Ergänzende Aussagen aus mehreren Berichten darfst du zu einer klaren Antwort zusammenführen.\n3. Bei Regeln und Verfahren: Wenn Berichte mit vergleichbarem Kontext sich widersprechen, bestimmt die jüngste passende Aussage die Antwort.\n   Nenne ältere abweichende Verfahren nicht als gleichrangige Alternativen.\n   Bei Erfahrungen und Einschätzungen (zum Beispiel, was sich bewährt hat): Gib unterschiedliche Sichtweisen nebeneinander wieder\n   und weise darauf hin, dass die Berichte auseinandergehen. Das Datum allein begründet hier keine Priorität.\n4. Wenn Berichte unterschiedliche Kontexte betreffen oder keine sichere Priorisierung zulassen, behaupte keine Priorität.\n5. Bezeichne keine Quelle als gültig oder verbindlich; die Berichte belegen das nicht.\n6. Wenn die Berichte die Frage nicht ausreichend beantworten, sag das offen und fülle keine Lücken.\n   Das gilt auch für jede Teilfrage: Wenn zu einem Teil der Frage keine Informationen vorliegen, schreibe ausdrücklich,\n   dass die Berichte dazu nichts sagen. Gib dann nicht stattdessen eine verwandte Aussage als Antwort aus.\n7. Antworte exakt und knapp: nur was zur Frage gehört, ohne Einleitung und ohne Wiederholungen.\n   Schreibe nicht, aus welchem Bericht eine Aussage stammt (zum Beispiel \"ein Bericht\", \"ein anderer Bericht\"); die Zuordnung wird automatisch als Fußnote ergänzt.\n   Hinweise, dass die Berichte auseinandergehen oder zu etwas nichts sagen, gehören weiterhin in die Antwort.\n\nFormat: Antworte nur mit JSON in dieser Form:\n{\"saetze\": [{\"text\": \"Ein Satz der Antwort.\", \"belege\": [{\"bericht\": \"B3\", \"zitat\": \"wörtliche Stelle aus B3\"}]}]}\n- Jeder Satz, der eine Aussage aus den Berichten enthält, bekommt mindestens einen Beleg.\n- Das Zitat ist eine kurze, wörtlich kopierte Stelle aus genau dem genannten Bericht (einige Wörter bis ein Satz).\n- Nenne nur Berichte, aus denen die Aussage des Satzes stammt.\n- Sätze, die eine Lücke benennen (die Berichte sagen dazu nichts), haben eine leere Beleg-Liste.\n- Nenne in den Sätzen keine Titel, Daten oder Kennungen; die Quellen werden automatisch ergänzt.",
+  "berichte": {
+    "B1": {
+      "datei": "AAR-2022-09-14-material-return.md",
+      "titel": "Rückgabe ausgegebener Materialsets",
+      "datum": "14.09.2022"
+    },
+    "B2": {
+      "datei": "AAR-2023-02-15-winter-clothing-layers.md",
+      "titel": "AAR-2023-02-15-winter-clothing-layers.md",
+      "datum": "15.02.2023"
+    },
+    "B3": {
+      "datei": "AAR-2023-04-12-vehicle-returns.md",
+      "titel": "Rückgabe von Dienstfahrzeugen",
+      "datum": "12.04.2023"
+    },
+    "B4": {
+      "datei": "AAR-2024-01-08-vehicle-reservations.md",
+      "titel": "Reservierung von Fahrzeugen",
+      "datum": "Datum unbekannt"
+    },
+    "B5": {
+      "datei": "AAR-2024-01-25-winter-waiting-times.md",
+      "titel": "Wartezeiten im Freien bei Winterseminaren",
+      "datum": "25.01.2024"
+    },
+    "B6": {
+      "datei": "AAR-2024-03-02-multi-day-seminar-returns.md",
+      "titel": "Materialrückgabe bei mehrtägigen Seminaren",
+      "datum": "02.03.2024"
+    },
+    "B7": {
+      "datei": "AAR-2024-11-05-vehicle-damage.md",
+      "titel": "Erfassung von Fahrzeugschäden",
+      "datum": "05.11.2024"
+    },
+    "B8": {
+      "datei": "AAR-2025-01-20-shared-set-returns.md",
+      "titel": "Rückgabe gemeinsamer Sets im Seminarbetrieb",
+      "datum": "20.01.2025"
+    },
+    "B9": {
+      "datei": "AAR-2025-02-04-missing-items.md",
+      "titel": "Umgang mit fehlenden Bestandteilen",
+      "datum": "04.02.2025"
+    },
+    "B10": {
+      "datei": "AAR-2025-03-18-logbook-form.md",
+      "titel": "AAR-2025-03-18-logbook-form.md",
+      "datum": "18.03.2025"
+    },
+    "B11": {
+      "datei": "AAR-2025-06-10-one-day-seminars.md",
+      "titel": "Materialrückgabe nach eintägigen Einführungsveranstaltungen",
+      "datum": "10.06.2025"
+    },
+    "B12": {
+      "datei": "AAR-2025-09-15-vehicles-multi-day-seminars.md",
+      "titel": "Fahrzeugnutzung bei mehrtägigen Seminaren",
+      "datum": "15.09.2025"
+    },
+    "B13": {
+      "datei": "AAR-2025-12-10-winter-socks-and-jackets.md",
+      "titel": "Ausrüstung beim Winter-Außenseminar",
+      "datum": "10.12.2025"
+    },
+    "B14": {
+      "datei": "AAR-evening-keys-a.md",
+      "titel": "Schlüsselrückgabe nach Abendseminaren",
+      "datum": "14.10.2025"
+    },
+    "B15": {
+      "datei": "AAR-evening-keys-b.md",
+      "titel": "Raumschlüssel bei Abendseminaren",
+      "datum": "03.04.2024"
+    }
+  },
+  "kennzahlen": {
+    "antworten": 6,
+    "nicht_auswertbar": 0,
+    "belege": {
+      "gültig": 15
+    },
+    "anteil_gueltig": 1.0,
+    "saetze_ohne_beleg": 0
+  },
+  "ergebnisse": [
+    {
+      "durchlauf": 1,
+      "nr": 18,
+      "frage": "Wo gebe ich nach einem Abendseminar den Raumschlüssel ab?",
+      "roh": "```json\n{\n  \"saetze\": [\n    {\n      \"text\": \"Nach Abendseminaren werden die Raumschlüssel im Schlüsselkasten des Seminarbüros abgelegt.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B14\",\n          \"zitat\": \"Nach Abendseminaren werden die Raumschlüssel im Schlüsselkasten des Seminarbüros abgelegt.\"\n        }\n      ]\n    }\n  ]\n}\n```",
+      "antwort": {
+        "saetze": [
+          {
+            "text": "Nach Abendseminaren werden die Raumschlüssel im Schlüsselkasten des Seminarbüros abgelegt.",
+            "belege": [
+              {
+                "bericht": "B14",
+                "zitat": "Nach Abendseminaren werden die Raumschlüssel im Schlüsselkasten des Seminarbüros abgelegt.",
+                "status": "gültig"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "durchlauf": 1,
+      "nr": 19,
+      "frage": "Wie hat sich die Rückgabe der Raumschlüssel nach Abendseminaren über die Zeit verändert?",
+      "roh": "```json\n{\n  \"saetze\": [\n    {\n      \"text\": \"Früher wurden die Raumschlüssel nach Abendseminaren an der Pforte abgegeben und die Pforte trug die Rückgabe in die Schlüsselliste ein.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B15\",\n          \"zitat\": \"Nach Abendseminaren werden die Raumschlüssel an der Pforte abgegeben.\"\n        },\n        {\n          \"bericht\": \"B15\",\n          \"zitat\": \"Die Pforte trägt die Rückgabe in die Schlüsselliste ein.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Gemäß einer jüngeren Regelung werden die Raumschlüssel nach Abendseminaren im Schlüsselkasten des Seminarbüros abgelegt und die Seminarleitung trägt die Rückgabe in die Schlüsselliste ein.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B14\",\n          \"zitat\": \"Nach Abendseminaren werden die Raumschlüssel im Schlüsselkasten des Seminarbüros abgelegt.\"\n        },\n        {\n          \"bericht\": \"B14\",\n          \"zitat\": \"Die Seminarleitung trägt die Rückgabe in die Schlüsselliste ein.\"\n        }\n      ]\n    }\n  ]\n}\n```",
+      "antwort": {
+        "saetze": [
+          {
+            "text": "Früher wurden die Raumschlüssel nach Abendseminaren an der Pforte abgegeben und die Pforte trug die Rückgabe in die Schlüsselliste ein.",
+            "belege": [
+              {
+                "bericht": "B15",
+                "zitat": "Nach Abendseminaren werden die Raumschlüssel an der Pforte abgegeben.",
+                "status": "gültig"
+              },
+              {
+                "bericht": "B15",
+                "zitat": "Die Pforte trägt die Rückgabe in die Schlüsselliste ein.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Gemäß einer jüngeren Regelung werden die Raumschlüssel nach Abendseminaren im Schlüsselkasten des Seminarbüros abgelegt und die Seminarleitung trägt die Rückgabe in die Schlüsselliste ein.",
+            "belege": [
+              {
+                "bericht": "B14",
+                "zitat": "Nach Abendseminaren werden die Raumschlüssel im Schlüsselkasten des Seminarbüros abgelegt.",
+                "status": "gültig"
+              },
+              {
+                "bericht": "B14",
+                "zitat": "Die Seminarleitung trägt die Rückgabe in die Schlüsselliste ein.",
+                "status": "gültig"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "durchlauf": 2,
+      "nr": 18,
+      "frage": "Wo gebe ich nach einem Abendseminar den Raumschlüssel ab?",
+      "roh": "```json\n{\n  \"saetze\": [\n    {\n      \"text\": \"Nach Abendseminaren werden die Raumschlüssel im Schlüsselkasten des Seminarbüros abgelegt.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B14\",\n          \"zitat\": \"Nach Abendseminaren werden die Raumschlüssel im Schlüsselkasten des Seminarbüros abgelegt.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Die Seminarleitung trägt die Rückgabe in die Schlüsselliste ein.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B14\",\n          \"zitat\": \"Die Seminarleitung trägt die Rückgabe in die Schlüsselliste ein.\"\n        }\n      ]\n    }\n  ]\n}\n```",
+      "antwort": {
+        "saetze": [
+          {
+            "text": "Nach Abendseminaren werden die Raumschlüssel im Schlüsselkasten des Seminarbüros abgelegt.",
+            "belege": [
+              {
+                "bericht": "B14",
+                "zitat": "Nach Abendseminaren werden die Raumschlüssel im Schlüsselkasten des Seminarbüros abgelegt.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Die Seminarleitung trägt die Rückgabe in die Schlüsselliste ein.",
+            "belege": [
+              {
+                "bericht": "B14",
+                "zitat": "Die Seminarleitung trägt die Rückgabe in die Schlüsselliste ein.",
+                "status": "gültig"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "durchlauf": 2,
+      "nr": 19,
+      "frage": "Wie hat sich die Rückgabe der Raumschlüssel nach Abendseminaren über die Zeit verändert?",
+      "roh": "```json\n{\n  \"saetze\": [\n    {\n      \"text\": \"Nach Abendseminaren wurden die Raumschlüssel zunächst an der Pforte abgegeben, wo die Pforte die Rückgabe in die Schlüsselliste eintrug.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B15\",\n          \"zitat\": \"Nach Abendseminaren werden die Raumschlüssel an der Pforte abgegeben. Die Pforte trägt die Rückgabe in die Schlüsselliste ein.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Gemäß einer späteren Regelung werden die Raumschlüssel nach Abendseminaren im Schlüsselkasten des Seminarbüros abgelegt, und die Seminarleitung trägt die Rückgabe in die Schlüsselliste ein.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B14\",\n          \"zitat\": \"Nach Abendseminaren werden die Raumschlüssel im Schlüsselkasten des Seminarbüros abgelegt. Die Seminarleitung trägt die Rückgabe in die Schlüsselliste ein.\"\n        }\n      ]\n    }\n  ]\n}\n```",
+      "antwort": {
+        "saetze": [
+          {
+            "text": "Nach Abendseminaren wurden die Raumschlüssel zunächst an der Pforte abgegeben, wo die Pforte die Rückgabe in die Schlüsselliste eintrug.",
+            "belege": [
+              {
+                "bericht": "B15",
+                "zitat": "Nach Abendseminaren werden die Raumschlüssel an der Pforte abgegeben. Die Pforte trägt die Rückgabe in die Schlüsselliste ein.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Gemäß einer späteren Regelung werden die Raumschlüssel nach Abendseminaren im Schlüsselkasten des Seminarbüros abgelegt, und die Seminarleitung trägt die Rückgabe in die Schlüsselliste ein.",
+            "belege": [
+              {
+                "bericht": "B14",
+                "zitat": "Nach Abendseminaren werden die Raumschlüssel im Schlüsselkasten des Seminarbüros abgelegt. Die Seminarleitung trägt die Rückgabe in die Schlüsselliste ein.",
+                "status": "gültig"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "durchlauf": 3,
+      "nr": 18,
+      "frage": "Wo gebe ich nach einem Abendseminar den Raumschlüssel ab?",
+      "roh": "```json\n{\n\"saetze\": [\n{\n\"text\": \"Nach Abendseminaren werden die Raumschlüssel im Schlüsselkasten des Seminarbüros abgelegt.\",\n\"belege\": [\n{\n\"bericht\": \"B14\",\n\"zitat\": \"Nach Abendseminaren werden die Raumschlüssel im Schlüsselkasten des Seminarbüros abgelegt.\"\n}\n]\n},\n{\n\"text\": \"Die Seminarleitung trägt die Rückgabe in die Schlüsselliste ein.\",\n\"belege\": [\n{\n\"bericht\": \"B14\",\n\"zitat\": \"Die Seminarleitung trägt die Rückgabe in die Schlüsselliste ein.\"\n}\n]\n}\n]\n}\n```",
+      "antwort": {
+        "saetze": [
+          {
+            "text": "Nach Abendseminaren werden die Raumschlüssel im Schlüsselkasten des Seminarbüros abgelegt.",
+            "belege": [
+              {
+                "bericht": "B14",
+                "zitat": "Nach Abendseminaren werden die Raumschlüssel im Schlüsselkasten des Seminarbüros abgelegt.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Die Seminarleitung trägt die Rückgabe in die Schlüsselliste ein.",
+            "belege": [
+              {
+                "bericht": "B14",
+                "zitat": "Die Seminarleitung trägt die Rückgabe in die Schlüsselliste ein.",
+                "status": "gültig"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "durchlauf": 3,
+      "nr": 19,
+      "frage": "Wie hat sich die Rückgabe der Raumschlüssel nach Abendseminaren über die Zeit verändert?",
+      "roh": "```json\n{\n  \"saetze\": [\n    {\n      \"text\": \"Früher wurden die Raumschlüssel nach Abendseminaren an der Pforte abgegeben, welche die Rückgabe in die Schlüsselliste eintrug.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B15\",\n          \"zitat\": \"Nach Abendseminaren werden die Raumschlüssel an der Pforte abgegeben.\"\n        },\n        {\n          \"bericht\": \"B15\",\n          \"zitat\": \"Die Pforte trägt die Rückgabe in die Schlüsselliste ein.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Später wurden die Schlüssel im Schlüsselkasten des Seminarbüros abgelegt und die Seminarleitung trägt die Rückgabe in die Schlüsselliste ein.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B14\",\n          \"zitat\": \"Nach Abendseminaren werden die Raumschlüssel im Schlüsselkasten des Seminarbüros abgelegt.\"\n        },\n        {\n          \"bericht\": \"B14\",\n          \"zitat\": \"Die Seminarleitung trägt die Rückgabe in die Schlüsselliste ein.\"\n        }\n      ]\n    }\n  ]\n}\n```",
+      "antwort": {
+        "saetze": [
+          {
+            "text": "Früher wurden die Raumschlüssel nach Abendseminaren an der Pforte abgegeben, welche die Rückgabe in die Schlüsselliste eintrug.",
+            "belege": [
+              {
+                "bericht": "B15",
+                "zitat": "Nach Abendseminaren werden die Raumschlüssel an der Pforte abgegeben.",
+                "status": "gültig"
+              },
+              {
+                "bericht": "B15",
+                "zitat": "Die Pforte trägt die Rückgabe in die Schlüsselliste ein.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Später wurden die Schlüssel im Schlüsselkasten des Seminarbüros abgelegt und die Seminarleitung trägt die Rückgabe in die Schlüsselliste ein.",
+            "belege": [
+              {
+                "bericht": "B14",
+                "zitat": "Nach Abendseminaren werden die Raumschlüssel im Schlüsselkasten des Seminarbüros abgelegt.",
+                "status": "gültig"
+              },
+              {
+                "bericht": "B14",
+                "zitat": "Die Seminarleitung trägt die Rückgabe in die Schlüsselliste ein.",
+                "status": "gültig"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
