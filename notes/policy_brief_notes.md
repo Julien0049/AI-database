@@ -15,11 +15,11 @@ Laufend gepflegte Sammlung, gegliedert wie das spätere Policy Brief. Jeder Punk
 
 ## Vorgehen
 
-- **Daten:** Fiktive, harmlose Testberichte zu Verwaltungsabläufen, derzeit 42 (Ziel etwa 50). Vollständiger Katalog der eingebauten Testfälle: `data/synthetic_reports/README.md`. Gezielt eingebaute Fälle:
+- **Daten:** Fiktive, harmlose Testberichte zu Verwaltungsabläufen, derzeit 48. Vollständiger Katalog der eingebauten Testfälle: `data/synthetic_reports/README.md`. Gezielt eingebaute Fälle:
   - *Inhalt:* Widersprüche mit neuerem Stand, auch ohne Kennzeichnung als Änderung und nur über das Datum auflösbar; unterschiedliche Kontexte (eintägig/mehrtägig); ergänzende Aussagen; abweichende Erfahrungen mit einer Vorgabe darin; Fragen ohne Antwort in den Berichten.
-  - *Störberichte für die Suche:* ähnliche Wörter in anderem Kontext (z. B. Fahrradgarage mit „Schlüssel“ und „Pforte“, Erste-Hilfe-Formular „HV-7“ als falsche Kennziffer); fremde Themen als Rauschen; mehrere Stände zu einem Thema (Beamer mit vier Ständen, der neueste ohne sprachlichen Hinweis; Teilnehmerunterlagen mit drei Ständen, der neueste nur nebenbei erwähnt); geplant: lange Berichte mit mehreren Themen.
+  - *Störberichte für die Suche:* ähnliche Wörter in anderem Kontext (z. B. Fahrradgarage mit „Schlüssel“ und „Pforte“, Erste-Hilfe-Formular „HV-7“ als falsche Kennziffer); fremde Themen als Rauschen; mehrere Stände zu einem Thema (Beamer mit vier Ständen, der neueste ohne sprachlichen Hinweis; Teilnehmerunterlagen mit drei Ständen, der neueste nur nebenbei erwähnt); lange Berichte über ganze Seminartage, in denen eine Regel nur in einem Absatz steht.
   - *Format und Metadaten:* fehlende Überschrift, Datum in verschiedenen Formaten und an verschiedenen Stellen (auch nur als Unterschrift), fehlendes Datum, nur Monat und Jahr, Ereignisdatum vor dem Berichtsdatum, fehlender oder abgekürzter Name, Dateinamen ohne Datum.
-- **Testfragen:** 19 Fragen mit erwarteten Belegen, Antwortentwürfen und Kriterien; die meisten vom Nutzer geprüft.
+- **Testfragen:** 25 Fragen mit erwarteten Belegen, Antwortentwürfen und Kriterien; 1–17 vom Nutzer geprüft, 18–25 Entwürfe. Fragen 20–25 zielen auf die Suche: Regel nur nebenbei, neuester von mehreren Ständen, Wortfalle Sommer/Winter, keine Antwort trotz vieler ähnlicher Treffer, Zusammenfassung über viele Berichte.
 - **Antwortregeln (bestätigte Anforderungen):** nur die Berichte als Quelle; bei Regeln gilt der jüngste vergleichbare Stand; bei Erfahrungen Sichtweisen nebeneinander; Lücken offen benennen; exakt und knapp; Quellen als Fußnoten mit Titel und Datum.
 - **Versuchsweise Entwicklung:** pro Version möglichst nur eine Änderung, ab v5 drei Durchläufe je Version, Bewertung je Antwort (erfüllt/teilweise).
 

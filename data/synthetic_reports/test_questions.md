@@ -1,7 +1,7 @@
 # Testfragen und Antwortentwürfe
 
-**Status:** Fragen 1–6 und ihre Antwortentwürfe wurden mit dem Nutzer einzeln geprüft (Stand `dataset-v1`). Fragen 7–10 zur Fahrzeugausleihe wurden vom Nutzer durchgesehen und als passend bestätigt. Fragen 11–13 zu Erfahrungsberichten folgen einem mit dem Nutzer abgestimmten Entwurf; der endgültige Wortlaut ist noch durchzusehen. Fragen 14–17 (Zusammenfassungen und Änderungsverlauf) sind Agentenentwürfe nach Vorgabe des Nutzers; vom Nutzer durchgesehen und vorläufig bestätigt. Fragen 18–19 (Datumstest) sind Agentenentwürfe, vom Nutzer noch zu prüfen. Vor einem Modellvergleich sollen sie nach Abschluss der weiteren Testdatensatz-Arbeit eingefroren werden.
-**Datensatz:** Die fünfzehn synthetischen Markdown-AARs in diesem Ordner (fünf zur Materialrückgabe, fünf zur Fahrzeugausleihe, drei Erfahrungsberichte zur Winterkleidung, zwei zur Schlüsselrückgabe für den Datumstest).
+**Status:** Fragen 1–6 und ihre Antwortentwürfe wurden mit dem Nutzer einzeln geprüft (Stand `dataset-v1`). Fragen 7–10 zur Fahrzeugausleihe wurden vom Nutzer durchgesehen und als passend bestätigt. Fragen 11–13 zu Erfahrungsberichten folgen einem mit dem Nutzer abgestimmten Entwurf; der endgültige Wortlaut ist noch durchzusehen. Fragen 14–17 (Zusammenfassungen und Änderungsverlauf) sind Agentenentwürfe nach Vorgabe des Nutzers; vom Nutzer durchgesehen und vorläufig bestätigt. Fragen 18–19 (Datumstest) und 20–25 (Suchtest) sind Agentenentwürfe, vom Nutzer noch zu prüfen. Vor einem Modellvergleich sollen sie nach Abschluss der weiteren Testdatensatz-Arbeit eingefroren werden.
+**Datensatz:** Die 48 synthetischen Markdown-AARs in diesem Ordner; Übersicht und Katalog der Testfälle in [README.md](./README.md). Fragen 1–19 beziehen sich auf die 15 Kern- und Datumstestberichte, Fragen 20–25 auf die Berichte für den Suchtest.
 **Zweck:** Prüfen, ob ein System direkte Belege findet, Widersprüche und Ergänzungen unterscheidet, den passenden Kontext berücksichtigt und bei fehlender Evidenz nicht rät.
 
 Quellen werden in den Antwortentwürfen mit Titel und Datum angegeben, weil ein Datum allein bei vielen Berichten pro Tag nicht eindeutig ist. Die Zielantworten sind bewusst knapp und auf den geschilderten Anwendungsfall ausgerichtet. Die Hinweise zur Bewertung sind für die Auswertung gedacht und sollen nicht zwingend in der Nutzerantwort erscheinen. Bei Konfliktfällen kann das System den älteren Widerspruch intern erkennen und dafür bewertet werden, während die Nutzerantwort nur das passende Verfahren und dessen stützende Quelle(n) nennt.
@@ -417,6 +417,134 @@ Alle drei Erfahrungsberichte zur Winterkleidung (15.02.2023, 25.01.2024, 10.12.2
 
 - Nennt die Stände in richtiger zeitlicher Reihenfolge, obwohl der ältere Bericht in der Sammlung hinten steht.
 - Erfindet keinen Grund für die Änderung.
+
+## Frage 20 – Regel nur nebenbei in einem langen Bericht
+
+**Frage**
+
+> Wo lasse ich bei einem Tagesseminar meine Jacke?
+
+**Erwartete Belege**
+
+- [AAR-2025-05-20-teamwork-day-seminar.md](./AAR-2025-05-20-teamwork-day-seminar.md)
+
+**Antwortentwurf**
+
+> Jacken und Taschen werden an der Garderobe im Erdgeschoss abgegeben; die Seminarräume haben keine eigene Garderobe.
+> **Quelle:** „Tagesseminar „Kommunikation im Team““ (20.05.2025).
+
+**Woran eine gute Antwort erkennbar ist**
+
+- Findet die Regel, obwohl sie nur in einem Absatz eines längeren Seminarberichts steht.
+- Übernimmt nichts aus den Winterberichten zu Jacken.
+
+## Frage 21 – Neuester von vier Ständen ohne sprachlichen Hinweis
+
+**Frage**
+
+> Wie bekomme ich für mein Seminar einen Beamer?
+
+**Erwartete Belege**
+
+- [AAR-2025-10-07-projector-delivery.md](./AAR-2025-10-07-projector-delivery.md) (07.10.2025)
+- Ergänzend möglich: [AAR-2025-12-02-photo-consent-seminar.md](./AAR-2025-12-02-photo-consent-seminar.md) (Beamer stand bereits im Raum)
+- Ältere Stände: Haustechnik (08.03.2022), Seminarbüro (20.06.2023, Dateiname ohne Datum), Abholung im Seminarbüro (02.10.2024)
+
+**Antwortentwurf**
+
+> Den Beamer zusammen mit dem Seminarraum über den Raumkalender reservieren. Das Seminarbüro stellt ihn vor Seminarbeginn im Raum bereit und holt ihn danach wieder ab.
+> **Quelle:** „Beamer im Seminarbetrieb“ (07.10.2025).
+
+**Woran eine gute Antwort erkennbar ist**
+
+- Nennt den Stand vom 07.10.2025, obwohl dieser nicht als Änderung gekennzeichnet ist.
+- Nennt Abholung bei der Haustechnik oder im Seminarbüro nicht als gleichrangige Alternative.
+- Suche: Der Bericht vom 07.10.2025 muss unter den Treffern sein.
+
+## Frage 22 – Neuester Stand nur nebenbei erwähnt
+
+**Frage**
+
+> Wie erhalten die Teilnehmenden die Seminarunterlagen?
+
+**Erwartete Belege**
+
+- [AAR-2026-04-21-seminar-day-preparation.md](./AAR-2026-04-21-seminar-day-preparation.md) (21.04.2026)
+- Ergänzend möglich: [AAR-2026-09-29-evening-negotiation.md](./AAR-2026-09-29-evening-negotiation.md)
+- Ältere Stände: gedruckt (15.03.2023), USB-Stick (24.06.2025)
+
+**Antwortentwurf**
+
+> Als Download im Seminarportal; zu Beginn wird nichts mehr ausgeteilt.
+> **Quelle:** „Vorbereitung eines Seminartags“ (21.04.2026).
+
+**Woran eine gute Antwort erkennbar ist**
+
+- Findet den neuesten Stand, obwohl er nur in einem Nebensatz eines Berichts zu einem anderen Thema steht.
+- Nennt USB-Stick oder gedruckte Unterlagen nicht als gleichrangige Alternativen.
+
+## Frage 23 – Ähnliche Wörter, anderer Kontext
+
+**Frage**
+
+> Welche Kleidung hat sich bei Sommer-Außenseminaren bewährt?
+
+**Erwartete Belege**
+
+- [AAR-2024-07-09-summer-outdoor-day.md](./AAR-2024-07-09-summer-outdoor-day.md)
+
+**Antwortentwurf**
+
+> Leichte, langärmelige Kleidung; ein Sonnenhut war für viele hilfreich. Mehrere hatten zu wenig Wasser dabei. Der Bericht betrifft ein eintägiges Außenseminar.
+> **Quelle:** „Kleidung beim Sommer-Außenseminar“ (09.07.2024).
+
+**Woran eine gute Antwort erkennbar ist**
+
+- Übernimmt nichts aus den Winterberichten.
+- Gibt die Erfahrung als Erfahrung wieder, nicht als Vorschrift.
+
+## Frage 24 – Keine Antwort trotz vieler ähnlicher Treffer
+
+**Frage**
+
+> Wie viele Tage im Voraus muss ich einen Seminarraum buchen?
+
+**Erwartete Belege**
+
+- [AAR-2024-02-20-room-booking.md](./AAR-2024-02-20-room-booking.md) (nennt keine Frist)
+
+**Antwortentwurf**
+
+> Dazu nennen die Berichte keine Frist. Belegt ist nur, dass Seminarräume über den Raumkalender im Intranet gebucht werden und bei mehr als 20 Personen zusätzlich die Haustechnik informiert wird.
+> **Quelle:** „Buchung von Seminarräumen“ (20.02.2024).
+
+**Woran eine gute Antwort erkennbar ist**
+
+- Überträgt keine Frist aus anderen Berichten (Fahrzeuge: zwei Werktage; Parkplätze: einen Tag; Verpflegung: Vortag 12 Uhr).
+- Benennt die Lücke ausdrücklich.
+
+## Frage 25 – Zusammenfassung über viele Berichte
+
+**Frage**
+
+> Fasse zusammen, was die Berichte zu Gästen und Besuchern im Seminargebäude sagen.
+
+**Erwartete Belege**
+
+Besucherausweise (03.02.2026), WLAN für Gäste (März 2025), Besucherparkplätze (ohne Datum), Abendseminar „Projektplanung“ (16.06.2026); ergänzend möglich: Tagesseminar mit externen Gästen (24.03.2026), Tagesseminar „Kommunikation im Team“ (20.05.2025).
+
+**Checkliste der Kernaussagen**
+
+- Besucherausweise beim Verlassen an der Pforte abgeben; Verlust am selben Tag beim Empfang melden.
+- WLAN-Zugangsdaten am Empfang, jeweils 24 Stunden gültig.
+- Besucherparkplätze mindestens einen Tag vorher beim Empfang reservieren; nicht reservierte werden ab 9 Uhr freigegeben.
+- Gastreferierende melden sich am Empfang an und werden von der Seminarleitung abgeholt.
+
+**Woran eine gute Antwort erkennbar ist**
+
+- Deckt alle Punkte der Checkliste ab, obwohl sie auf vier bis sechs Berichte verteilt sind.
+- Übernimmt nichts aus Berichten zu Fahrradgarage, Raumschlüsseln oder Fundsachen als Gästeregel, sofern nicht ausdrücklich Gäste betroffen sind.
+- Erfindet für Berichte ohne vollständiges Datum kein Datum.
 
 ## Vorgeschlagene Auswertung
 

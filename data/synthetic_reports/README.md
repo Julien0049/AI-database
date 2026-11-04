@@ -4,7 +4,7 @@ Fiktives, von einem KI-Agenten erstelltes Testmaterial für den AI-Database-PoC.
 
 [test_questions.md](./test_questions.md) enthält die Testfragen mit erwarteten Belegen, Antwortentwürfen und Kriterien.
 
-## Bestand (im Aufbau auf etwa 50 Berichte)
+## Bestand (48 Berichte)
 
 | Gruppe | Anzahl | Zweck |
 |---|---|---|
@@ -13,7 +13,7 @@ Fiktives, von einem KI-Agenten erstelltes Testmaterial für den AI-Database-PoC.
 | Störberichte: ähnliche Wörter, anderer Kontext | 10 | Suche und Modell sollen den Kontext trennen |
 | Störberichte: fremde Themen | 10 | Rauschen wie in einer echten Sammlung |
 | Mehrere Stände zu neuen Themen: Beamer (4), Teilnehmerunterlagen (3) | 7 | Suche muss den neuesten Stand mitfinden |
-| Geplant: lange Berichte mit mehreren Themen | ~6 | nebenbei erwähnte Regeln |
+| Lange Berichte mit mehreren Themen (Tages- und Abendseminare) | 6 | nebenbei erwähnte Regeln, mehrere Daten im Text |
 
 Die Störberichte ändern keine erwartete Antwort der Fragen 1–19, solange der Kontext richtig getrennt wird.
 
@@ -54,6 +54,19 @@ Die Störberichte ändern keine erwartete Antwort der Fragen 1–19, solange der
 | Beamer | Haustechnik (08.03.2022) → Seminarbüro (20.06.2023) → Reservierung über Raumkalender, Abholung im Seminarbüro (02.10.2024) → Seminarbüro stellt im Raum bereit und holt ab (07.10.2025) | Der jüngste Stand enthält keinen sprachlichen Hinweis auf eine Änderung. Der Bericht von 2023 hat einen Dateinamen ohne Datum und steht in der Sammlung zuletzt. Formate gemischt (Unterschrift, „Stand:“). |
 | Teilnehmerunterlagen | gedruckt (15.03.2023) → USB-Stick (24.06.2025) → nur Download im Seminarportal (21.04.2026) | Der jüngste Stand steht nur nebenbei in einem Bericht über die Vorbereitung eines Seminartags. |
 
+### Lange Berichte mit mehreren Themen
+
+Gesamtberichte über einzelne Tages- oder Abendseminare (94–137 Wörter, drei bis vier Absätze). Sie sind mit den übrigen Berichten vereinbar und betreffen bewusst keine mehrtägigen Seminare, damit sich die erwartete Antwort zu Frage 16 nicht ändert.
+
+| Bericht | Nebenbei erwähnte Regel oder Falle |
+|---|---|
+| Tagesseminar „Kommunikation im Team“ (20.05.2025) | **neue Regel nur hier:** Jacken und Taschen an der Garderobe im Erdgeschoss; „Jacke“ als Wortfalle zu den Winterberichten |
+| Abendseminar „Projektplanung“ (16.06.2026) | **neue Regel nur hier:** Gastreferierende melden sich am Empfang an; drei Daten im Text, Berichtsdatum nur in der Unterschrift |
+| Großes Tagesseminar im Herbst (17.09.2024) | Sammelplatz bei Feueralarm; gedruckte Unterlagen (damaliger Stand) |
+| Abendseminar Verhandlungsführung (29.09.2026) | Getränke nur in verschließbaren Flaschen; keine Überschrift, kein Name |
+| Tagesseminar „Präsentieren“ (02.12.2025) | Fotos nur mit Zustimmung; Beamer bereits im Raum (bestätigt den neuesten Beamer-Stand) |
+| Tagesseminar mit externen Gästen (24.03.2026) | nur Bekanntes (Besucherausweise, Parkplätze, WLAN, Fundsachen) in neuer Kombination |
+
 ### Fremde Themen (Störberichte)
 
 Raumbuchung, Verpflegung, Druckerausfall, Seminaranmeldung, Reisekosten, WLAN für Gäste, Feedbackbögen, Besucherparkplätze, Fundsachen, Teilnahmebescheinigungen.
@@ -70,7 +83,7 @@ Raumbuchung, Verpflegung, Druckerausfall, Seminaranmeldung, Reisekosten, WLAN f�
 | Name und Datum nur als Unterschrift am Ende | Fahrtenbuch-Formular, Feedback, Druckerausfall, Fahrradgarage | Datum korrekt |
 | Kein Datum | Reservierung von Fahrzeugen, Besucherparkplätze | „Datum unbekannt“ |
 | Nur Monat und Jahr („März 2025“) | WLAN für Gäste | „Datum unbekannt“ (bekannte Grenze) |
-| Ereignisdatum im Text vor dem Berichtsdatum | Druckerausfall (Ausfall 10.03.2025, Bericht 14.03.2025) | Programm nimmt fälschlich 10.03.2025 (bekannte Grenze) |
+| Ereignisdatum im Text vor dem Berichtsdatum | Druckerausfall (Ausfall 10.03.2025, Bericht 14.03.2025); Abendseminar „Projektplanung“ (Vorbereitung 02.06.2026, Bericht 16.06.2026) | Programm nimmt fälschlich das erste Datum (bekannte Grenze) |
 | Kein Name oder nur Kürzel | Rückgabe gemeinsamer Sets, Kleidung im Winter, Erste-Hilfe-Kästen, Fundsachen, Gruppenräume, Reservierung („D. Lenz“), Schäden („Hausverwaltung“) | ohne Auswirkung auf Quellen |
 | Dateiname ohne Datum | Schlüsselberichte, Besucherparkplätze | Reihenfolge in der Sammlung nicht chronologisch |
 
@@ -78,4 +91,4 @@ Raumbuchung, Verpflegung, Druckerausfall, Seminaranmeldung, Reisekosten, WLAN f�
 
 - `dataset-v1`: fünf Materialberichte, sechs Fragen.
 - `dataset-v2`: dreizehn einheitlich formatierte Berichte.
-- Seitdem: vier umformatierte Kernberichte (v9), Datumstest (v10), Störberichte und mehrere Stände (im Aufbau).
+- Seitdem: vier umformatierte Kernberichte (v9), Datumstest (v10), Störberichte, mehrere Stände und lange Berichte; Fragen 20–25.
