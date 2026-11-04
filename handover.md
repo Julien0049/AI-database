@@ -56,7 +56,7 @@ Die Semesterarbeit soll einen Proof of Concept (PoC) einer AI Database für Frag
 - `project_brainstorming.md` – ursprüngliche persönliche Projektbeschreibung und eigene Stichwortergänzungen.
 - `KI-Projektideen.md` – Gemini-Gesprächsverlauf; Vorschläge und wechselnde Arbeitsstände.
 - `notes/interview_raw.md` – Rohantworten des Projektinterviews.
-- `notes/policy_brief_notes.md` – Merkpunkte für das abschließende Policy Brief.
+- `notes/policy_brief_notes.md` – Bausteine für das Policy Brief (Hintergrund, Problemstellung, Vorgehen mit Versuchsübersicht, Erkenntnisse, Grenzen, Empfehlungen, nächste Schritte); nach jedem Versuch aktualisieren.
 - `notes/prototype_proposal.md` – vorläufiger Agentenentwurf mit Recherchequellen, Architektur- und Evaluationsvorschlag.
 - `data/synthetic_reports/` – fünf fiktive AARs zur Materialverwaltung plus README und geprüfte Testfragen/Antwortentwürfe.
 

@@ -34,6 +34,7 @@ Für den PoC wird vorläufig Gemini 2.5 Pro (`google/gemini-2.5-pro`) über Open
 - Unterstütze nachvollziehbare Entscheidungen und den Lernprozess. Erzeuge keine großen Mengen an Code oder Daten, bevor Projektfrage und Versuchsaufbau geklärt sind.
 - Lege Abhängigkeiten, Datenquellen und Modellanforderungen offen, bevor du sie einführst. Behaupte keine Evaluationsergebnisse, bevor sie gemessen wurden.
 - Halte Dokumentation knapp, aktuell und ohne doppelte oder widersprüchliche Anweisungen.
+- Am Ende steht ein Policy Brief. Trage neue Erkenntnisse, Grenzen, Empfehlungen und nächste Schritte nach jedem Versuch oder jeder Entscheidung direkt in `notes/policy_brief_notes.md` ein, gegliedert wie das Brief und mit Kennzeichnung der Herkunft (Messung, Nutzer, Vorschlag), sodass der Nutzer die Abschnitte ohne erneute Aufarbeitung übernehmen kann.
 
 ## Inhaltliche und Evaluationsleitplanken
 
