@@ -12,7 +12,8 @@ Fiktives, von einem KI-Agenten erstelltes Testmaterial für den AI-Database-PoC.
 | Datumstest: Schlüsselrückgabe nach Abendseminaren | 2 | Fragen 18–19 |
 | Störberichte: ähnliche Wörter, anderer Kontext | 10 | Suche und Modell sollen den Kontext trennen |
 | Störberichte: fremde Themen | 10 | Rauschen wie in einer echten Sammlung |
-| Geplant: weitere Stände zu neuen Themen, lange Berichte mit mehreren Themen | ~13 | neuester Stand bei Suche, nebenbei erwähnte Regeln |
+| Mehrere Stände zu neuen Themen: Beamer (4), Teilnehmerunterlagen (3) | 7 | Suche muss den neuesten Stand mitfinden |
+| Geplant: lange Berichte mit mehreren Themen | ~6 | nebenbei erwähnte Regeln |
 
 Die Störberichte ändern keine erwartete Antwort der Fragen 1–19, solange der Kontext richtig getrennt wird.
 
@@ -46,6 +47,13 @@ Die Störberichte ändern keine erwartete Antwort der Fragen 1–19, solange der
 | Gemeinsam genutzte Gruppenräume | gemeinsames Set, gemeinsames Fahrzeug | „gemeinsam genutzt“, „Liste“, „jede Gruppe“ |
 | Winterdienst am Seminargebäude | Winterseminare | „Winter“, „Winterseminare“, aber keine Kleidung |
 
+### Mehrere Stände zu einem Thema
+
+| Thema | Stände | Fallen |
+|---|---|---|
+| Beamer | Haustechnik (08.03.2022) → Seminarbüro (20.06.2023) → Reservierung über Raumkalender, Abholung im Seminarbüro (02.10.2024) → Seminarbüro stellt im Raum bereit und holt ab (07.10.2025) | Der jüngste Stand enthält keinen sprachlichen Hinweis auf eine Änderung. Der Bericht von 2023 hat einen Dateinamen ohne Datum und steht in der Sammlung zuletzt. Formate gemischt (Unterschrift, „Stand:“). |
+| Teilnehmerunterlagen | gedruckt (15.03.2023) → USB-Stick (24.06.2025) → nur Download im Seminarportal (21.04.2026) | Der jüngste Stand steht nur nebenbei in einem Bericht über die Vorbereitung eines Seminartags. |
+
 ### Fremde Themen (Störberichte)
 
 Raumbuchung, Verpflegung, Druckerausfall, Seminaranmeldung, Reisekosten, WLAN für Gäste, Feedbackbögen, Besucherparkplätze, Fundsachen, Teilnahmebescheinigungen.
@@ -70,4 +78,4 @@ Raumbuchung, Verpflegung, Druckerausfall, Seminaranmeldung, Reisekosten, WLAN f�
 
 - `dataset-v1`: fünf Materialberichte, sechs Fragen.
 - `dataset-v2`: dreizehn einheitlich formatierte Berichte.
-- Seitdem: vier umformatierte Kernberichte (v9), Datumstest (v10), Störberichte (im Aufbau).
+- Seitdem: vier umformatierte Kernberichte (v9), Datumstest (v10), Störberichte und mehrere Stände (im Aufbau).
