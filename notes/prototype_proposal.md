@@ -19,7 +19,7 @@ Der PoC darf zur Laufzeit Internet für die Modell-API nutzen; Dokumente, Index 
 5. Wenn die Quellen die Frage nicht ausreichend beantworten, das klar sagen und keine Lücken füllen.
 Zusammenfassungen zu einem Thema folgen denselben Regeln: bei Verfahren nur der aktuelle Stand, frühere Stände nur auf ausdrückliche Frage nach Änderungen. Bei vielen Berichten zu einem Thema passt nicht mehr alles in den Prompt; dann muss die Suche alle passenden Berichte finden, und die Zusammenfassung muss gegebenenfalls schrittweise entstehen (zuerst pro Bericht oder Gruppe, dann gesamt). Das ist mit dem kleinen Testsatz nicht geprüft.
 
-6. Die Antwort steht im Vordergrund; kompakte Quellenhinweise mit Titel und Datum des Berichts folgen am Ende. Ein Datum allein ist bei vielen Berichten pro Tag nicht eindeutig.
+6. Die Antwort steht im Vordergrund; kompakte Quellenhinweise mit Titel und Datum des Berichts folgen am Ende; Fußnotennummern im Text zeigen, welche Aussage aus welchem Bericht stammt (vom Nutzer bestätigt). Ein Datum allein ist bei vielen Berichten pro Tag nicht eindeutig.
 
 Diese Regeln beschreiben Quellenverhalten, nicht die Wahrheit oder Gültigkeit einer Aussage. Ein neueres fiktives Dokument beweist nicht, dass sein Inhalt real zutrifft. Die Testantwort soll die neueste passende Quelle verwenden, sie aber nicht als formell „gültig“ oder verbindlich bezeichnen, wenn die Quellen das nicht belegen.
 
