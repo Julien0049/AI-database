@@ -373,8 +373,9 @@ Alle drei Erfahrungsberichte zur Winterkleidung (15.02.2023, 25.01.2024, 10.12.2
 **Woran eine gute Antwort erkennbar ist**
 
 - Nennt die Stände in zeitlicher Reihenfolge mit Titel und Datum.
+- Der Stand von 2022 darf fehlen, weil der Bericht mehrtägige Seminare nicht ausdrücklich nennt (Nutzerentscheidung nach Lauf v8). Wird er genannt, gilt das nächste Kriterium.
 - Gibt den Grund für die jüngste Änderung nur so wieder, wie er im Bericht steht, und erfindet keine weiteren Gründe.
-- Weist darauf hin, dass der Bericht von 2022 nicht ausdrücklich mehrtägige Seminare betrifft, oder behauptet zumindest nichts anderes.
+- Wenn der Bericht von 2022 genannt wird: Weist darauf hin, dass er nicht ausdrücklich mehrtägige Seminare betrifft, oder behauptet zumindest nichts anderes.
 
 ## Vorgeschlagene Auswertung
 

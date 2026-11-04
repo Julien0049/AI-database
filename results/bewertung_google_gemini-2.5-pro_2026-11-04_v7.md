@@ -18,6 +18,8 @@
 
 ## Ergebnis (inhaltlich)
 
+**Nachtrag nach Nutzerentscheidung zu v8 (Variante B):** Das Weglassen des Stands von 2022 bei Frage 17 gilt nun als korrekt. Damit erfüllt auch D1 die Kriterien, insgesamt **44 von 51**. Die Tabelle unten zeigt die ursprüngliche Bewertung.
+
 43 von 51 Antworten erfüllen die Kriterien, 8 teilweise. Fragen 1–13: 32 von 39 (v6: 32 von 39). Fragen 14–16: 9 von 9. Frage 17: 2 von 3.
 
 | Frage | D1 | D2 | D3 | Anmerkung |

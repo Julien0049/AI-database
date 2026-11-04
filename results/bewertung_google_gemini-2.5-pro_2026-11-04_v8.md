@@ -18,6 +18,8 @@
 
 ## Ergebnis (inhaltlich)
 
+**Nachtrag nach Nutzerentscheidung (Variante B):** Das Weglassen des Stands von 2022 bei Frage 17 gilt nun als korrekt. Damit erfüllen alle drei Antworten zu Frage 17 die Kriterien, insgesamt **45 von 51**. Die Tabelle unten zeigt die ursprüngliche Bewertung.
+
 42 von 51 Antworten erfüllen die Kriterien, 9 teilweise (v7: 43). Fragen 1–13: 33 von 39 (v7: 32). Fragen 14–16: 9 von 9. Frage 17: 0 von 3.
 
 | Frage | D1 | D2 | D3 | Anmerkung |
