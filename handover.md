@@ -43,6 +43,7 @@ Die Semesterarbeit soll einen Proof of Concept (PoC) einer AI Database für Frag
 24. Nutzerentscheidung: v7 bleibt bei drei Durchläufen (Vergleichbarkeit mit v6). Die lange Laufzeit ist für den PoC akzeptabel, soll aber im Policy Brief als Grenze genannt werden; Merkpunkte in `notes/policy_brief_notes.md`.
 25. Lauf v7 ausgewertet (`results/bewertung_google_gemini-2.5-pro_2026-11-04_v7.md`): 213 von 213 Zitaten gültig, kein fehlerhaftes JSON, 188 s für 51 Anfragen. Inhaltlich 43 von 51 erfüllt (Fragen 1–13 wie v6). Satzweise Belege ordnen bei Frage 17 jeden Stand einem Bericht zu. Falsche Zusatzquelle bei Frage 4 in allen drei Durchläufen; die Zitatprüfung erkennt sie nicht, weil das Zitat echt ist. Die Darstellung im Notebook zeigt Quellen nur gesammelt am Ende, nicht je Satz.
 26. Nutzerentscheidung: Quellen werden als Fußnoten angezeigt (Nummern im Text, Liste mit Titel und Datum am Ende), immer und nicht nur bei Zusammenfassungen; aufeinanderfolgende Sätze aus denselben Berichten teilen sich eine Fußnote. `render` in `notebooks/citation_check_v7.ipynb` angepasst; die gespeicherten v7-Antworten in dieser Form: `results/antworten_v7_fussnoten.md` (kein neuer Modelllauf).
+27. Neue Anforderung (Nutzer): Antworten exakt und schlank. Für Lauf v8 im selben Notebook nur Regel 7 ergänzt: knapp, ohne Einleitung und Wiederholungen, keine Verweise wie „ein Bericht“ im Text (das leisten die Fußnoten); Hinweise auf abweichende Berichte und Lücken bleiben. Ergebnisdatei endet auf `_v8.json`.
 
 ## Wichtige Dateien
 
