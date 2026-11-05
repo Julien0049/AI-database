@@ -1,0 +1,500 @@
+{
+  "versuch": "v13 Zitatprüfung",
+  "modell": "google/gemini-2.5-pro",
+  "zeitpunkt": "2026-11-05T17:45:21",
+  "durchlaeufe": 1,
+  "suche": {
+    "k": null,
+    "embedding_modell": null,
+    "sichten": true,
+    "paket": 10
+  },
+  "kosten_usd": 0.1143,
+  "dauer_s": 51,
+  "systemprompt": "Du beantwortest Fragen ausschließlich auf Grundlage der mitgelieferten Berichte.\nDie Berichte sind fiktive Testdaten. Jeder Bericht hat eine Kennung wie B1, B2.\n\nRegeln:\n1. Verwende nur Aussagen aus den Berichten. Ergänze nichts aus eigenem Wissen.\n2. Ergänzende Aussagen aus mehreren Berichten darfst du zu einer klaren Antwort zusammenführen.\n3. Bei Regeln und Verfahren: Wenn Berichte mit vergleichbarem Kontext sich widersprechen, bestimmt die jüngste passende Aussage die Antwort.\n   Nenne ältere abweichende Verfahren nicht als gleichrangige Alternativen.\n   Bei Erfahrungen und Einschätzungen (zum Beispiel, was sich bewährt hat): Gib unterschiedliche Sichtweisen nebeneinander wieder\n   und weise darauf hin, dass die Berichte auseinandergehen. Das Datum allein begründet hier keine Priorität.\n4. Wenn Berichte unterschiedliche Kontexte betreffen oder keine sichere Priorisierung zulassen, behaupte keine Priorität.\n5. Bezeichne keine Quelle als gültig oder verbindlich; die Berichte belegen das nicht.\n6. Wenn die Berichte die Frage nicht ausreichend beantworten, sag das offen und fülle keine Lücken.\n   Das gilt auch für jede Teilfrage: Wenn zu einem Teil der Frage keine Informationen vorliegen, schreibe ausdrücklich,\n   dass die Berichte dazu nichts sagen. Gib dann nicht stattdessen eine verwandte Aussage als Antwort aus.\n7. Antworte exakt und knapp: nur was zur Frage gehört, ohne Einleitung und ohne Wiederholungen.\n   Schreibe nicht, aus welchem Bericht eine Aussage stammt (zum Beispiel \"ein Bericht\", \"ein anderer Bericht\"); die Zuordnung wird automatisch als Fußnote ergänzt.\n   Hinweise, dass die Berichte auseinandergehen oder zu etwas nichts sagen, gehören weiterhin in die Antwort.\n\nFormat: Antworte nur mit JSON in dieser Form:\n{\"saetze\": [{\"text\": \"Ein Satz der Antwort.\", \"belege\": [{\"bericht\": \"B3\", \"zitat\": \"wörtliche Stelle aus B3\"}]}]}\n- Jeder Satz, der eine Aussage aus den Berichten enthält, bekommt mindestens einen Beleg.\n- Das Zitat ist eine kurze, wörtlich kopierte Stelle aus genau dem genannten Bericht (einige Wörter bis ein Satz).\n- Nenne nur Berichte, aus denen die Aussage des Satzes stammt.\n- Sätze, die eine Lücke benennen (die Berichte sagen dazu nichts), haben eine leere Beleg-Liste.\n- Nenne in den Sätzen keine Titel, Daten oder Kennungen; die Quellen werden automatisch ergänzt.",
+  "berichte": {
+    "B1": {
+      "datei": "AAR-2022-03-08-projectors-facility.md",
+      "titel": "Beamer für Seminare",
+      "datum": "08.03.2022"
+    },
+    "B2": {
+      "datei": "AAR-2022-09-14-material-return.md",
+      "titel": "Rückgabe ausgegebener Materialsets",
+      "datum": "14.09.2022"
+    },
+    "B3": {
+      "datei": "AAR-2023-02-15-winter-clothing-layers.md",
+      "titel": "AAR-2023-02-15-winter-clothing-layers.md",
+      "datum": "15.02.2023"
+    },
+    "B4": {
+      "datei": "AAR-2023-03-15-handouts-printed.md",
+      "titel": "Teilnehmerunterlagen",
+      "datum": "15.03.2023"
+    },
+    "B5": {
+      "datei": "AAR-2023-04-12-vehicle-returns.md",
+      "titel": "Rückgabe von Dienstfahrzeugen",
+      "datum": "12.04.2023"
+    },
+    "B6": {
+      "datei": "AAR-2023-09-05-seminar-registration.md",
+      "titel": "Anmeldung zu Seminaren",
+      "datum": "05.09.2023"
+    },
+    "B7": {
+      "datei": "AAR-2023-10-17-sports-equipment.md",
+      "titel": "Rückgabe von Sportgeräten",
+      "datum": "17.10.2023"
+    },
+    "B8": {
+      "datei": "AAR-2024-01-08-vehicle-reservations.md",
+      "titel": "Reservierung von Fahrzeugen",
+      "datum": "Datum unbekannt"
+    },
+    "B9": {
+      "datei": "AAR-2024-01-25-winter-waiting-times.md",
+      "titel": "Wartezeiten im Freien bei Winterseminaren",
+      "datum": "25.01.2024"
+    },
+    "B10": {
+      "datei": "AAR-2024-02-20-room-booking.md",
+      "titel": "Buchung von Seminarräumen",
+      "datum": "20.02.2024"
+    },
+    "B11": {
+      "datei": "AAR-2024-03-02-multi-day-seminar-returns.md",
+      "titel": "Materialrückgabe bei mehrtägigen Seminaren",
+      "datum": "02.03.2024"
+    },
+    "B12": {
+      "datei": "AAR-2024-05-13-library-book-returns.md",
+      "titel": "Rückgabe von Büchern aus der Seminarbibliothek",
+      "datum": "13.05.2024"
+    },
+    "B13": {
+      "datei": "AAR-2024-06-04-travel-expenses.md",
+      "titel": "Abrechnung von Reisekosten",
+      "datum": "04.06.2024"
+    },
+    "B14": {
+      "datei": "AAR-2024-07-09-summer-outdoor-day.md",
+      "titel": "Kleidung beim Sommer-Außenseminar",
+      "datum": "09.07.2024"
+    },
+    "B15": {
+      "datei": "AAR-2024-09-17-large-day-seminar.md",
+      "titel": "Großes Tagesseminar im Herbst",
+      "datum": "17.09.2024"
+    },
+    "B16": {
+      "datei": "AAR-2024-09-30-first-aid-kits.md",
+      "titel": "Fehlendes Material in Erste-Hilfe-Kästen",
+      "datum": "30.09.2024"
+    },
+    "B17": {
+      "datei": "AAR-2024-10-02-projector-reservation.md",
+      "titel": "Beamer-Reservierung",
+      "datum": "02.10.2024"
+    },
+    "B18": {
+      "datei": "AAR-2024-11-05-vehicle-damage.md",
+      "titel": "Erfassung von Fahrzeugschäden",
+      "datum": "05.11.2024"
+    },
+    "B19": {
+      "datei": "AAR-2024-11-26-feedback-forms.md",
+      "titel": "AAR-2024-11-26-feedback-forms.md",
+      "datum": "26.11.2024"
+    },
+    "B20": {
+      "datei": "AAR-2025-01-20-shared-set-returns.md",
+      "titel": "Rückgabe gemeinsamer Sets im Seminarbetrieb",
+      "datum": "20.01.2025"
+    },
+    "B21": {
+      "datei": "AAR-2025-02-04-missing-items.md",
+      "titel": "Umgang mit fehlenden Bestandteilen",
+      "datum": "04.02.2025"
+    },
+    "B22": {
+      "datei": "AAR-2025-02-26-catering.md",
+      "titel": "Verpflegung bei Seminaren",
+      "datum": "26.02.2025"
+    },
+    "B23": {
+      "datei": "AAR-2025-03-14-printer-outage.md",
+      "titel": "Druckerausfall im Seminarbüro",
+      "datum": "10.03.2025"
+    },
+    "B24": {
+      "datei": "AAR-2025-03-18-logbook-form.md",
+      "titel": "AAR-2025-03-18-logbook-form.md",
+      "datum": "18.03.2025"
+    },
+    "B25": {
+      "datei": "AAR-2025-03-guest-wifi.md",
+      "titel": "WLAN-Zugang für Gäste",
+      "datum": "Datum unbekannt"
+    },
+    "B26": {
+      "datei": "AAR-2025-04-22-room-damage.md",
+      "titel": "AAR-2025-04-22-room-damage.md",
+      "datum": "22.04.2025"
+    },
+    "B27": {
+      "datei": "AAR-2025-05-06-bike-garage-keys.md",
+      "titel": "Schlüssel für die Fahrradgarage",
+      "datum": "06.05.2025"
+    },
+    "B28": {
+      "datei": "AAR-2025-05-20-teamwork-day-seminar.md",
+      "titel": "Tagesseminar „Kommunikation im Team“",
+      "datum": "20.05.2025"
+    },
+    "B29": {
+      "datei": "AAR-2025-06-10-one-day-seminars.md",
+      "titel": "Materialrückgabe nach eintägigen Einführungsveranstaltungen",
+      "datum": "10.06.2025"
+    },
+    "B30": {
+      "datei": "AAR-2025-06-24-handouts-usb.md",
+      "titel": "Teilnehmerunterlagen auf USB-Sticks",
+      "datum": "24.06.2025"
+    },
+    "B31": {
+      "datei": "AAR-2025-07-01-lost-and-found.md",
+      "titel": "Fundsachen im Seminargebäude",
+      "datum": "01.07.2025"
+    },
+    "B32": {
+      "datei": "AAR-2025-08-19-loan-laptops.md",
+      "titel": "Rückgabe von Leihlaptops",
+      "datum": "19.08.2025"
+    },
+    "B33": {
+      "datei": "AAR-2025-09-15-vehicles-multi-day-seminars.md",
+      "titel": "Fahrzeugnutzung bei mehrtägigen Seminaren",
+      "datum": "15.09.2025"
+    },
+    "B34": {
+      "datei": "AAR-2025-10-07-projector-delivery.md",
+      "titel": "Beamer im Seminarbetrieb",
+      "datum": "07.10.2025"
+    },
+    "B35": {
+      "datei": "AAR-2025-11-11-shared-group-rooms.md",
+      "titel": "Gemeinsam genutzte Gruppenräume",
+      "datum": "11.11.2025"
+    },
+    "B36": {
+      "datei": "AAR-2025-12-02-photo-consent-seminar.md",
+      "titel": "Tagesseminar „Präsentieren“",
+      "datum": "02.12.2025"
+    },
+    "B37": {
+      "datei": "AAR-2025-12-10-winter-socks-and-jackets.md",
+      "titel": "Ausrüstung beim Winter-Außenseminar",
+      "datum": "10.12.2025"
+    },
+    "B38": {
+      "datei": "AAR-2026-01-14-winter-service.md",
+      "titel": "Winterdienst am Seminargebäude",
+      "datum": "14.01.2026"
+    },
+    "B39": {
+      "datei": "AAR-2026-02-03-visitor-badges.md",
+      "titel": "Besucherausweise",
+      "datum": "03.02.2026"
+    },
+    "B40": {
+      "datei": "AAR-2026-03-10-attendance-certificates.md",
+      "titel": "Teilnahmebescheinigungen",
+      "datum": "10.03.2026"
+    },
+    "B41": {
+      "datei": "AAR-2026-03-24-external-guests-day.md",
+      "titel": "Tagesseminar mit externen Gästen",
+      "datum": "24.03.2026"
+    },
+    "B42": {
+      "datei": "AAR-2026-04-21-seminar-day-preparation.md",
+      "titel": "Vorbereitung eines Seminartags",
+      "datum": "21.04.2026"
+    },
+    "B43": {
+      "datei": "AAR-2026-06-16-project-planning-evening.md",
+      "titel": "Abendseminar „Projektplanung“",
+      "datum": "02.06.2026"
+    },
+    "B44": {
+      "datei": "AAR-2026-09-29-evening-negotiation.md",
+      "titel": "AAR-2026-09-29-evening-negotiation.md",
+      "datum": "29.09.2026"
+    },
+    "B45": {
+      "datei": "AAR-evening-keys-a.md",
+      "titel": "Schlüsselrückgabe nach Abendseminaren",
+      "datum": "14.10.2025"
+    },
+    "B46": {
+      "datei": "AAR-evening-keys-b.md",
+      "titel": "Raumschlüssel bei Abendseminaren",
+      "datum": "03.04.2024"
+    },
+    "B47": {
+      "datei": "AAR-parking-visitors.md",
+      "titel": "Besucherparkplätze",
+      "datum": "Datum unbekannt"
+    },
+    "B48": {
+      "datei": "AAR-projectors-office.md",
+      "titel": "Ausgabe von Beamern",
+      "datum": "20.06.2023"
+    }
+  },
+  "kennzahlen": {
+    "antworten": 1,
+    "nicht_auswertbar": 0,
+    "belege": {
+      "gültig": 13
+    },
+    "anteil_gueltig": 1.0,
+    "saetze_ohne_beleg": 0
+  },
+  "ergebnisse": [
+    {
+      "durchlauf": 1,
+      "nr": 25,
+      "frage": "Fasse zusammen, was die Berichte zu Gästen und Besuchern im Seminargebäude sagen.",
+      "berichte_im_prompt": [
+        "B25",
+        "B28",
+        "B33",
+        "B36",
+        "B37",
+        "B38",
+        "B39",
+        "B40",
+        "B41",
+        "B43",
+        "B47"
+      ],
+      "sichtung": [
+        {
+          "paket": [
+            "B1",
+            "B2",
+            "B3",
+            "B4",
+            "B5",
+            "B6",
+            "B7",
+            "B8",
+            "B9",
+            "B10"
+          ],
+          "relevant": [],
+          "roh": "```json\n{\n  \"relevant\": []\n}\n```",
+          "fehler": null
+        },
+        {
+          "paket": [
+            "B11",
+            "B12",
+            "B13",
+            "B14",
+            "B15",
+            "B16",
+            "B17",
+            "B18",
+            "B19",
+            "B20"
+          ],
+          "relevant": [],
+          "roh": "```json\n{\n  \"relevant\": []\n}\n```",
+          "fehler": null
+        },
+        {
+          "paket": [
+            "B21",
+            "B22",
+            "B23",
+            "B24",
+            "B25",
+            "B26",
+            "B27",
+            "B28",
+            "B29",
+            "B30"
+          ],
+          "relevant": [
+            "B25",
+            "B28"
+          ],
+          "roh": "```json\n{\n  \"relevant\": [\n    \"B25\",\n    \"B28\"\n  ]\n}\n```",
+          "fehler": null
+        },
+        {
+          "paket": [
+            "B31",
+            "B32",
+            "B33",
+            "B34",
+            "B35",
+            "B36",
+            "B37",
+            "B38",
+            "B39",
+            "B40"
+          ],
+          "relevant": [
+            "B33",
+            "B36",
+            "B37",
+            "B38",
+            "B39",
+            "B40"
+          ],
+          "roh": "```json\n{\n  \"relevant\": [\n    \"B33\",\n    \"B36\",\n    \"B37\",\n    \"B38\",\n    \"B39\",\n    \"B40\"\n  ]\n}\n```",
+          "fehler": null
+        },
+        {
+          "paket": [
+            "B41",
+            "B42",
+            "B43",
+            "B44",
+            "B45",
+            "B46",
+            "B47",
+            "B48"
+          ],
+          "relevant": [
+            "B41",
+            "B43",
+            "B47"
+          ],
+          "roh": "```json\n{\n  \"relevant\": [\n    \"B41\",\n    \"B43\",\n    \"B47\"\n  ]\n}\n```",
+          "fehler": null
+        }
+      ],
+      "roh": "```json\n{\n  \"saetze\": [\n    {\n      \"text\": \"Besucherparkplätze müssen mindestens einen Tag vorher beim Empfang reserviert werden; nicht reservierte Plätze werden ab 9 Uhr freigegeben.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B47\",\n          \"zitat\": \"Besucherparkplätze werden mindestens einen Tag vorher beim Empfang reserviert. Nicht reservierte Besucherparkplätze werden ab 9 Uhr freigegeben.\"\n        },\n        {\n          \"bericht\": \"B28\",\n          \"zitat\": \"für zwei externe Gäste hatten wir am Vortag Besucherparkplätze beim Empfang reserviert\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Ein Gast, der erst nach 9 Uhr ankam, fand trotzdem noch einen Platz.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B41\",\n          \"zitat\": \"Ein Gast kam erst nach 9 Uhr und fand trotzdem noch einen Platz.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Gäste erhalten am Empfang ihre Besucherausweise und WLAN-Zugangsdaten.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B41\",\n          \"zitat\": \"Die Gäste erhielten am Empfang Besucherausweise und WLAN-Zugangsdaten\"\n        },\n        {\n          \"bericht\": \"B25\",\n          \"zitat\": \"Gäste erhalten ihre WLAN-Zugangsdaten am Empfang.\"\n        },\n        {\n          \"bericht\": \"B43\",\n          \"zitat\": \"Die Gastreferentin erhielt am Empfang auch ihre WLAN-Zugangsdaten.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Die WLAN-Zugangsdaten sind 24 Stunden gültig.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B25\",\n          \"zitat\": \"Die Zugangsdaten gelten jeweils 24 Stunden.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Gastreferierende melden sich bei ihrer Ankunft am Empfang an und werden dort von der Seminarleitung abgeholt.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B43\",\n          \"zitat\": \"Gastreferierende melden sich bei ihrer Ankunft am Empfang an und werden dort von der Seminarleitung abgeholt.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Besucherausweise werden beim Verlassen des Gebäudes an der Pforte abgegeben.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B39\",\n          \"zitat\": \"Besucherausweise werden beim Verlassen des Gebäudes an der Pforte abgegeben.\"\n        },\n        {\n          \"bericht\": \"B41\",\n          \"zitat\": \"gaben die Ausweise beim Verlassen an der Pforte wieder ab.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Wer einen Besucherausweis verliert, muss dies am selben Tag beim Empfang melden.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B39\",\n          \"zitat\": \"Wer den Ausweis verliert, meldet das am selben Tag beim Empfang.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Bei Glätte ist der Nebeneingang geschlossen, weshalb Teilnehmende von Winterseminaren den Haupteingang nutzen.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B38\",\n          \"zitat\": \"Der Nebeneingang bleibt bei Glätte geschlossen; Teilnehmende von Winterseminaren nutzen dann den Haupteingang.\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Die Mischung aus internen Teilnehmenden und externen Gästen wurde bei einem Seminar positiv bewertet.\",\n      \"belege\": [\n        {\n          \"bericht\": \"B41\",\n          \"zitat\": \"Die Mischung aus internen und externen Teilnehmenden wurde in den Rückmeldungen positiv bewertet.\"\n        }\n      ]\n    }\n  ]\n}\n```",
+      "antwort": {
+        "saetze": [
+          {
+            "text": "Besucherparkplätze müssen mindestens einen Tag vorher beim Empfang reserviert werden; nicht reservierte Plätze werden ab 9 Uhr freigegeben.",
+            "belege": [
+              {
+                "bericht": "B47",
+                "zitat": "Besucherparkplätze werden mindestens einen Tag vorher beim Empfang reserviert. Nicht reservierte Besucherparkplätze werden ab 9 Uhr freigegeben.",
+                "status": "gültig"
+              },
+              {
+                "bericht": "B28",
+                "zitat": "für zwei externe Gäste hatten wir am Vortag Besucherparkplätze beim Empfang reserviert",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Ein Gast, der erst nach 9 Uhr ankam, fand trotzdem noch einen Platz.",
+            "belege": [
+              {
+                "bericht": "B41",
+                "zitat": "Ein Gast kam erst nach 9 Uhr und fand trotzdem noch einen Platz.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Gäste erhalten am Empfang ihre Besucherausweise und WLAN-Zugangsdaten.",
+            "belege": [
+              {
+                "bericht": "B41",
+                "zitat": "Die Gäste erhielten am Empfang Besucherausweise und WLAN-Zugangsdaten",
+                "status": "gültig"
+              },
+              {
+                "bericht": "B25",
+                "zitat": "Gäste erhalten ihre WLAN-Zugangsdaten am Empfang.",
+                "status": "gültig"
+              },
+              {
+                "bericht": "B43",
+                "zitat": "Die Gastreferentin erhielt am Empfang auch ihre WLAN-Zugangsdaten.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Die WLAN-Zugangsdaten sind 24 Stunden gültig.",
+            "belege": [
+              {
+                "bericht": "B25",
+                "zitat": "Die Zugangsdaten gelten jeweils 24 Stunden.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Gastreferierende melden sich bei ihrer Ankunft am Empfang an und werden dort von der Seminarleitung abgeholt.",
+            "belege": [
+              {
+                "bericht": "B43",
+                "zitat": "Gastreferierende melden sich bei ihrer Ankunft am Empfang an und werden dort von der Seminarleitung abgeholt.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Besucherausweise werden beim Verlassen des Gebäudes an der Pforte abgegeben.",
+            "belege": [
+              {
+                "bericht": "B39",
+                "zitat": "Besucherausweise werden beim Verlassen des Gebäudes an der Pforte abgegeben.",
+                "status": "gültig"
+              },
+              {
+                "bericht": "B41",
+                "zitat": "gaben die Ausweise beim Verlassen an der Pforte wieder ab.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Wer einen Besucherausweis verliert, muss dies am selben Tag beim Empfang melden.",
+            "belege": [
+              {
+                "bericht": "B39",
+                "zitat": "Wer den Ausweis verliert, meldet das am selben Tag beim Empfang.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Bei Glätte ist der Nebeneingang geschlossen, weshalb Teilnehmende von Winterseminaren den Haupteingang nutzen.",
+            "belege": [
+              {
+                "bericht": "B38",
+                "zitat": "Der Nebeneingang bleibt bei Glätte geschlossen; Teilnehmende von Winterseminaren nutzen dann den Haupteingang.",
+                "status": "gültig"
+              }
+            ]
+          },
+          {
+            "text": "Die Mischung aus internen Teilnehmenden und externen Gästen wurde bei einem Seminar positiv bewertet.",
+            "belege": [
+              {
+                "bericht": "B41",
+                "zitat": "Die Mischung aus internen und externen Teilnehmenden wurde in den Rückmeldungen positiv bewertet.",
+                "status": "gültig"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
