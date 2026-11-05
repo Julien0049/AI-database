@@ -56,6 +56,7 @@ Die Semesterarbeit soll einen Proof of Concept (PoC) einer AI Database für Frag
 37. Suchtest s2 ausgewertet (`results/bewertung_suche_2026-11-05_s2.md`): Bedeutung/Abschnitt @5 83 % (s1 79 %), @10 83 % (s1 88 %); kein klarer Gewinn. Fragen 22 und 25 weiterhin nicht gefunden. Vermutete Ursache: kleines Embedding-Modell und feste Trefferzahl bei Zusammenfassungen. Vorschlag: ganzer Bericht als Grundlage behalten.
 38. s3 vorbereitet (Nutzer einverstanden): ganzer Bericht als Einheit, Abschnitte entfernt. Thema erweitern: zu jedem der drei besten Treffer der Suche nach Bedeutung 1 bzw. 2 ähnlichste Berichte direkt dahinter einreihen, Rest wie ursprüngliche Rangliste; k bleibt gleich. Danach geplant: s4 größeres Embedding-Modell (z. B. `intfloat/multilingual-e5-large`, vorher prüfen).
 39. Suchtest s3 ausgewertet (`results/bewertung_suche_2026-11-05_s3.md`): Thema erweitern ohne Gewinn (@5: 79 % mit 1 Nachbar, 71 % mit 2; @3 schlechter); Fragen 16, 22, 25 unverändert. s4 vorbereitet: kleines und großes e5-Modell im Vergleich (e5-large geprüft: MIT, 24 Schichten, 1024 Dimensionen, ca. 2,24 GB, gleiche Präfixe); Themenerweiterung entfernt.
+40. Idee Themen-Schlagworte beim Ablegen besprochen; Nutzer: gute Idee, aber abhängig von der Sorgfalt der Autoren. Als optionaler späterer Versuch notiert (saubere vs. schlampige Schlagworte).
 
 ## Wichtige Dateien
 
