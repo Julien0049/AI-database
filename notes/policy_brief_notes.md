@@ -49,6 +49,7 @@ Laufend gepflegte Sammlung, gegliedert wie das spätere Policy Brief. Jeder Punk
 | v10 | Widerspruch nur über das Datum auflösbar | 6/6 |
 | s1 | Suchtest ohne Sprachmodell, 48 Berichte, 25 Fragen: Stichwort vs. Bedeutung vs. Kombination | alle nötigen Berichte unter den ersten 5: 50 % / 79 % / 67 %; unter den ersten 10: 58 % / 88 % / 83 % |
 | s2 | Suche nach Abschnitten aus zwei Sätzen statt ganzer Berichte | Bedeutung: unter den ersten 5: 79 % → 83 %, unter den ersten 10: 88 % → 83 %; kein klarer Gewinn |
+| s3 | Thema erweitern: zu den besten Treffern ihre ähnlichsten Berichte dazunehmen (gleiche Trefferzahl) | kein Gewinn; unter den ersten 3: 71 % → 62 % bzw. 46 % |
 
 ## Erkenntnisse
 
@@ -67,6 +68,7 @@ Laufend gepflegte Sammlung, gegliedert wie das spätere Policy Brief. Jeder Punk
 - **Einzelfragen ja, Zusammenfassungen nein (Messung s1):** Bei Einzelfragen sind die nötigen Berichte in 19 von 20 Fällen unter den ersten 5; Wortfallen (Sommer/Winter, Fahrradgarage/Raumschlüssel) führten nicht in die Irre. Bei Zusammenfassungen über mehrere Berichte waren es 0 von 4 (unter den ersten 10: 2 von 4). Zusammenfassungen brauchen eine andere Strategie als „die besten k Treffer“.
 - **Risiko überholter Stand durch die Suche (Messung s1):** Ein nur nebenbei erwähnter neuester Stand (Seminarunterlagen als Download) wurde von keiner Methode unter den ersten 10 gefunden, die älteren Stände (gedruckt, USB-Stick) standen vorn. Ältere Stände stehen auch sonst oft vor dem neuesten (Beamer: Platz 1–2 alt, Platz 3 neu). Die Suche kann damit die Kernregel „neuester Stand gilt“ unterlaufen, bevor das Modell überhaupt antwortet.
 - **Kleinere Sucheinheiten helfen hier nicht (Messung s2):** Suche nach Abschnitten aus zwei Sätzen statt ganzer Berichte änderte das Ergebnis nur um je eine Frage (in beide Richtungen). Der nebenbei erwähnte neueste Stand und die verstreuten Gästeregeln blieben unauffindbar. Die Ursache liegt eher beim kleinen Embedding-Modell und bei der festen Trefferzahl für Zusammenfassungen als bei der Länge der Einheiten.
+- **Ähnliche Berichte dazunehmen hilft nicht (Messung s3):** Berichte, die einem Treffer insgesamt ähneln, sind meist Berichte derselben Art (lang/kurz, Seminarbericht/Verwaltungsregel), nicht Berichte mit derselben Aussage. Nebenbei erwähnte oder verstreute Inhalte werden so nicht erreicht; bei kleiner Trefferzahl verdrängen die Nachbarn sogar nötige Berichte.
 - **Laufzeit (Messung v7–v10, Nutzer):** Rund 190 s für 51 Anfragen mit fünf parallelen Anfragen; schon bei 13–15 kurzen Berichten spürbar lang, für einen PoC akzeptabel. Ein Testlauf stellt aber viele Fragen auf einmal; im Einsatz stellt man eine oder wenige gezielte Fragen (Wartezeit je Frage nicht gemessen).
 
 ## Grenzen
@@ -88,7 +90,7 @@ Laufend gepflegte Sammlung, gegliedert wie das spätere Policy Brief. Jeder Punk
 
 ## Nächste Schritte
 
-- **In Arbeit:** Suche verbessern, bevor Antworten mit Suche gemessen werden (Nutzereinwand nach s1: „Wenn so viel verloren geht, ist die Strategie vielleicht nicht gut“). Je Version eine Änderung, ohne Modellkosten: s2 kleinere Sucheinheiten (gemessen: kein klarer Gewinn), s3 Thema erweitern (zu jedem Treffer ähnliche Berichte dazunehmen, damit alle Stände eines Themas ankommen), danach eigene Strategie für Zusammenfassungen. Erst dann ein Antwortlauf mit k = 5 (Nutzerentscheidung).
+- **In Arbeit:** Suche verbessern, bevor Antworten mit Suche gemessen werden (Nutzereinwand nach s1: „Wenn so viel verloren geht, ist die Strategie vielleicht nicht gut“). Je Version eine Änderung, ohne Modellkosten: s2 kleinere Sucheinheiten (gemessen: kein klarer Gewinn), s3 Thema erweitern (gemessen: kein Gewinn), s4 größeres Embedding-Modell (`intfloat/multilingual-e5-large`, ca. 2,2 GB), danach eigene Strategie für Zusammenfassungen. Erst dann ein Antwortlauf mit k = 5 (Nutzerentscheidung).
 - **Danach:** einfache lokale Browser-Oberfläche; andere Dateiformate (PDF, Word) als eigener Importtest.
-- **Optional:** eigene Strategie für Zusammenfassungen (z. B. mehr Treffer oder Suche nach Thema); Stichwortsuche mit Grundformbildung; prüfen, ob ein Zitat die Aussage wirklich stützt; härtere Datumstests (nahe Daten, gemischte Formate, mehrere Stände).
+- **Optional:** eigene Strategie für Zusammenfassungen (z. B. mehr Treffer, Treffer ab einer Mindestähnlichkeit, oder das Modell prüft eine größere Vorauswahl auf Relevanz); Themen-Schlagworte als festes Metadatenfeld beim Ablegen, als Erweiterung der Empfehlung zum einheitlichen Ablageformat (Vorschlag, ungeprüft); Stichwortsuche mit Grundformbildung; prüfen, ob ein Zitat die Aussage wirklich stützt; härtere Datumstests (nahe Daten, gemischte Formate, mehrere Stände).
 - **Spätere Ausbaustufen:** lokales, mittelgroßes Modell offline im Vergleich zu den Frontier-Ergebnissen; Aussagen-Klassifikator; Mehrnutzerbetrieb.
