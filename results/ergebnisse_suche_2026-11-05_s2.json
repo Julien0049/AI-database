@@ -1,0 +1,1337 @@
+{
+  "versuch": "Suchtest s2",
+  "zeitpunkt": "2026-11-05T03:05:24",
+  "embedding_modell": "intfloat/multilingual-e5-small",
+  "berichte": 48,
+  "einheiten": {
+    "Bericht": 48,
+    "Abschnitt": 89
+  },
+  "kennzahlen": {
+    "Stichwort / Bericht": {
+      "vollständig@3": 0.38,
+      "vollständig@5": 0.5,
+      "vollständig@10": 0.58
+    },
+    "Stichwort / Abschnitt": {
+      "vollständig@3": 0.38,
+      "vollständig@5": 0.5,
+      "vollständig@10": 0.62
+    },
+    "Bedeutung / Bericht": {
+      "vollständig@3": 0.71,
+      "vollständig@5": 0.79,
+      "vollständig@10": 0.88
+    },
+    "Bedeutung / Abschnitt": {
+      "vollständig@3": 0.75,
+      "vollständig@5": 0.83,
+      "vollständig@10": 0.83
+    }
+  },
+  "noetig": {
+    "1": [
+      "AAR-2025-01-20-shared-set-returns.md"
+    ],
+    "2": [
+      "AAR-2025-01-20-shared-set-returns.md",
+      "AAR-2025-02-04-missing-items.md"
+    ],
+    "3": [
+      "AAR-2025-06-10-one-day-seminars.md"
+    ],
+    "4": [
+      "AAR-2022-09-14-material-return.md"
+    ],
+    "5": [
+      "AAR-2025-02-04-missing-items.md"
+    ],
+    "6": [
+      "AAR-2025-02-04-missing-items.md"
+    ],
+    "7": [
+      "AAR-2025-03-18-logbook-form.md"
+    ],
+    "8": [
+      "AAR-2025-09-15-vehicles-multi-day-seminars.md"
+    ],
+    "9": [
+      "AAR-2024-11-05-vehicle-damage.md"
+    ],
+    "10": [
+      "AAR-2024-01-08-vehicle-reservations.md"
+    ],
+    "11": [
+      "AAR-2023-02-15-winter-clothing-layers.md",
+      "AAR-2024-01-25-winter-waiting-times.md",
+      "AAR-2025-12-10-winter-socks-and-jackets.md"
+    ],
+    "12": [
+      "AAR-2023-02-15-winter-clothing-layers.md",
+      "AAR-2024-01-25-winter-waiting-times.md",
+      "AAR-2025-12-10-winter-socks-and-jackets.md"
+    ],
+    "13": [],
+    "14": [
+      "AAR-2023-04-12-vehicle-returns.md",
+      "AAR-2024-01-08-vehicle-reservations.md",
+      "AAR-2024-11-05-vehicle-damage.md",
+      "AAR-2025-03-18-logbook-form.md",
+      "AAR-2025-09-15-vehicles-multi-day-seminars.md"
+    ],
+    "15": [
+      "AAR-2023-02-15-winter-clothing-layers.md",
+      "AAR-2024-01-25-winter-waiting-times.md",
+      "AAR-2025-12-10-winter-socks-and-jackets.md"
+    ],
+    "16": [
+      "AAR-2025-01-20-shared-set-returns.md",
+      "AAR-2025-09-15-vehicles-multi-day-seminars.md",
+      "AAR-2023-02-15-winter-clothing-layers.md",
+      "AAR-2024-01-25-winter-waiting-times.md",
+      "AAR-2025-12-10-winter-socks-and-jackets.md"
+    ],
+    "17": [
+      "AAR-2024-03-02-multi-day-seminar-returns.md",
+      "AAR-2025-01-20-shared-set-returns.md"
+    ],
+    "18": [
+      "AAR-evening-keys-a.md"
+    ],
+    "19": [
+      "AAR-evening-keys-a.md",
+      "AAR-evening-keys-b.md"
+    ],
+    "20": [
+      "AAR-2025-05-20-teamwork-day-seminar.md"
+    ],
+    "21": [
+      "AAR-2025-10-07-projector-delivery.md"
+    ],
+    "22": [
+      "AAR-2026-04-21-seminar-day-preparation.md"
+    ],
+    "23": [
+      "AAR-2024-07-09-summer-outdoor-day.md"
+    ],
+    "24": [
+      "AAR-2024-02-20-room-booking.md"
+    ],
+    "25": [
+      "AAR-2026-02-03-visitor-badges.md",
+      "AAR-2025-03-guest-wifi.md",
+      "AAR-parking-visitors.md",
+      "AAR-2026-06-16-project-planning-evening.md"
+    ]
+  },
+  "ranglisten": {
+    "Stichwort / Bericht": {
+      "1": [
+        "AAR-2025-11-11-shared-group-rooms.md",
+        "AAR-2022-09-14-material-return.md",
+        "AAR-2026-09-29-evening-negotiation.md",
+        "AAR-2025-01-20-shared-set-returns.md",
+        "AAR-2024-11-05-vehicle-damage.md",
+        "AAR-2024-05-13-library-book-returns.md",
+        "AAR-2025-09-15-vehicles-multi-day-seminars.md",
+        "AAR-2026-03-24-external-guests-day.md",
+        "AAR-2025-06-10-one-day-seminars.md",
+        "AAR-2025-03-18-logbook-form.md"
+      ],
+      "2": [
+        "AAR-2026-09-29-evening-negotiation.md",
+        "AAR-2025-12-02-photo-consent-seminar.md",
+        "AAR-2026-03-24-external-guests-day.md",
+        "AAR-projectors-office.md",
+        "AAR-2022-09-14-material-return.md",
+        "AAR-2024-01-25-winter-waiting-times.md",
+        "AAR-2025-09-15-vehicles-multi-day-seminars.md",
+        "AAR-2024-09-30-first-aid-kits.md",
+        "AAR-2025-10-07-projector-delivery.md",
+        "AAR-2022-03-08-projectors-facility.md"
+      ],
+      "3": [
+        "AAR-2025-06-10-one-day-seminars.md",
+        "AAR-2025-01-20-shared-set-returns.md",
+        "AAR-2025-06-24-handouts-usb.md",
+        "AAR-2026-09-29-evening-negotiation.md",
+        "AAR-2022-09-14-material-return.md",
+        "AAR-2024-11-05-vehicle-damage.md",
+        "AAR-2026-06-16-project-planning-evening.md",
+        "AAR-2025-05-06-bike-garage-keys.md",
+        "AAR-2026-03-24-external-guests-day.md",
+        "AAR-2024-09-30-first-aid-kits.md"
+      ],
+      "4": [
+        "AAR-2022-09-14-material-return.md",
+        "AAR-2025-01-20-shared-set-returns.md",
+        "AAR-2025-09-15-vehicles-multi-day-seminars.md",
+        "AAR-2025-08-19-loan-laptops.md",
+        "AAR-2025-12-02-photo-consent-seminar.md",
+        "AAR-2024-05-13-library-book-returns.md",
+        "AAR-evening-keys-a.md",
+        "AAR-2025-11-11-shared-group-rooms.md",
+        "AAR-2026-02-03-visitor-badges.md",
+        "AAR-2023-04-12-vehicle-returns.md"
+      ],
+      "5": [
+        "AAR-2024-03-02-multi-day-seminar-returns.md",
+        "AAR-2025-12-10-winter-socks-and-jackets.md",
+        "AAR-2025-11-11-shared-group-rooms.md",
+        "AAR-2025-12-02-photo-consent-seminar.md",
+        "AAR-2025-09-15-vehicles-multi-day-seminars.md",
+        "AAR-2022-09-14-material-return.md",
+        "AAR-2023-02-15-winter-clothing-layers.md",
+        "AAR-2025-01-20-shared-set-returns.md",
+        "AAR-2023-09-05-seminar-registration.md",
+        "AAR-2023-04-12-vehicle-returns.md"
+      ],
+      "6": [
+        "AAR-2024-09-30-first-aid-kits.md",
+        "AAR-2025-04-22-room-damage.md",
+        "AAR-2026-04-21-seminar-day-preparation.md",
+        "AAR-2025-02-04-missing-items.md",
+        "AAR-2023-04-12-vehicle-returns.md",
+        "AAR-2025-10-07-projector-delivery.md",
+        "AAR-2024-01-25-winter-waiting-times.md",
+        "AAR-2025-06-10-one-day-seminars.md",
+        "AAR-2024-10-02-projector-reservation.md",
+        "AAR-2026-02-03-visitor-badges.md"
+      ],
+      "7": [
+        "AAR-2023-04-12-vehicle-returns.md",
+        "AAR-2026-04-21-seminar-day-preparation.md",
+        "AAR-2025-03-18-logbook-form.md",
+        "AAR-projectors-office.md",
+        "AAR-2025-09-15-vehicles-multi-day-seminars.md",
+        "AAR-2025-07-01-lost-and-found.md",
+        "AAR-2025-04-22-room-damage.md",
+        "AAR-2023-09-05-seminar-registration.md",
+        "AAR-2026-02-03-visitor-badges.md",
+        "AAR-2023-03-15-handouts-printed.md"
+      ],
+      "8": [
+        "AAR-2025-09-15-vehicles-multi-day-seminars.md",
+        "AAR-2025-12-02-photo-consent-seminar.md",
+        "AAR-2025-01-20-shared-set-returns.md",
+        "AAR-2022-09-14-material-return.md",
+        "AAR-2023-04-12-vehicle-returns.md",
+        "AAR-2023-02-15-winter-clothing-layers.md",
+        "AAR-2025-11-11-shared-group-rooms.md",
+        "AAR-2024-11-05-vehicle-damage.md",
+        "AAR-2025-06-10-one-day-seminars.md",
+        "AAR-2026-04-21-seminar-day-preparation.md"
+      ],
+      "9": [
+        "AAR-2023-04-12-vehicle-returns.md",
+        "AAR-2025-09-15-vehicles-multi-day-seminars.md",
+        "AAR-2023-09-05-seminar-registration.md",
+        "AAR-2026-09-29-evening-negotiation.md",
+        "AAR-2024-09-17-large-day-seminar.md",
+        "AAR-2023-02-15-winter-clothing-layers.md",
+        "AAR-2026-02-03-visitor-badges.md",
+        "AAR-2026-04-21-seminar-day-preparation.md",
+        "AAR-2026-03-24-external-guests-day.md",
+        "AAR-2025-05-20-teamwork-day-seminar.md"
+      ],
+      "10": [
+        "AAR-2026-09-29-evening-negotiation.md",
+        "AAR-2025-09-15-vehicles-multi-day-seminars.md",
+        "AAR-2023-04-12-vehicle-returns.md",
+        "AAR-2026-04-21-seminar-day-preparation.md",
+        "AAR-2025-05-06-bike-garage-keys.md",
+        "AAR-2025-11-11-shared-group-rooms.md",
+        "AAR-2026-03-24-external-guests-day.md",
+        "AAR-2025-05-20-teamwork-day-seminar.md",
+        "AAR-evening-keys-b.md",
+        "AAR-evening-keys-a.md"
+      ],
+      "11": [
+        "AAR-2023-02-15-winter-clothing-layers.md",
+        "AAR-2024-07-09-summer-outdoor-day.md",
+        "AAR-2025-12-10-winter-socks-and-jackets.md",
+        "AAR-2025-03-18-logbook-form.md",
+        "AAR-2026-03-10-attendance-certificates.md",
+        "AAR-2025-09-15-vehicles-multi-day-seminars.md",
+        "AAR-2024-03-02-multi-day-seminar-returns.md",
+        "AAR-2024-01-25-winter-waiting-times.md",
+        "AAR-2026-06-16-project-planning-evening.md",
+        "AAR-2025-11-11-shared-group-rooms.md"
+      ],
+      "12": [
+        "AAR-2023-02-15-winter-clothing-layers.md",
+        "AAR-2025-12-10-winter-socks-and-jackets.md",
+        "AAR-2024-01-25-winter-waiting-times.md",
+        "AAR-2024-03-02-multi-day-seminar-returns.md",
+        "AAR-2024-07-09-summer-outdoor-day.md",
+        "AAR-2025-09-15-vehicles-multi-day-seminars.md",
+        "AAR-2024-11-05-vehicle-damage.md",
+        "AAR-2025-06-24-handouts-usb.md",
+        "AAR-2025-02-26-catering.md",
+        "AAR-2025-01-20-shared-set-returns.md"
+      ],
+      "13": [
+        "AAR-2023-04-12-vehicle-returns.md",
+        "AAR-2026-06-16-project-planning-evening.md",
+        "AAR-2026-03-24-external-guests-day.md",
+        "AAR-2024-03-02-multi-day-seminar-returns.md",
+        "AAR-2025-06-10-one-day-seminars.md",
+        "AAR-2025-02-26-catering.md",
+        "AAR-2024-02-20-room-booking.md",
+        "AAR-2025-05-06-bike-garage-keys.md",
+        "AAR-2025-02-04-missing-items.md",
+        "AAR-2025-10-07-projector-delivery.md"
+      ],
+      "14": [
+        "AAR-2023-10-17-sports-equipment.md",
+        "AAR-2024-10-02-projector-reservation.md",
+        "AAR-2025-10-07-projector-delivery.md",
+        "AAR-2026-06-16-project-planning-evening.md",
+        "AAR-2026-09-29-evening-negotiation.md",
+        "AAR-2025-05-20-teamwork-day-seminar.md",
+        "AAR-2024-11-26-feedback-forms.md",
+        "AAR-evening-keys-b.md",
+        "AAR-evening-keys-a.md",
+        "AAR-2025-11-11-shared-group-rooms.md"
+      ],
+      "15": [
+        "AAR-2023-02-15-winter-clothing-layers.md",
+        "AAR-2025-12-10-winter-socks-and-jackets.md",
+        "AAR-2026-09-29-evening-negotiation.md",
+        "AAR-2024-03-02-multi-day-seminar-returns.md",
+        "AAR-2024-11-05-vehicle-damage.md",
+        "AAR-2025-02-26-catering.md",
+        "AAR-2025-01-20-shared-set-returns.md",
+        "AAR-2024-01-25-winter-waiting-times.md",
+        "AAR-2023-09-05-seminar-registration.md",
+        "AAR-2025-08-19-loan-laptops.md"
+      ],
+      "16": [
+        "AAR-2024-03-02-multi-day-seminar-returns.md",
+        "AAR-2023-09-05-seminar-registration.md",
+        "AAR-2025-09-15-vehicles-multi-day-seminars.md",
+        "AAR-2023-02-15-winter-clothing-layers.md",
+        "AAR-2025-12-10-winter-socks-and-jackets.md",
+        "AAR-2024-09-17-large-day-seminar.md",
+        "AAR-2024-10-02-projector-reservation.md",
+        "AAR-2025-02-26-catering.md",
+        "AAR-2025-10-07-projector-delivery.md",
+        "AAR-2026-09-29-evening-negotiation.md"
+      ],
+      "17": [
+        "AAR-2024-03-02-multi-day-seminar-returns.md",
+        "AAR-2025-09-15-vehicles-multi-day-seminars.md",
+        "AAR-2026-09-29-evening-negotiation.md",
+        "AAR-2025-03-18-logbook-form.md",
+        "AAR-2022-09-14-material-return.md",
+        "AAR-2025-11-11-shared-group-rooms.md",
+        "AAR-2023-09-05-seminar-registration.md",
+        "AAR-2026-06-16-project-planning-evening.md",
+        "AAR-2023-02-15-winter-clothing-layers.md",
+        "AAR-2026-03-10-attendance-certificates.md"
+      ],
+      "18": [
+        "AAR-evening-keys-b.md",
+        "AAR-2025-10-07-projector-delivery.md",
+        "AAR-evening-keys-a.md",
+        "AAR-2023-04-12-vehicle-returns.md",
+        "AAR-2026-03-24-external-guests-day.md",
+        "AAR-2025-06-24-handouts-usb.md",
+        "AAR-2026-06-16-project-planning-evening.md",
+        "AAR-parking-visitors.md",
+        "AAR-2024-11-05-vehicle-damage.md",
+        "AAR-2026-09-29-evening-negotiation.md"
+      ],
+      "19": [
+        "AAR-evening-keys-b.md",
+        "AAR-evening-keys-a.md",
+        "AAR-2026-09-29-evening-negotiation.md",
+        "AAR-2025-03-18-logbook-form.md",
+        "AAR-2026-03-10-attendance-certificates.md",
+        "AAR-2024-05-13-library-book-returns.md",
+        "AAR-2026-04-21-seminar-day-preparation.md",
+        "AAR-2024-07-09-summer-outdoor-day.md",
+        "AAR-2025-05-06-bike-garage-keys.md",
+        "AAR-2026-03-24-external-guests-day.md"
+      ],
+      "20": [
+        "AAR-2024-11-05-vehicle-damage.md",
+        "AAR-2025-06-24-handouts-usb.md",
+        "AAR-2024-09-17-large-day-seminar.md",
+        "AAR-2025-05-20-teamwork-day-seminar.md",
+        "AAR-2026-03-24-external-guests-day.md",
+        "AAR-2025-12-02-photo-consent-seminar.md",
+        "AAR-2025-02-26-catering.md",
+        "AAR-2025-09-15-vehicles-multi-day-seminars.md",
+        "AAR-2024-01-08-vehicle-reservations.md",
+        "AAR-2026-01-14-winter-service.md"
+      ],
+      "21": [
+        "AAR-2022-03-08-projectors-facility.md",
+        "AAR-2026-09-29-evening-negotiation.md",
+        "AAR-2025-10-07-projector-delivery.md",
+        "AAR-projectors-office.md",
+        "AAR-2025-05-20-teamwork-day-seminar.md",
+        "AAR-2025-03-14-printer-outage.md",
+        "AAR-2025-12-02-photo-consent-seminar.md",
+        "AAR-2024-10-02-projector-reservation.md",
+        "AAR-2026-03-24-external-guests-day.md",
+        "AAR-parking-visitors.md"
+      ],
+      "22": [
+        "AAR-2026-09-29-evening-negotiation.md",
+        "AAR-2025-06-24-handouts-usb.md",
+        "AAR-2025-06-10-one-day-seminars.md",
+        "AAR-2025-03-guest-wifi.md",
+        "AAR-2026-03-10-attendance-certificates.md",
+        "AAR-2024-11-26-feedback-forms.md",
+        "AAR-2025-12-10-winter-socks-and-jackets.md",
+        "AAR-2026-03-24-external-guests-day.md",
+        "AAR-2024-03-02-multi-day-seminar-returns.md",
+        "AAR-2025-12-02-photo-consent-seminar.md"
+      ],
+      "23": [
+        "AAR-2024-07-09-summer-outdoor-day.md",
+        "AAR-2023-02-15-winter-clothing-layers.md",
+        "AAR-2025-03-18-logbook-form.md",
+        "AAR-2026-03-10-attendance-certificates.md",
+        "AAR-2025-12-10-winter-socks-and-jackets.md",
+        "AAR-2026-06-16-project-planning-evening.md",
+        "AAR-2025-11-11-shared-group-rooms.md",
+        "AAR-2024-09-17-large-day-seminar.md",
+        "AAR-2025-05-20-teamwork-day-seminar.md",
+        "AAR-2026-09-29-evening-negotiation.md"
+      ],
+      "24": [
+        "AAR-2026-09-29-evening-negotiation.md",
+        "AAR-2025-05-20-teamwork-day-seminar.md",
+        "AAR-2024-07-09-summer-outdoor-day.md",
+        "AAR-2024-10-02-projector-reservation.md",
+        "AAR-2023-02-15-winter-clothing-layers.md",
+        "AAR-2025-10-07-projector-delivery.md",
+        "AAR-2025-03-14-printer-outage.md",
+        "AAR-2026-03-24-external-guests-day.md",
+        "AAR-2026-04-21-seminar-day-preparation.md",
+        "AAR-parking-visitors.md"
+      ],
+      "25": [
+        "AAR-2024-10-02-projector-reservation.md",
+        "AAR-2026-01-14-winter-service.md",
+        "AAR-2025-07-01-lost-and-found.md",
+        "AAR-2026-03-24-external-guests-day.md",
+        "AAR-2026-09-29-evening-negotiation.md",
+        "AAR-2025-10-07-projector-delivery.md",
+        "AAR-2025-05-20-teamwork-day-seminar.md",
+        "AAR-2024-09-17-large-day-seminar.md",
+        "AAR-2023-03-15-handouts-printed.md",
+        "AAR-2023-09-05-seminar-registration.md"
+      ]
+    },
+    "Stichwort / Abschnitt": {
+      "1": [
+        "AAR-2022-09-14-material-return.md",
+        "AAR-2025-11-11-shared-group-rooms.md",
+        "AAR-2025-01-20-shared-set-returns.md",
+        "AAR-2025-06-10-one-day-seminars.md",
+        "AAR-2024-11-05-vehicle-damage.md",
+        "AAR-2024-05-13-library-book-returns.md",
+        "AAR-2026-09-29-evening-negotiation.md",
+        "AAR-evening-keys-b.md",
+        "AAR-2026-06-16-project-planning-evening.md",
+        "AAR-2025-03-18-logbook-form.md"
+      ],
+      "2": [
+        "AAR-2025-12-02-photo-consent-seminar.md",
+        "AAR-projectors-office.md",
+        "AAR-2026-09-29-evening-negotiation.md",
+        "AAR-2025-09-15-vehicles-multi-day-seminars.md",
+        "AAR-2022-03-08-projectors-facility.md",
+        "AAR-2025-10-07-projector-delivery.md",
+        "AAR-2022-09-14-material-return.md",
+        "AAR-2025-02-04-missing-items.md",
+        "AAR-2026-03-24-external-guests-day.md",
+        "AAR-2023-10-17-sports-equipment.md"
+      ],
+      "3": [
+        "AAR-2025-06-10-one-day-seminars.md",
+        "AAR-2025-01-20-shared-set-returns.md",
+        "AAR-2025-06-24-handouts-usb.md",
+        "AAR-2022-09-14-material-return.md",
+        "AAR-2026-03-24-external-guests-day.md",
+        "AAR-2026-06-16-project-planning-evening.md",
+        "AAR-2025-05-06-bike-garage-keys.md",
+        "AAR-2026-09-29-evening-negotiation.md",
+        "AAR-2025-02-04-missing-items.md",
+        "AAR-evening-keys-b.md"
+      ],
+      "4": [
+        "AAR-2022-09-14-material-return.md",
+        "AAR-2025-01-20-shared-set-returns.md",
+        "AAR-2025-12-02-photo-consent-seminar.md",
+        "AAR-2025-08-19-loan-laptops.md",
+        "AAR-2025-09-15-vehicles-multi-day-seminars.md",
+        "AAR-evening-keys-a.md",
+        "AAR-2024-05-13-library-book-returns.md",
+        "AAR-2025-11-11-shared-group-rooms.md",
+        "AAR-2026-02-03-visitor-badges.md",
+        "AAR-2023-04-12-vehicle-returns.md"
+      ],
+      "5": [
+        "AAR-2024-03-02-multi-day-seminar-returns.md",
+        "AAR-2025-12-02-photo-consent-seminar.md",
+        "AAR-2025-11-11-shared-group-rooms.md",
+        "AAR-2025-09-15-vehicles-multi-day-seminars.md",
+        "AAR-2023-10-17-sports-equipment.md",
+        "AAR-2025-01-20-shared-set-returns.md",
+        "AAR-2022-09-14-material-return.md",
+        "AAR-2023-09-05-seminar-registration.md",
+        "AAR-2023-02-15-winter-clothing-layers.md",
+        "AAR-2025-12-10-winter-socks-and-jackets.md"
+      ],
+      "6": [
+        "AAR-2025-04-22-room-damage.md",
+        "AAR-2024-09-30-first-aid-kits.md",
+        "AAR-2026-04-21-seminar-day-preparation.md",
+        "AAR-2025-02-04-missing-items.md",
+        "AAR-2023-04-12-vehicle-returns.md",
+        "AAR-2025-10-07-projector-delivery.md",
+        "AAR-2025-06-10-one-day-seminars.md",
+        "AAR-2025-05-20-teamwork-day-seminar.md",
+        "AAR-2024-10-02-projector-reservation.md",
+        "AAR-2023-10-17-sports-equipment.md"
+      ],
+      "7": [
+        "AAR-2023-04-12-vehicle-returns.md",
+        "AAR-2026-04-21-seminar-day-preparation.md",
+        "AAR-2025-12-02-photo-consent-seminar.md",
+        "AAR-2025-09-15-vehicles-multi-day-seminars.md",
+        "AAR-2025-03-18-logbook-form.md",
+        "AAR-projectors-office.md",
+        "AAR-2026-09-29-evening-negotiation.md",
+        "AAR-2025-04-22-room-damage.md",
+        "AAR-2025-08-19-loan-laptops.md",
+        "AAR-2023-09-05-seminar-registration.md"
+      ],
+      "8": [
+        "AAR-2025-09-15-vehicles-multi-day-seminars.md",
+        "AAR-2025-01-20-shared-set-returns.md",
+        "AAR-2022-09-14-material-return.md",
+        "AAR-2023-04-12-vehicle-returns.md",
+        "AAR-2025-11-11-shared-group-rooms.md",
+        "AAR-2023-02-15-winter-clothing-layers.md",
+        "AAR-2025-12-02-photo-consent-seminar.md",
+        "AAR-evening-keys-b.md",
+        "AAR-2024-09-17-large-day-seminar.md",
+        "AAR-2024-05-13-library-book-returns.md"
+      ],
+      "9": [
+        "AAR-2023-04-12-vehicle-returns.md",
+        "AAR-2025-09-15-vehicles-multi-day-seminars.md",
+        "AAR-2023-09-05-seminar-registration.md",
+        "AAR-2024-09-17-large-day-seminar.md",
+        "AAR-2023-10-17-sports-equipment.md",
+        "AAR-2023-02-15-winter-clothing-layers.md",
+        "AAR-evening-keys-b.md",
+        "AAR-2026-02-03-visitor-badges.md",
+        "AAR-2025-05-06-bike-garage-keys.md",
+        "AAR-2024-11-05-vehicle-damage.md"
+      ],
+      "10": [
+        "AAR-2026-09-29-evening-negotiation.md",
+        "AAR-2023-04-12-vehicle-returns.md",
+        "AAR-2025-09-15-vehicles-multi-day-seminars.md",
+        "AAR-2026-04-21-seminar-day-preparation.md",
+        "AAR-2025-05-06-bike-garage-keys.md",
+        "AAR-2025-05-20-teamwork-day-seminar.md",
+        "AAR-2025-11-11-shared-group-rooms.md",
+        "AAR-2026-03-24-external-guests-day.md",
+        "AAR-evening-keys-b.md",
+        "AAR-evening-keys-a.md"
+      ],
+      "11": [
+        "AAR-2023-02-15-winter-clothing-layers.md",
+        "AAR-2024-07-09-summer-outdoor-day.md",
+        "AAR-2025-12-10-winter-socks-and-jackets.md",
+        "AAR-2025-03-18-logbook-form.md",
+        "AAR-2026-03-10-attendance-certificates.md",
+        "AAR-2025-09-15-vehicles-multi-day-seminars.md",
+        "AAR-2024-03-02-multi-day-seminar-returns.md",
+        "AAR-2024-01-25-winter-waiting-times.md",
+        "AAR-2026-06-16-project-planning-evening.md",
+        "AAR-2025-11-11-shared-group-rooms.md"
+      ],
+      "12": [
+        "AAR-2023-02-15-winter-clothing-layers.md",
+        "AAR-2025-12-10-winter-socks-and-jackets.md",
+        "AAR-2024-01-25-winter-waiting-times.md",
+        "AAR-2024-03-02-multi-day-seminar-returns.md",
+        "AAR-2025-09-15-vehicles-multi-day-seminars.md",
+        "AAR-2024-07-09-summer-outdoor-day.md",
+        "AAR-2024-11-05-vehicle-damage.md",
+        "AAR-2025-06-24-handouts-usb.md",
+        "AAR-2025-02-26-catering.md",
+        "AAR-2023-10-17-sports-equipment.md"
+      ],
+      "13": [
+        "AAR-2023-04-12-vehicle-returns.md",
+        "AAR-2026-06-16-project-planning-evening.md",
+        "AAR-2026-03-24-external-guests-day.md",
+        "AAR-2025-05-06-bike-garage-keys.md",
+        "AAR-2024-03-02-multi-day-seminar-returns.md",
+        "AAR-2025-02-26-catering.md",
+        "AAR-2024-07-09-summer-outdoor-day.md",
+        "AAR-2024-02-20-room-booking.md",
+        "AAR-2025-08-19-loan-laptops.md",
+        "AAR-2022-03-08-projectors-facility.md"
+      ],
+      "14": [
+        "AAR-2026-06-16-project-planning-evening.md",
+        "AAR-2023-10-17-sports-equipment.md",
+        "AAR-2024-10-02-projector-reservation.md",
+        "AAR-2026-09-29-evening-negotiation.md",
+        "AAR-2025-05-20-teamwork-day-seminar.md",
+        "AAR-2025-10-07-projector-delivery.md",
+        "AAR-2024-11-26-feedback-forms.md",
+        "AAR-evening-keys-b.md",
+        "AAR-evening-keys-a.md",
+        "AAR-2025-05-06-bike-garage-keys.md"
+      ],
+      "15": [
+        "AAR-2023-02-15-winter-clothing-layers.md",
+        "AAR-2025-12-10-winter-socks-and-jackets.md",
+        "AAR-2024-03-02-multi-day-seminar-returns.md",
+        "AAR-2026-09-29-evening-negotiation.md",
+        "AAR-2024-11-05-vehicle-damage.md",
+        "AAR-2025-02-26-catering.md",
+        "AAR-2025-01-20-shared-set-returns.md",
+        "AAR-2024-01-25-winter-waiting-times.md",
+        "AAR-2023-10-17-sports-equipment.md",
+        "AAR-2025-08-19-loan-laptops.md"
+      ],
+      "16": [
+        "AAR-2023-09-05-seminar-registration.md",
+        "AAR-2025-09-15-vehicles-multi-day-seminars.md",
+        "AAR-2024-03-02-multi-day-seminar-returns.md",
+        "AAR-2024-09-17-large-day-seminar.md",
+        "AAR-2023-02-15-winter-clothing-layers.md",
+        "AAR-2024-10-02-projector-reservation.md",
+        "AAR-2025-02-26-catering.md",
+        "AAR-2026-09-29-evening-negotiation.md",
+        "AAR-2024-01-25-winter-waiting-times.md",
+        "AAR-2025-12-10-winter-socks-and-jackets.md"
+      ],
+      "17": [
+        "AAR-2024-03-02-multi-day-seminar-returns.md",
+        "AAR-2025-09-15-vehicles-multi-day-seminars.md",
+        "AAR-2025-03-18-logbook-form.md",
+        "AAR-2022-09-14-material-return.md",
+        "AAR-2025-11-11-shared-group-rooms.md",
+        "AAR-2023-02-15-winter-clothing-layers.md",
+        "AAR-2026-09-29-evening-negotiation.md",
+        "AAR-2023-09-05-seminar-registration.md",
+        "AAR-2024-07-09-summer-outdoor-day.md",
+        "AAR-2026-03-10-attendance-certificates.md"
+      ],
+      "18": [
+        "AAR-evening-keys-b.md",
+        "AAR-evening-keys-a.md",
+        "AAR-2025-10-07-projector-delivery.md",
+        "AAR-2023-04-12-vehicle-returns.md",
+        "AAR-2024-11-05-vehicle-damage.md",
+        "AAR-2026-06-16-project-planning-evening.md",
+        "AAR-2026-09-29-evening-negotiation.md",
+        "AAR-2025-06-24-handouts-usb.md",
+        "AAR-parking-visitors.md",
+        "AAR-2025-06-10-one-day-seminars.md"
+      ],
+      "19": [
+        "AAR-evening-keys-b.md",
+        "AAR-evening-keys-a.md",
+        "AAR-2026-09-29-evening-negotiation.md",
+        "AAR-2025-03-18-logbook-form.md",
+        "AAR-2026-03-10-attendance-certificates.md",
+        "AAR-2024-07-09-summer-outdoor-day.md",
+        "AAR-2024-05-13-library-book-returns.md",
+        "AAR-2025-05-06-bike-garage-keys.md",
+        "AAR-2025-12-02-photo-consent-seminar.md",
+        "AAR-2023-10-17-sports-equipment.md"
+      ],
+      "20": [
+        "AAR-2024-11-05-vehicle-damage.md",
+        "AAR-2025-06-24-handouts-usb.md",
+        "AAR-2024-09-17-large-day-seminar.md",
+        "AAR-2025-12-02-photo-consent-seminar.md",
+        "AAR-2025-05-20-teamwork-day-seminar.md",
+        "AAR-2026-03-24-external-guests-day.md",
+        "AAR-2025-09-15-vehicles-multi-day-seminars.md",
+        "AAR-2025-02-26-catering.md",
+        "AAR-2023-02-15-winter-clothing-layers.md",
+        "AAR-2024-03-02-multi-day-seminar-returns.md"
+      ],
+      "21": [
+        "AAR-2022-03-08-projectors-facility.md",
+        "AAR-2025-10-07-projector-delivery.md",
+        "AAR-2026-09-29-evening-negotiation.md",
+        "AAR-2025-12-02-photo-consent-seminar.md",
+        "AAR-projectors-office.md",
+        "AAR-2025-03-14-printer-outage.md",
+        "AAR-2024-10-02-projector-reservation.md",
+        "AAR-2025-05-20-teamwork-day-seminar.md",
+        "AAR-parking-visitors.md",
+        "AAR-2024-11-26-feedback-forms.md"
+      ],
+      "22": [
+        "AAR-2026-09-29-evening-negotiation.md",
+        "AAR-2025-06-24-handouts-usb.md",
+        "AAR-2025-06-10-one-day-seminars.md",
+        "AAR-2025-03-guest-wifi.md",
+        "AAR-2026-03-10-attendance-certificates.md",
+        "AAR-2025-12-10-winter-socks-and-jackets.md",
+        "AAR-2024-11-26-feedback-forms.md",
+        "AAR-2025-12-02-photo-consent-seminar.md",
+        "AAR-2026-03-24-external-guests-day.md",
+        "AAR-2024-09-17-large-day-seminar.md"
+      ],
+      "23": [
+        "AAR-2024-07-09-summer-outdoor-day.md",
+        "AAR-2023-02-15-winter-clothing-layers.md",
+        "AAR-2025-03-18-logbook-form.md",
+        "AAR-2026-03-10-attendance-certificates.md",
+        "AAR-2025-12-10-winter-socks-and-jackets.md",
+        "AAR-2026-06-16-project-planning-evening.md",
+        "AAR-2025-11-11-shared-group-rooms.md",
+        "AAR-2026-09-29-evening-negotiation.md",
+        "AAR-2025-05-20-teamwork-day-seminar.md",
+        "AAR-2024-09-17-large-day-seminar.md"
+      ],
+      "24": [
+        "AAR-2026-09-29-evening-negotiation.md",
+        "AAR-2024-10-02-projector-reservation.md",
+        "AAR-2025-03-14-printer-outage.md",
+        "AAR-2024-07-09-summer-outdoor-day.md",
+        "AAR-2026-03-24-external-guests-day.md",
+        "AAR-2025-10-07-projector-delivery.md",
+        "AAR-2025-05-20-teamwork-day-seminar.md",
+        "AAR-2023-02-15-winter-clothing-layers.md",
+        "AAR-2026-04-21-seminar-day-preparation.md",
+        "AAR-parking-visitors.md"
+      ],
+      "25": [
+        "AAR-2024-10-02-projector-reservation.md",
+        "AAR-2026-01-14-winter-service.md",
+        "AAR-2026-03-24-external-guests-day.md",
+        "AAR-2025-07-01-lost-and-found.md",
+        "AAR-2025-10-07-projector-delivery.md",
+        "AAR-2025-05-20-teamwork-day-seminar.md",
+        "AAR-2024-09-17-large-day-seminar.md",
+        "AAR-2026-09-29-evening-negotiation.md",
+        "AAR-2023-03-15-handouts-printed.md",
+        "AAR-2023-09-05-seminar-registration.md"
+      ]
+    },
+    "Bedeutung / Bericht": {
+      "1": [
+        "AAR-2024-03-02-multi-day-seminar-returns.md",
+        "AAR-2025-01-20-shared-set-returns.md",
+        "AAR-2022-09-14-material-return.md",
+        "AAR-2025-06-10-one-day-seminars.md",
+        "AAR-2025-09-15-vehicles-multi-day-seminars.md",
+        "AAR-2025-05-20-teamwork-day-seminar.md",
+        "AAR-2025-12-02-photo-consent-seminar.md",
+        "AAR-2023-03-15-handouts-printed.md",
+        "AAR-2024-05-13-library-book-returns.md",
+        "AAR-2025-02-04-missing-items.md"
+      ],
+      "2": [
+        "AAR-2024-03-02-multi-day-seminar-returns.md",
+        "AAR-2022-09-14-material-return.md",
+        "AAR-2025-01-20-shared-set-returns.md",
+        "AAR-2025-02-04-missing-items.md",
+        "AAR-2025-06-10-one-day-seminars.md",
+        "AAR-2024-09-30-first-aid-kits.md",
+        "AAR-2025-06-24-handouts-usb.md",
+        "AAR-2025-03-14-printer-outage.md",
+        "AAR-2025-05-20-teamwork-day-seminar.md",
+        "AAR-2025-12-02-photo-consent-seminar.md"
+      ],
+      "3": [
+        "AAR-2025-06-10-one-day-seminars.md",
+        "AAR-2025-01-20-shared-set-returns.md",
+        "AAR-2024-03-02-multi-day-seminar-returns.md",
+        "AAR-2022-09-14-material-return.md",
+        "AAR-2024-05-13-library-book-returns.md",
+        "AAR-evening-keys-a.md",
+        "AAR-2025-06-24-handouts-usb.md",
+        "AAR-evening-keys-b.md",
+        "AAR-2024-10-02-projector-reservation.md",
+        "AAR-2026-09-29-evening-negotiation.md"
+      ],
+      "4": [
+        "AAR-2025-01-20-shared-set-returns.md",
+        "AAR-2022-09-14-material-return.md",
+        "AAR-2024-03-02-multi-day-seminar-returns.md",
+        "AAR-2025-09-15-vehicles-multi-day-seminars.md",
+        "AAR-2025-03-14-printer-outage.md",
+        "AAR-2025-06-10-one-day-seminars.md",
+        "AAR-2024-05-13-library-book-returns.md",
+        "AAR-2025-06-24-handouts-usb.md",
+        "AAR-2024-10-02-projector-reservation.md",
+        "AAR-projectors-office.md"
+      ],
+      "5": [
+        "AAR-2022-09-14-material-return.md",
+        "AAR-2025-01-20-shared-set-returns.md",
+        "AAR-2025-02-04-missing-items.md",
+        "AAR-2024-03-02-multi-day-seminar-returns.md",
+        "AAR-2025-11-11-shared-group-rooms.md",
+        "AAR-2025-06-10-one-day-seminars.md",
+        "AAR-2025-09-15-vehicles-multi-day-seminars.md",
+        "AAR-2025-06-24-handouts-usb.md",
+        "AAR-2025-03-14-printer-outage.md",
+        "AAR-2024-09-30-first-aid-kits.md"
+      ],
+      "6": [
+        "AAR-2025-02-04-missing-items.md",
+        "AAR-2024-09-30-first-aid-kits.md",
+        "AAR-2024-11-05-vehicle-damage.md",
+        "AAR-2025-04-22-room-damage.md",
+        "AAR-2025-06-10-one-day-seminars.md",
+        "AAR-2025-03-18-logbook-form.md",
+        "AAR-2022-09-14-material-return.md",
+        "AAR-2022-03-08-projectors-facility.md",
+        "AAR-2023-03-15-handouts-printed.md",
+        "AAR-projectors-office.md"
+      ],
+      "7": [
+        "AAR-2023-04-12-vehicle-returns.md",
+        "AAR-2025-03-18-logbook-form.md",
+        "AAR-2025-09-15-vehicles-multi-day-seminars.md",
+        "AAR-2022-09-14-material-return.md",
+        "AAR-2024-01-08-vehicle-reservations.md",
+        "AAR-2025-01-20-shared-set-returns.md",
+        "AAR-2025-08-19-loan-laptops.md",
+        "AAR-2024-11-05-vehicle-damage.md",
+        "AAR-2024-05-13-library-book-returns.md",
+        "AAR-2024-03-02-multi-day-seminar-returns.md"
+      ],
+      "8": [
+        "AAR-2025-09-15-vehicles-multi-day-seminars.md",
+        "AAR-2025-01-20-shared-set-returns.md",
+        "AAR-2024-03-02-multi-day-seminar-returns.md",
+        "AAR-2022-09-14-material-return.md",
+        "AAR-2024-05-13-library-book-returns.md",
+        "AAR-2025-05-20-teamwork-day-seminar.md",
+        "AAR-2026-03-24-external-guests-day.md",
+        "AAR-2025-12-02-photo-consent-seminar.md",
+        "AAR-2025-06-10-one-day-seminars.md",
+        "AAR-2024-09-17-large-day-seminar.md"
+      ],
+      "9": [
+        "AAR-2022-09-14-material-return.md",
+        "AAR-2024-11-05-vehicle-damage.md",
+        "AAR-2023-04-12-vehicle-returns.md",
+        "AAR-2025-09-15-vehicles-multi-day-seminars.md",
+        "AAR-2025-01-20-shared-set-returns.md",
+        "AAR-2024-03-02-multi-day-seminar-returns.md",
+        "AAR-2025-08-19-loan-laptops.md",
+        "AAR-2024-01-08-vehicle-reservations.md",
+        "AAR-2025-02-04-missing-items.md",
+        "AAR-2025-03-18-logbook-form.md"
+      ],
+      "10": [
+        "AAR-2024-01-08-vehicle-reservations.md",
+        "AAR-2023-04-12-vehicle-returns.md",
+        "AAR-2025-09-15-vehicles-multi-day-seminars.md",
+        "AAR-2026-02-03-visitor-badges.md",
+        "AAR-parking-visitors.md",
+        "AAR-2024-06-04-travel-expenses.md",
+        "AAR-2026-03-10-attendance-certificates.md",
+        "AAR-2026-03-24-external-guests-day.md",
+        "AAR-2025-03-18-logbook-form.md",
+        "AAR-2024-11-05-vehicle-damage.md"
+      ],
+      "11": [
+        "AAR-2023-02-15-winter-clothing-layers.md",
+        "AAR-2025-12-10-winter-socks-and-jackets.md",
+        "AAR-2024-07-09-summer-outdoor-day.md",
+        "AAR-2024-01-25-winter-waiting-times.md",
+        "AAR-2026-01-14-winter-service.md",
+        "AAR-2024-03-02-multi-day-seminar-returns.md",
+        "AAR-2025-09-15-vehicles-multi-day-seminars.md",
+        "AAR-2024-09-17-large-day-seminar.md",
+        "AAR-2025-05-20-teamwork-day-seminar.md",
+        "AAR-2025-06-24-handouts-usb.md"
+      ],
+      "12": [
+        "AAR-2023-02-15-winter-clothing-layers.md",
+        "AAR-2025-12-10-winter-socks-and-jackets.md",
+        "AAR-2024-01-25-winter-waiting-times.md",
+        "AAR-2024-07-09-summer-outdoor-day.md",
+        "AAR-2026-01-14-winter-service.md",
+        "AAR-2024-09-17-large-day-seminar.md",
+        "AAR-2025-05-20-teamwork-day-seminar.md",
+        "AAR-2026-03-24-external-guests-day.md",
+        "AAR-2025-12-02-photo-consent-seminar.md",
+        "AAR-2025-06-24-handouts-usb.md"
+      ],
+      "13": [
+        "AAR-2025-12-10-winter-socks-and-jackets.md",
+        "AAR-2023-02-15-winter-clothing-layers.md",
+        "AAR-2024-01-25-winter-waiting-times.md",
+        "AAR-2024-07-09-summer-outdoor-day.md",
+        "AAR-2026-01-14-winter-service.md",
+        "AAR-2025-02-04-missing-items.md",
+        "AAR-2024-09-17-large-day-seminar.md",
+        "AAR-2023-10-17-sports-equipment.md",
+        "AAR-projectors-office.md",
+        "AAR-2022-09-14-material-return.md"
+      ],
+      "14": [
+        "AAR-2023-04-12-vehicle-returns.md",
+        "AAR-2025-09-15-vehicles-multi-day-seminars.md",
+        "AAR-2024-11-05-vehicle-damage.md",
+        "AAR-2024-01-08-vehicle-reservations.md",
+        "AAR-2022-09-14-material-return.md",
+        "AAR-2025-03-18-logbook-form.md",
+        "AAR-2023-03-15-handouts-printed.md",
+        "AAR-2026-03-24-external-guests-day.md",
+        "AAR-2025-12-02-photo-consent-seminar.md",
+        "AAR-2024-09-17-large-day-seminar.md"
+      ],
+      "15": [
+        "AAR-2023-02-15-winter-clothing-layers.md",
+        "AAR-2025-12-10-winter-socks-and-jackets.md",
+        "AAR-2024-09-17-large-day-seminar.md",
+        "AAR-2025-05-20-teamwork-day-seminar.md",
+        "AAR-2026-03-24-external-guests-day.md",
+        "AAR-2024-01-25-winter-waiting-times.md",
+        "AAR-2025-12-02-photo-consent-seminar.md",
+        "AAR-2024-07-09-summer-outdoor-day.md",
+        "AAR-2026-01-14-winter-service.md",
+        "AAR-2026-09-29-evening-negotiation.md"
+      ],
+      "16": [
+        "AAR-2024-03-02-multi-day-seminar-returns.md",
+        "AAR-2025-09-15-vehicles-multi-day-seminars.md",
+        "AAR-2025-01-20-shared-set-returns.md",
+        "AAR-2024-11-26-feedback-forms.md",
+        "AAR-2025-12-02-photo-consent-seminar.md",
+        "AAR-2023-02-15-winter-clothing-layers.md",
+        "AAR-2024-09-17-large-day-seminar.md",
+        "AAR-2025-05-20-teamwork-day-seminar.md",
+        "AAR-2023-03-15-handouts-printed.md",
+        "AAR-2023-09-05-seminar-registration.md"
+      ],
+      "17": [
+        "AAR-2024-03-02-multi-day-seminar-returns.md",
+        "AAR-2025-01-20-shared-set-returns.md",
+        "AAR-2022-09-14-material-return.md",
+        "AAR-2025-09-15-vehicles-multi-day-seminars.md",
+        "AAR-2025-06-10-one-day-seminars.md",
+        "AAR-2024-05-13-library-book-returns.md",
+        "AAR-evening-keys-a.md",
+        "AAR-2025-06-24-handouts-usb.md",
+        "AAR-2025-05-20-teamwork-day-seminar.md",
+        "AAR-2025-03-14-printer-outage.md"
+      ],
+      "18": [
+        "AAR-evening-keys-a.md",
+        "AAR-evening-keys-b.md",
+        "AAR-2024-02-20-room-booking.md",
+        "AAR-2025-05-20-teamwork-day-seminar.md",
+        "AAR-2024-10-02-projector-reservation.md",
+        "AAR-2025-06-24-handouts-usb.md",
+        "AAR-2026-09-29-evening-negotiation.md",
+        "AAR-projectors-office.md",
+        "AAR-2025-03-14-printer-outage.md",
+        "AAR-2022-03-08-projectors-facility.md"
+      ],
+      "19": [
+        "AAR-evening-keys-a.md",
+        "AAR-evening-keys-b.md",
+        "AAR-2025-05-20-teamwork-day-seminar.md",
+        "AAR-2024-03-02-multi-day-seminar-returns.md",
+        "AAR-2024-10-02-projector-reservation.md",
+        "AAR-2024-05-13-library-book-returns.md",
+        "AAR-projectors-office.md",
+        "AAR-2022-03-08-projectors-facility.md",
+        "AAR-2025-01-20-shared-set-returns.md",
+        "AAR-2026-03-24-external-guests-day.md"
+      ],
+      "20": [
+        "AAR-2025-05-20-teamwork-day-seminar.md",
+        "AAR-2025-12-10-winter-socks-and-jackets.md",
+        "AAR-2023-02-15-winter-clothing-layers.md",
+        "AAR-2024-07-09-summer-outdoor-day.md",
+        "AAR-2025-12-02-photo-consent-seminar.md",
+        "AAR-2026-03-24-external-guests-day.md",
+        "AAR-2024-09-17-large-day-seminar.md",
+        "AAR-2024-01-25-winter-waiting-times.md",
+        "AAR-2026-04-21-seminar-day-preparation.md",
+        "AAR-2023-09-05-seminar-registration.md"
+      ],
+      "21": [
+        "AAR-projectors-office.md",
+        "AAR-2024-10-02-projector-reservation.md",
+        "AAR-2025-10-07-projector-delivery.md",
+        "AAR-2022-03-08-projectors-facility.md",
+        "AAR-2023-09-05-seminar-registration.md",
+        "AAR-2025-12-02-photo-consent-seminar.md",
+        "AAR-2025-05-20-teamwork-day-seminar.md",
+        "AAR-2026-03-10-attendance-certificates.md",
+        "AAR-2025-06-24-handouts-usb.md",
+        "AAR-2025-03-14-printer-outage.md"
+      ],
+      "22": [
+        "AAR-2023-03-15-handouts-printed.md",
+        "AAR-2025-01-20-shared-set-returns.md",
+        "AAR-2025-06-24-handouts-usb.md",
+        "AAR-2024-11-26-feedback-forms.md",
+        "AAR-2026-09-29-evening-negotiation.md",
+        "AAR-2025-03-14-printer-outage.md",
+        "AAR-2025-09-15-vehicles-multi-day-seminars.md",
+        "AAR-2024-03-02-multi-day-seminar-returns.md",
+        "AAR-2023-09-05-seminar-registration.md",
+        "AAR-2024-02-20-room-booking.md"
+      ],
+      "23": [
+        "AAR-2024-07-09-summer-outdoor-day.md",
+        "AAR-2023-02-15-winter-clothing-layers.md",
+        "AAR-2025-12-10-winter-socks-and-jackets.md",
+        "AAR-2024-01-25-winter-waiting-times.md",
+        "AAR-2025-05-20-teamwork-day-seminar.md",
+        "AAR-2024-09-17-large-day-seminar.md",
+        "AAR-2025-01-20-shared-set-returns.md",
+        "AAR-2024-03-02-multi-day-seminar-returns.md",
+        "AAR-2026-09-29-evening-negotiation.md",
+        "AAR-2025-06-24-handouts-usb.md"
+      ],
+      "24": [
+        "AAR-2024-02-20-room-booking.md",
+        "AAR-2026-04-21-seminar-day-preparation.md",
+        "AAR-2024-09-17-large-day-seminar.md",
+        "AAR-2023-09-05-seminar-registration.md",
+        "AAR-2025-05-20-teamwork-day-seminar.md",
+        "AAR-2026-03-10-attendance-certificates.md",
+        "AAR-2023-03-15-handouts-printed.md",
+        "AAR-2025-12-02-photo-consent-seminar.md",
+        "AAR-2025-02-26-catering.md",
+        "AAR-2025-10-07-projector-delivery.md"
+      ],
+      "25": [
+        "AAR-2026-03-24-external-guests-day.md",
+        "AAR-2025-05-20-teamwork-day-seminar.md",
+        "AAR-2025-12-02-photo-consent-seminar.md",
+        "AAR-2024-02-20-room-booking.md",
+        "AAR-2023-03-15-handouts-printed.md",
+        "AAR-2024-11-26-feedback-forms.md",
+        "AAR-2024-09-17-large-day-seminar.md",
+        "AAR-2026-09-29-evening-negotiation.md",
+        "AAR-2025-04-22-room-damage.md",
+        "AAR-projectors-office.md"
+      ]
+    },
+    "Bedeutung / Abschnitt": {
+      "1": [
+        "AAR-2024-03-02-multi-day-seminar-returns.md",
+        "AAR-2025-01-20-shared-set-returns.md",
+        "AAR-2022-09-14-material-return.md",
+        "AAR-2025-06-10-one-day-seminars.md",
+        "AAR-2025-09-15-vehicles-multi-day-seminars.md",
+        "AAR-2025-05-20-teamwork-day-seminar.md",
+        "AAR-2026-03-24-external-guests-day.md",
+        "AAR-2024-09-17-large-day-seminar.md",
+        "AAR-2024-05-13-library-book-returns.md",
+        "AAR-2025-12-02-photo-consent-seminar.md"
+      ],
+      "2": [
+        "AAR-2024-03-02-multi-day-seminar-returns.md",
+        "AAR-2022-09-14-material-return.md",
+        "AAR-2025-01-20-shared-set-returns.md",
+        "AAR-2025-02-04-missing-items.md",
+        "AAR-2024-09-30-first-aid-kits.md",
+        "AAR-2024-09-17-large-day-seminar.md",
+        "AAR-2025-06-10-one-day-seminars.md",
+        "AAR-2025-03-14-printer-outage.md",
+        "AAR-2025-12-02-photo-consent-seminar.md",
+        "AAR-2025-05-20-teamwork-day-seminar.md"
+      ],
+      "3": [
+        "AAR-2025-06-10-one-day-seminars.md",
+        "AAR-2024-03-02-multi-day-seminar-returns.md",
+        "AAR-2025-01-20-shared-set-returns.md",
+        "AAR-evening-keys-a.md",
+        "AAR-evening-keys-b.md",
+        "AAR-2024-05-13-library-book-returns.md",
+        "AAR-2022-09-14-material-return.md",
+        "AAR-2024-09-17-large-day-seminar.md",
+        "AAR-2025-06-24-handouts-usb.md",
+        "AAR-2024-10-02-projector-reservation.md"
+      ],
+      "4": [
+        "AAR-2025-01-20-shared-set-returns.md",
+        "AAR-2022-09-14-material-return.md",
+        "AAR-2024-03-02-multi-day-seminar-returns.md",
+        "AAR-2025-09-15-vehicles-multi-day-seminars.md",
+        "AAR-2025-03-14-printer-outage.md",
+        "AAR-2025-06-10-one-day-seminars.md",
+        "AAR-2026-09-29-evening-negotiation.md",
+        "AAR-evening-keys-a.md",
+        "AAR-2024-09-17-large-day-seminar.md",
+        "AAR-2024-05-13-library-book-returns.md"
+      ],
+      "5": [
+        "AAR-2022-09-14-material-return.md",
+        "AAR-2025-02-04-missing-items.md",
+        "AAR-2025-01-20-shared-set-returns.md",
+        "AAR-2024-03-02-multi-day-seminar-returns.md",
+        "AAR-2024-09-17-large-day-seminar.md",
+        "AAR-2025-06-10-one-day-seminars.md",
+        "AAR-2025-12-02-photo-consent-seminar.md",
+        "AAR-2025-03-14-printer-outage.md",
+        "AAR-2024-09-30-first-aid-kits.md",
+        "AAR-2023-10-17-sports-equipment.md"
+      ],
+      "6": [
+        "AAR-2024-09-30-first-aid-kits.md",
+        "AAR-2025-02-04-missing-items.md",
+        "AAR-2024-11-05-vehicle-damage.md",
+        "AAR-2024-09-17-large-day-seminar.md",
+        "AAR-2025-12-02-photo-consent-seminar.md",
+        "AAR-2025-04-22-room-damage.md",
+        "AAR-2024-03-02-multi-day-seminar-returns.md",
+        "AAR-2026-03-24-external-guests-day.md",
+        "AAR-2025-06-10-one-day-seminars.md",
+        "AAR-2026-02-03-visitor-badges.md"
+      ],
+      "7": [
+        "AAR-2023-04-12-vehicle-returns.md",
+        "AAR-2025-03-18-logbook-form.md",
+        "AAR-2025-09-15-vehicles-multi-day-seminars.md",
+        "AAR-2024-01-08-vehicle-reservations.md",
+        "AAR-2022-09-14-material-return.md",
+        "AAR-2024-03-02-multi-day-seminar-returns.md",
+        "AAR-2025-08-19-loan-laptops.md",
+        "AAR-2024-05-13-library-book-returns.md",
+        "AAR-2022-03-08-projectors-facility.md",
+        "AAR-2025-01-20-shared-set-returns.md"
+      ],
+      "8": [
+        "AAR-2025-09-15-vehicles-multi-day-seminars.md",
+        "AAR-2025-01-20-shared-set-returns.md",
+        "AAR-2024-03-02-multi-day-seminar-returns.md",
+        "AAR-2026-03-24-external-guests-day.md",
+        "AAR-2022-09-14-material-return.md",
+        "AAR-2024-05-13-library-book-returns.md",
+        "AAR-2025-05-20-teamwork-day-seminar.md",
+        "AAR-2025-12-02-photo-consent-seminar.md",
+        "AAR-2025-06-10-one-day-seminars.md",
+        "AAR-2026-09-29-evening-negotiation.md"
+      ],
+      "9": [
+        "AAR-2023-04-12-vehicle-returns.md",
+        "AAR-2022-09-14-material-return.md",
+        "AAR-2024-11-05-vehicle-damage.md",
+        "AAR-2025-09-15-vehicles-multi-day-seminars.md",
+        "AAR-2025-08-19-loan-laptops.md",
+        "AAR-2024-03-02-multi-day-seminar-returns.md",
+        "AAR-2025-02-04-missing-items.md",
+        "AAR-2023-10-17-sports-equipment.md",
+        "AAR-2025-01-20-shared-set-returns.md",
+        "AAR-2024-01-08-vehicle-reservations.md"
+      ],
+      "10": [
+        "AAR-2024-01-08-vehicle-reservations.md",
+        "AAR-2023-04-12-vehicle-returns.md",
+        "AAR-parking-visitors.md",
+        "AAR-2024-06-04-travel-expenses.md",
+        "AAR-2026-03-24-external-guests-day.md",
+        "AAR-2025-09-15-vehicles-multi-day-seminars.md",
+        "AAR-2026-02-03-visitor-badges.md",
+        "AAR-2024-05-13-library-book-returns.md",
+        "AAR-2026-03-10-attendance-certificates.md",
+        "AAR-2026-09-29-evening-negotiation.md"
+      ],
+      "11": [
+        "AAR-2023-02-15-winter-clothing-layers.md",
+        "AAR-2025-12-10-winter-socks-and-jackets.md",
+        "AAR-2024-07-09-summer-outdoor-day.md",
+        "AAR-2024-01-25-winter-waiting-times.md",
+        "AAR-2025-05-20-teamwork-day-seminar.md",
+        "AAR-2026-01-14-winter-service.md",
+        "AAR-2024-03-02-multi-day-seminar-returns.md",
+        "AAR-2025-09-15-vehicles-multi-day-seminars.md",
+        "AAR-2024-09-17-large-day-seminar.md",
+        "AAR-2026-09-29-evening-negotiation.md"
+      ],
+      "12": [
+        "AAR-2023-02-15-winter-clothing-layers.md",
+        "AAR-2025-12-10-winter-socks-and-jackets.md",
+        "AAR-2024-01-25-winter-waiting-times.md",
+        "AAR-2026-01-14-winter-service.md",
+        "AAR-2024-07-09-summer-outdoor-day.md",
+        "AAR-2025-05-20-teamwork-day-seminar.md",
+        "AAR-2026-03-24-external-guests-day.md",
+        "AAR-2024-09-17-large-day-seminar.md",
+        "AAR-2025-12-02-photo-consent-seminar.md",
+        "AAR-evening-keys-a.md"
+      ],
+      "13": [
+        "AAR-2025-12-10-winter-socks-and-jackets.md",
+        "AAR-2023-02-15-winter-clothing-layers.md",
+        "AAR-2024-01-25-winter-waiting-times.md",
+        "AAR-2026-01-14-winter-service.md",
+        "AAR-2024-07-09-summer-outdoor-day.md",
+        "AAR-2025-05-20-teamwork-day-seminar.md",
+        "AAR-2025-02-04-missing-items.md",
+        "AAR-2024-09-17-large-day-seminar.md",
+        "AAR-2024-01-08-vehicle-reservations.md",
+        "AAR-2026-03-24-external-guests-day.md"
+      ],
+      "14": [
+        "AAR-2023-04-12-vehicle-returns.md",
+        "AAR-2025-09-15-vehicles-multi-day-seminars.md",
+        "AAR-2023-10-17-sports-equipment.md",
+        "AAR-2024-11-05-vehicle-damage.md",
+        "AAR-2024-01-08-vehicle-reservations.md",
+        "AAR-2025-12-02-photo-consent-seminar.md",
+        "AAR-2025-02-04-missing-items.md",
+        "AAR-2022-09-14-material-return.md",
+        "AAR-2024-09-17-large-day-seminar.md",
+        "AAR-2026-03-24-external-guests-day.md"
+      ],
+      "15": [
+        "AAR-2023-02-15-winter-clothing-layers.md",
+        "AAR-2025-12-10-winter-socks-and-jackets.md",
+        "AAR-2024-01-25-winter-waiting-times.md",
+        "AAR-2024-07-09-summer-outdoor-day.md",
+        "AAR-2026-09-29-evening-negotiation.md",
+        "AAR-2026-01-14-winter-service.md",
+        "AAR-2024-09-17-large-day-seminar.md",
+        "AAR-2026-03-24-external-guests-day.md",
+        "AAR-2026-06-16-project-planning-evening.md",
+        "AAR-2025-12-02-photo-consent-seminar.md"
+      ],
+      "16": [
+        "AAR-2024-03-02-multi-day-seminar-returns.md",
+        "AAR-2025-09-15-vehicles-multi-day-seminars.md",
+        "AAR-2025-01-20-shared-set-returns.md",
+        "AAR-2023-02-15-winter-clothing-layers.md",
+        "AAR-2025-12-02-photo-consent-seminar.md",
+        "AAR-2026-09-29-evening-negotiation.md",
+        "AAR-2024-09-17-large-day-seminar.md",
+        "AAR-2026-03-24-external-guests-day.md",
+        "AAR-2025-05-20-teamwork-day-seminar.md",
+        "AAR-2026-04-21-seminar-day-preparation.md"
+      ],
+      "17": [
+        "AAR-2024-03-02-multi-day-seminar-returns.md",
+        "AAR-2025-01-20-shared-set-returns.md",
+        "AAR-2022-09-14-material-return.md",
+        "AAR-2025-09-15-vehicles-multi-day-seminars.md",
+        "AAR-2025-06-10-one-day-seminars.md",
+        "AAR-2024-05-13-library-book-returns.md",
+        "AAR-2025-05-20-teamwork-day-seminar.md",
+        "AAR-evening-keys-a.md",
+        "AAR-2024-09-17-large-day-seminar.md",
+        "AAR-2025-06-24-handouts-usb.md"
+      ],
+      "18": [
+        "AAR-evening-keys-b.md",
+        "AAR-evening-keys-a.md",
+        "AAR-2024-02-20-room-booking.md",
+        "AAR-2025-05-20-teamwork-day-seminar.md",
+        "AAR-2025-10-07-projector-delivery.md",
+        "AAR-2026-03-24-external-guests-day.md",
+        "AAR-2026-09-29-evening-negotiation.md",
+        "AAR-2022-03-08-projectors-facility.md",
+        "AAR-2025-12-02-photo-consent-seminar.md",
+        "AAR-2024-10-02-projector-reservation.md"
+      ],
+      "19": [
+        "AAR-evening-keys-a.md",
+        "AAR-evening-keys-b.md",
+        "AAR-2025-05-20-teamwork-day-seminar.md",
+        "AAR-2026-03-24-external-guests-day.md",
+        "AAR-2024-10-02-projector-reservation.md",
+        "AAR-2024-03-02-multi-day-seminar-returns.md",
+        "AAR-2025-12-02-photo-consent-seminar.md",
+        "AAR-2022-03-08-projectors-facility.md",
+        "AAR-2024-05-13-library-book-returns.md",
+        "AAR-2024-02-20-room-booking.md"
+      ],
+      "20": [
+        "AAR-2025-05-20-teamwork-day-seminar.md",
+        "AAR-2025-12-10-winter-socks-and-jackets.md",
+        "AAR-2026-03-24-external-guests-day.md",
+        "AAR-2024-07-09-summer-outdoor-day.md",
+        "AAR-2025-12-02-photo-consent-seminar.md",
+        "AAR-2024-09-17-large-day-seminar.md",
+        "AAR-2026-04-21-seminar-day-preparation.md",
+        "AAR-evening-keys-a.md",
+        "AAR-evening-keys-b.md",
+        "AAR-2023-02-15-winter-clothing-layers.md"
+      ],
+      "21": [
+        "AAR-2022-03-08-projectors-facility.md",
+        "AAR-2025-10-07-projector-delivery.md",
+        "AAR-projectors-office.md",
+        "AAR-2024-10-02-projector-reservation.md",
+        "AAR-2025-05-20-teamwork-day-seminar.md",
+        "AAR-2025-12-02-photo-consent-seminar.md",
+        "AAR-2023-09-05-seminar-registration.md",
+        "AAR-2024-02-20-room-booking.md",
+        "AAR-2026-03-10-attendance-certificates.md",
+        "AAR-2026-01-14-winter-service.md"
+      ],
+      "22": [
+        "AAR-2023-03-15-handouts-printed.md",
+        "AAR-2026-09-29-evening-negotiation.md",
+        "AAR-2025-01-20-shared-set-returns.md",
+        "AAR-2024-09-17-large-day-seminar.md",
+        "AAR-2025-06-24-handouts-usb.md",
+        "AAR-2024-11-26-feedback-forms.md",
+        "AAR-2023-09-05-seminar-registration.md",
+        "AAR-2024-02-20-room-booking.md",
+        "AAR-2024-03-02-multi-day-seminar-returns.md",
+        "AAR-2025-03-14-printer-outage.md"
+      ],
+      "23": [
+        "AAR-2024-07-09-summer-outdoor-day.md",
+        "AAR-2023-02-15-winter-clothing-layers.md",
+        "AAR-2025-12-10-winter-socks-and-jackets.md",
+        "AAR-2025-05-20-teamwork-day-seminar.md",
+        "AAR-2024-01-25-winter-waiting-times.md",
+        "AAR-2024-09-17-large-day-seminar.md",
+        "AAR-2026-03-24-external-guests-day.md",
+        "AAR-2024-03-02-multi-day-seminar-returns.md",
+        "AAR-2026-09-29-evening-negotiation.md",
+        "AAR-2025-01-20-shared-set-returns.md"
+      ],
+      "24": [
+        "AAR-2024-02-20-room-booking.md",
+        "AAR-2026-04-21-seminar-day-preparation.md",
+        "AAR-2025-05-20-teamwork-day-seminar.md",
+        "AAR-2024-09-17-large-day-seminar.md",
+        "AAR-2023-03-15-handouts-printed.md",
+        "AAR-2025-02-26-catering.md",
+        "AAR-2026-03-10-attendance-certificates.md",
+        "AAR-2026-03-24-external-guests-day.md",
+        "AAR-2025-12-02-photo-consent-seminar.md",
+        "AAR-2023-09-05-seminar-registration.md"
+      ],
+      "25": [
+        "AAR-2026-09-29-evening-negotiation.md",
+        "AAR-2025-05-20-teamwork-day-seminar.md",
+        "AAR-2025-12-02-photo-consent-seminar.md",
+        "AAR-2026-03-24-external-guests-day.md",
+        "AAR-2024-02-20-room-booking.md",
+        "AAR-2025-04-22-room-damage.md",
+        "AAR-2024-09-17-large-day-seminar.md",
+        "AAR-2024-07-09-summer-outdoor-day.md",
+        "AAR-2025-03-14-printer-outage.md",
+        "AAR-2025-07-01-lost-and-found.md"
+      ]
+    }
+  }
+}
