@@ -75,6 +75,7 @@ Die Semesterarbeit soll einen Proof of Concept (PoC) einer AI Database für Frag
 56. Gegenprobe in der Oberfläche: „Wie bekommen die Teilnehmenden die Unterlagen?“ → korrekt Download (B42, B44), 15,5 s, 0,022 USD. Protokoll funktioniert.
 57. Drei weitere Oberflächenfragen geprüft: Zusammenfassung Fahrzeugausleihe vollständig und aktuell; mehrtägige Sommerseminare korrekt mit Lückenhinweis; Folgefrage „und bei winter seminaren?“ inhaltlich gut, aber ohne Kontext der Vorfrage (Oberfläche kennt keine Folgefragen). Vorschlag: vorherige Frage (nicht Antwort) mitschicken; Entscheidung des Nutzers offen.
 58. Folgefragen in der Oberfläche umgesetzt: letzte drei Fragen (nicht Antworten) gehen als gekennzeichneter Kontext mit (`aidb.user_message`), Button „Neues Gespräch“, Protokoll speichert `vorherige_fragen`. Headless mit Attrappe getestet.
+59. Folgefrage mit Modell getestet (Verpflegung → „und im Gelände auf einer Übung?“): Kontext verstanden, Lücke korrekt benannt, keine Übertragung.
 
 ## Wichtige Dateien
 
