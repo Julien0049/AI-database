@@ -1,0 +1,146 @@
+[
+  {
+    "datei": "AAR-2025-02-04-missing-items.md",
+    "fall": "Überschrift und „Datum:“-Zeile",
+    "markdown": {
+      "titel": "Umgang mit fehlenden Bestandteilen",
+      "datum": "04.02.2025"
+    },
+    "docx": {
+      "titel": "Umgang mit fehlenden Bestandteilen",
+      "titel_wie_markdown": true,
+      "titel_erste_zeile": "# After-Action-Report: Umgang mit fehlenden Bestandteilen",
+      "datum": "04.02.2025",
+      "datum_wie_markdown": true,
+      "text_vollstaendig": "6/6"
+    },
+    "pdf": {
+      "titel": "AAR-2025-02-04-missing-items.pdf",
+      "titel_wie_markdown": false,
+      "titel_erste_zeile": "After-Action-Report: Umgang mit fehlenden",
+      "datum": "04.02.2025",
+      "datum_wie_markdown": true,
+      "text_vollstaendig": "6/6"
+    }
+  },
+  {
+    "datei": "AAR-2023-02-15-winter-clothing-layers.md",
+    "fall": "keine Überschrift, Datum ohne Beschriftung",
+    "markdown": {
+      "titel": "AAR-2023-02-15-winter-clothing-layers.md",
+      "datum": "15.02.2023"
+    },
+    "docx": {
+      "titel": "AAR-2023-02-15-winter-clothing-layers.docx",
+      "titel_wie_markdown": true,
+      "titel_erste_zeile": "15.2.2023",
+      "datum": "15.02.2023",
+      "datum_wie_markdown": true,
+      "text_vollstaendig": "6/6"
+    },
+    "pdf": {
+      "titel": "AAR-2023-02-15-winter-clothing-layers.pdf",
+      "titel_wie_markdown": true,
+      "titel_erste_zeile": "15.2.2023",
+      "datum": "15.02.2023",
+      "datum_wie_markdown": true,
+      "text_vollstaendig": "6/6"
+    }
+  },
+  {
+    "datei": "AAR-2025-03-18-logbook-form.md",
+    "fall": "keine Überschrift, ausgeschriebenes Datum in der Unterschrift",
+    "markdown": {
+      "titel": "AAR-2025-03-18-logbook-form.md",
+      "datum": "18.03.2025"
+    },
+    "docx": {
+      "titel": "AAR-2025-03-18-logbook-form.docx",
+      "titel_wie_markdown": true,
+      "titel_erste_zeile": "Zum neuen Fahrtenbuch-Formular: Das Formular hat sich bewährt; Kilometerstand und Fahrtzweck werden jetzt in getrennten Feldern erfasst. Bei der Rückgabe wird außerdem der Tankstand vermerkt, das Betanken übernimmt anschließend die Fahrbereitschaft.",
+      "datum": "18.03.2025",
+      "datum_wie_markdown": true,
+      "text_vollstaendig": "4/4"
+    },
+    "pdf": {
+      "titel": "AAR-2025-03-18-logbook-form.pdf",
+      "titel_wie_markdown": true,
+      "titel_erste_zeile": "Zum neuen Fahrtenbuch-Formular: Das Formular hat sich bewährt; Kilometerstand und Fahrtzweck",
+      "datum": "18.03.2025",
+      "datum_wie_markdown": true,
+      "text_vollstaendig": "4/4"
+    }
+  },
+  {
+    "datei": "AAR-2024-01-08-vehicle-reservations.md",
+    "fall": "kein Datum",
+    "markdown": {
+      "titel": "Reservierung von Fahrzeugen",
+      "datum": "Datum unbekannt"
+    },
+    "docx": {
+      "titel": "Reservierung von Fahrzeugen",
+      "titel_wie_markdown": true,
+      "titel_erste_zeile": "# After-Action-Report: Reservierung von Fahrzeugen",
+      "datum": "Datum unbekannt",
+      "datum_wie_markdown": true,
+      "text_vollstaendig": "4/4"
+    },
+    "pdf": {
+      "titel": "AAR-2024-01-08-vehicle-reservations.pdf",
+      "titel_wie_markdown": false,
+      "titel_erste_zeile": "After-Action-Report: Reservierung von Fahrzeugen",
+      "datum": "Datum unbekannt",
+      "datum_wie_markdown": true,
+      "text_vollstaendig": "4/4"
+    }
+  },
+  {
+    "datei": "AAR-2025-03-14-printer-outage.md",
+    "fall": "Ereignisdatum vor dem Berichtsdatum",
+    "markdown": {
+      "titel": "Druckerausfall im Seminarbüro",
+      "datum": "10.03.2025"
+    },
+    "docx": {
+      "titel": "Druckerausfall im Seminarbüro",
+      "titel_wie_markdown": true,
+      "titel_erste_zeile": "# After-Action-Report: Druckerausfall im Seminarbüro",
+      "datum": "10.03.2025",
+      "datum_wie_markdown": true,
+      "text_vollstaendig": "6/6"
+    },
+    "pdf": {
+      "titel": "AAR-2025-03-14-printer-outage.pdf",
+      "titel_wie_markdown": false,
+      "titel_erste_zeile": "After-Action-Report: Druckerausfall im",
+      "datum": "10.03.2025",
+      "datum_wie_markdown": true,
+      "text_vollstaendig": "6/6"
+    }
+  },
+  {
+    "datei": "AAR-2025-01-20-shared-set-returns.md",
+    "fall": "„Stand: 2025-01-20“",
+    "markdown": {
+      "titel": "Rückgabe gemeinsamer Sets im Seminarbetrieb",
+      "datum": "20.01.2025"
+    },
+    "docx": {
+      "titel": "Rückgabe gemeinsamer Sets im Seminarbetrieb",
+      "titel_wie_markdown": true,
+      "titel_erste_zeile": "# Rückgabe gemeinsamer Sets im Seminarbetrieb",
+      "datum": "20.01.2025",
+      "datum_wie_markdown": true,
+      "text_vollstaendig": "5/5"
+    },
+    "pdf": {
+      "titel": "AAR-2025-01-20-shared-set-returns.pdf",
+      "titel_wie_markdown": false,
+      "titel_erste_zeile": "Rückgabe gemeinsamer Sets im Seminarbetrieb",
+      "datum": "20.01.2025",
+      "datum_wie_markdown": true,
+      "text_vollstaendig": "5/5"
+    }
+  }
+]

@@ -76,6 +76,7 @@ Die Semesterarbeit soll einen Proof of Concept (PoC) einer AI Database für Frag
 57. Drei weitere Oberflächenfragen geprüft: Zusammenfassung Fahrzeugausleihe vollständig und aktuell; mehrtägige Sommerseminare korrekt mit Lückenhinweis; Folgefrage „und bei winter seminaren?“ inhaltlich gut, aber ohne Kontext der Vorfrage (Oberfläche kennt keine Folgefragen). Vorschlag: vorherige Frage (nicht Antwort) mitschicken; Entscheidung des Nutzers offen.
 58. Folgefragen in der Oberfläche umgesetzt: letzte drei Fragen (nicht Antworten) gehen als gekennzeichneter Kontext mit (`aidb.user_message`), Button „Neues Gespräch“, Protokoll speichert `vorherige_fragen`. Headless mit Attrappe getestet.
 59. Folgefrage mit Modell getestet (Verpflegung → „und im Gelände auf einer Übung?“): Kontext verstanden, Lücke korrekt benannt, keine Übertragung.
+60. Importtest Word/PDF (`scripts/import_test.py`, Pakete in `scripts/requirements-importtest.txt`: python-docx, pypdf, reportlab; Bewertung `results/bewertung_importtest_2026-11-05.md`): Word wie Markdown; PDF Text und Datum vollständig, Titel in 4/4 Fällen verloren; erste Zeile als Titel nur 2/6 richtig. Erzeugte Testdateien in `data/format_test/` (gitignored, per Skript reproduzierbar). Noch nicht in der Oberfläche.
 
 ## Wichtige Dateien
 
