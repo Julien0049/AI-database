@@ -92,3 +92,4 @@ Raumbuchung, Verpflegung, Druckerausfall, Seminaranmeldung, Reisekosten, WLAN f�
 - `dataset-v1`: fünf Materialberichte, sechs Fragen.
 - `dataset-v2`: dreizehn einheitlich formatierte Berichte.
 - Seitdem: vier umformatierte Kernberichte (v9), Datumstest (v10), Störberichte, mehrere Stände und lange Berichte; Fragen 20–25.
+- `dataset-v3`: 48 Berichte, 25 vom Nutzer geprüfte Fragen; Grundlage für den Suchtest.
