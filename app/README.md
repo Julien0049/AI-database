@@ -23,4 +23,6 @@ Der Browser öffnet sich unter `http://localhost:8501`. Links „Importieren“ 
 
 **Folgefragen:** Die letzten drei Fragen des Gesprächs gehen als Kontext mit (nicht die Antworten); „Neues Gespräch“ setzt den Verlauf zurück.
 
-**Grenzen:** nur Markdown-Dateien `AAR-*.md`; keine gründliche Sichtung (v13) und keine Suche.
+**Formate:** Markdown, Text, Word (`.docx`) und PDF; `README.md` und `test_questions.md` werden übersprungen. Bei PDF geht die Überschrift verloren (Dateiname als Titel), eingescannte PDFs ohne Text werden übersprungen.
+
+**Grenzen:** keine gründliche Sichtung (v13) und keine Suche.

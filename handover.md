@@ -77,6 +77,7 @@ Die Semesterarbeit soll einen Proof of Concept (PoC) einer AI Database für Frag
 58. Folgefragen in der Oberfläche umgesetzt: letzte drei Fragen (nicht Antworten) gehen als gekennzeichneter Kontext mit (`aidb.user_message`), Button „Neues Gespräch“, Protokoll speichert `vorherige_fragen`. Headless mit Attrappe getestet.
 59. Folgefrage mit Modell getestet (Verpflegung → „und im Gelände auf einer Übung?“): Kontext verstanden, Lücke korrekt benannt, keine Übertragung.
 60. Importtest Word/PDF (`scripts/import_test.py`, Pakete in `scripts/requirements-importtest.txt`: python-docx, pypdf, reportlab; Bewertung `results/bewertung_importtest_2026-11-05.md`): Word wie Markdown; PDF Text und Datum vollständig, Titel in 4/4 Fällen verloren; erste Zeile als Titel nur 2/6 richtig. Erzeugte Testdateien in `data/format_test/` (gitignored, per Skript reproduzierbar). Noch nicht in der Oberfläche.
+61. Oberfläche liest jetzt .md, .txt, .docx, .pdf (`aidb.read_file`; README.md/test_questions.md und Word-Sperrdateien `~$` übersprungen; leere oder unlesbare Dateien mit Hinweis). Leseregeln im Importtest-Skript aus `aidb` übernommen. Headless mit `data/format_test` getestet. Nutzer will bei Gelegenheit einige Berichte als praxisübliche Word/PDF nachbauen.
 
 ## Wichtige Dateien
 

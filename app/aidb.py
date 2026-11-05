@@ -38,11 +38,51 @@ def find_date(text):
     return min(hits)[1] if hits else None
 
 
-def load_reports(folder, pattern="AAR-*.md"):
-    """Liest alle Berichte eines Ordners ein. Gibt (Berichte, Hinweise zu fehlenden Metadaten) zurück."""
+SUFFIXES = (".md", ".txt", ".docx", ".pdf")
+SKIP = {"README.md", "test_questions.md"}  # Begleitdateien der Testdaten, keine Berichte
+
+
+def read_docx(path):
+    """Text aus Word; Absätze mit Überschrift-Formatvorlage werden wie Markdown-Überschriften markiert."""
+    from docx import Document
+    out = []
+    for p in Document(path).paragraphs:
+        heading = p.style.name.startswith(("Heading", "Title", "Überschrift", "Titel"))
+        out.append(("# " if heading else "") + p.text)
+    return "\n\n".join(out)
+
+
+def read_pdf(path):
+    """Text aus PDF. Überschriften sind darin nicht als Struktur erkennbar (Importtest: Titel geht verloren)."""
+    from pypdf import PdfReader
+    return "\n".join(page.extract_text() for page in PdfReader(path).pages)
+
+
+def read_file(path):
+    suffix = path.suffix.lower()
+    if suffix == ".docx":
+        return read_docx(path)
+    if suffix == ".pdf":
+        return read_pdf(path)
+    return path.read_text()
+
+
+def load_reports(folder):
+    """Liest alle Berichte eines Ordners ein (Markdown, Text, Word, PDF).
+    Gibt (Berichte, Hinweise zu fehlenden Metadaten oder unlesbaren Dateien) zurück."""
     reports, notes = {}, []
-    for n, path in enumerate(sorted(pathlib.Path(folder).glob(pattern)), 1):
-        text = path.read_text()
+    files = sorted(p for p in pathlib.Path(folder).iterdir()
+                   if p.suffix.lower() in SUFFIXES and p.name not in SKIP and not p.name.startswith("~$"))
+    for path in files:
+        try:
+            text = read_file(path)
+        except Exception as e:  # z. B. beschädigte Datei
+            notes.append(f"{path.name}: konnte nicht gelesen werden ({e})")
+            continue
+        if not text.strip():
+            notes.append(f"{path.name}: kein Text gefunden (z. B. eingescanntes Dokument), übersprungen")
+            continue
+        n = len(reports) + 1
         title, date = find_title(text), find_date(text)
         if not title:
             notes.append(f"{path.name}: keine Überschrift, Dateiname wird als Titel genutzt")

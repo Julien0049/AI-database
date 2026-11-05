@@ -12,7 +12,6 @@ import sys
 from xml.sax.saxutils import escape
 
 from docx import Document
-from pypdf import PdfReader
 from reportlab.lib.styles import getSampleStyleSheet
 from reportlab.platypus import Paragraph, SimpleDocTemplate
 
@@ -62,17 +61,7 @@ def write_pdf(md, path):
     SimpleDocTemplate(str(path)).build(story)
 
 
-def read_docx(path):
-    """Text aus Word; Absätze mit Überschrift-Formatvorlage werden wie Markdown-Überschriften markiert."""
-    out = []
-    for p in Document(path).paragraphs:
-        heading = p.style.name.startswith(("Heading", "Title"))
-        out.append(("# " if heading else "") + p.text)
-    return "\n\n".join(out)
-
-
-def read_pdf(path):
-    return "\n".join(page.extract_text() for page in PdfReader(path).pages)
+read_docx, read_pdf = aidb.read_docx, aidb.read_pdf  # dieselben Leseregeln wie in der Oberfläche
 
 
 def first_line(text):
