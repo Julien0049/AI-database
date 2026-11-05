@@ -69,6 +69,7 @@ Die Semesterarbeit soll einen Proof of Concept (PoC) einer AI Database für Frag
 50. Testlauf v13 (Frage 25): alle 4 Kernberichte gefunden, 0,114 USD, 51 s. Hauptlauf v13 abgebrochen: Workspace-Budget 10 USD/Monat erschöpft (Neustart 01.12.2026), keine einzige Antwort, weil das Notebook alle Sichtungen vor den Antworten abschickte (Agentenfehler). Sichtung ausgewertet (`results/bewertung_google_gemini-2.5-pro_2026-11-05_v13_abgebrochen.md`): 54/55 nötige Berichte gefunden, im Mittel 6,6 ausgewählt. Notebook umgebaut: Frage für Frage (Sichtung + Antwort), Stopp bei 402/403, Dauer je Frage gespeichert; lokal mit Attrappe getestet.
 51. Nutzerentscheidung: bis zum Budget-Neustart nur kostenlose Arbeit (Oberfläche mit Attrappe, Dateiformat-Import, Policy Brief); Nutzer fragt Admin nach mehr Budget. Ab 01.12.: v13 mit einem Durchlauf, Test der Oberfläche, Vorführung.
 52. Neuer Schlüssel vom Admin: 50 USD für 30 Tage (ab 05.11.2026); in Colab-Secret `OPENROUTER_API_KEY` und lokal in `.env`. Plan: v13 vollständig wiederholen, dann Oberfläche (Vorschlag: Streamlit, alle Berichte im Prompt; Entscheidung des Nutzers offen).
+53. Oberfläche gebaut (`app/`, Streamlit 1.50, openai 2.48 in `.venv`): `aidb.py` (Logik aus dem Notebook, Prompt in `prompt_antwort.txt`), `app.py` (Import-Knopf, Hinweise, Chat, Fußnoten, Attrappe als Standard, Gemini nach Umschalten mit Schlüssel aus `.env` im Projektordner). Headless mit `streamlit.testing` geprüft (nur Attrappe). Start: `.venv/bin/streamlit run app/app.py`.
 
 ## Wichtige Dateien
 
