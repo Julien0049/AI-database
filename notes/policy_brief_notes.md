@@ -23,6 +23,16 @@ Laufend gepflegte Sammlung, gegliedert wie das spätere Policy Brief. Jeder Punk
 - **Antwortregeln (bestätigte Anforderungen):** nur die Berichte als Quelle; bei Regeln gilt der jüngste vergleichbare Stand; bei Erfahrungen Sichtweisen nebeneinander; Lücken offen benennen; exakt und knapp; Quellen als Fußnoten mit Titel und Datum.
 - **Versuchsweise Entwicklung:** pro Version möglichst nur eine Änderung, ab v5 drei Durchläufe je Version, Bewertung je Antwort (erfüllt/teilweise).
 
+### Warum eine vorgeschaltete Suche und wie sie getestet wird
+
+- **Warum (Vorschlag, vom Nutzer befürwortet):** Bis v10 bekam das Modell alle Berichte in jeder Anfrage. Das geht nur bei einer kleinen Sammlung. Eine reale Sammlung mit Tausenden Berichten passt nicht in eine Anfrage, und schon bei 13–15 kurzen Berichten war die Laufzeit spürbar. Üblich ist deshalb ein zweistufiges Vorgehen (Retrieval-Augmented Generation): Ein Suchprogramm wählt zu jeder Frage die passendsten Berichte aus, und nur diese gehen an das Modell.
+- **Neues Risiko:** Findet die Suche einen nötigen Bericht nicht, kann auch das beste Modell nicht richtig antworten. Besonders kritisch für die Kernregel „der neueste Stand gilt“: Fehlt der neueste Bericht unter den Treffern, nennt das Modell einen überholten Stand als aktuell, ohne dass es das merken kann. Bei Zusammenfassungen fehlen sonst Inhalte.
+- **Warum die Suche getrennt messen (Nutzerentscheidung):** Für jede Testfrage ist festgelegt, welche Berichte nötig sind. Ob sie unter den ersten k Treffern liegen, lässt sich ohne Sprachmodell prüfen: kostenlos, beliebig wiederholbar und unabhängig von der Schwankung der Modellantworten. So lassen sich Fehler der Suche von Fehlern des Modells trennen. Erst danach folgt ein Antwortlauf mit der besten Suchmethode.
+- **Strenge Kennzahl „vollständig@k“:** Anteil der Fragen, bei denen *alle* nötigen Berichte unter den ersten k Treffern liegen (k = 3, 5, 10). Ein einzelner fehlender Bericht kann die Antwort falsch oder unvollständig machen; deshalb zählt nur Vollständigkeit.
+- **Warum zwei Methoden vergleichen (Nutzerentscheidung):** Die Stichwortsuche (BM25) ist durchschaubar und ohne Zusatzsoftware, übersieht aber andere Wortformen und Synonyme. Die Suche nach Bedeutung (Embeddings mit einem kleinen lokalen Modell, `intfloat/multilingual-e5-small`) erkennt ähnliche Bedeutungen, ist aber weniger nachvollziehbar und kann ähnlich klingende Themen verwechseln. Zusätzlich wird die Kombination beider Ranglisten geprüft. Beide Verfahren laufen lokal ohne GPU und passen damit auch zur späteren Offline-Ausbaustufe.
+- **Warum Störberichte (Nutzerentscheidung):** Mit nur 15 passenden Berichten müsste die Suche kaum etwas aussortieren. Die Sammlung wurde deshalb auf 48 Berichte erweitert, mit gezielten Fallen: ähnliche Wörter in anderem Kontext, fremde Themen, mehrere Stände zu einem Thema, Regeln nur nebenbei in langen Berichten. Die bisherigen 19 Fragen behalten ihre erwarteten Antworten, damit „alle Berichte im Prompt“ und „mit Suche“ direkt vergleichbar bleiben.
+- **Einheit der Suche:** ein ganzer Bericht, weil die Berichte kurz sind (höchstens etwa 140 Wörter). Bei längeren Dokumenten müsste man sie in Abschnitte teilen; das ist nicht getestet.
+
 ### Versuchsübersicht
 
 | Version | Änderung | Ergebnis |
