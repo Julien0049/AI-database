@@ -1,4 +1,5 @@
 """Lokale Browser-Oberfläche für den PoC. Start im Projektordner: streamlit run app/app.py"""
+import importlib
 import pathlib
 import sys
 
@@ -6,6 +7,8 @@ import streamlit as st
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import aidb  # noqa: E402
+
+aidb = importlib.reload(aidb)  # Änderungen an aidb.py ohne Neustart übernehmen
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 
@@ -20,8 +23,12 @@ with st.sidebar:
     st.header("Berichte")
     folder = st.text_input("Ordner", "data/synthetic_reports")
     if st.button("Importieren"):
-        st.session_state.reports, st.session_state.notes = aidb.load_reports(ROOT / folder)
-        st.session_state.messages = []
+        path = ROOT / folder.strip()
+        if path.is_dir():
+            st.session_state.reports, st.session_state.notes = aidb.load_reports(path)
+            st.session_state.messages = []
+        else:
+            st.error(f"Ordner nicht gefunden: {path}")
     reports = st.session_state.get("reports")
     if reports:
         st.success(f"{len(reports)} Berichte importiert")
