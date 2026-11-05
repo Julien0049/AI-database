@@ -82,6 +82,14 @@ The 25 test questions included questions the reports cannot answer. Each version
 4. **Build in completeness and safeguards.** The system has to see all relevant reports by design, not by user choice. It should never answer without sources and should flag unconfirmed quotes.
 5. **Brief users on good questions.** Ask targeted questions, follow the footnotes, and treat the assistant as a guide to the reports, not a replacement for them.
 
+## Questions for the responsible offices
+
+One option is to run the system inside our existing closed network for classified information instead of building a separate one. The following points have been considered here, but they have to be assessed and decided by the responsible offices:
+
+- **Accreditation:** new software and hardware in a classified network need their own security review and approval.
+- **Computing capacity:** the AI model has to run entirely inside the network. Depending on its size, this needs capable servers.
+- **Access rights:** an assistant that combines content from many reports must not show anyone information they are not entitled to see. If everyone with access to the network may see all its content, this is straightforward. To be confirmed by the security office, including for possible later additions from other sources.
+
 ## Decision requested
 
 Endorse the basic idea: introduce an AI-based database for our unit's AARs that runs on our own hardware inside our closed network, with no connection to the internet. Support the idea at the next level.

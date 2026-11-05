@@ -81,6 +81,7 @@ Die Semesterarbeit soll einen Proof of Concept (PoC) einer AI Database für Frag
 62. Policy Brief: Nutzervorgaben Englisch, keine formalen Vorgaben, Reflection separat; Zielgruppe der General des Nutzers, der befürworten und nach oben weitergeben soll („der Köder muss dem Fisch schmecken“): wenig Technik, überzeugende Argumente mit Zahlen. Erster Entwurf `notes/policy_brief_draft_en.md` (Agentenentwurf, vom Nutzer zu prüfen). Kennzahlen aus Ergebnisdateien: 1.519 Zitate geprüft, 1 ungültig; Gesamtkosten unter 20 USD.
 63. Forderung des Briefs geklärt (Nutzer): Grundidee befürworten (KI-Datenbank für AARs der Einheit, eigene Hardware im abgeschlossenen Netz, ohne Internet); PoC zeigt Machbarkeit, Grenzen und Gefahren; Ingenieursarbeit und Realdatentests stehen aus. Begriff geklärt: nicht WAN, sondern on-premises / closed network (ggf. air-gapped). Nutzer schreibt das Memo selbst; „Decision requested“ im Entwurf angepasst.
 64. Nutzeridee: Integration in ein bestehendes geschlossenes Netz für eingestufte Inhalte (allgemein festgehalten, ohne Details zum Netz). Klärungspunkte: Zulassung, Rechenleistung im Netz, Zugriffsrechte/Need-to-know als neue Gefahr. Korrektur: WAN ist nicht automatisch Internet.
+65. Klärungspunkte (Zulassung, Rechenleistung, Zugriffsrechte) als Abschnitt „Questions for the responsible offices“ in den Entwurf aufgenommen (Nutzer: zeigen, dass daran gedacht wurde; entscheiden müssen andere). Zugriffsrechte vermutlich einfach (Zugang zum Netz = Recht auf alles), von der Sicherheitsstelle zu bestätigen.
 
 ## Wichtige Dateien
 
