@@ -86,7 +86,7 @@ Laufend gepflegte Sammlung, gegliedert wie das spätere Policy Brief. Jeder Punk
 
 ## Nächste Schritte
 
-- **In Arbeit:** Antwortlauf mit vorgeschalteter Suche nach Bedeutung (Ergebnis s1), um zu messen, wie sich Fehler der Suche auf die Antworten auswirken. Offen: Wahl von k und Umgang mit Zusammenfassungen.
+- **In Arbeit:** Suche verbessern, bevor Antworten mit Suche gemessen werden (Nutzereinwand nach s1: „Wenn so viel verloren geht, ist die Strategie vielleicht nicht gut“). Je Version eine Änderung, ohne Modellkosten: s2 kleinere Sucheinheiten (Abschnitte aus zwei Sätzen statt ganzer Berichte), s3 Thema erweitern (zu jedem Treffer ähnliche Berichte dazunehmen, damit alle Stände eines Themas ankommen), danach eigene Strategie für Zusammenfassungen. Erst dann ein Antwortlauf mit k = 5 (Nutzerentscheidung).
 - **Danach:** einfache lokale Browser-Oberfläche; andere Dateiformate (PDF, Word) als eigener Importtest.
 - **Optional:** eigene Strategie für Zusammenfassungen (z. B. mehr Treffer oder Suche nach Thema); Stichwortsuche mit Grundformbildung; prüfen, ob ein Zitat die Aussage wirklich stützt; härtere Datumstests (nahe Daten, gemischte Formate, mehrere Stände).
 - **Spätere Ausbaustufen:** lokales, mittelgroßes Modell offline im Vergleich zu den Frontier-Ergebnissen; Aussagen-Klassifikator; Mehrnutzerbetrieb.
