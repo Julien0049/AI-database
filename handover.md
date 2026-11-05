@@ -72,6 +72,7 @@ Die Semesterarbeit soll einen Proof of Concept (PoC) einer AI Database für Frag
 53. Oberfläche gebaut (`app/`, Streamlit 1.50, openai 2.48 in `.venv`): `aidb.py` (Logik aus dem Notebook, Prompt in `prompt_antwort.txt`), `app.py` (Import-Knopf, Hinweise, Chat, Fußnoten, Attrappe als Standard, Gemini nach Umschalten mit Schlüssel aus `.env` im Projektordner). Headless mit `streamlit.testing` geprüft (nur Attrappe). Start: `.venv/bin/streamlit run app/app.py`.
 54. v13 vollständig ausgewertet (`results/bewertung_google_gemini-2.5-pro_2026-11-05_v13.md`): 57/75 (v11 64, v12 51); nötige Berichte 129/132 im Antwortschritt; Störinhalte durch großzügige Sichtung; Frage 16 D1 USB-Stick als aktuell; Frage 24 D3 leere Auswahl → erfundene Regel samt Zitat. 7,36 USD, 35 s je Frage. Schutz eingebaut: ohne Berichte kein Modellaufruf (Notebook ab v14, `app/aidb.py`).
 55. Erster Test der Oberfläche mit Gemini (Nutzer): Frage „Wie gebe ich Material nach Seminaren zurück?“, 39 s, 0,063 USD. Zitate korrekt, aber USB-Stick-Regel als aktuell (überholt durch Download 21.04.2026), sehr breit (14 Quellen inkl. Betriebssport, Fahrradgarage), fehlende Bestandteile nicht genannt. Protokoll der Oberfläche eingebaut (`protokoll/oberflaeche.jsonl`, gitignored). Korrektur: Wartezeit je Anfrage in v9–v12 ca. 18 s, nicht 4 s (das war der Durchsatz); in Notizen und Bewertungen berichtigt.
+56. Gegenprobe in der Oberfläche: „Wie bekommen die Teilnehmenden die Unterlagen?“ → korrekt Download (B42, B44), 15,5 s, 0,022 USD. Protokoll funktioniert.
 
 ## Wichtige Dateien
 
