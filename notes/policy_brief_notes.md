@@ -116,6 +116,8 @@ Laufend gepflegte Sammlung, gegliedert wie das spätere Policy Brief. Jeder Punk
 
 ## Empfehlungen
 
+- **Forderung des Briefs (Nutzer):** Der General soll die Grundidee befürworten und nach oben weitertragen: eine KI-gestützte Datenbank für die AARs der Einheit, die auf eigener Hardware im abgeschlossenen Netz ohne Internetverbindung läuft. Der PoC zeigt, dass das prinzipiell möglich ist, benennt Grenzen und Gefahren und macht deutlich, dass noch echte Ingenieursarbeit und Tests mit Realdaten nötig sind. Zielgruppe: der General, wenig Technik, überzeugende Argumente mit Zahlen. Sprache Englisch; der Nutzer schreibt das Memo selbst, die Reflection ist ein eigenes Dokument.
+
 - **Einheitliches Ablageformat (Nutzer, gestützt durch Messung v9):** Fließtext frei, aber feste Plätze für Metadaten: immer eine Überschrift, Datum immer an derselben Stelle (etwa rechts oben), am Ende ein Name. Titel und Datum werden für Quellen und zeitliche Einordnung gebraucht und lassen sich nur dann zuverlässig und nachvollziehbar auslesen; ohne Überschrift bleibt nur der Dateiname als Titel. Dateiformat (Messung Importtest): Formate mit erkennbarer Überschrift (Markdown, Word mit Formatvorlage) bevorzugen; bei PDF den Titel an fester, beschrifteter Stelle („Titel: …“) oder als Dateieigenschaft mitgeben. Eingescannte Dokumente bräuchten Texterkennung.
 - **Quellen vom Programm erzeugen und als Fußnoten zeigen (Nutzer, Messung v7):** Das Modell belegt mit Kennung und Zitat; Titel und Datum stammen aus den Berichten.
 - **Jede Änderung mit mehreren Testläufen prüfen (Messung v5).**

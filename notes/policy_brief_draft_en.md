@@ -84,7 +84,8 @@ The 25 test questions included questions the reports cannot answer. Each version
 
 ## Decision requested
 
-Endorse a pilot as described in Recommendation 1 and support it at the next level. The pilot needs:
-- one area with a set of unclassified AARs and a data owner;
-- IT support for a local machine to run the offline model;
-- agreement on the filing format for new reports in that area.
+Endorse the basic idea: introduce an AI-based database for our unit's AARs that runs on our own hardware inside our closed network, with no connection to the internet. Support the idea at the next level.
+
+This proof of concept shows that the idea works in principle. It also shows where the limits and dangers are. Before introduction, two things are still required:
+- real engineering work for a secure, offline system;
+- tests with real reports.
