@@ -14,9 +14,11 @@
 | Belege gültig | 298 von 298 | 247 von 247 |
 | Nicht auswertbares JSON | 0 | 0 |
 | Sätze / Wörter gesamt | 252 / 3434 | 231 / 3096 |
-| Laufzeit gesamt (je Anfrage) | 277 s (3,7 s) | 269 s (3,6 s) |
+| Laufzeit gesamt (Wartezeit je Anfrage, abgeleitet*) | 277 s (ca. 18 s) | 269 s (ca. 18 s) |
 
-Zum Vergleich v9 (15 Berichte, 17 Fragen): 198 s für 51 Anfragen (3,9 s je Anfrage).
+Zum Vergleich v9 (15 Berichte, 17 Fragen): 198 s für 51 Anfragen (ca. 19 s je Anfrage).
+
+\* Gesamtzeit × 5 parallele Anfragen ÷ Zahl der Anfragen. Korrigiert am 05.11.2026: Zuerst standen hier 3,6–3,9 s; das war der Durchsatz, nicht die Wartezeit einer Anfrage.
 
 ## Ergebnis je Frage
 
@@ -53,7 +55,7 @@ Zum Vergleich v9 (15 Berichte, 17 Fragen): 198 s für 51 Anfragen (3,9 s je Anfr
 - **Unvollständige Zusammenfassungen wirken vollständig (Frage 25, 16).** Das Modell fasst zusammen, was es bekommt, und weist nicht darauf hin, dass weitere Berichte existieren könnten.
 - **Weniger Berichte, mehr Störeinflüsse (Vermutung).** Unter den 5 Treffern sind die übrigen Berichte gerade die ähnlich klingenden Störberichte. Das Modell nahm sie häufiger in die Antwort auf als bei allen 48 Berichten (Fragen 4 und 6: je 3 von 3 statt 1 von 3). Möglicherweise geht das Modell davon aus, dass alles Mitgelieferte relevant ist. Mit drei Durchläufen ist das ein Hinweis, kein Nachweis.
 - **Mit allen 48 Berichten bleibt die Qualität hoch (v11).** Die dreifach größere Sammlung mit Störberichten hat die Antworten kaum verschlechtert; die Fragen 20–25 wurden alle erfüllt. Neu sind vereinzelte Störinhalte (Winterdienst in Fragen 15 und 16, HV-7 in Frage 6).
-- **Die Suche macht hier nichts schneller.** Die Laufzeit je Anfrage ist mit 5 Berichten (3,6 s), 15 Berichten (3,9 s, v9) und 48 Berichten (3,7 s) praktisch gleich. Die Wartezeit hängt bei dieser Größe vom Nachdenken und Schreiben des Modells ab, nicht von der Menge des mitgeschickten Textes. Die Suche spart hier nur Eingabetext (Kosten); ihr eigentlicher Zweck bleibt die Skalierung auf Sammlungen, die nicht mehr in eine Anfrage passen.
+- **Die Suche macht hier nichts schneller.** Die Wartezeit je Anfrage ist mit 5 Berichten, 15 Berichten (v9) und 48 Berichten mit etwa 18–19 s praktisch gleich. Die Wartezeit hängt bei dieser Größe vom Nachdenken und Schreiben des Modells ab, nicht von der Menge des mitgeschickten Textes. Die Suche spart hier nur Eingabetext (Kosten); ihr eigentlicher Zweck bleibt die Skalierung auf Sammlungen, die nicht mehr in eine Anfrage passen.
 - **Zitate weiterhin vollständig gültig**; die Regel gegen „ein Bericht“ im Text wirkt weiterhin nicht immer (v11 fünfmal, v12 einmal).
 
 ## Grenzen

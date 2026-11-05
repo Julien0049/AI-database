@@ -14,7 +14,7 @@
 - **Alle vier verstreuten Kernberichte gefunden** (Besucherausweise, WLAN für Gäste, Besucherparkplätze, Abendseminar „Projektplanung“). Bei der Suche lagen sie auf den Plätzen 23–42 (s5), in v12 fehlten sie.
 - **Antwort:** deckt alle vier Punkte der Checkliste ab; 13 von 13 Zitaten gültig. Ein Störinhalt (Winterdienst: Haupteingang bei Glätte), daher nach dem Maßstab ab v11 „teilweise“.
 - **Sichtung zu großzügig:** 11 Berichte ausgewählt, davon 4 nötig.
-- **Kosten:** 0,114 USD für 6 Anfragen. **Wartezeit:** 51 s für eine Frage (v11/v12: etwa 4 s je Anfrage).
+- **Kosten:** 0,114 USD für 6 Anfragen. **Wartezeit:** 51 s für eine Frage (v11/v12: etwa 18 s je Anfrage; ursprünglich fälschlich mit 4 s angegeben).
 
 ## Sichtung im Hauptlauf (kostenlos ausgewertet)
 

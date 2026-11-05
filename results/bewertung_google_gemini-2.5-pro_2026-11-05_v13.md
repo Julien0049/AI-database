@@ -13,7 +13,7 @@
 | Nötige Berichte im Antwortschritt vorhanden | 100 % | 102 von 132 | **129 von 132** |
 | Berichte im Antwortschritt je Frage | 48 | 5 | 6,2 im Mittel (0–20) |
 | Belege gültig | 298 / 298 | 247 / 247 | 313 / 314 (1 erfunden) |
-| Wartezeit je Frage | ca. 4 s | ca. 4 s | **35 s** im Mittel (17–86 s) |
+| Wartezeit je Frage (v11/v12 abgeleitet) | ca. 18 s | ca. 18 s | **35 s** im Mittel (17–86 s) |
 | Kosten des Laufs | nicht erfasst | nicht erfasst | **7,36 USD** (ca. 10 Cent je Frage) |
 
 ## Ergebnis je Frage
