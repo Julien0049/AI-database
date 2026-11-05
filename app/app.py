@@ -53,6 +53,7 @@ if question:
     with st.chat_message("assistant"):
         with st.spinner("Die Berichte werden ausgewertet …"):
             result = aidb.answer(question, reports, key if mode.startswith("Gemini") else None)
+        aidb.log(ROOT / "protokoll" / "oberflaeche.jsonl", question, result)
         if "fehler" in result:
             content = result["fehler"]
         else:

@@ -164,11 +164,20 @@ def answer(question, reports, key=None):
         return result
     try:
         raw, cost = ask_model(question, reports, key) if key else ask_dummy(question, reports)
+        result["roh"], result["kosten"] = raw, cost
         result["text"], result["quellen"], result["probleme"] = render(check(parse(raw), reports), reports)
-        result["kosten"] = cost
     except (json.JSONDecodeError, KeyError, TypeError) as e:
         result["fehler"] = f"Die Antwort des Modells war nicht auswertbar ({e})."
     except Exception as e:  # z. B. Netzwerkfehler oder aufgebrauchtes Budget
         result["fehler"] = f"Die Anfrage ist fehlgeschlagen: {e}"
     result["dauer_s"] = round(time.time() - start, 1)
     return result
+
+
+def log(path, question, result):
+    """Hängt Frage und Ergebnis als eine JSON-Zeile an die lokale Protokolldatei an."""
+    entry = {"zeit": time.strftime("%Y-%m-%d %H:%M:%S"), "frage": question, **result}
+    path = pathlib.Path(path)
+    path.parent.mkdir(exist_ok=True)
+    with path.open("a") as f:
+        f.write(json.dumps(entry, ensure_ascii=False) + "\n")
