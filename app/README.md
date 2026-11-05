@@ -21,4 +21,6 @@ Der Browser öffnet sich unter `http://localhost:8501`. Links „Importieren“ 
 
 **Protokoll:** Jede Frage wird mit Antwort, Rohantwort des Modells, Dauer und Kosten in `protokoll/oberflaeche.jsonl` gespeichert (lokal, von Git ausgeschlossen), damit Antworten nachträglich geprüft werden können.
 
-**Grenzen:** nur Markdown-Dateien `AAR-*.md`; keine Gesprächsfortsetzung (jede Frage einzeln); keine gründliche Sichtung (v13) und keine Suche.
+**Folgefragen:** Die letzten drei Fragen des Gesprächs gehen als Kontext mit (nicht die Antworten); „Neues Gespräch“ setzt den Verlauf zurück.
+
+**Grenzen:** nur Markdown-Dateien `AAR-*.md`; keine gründliche Sichtung (v13) und keine Suche.

@@ -11,8 +11,10 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 
 st.set_page_config(page_title="AI Database (PoC)", page_icon="📄")
 st.title("Fragen an die Berichte")
-st.caption("Proof of Concept mit fiktiven Testberichten. Antworten stützen sich nur auf die importierten Berichte; "
-           "jede Frage wird einzeln beantwortet, frühere Fragen fließen nicht ein.")
+st.caption("Proof of Concept mit fiktiven Testberichten. Antworten stützen sich nur auf die importierten Berichte. "
+           "Folgefragen verstehen die letzten drei Fragen des Gesprächs mit; frühere Antworten fließen nicht ein.")
+
+MAX_PREVIOUS = 3  # so viele bisherige Fragen gehen als Kontext mit
 
 with st.sidebar:
     st.header("Berichte")
@@ -33,6 +35,9 @@ with st.sidebar:
     else:
         st.info("Noch keine Berichte importiert.")
 
+    if reports and st.button("Neues Gespräch"):
+        st.session_state.messages = []
+
     st.header("Antworten")
     mode = st.radio("Antworten kommen von", ["Attrappe (kostenlos)", "Gemini 2.5 Pro (verbraucht Guthaben)"])
     key = None
@@ -47,12 +52,13 @@ for message in st.session_state.get("messages", []):
 
 question = st.chat_input("Frage an die Berichte", disabled=not reports)
 if question:
+    previous = [m["content"] for m in st.session_state.messages if m["role"] == "user"][-MAX_PREVIOUS:]
     st.session_state.messages.append({"role": "user", "content": question})
     with st.chat_message("user"):
         st.markdown(question)
     with st.chat_message("assistant"):
         with st.spinner("Die Berichte werden ausgewertet …"):
-            result = aidb.answer(question, reports, key if mode.startswith("Gemini") else None)
+            result = aidb.answer(question, reports, key if mode.startswith("Gemini") else None, previous)
         aidb.log(ROOT / "protokoll" / "oberflaeche.jsonl", question, result)
         if "fehler" in result:
             content = result["fehler"]
@@ -63,6 +69,8 @@ if question:
             if result["probleme"]:
                 content += "\n\n**Nicht bestätigte Belege**\n\n" + "\n".join(f"- {p}" for p in result["probleme"])
         info = f"{result['berichte']} von {len(reports)} Berichten berücksichtigt · {result['modell']} · {result['dauer_s']} s"
+        if previous:
+            info += f" · mit {len(previous)} vorheriger Frage(n) als Kontext"
         if result.get("kosten"):
             info += f" · {result['kosten']:.3f} USD"
         content += f"\n\n<sub>{info}</sub>"

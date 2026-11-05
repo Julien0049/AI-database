@@ -1,6 +1,7 @@
 """Kernlogik der lokalen Oberfläche: Berichte einlesen, Modell fragen, Zitate prüfen, Fußnoten setzen.
 
 Übernommen aus notebooks/citation_check_v7.ipynb, Aufbau wie v11 (alle Berichte im Prompt).
+Neu gegenüber dem Notebook: Folgefragen bekommen die bisherigen Fragen (nicht die Antworten) als Kontext.
 Der Antwort-Prompt in prompt_antwort.txt entspricht dem Notebook (Regeln 1–7, Stand v8–v13).
 """
 import json
@@ -68,7 +69,16 @@ def corpus_for(reports):
     return "\n\n".join(f'<bericht id="{rid}">\n{r["text"]}\n</bericht>' for rid, r in reports.items())
 
 
-def ask_model(question, reports, key):
+def user_message(question, reports, previous=()):
+    """Berichte, bisherige Fragen des Gesprächs (nur Fragen, keine Antworten) und die aktuelle Frage."""
+    context = ""
+    if previous:
+        context = ("Bisherige Fragen in diesem Gespräch (nur zum Verständnis der aktuellen Frage, keine Quelle):\n"
+                   + "\n".join(f"- {q}" for q in previous) + "\n\n")
+    return f"{corpus_for(reports)}\n\n{context}Frage: {question}"
+
+
+def ask_model(question, reports, key, previous=()):
     """Fragt das Modell über OpenRouter. Gibt (Rohantwort, Kosten in USD oder None) zurück."""
     from openai import OpenAI
     client = OpenAI(base_url="https://openrouter.ai/api/v1", api_key=key)
@@ -76,7 +86,7 @@ def ask_model(question, reports, key):
         model=MODEL,
         messages=[
             {"role": "system", "content": PROMPT},
-            {"role": "user", "content": f"{corpus_for(reports)}\n\nFrage: {question}"}
+            {"role": "user", "content": user_message(question, reports, previous)}
         ]
     )
     return response.choices[0].message.content, getattr(response.usage, "cost", None)
@@ -86,10 +96,11 @@ def words(text):
     return set(w for w in re.findall(r"[a-zäöüß]+", text.lower()) if len(w) > 3)
 
 
-def ask_dummy(question, reports):
-    """Attrappe ohne Modell: nimmt den Bericht mit den meisten gemeinsamen Wörtern und zitiert dessen ersten Satz.
-    Dient nur dazu, Import, Zitatprüfung und Fußnoten kostenlos zu testen."""
-    rid = max(reports, key=lambda r: len(words(question) & words(reports[r]["text"])))
+def ask_dummy(question, reports, previous=()):
+    """Attrappe ohne Modell: nimmt den Bericht mit den meisten gemeinsamen Wörtern (aktuelle und bisherige Fragen)
+    und zitiert dessen ersten Satz. Dient nur dazu, Import, Zitatprüfung und Fußnoten kostenlos zu testen."""
+    asked = words(" ".join([*previous, question]))
+    rid = max(reports, key=lambda r: len(asked & words(reports[r]["text"])))
     body = [line for line in reports[rid]["text"].splitlines()
             if line.strip() and not line.startswith("#") and not line.startswith("**")]
     sentence = re.split(r"(?<=[a-zäöüß])\. ", body[0] if body else reports[rid]["text"])[0].rstrip(".") + "."
@@ -154,16 +165,17 @@ def render(answer, reports):
     return " ".join(parts), sources, problems
 
 
-def answer(question, reports, key=None):
-    """Beantwortet eine Frage mit allen Berichten. Ohne Schlüssel antwortet die Attrappe.
-    Gibt ein Wörterbuch mit Text, Quellen, Problemen, Dauer, Kosten oder Fehler zurück."""
+def answer(question, reports, key=None, previous=()):
+    """Beantwortet eine Frage mit allen Berichten; `previous` sind die bisherigen Fragen des Gesprächs.
+    Ohne Schlüssel antwortet die Attrappe. Gibt ein Wörterbuch mit Text, Quellen, Problemen, Dauer,
+    Kosten oder Fehler zurück."""
     start = time.time()
-    result = {"berichte": len(reports), "modell": MODEL if key else "Attrappe"}
+    result = {"berichte": len(reports), "modell": MODEL if key else "Attrappe", "vorherige_fragen": list(previous)}
     if not reports:  # ohne Berichte nicht fragen: in v13 erfand das Modell dann eine Regel samt Zitat
         result.update(text="Es sind keine Berichte importiert.", quellen=[], probleme=[], dauer_s=0.0)
         return result
     try:
-        raw, cost = ask_model(question, reports, key) if key else ask_dummy(question, reports)
+        raw, cost = ask_model(question, reports, key, previous) if key else ask_dummy(question, reports, previous)
         result["roh"], result["kosten"] = raw, cost
         result["text"], result["quellen"], result["probleme"] = render(check(parse(raw), reports), reports)
     except (json.JSONDecodeError, KeyError, TypeError) as e:
