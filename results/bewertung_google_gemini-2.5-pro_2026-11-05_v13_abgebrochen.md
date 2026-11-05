@@ -1,7 +1,7 @@
 # Bewertung: Gemini 2.5 Pro, v13 (Sichtung aller Berichte in Paketen), abgebrochen
 
 **Status:** Agentenauswertung (Claude), vom Nutzer noch zu prüfen. **Lauf unvollständig:** Das Budget war erschöpft, bevor eine Antwort entstand.
-**Läufe:** [Testlauf](./ergebnisse_google_gemini-2.5-pro_2026-11-05_v13_test.json) (nur Frage 25, ein Durchlauf) und [Hauptlauf](./ergebnisse_google_gemini-2.5-pro_2026-11-05_v13.json) (25 Fragen, drei Durchläufe geplant), 05.11.2026, Notebook [citation_check_v7.ipynb](../notebooks/citation_check_v7.ipynb).
+**Läufe:** [Testlauf](./ergebnisse_google_gemini-2.5-pro_2026-11-05_v13_test.json) (nur Frage 25, ein Durchlauf) und [Hauptlauf](./ergebnisse_google_gemini-2.5-pro_2026-11-05_v13_abgebrochen.json) (25 Fragen, drei Durchläufe geplant), 05.11.2026, Notebook [citation_check_v7.ipynb](../notebooks/citation_check_v7.ipynb).
 **Aufbau:** Das Modell sichtet alle 48 Berichte in 5 Paketen zu je höchstens 10 und gibt die Kennungen der relevanten Berichte zurück (Prompt `SICHTUNG`); nur diese gehen in den Antwortschritt (Regeln und Zitatprüfung wie v8–v12).
 
 ## Was passiert ist
