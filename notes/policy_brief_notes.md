@@ -47,6 +47,7 @@ Laufend gepflegte Sammlung, gegliedert wie das spätere Policy Brief. Jeder Punk
 | v8 | Regel: exakt und knapp | 45/51; 11 % kürzer |
 | v9 | 4 Berichte mit abweichendem Format | 43/51; Metadaten korrekt ausgelesen |
 | v10 | Widerspruch nur über das Datum auflösbar | 6/6 |
+| s1 | Suchtest ohne Sprachmodell, 48 Berichte, 25 Fragen: Stichwort vs. Bedeutung vs. Kombination | alle nötigen Berichte unter den ersten 5: 50 % / 79 % / 67 %; unter den ersten 10: 58 % / 88 % / 83 % |
 
 ## Erkenntnisse
 
@@ -61,13 +62,16 @@ Laufend gepflegte Sammlung, gegliedert wie das spätere Policy Brief. Jeder Punk
 - **Zusammenfassungen gelingen bei kleiner Sammlung (Messung v6–v9):** Checklisten nahezu vollständig, überholte Stände erscheinen nicht.
 - **Schwankung zwischen Durchläufen (Messung v5):** Bei identischem Aufbau 9–12 von 13 Fragen erfüllt; Einzelläufe reichen für Vergleiche nicht.
 - **Uneinheitliche Formate (Messung v9):** Das Programm liest Titel und Datum in bekannten Formaten korrekt aus; fehlt die Überschrift, bleibt nur der Dateiname als Titel. Die Antwortqualität sank nicht erkennbar.
+- **Suche nach Bedeutung schlägt Stichwortsuche deutlich (Messung s1):** Bei 79 % der Fragen liegen alle nötigen Berichte unter den ersten 5 Treffern (Stichwortsuche: 50 %). Die Stichwortsuche scheitert an anderen Wortformen und zusammengesetzten Wörtern („Fahrzeugausleihe“, „reservieren“/„reserviert“). Die einfache Kombination beider ist schlechter als die Suche nach Bedeutung allein.
+- **Einzelfragen ja, Zusammenfassungen nein (Messung s1):** Bei Einzelfragen sind die nötigen Berichte in 19 von 20 Fällen unter den ersten 5; Wortfallen (Sommer/Winter, Fahrradgarage/Raumschlüssel) führten nicht in die Irre. Bei Zusammenfassungen über mehrere Berichte waren es 0 von 4 (unter den ersten 10: 2 von 4). Zusammenfassungen brauchen eine andere Strategie als „die besten k Treffer“.
+- **Risiko überholter Stand durch die Suche (Messung s1):** Ein nur nebenbei erwähnter neuester Stand (Seminarunterlagen als Download) wurde von keiner Methode unter den ersten 10 gefunden, die älteren Stände (gedruckt, USB-Stick) standen vorn. Ältere Stände stehen auch sonst oft vor dem neuesten (Beamer: Platz 1–2 alt, Platz 3 neu). Die Suche kann damit die Kernregel „neuester Stand gilt“ unterlaufen, bevor das Modell überhaupt antwortet.
 - **Laufzeit (Messung v7–v10, Nutzer):** Rund 190 s für 51 Anfragen mit fünf parallelen Anfragen; schon bei 13–15 kurzen Berichten spürbar lang, für einen PoC akzeptabel. Ein Testlauf stellt aber viele Fragen auf einmal; im Einsatz stellt man eine oder wenige gezielte Fragen (Wartezeit je Frage nicht gemessen).
 
 ## Grenzen
 
 - Kleiner, synthetischer Datensatz mit kurzen Berichten; Berichte und Fragen von einem KI-Agenten erstellt.
 - Bewertung durch ein anderes KI-Modell (Claude), keine unabhängige menschliche Prüfung; die Nutzerprüfung steht teilweise aus.
-- Bisher alle Berichte vollständig im Prompt; das Finden relevanter Berichte (Suche) ist noch nicht getestet.
+- Die Suche ist bisher nur für sich gemessen (s1); wie gut die Antworten mit Suche sind, ist noch nicht getestet. Ein Embedding-Modell, Einheit ganzer Bericht, keine Variation der Einstellungen.
 - Ein Modell, eine Sprache (Deutsch), drei Durchläufe; keine belastbaren Häufigkeiten.
 - Datumstest nur mit einem Berichtspaar, großem Zeitabstand und ohne Gegenprobe.
 - Cloud-API, kein Offlinebetrieb; nur fiktive Daten, keine Aussage zur Eignung für eingestufte Inhalte.
@@ -82,7 +86,7 @@ Laufend gepflegte Sammlung, gegliedert wie das spätere Policy Brief. Jeder Punk
 
 ## Nächste Schritte
 
-- **In Arbeit:** Suche statt aller Berichte im Prompt. Sammlung auf etwa 50 Berichte mit Störberichten (ähnliche Wörter in anderem Kontext, fremde Themen, mehrere Stände, lange Berichte mit mehreren Themen); Stichwortsuche und Suche nach Bedeutung ohne Modellkosten vergleichen, danach Antwortlauf (Nutzerentscheidung).
+- **In Arbeit:** Antwortlauf mit vorgeschalteter Suche nach Bedeutung (Ergebnis s1), um zu messen, wie sich Fehler der Suche auf die Antworten auswirken. Offen: Wahl von k und Umgang mit Zusammenfassungen.
 - **Danach:** einfache lokale Browser-Oberfläche; andere Dateiformate (PDF, Word) als eigener Importtest.
-- **Optional:** prüfen, ob ein Zitat die Aussage wirklich stützt; härtere Datumstests (nahe Daten, gemischte Formate, mehrere Stände).
+- **Optional:** eigene Strategie für Zusammenfassungen (z. B. mehr Treffer oder Suche nach Thema); Stichwortsuche mit Grundformbildung; prüfen, ob ein Zitat die Aussage wirklich stützt; härtere Datumstests (nahe Daten, gemischte Formate, mehrere Stände).
 - **Spätere Ausbaustufen:** lokales, mittelgroßes Modell offline im Vergleich zu den Frontier-Ergebnissen; Aussagen-Klassifikator; Mehrnutzerbetrieb.
