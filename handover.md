@@ -78,6 +78,7 @@ Die Semesterarbeit soll einen Proof of Concept (PoC) einer AI Database für Frag
 59. Folgefrage mit Modell getestet (Verpflegung → „und im Gelände auf einer Übung?“): Kontext verstanden, Lücke korrekt benannt, keine Übertragung.
 60. Importtest Word/PDF (`scripts/import_test.py`, Pakete in `scripts/requirements-importtest.txt`: python-docx, pypdf, reportlab; Bewertung `results/bewertung_importtest_2026-11-05.md`): Word wie Markdown; PDF Text und Datum vollständig, Titel in 4/4 Fällen verloren; erste Zeile als Titel nur 2/6 richtig. Erzeugte Testdateien in `data/format_test/` (gitignored, per Skript reproduzierbar). Noch nicht in der Oberfläche.
 61. Oberfläche liest jetzt .md, .txt, .docx, .pdf (`aidb.read_file`; README.md/test_questions.md und Word-Sperrdateien `~$` übersprungen; leere oder unlesbare Dateien mit Hinweis). Leseregeln im Importtest-Skript aus `aidb` übernommen. Headless mit `data/format_test` getestet. Nutzer will bei Gelegenheit einige Berichte als praxisübliche Word/PDF nachbauen.
+62. Policy Brief: Nutzervorgaben Englisch, keine formalen Vorgaben, Reflection separat; Zielgruppe der General des Nutzers, der befürworten und nach oben weitergeben soll („der Köder muss dem Fisch schmecken“): wenig Technik, überzeugende Argumente mit Zahlen. Erster Entwurf `notes/policy_brief_draft_en.md` (Agentenentwurf, vom Nutzer zu prüfen). Kennzahlen aus Ergebnisdateien: 1.519 Zitate geprüft, 1 ungültig; Gesamtkosten unter 20 USD.
 
 ## Wichtige Dateien
 
