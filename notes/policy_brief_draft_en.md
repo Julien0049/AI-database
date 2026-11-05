@@ -82,6 +82,19 @@ The 25 test questions included questions the reports cannot answer. Each version
 4. **Build in completeness and safeguards.** The system has to see all relevant reports by design, not by user choice. It should never answer without sources and should flag unconfirmed quotes.
 5. **Brief users on good questions.** Ask targeted questions, follow the footnotes, and treat the assistant as a guide to the reports, not a replacement for them.
 
+## What changes on our own network
+
+Moving from the commercial cloud model to a model running on our own hardware changes the following (general assessment, not measured):
+
+- **Stays the same:** the program around the model, i.e. import, source checks, footnotes and the chat interface. The 25 test questions can be reused unchanged to measure a local model.
+- **The model:** freely available models are usually smaller than commercial ones. Whether they follow the rules just as reliably (newest rule, admitting gaps, exact quotes) is open and has to be tested.
+- **Cost:** no fees per question. Instead, hardware with suitable processors, operation, maintenance and staff.
+- **Amount of text:** smaller models often cannot read the whole collection at once. A pre-selection step becomes necessary sooner, which is exactly where this study found the main risks.
+- **Control:** no data leaves the network, and the model version stays under our control.
+- **Responsibility:** updates, security and approval lie with us.
+
+The open question is not whether it works technically. It is how good a model we can run ourselves is, and what the hardware for it costs.
+
 ## Questions for the responsible offices
 
 One option is to run the system inside our existing closed network for classified information instead of building a separate one. The following points have been considered here, but they have to be assessed and decided by the responsible offices:
