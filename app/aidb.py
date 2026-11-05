@@ -159,6 +159,9 @@ def answer(question, reports, key=None):
     Gibt ein Wörterbuch mit Text, Quellen, Problemen, Dauer, Kosten oder Fehler zurück."""
     start = time.time()
     result = {"berichte": len(reports), "modell": MODEL if key else "Attrappe"}
+    if not reports:  # ohne Berichte nicht fragen: in v13 erfand das Modell dann eine Regel samt Zitat
+        result.update(text="Es sind keine Berichte importiert.", quellen=[], probleme=[], dauer_s=0.0)
+        return result
     try:
         raw, cost = ask_model(question, reports, key) if key else ask_dummy(question, reports)
         result["text"], result["quellen"], result["probleme"] = render(check(parse(raw), reports), reports)
