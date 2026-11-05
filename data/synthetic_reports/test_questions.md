@@ -495,12 +495,13 @@ Alle drei Erfahrungsberichte zur Winterkleidung (15.02.2023, 25.01.2024, 10.12.2
 
 **Antwortentwurf**
 
-> Leichte, langärmelige Kleidung; ein Sonnenhut war für viele hilfreich. Mehrere hatten zu wenig Wasser dabei. Der Bericht betrifft ein eintägiges Außenseminar.
+> Leichte, langärmelige Kleidung; ein Sonnenhut war für viele hilfreich. Mehrere hatten zu wenig Wasser dabei.
 > **Quelle:** „Kleidung beim Sommer-Außenseminar“ (09.07.2024).
 
 **Woran eine gute Antwort erkennbar ist**
 
 - Übernimmt nichts aus den Winterberichten.
+- Der Hinweis, dass der Bericht ein eintägiges Seminar betrifft, ist nicht erforderlich (Nutzerentscheidung).
 - Gibt die Erfahrung als Erfahrung wieder, nicht als Vorschrift.
 
 ## Frage 24 – Keine Antwort trotz vieler ähnlicher Treffer
