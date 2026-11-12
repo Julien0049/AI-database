@@ -53,6 +53,8 @@ Alle Befehle im Projektordner ausführen.
 - Unterstütze nachvollziehbare Entscheidungen und den Lernprozess. Erzeuge keine großen Mengen an Code oder Daten, bevor Projektfrage und Versuchsaufbau geklärt sind.
 - Lege Abhängigkeiten, Datenquellen und Modellanforderungen offen, bevor du sie einführst. Behaupte keine Evaluationsergebnisse, bevor sie gemessen wurden.
 - Halte Dokumentation knapp, aktuell und ohne doppelte oder widersprüchliche Anweisungen.
+- Abgabe voraussichtlich am 14.12.2026.
+- Policy Brief: Adressat ist ein militärischer Vorgesetzter, der den Vorschlag befürworten und weitertragen soll; bewertet wird er von der Kursleitung. Ton und Argumentation auf den Entscheider ausrichten, fachlich so belastbar, dass er der Bewertung standhält.
 - Am Ende steht ein Policy Brief. Trage neue Erkenntnisse, Grenzen, Empfehlungen und nächste Schritte nach jedem Versuch oder jeder Entscheidung direkt in `notes/policy_brief_notes.md` ein, gegliedert wie das Brief und mit Kennzeichnung der Herkunft (Messung, Nutzer, Vorschlag), sodass der Nutzer die Abschnitte ohne erneute Aufarbeitung übernehmen kann.
 
 ## Dateien löschen
