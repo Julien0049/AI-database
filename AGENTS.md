@@ -4,7 +4,7 @@
 
 Die Semesterarbeit soll einen Proof of Concept (PoC) einer AI Database hervorbringen. Einzelne Nutzer sollen Fragen zu einer Sammlung von After-Action-Reports (AARs) stellen können. Der PoC soll passende Aussagen aus mehreren Dokumenten zusammenführen, zeitliche Änderungen berücksichtigen und die verwendeten Quellen knapp nennen.
 
-Für den PoC wird vorläufig Gemini 2.5 Pro (`google/gemini-2.5-pro`) über OpenRouter verwendet, bezahlt aus einem vorhandenen Guthaben; darüber hinaus sollen keine eigenen Kosten entstehen. Anfragen laufen damit über zwei Anbieter (OpenRouter und Google). Der API-Schlüssel wird nur lokal (Umgebungsvariable oder `.env`) gespeichert und nie ins Repository übernommen. Der PoC darf zur Laufzeit Internet für die Modell-API nutzen. Offlinebetrieb mit einem lokalen, mittelgroßen Modell ist eine spätere Ausbaustufe, nicht Teil des PoC. Für die Entwicklung sind zunächst zehn fiktive Beispieldokumente vorgesehen. Sie sind Testdaten, keine echten Berichte, gültige Doktrin oder fachlich geprüfte Empfehlungen.
+Für den PoC wird vorläufig Gemini 2.5 Pro (`google/gemini-2.5-pro`) über OpenRouter verwendet, bezahlt aus einem vorhandenen Guthaben; darüber hinaus sollen keine eigenen Kosten entstehen. Anfragen laufen damit über zwei Anbieter (OpenRouter und Google). Der API-Schlüssel wird nur lokal (Umgebungsvariable oder `.env`) gespeichert und nie ins Repository übernommen. Der PoC darf zur Laufzeit Internet für die Modell-API nutzen. Offlinebetrieb mit einem lokalen, mittelgroßen Modell ist eine spätere Ausbaustufe, nicht Teil des PoC. Die Entwicklung begann mit einem kleinen Datensatz fiktiver Berichte (anfangs zehn), um die Antwortregeln zu prüfen; danach wird der Datensatz schrittweise vergrößert, um zu sehen, wie der PoC mit größeren Mengen umgeht. Der aktuelle Stand liegt in `data/synthetic_reports/`. Die Berichte sind Testdaten, keine echten Berichte, gültige Doktrin oder fachlich geprüfte Empfehlungen.
 
 ## Bestätigte Anforderungen
 
@@ -19,13 +19,32 @@ Für den PoC wird vorläufig Gemini 2.5 Pro (`google/gemini-2.5-pro`) über Open
 - Für die erste Version sind Markdown-/Textdateien vorgesehen. Neue Dokumente liegen in einem festgelegten lokalen Ordner; der Import wird gezielt gestartet.
 - Als erste Oberfläche ist eine einfache lokale Browser-Chat-Oberfläche vorgesehen. Anwendung, Dokumente und Index laufen auf dem eigenen Mac/Computer ohne zusätzliche GPU; nur die Antwortgenerierung läuft über die Modell-API.
 - Spätere Ausbaustufen (nicht Teil des PoC): Umstieg auf ein lokales, mittelgroßes Modell mit Offlinebetrieb und Vergleich gegen die Frontier-Ergebnisse; optional Aussagen-Klassifikator und lokaler Mehrnutzerbetrieb.
-- Der erste Datensatz umfasst zehn Beispiele. Spätere Skalierung bedeutet zunächst mehr Dokumente; sie muss separat geprüft werden und ist mit zehn Beispielen nicht belegt.
+- Skalierung bedeutet zunächst mehr Dokumente. Ergebnisse gelten nur für die getestete Datensatzgröße; jede Vergrößerung muss separat geprüft werden. In Bewertungen und Notizen die Anzahl der Berichte des jeweiligen Laufs angeben.
 
 ## Projektdateien und Provenienz
 
 - `project_brainstorming.md` enthält die ursprüngliche Kurzbeschreibung.
 - `KI-Projektideen.md` enthält einen langen Gemini-Dialog mit mehreren iterativ überarbeiteten Projekt- und Beispieldokument-Entwürfen. Diese Fassungen sind Arbeitsmaterial, nicht automatisch eine konsistente oder verbindliche Spezifikation.
 - Interview-Rohnotizen und Agentenentwürfe sollen getrennt aufbewahrt werden. Rohnotizen nicht stillschweigend umformulieren; abgeleitete Anforderungen und Vorschläge als solche kennzeichnen.
+
+## Projektstruktur
+
+- `app/` – lokale Streamlit-Oberfläche (`app.py`) und Kernlogik (`aidb.py`: Import, Antwort, Zitatprüfung); Antwort-Prompt in `prompt_antwort.txt`; Details in `app/README.md`.
+- `data/synthetic_reports/` – fiktive Testberichte (AAR-*.md); `data/format_test/` – erzeugte Word/PDF-Kopien aus dem Importtest (von Git ignoriert).
+- `notebooks/` – Versuche (Gemini-Ersttest, Retrieval, Zitatprüfung v7).
+- `scripts/` – `import_test.py` prüft Word-/PDF-Import gegen Markdown (ohne Modell, ohne Kosten).
+- `results/` – Rohantworten und Bewertungen je Versuchslauf (versioniert, z.B. `_v10`); nicht überschreiben, neue Läufe mit neuer Versionsnummer ablegen.
+- `notes/` – Interview-Rohnotizen, Prototyp-Vorschlag, Policy-Brief-Notizen und -Entwurf.
+- `protokoll/` – lokales Frage-/Antwortprotokoll der Oberfläche (von Git ignoriert).
+
+## Befehle
+
+Alle Befehle im Projektordner ausführen.
+
+- Einrichten: `python3 -m venv .venv && .venv/bin/pip install -r app/requirements.txt`
+- Oberfläche starten: `.venv/bin/streamlit run app/app.py` (http://localhost:8501; Standard ist die kostenlose Attrappe, echte Antworten erst nach Umschalten auf Gemini 2.5 Pro)
+- Importtest: `.venv/bin/pip install -r scripts/requirements-importtest.txt`, dann `.venv/bin/python scripts/import_test.py`
+- Läufe mit echtem Modell kosten Guthaben: vorher mit dem Nutzer abstimmen.
 
 ## Arbeitsweise für Agenten
 
@@ -35,6 +54,12 @@ Für den PoC wird vorläufig Gemini 2.5 Pro (`google/gemini-2.5-pro`) über Open
 - Lege Abhängigkeiten, Datenquellen und Modellanforderungen offen, bevor du sie einführst. Behaupte keine Evaluationsergebnisse, bevor sie gemessen wurden.
 - Halte Dokumentation knapp, aktuell und ohne doppelte oder widersprüchliche Anweisungen.
 - Am Ende steht ein Policy Brief. Trage neue Erkenntnisse, Grenzen, Empfehlungen und nächste Schritte nach jedem Versuch oder jeder Entscheidung direkt in `notes/policy_brief_notes.md` ein, gegliedert wie das Brief und mit Kennzeichnung der Herkunft (Messung, Nutzer, Vorschlag), sodass der Nutzer die Abschnitte ohne erneute Aufarbeitung übernehmen kann.
+
+## Dateien löschen
+
+- Nie endgültig löschen; Dateien mit `trash` in den Papierkorb verschieben.
+- Ersatz-Papierkorb, falls `trash` nicht verfügbar ist oder fehlschlägt: `.trash/` im Projektordner (von Git ignoriert). Nie ein vorhandenes Element überschreiben; bei Namensgleichheit einen Zeitstempel anhängen (z.B. `notes_2026-11-12T1530.md`) und den Wiederherstellungsort melden.
+- Rohdaten, Testergebnisse (`results/`) und Interview-Rohnotizen nie ohne ausdrückliche Bestätigung verschieben oder ersetzen.
 
 ## Inhaltliche und Evaluationsleitplanken
 
