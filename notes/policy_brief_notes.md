@@ -13,6 +13,13 @@ Laufend gepflegte Sammlung, gegliedert wie das spätere Policy Brief. Jeder Punk
 - Kann ein Sprachmodell Fragen zu einer Berichtssammlung so beantworten, dass die Antwort ausschließlich auf den Berichten beruht, nachvollziehbar belegt ist, bei geänderten Regeln den neuesten Stand nennt, bei abweichenden Erfahrungen die Sichtweisen nebeneinander stellt und Lücken offen benennt?
 - Teilfragen: Funktionieren Quellenangaben zuverlässig? Erkennt das Modell die zeitliche Reihenfolge? Bleibt das bei uneinheitlich formatierten Berichten und bei vielen Berichten (Suche) so?
 
+### Einstieg und Kernargument
+
+- **Einstieg über das, was alle nervt (Nutzer):** Zwei bis drei rhetorische Fragen zu Beginn, z. B. „Wer kann mir genau sagen, wo alle Berichte zu Thema X liegen?“ und „Was ist, wenn meine Frage themenübergreifend ist?“. Danach sachlich weiter; auf jede Frage folgt ein Beleg aus dem PoC (Vorschlag).
+- **Zeit ist die knappste Ressource, hier setzt der Vorschlag an (Nutzer):** Sich durch alle Quellen zu arbeiten (falls man sie überhaupt findet) kostet viel Zeit. Das Modell braucht auch Zeit, ist aber deutlich schneller, und in der Wartezeit kann man anderes erledigen.
+- **Nicht perfekt, aber Menschen auch nicht (Nutzer):** Lieber eine gute Antwort in Sekunden als eine vielleicht gleich gute nach einer Stunde Suche, wenn man diese Qualität bei der Flut an Quellen überhaupt erreicht.
+- **Mit Messwerten statt runden Zahlen argumentieren (Vorschlag):** Gemessen (v11, 48 Berichte, 25 Fragen): 64 von 75 Antworten vollständig erfüllt (85 %), keine falsch; Wartezeit je Frage etwa 18–40 s. Dem eine realistische Schätzung für die Handsuche gegenüberstellen. Zur Fehlerquote ehrlich sein: Modellfehler sehen anders aus als menschliche (z. B. überholter Stand selbstsicher als aktuell); deshalb sind die Fußnoten mit Titel und Datum der Schlüssel – die Zeitersparnis gilt, weil die Prüfung schnell geht. Einsatz zur Vorbereitung von Entscheidungen, nicht als Ersatz dafür.
+
 ## Vorgehen
 
 - **Daten:** Fiktive, harmlose Testberichte zu Verwaltungsabläufen, derzeit 48. Vollständiger Katalog der eingebauten Testfälle: `data/synthetic_reports/README.md`. Gezielt eingebaute Fälle:
