@@ -25,7 +25,7 @@ Diese Regeln beschreiben Quellenverhalten, nicht die Wahrheit oder Gültigkeit e
 
 ## Vorschlag für eine einfache Architektur
 
-1. **Dokumentenordner:** Markdown- und Textdateien liegen lokal in einem festgelegten Eingabeordner. Ein bewusst gestarteter Import liest neue oder geänderte Dateien ein.
+1. **Dokumentenordner:** Markdown- und Textdateien liegen lokal in einem festgelegten Eingabeordner. Ein bewusst gestarteter Import liest neue oder geänderte Dateien ein. *(Anforderung am 13.11.2026 vom Nutzer geändert: Neue oder geänderte Dateien werden automatisch erfasst, ohne manuellen Import; siehe AGENTS.md.)*
 2. **Lokaler Dokumentenspeicher:** Eine kleine SQLite-Datenbank kann Dokumentmetadaten und Textpassagen speichern. Für Volltextsuche bietet SQLite FTS5; bei zehn kurzen Dokumenten ist zunächst keine separate Vektordatenbank nötig.
 3. **Passagen und Provenienz:** Texte werden anhand von Überschriften in sinnvolle Passagen aufgeteilt. Zu jeder Passage bleiben mindestens Dateiname, Berichtstitel, Dokumentdatum, Abschnitt und stabiler Quellenbezeichner erhalten. Das Dokumentdatum wird aus dem Dokumentinhalt bzw. expliziten Metadaten gelesen, nicht aus dem Änderungsdatum der Datei abgeleitet.
 4. **Suche:** Als einfache Baseline dient Volltextsuche. Als Vergleich oder Erweiterung kann lokale semantische Suche über Embeddings hinzukommen. Eine kombinierte Suche ist ein möglicher nächster Schritt, wenn die Baseline relevante Belege verfehlt.
