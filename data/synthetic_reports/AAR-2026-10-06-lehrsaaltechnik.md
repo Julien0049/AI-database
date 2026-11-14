@@ -14,7 +14,7 @@
 **Was nicht gut lief**
 
 - Private Geräte lassen sich nicht mit der Drahtlosübertragung verbinden. Mehrere externe Vortragende standen deshalb zunächst ohne Präsentation da. Sie müssen ihre Präsentation vorab auf einem Dienstlaptop bereitstellen lassen.
-- In den kleinen Seminarräumen ohne fest installiertes Display sind weiterhin mobile Beamer nötig. Beamer und mobile Lautsprecher für Lehr- und Seminarsäle werden über ein Ticket im IT-Serviceportal angefordert; der IT-Service baut die Geräte vor Beginn auf und nach Ende wieder ab. Das hat im Quartal in 41 von 44 Fällen pünktlich geklappt. In drei Fällen war das Ticket am Vortag nach 14 Uhr gestellt worden und konnte nicht mehr berücksichtigt werden.
+- In den kleinen Seminarräumen ohne fest installiertes Display sind weiterhin mobile Beamer nötig. Beamer und mobile Lautsprecher für alle Lehr- und Seminarräume des Standorts, auch außerhalb von Gebäude 3, werden über ein Ticket im IT-Serviceportal angefordert; der IT-Service baut die Geräte vor Beginn auf und nach Ende wieder ab. Das hat im Quartal in 41 von 44 Fällen pünktlich geklappt. In drei Fällen war das Ticket am Vortag nach 14 Uhr gestellt worden und konnte nicht mehr berücksichtigt werden.
 - Die Tonanlage im Saal 3.06 hat in den ersten zwei Wochen gebrummt. Ursache war ein falsch verlegtes Kabel; behoben am 28.07.2026.
 
 **Hinweise für Hörsaalleitungen**

@@ -83,7 +83,7 @@ Fiktives Ausbildungszentrum mit Truppenübungsplatz Tannwald. Gliederung und Lä
 | Besuchertag (30.04.2026, 1.125 W.) | viele Besucherregeln verteilt über einen langen Bericht; Bezugszeile mit früherem Datum |
 | Sanitätsdienst Schießausbildung (23.09.2025, 526 W.) | **ändert HV-7:** digitale Mängelmeldung für Erste-Hilfe-Kästen, nur nebenbei |
 | Ortskampf mit externen Ausbildern (21.07.2026, 498 W.) | viel Material zu Externen, aber keine Angaben zum Honorar; abweichende Ausbildermeinungen zum Tempo |
-| Lehrsaaltechnik (06.10.2026, 291 W.) | **ändert Frage 21:** Beamer über IT-Serviceportal, ohne sprachlichen Hinweis |
+| Lehrsaaltechnik (06.10.2026, 291 W.) | **ändert Frage 21:** Beamer über IT-Serviceportal für alle Lehr- und Seminarräume des Standorts, ohne sprachlichen Hinweis (am 14.11.2026 nach v17 präzisiert: vorher nur auf Gebäude 3 lesbar, Testfehler) |
 
 ### Fremde Themen (Störberichte)
 
