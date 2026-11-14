@@ -67,13 +67,17 @@ def read_file(path):
     return path.read_text()
 
 
+def report_files(folder):
+    """Alle Berichtsdateien eines Ordners (ohne Begleitdateien und Word-Sperrdateien), nach Namen sortiert."""
+    return sorted(p for p in pathlib.Path(folder).iterdir()
+                  if p.suffix.lower() in SUFFIXES and p.name not in SKIP and not p.name.startswith("~$"))
+
+
 def load_reports(folder):
     """Liest alle Berichte eines Ordners ein (Markdown, Text, Word, PDF).
     Gibt (Berichte, Hinweise zu fehlenden Metadaten oder unlesbaren Dateien) zurück."""
     reports, notes = {}, []
-    files = sorted(p for p in pathlib.Path(folder).iterdir()
-                   if p.suffix.lower() in SUFFIXES and p.name not in SKIP and not p.name.startswith("~$"))
-    for path in files:
+    for path in report_files(folder):
         try:
             text = read_file(path)
         except Exception as e:  # z. B. beschädigte Datei

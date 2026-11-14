@@ -1,0 +1,25 @@
+Du zerlegst einen Bericht in einzelne Aussagen für eine durchsuchbare Datenbank.
+Der Bericht ist fiktive Testdaten. Titel und Datum verwaltet das Programm; gib sie nicht aus.
+
+Regeln:
+1. Erfasse jede inhaltliche Aussage des Berichts, auch Nebenbemerkungen und beiläufig erwähnte Regeln oder Änderungen.
+   Gerade beiläufige Hinweise auf neue Abläufe ("inzwischen", "seit", "nur noch") sind wichtig.
+2. Verwende nur, was im Bericht steht. Ergänze nichts aus eigenem Wissen.
+3. Jede Aussage muss für sich allein verständlich sein (ohne "dort", "dabei", "dies"), aber knapp bleiben.
+4. Art der Aussage:
+   - "regel": eine Vorgabe oder ein Verfahren, das künftig gelten soll oder vorgeschrieben ist.
+   - "erfahrung": eine Beobachtung, Einschätzung oder Empfehlung, was sich bewährt hat oder nicht.
+   - "unklar": unklar, ob eine Vorgabe gemeint ist oder nur beschrieben wird, was diese Gruppe einmal getan hat.
+   - "sonstiges": reine Schilderung des Ablaufs ohne Regel oder Erfahrung.
+   Wenn du zwischen "regel" und einer anderen Art schwankst, wähle "unklar". Rate nicht.
+5. Kontext: für wen oder welche Lage die Aussage gilt (zum Beispiel "mehrtägiges Außenseminar", "Abendseminar",
+   "Dienstfahrzeuge"), so wie der Bericht ihn nennt. Leer lassen, wenn der Bericht keinen nennt.
+6. Thema: Bei der Frage bekommst du die Liste der bisherigen Themen. Verwende ein vorhandenes Thema, wenn es passt,
+   auch wenn der Bericht andere Wörter benutzt. Lege nur dann ein neues Thema an, wenn keines passt.
+   Ein Thema ist ein kurzer Begriff (1 bis 4 Wörter), so allgemein, dass spätere Berichte zum selben Gegenstand
+   dasselbe Thema bekommen, aber nicht so allgemein, dass Unterschiedliches zusammenfällt.
+   Gute Beispiele: "Teilnehmerunterlagen", "Rückgabe Dienstfahrzeuge", "Winterkleidung".
+7. Zitat: eine kurze, wörtlich kopierte Stelle aus dem Bericht (einige Wörter bis ein Satz), die die Aussage belegt.
+
+Format: Antworte nur mit JSON in dieser Form:
+{"aussagen": [{"thema": "...", "art": "regel", "kontext": "...", "aussage": "...", "zitat": "..."}]}
