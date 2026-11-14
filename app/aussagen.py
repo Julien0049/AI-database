@@ -75,15 +75,7 @@ def extract_dummy(text, topic_list, key=None):
 
 
 def quote_ok(zitat, text):
-    """Zitat wörtlich im Text; Auslassungen ("..." oder "…") erlaubt, die Teile müssen in dieser Reihenfolge vorkommen."""
-    parts = [aidb.norm(p) for p in re.split(r"\.\.\.|…", zitat or "") if aidb.norm(p)]
-    hay, pos = aidb.norm(text), 0
-    for part in parts:
-        pos = hay.find(part, pos)
-        if pos < 0:
-            return False
-        pos += len(part)
-    return bool(parts)
+    return aidb.quote_in(zitat, text)
 
 
 def recheck_quotes(db, folder):

@@ -168,15 +168,27 @@ def parse(raw):
     return json.loads(raw)
 
 
+def quote_in(zitat, text):
+    """Zitat wörtlich im Text; Auslassungen ("..." oder "…") erlaubt (seit v15), die Teile müssen in Reihenfolge vorkommen."""
+    parts = [norm(p) for p in re.split(r"\.\.\.|…", zitat or "") if norm(p)]
+    hay, pos = norm(text), 0
+    for part in parts:
+        pos = hay.find(part, pos)
+        if pos < 0:
+            return False
+        pos += len(part)
+    return bool(parts)
+
+
 def check(answer, reports):
     """Markiert jeden Beleg als gültig, falscher Bericht oder nicht gefunden."""
     for satz in answer["saetze"]:
         for beleg in satz.get("belege", []):
-            zitat = norm(beleg.get("zitat", ""))
+            zitat = beleg.get("zitat", "")
             rid = beleg.get("bericht")
-            if rid in reports and zitat and zitat in norm(reports[rid]["text"]):
+            if rid in reports and quote_in(zitat, reports[rid]["text"]):
                 beleg["status"] = "gültig"
-            elif zitat and any(zitat in norm(r["text"]) for r in reports.values()):
+            elif any(quote_in(zitat, r["text"]) for r in reports.values()):
                 beleg["status"] = "falscher Bericht"
             else:
                 beleg["status"] = "nicht gefunden"
