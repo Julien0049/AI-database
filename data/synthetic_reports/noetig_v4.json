@@ -1,0 +1,126 @@
+{
+ "stand": "dataset-v4",
+ "hinweis": "Nötige Berichte je Frage (müssen unter den Treffern sein). Bis Frage 25 wie s5, außer 10, 14, 21 (Varianten 10b, 14b, 21b). Frage 13 und 33: keine.",
+ "noetig": {
+  "1": [
+   "AAR-2025-01-20-shared-set-returns.md"
+  ],
+  "2": [
+   "AAR-2025-01-20-shared-set-returns.md",
+   "AAR-2025-02-04-missing-items.md"
+  ],
+  "3": [
+   "AAR-2025-06-10-one-day-seminars.md"
+  ],
+  "4": [
+   "AAR-2022-09-14-material-return.md"
+  ],
+  "5": [
+   "AAR-2025-02-04-missing-items.md"
+  ],
+  "6": [
+   "AAR-2025-02-04-missing-items.md"
+  ],
+  "7": [
+   "AAR-2025-03-18-logbook-form.md"
+  ],
+  "8": [
+   "AAR-2025-09-15-vehicles-multi-day-seminars.md"
+  ],
+  "9": [
+   "AAR-2024-11-05-vehicle-damage.md"
+  ],
+  "10": [
+   "AAR-2026-02-27-gruppenfuehrer-truppenuebungsplatz.md"
+  ],
+  "11": [
+   "AAR-2023-02-15-winter-clothing-layers.md",
+   "AAR-2024-01-25-winter-waiting-times.md",
+   "AAR-2025-12-10-winter-socks-and-jackets.md"
+  ],
+  "12": [
+   "AAR-2023-02-15-winter-clothing-layers.md",
+   "AAR-2024-01-25-winter-waiting-times.md",
+   "AAR-2025-12-10-winter-socks-and-jackets.md"
+  ],
+  "13": [],
+  "14": [
+   "AAR-2023-04-12-vehicle-returns.md",
+   "AAR-2024-01-08-vehicle-reservations.md",
+   "AAR-2024-11-05-vehicle-damage.md",
+   "AAR-2025-03-18-logbook-form.md",
+   "AAR-2025-09-15-vehicles-multi-day-seminars.md",
+   "AAR-2026-02-27-gruppenfuehrer-truppenuebungsplatz.md"
+  ],
+  "15": [
+   "AAR-2023-02-15-winter-clothing-layers.md",
+   "AAR-2024-01-25-winter-waiting-times.md",
+   "AAR-2025-12-10-winter-socks-and-jackets.md"
+  ],
+  "16": [
+   "AAR-2025-01-20-shared-set-returns.md",
+   "AAR-2025-09-15-vehicles-multi-day-seminars.md",
+   "AAR-2023-02-15-winter-clothing-layers.md",
+   "AAR-2024-01-25-winter-waiting-times.md",
+   "AAR-2025-12-10-winter-socks-and-jackets.md"
+  ],
+  "17": [
+   "AAR-2024-03-02-multi-day-seminar-returns.md",
+   "AAR-2025-01-20-shared-set-returns.md"
+  ],
+  "18": [
+   "AAR-evening-keys-a.md"
+  ],
+  "19": [
+   "AAR-evening-keys-a.md",
+   "AAR-evening-keys-b.md"
+  ],
+  "20": [
+   "AAR-2025-05-20-teamwork-day-seminar.md"
+  ],
+  "21": [
+   "AAR-2026-10-06-lehrsaaltechnik.md"
+  ],
+  "22": [
+   "AAR-2026-04-21-seminar-day-preparation.md"
+  ],
+  "23": [
+   "AAR-2024-07-09-summer-outdoor-day.md"
+  ],
+  "24": [
+   "AAR-2024-02-20-room-booking.md"
+  ],
+  "25": [
+   "AAR-2026-02-03-visitor-badges.md",
+   "AAR-2025-03-guest-wifi.md",
+   "AAR-parking-visitors.md",
+   "AAR-2026-06-16-project-planning-evening.md"
+  ],
+  "26": [
+   "AAR-2025-09-23-sanitaetsdienst-schiessausbildung.md"
+  ],
+  "27": [
+   "AAR-2026-03-19-kfz-dienst-uebung.md"
+  ],
+  "28": [
+   "AAR-2026-05-12-stubenabnahme.md"
+  ],
+  "29": [
+   "AAR-2026-06-24-truppenverpflegung.md"
+  ],
+  "30": [
+   "AAR-2025-11-18-funkgeraete.md"
+  ],
+  "31": [
+   "AAR-2026-01-23-winterbiwak.md",
+   "AAR-2026-02-27-gruppenfuehrer-truppenuebungsplatz.md"
+  ],
+  "32": [
+   "AAR-2026-04-30-besuchertag.md"
+  ],
+  "33": [],
+  "34": [
+   "AAR-2026-01-23-winterbiwak.md"
+  ]
+ }
+}

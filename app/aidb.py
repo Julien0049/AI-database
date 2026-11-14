@@ -29,13 +29,24 @@ def find_title(text):
 
 
 def find_date(text):
-    """Frühestes Datum im Text, gleich in welchem der bekannten Formate; None, wenn keines vorkommt."""
+    """Berichtsdatum, gleich in welchem der bekannten Formate; None, wenn keines vorkommt.
+    Reihenfolge (seit dataset-v4): Zeile mit „Datum:“, sonst Datum in den letzten Zeilen (Unterschrift),
+    sonst das erste Datum im Text. Vorher wurde immer das erste Datum genommen; bei Bezugszeilen oder
+    Übungsdaten vor dem Berichtsdatum war das falsch."""
     hits = []
     for pattern, parts in DATE_PATTERNS:
         for m in re.finditer(pattern, text, re.I):
             d, mo, y = parts([None] + [g.lower() for g in m.groups()])
             hits.append((m.start(), f"{int(d):02d}.{int(mo):02d}.{y}"))
-    return min(hits)[1] if hits else None
+    if not hits:
+        return None
+    for pos, date in sorted(hits):
+        line = text[text.rfind("\n", 0, pos) + 1:pos]
+        if re.search(r"datum\W*$", line, re.I):
+            return date
+    last_line = text.rstrip().rfind("\n") + 1
+    signature = [h for h in sorted(hits) if h[0] >= last_line]
+    return signature[-1][1] if signature else sorted(hits)[0][1]
 
 
 SUFFIXES = (".md", ".txt", ".docx", ".pdf")

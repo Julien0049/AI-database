@@ -1,10 +1,10 @@
 # Synthetische AAR-Testberichte
 
-Fiktives, von einem KI-Agenten erstelltes Testmaterial für den AI-Database-PoC. Die Berichte beschreiben ausschließlich harmlose Verwaltungsabläufe. Sie sind keine echten After-Action-Reports, Vorschriften oder verlässlichen Handlungsanweisungen und sind von den persönlichen Projekt- und Interviewnotizen getrennt.
+Fiktives, von einem KI-Agenten erstelltes Testmaterial für den AI-Database-PoC. Die Berichte beschreiben Verwaltungsabläufe im Seminarbetrieb und (ab `dataset-v4`) organisatorische Erfahrungen aus einem fiktiven militärischen Lehrgangs- und Übungsbetrieb; Waffen und Taktik nur auf allgemeiner, offen bekannter Ebene. Sie sind keine echten After-Action-Reports, Vorschriften oder verlässlichen Handlungsanweisungen und sind von den persönlichen Projekt- und Interviewnotizen getrennt.
 
 [test_questions.md](./test_questions.md) enthält die Testfragen mit erwarteten Belegen, Antwortentwürfen und Kriterien.
 
-## Bestand (48 Berichte)
+## Bestand (58 Berichte)
 
 | Gruppe | Anzahl | Zweck |
 |---|---|---|
@@ -14,6 +14,7 @@ Fiktives, von einem KI-Agenten erstelltes Testmaterial für den AI-Database-PoC.
 | Störberichte: fremde Themen | 10 | Rauschen wie in einer echten Sammlung |
 | Mehrere Stände zu neuen Themen: Beamer (4), Teilnehmerunterlagen (3) | 7 | Suche muss den neuesten Stand mitfinden |
 | Lange Berichte mit mehreren Themen (Tages- und Abendseminare) | 6 | nebenbei erwähnte Regeln, mehrere Daten im Text |
+| `dataset-v4`: lange Berichte aus Lehrgangs- und Übungsbetrieb | 10 | 241–1.125 Wörter; vergrabene Änderungen, Kontextfallen; Nachtragstest; Fragen 26–34, Varianten 10b, 21b |
 
 Die Störberichte ändern keine erwartete Antwort der Fragen 1–19, solange der Kontext richtig getrennt wird.
 
@@ -67,6 +68,23 @@ Gesamtberichte über einzelne Tages- oder Abendseminare (94–137 Wörter, drei 
 | Tagesseminar „Präsentieren“ (02.12.2025) | Fotos nur mit Zustimmung; Beamer bereits im Raum (bestätigt den neuesten Beamer-Stand) |
 | Tagesseminar mit externen Gästen (24.03.2026) | nur Bekanntes (Besucherausweise, Parkplätze, WLAN, Fundsachen) in neuer Kombination |
 
+### Lange Berichte aus Lehrgangs- und Übungsbetrieb (`dataset-v4`)
+
+Fiktives Ausbildungszentrum mit Truppenübungsplatz Tannwald. Gliederung und Länge bewusst unterschiedlich (Nummerierung, Fließtext, Stichpunkte; 241–1.125 Wörter). Drei Berichte ändern bestehende Themen (Nachtragstest).
+
+| Bericht | Falle |
+|---|---|
+| Lehrgang Gruppenführer, Truppenübungsplatz (27.02.2026, 790 W.) | **ändert Frage 10:** Fahrzeuge nur noch über das Fahrzeugportal, 3 Werktage vorher, mitten in Abschnitt 4.3; Lunchpakete bis Mittwoch der Vorwoche (später abgelöst); Bezugszeile mit früherem Datum vor dem Berichtsdatum |
+| Übung „Winterbiwak“ (23.01.2026, 1.011 W.) | abweichende Bekleidungserfahrungen der Züge; Wachablösung 60 Minuten nur für diese Übung angeordnet |
+| Funkgeräte im Lehrgang (18.11.2025, 347 W.) | „Früher …“ und „Diese Regelung gilt seit … nicht mehr“ (Bezug auf den vorigen Absatz) |
+| Kfz-Dienst Übung „Märzsturm“ (19.03.2026, 856 W.) | Selbstbetankung, vollgetankt zurück – Einschränkung „nur Übungsbetrieb“ nur in der Vorbemerkung; Datum nur in der Unterschrift, Übungsdaten vorher im Text |
+| Stubenabnahme (12.05.2026, 241 W.) | Stubenschlüssel an den UvD, nicht in den Schlüsselkasten (Wortfalle zu Raumschlüsseln) |
+| Truppenverpflegung (24.06.2026, 428 W.) | zwei Änderungen (VA-3 zehn Werktage; Sonderkost nur namentlich); löst die Lunchpaket-Frist ab; Kantine ausdrücklich unverändert |
+| Besuchertag (30.04.2026, 1.125 W.) | viele Besucherregeln verteilt über einen langen Bericht; Bezugszeile mit früherem Datum |
+| Sanitätsdienst Schießausbildung (23.09.2025, 526 W.) | **ändert HV-7:** digitale Mängelmeldung für Erste-Hilfe-Kästen, nur nebenbei |
+| Ortskampf mit externen Ausbildern (21.07.2026, 498 W.) | viel Material zu Externen, aber keine Angaben zum Honorar; abweichende Ausbildermeinungen zum Tempo |
+| Lehrsaaltechnik (06.10.2026, 291 W.) | **ändert Frage 21:** Beamer über IT-Serviceportal, ohne sprachlichen Hinweis |
+
 ### Fremde Themen (Störberichte)
 
 Raumbuchung, Verpflegung, Druckerausfall, Seminaranmeldung, Reisekosten, WLAN für Gäste, Feedbackbögen, Besucherparkplätze, Fundsachen, Teilnahmebescheinigungen.
@@ -83,7 +101,7 @@ Raumbuchung, Verpflegung, Druckerausfall, Seminaranmeldung, Reisekosten, WLAN f�
 | Name und Datum nur als Unterschrift am Ende | Fahrtenbuch-Formular, Feedback, Druckerausfall, Fahrradgarage | Datum korrekt |
 | Kein Datum | Reservierung von Fahrzeugen, Besucherparkplätze | „Datum unbekannt“ |
 | Nur Monat und Jahr („März 2025“) | WLAN für Gäste | „Datum unbekannt“ (bekannte Grenze) |
-| Ereignisdatum im Text vor dem Berichtsdatum | Druckerausfall (Ausfall 10.03.2025, Bericht 14.03.2025); Abendseminar „Projektplanung“ (Vorbereitung 02.06.2026, Bericht 16.06.2026) | Programm nimmt fälschlich das erste Datum (bekannte Grenze) |
+| Ereignisdatum im Text vor dem Berichtsdatum | Druckerausfall (Ausfall 10.03.2025, Bericht 14.03.2025); Abendseminar „Projektplanung“ (Vorbereitung 02.06.2026, Bericht 16.06.2026) | bis `dataset-v3`: Programm nahm fälschlich das erste Datum; seit 14.11.2026 Vorrang für „Datum:“-Zeile, dann Datum in der letzten Zeile (Unterschrift); beide Berichte jetzt korrekt |
 | Kein Name oder nur Kürzel | Rückgabe gemeinsamer Sets, Kleidung im Winter, Erste-Hilfe-Kästen, Fundsachen, Gruppenräume, Reservierung („D. Lenz“), Schäden („Hausverwaltung“) | ohne Auswirkung auf Quellen |
 | Dateiname ohne Datum | Schlüsselberichte, Besucherparkplätze | Reihenfolge in der Sammlung nicht chronologisch |
 
@@ -93,3 +111,4 @@ Raumbuchung, Verpflegung, Druckerausfall, Seminaranmeldung, Reisekosten, WLAN f�
 - `dataset-v2`: dreizehn einheitlich formatierte Berichte.
 - Seitdem: vier umformatierte Kernberichte (v9), Datumstest (v10), Störberichte, mehrere Stände und lange Berichte; Fragen 20–25.
 - `dataset-v3`: 48 Berichte, 25 vom Nutzer geprüfte Fragen; Grundlage für den Suchtest.
+- `dataset-v4`: 58 Berichte; zehn lange Berichte aus Lehrgangs- und Übungsbetrieb, Fragen 26–34, Varianten 10b und 21b.

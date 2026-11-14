@@ -24,10 +24,11 @@ ap = argparse.ArgumentParser()
 ap.add_argument("--db", default=str(ROOT / "index/aussagen.sqlite"))
 ap.add_argument("--version", default="v14")
 ap.add_argument("--ausgabe", default=str(ROOT / "results"))
+ap.add_argument("--noetig", default=None, help="JSON mit nötigen Berichten je Frage (Standard: aus Suchtest s5)")
 args = ap.parse_args()
 
 S5 = json.loads((ROOT / "results/ergebnisse_suche_2026-11-05_s5.json").read_text())
-NEEDED = {int(i): v for i, v in S5["noetig"].items()}
+NEEDED = {int(i): v for i, v in (json.loads(pathlib.Path(args.noetig).read_text()) if args.noetig else S5)["noetig"].items()}
 QUESTIONS = re.findall(r"\*\*Frage\*\*\s*\n\s*> (.+)", (ROOT / "data/synthetic_reports/test_questions.md").read_text())
 KS = (3, 5, 10, 15, 20, 30)
 
@@ -56,9 +57,11 @@ def complete_at(ranks, k):
     return round(sum(set(NEEDED[i]) <= set(ranks[i][:k]) for i in scored) / len(scored), 2)
 
 
-s5_ranks = {int(i): r for i, r in S5["ranglisten"]["Bedeutung (klein)"].items()}
-summary = {"Aussagen (v14)": {f"vollständig@{k}": complete_at(rankings, k) for k in KS},
-           "Ganze Berichte (s5)": {f"vollständig@{k}": complete_at(s5_ranks, k) for k in KS}}
+summary = {f"Aussagen ({args.version})": {f"vollständig@{k}": complete_at(rankings, k) for k in KS}}
+s5_ranks = None
+if not args.noetig:  # Vergleich mit s5 nur auf dem Datensatz von s5 (dataset-v3)
+    s5_ranks = {int(i): r for i, r in S5["ranglisten"]["Bedeutung (klein)"].items()}
+    summary["Ganze Berichte (s5)"] = {f"vollständig@{k}": complete_at(s5_ranks, k) for k in KS}
 
 print(f"{n_reports} Berichte, {len(units)} Aussagen, {len(QUESTIONS)} Fragen\n")
 print("Rang der nötigen Berichte je Frage (Aussagen v14 / ganze Berichte s5)")
@@ -66,7 +69,8 @@ for i in scored:
     print(f"Frage {i}: {QUESTIONS[i-1]}")
     for n in NEEDED[i]:
         a = rankings[i].index(n) + 1 if n in rankings[i] else "–"
-        print(f"   {a!s:>2} / {s5_ranks[i].index(n) + 1:>2}   {n}")
+        b = f" / {s5_ranks[i].index(n) + 1:>2}" if s5_ranks else ""
+        print(f"   {a!s:>2}{b}   {n}")
 print("\nvollständig@k (Anteil der", len(scored), "Fragen mit nötigen Berichten)")
 for m, v in summary.items():
     print(f"   {m:22}", "  ".join(f"@{k}: {v[f'vollständig@{k}']:.0%}" for k in KS))

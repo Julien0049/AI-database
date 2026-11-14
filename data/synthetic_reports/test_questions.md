@@ -1,7 +1,7 @@
 # Testfragen und Antwortentwürfe
 
-**Status:** Fragen 1–6 und ihre Antwortentwürfe wurden mit dem Nutzer einzeln geprüft (Stand `dataset-v1`). Fragen 7–10 zur Fahrzeugausleihe wurden vom Nutzer durchgesehen und als passend bestätigt. Fragen 11–13 zu Erfahrungsberichten folgen einem mit dem Nutzer abgestimmten Entwurf; der endgültige Wortlaut ist noch durchzusehen. Fragen 14–17 (Zusammenfassungen und Änderungsverlauf) sind Agentenentwürfe nach Vorgabe des Nutzers; vom Nutzer durchgesehen und vorläufig bestätigt. Fragen 18–19 (Datumstest) und 20–25 (Suchtest) sind Agentenentwürfe, vom Nutzer durchgesehen und bestätigt (Stand `dataset-v3`). Vor einem Modellvergleich sollen sie nach Abschluss der weiteren Testdatensatz-Arbeit eingefroren werden.
-**Datensatz:** Die 48 synthetischen Markdown-AARs in diesem Ordner; Übersicht und Katalog der Testfälle in [README.md](./README.md). Fragen 1–19 beziehen sich auf die 15 Kern- und Datumstestberichte, Fragen 20–25 auf die Berichte für den Suchtest.
+**Status:** Fragen 1–6 und ihre Antwortentwürfe wurden mit dem Nutzer einzeln geprüft (Stand `dataset-v1`). Fragen 7–10 zur Fahrzeugausleihe wurden vom Nutzer durchgesehen und als passend bestätigt. Fragen 11–13 zu Erfahrungsberichten folgen einem mit dem Nutzer abgestimmten Entwurf; der endgültige Wortlaut ist noch durchzusehen. Fragen 14–17 (Zusammenfassungen und Änderungsverlauf) sind Agentenentwürfe nach Vorgabe des Nutzers; vom Nutzer durchgesehen und vorläufig bestätigt. Fragen 18–19 (Datumstest) und 20–25 (Suchtest) sind Agentenentwürfe, vom Nutzer durchgesehen und bestätigt (Stand `dataset-v3`). Ab `dataset-v4`: Varianten 10b, 14b und 21b sowie Fragen 26–34 (Agentenentwürfe, vom Nutzer bestätigt am 14.11.2026). Vor einem Modellvergleich sollen sie nach Abschluss der weiteren Testdatensatz-Arbeit eingefroren werden.
+**Datensatz:** Die 58 synthetischen Markdown-AARs (`dataset-v4`; bis `dataset-v3` 48) in diesem Ordner; Übersicht und Katalog der Testfälle in [README.md](./README.md). Fragen 1–19 beziehen sich auf die 15 Kern- und Datumstestberichte, Fragen 20–25 auf die Berichte für den Suchtest.
 **Zweck:** Prüfen, ob ein System direkte Belege findet, Widersprüche und Ergänzungen unterscheidet, den passenden Kontext berücksichtigt und bei fehlender Evidenz nicht rät.
 
 Quellen werden in den Antwortentwürfen mit Titel und Datum angegeben, weil ein Datum allein bei vielen Berichten pro Tag nicht eindeutig ist. Die Zielantworten sind bewusst knapp und auf den geschilderten Anwendungsfall ausgerichtet. Die Hinweise zur Bewertung sind für die Auswertung gedacht und sollen nicht zwingend in der Nutzerantwort erscheinen. Bei Konfliktfällen kann das System den älteren Widerspruch intern erkennen und dafür bewertet werden, während die Nutzerantwort nur das passende Verfahren und dessen stützende Quelle(n) nennt.
@@ -215,6 +215,11 @@ Quellen werden in den Antwortentwürfen mit Titel und Datum angegeben, weil ein 
 - Beantwortet den belegten Teil.
 - Sagt offen, dass zu Kosten nichts belegt ist, und erfindet keinen Betrag.
 
+**Ab `dataset-v4` (Variante 10b, Agentenentwurf, vom Nutzer bestätigt am 14.11.2026)**
+- Neuer Beleg: [AAR-2026-02-27-gruppenfuehrer-truppenuebungsplatz.md](./AAR-2026-02-27-gruppenfuehrer-truppenuebungsplatz.md) (27.02.2026), Abschnitt 4.3.
+- Erwartete Antwort: Seit dem 01.02.2026 standortweit nur über das Fahrzeugportal im Intranet, mindestens drei Werktage vor Fahrtbeginn; telefonische Anforderungen werden nicht mehr angenommen. Zu Kosten keine Angaben.
+- „Zwei Werktage bei der Fahrbereitschaft“ (Bericht ohne Datum) nicht als gleichrangige Alternative nennen. Falle: Die Änderung steht mitten in einer Schilderung eines langen Berichts.
+
 ## Frage 11 – Erfahrungen zusammenführen, Abweichung benennen
 
 **Frage**
@@ -303,6 +308,10 @@ Alle fünf Fahrzeugberichte (12.04.2023, 08.01.2024, 05.11.2024, 18.03.2025, 15.
 - Deckt alle Punkte der Checkliste ab.
 - Nennt nur den aktuellen Stand zur Tankregel; „vollgetankt zurückgeben“ erscheint nicht.
 - Übernimmt nichts aus den Material- oder Kleidungsberichten.
+
+**Ab `dataset-v4` (Variante 14b, Agentenentwurf)**
+- Zusätzlicher Beleg: [AAR-2026-02-27-gruppenfuehrer-truppenuebungsplatz.md](./AAR-2026-02-27-gruppenfuehrer-truppenuebungsplatz.md) (27.02.2026).
+- Reservierung jetzt nur über das Fahrzeugportal, mindestens drei Werktage vorher; „zwei Werktage bei der Fahrbereitschaft“ ist überholt (als aktuell genannt = nicht erfüllt). Die Übungsregeln aus dem Kfz-Dienst-Bericht (19.03.2026) dürfen mit Kontext genannt werden.
 
 ## Frage 15 – Zusammenfassung von Erfahrungen
 
@@ -461,6 +470,11 @@ Alle drei Erfahrungsberichte zur Winterkleidung (15.02.2023, 25.01.2024, 10.12.2
 - Nennt Abholung bei der Haustechnik oder im Seminarbüro nicht als gleichrangige Alternative.
 - Suche: Der Bericht vom 07.10.2025 muss unter den Treffern sein.
 
+**Ab `dataset-v4` (Variante 21b, Agentenentwurf, vom Nutzer bestätigt am 14.11.2026)**
+- Neuer Beleg: [AAR-2026-10-06-lehrsaaltechnik.md](./AAR-2026-10-06-lehrsaaltechnik.md) (06.10.2026).
+- Erwartete Antwort: Über ein Ticket im IT-Serviceportal (spätestens am Vortag bis 14 Uhr); der IT-Service baut den Beamer vor Beginn auf und nach Ende ab. Bei Störungen die Hotline des IT-Service, nicht das Seminarbüro.
+- Seminarbüro, Haustechnik oder Raumkalender nicht als gleichrangige Wege nennen. Falle: kein sprachlicher Hinweis auf die Änderung.
+
 ## Frage 22 – Neuester Stand nur nebenbei erwähnt
 
 **Frage**
@@ -546,6 +560,182 @@ Besucherausweise (03.02.2026), WLAN für Gäste (März 2025), Besucherparkplätz
 - Deckt alle Punkte der Checkliste ab, obwohl sie auf vier bis sechs Berichte verteilt sind.
 - Übernimmt nichts aus Berichten zu Fahrradgarage, Raumschlüsseln oder Fundsachen als Gästeregel, sofern nicht ausdrücklich Gäste betroffen sind.
 - Erfindet für Berichte ohne vollständiges Datum kein Datum.
+
+# Fragen 26–34 zu `dataset-v4` (lange militärische Berichte)
+
+Agentenentwürfe, vom Nutzer am 14.11.2026 bestätigt. Sie beziehen sich auf die zehn langen Berichte aus dem Lehrgangs- und Übungsbetrieb; Katalog in [README.md](./README.md).
+
+## Frage 26 – Neuer Stand nur nebenbei in einem langen Bericht
+
+**Frage**
+
+> Wie melde ich fehlendes Material im Erste-Hilfe-Kasten?
+
+**Erwartete Belege**
+
+- [AAR-2025-09-23-sanitaetsdienst-schiessausbildung.md](./AAR-2025-09-23-sanitaetsdienst-schiessausbildung.md) (23.09.2025), Abschnitt 4.3
+- Älterer Stand: [AAR-2024-09-30-first-aid-kits.md](./AAR-2024-09-30-first-aid-kits.md) (Formular HV-7)
+
+**Antwortentwurf**
+
+> Über die digitale Mängelmeldung im Intranet, Kategorie „Erste Hilfe“; das gilt seit August 2025 für alle Liegenschaften des Standorts. **Quelle:** „Sanitätsdienstliche Absicherung der Schießausbildung im August und September 2025“ (23.09.2025).
+
+**Woran eine gute Antwort erkennbar ist**
+
+- Findet die Regel, obwohl der Bericht von Schießausbildung handelt.
+- Nennt das Formular HV-7 nicht als gleichrangigen Weg.
+
+## Frage 27 – Regel mit weit entfernter Einschränkung
+
+**Frage**
+
+> Muss ich ein Fahrzeug nach einer Übung auf dem Truppenübungsplatz vollgetankt zurückgeben?
+
+**Erwartete Belege**
+
+- [AAR-2026-03-19-kfz-dienst-uebung.md](./AAR-2026-03-19-kfz-dienst-uebung.md) (19.03.2026), Vorbemerkung und Abschnitt 3
+
+**Antwortentwurf**
+
+> Ja. Im Übungsbetrieb auf dem Truppenübungsplatz tanken die Kraftfahrer selbst an der Feldtankstelle, tragen die Menge ins Fahrtenbuch ein und geben das Fahrzeug vollgetankt zurück. Am Standort gelten weiterhin die Regeln der Fahrbereitschaft.
+
+**Woran eine gute Antwort erkennbar ist**
+
+- Ordnet die Regel dem Übungsbetrieb zu.
+- Gegenprobe: Frage 7 (am Standort) muss weiterhin ergeben, dass die Fahrbereitschaft tankt; die Übungsregel darf dort höchstens als Ausnahme mit Kontext erscheinen.
+
+## Frage 28 – Ähnliche Wörter, anderer Kontext (Schlüssel)
+
+**Frage**
+
+> Wo gebe ich nach dem Lehrgang den Stubenschlüssel ab?
+
+**Erwartete Belege**
+
+- [AAR-2026-05-12-stubenabnahme.md](./AAR-2026-05-12-stubenabnahme.md) (12.05.2026)
+
+**Antwortentwurf**
+
+> Nach der Stubenabnahme übergibt der Stubenälteste die Schlüssel persönlich dem Unteroffizier vom Dienst, der die Rückgabe im Schlüsselbuch der Kompanie einträgt; nicht in den Schlüsselkasten am Eingang werfen.
+
+**Woran eine gute Antwort erkennbar ist**
+
+- Überträgt nicht die Regeln für Raumschlüssel nach Abendseminaren (Schlüsselkasten des Seminarbüros) oder für den Truppenübungsplatz.
+
+## Frage 29 – Zwei Änderungen in einem Bericht, Kette über mehrere Berichte
+
+**Frage**
+
+> Bis wann melde ich Verpflegung für eine Übung an, und wie bekommen Vegetarier ihr Essen?
+
+**Erwartete Belege**
+
+- [AAR-2026-06-24-truppenverpflegung.md](./AAR-2026-06-24-truppenverpflegung.md) (24.06.2026)
+- Älterer Stand: [AAR-2026-02-27-gruppenfuehrer-truppenuebungsplatz.md](./AAR-2026-02-27-gruppenfuehrer-truppenuebungsplatz.md) (Lunchpakete bis Mittwoch der Vorwoche)
+- Anderer Kontext: [AAR-2025-02-26-catering.md](./AAR-2025-02-26-catering.md) (Kantine, Vortag 12 Uhr)
+
+**Antwortentwurf**
+
+> Seit dem 01.07.2026 mit dem Formular VA-3, spätestens zehn Werktage vor Beginn, mit Personenzahl, Ausgabeort und Ausgabezeit je Tag. Vegetarische Kost und Sonderkost gibt es bei Übungen nur auf namentliche Anmeldung im VA-3.
+
+**Woran eine gute Antwort erkennbar ist**
+
+- Nennt nicht „Mittwoch der Vorwoche“ als geltende Frist.
+- Überträgt nicht die Kantinen-Regel (Vortag 12 Uhr, vegetarische Option immer).
+
+## Frage 30 – „Früher …“ und Bezug auf den vorigen Absatz
+
+**Frage**
+
+> Wie werden Funkgeräte-Akkus nach dem Lehrgang zurückgegeben?
+
+**Erwartete Belege**
+
+- [AAR-2025-11-18-funkgeraete.md](./AAR-2025-11-18-funkgeraete.md) (18.11.2025)
+
+**Antwortentwurf**
+
+> Zusammen mit dem Gerät in der Fernmeldewerkstatt; jede Person gibt selbst ab und bestätigt auf der Empfangsliste. Die Akkus werden dort auf Restkapazität geprüft, unter 70 Prozent ausgesondert.
+
+**Woran eine gute Antwort erkennbar ist**
+
+- Nennt die gesammelte Rückgabe an der Materialausgabe nicht als geltenden Weg (früherer Stand im selben Bericht).
+
+## Frage 31 – Abweichende Erfahrungen in neuem Kontext
+
+**Frage**
+
+> Welche Erfahrungen gibt es zur Bekleidung bei Kälte im Gelände und im Biwak?
+
+**Erwartete Belege**
+
+- [AAR-2026-01-23-winterbiwak.md](./AAR-2026-01-23-winterbiwak.md) (23.01.2026)
+- [AAR-2026-02-27-gruppenfuehrer-truppenuebungsplatz.md](./AAR-2026-02-27-gruppenfuehrer-truppenuebungsplatz.md) (27.02.2026)
+- Ergänzend möglich: die drei Winterseminar-Berichte, erkennbar als anderer Kontext
+
+**Antwortentwurf**
+
+> Schichten haben sich in Bewegung bewährt; im Stillstand (Posten, Standzeiten) froren viele trotzdem. Im Biwak gehen die Erfahrungen auseinander: Ein Zug hielt Schichten plus Kälteschutzjacke für Standzeiten für ausreichend, der andere hielt eine zusätzliche dick gefütterte Jacke für die Posten für nötig. Kälteschutzjacke griffbereit mitführen; Wollsocken und ein zweites Paar Handschuhe gelten als unverzichtbar.
+
+**Woran eine gute Antwort erkennbar ist**
+
+- Stellt die abweichenden Sichtweisen nebeneinander, ohne Priorität nach Datum.
+- Vermischt Seminar- und Biwakerfahrungen nicht unkenntlich.
+
+## Frage 32 – Viele verteilte Punkte in einem langen Bericht
+
+**Frage**
+
+> Was müssen Besucher beim Besuchertag in der Kaserne beachten?
+
+**Erwartete Belege**
+
+- [AAR-2026-04-30-besuchertag.md](./AAR-2026-04-30-besuchertag.md) (30.04.2026)
+
+**Antwortentwurf**
+
+> Siehe Checkliste.
+
+**Woran eine gute Antwort erkennbar ist**
+
+- Checkliste: Anmeldung bis fünf Werktage vorher namentlich mit Geburtsdatum; Personalausweis am Tor, roter Besucherausweis sichtbar tragen; Bewegung nur in Begleitung; Parken auf P3, nicht in der Kaserne (Ausnahme Schwerbehinderte); kein Fotografieren an Wache, Stabsgebäude, Unterkünften; Unterkunftsgebäude nicht betreten; Besucherausweis an der Wache zurückgeben, Verlust dort melden; Mittagessen nur bar.
+- Überträgt nicht die Gästeregeln des Seminargebäudes (Pforte, Empfang, WLAN).
+
+## Frage 33 – Keine Antwort trotz viel ähnlichem Material
+
+**Frage**
+
+> Wie hoch ist das Honorar für externe Ausbilder?
+
+**Erwartete Belege**
+
+- Keine; [AAR-2026-07-21-externe-ausbilder.md](./AAR-2026-07-21-externe-ausbilder.md) sagt nur, dass die Abwicklung über Personalabteilung und Haushaltsbearbeitung lief und der Lehrgruppe keine Einzelheiten vorliegen.
+
+**Antwortentwurf**
+
+> Dazu enthalten die Berichte keine Angaben.
+
+**Woran eine gute Antwort erkennbar ist**
+
+- Überträgt keine Beträge (z. B. 8,50 Euro Mittagessen) und leitet aus den Reisekostenregeln kein Honorar ab.
+
+## Frage 34 – Einzelfall nicht als allgemeine Regel
+
+**Frage**
+
+> Wie oft werden Alarmposten bei strengem Frost abgelöst?
+
+**Erwartete Belege**
+
+- [AAR-2026-01-23-winterbiwak.md](./AAR-2026-01-23-winterbiwak.md) (23.01.2026)
+
+**Antwortentwurf**
+
+> In der Übung „Winterbiwak“ wurde nach der ersten Nacht für die Dauer der Übung eine Ablösung nach 60 Minuten angeordnet, das hat sich bewährt. Ob das künftig allgemein gelten soll, ist nicht entschieden.
+
+**Woran eine gute Antwort erkennbar ist**
+
+- Gibt die 60 Minuten nicht als allgemein geltende Regel aus.
 
 ## Vorgeschlagene Auswertung
 

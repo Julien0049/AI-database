@@ -79,8 +79,13 @@ def quote_ok(zitat, text):
 
 
 def recheck_quotes(db, folder):
-    """Prüft alle gespeicherten Zitate erneut gegen die aktuellen Dateien (ohne Modell, ohne Kosten)."""
+    """Prüft alle gespeicherten Zitate erneut gegen die aktuellen Dateien und liest Titel und Datum neu
+    (ohne Modell, ohne Kosten). Nötig, wenn sich die Leseregeln des Programms ändern, nicht aber die Dateien."""
     texts = {p.name: aidb.read_file(p) for p in aidb.report_files(folder)}
+    for name, text in texts.items():
+        date = aidb.find_date(text) or "Datum unbekannt"
+        db.execute("UPDATE dokumente SET titel = ?, datum = ?, datum_iso = ? WHERE datei = ?",
+                   (aidb.find_title(text) or name, date, iso(date), name))
     for r in db.execute("SELECT id, datei, zitat FROM aussagen").fetchall():
         ok = r["datei"] in texts and quote_ok(r["zitat"], texts[r["datei"]])
         db.execute("UPDATE aussagen SET zitat_ok = ? WHERE id = ?", (int(ok), r["id"]))
