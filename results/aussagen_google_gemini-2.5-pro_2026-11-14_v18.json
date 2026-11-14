@@ -1,0 +1,4124 @@
+{
+ "versuch": "Aussagen-Datenbank v14",
+ "modell": "google/gemini-2.5-pro",
+ "abgleich": {
+  "neu": [],
+  "geändert": [
+   "AAR-2026-10-06-lehrsaaltechnik.md"
+  ],
+  "entfernt": [],
+  "unverändert": 57,
+  "fehler": [],
+  "kosten": 0.049335,
+  "dauer_s": 35.8,
+  "themen": 121,
+  "aussagen_gesamt": 358,
+  "zitate_nicht_gefunden": 1
+ },
+ "dokumente": [
+  {
+   "datei": "AAR-2022-03-08-projectors-facility.md",
+   "fingerabdruck": "12fec6e68ad2305d15be59cd27e81d0ff5cc77f1cfd7f8252fb863803e1d0eab",
+   "titel": "Beamer für Seminare",
+   "datum": "08.03.2022",
+   "datum_iso": "2022-03-08",
+   "eingelesen": "2026-11-13T22:25:11",
+   "kosten": 0.02075875
+  },
+  {
+   "datei": "AAR-2022-09-14-material-return.md",
+   "fingerabdruck": "435fc3ca447c5a146f79c17223656d5a94c159019066936b26985a10f94d9953",
+   "titel": "Rückgabe ausgegebener Materialsets",
+   "datum": "14.09.2022",
+   "datum_iso": "2022-09-14",
+   "eingelesen": "2026-11-13T22:25:25",
+   "kosten": 0.01520625
+  },
+  {
+   "datei": "AAR-2023-02-15-winter-clothing-layers.md",
+   "fingerabdruck": "01b5fee9d95d512df094e79814b60f7221012f7f4db5c9c00e9ec1eb9104dece",
+   "titel": "AAR-2023-02-15-winter-clothing-layers.md",
+   "datum": "15.02.2023",
+   "datum_iso": "2023-02-15",
+   "eingelesen": "2026-11-13T22:25:40",
+   "kosten": 0.01702625
+  },
+  {
+   "datei": "AAR-2023-03-15-handouts-printed.md",
+   "fingerabdruck": "d46231449c017f974402e7edf5fc360ac90670269d447d7b5994483480fecbd5",
+   "titel": "Teilnehmerunterlagen",
+   "datum": "15.03.2023",
+   "datum_iso": "2023-03-15",
+   "eingelesen": "2026-11-13T22:26:00",
+   "kosten": 0.02444
+  },
+  {
+   "datei": "AAR-2023-04-12-vehicle-returns.md",
+   "fingerabdruck": "054d5d6f4947721f739e118a3af25c374e1a6cf4315ff92157ad3099f1dac7f5",
+   "titel": "Rückgabe von Dienstfahrzeugen",
+   "datum": "12.04.2023",
+   "datum_iso": "2023-04-12",
+   "eingelesen": "2026-11-13T22:26:12",
+   "kosten": 0.01748
+  },
+  {
+   "datei": "AAR-2023-09-05-seminar-registration.md",
+   "fingerabdruck": "76d894fe1532aeb826b520937d67a05186d1bcbed0b94949320b3ad02d4e9426",
+   "titel": "Anmeldung zu Seminaren",
+   "datum": "05.09.2023",
+   "datum_iso": "2023-09-05",
+   "eingelesen": "2026-11-13T22:26:23",
+   "kosten": 0.01319875
+  },
+  {
+   "datei": "AAR-2023-10-17-sports-equipment.md",
+   "fingerabdruck": "549e1a330f3181e6008e5632ad5c2887c087fa90553249faf36a6d0231940844",
+   "titel": "Rückgabe von Sportgeräten",
+   "datum": "17.10.2023",
+   "datum_iso": "2023-10-17",
+   "eingelesen": "2026-11-13T22:26:40",
+   "kosten": 0.024135
+  },
+  {
+   "datei": "AAR-2024-01-08-vehicle-reservations.md",
+   "fingerabdruck": "df181ace776d5a2aa81f6cd9077019972d0fd9e564c0b871110b703d8c23b41c",
+   "titel": "Reservierung von Fahrzeugen",
+   "datum": "Datum unbekannt",
+   "datum_iso": null,
+   "eingelesen": "2026-11-13T22:26:51",
+   "kosten": 0.01630375
+  },
+  {
+   "datei": "AAR-2024-01-25-winter-waiting-times.md",
+   "fingerabdruck": "40f1bf7f148639dfdf3e8d05b56bb916665097c035edf8a52a02d14c3d611ec8",
+   "titel": "Wartezeiten im Freien bei Winterseminaren",
+   "datum": "25.01.2024",
+   "datum_iso": "2024-01-25",
+   "eingelesen": "2026-11-13T22:27:12",
+   "kosten": 0.0272875
+  },
+  {
+   "datei": "AAR-2024-02-20-room-booking.md",
+   "fingerabdruck": "5f982039e487207737675ea4201d67e4b06532a45bad7015866fc8aec412a212",
+   "titel": "Buchung von Seminarräumen",
+   "datum": "20.02.2024",
+   "datum_iso": "2024-02-20",
+   "eingelesen": "2026-11-13T22:27:24",
+   "kosten": 0.01412
+  },
+  {
+   "datei": "AAR-2024-03-02-multi-day-seminar-returns.md",
+   "fingerabdruck": "0d3e72d6110068652b00de7348b161b2c68439dec66ca8ed174ac4a03afaec49",
+   "titel": "Materialrückgabe bei mehrtägigen Seminaren",
+   "datum": "02.03.2024",
+   "datum_iso": "2024-03-02",
+   "eingelesen": "2026-11-13T22:27:44",
+   "kosten": 0.023335
+  },
+  {
+   "datei": "AAR-2024-05-13-library-book-returns.md",
+   "fingerabdruck": "5aa4fbdebd30da6201aa1b56c669d4e112ceab8f940a18db6c20f7529213694d",
+   "titel": "Rückgabe von Büchern aus der Seminarbibliothek",
+   "datum": "13.05.2024",
+   "datum_iso": "2024-05-13",
+   "eingelesen": "2026-11-13T22:27:54",
+   "kosten": 0.01149375
+  },
+  {
+   "datei": "AAR-2024-06-04-travel-expenses.md",
+   "fingerabdruck": "1d1cf570705f569e5c2f58a5d67e507f2e1739afe1c937a9794fc17852b2daba",
+   "titel": "Abrechnung von Reisekosten",
+   "datum": "04.06.2024",
+   "datum_iso": "2024-06-04",
+   "eingelesen": "2026-11-13T22:28:09",
+   "kosten": 0.0181125
+  },
+  {
+   "datei": "AAR-2024-07-09-summer-outdoor-day.md",
+   "fingerabdruck": "ce566248b76fc3cc3eef25bee9d1b351c11669889230a07cabc4e25936f644e9",
+   "titel": "Kleidung beim Sommer-Außenseminar",
+   "datum": "09.07.2024",
+   "datum_iso": "2024-07-09",
+   "eingelesen": "2026-11-13T22:28:19",
+   "kosten": 0.0136725
+  },
+  {
+   "datei": "AAR-2024-09-17-large-day-seminar.md",
+   "fingerabdruck": "5ca5a8ed71f3860f73ec914e2862da13114a5ba5d534c620aaf63fc3cc3b7d77",
+   "titel": "Großes Tagesseminar im Herbst",
+   "datum": "17.09.2024",
+   "datum_iso": "2024-09-17",
+   "eingelesen": "2026-11-13T22:28:47",
+   "kosten": 0.041075
+  },
+  {
+   "datei": "AAR-2024-09-30-first-aid-kits.md",
+   "fingerabdruck": "b72a774b2c8fcdc6995eb2d9deb0d45865a6198c03c55c12247cad92084a7ed2",
+   "titel": "Fehlendes Material in Erste-Hilfe-Kästen",
+   "datum": "30.09.2024",
+   "datum_iso": "2024-09-30",
+   "eingelesen": "2026-11-13T22:29:03",
+   "kosten": 0.02287625
+  },
+  {
+   "datei": "AAR-2024-10-02-projector-reservation.md",
+   "fingerabdruck": "98a35c67d95f50f7e7be2de110502ee438f0955fb38bda7735feb9bcd4feb474",
+   "titel": "Beamer-Reservierung",
+   "datum": "02.10.2024",
+   "datum_iso": "2024-10-02",
+   "eingelesen": "2026-11-13T22:29:14",
+   "kosten": 0.0148825
+  },
+  {
+   "datei": "AAR-2024-11-05-vehicle-damage.md",
+   "fingerabdruck": "6478db889ed7d99cec9c59d6709b1d080bfa3b59a91834861cd2cdb8ebbfedeb",
+   "titel": "Erfassung von Fahrzeugschäden",
+   "datum": "05.11.2024",
+   "datum_iso": "2024-11-05",
+   "eingelesen": "2026-11-13T22:29:31",
+   "kosten": 0.02089
+  },
+  {
+   "datei": "AAR-2024-11-26-feedback-forms.md",
+   "fingerabdruck": "cb573584b2521fcbfd064ae8d887e865cd03ea05b63d55588405f99f7da169a7",
+   "titel": "AAR-2024-11-26-feedback-forms.md",
+   "datum": "26.11.2024",
+   "datum_iso": "2024-11-26",
+   "eingelesen": "2026-11-13T22:29:45",
+   "kosten": 0.01637375
+  },
+  {
+   "datei": "AAR-2025-01-20-shared-set-returns.md",
+   "fingerabdruck": "47f7fb28017d3ad7a64764f3228489ec28f21e63ef3658960b5396676ed50d18",
+   "titel": "Rückgabe gemeinsamer Sets im Seminarbetrieb",
+   "datum": "20.01.2025",
+   "datum_iso": "2025-01-20",
+   "eingelesen": "2026-11-13T22:30:01",
+   "kosten": 0.01807125
+  },
+  {
+   "datei": "AAR-2025-02-04-missing-items.md",
+   "fingerabdruck": "e0c87444513bff5861d709e918643b6258fbb749133a0fee7be84de0aed9ffe7",
+   "titel": "Umgang mit fehlenden Bestandteilen",
+   "datum": "04.02.2025",
+   "datum_iso": "2025-02-04",
+   "eingelesen": "2026-11-13T22:30:15",
+   "kosten": 0.01632
+  },
+  {
+   "datei": "AAR-2025-02-26-catering.md",
+   "fingerabdruck": "d8b7584b09c30848d13b2afb9072dfcce0f21eee756029354c18566008a3aca2",
+   "titel": "Verpflegung bei Seminaren",
+   "datum": "26.02.2025",
+   "datum_iso": "2025-02-26",
+   "eingelesen": "2026-11-13T22:30:26",
+   "kosten": 0.01625
+  },
+  {
+   "datei": "AAR-2025-03-14-printer-outage.md",
+   "fingerabdruck": "5a04008f96038945144f33a99b1e40b5017549a39c10b6debdea298b6c8846f5",
+   "titel": "Druckerausfall im Seminarbüro",
+   "datum": "14.03.2025",
+   "datum_iso": "2025-03-14",
+   "eingelesen": "2026-11-13T22:30:47",
+   "kosten": 0.0293225
+  },
+  {
+   "datei": "AAR-2025-03-18-logbook-form.md",
+   "fingerabdruck": "dbde1c440f4f7fbf3fe9f4bfa2abb8a6a714afab9bcb5a6b24d56f32922f9a1d",
+   "titel": "AAR-2025-03-18-logbook-form.md",
+   "datum": "18.03.2025",
+   "datum_iso": "2025-03-18",
+   "eingelesen": "2026-11-13T22:31:04",
+   "kosten": 0.02547
+  },
+  {
+   "datei": "AAR-2025-03-guest-wifi.md",
+   "fingerabdruck": "548ca5efe8bed70449e2bb34f31f4dbb07279cd6220418f93758f9344c51eac0",
+   "titel": "WLAN-Zugang für Gäste",
+   "datum": "Datum unbekannt",
+   "datum_iso": null,
+   "eingelesen": "2026-11-13T22:31:14",
+   "kosten": 0.0124475
+  },
+  {
+   "datei": "AAR-2025-04-22-room-damage.md",
+   "fingerabdruck": "5f201b482a932ee818072f606e73e6e90699140eccaf874ea9aa619d70347308",
+   "titel": "AAR-2025-04-22-room-damage.md",
+   "datum": "22.04.2025",
+   "datum_iso": "2025-04-22",
+   "eingelesen": "2026-11-13T22:31:25",
+   "kosten": 0.01235
+  },
+  {
+   "datei": "AAR-2025-05-06-bike-garage-keys.md",
+   "fingerabdruck": "bcf40122d4e35109fe3b09ad683300462505a9b7016e0d290f61440da1342f90",
+   "titel": "Schlüssel für die Fahrradgarage",
+   "datum": "06.05.2025",
+   "datum_iso": "2025-05-06",
+   "eingelesen": "2026-11-13T22:31:39",
+   "kosten": 0.0170475
+  },
+  {
+   "datei": "AAR-2025-05-20-teamwork-day-seminar.md",
+   "fingerabdruck": "dd4e2a8a25887f4ca9511df0a006c5ea246cefaf55172a20acd430c20c35759b",
+   "titel": "Tagesseminar „Kommunikation im Team“",
+   "datum": "20.05.2025",
+   "datum_iso": "2025-05-20",
+   "eingelesen": "2026-11-13T22:32:12",
+   "kosten": 0.04036375
+  },
+  {
+   "datei": "AAR-2025-06-10-one-day-seminars.md",
+   "fingerabdruck": "6503507d0a7903d723a394a210b1f9929501d29c4083f9b04eb357a0a76350d3",
+   "titel": "Materialrückgabe nach eintägigen Einführungsveranstaltungen",
+   "datum": "10.06.2025",
+   "datum_iso": "2025-06-10",
+   "eingelesen": "2026-11-13T22:32:33",
+   "kosten": 0.0245725
+  },
+  {
+   "datei": "AAR-2025-06-24-handouts-usb.md",
+   "fingerabdruck": "58ce3b15c396b34d1e4171ab6f74dc6f3452a9aae0751e41b8b3c41e3dcdf64a",
+   "titel": "Teilnehmerunterlagen auf USB-Sticks",
+   "datum": "24.06.2025",
+   "datum_iso": "2025-06-24",
+   "eingelesen": "2026-11-13T22:32:46",
+   "kosten": 0.01740875
+  },
+  {
+   "datei": "AAR-2025-07-01-lost-and-found.md",
+   "fingerabdruck": "d60413d0320361335a0aa9b7e06359b7e54ab3c9c9654d1e2b132b7d16f8b17e",
+   "titel": "Fundsachen im Seminargebäude",
+   "datum": "01.07.2025",
+   "datum_iso": "2025-07-01",
+   "eingelesen": "2026-11-13T22:33:01",
+   "kosten": 0.02362875
+  },
+  {
+   "datei": "AAR-2025-08-19-loan-laptops.md",
+   "fingerabdruck": "bc593146a8e9995f9cd4f9c17f48a677cf294d99edfbe95aaa048767292ec43e",
+   "titel": "Rückgabe von Leihlaptops",
+   "datum": "19.08.2025",
+   "datum_iso": "2025-08-19",
+   "eingelesen": "2026-11-13T22:33:10",
+   "kosten": 0.01311625
+  },
+  {
+   "datei": "AAR-2025-09-15-vehicles-multi-day-seminars.md",
+   "fingerabdruck": "d3dbe3be0f94bc01855bebfd838d64fcb7971696bf3a2a83d805fa0540f48244",
+   "titel": "Fahrzeugnutzung bei mehrtägigen Seminaren",
+   "datum": "15.09.2025",
+   "datum_iso": "2025-09-15",
+   "eingelesen": "2026-11-13T22:33:26",
+   "kosten": 0.02301
+  },
+  {
+   "datei": "AAR-2025-09-23-sanitaetsdienst-schiessausbildung.md",
+   "fingerabdruck": "1f4da3493cf9dc6eb9c253de51bba16fba8373e6237675f1baa871ab5d31c2dc",
+   "titel": "Sanitätsdienstliche Absicherung der Schießausbildung im August und September 2025",
+   "datum": "23.09.2025",
+   "datum_iso": "2025-09-23",
+   "eingelesen": "2026-11-14T00:15:54",
+   "kosten": 0.088535
+  },
+  {
+   "datei": "AAR-2025-10-07-projector-delivery.md",
+   "fingerabdruck": "fd23f2090103ffc10b57e0077d270460a9f405c19b45df1cd68359218a6aac2a",
+   "titel": "Beamer im Seminarbetrieb",
+   "datum": "07.10.2025",
+   "datum_iso": "2025-10-07",
+   "eingelesen": "2026-11-13T22:33:41",
+   "kosten": 0.0193825
+  },
+  {
+   "datei": "AAR-2025-11-11-shared-group-rooms.md",
+   "fingerabdruck": "d1b2063e3e07cb78d0f73c3215dd0b165bc0ce014f8e64edf7c6449ed18d5bb4",
+   "titel": "Gemeinsam genutzte Gruppenräume",
+   "datum": "11.11.2025",
+   "datum_iso": "2025-11-11",
+   "eingelesen": "2026-11-13T22:33:59",
+   "kosten": 0.02164
+  },
+  {
+   "datei": "AAR-2025-11-18-funkgeraete.md",
+   "fingerabdruck": "ae53066300e9622ea9855572f5b903039fe00e0cac86bfed8b6c0f2d35718fbd",
+   "titel": "Erfahrungsbericht: Ausgabe und Rückgabe von Funkgeräten im Lehrgang Fernmeldeverbindungsdienst",
+   "datum": "18.11.2025",
+   "datum_iso": "2025-11-18",
+   "eingelesen": "2026-11-14T00:16:39",
+   "kosten": 0.06211875
+  },
+  {
+   "datei": "AAR-2025-12-02-photo-consent-seminar.md",
+   "fingerabdruck": "f86c6c0ba9f419afb551f1170eeb420a41823beffdcec38fa1fa681009446b86",
+   "titel": "Tagesseminar „Präsentieren“",
+   "datum": "02.12.2025",
+   "datum_iso": "2025-12-02",
+   "eingelesen": "2026-11-13T22:34:26",
+   "kosten": 0.0340675
+  },
+  {
+   "datei": "AAR-2025-12-10-winter-socks-and-jackets.md",
+   "fingerabdruck": "ded5cd0511c79085e1bf8d032c5e2ce238ff7a4c8b867f56e3b5c66f2ad5b433",
+   "titel": "Ausrüstung beim Winter-Außenseminar",
+   "datum": "10.12.2025",
+   "datum_iso": "2025-12-10",
+   "eingelesen": "2026-11-13T22:34:39",
+   "kosten": 0.01971875
+  },
+  {
+   "datei": "AAR-2026-01-14-winter-service.md",
+   "fingerabdruck": "05423695c44c5fab57996e6e2a28fd94e5acccddbd1ee679ab390370aae1939d",
+   "titel": "Winterdienst am Seminargebäude",
+   "datum": "14.01.2026",
+   "datum_iso": "2026-01-14",
+   "eingelesen": "2026-11-13T22:34:50",
+   "kosten": 0.01626
+  },
+  {
+   "datei": "AAR-2026-01-23-winterbiwak.md",
+   "fingerabdruck": "d2e7f1def2e759c5b52f60a7e03bb894f18aa9a471540508e74dc2e472b1fb1d",
+   "titel": "Übung „Winterbiwak“",
+   "datum": "23.01.2026",
+   "datum_iso": "2026-01-23",
+   "eingelesen": "2026-11-14T00:17:49",
+   "kosten": 0.10642875
+  },
+  {
+   "datei": "AAR-2026-02-03-visitor-badges.md",
+   "fingerabdruck": "34c04fc2abf7807c826fa055e593f26b3968a14af765e02136dda3fc9d437e29",
+   "titel": "Besucherausweise",
+   "datum": "03.02.2026",
+   "datum_iso": "2026-02-03",
+   "eingelesen": "2026-11-13T22:35:01",
+   "kosten": 0.01570875
+  },
+  {
+   "datei": "AAR-2026-02-27-gruppenfuehrer-truppenuebungsplatz.md",
+   "fingerabdruck": "2fc6e4c9c64b3aa38d50fd5ca68a88078a3e3da14b4fe6eff78bb36b3b665851",
+   "titel": "Lehrgang Gruppenführer, Ausbildungsabschnitt Truppenübungsplatz",
+   "datum": "27.02.2026",
+   "datum_iso": "2026-02-27",
+   "eingelesen": "2026-11-14T00:18:33",
+   "kosten": 0.0603475
+  },
+  {
+   "datei": "AAR-2026-03-10-attendance-certificates.md",
+   "fingerabdruck": "579f31fa8a9b04ea3f9aed5ce75244aeea108a0a003a10057f2523d28c7568e6",
+   "titel": "Teilnahmebescheinigungen",
+   "datum": "10.03.2026",
+   "datum_iso": "2026-03-10",
+   "eingelesen": "2026-11-13T22:35:15",
+   "kosten": 0.0208225
+  },
+  {
+   "datei": "AAR-2026-03-19-kfz-dienst-uebung.md",
+   "fingerabdruck": "45e0e9203ae17f4dcba338dc1dcb4baafd64eb0e849361a0aae0e6e60b4eee6f",
+   "titel": "Kfz-Dienst während der Übung „Märzsturm“",
+   "datum": "19.03.2026",
+   "datum_iso": "2026-03-19",
+   "eingelesen": "2026-11-14T00:19:39",
+   "kosten": 0.09557625
+  },
+  {
+   "datei": "AAR-2026-03-24-external-guests-day.md",
+   "fingerabdruck": "1ece8e9d41d1a8a6a77ce53422017cdab261d3bc2ce3b3415eecf7bd3b51380d",
+   "titel": "Tagesseminar mit externen Gästen",
+   "datum": "24.03.2026",
+   "datum_iso": "2026-03-24",
+   "eingelesen": "2026-11-13T22:35:37",
+   "kosten": 0.03570875
+  },
+  {
+   "datei": "AAR-2026-04-21-seminar-day-preparation.md",
+   "fingerabdruck": "3503bfae05eb85777554d65fea7a3da2dbd9462e429e28834354399a04abbce5",
+   "titel": "Vorbereitung eines Seminartags",
+   "datum": "21.04.2026",
+   "datum_iso": "2026-04-21",
+   "eingelesen": "2026-11-13T22:35:52",
+   "kosten": 0.01834375
+  },
+  {
+   "datei": "AAR-2026-04-30-besuchertag.md",
+   "fingerabdruck": "655140149b127df3090eb864a7aa5064a6f25d3c9c1ad14b4c2a5f5ae0d75092",
+   "titel": "Besuchertag zum Abschluss des Lehrgangs Unteroffizier",
+   "datum": "30.04.2026",
+   "datum_iso": "2026-04-30",
+   "eingelesen": "2026-11-14T00:20:57",
+   "kosten": 0.11242
+  },
+  {
+   "datei": "AAR-2026-05-12-stubenabnahme.md",
+   "fingerabdruck": "7741c51a3af84eb22ebaeb473a2c8a861c73115ff0660829dc0f41334f75fa31",
+   "titel": "Stubenabnahme und Unterkunftsrückgabe zum Lehrgangsende",
+   "datum": "12.05.2026",
+   "datum_iso": "2026-05-12",
+   "eingelesen": "2026-11-14T00:22:10",
+   "kosten": 0.0981875
+  },
+  {
+   "datei": "AAR-2026-06-16-project-planning-evening.md",
+   "fingerabdruck": "5204806f964e1d463ff0baddbea7ba63456ae00b209b8286b0fcd7775b2d60a5",
+   "titel": "Abendseminar „Projektplanung“",
+   "datum": "16.06.2026",
+   "datum_iso": "2026-06-16",
+   "eingelesen": "2026-11-13T22:36:18",
+   "kosten": 0.03307
+  },
+  {
+   "datei": "AAR-2026-06-24-truppenverpflegung.md",
+   "fingerabdruck": "8d384cb269f643a8c3024544b4ef72508fb49d80d834d45d68532a69d8b8a4fe",
+   "titel": "Truppenverpflegung bei Übungen und Geländeausbildung im ersten Halbjahr 2026",
+   "datum": "24.06.2026",
+   "datum_iso": "2026-06-24",
+   "eingelesen": "2026-11-14T00:22:52",
+   "kosten": 0.05768625
+  },
+  {
+   "datei": "AAR-2026-07-21-externe-ausbilder.md",
+   "fingerabdruck": "d394e3c7cf9d7f96e7bfd845318d80ca66e63254c0ae083be41a0d79fd6346b4",
+   "titel": "Ausbildungsabschnitt Ortskampf mit externen Ausbildern",
+   "datum": "21.07.2026",
+   "datum_iso": "2026-07-21",
+   "eingelesen": "2026-11-14T00:23:40",
+   "kosten": 0.05316875
+  },
+  {
+   "datei": "AAR-2026-09-29-evening-negotiation.md",
+   "fingerabdruck": "4d3979c44afc3ad969db452d5842d6b59352c246273f9a70627c2a9c00ffd030",
+   "titel": "AAR-2026-09-29-evening-negotiation.md",
+   "datum": "29.09.2026",
+   "datum_iso": "2026-09-29",
+   "eingelesen": "2026-11-13T22:37:03",
+   "kosten": 0.0572025
+  },
+  {
+   "datei": "AAR-2026-10-06-lehrsaaltechnik.md",
+   "fingerabdruck": "6b56bc806aa5786b77f5ba276bbd51f41217b7154164504216bf30a47b1e9a5c",
+   "titel": "Lehrsaaltechnik im Lehrgangsbetrieb – Erfahrungen Sommer 2026",
+   "datum": "06.10.2026",
+   "datum_iso": "2026-10-06",
+   "eingelesen": "2026-11-14T16:23:02",
+   "kosten": 0.049335
+  },
+  {
+   "datei": "AAR-evening-keys-a.md",
+   "fingerabdruck": "396d80b1ac60e48b24ef11099dca4628a7221c48435814f3f62fb997fafbba76",
+   "titel": "Schlüsselrückgabe nach Abendseminaren",
+   "datum": "14.10.2025",
+   "datum_iso": "2025-10-14",
+   "eingelesen": "2026-11-13T22:37:12",
+   "kosten": 0.011475
+  },
+  {
+   "datei": "AAR-evening-keys-b.md",
+   "fingerabdruck": "418fb943bf0d5ed698929d318ddeb7ac31c3dd5b085727e896a39c8b0fdf6f05",
+   "titel": "Raumschlüssel bei Abendseminaren",
+   "datum": "03.04.2024",
+   "datum_iso": "2024-04-03",
+   "eingelesen": "2026-11-13T22:37:21",
+   "kosten": 0.01248125
+  },
+  {
+   "datei": "AAR-parking-visitors.md",
+   "fingerabdruck": "39ca1bcbc3d8044fe4b75a23cd75671ca46d02c317f1308691007c6e57f6c302",
+   "titel": "Besucherparkplätze",
+   "datum": "Datum unbekannt",
+   "datum_iso": null,
+   "eingelesen": "2026-11-13T22:37:31",
+   "kosten": 0.01611625
+  },
+  {
+   "datei": "AAR-projectors-office.md",
+   "fingerabdruck": "7697ac33e01418bbb33650a131dc918a14d4f95142e1f1d4951a87d940b48d05",
+   "titel": "Ausgabe von Beamern",
+   "datum": "20.06.2023",
+   "datum_iso": "2023-06-20",
+   "eingelesen": "2026-11-13T22:37:45",
+   "kosten": 0.01974625
+  }
+ ],
+ "aussagen": [
+  {
+   "id": 1,
+   "datei": "AAR-2022-03-08-projectors-facility.md",
+   "thema": "Ausleihe Beamer",
+   "art": "regel",
+   "kontext": "Seminare",
+   "aussage": "Beamer für Seminare werden bei der Haustechnik abgeholt.",
+   "zitat": "Beamer für Seminare werden bei der Haustechnik abgeholt",
+   "zitat_ok": 1
+  },
+  {
+   "id": 2,
+   "datei": "AAR-2022-03-08-projectors-facility.md",
+   "thema": "Rückgabe Beamer",
+   "art": "regel",
+   "kontext": "Seminare",
+   "aussage": "Beamer müssen nach dem Seminar an die Haustechnik zurückgebracht werden.",
+   "zitat": "...und nach dem Seminar dorthin zurückgebracht.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 3,
+   "datei": "AAR-2022-03-08-projectors-facility.md",
+   "thema": "Rückgabe Beamer",
+   "art": "regel",
+   "kontext": "Seminare",
+   "aussage": "Die Haustechnik prüft bei der Rückgabe von Beamern, ob Fernbedienung und Kabel vollständig sind.",
+   "zitat": "Die Haustechnik prüft beim Zurückbringen, ob Fernbedienung und Kabel vollständig sind.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 4,
+   "datei": "AAR-2022-09-14-material-return.md",
+   "thema": "Rückgabe Materialsets",
+   "art": "regel",
+   "kontext": "Rückgabe ausgegebener Materialsets",
+   "aussage": "Die Rückgabe jedes Materialsets muss von der Person bestätigt werden, an die es ausgegeben wurde.",
+   "zitat": "Bei der Rückgabe wird jedes Materialset von der Person bestätigt, der es ausgegeben wurde.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 5,
+   "datei": "AAR-2022-09-14-material-return.md",
+   "thema": "Rückgabe Materialsets",
+   "art": "regel",
+   "kontext": "Rückgabe ausgegebener Materialsets",
+   "aussage": "Auch gemeinsam genutzte Materialsets werden einer einzelnen Person zugeordnet.",
+   "zitat": "Auch gemeinsam genutzte Sets werden einer Person zugeordnet.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 6,
+   "datei": "AAR-2022-09-14-material-return.md",
+   "thema": "Rückgabe Materialsets",
+   "art": "regel",
+   "kontext": "Rückgabe ausgegebener Materialsets",
+   "aussage": "Einzeln nummerierte Geräte bleiben der eingetragenen Person zugeordnet und müssen von dieser zurückgegeben werden.",
+   "zitat": "Einzeln nummerierte Geräte bleiben der jeweils eingetragenen Person zugeordnet und werden von dieser zurückgegeben.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 7,
+   "datei": "AAR-2022-09-14-material-return.md",
+   "thema": "Rückgabe Materialsets",
+   "art": "regel",
+   "kontext": "Rückgabe ausgegebener Materialsets",
+   "aussage": "Die zugeordnete Person bestätigt die Rückgabe der im Set aufgeführten Gegenstände.",
+   "zitat": "Die zugeordnete Person bestätigt die Rückgabe der aufgeführten Gegenstände.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 8,
+   "datei": "AAR-2023-02-15-winter-clothing-layers.md",
+   "thema": "Winterkleidung",
+   "art": "erfahrung",
+   "kontext": "mehrtägiges Winter-Außenseminar",
+   "aussage": "Mehrere dünne Kleidungsschichten haben sich bewährt, weil sie sich beim Gehen leicht anpassen ließen.",
+   "zitat": "haben sich mehrere dünne Kleidungsschichten bewährt, weil sie sich beim Gehen leicht anpassen ließen",
+   "zitat_ok": 1
+  },
+  {
+   "id": 9,
+   "datei": "AAR-2023-02-15-winter-clothing-layers.md",
+   "thema": "Winterkleidung",
+   "art": "erfahrung",
+   "kontext": "mehrtägiges Winter-Außenseminar",
+   "aussage": "Eine dicke Daunenjacke war beim Gehen meist zu warm und führte bei vielen zum Schwitzen.",
+   "zitat": "Wer eine dicke Daunenjacke trug, fand sie beim Gehen meist zu warm; viele haben darin geschwitzt.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 10,
+   "datei": "AAR-2023-02-15-winter-clothing-layers.md",
+   "thema": "Winterkleidung",
+   "art": "erfahrung",
+   "kontext": "mehrtägiges Winter-Außenseminar",
+   "aussage": "Es war hilfreich, zwei Paar Handschuhe zum Wechseln dabei zu haben.",
+   "zitat": "Zwei Paar Handschuhe zum Wechseln waren hilfreich.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 11,
+   "datei": "AAR-2023-03-15-handouts-printed.md",
+   "thema": "Teilnehmerunterlagen",
+   "art": "regel",
+   "kontext": "",
+   "aussage": "Das Seminarbüro druckt die Teilnehmerunterlagen und teilt sie zu Seminarbeginn aus.",
+   "zitat": "Die Teilnehmerunterlagen werden vom Seminarbüro gedruckt und zu Seminarbeginn ausgeteilt.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 12,
+   "datei": "AAR-2023-03-15-handouts-printed.md",
+   "thema": "Teilnehmerunterlagen",
+   "art": "regel",
+   "kontext": "",
+   "aussage": "Die Seminarleitung muss die Unterlagen für die Teilnehmer spätestens drei Werktage vor dem Seminar an das Seminarbüro schicken.",
+   "zitat": "Die Seminarleitung schickt die Unterlagen dafür spätestens drei Werktage vorher an das Seminarbüro.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 13,
+   "datei": "AAR-2023-04-12-vehicle-returns.md",
+   "thema": "Rückgabe Dienstfahrzeuge",
+   "art": "regel",
+   "kontext": "Dienstfahrzeuge",
+   "aussage": "Ausgeliehene Dienstfahrzeuge müssen von der Person zurückgegeben werden, die sie ausgeliehen hat.",
+   "zitat": "Ausgeliehene Dienstfahrzeuge werden von der ausleihenden Person zurückgegeben.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 14,
+   "datei": "AAR-2023-04-12-vehicle-returns.md",
+   "thema": "Rückgabe Dienstfahrzeuge",
+   "art": "regel",
+   "kontext": "Dienstfahrzeuge",
+   "aussage": "Bei der Rückgabe eines Dienstfahrzeugs muss der Schlüssel bei der Fahrbereitschaft abgegeben werden.",
+   "zitat": "Sie gibt den Fahrzeugschlüssel bei der Fahrbereitschaft ab",
+   "zitat_ok": 1
+  },
+  {
+   "id": 15,
+   "datei": "AAR-2023-04-12-vehicle-returns.md",
+   "thema": "Rückgabe Dienstfahrzeuge",
+   "art": "regel",
+   "kontext": "Dienstfahrzeuge",
+   "aussage": "Bei der Rückgabe eines Dienstfahrzeugs muss der Kilometerstand ins Fahrtenbuch eingetragen werden.",
+   "zitat": "trägt den Kilometerstand ins Fahrtenbuch ein.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 16,
+   "datei": "AAR-2023-04-12-vehicle-returns.md",
+   "thema": "Rückgabe Dienstfahrzeuge",
+   "art": "regel",
+   "kontext": "Dienstfahrzeuge",
+   "aussage": "Dienstfahrzeuge müssen vollgetankt zurückgegeben werden.",
+   "zitat": "Das Fahrzeug wird vollgetankt zurückgegeben.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 17,
+   "datei": "AAR-2023-09-05-seminar-registration.md",
+   "thema": "Anmeldung zu Seminaren",
+   "art": "regel",
+   "kontext": "",
+   "aussage": "Die Anmeldung zu Seminaren erfolgt über das Seminarportal.",
+   "zitat": "Die Anmeldung zu Seminaren erfolgt über das Seminarportal.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 18,
+   "datei": "AAR-2023-09-05-seminar-registration.md",
+   "thema": "Anmeldung zu Seminaren",
+   "art": "regel",
+   "kontext": "",
+   "aussage": "Wenn ein Seminar ausgebucht ist, werden weitere Anmeldungen automatisch auf eine Warteliste gesetzt.",
+   "zitat": "Ist ein Seminar ausgebucht, kommen weitere Anmeldungen automatisch auf eine Warteliste.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 19,
+   "datei": "AAR-2023-10-17-sports-equipment.md",
+   "thema": "Rückgabe Sportgeräte",
+   "art": "unklar",
+   "kontext": "Betriebssport",
+   "aussage": "Nach dem Betriebssport werden Bälle und Matten in den Geräteraum zurückgebracht.",
+   "zitat": "Nach dem Betriebssport werden Bälle und Matten in den Geräteraum zurückgebracht.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 20,
+   "datei": "AAR-2023-10-17-sports-equipment.md",
+   "thema": "Rückgabe Sportgeräte",
+   "art": "unklar",
+   "kontext": "Betriebssport",
+   "aussage": "Die Übungsleitung prüft die Vollständigkeit der zurückgebrachten Sportgeräte.",
+   "zitat": "Die Übungsleitung prüft anschließend, ob alles vollständig ist.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 21,
+   "datei": "AAR-2023-10-17-sports-equipment.md",
+   "thema": "Rückgabe Sportgeräte",
+   "art": "unklar",
+   "kontext": "Betriebssport",
+   "aussage": "Für die Vollständigkeitsprüfung der Sportgeräte wird keine Liste geführt.",
+   "zitat": "Eine Liste wird dafür nicht geführt.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 22,
+   "datei": "AAR-2024-01-08-vehicle-reservations.md",
+   "thema": "Reservierung Fahrzeuge",
+   "art": "regel",
+   "kontext": "Reservierung von Fahrzeugen",
+   "aussage": "Fahrzeuge müssen mindestens zwei Werktage vor der geplanten Fahrt bei der Fahrbereitschaft reserviert werden.",
+   "zitat": "Fahrzeuge werden mindestens zwei Werktage vor der geplanten Fahrt bei der Fahrbereitschaft reserviert.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 23,
+   "datei": "AAR-2024-01-08-vehicle-reservations.md",
+   "thema": "Reservierung Fahrzeuge",
+   "art": "regel",
+   "kontext": "Reservierung von Fahrzeugen",
+   "aussage": "Bei der Reservierung eines Fahrzeugs müssen das Datum, die voraussichtliche Rückgabezeit und das Fahrtziel angegeben werden.",
+   "zitat": "Bei der Reservierung werden Datum, voraussichtliche Rückgabezeit und Fahrtziel angegeben.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 24,
+   "datei": "AAR-2024-01-25-winter-waiting-times.md",
+   "thema": "Wartezeiten im Freien",
+   "art": "erfahrung",
+   "kontext": "mehrtägiges Winterseminar",
+   "aussage": "An den Stationen im Freien kam es oft zu langen Wartezeiten.",
+   "zitat": "Bei unserem mehrtägigen Winterseminar gab es an den Stationen im Freien oft lange Wartezeiten.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 25,
+   "datei": "AAR-2024-01-25-winter-waiting-times.md",
+   "thema": "Winterkleidung",
+   "art": "erfahrung",
+   "kontext": "mehrtägiges Winterseminar",
+   "aussage": "Bei langen Wartezeiten im Freien war eine warme Daunenjacke nach Erfahrung der meisten Teilnehmenden unverzichtbar.",
+   "zitat": "In dieser Situation war eine warme Daunenjacke nach Erfahrung der meisten Teilnehmenden unverzichtbar.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 26,
+   "datei": "AAR-2024-01-25-winter-waiting-times.md",
+   "thema": "Winterkleidung",
+   "art": "erfahrung",
+   "kontext": "mehrtägiges Winterseminar",
+   "aussage": "Bei langen Wartezeiten im Freien reichten mehreren dünnen Kleidungsschichten allein den meisten Teilnehmenden nicht aus.",
+   "zitat": "Mehrere dünne Kleidungsschichten allein reichten den meisten nicht aus.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 27,
+   "datei": "AAR-2024-02-20-room-booking.md",
+   "thema": "Raumbuchung",
+   "art": "regel",
+   "kontext": "",
+   "aussage": "Seminarräume werden über den Raumkalender im Intranet gebucht.",
+   "zitat": "Seminarräume werden über den Raumkalender im Intranet gebucht.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 28,
+   "datei": "AAR-2024-02-20-room-booking.md",
+   "thema": "Raumbuchung",
+   "art": "regel",
+   "kontext": "Buchungen für mehr als 20 Personen",
+   "aussage": "Bei Buchungen für mehr als 20 Personen wird zusätzlich die Haustechnik informiert, damit genügend Stühle bereitstehen.",
+   "zitat": "Bei Buchungen für mehr als 20 Personen wird zusätzlich die Haustechnik informiert, damit genügend Stühle bereitstehen.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 29,
+   "datei": "AAR-2024-03-02-multi-day-seminar-returns.md",
+   "thema": "Rückgabe Materialsets",
+   "art": "regel",
+   "kontext": "mehrtägige Seminare",
+   "aussage": "Gemeinsam genutzte Materialsets werden am Ende durch die Gruppenvertretung geprüft.",
+   "zitat": "gemeinsam genutzte Materialsets am Ende durch die Gruppenvertretung geprüft",
+   "zitat_ok": 1
+  },
+  {
+   "id": 30,
+   "datei": "AAR-2024-03-02-multi-day-seminar-returns.md",
+   "thema": "Rückgabe Materialsets",
+   "art": "regel",
+   "kontext": "mehrtägige Seminare",
+   "aussage": "Die Gruppenvertretung führt eine gemeinsame Rückgabeliste für das Materialset.",
+   "zitat": "Sie führt eine gemeinsame Rückgabeliste für das Set.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 31,
+   "datei": "AAR-2024-03-02-multi-day-seminar-returns.md",
+   "thema": "Rückgabe Materialsets",
+   "art": "regel",
+   "kontext": "mehrtägige Seminare",
+   "aussage": "Eine persönliche Bestätigung der Rückgabe einzelner Bestandteile durch die Teilnehmenden ist nicht vorgesehen.",
+   "zitat": "Eine zusätzliche persönliche Bestätigung der einzelnen Bestandteile durch die Teilnehmenden ist nicht vorgesehen.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 32,
+   "datei": "AAR-2024-05-13-library-book-returns.md",
+   "thema": "Rückgabe Bücher",
+   "art": "regel",
+   "kontext": "Seminarbibliothek",
+   "aussage": "Ausgeliehene Bücher müssen spätestens zwei Wochen nach Seminarende am Rückgabewagen der Bibliothek abgestellt werden.",
+   "zitat": "Ausgeliehene Bücher aus der Seminarbibliothek werden spätestens zwei Wochen nach Seminarende am Rückgabewagen der Bibliothek abgestellt.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 33,
+   "datei": "AAR-2024-05-13-library-book-returns.md",
+   "thema": "Rückgabe Bücher",
+   "art": "regel",
+   "kontext": "Seminarbibliothek",
+   "aussage": "Die Bibliothek bestätigt die Rückgabe von Büchern per E-Mail an die Person, die sie ausgeliehen hat.",
+   "zitat": "Die Bibliothek bestätigt die Rückgabe per E-Mail an die ausleihende Person.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 34,
+   "datei": "AAR-2024-06-04-travel-expenses.md",
+   "thema": "Abrechnung Reisekosten",
+   "art": "regel",
+   "kontext": "Seminarfahrten",
+   "aussage": "Reisekosten für Seminarfahrten sind innerhalb von sechs Monaten nach der Reise mit dem dafür vorgesehenen Formular abzurechnen.",
+   "zitat": "Reisekosten für Seminarfahrten werden innerhalb von sechs Monaten nach der Reise mit dem Reisekostenformular abgerechnet.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 35,
+   "datei": "AAR-2024-06-04-travel-expenses.md",
+   "thema": "Abrechnung Reisekosten",
+   "art": "regel",
+   "kontext": "Seminarfahrten",
+   "aussage": "Bei der Reisekostenabrechnung müssen Belege im Original beigefügt werden.",
+   "zitat": "Belege werden im Original beigefügt.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 36,
+   "datei": "AAR-2024-07-09-summer-outdoor-day.md",
+   "thema": "Sommerkleidung",
+   "art": "erfahrung",
+   "kontext": "eintägiges Außenseminar im Sommer",
+   "aussage": "Leichte, langärmelige Kleidung hat sich bei eintägigen Außenseminaren im Sommer bewährt.",
+   "zitat": "hat sich leichte, langärmelige Kleidung bewährt",
+   "zitat_ok": 1
+  },
+  {
+   "id": 37,
+   "datei": "AAR-2024-07-09-summer-outdoor-day.md",
+   "thema": "Sommerkleidung",
+   "art": "erfahrung",
+   "kontext": "eintägiges Außenseminar im Sommer",
+   "aussage": "Ein Sonnenhut war für viele Teilnehmende bei einem Außenseminar im Sommer hilfreich.",
+   "zitat": "Ein Sonnenhut war für viele Teilnehmende hilfreich",
+   "zitat_ok": 1
+  },
+  {
+   "id": 38,
+   "datei": "AAR-2024-07-09-summer-outdoor-day.md",
+   "thema": "Verpflegung",
+   "art": "erfahrung",
+   "kontext": "eintägiges Außenseminar im Sommer",
+   "aussage": "Mehrere Teilnehmende hatten bei einem Außenseminar im Sommer zu wenig Wasser dabei.",
+   "zitat": "dass sie zu wenig Wasser dabeihatten",
+   "zitat_ok": 1
+  },
+  {
+   "id": 39,
+   "datei": "AAR-2024-09-17-large-day-seminar.md",
+   "thema": "Raumausstattung",
+   "art": "unklar",
+   "kontext": "Seminare mit über 20 Personen",
+   "aussage": "Bei einer Buchung über 20 Personen wurde die Haustechnik informiert, um zusätzliche Stühle bereitzustellen.",
+   "zitat": "Weil die Buchung über 20 Personen lag, hatten wir die Haustechnik informiert; die zusätzlichen Stühle standen rechtzeitig bereit.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 40,
+   "datei": "AAR-2024-09-17-large-day-seminar.md",
+   "thema": "Teilnehmerunterlagen",
+   "art": "unklar",
+   "kontext": "Tagesseminar",
+   "aussage": "Die Teilnehmerunterlagen wurden vom Seminarbüro gedruckt und zu Beginn des Seminars ausgeteilt.",
+   "zitat": "Die Teilnehmerunterlagen wurden vom Seminarbüro gedruckt und zu Beginn ausgeteilt.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 41,
+   "datei": "AAR-2024-09-17-large-day-seminar.md",
+   "thema": "Teilnehmerunterlagen",
+   "art": "erfahrung",
+   "kontext": "Tagesseminar",
+   "aussage": "Es fehlten Teilnehmerunterlagen, da sich Personen nachträglich von der Warteliste angemeldet hatten.",
+   "zitat": "Einige Exemplare fehlten, weil sich nachträglich noch Personen von der Warteliste angemeldet hatten.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 42,
+   "datei": "AAR-2024-09-17-large-day-seminar.md",
+   "thema": "Brandschutz",
+   "art": "unklar",
+   "kontext": "Tagesseminar",
+   "aussage": "Zu Beginn des Seminars wurde bei einer Hausführung auf den Sammelplatz für den Fall eines Feueralarms hingewiesen.",
+   "zitat": "Bei der kurzen Hausführung zu Beginn haben wir auf den Sammelplatz bei Feueralarm hingewiesen.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 43,
+   "datei": "AAR-2024-09-17-large-day-seminar.md",
+   "thema": "Brandschutz",
+   "art": "regel",
+   "kontext": "",
+   "aussage": "Der Sammelplatz bei Feueralarm ist der Parkplatz vor dem Haupteingang.",
+   "zitat": "Der Sammelplatz ist der Parkplatz vor dem Haupteingang.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 44,
+   "datei": "AAR-2024-09-17-large-day-seminar.md",
+   "thema": "Verpflegung",
+   "art": "erfahrung",
+   "kontext": "Tagesseminar",
+   "aussage": "Eine Mittagspause von 45 Minuten war für eine Gruppe von 32 Teilnehmenden zu knapp bemessen.",
+   "zitat": "Die Mittagspause war mit 45 Minuten für diese Gruppengröße zu knapp.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 45,
+   "datei": "AAR-2024-09-17-large-day-seminar.md",
+   "thema": "Seminarinhalt",
+   "art": "erfahrung",
+   "kontext": "",
+   "aussage": "Die praktischen Übungen erhielten besonders positives Feedback.",
+   "zitat": "Die Rückmeldungen waren insgesamt positiv, besonders zu den praktischen Übungen.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 46,
+   "datei": "AAR-2024-09-30-first-aid-kits.md",
+   "thema": "Erste-Hilfe-Kasten",
+   "art": "regel",
+   "kontext": "Seminarräume",
+   "aussage": "Fehlendes Material in Erste-Hilfe-Kästen wird mit dem Formular HV-7 an die Hausverwaltung gemeldet.",
+   "zitat": "Fehlende Teile in den Erste-Hilfe-Kästen der Seminarräume werden mit dem Formular HV-7 an die Hausverwaltung gemeldet.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 47,
+   "datei": "AAR-2024-09-30-first-aid-kits.md",
+   "thema": "Erste-Hilfe-Kasten",
+   "art": "regel",
+   "kontext": "Seminarräume",
+   "aussage": "Im Formular HV-7 zur Meldung fehlenden Materials müssen der Raum und die fehlenden Teile eingetragen werden.",
+   "zitat": "Im Formular werden der Raum und die fehlenden Teile eingetragen.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 48,
+   "datei": "AAR-2024-09-30-first-aid-kits.md",
+   "thema": "Erste-Hilfe-Kasten",
+   "art": "regel",
+   "kontext": "Seminarräume",
+   "aussage": "Nach einer Meldung über fehlendes Material füllt die Hausverwaltung den Erste-Hilfe-Kasten innerhalb einer Woche auf.",
+   "zitat": "Die Hausverwaltung füllt den Kasten innerhalb einer Woche auf.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 49,
+   "datei": "AAR-2024-10-02-projector-reservation.md",
+   "thema": "Reservierung Beamer",
+   "art": "regel",
+   "kontext": "",
+   "aussage": "Beamer werden zusammen mit dem Seminarraum über den Raumkalender im Intranet reserviert.",
+   "zitat": "Beamer werden über den Raumkalender im Intranet zusammen mit dem Seminarraum reserviert.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 50,
+   "datei": "AAR-2024-10-02-projector-reservation.md",
+   "thema": "Ausleihe Beamer",
+   "art": "regel",
+   "kontext": "",
+   "aussage": "Beamer werden im Seminarbüro abgeholt.",
+   "zitat": "Abgeholt und zurückgegeben werden sie im Seminarbüro.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 51,
+   "datei": "AAR-2024-10-02-projector-reservation.md",
+   "thema": "Rückgabe Beamer",
+   "art": "regel",
+   "kontext": "",
+   "aussage": "Beamer werden im Seminarbüro zurückgegeben.",
+   "zitat": "Abgeholt und zurückgegeben werden sie im Seminarbüro.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 52,
+   "datei": "AAR-2024-11-05-vehicle-damage.md",
+   "thema": "Erfassung Fahrzeugschäden",
+   "art": "regel",
+   "kontext": "Dienstfahrzeuge",
+   "aussage": "Fahrzeugschäden sind vor Fahrtantritt und bei der Rückgabe im Schadensformular zu erfassen, inklusive Kennzeichen und Datum.",
+   "zitat": "Schäden werden vor Fahrtantritt und bei der Rückgabe mit Kennzeichen und Datum im Schadensformular erfasst.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 53,
+   "datei": "AAR-2024-11-05-vehicle-damage.md",
+   "thema": "Erfassung Fahrzeugschäden",
+   "art": "regel",
+   "kontext": "Dienstfahrzeuge",
+   "aussage": "Das Schadensformular wird zusammen mit dem Fahrzeugschlüssel bei der Fahrbereitschaft abgegeben.",
+   "zitat": "Das Formular wird mit dem Fahrzeugschlüssel bei der Fahrbereitschaft abgegeben.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 54,
+   "datei": "AAR-2024-11-05-vehicle-damage.md",
+   "thema": "Haftung bei Fahrzeugschäden",
+   "art": "regel",
+   "kontext": "Dienstfahrzeuge",
+   "aussage": "Aus einem festgestellten Schaden allein wird keine persönliche Verantwortung abgeleitet.",
+   "zitat": "Aus einem festgestellten Schaden allein wird keine persönliche Verantwortung abgeleitet.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 55,
+   "datei": "AAR-2024-11-26-feedback-forms.md",
+   "thema": "Teilnehmerfeedback",
+   "art": "unklar",
+   "kontext": "Seminare",
+   "aussage": "Die Teilnehmenden füllen am Ende des Seminars einen kurzen Feedbackbogen aus.",
+   "zitat": "Am Seminarende füllen die Teilnehmenden einen kurzen Feedbackbogen aus.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 56,
+   "datei": "AAR-2024-11-26-feedback-forms.md",
+   "thema": "Teilnehmerfeedback",
+   "art": "unklar",
+   "kontext": "Seminare",
+   "aussage": "Die Seminarleitung wertet die Feedbackbögen aus und gibt die Ergebnisse an die Seminarorganisation weiter.",
+   "zitat": "Die Seminarleitung wertet die Bögen aus und gibt die Ergebnisse an die Seminarorganisation weiter.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 57,
+   "datei": "AAR-2025-01-20-shared-set-returns.md",
+   "thema": "Rückgabe Materialsets",
+   "art": "erfahrung",
+   "kontext": "mehrtägige Seminare",
+   "aussage": "Bei der Auswertung von Rückgabeunterlagen war nicht immer eindeutig zuzuordnen, welche Person einzelne Bestandteile genutzt hatte.",
+   "zitat": "einzelne genutzte Bestandteile nicht immer eindeutig zuzuordnen",
+   "zitat_ok": 1
+  },
+  {
+   "id": 58,
+   "datei": "AAR-2025-01-20-shared-set-returns.md",
+   "thema": "Rückgabe Materialsets",
+   "art": "regel",
+   "kontext": "mehrtägige Seminare",
+   "aussage": "Jede teilnehmende Person muss die Rückgabe der von ihr genutzten Set-Bestandteile auf ihrer persönlichen Liste bestätigen.",
+   "zitat": "bestätigt deshalb jede teilnehmende Person die Rückgabe der von ihr genutzten Bestandteile auf der persönlichen Liste",
+   "zitat_ok": 1
+  },
+  {
+   "id": 59,
+   "datei": "AAR-2025-01-20-shared-set-returns.md",
+   "thema": "Rückgabe Materialsets",
+   "art": "regel",
+   "kontext": "mehrtägige Seminare",
+   "aussage": "Die Gruppenvertretung muss zusätzlich eine Gesamtübersicht des gemeinsam genutzten Sets einreichen.",
+   "zitat": "Die Gruppenvertretung reicht zusätzlich eine Gesamtübersicht des gemeinsam genutzten Sets ein.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 60,
+   "datei": "AAR-2025-02-04-missing-items.md",
+   "thema": "Erfassung fehlender Teile",
+   "art": "regel",
+   "kontext": "",
+   "aussage": "Fehlende Gegenstände werden mit Set-Kennung, Gegenstandsbezeichnung und Entdeckungsdatum im Abweichungsprotokoll erfasst.",
+   "zitat": "Fehlende Gegenstände werden mit Set-Kennung, Gegenstandsbezeichnung und Entdeckungsdatum im Abweichungsprotokoll erfasst.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 61,
+   "datei": "AAR-2025-02-04-missing-items.md",
+   "thema": "Meldung fehlender Teile",
+   "art": "regel",
+   "kontext": "",
+   "aussage": "Die Materialverwaltung wird noch am selben Tag über fehlende Gegenstände informiert.",
+   "zitat": "Die Materialverwaltung wird noch am selben Tag informiert.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 62,
+   "datei": "AAR-2025-02-04-missing-items.md",
+   "thema": "Haftung bei Materialverlust",
+   "art": "regel",
+   "kontext": "",
+   "aussage": "Aus dem alleinigen Fehlen eines Gegenstandes wird keine persönliche Verantwortung abgeleitet.",
+   "zitat": "Aus dem Fehlen allein wird keine persönliche Verantwortung abgeleitet.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 63,
+   "datei": "AAR-2025-02-26-catering.md",
+   "thema": "Verpflegung",
+   "art": "regel",
+   "kontext": "Seminargruppen",
+   "aussage": "Das Mittagessen für Seminargruppen muss bis zum Vortag um 12 Uhr bei der Kantine angemeldet werden.",
+   "zitat": "Das Mittagessen für Seminargruppen wird bis zum Vortag um 12 Uhr bei der Kantine angemeldet.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 64,
+   "datei": "AAR-2025-02-26-catering.md",
+   "thema": "Verpflegung",
+   "art": "regel",
+   "kontext": "Mittagessen für Seminargruppen",
+   "aussage": "Es wird immer eine vegetarische Option beim Mittagessen angeboten.",
+   "zitat": "Eine vegetarische Option wird immer angeboten;",
+   "zitat_ok": 1
+  },
+  {
+   "id": 65,
+   "datei": "AAR-2025-02-26-catering.md",
+   "thema": "Verpflegung",
+   "art": "regel",
+   "kontext": "Mittagessen für Seminargruppen",
+   "aussage": "Andere Essenswünsche als vegetarisch müssen bei der Anmeldung angegeben werden.",
+   "zitat": "andere Wünsche werden bei der Anmeldung angegeben.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 66,
+   "datei": "AAR-2025-03-14-printer-outage.md",
+   "thema": "Druckerausfall",
+   "art": "sonstiges",
+   "kontext": "Seminarbüro",
+   "aussage": "Am 10.03.2025 fiel der Drucker im Seminarbüro für einen Vormittag aus.",
+   "zitat": "Am 10.03.2025 fiel der Drucker im Seminarbüro für einen ganzen Vormittag aus.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 67,
+   "datei": "AAR-2025-03-14-printer-outage.md",
+   "thema": "Teilnehmerunterlagen",
+   "art": "sonstiges",
+   "kontext": "Druckerausfall im Seminarbüro",
+   "aussage": "Wegen eines Druckerausfalls wurden Teilnehmerunterlagen am Drucker der Bibliothek gedruckt.",
+   "zitat": "Teilnehmerunterlagen wurden deshalb am Drucker der Bibliothek gedruckt.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 68,
+   "datei": "AAR-2025-03-14-printer-outage.md",
+   "thema": "Druckerausfall",
+   "art": "regel",
+   "kontext": "Druckerausfall im Seminarbüro",
+   "aussage": "Bei künftigen Druckerausfällen ist der Drucker der Bibliothek als Ersatz vorgesehen.",
+   "zitat": "Für künftige Ausfälle ist der Drucker der Bibliothek als Ersatz eingeplant;",
+   "zitat_ok": 1
+  },
+  {
+   "id": 69,
+   "datei": "AAR-2025-03-14-printer-outage.md",
+   "thema": "Druckerausfall",
+   "art": "regel",
+   "kontext": "",
+   "aussage": "Der Schlüssel für den Drucker der Bibliothek liegt im Seminarbüro.",
+   "zitat": "der Schlüssel dafür liegt im Seminarbüro.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 70,
+   "datei": "AAR-2025-03-18-logbook-form.md",
+   "thema": "Fahrtenbuch",
+   "art": "erfahrung",
+   "kontext": "",
+   "aussage": "Das neue Fahrtenbuch-Formular hat sich bewährt.",
+   "zitat": "Das Formular hat sich bewährt",
+   "zitat_ok": 1
+  },
+  {
+   "id": 71,
+   "datei": "AAR-2025-03-18-logbook-form.md",
+   "thema": "Fahrtenbuch",
+   "art": "regel",
+   "kontext": "",
+   "aussage": "Im Fahrtenbuch werden Kilometerstand und Fahrtzweck in getrennten Feldern erfasst.",
+   "zitat": "Kilometerstand und Fahrtzweck werden jetzt in getrennten Feldern erfasst.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 72,
+   "datei": "AAR-2025-03-18-logbook-form.md",
+   "thema": "Rückgabe Dienstfahrzeuge",
+   "art": "regel",
+   "kontext": "",
+   "aussage": "Bei der Fahrzeugrückgabe wird der Tankstand vermerkt.",
+   "zitat": "Bei der Rückgabe wird außerdem der Tankstand vermerkt",
+   "zitat_ok": 1
+  },
+  {
+   "id": 73,
+   "datei": "AAR-2025-03-18-logbook-form.md",
+   "thema": "Betankung Dienstfahrzeuge",
+   "art": "regel",
+   "kontext": "",
+   "aussage": "Die Fahrbereitschaft betankt die Fahrzeuge nach deren Rückgabe.",
+   "zitat": "das Betanken übernimmt anschließend die Fahrbereitschaft.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 74,
+   "datei": "AAR-2025-03-guest-wifi.md",
+   "thema": "WLAN-Zugang für Gäste",
+   "art": "regel",
+   "kontext": "Gäste",
+   "aussage": "Gäste erhalten ihre WLAN-Zugangsdaten am Empfang.",
+   "zitat": "Gäste erhalten ihre WLAN-Zugangsdaten am Empfang.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 75,
+   "datei": "AAR-2025-03-guest-wifi.md",
+   "thema": "WLAN-Zugang für Gäste",
+   "art": "regel",
+   "kontext": "Gäste",
+   "aussage": "Die WLAN-Zugangsdaten für Gäste sind jeweils 24 Stunden gültig.",
+   "zitat": "Die Zugangsdaten gelten jeweils 24 Stunden.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 76,
+   "datei": "AAR-2025-04-22-room-damage.md",
+   "thema": "Meldung von Schäden",
+   "art": "regel",
+   "kontext": "Seminarräume",
+   "aussage": "Defekte Stühle, Tische oder Tafeln in Seminarräumen werden über das Störungsformular der Hausverwaltung gemeldet.",
+   "zitat": "Defekte Stühle, Tische oder Tafeln in Seminarräumen werden über das Störungsformular der Hausverwaltung gemeldet.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 77,
+   "datei": "AAR-2025-04-22-room-damage.md",
+   "thema": "Meldung von Schäden",
+   "art": "regel",
+   "kontext": "Seminarräume",
+   "aussage": "Die Meldung von Schäden soll möglichst am Tag der Feststellung erfolgen.",
+   "zitat": "Die Meldung erfolgt möglichst noch am Tag der Feststellung.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 78,
+   "datei": "AAR-2025-05-06-bike-garage-keys.md",
+   "thema": "Schlüsselausgabe",
+   "art": "regel",
+   "kontext": "",
+   "aussage": "Schlüssel für die Fahrradgarage werden an der Pforte ausgegeben.",
+   "zitat": "Die Schlüssel für die Fahrradgarage werden an der Pforte ausgegeben",
+   "zitat_ok": 1
+  },
+  {
+   "id": 79,
+   "datei": "AAR-2025-05-06-bike-garage-keys.md",
+   "thema": "Rückgabe Schlüssel",
+   "art": "regel",
+   "kontext": "",
+   "aussage": "Die Schlüssel für die Fahrradgarage werden nach Gebrauch wieder an der Pforte abgegeben.",
+   "zitat": "...und nach Gebrauch dort wieder abgegeben.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 80,
+   "datei": "AAR-2025-05-06-bike-garage-keys.md",
+   "thema": "Schlüsselbuch",
+   "art": "regel",
+   "kontext": "",
+   "aussage": "Die Pforte trägt die Ausgabe und Rückgabe der Schlüssel in ihr Schlüsselbuch ein.",
+   "zitat": "Die Pforte trägt Ausgabe und Rückgabe in ihr Schlüsselbuch ein.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 81,
+   "datei": "AAR-2025-05-20-teamwork-day-seminar.md",
+   "thema": "Reservierung Besucherparkplätze",
+   "art": "erfahrung",
+   "kontext": "Tagesseminar",
+   "aussage": "Die Reservierung von Besucherparkplätzen für externe Gäste am Vortag beim Empfang funktionierte problemlos.",
+   "zitat": "für zwei externe Gäste hatten wir am Vortag Besucherparkplätze beim Empfang reserviert, was problemlos klappte.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 82,
+   "datei": "AAR-2025-05-20-teamwork-day-seminar.md",
+   "thema": "Raumbuchung",
+   "art": "unklar",
+   "kontext": "Tagesseminar",
+   "aussage": "Der Seminarraum wurde über den Raumkalender gebucht.",
+   "zitat": "Der Raum ... waren über den Raumkalender gebucht",
+   "zitat_ok": 1
+  },
+  {
+   "id": 83,
+   "datei": "AAR-2025-05-20-teamwork-day-seminar.md",
+   "thema": "Reservierung Beamer",
+   "art": "unklar",
+   "kontext": "Tagesseminar",
+   "aussage": "Der Beamer wurde über den Raumkalender gebucht.",
+   "zitat": "Der ... Beamer waren über den Raumkalender gebucht",
+   "zitat_ok": 1
+  },
+  {
+   "id": 84,
+   "datei": "AAR-2025-05-20-teamwork-day-seminar.md",
+   "thema": "Ausleihe Beamer",
+   "art": "unklar",
+   "kontext": "Tagesseminar",
+   "aussage": "Der Beamer wurde morgens im Seminarbüro abgeholt.",
+   "zitat": "den Beamer haben wir morgens im Seminarbüro abgeholt.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 85,
+   "datei": "AAR-2025-05-20-teamwork-day-seminar.md",
+   "thema": "Seminartechnik",
+   "art": "erfahrung",
+   "kontext": "Tagesseminar",
+   "aussage": "Die Batterien des Laserpointers waren schwach.",
+   "zitat": "nur der Laserpointer hatte schwache Batterien.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 86,
+   "datei": "AAR-2025-05-20-teamwork-day-seminar.md",
+   "thema": "Garderobe",
+   "art": "regel",
+   "kontext": "Seminarräume",
+   "aussage": "Jacken und Taschen sind an der Garderobe im Erdgeschoss abzugeben, da die Seminarräume keine eigene Garderobe mehr haben.",
+   "zitat": "Jacken und Taschen werden an der Garderobe im Erdgeschoss abgegeben, weil die Seminarräume keine eigene Garderobe mehr haben.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 87,
+   "datei": "AAR-2025-05-20-teamwork-day-seminar.md",
+   "thema": "Garderobe",
+   "art": "erfahrung",
+   "kontext": "Seminarräume",
+   "aussage": "Die Regelung, die Garderobe im Erdgeschoss zu nutzen, führte bei Teilnehmern zu Verwirrung.",
+   "zitat": "Das hat zu Beginn kurz für Verwirrung gesorgt, weil einige direkt in den Seminarraum gegangen waren.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 88,
+   "datei": "AAR-2025-05-20-teamwork-day-seminar.md",
+   "thema": "Verpflegung",
+   "art": "erfahrung",
+   "kontext": "Tagesseminar",
+   "aussage": "Das Mittagessen in der Kantine wurde als gut organisiert bewertet.",
+   "zitat": "Das Mittagessen in der Kantine war gut organisiert.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 89,
+   "datei": "AAR-2025-05-20-teamwork-day-seminar.md",
+   "thema": "Raumbuchung",
+   "art": "erfahrung",
+   "kontext": "Tagesseminar",
+   "aussage": "Für Übungen kann der große Seminarraum zu eng sein; es wird empfohlen, zusätzlich einen Gruppenraum zu buchen.",
+   "zitat": "Für die Nachmittagsübung war der Raum etwas eng; beim nächsten Mal nehmen wir zusätzlich einen Gruppenraum dazu.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 90,
+   "datei": "AAR-2025-06-10-one-day-seminars.md",
+   "thema": "Materialausgabe",
+   "art": "regel",
+   "kontext": "eintägige Einführungsveranstaltungen",
+   "aussage": "Teilnehmende erhalten bei der Materialausgabe persönliche Ausgabelisten.",
+   "zitat": "Bei der Materialausgabe für eintägige Einführungsveranstaltungen erhalten Teilnehmende persönliche Ausgabelisten.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 91,
+   "datei": "AAR-2025-06-10-one-day-seminars.md",
+   "thema": "Rückgabe Materialsets",
+   "art": "regel",
+   "kontext": "eintägige Einführungsveranstaltungen",
+   "aussage": "Am Ende der Veranstaltung werden die ausgegebenen Gegenstände anhand der persönlichen Ausgabelisten zurückgenommen.",
+   "zitat": "Zum Veranstaltungsende werden die ausgegebenen Gegenstände anhand dieser Listen zurückgenommen",
+   "zitat_ok": 1
+  },
+  {
+   "id": 92,
+   "datei": "AAR-2025-06-10-one-day-seminars.md",
+   "thema": "Rückgabe Materialsets",
+   "art": "regel",
+   "kontext": "eintägige Einführungsveranstaltungen",
+   "aussage": "Die Teilnehmenden müssen die Rückgabe der Gegenstände bestätigen.",
+   "zitat": "und von den Teilnehmenden bestätigt.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 93,
+   "datei": "AAR-2025-06-10-one-day-seminars.md",
+   "thema": "Materialausgabe",
+   "art": "regel",
+   "kontext": "eintägige Einführungsveranstaltungen",
+   "aussage": "Gemeinsam verwendetes Material wird auf den persönlichen Listen der dafür eingetragenen Personen geführt.",
+   "zitat": "Gemeinsam verwendetes Material wird ebenfalls auf den persönlichen Listen der eingetragenen Personen geführt.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 94,
+   "datei": "AAR-2025-06-24-handouts-usb.md",
+   "thema": "Teilnehmerunterlagen",
+   "art": "unklar",
+   "kontext": "",
+   "aussage": "Teilnehmende erhalten ihre Unterlagen auf einem USB-Stick, der zu Seminarbeginn ausgeteilt wird, anstatt in gedruckter Form.",
+   "zitat": "Statt gedruckter Unterlagen erhalten die Teilnehmenden ihre Unterlagen auf einem USB-Stick, der zu Seminarbeginn ausgeteilt wird.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 95,
+   "datei": "AAR-2025-06-24-handouts-usb.md",
+   "thema": "Teilnehmerunterlagen",
+   "art": "unklar",
+   "kontext": "",
+   "aussage": "Die USB-Sticks mit den Teilnehmerunterlagen werden am Ende des Seminars wieder eingesammelt.",
+   "zitat": "Die Sticks werden am Seminarende wieder eingesammelt.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 96,
+   "datei": "AAR-2025-07-01-lost-and-found.md",
+   "thema": "Fundsachen",
+   "art": "regel",
+   "kontext": "Seminargebäude",
+   "aussage": "Fundsachen sind am Empfang abzugeben.",
+   "zitat": "Fundsachen werden am Empfang abgegeben",
+   "zitat_ok": 1
+  },
+  {
+   "id": 97,
+   "datei": "AAR-2025-07-01-lost-and-found.md",
+   "thema": "Fundsachen",
+   "art": "regel",
+   "kontext": "Seminargebäude",
+   "aussage": "Fundsachen werden am Empfang drei Monate lang aufbewahrt.",
+   "zitat": "dort drei Monate aufbewahrt.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 98,
+   "datei": "AAR-2025-07-01-lost-and-found.md",
+   "thema": "Fundsachen",
+   "art": "regel",
+   "kontext": "Seminargebäude",
+   "aussage": "Nach drei Monaten Aufbewahrung werden Fundsachen an das Fundbüro der Stadt weitergegeben.",
+   "zitat": "Danach werden sie an das Fundbüro der Stadt weitergegeben.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 99,
+   "datei": "AAR-2025-08-19-loan-laptops.md",
+   "thema": "Rückgabe Leihlaptops",
+   "art": "regel",
+   "kontext": "Leihlaptops",
+   "aussage": "Leihlaptops des IT-Service müssen von der ausleihenden Person an der IT-Ausgabe zurückgegeben werden.",
+   "zitat": "Leihlaptops des IT-Service werden von der ausleihenden Person an der IT-Ausgabe zurückgegeben.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 100,
+   "datei": "AAR-2025-08-19-loan-laptops.md",
+   "thema": "Rückgabe Leihlaptops",
+   "art": "regel",
+   "kontext": "Leihlaptops",
+   "aussage": "Das Ladegerät gehört zum Leihlaptop und muss mit diesem zurückgegeben werden.",
+   "zitat": "Das Ladegerät gehört zum Gerät und wird mit zurückgegeben.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 101,
+   "datei": "AAR-2025-08-19-loan-laptops.md",
+   "thema": "Rückgabe Leihlaptops",
+   "art": "regel",
+   "kontext": "Leihlaptops",
+   "aussage": "Der IT-Service bucht die Rückgabe des Laptops im Ausleihsystem.",
+   "zitat": "Der IT-Service bucht die Rückgabe im Ausleihsystem.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 102,
+   "datei": "AAR-2025-09-15-vehicles-multi-day-seminars.md",
+   "thema": "Fahrzeugnutzung",
+   "art": "sonstiges",
+   "kontext": "mehrtägige Seminare",
+   "aussage": "Bei mehrtägigen Seminaren nutzen Seminargruppen ausgeliehene Fahrzeuge häufig gemeinsam.",
+   "zitat": "Bei mehrtägigen Seminaren nutzen Seminargruppen ausgeliehene Fahrzeuge häufig gemeinsam.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 103,
+   "datei": "AAR-2025-09-15-vehicles-multi-day-seminars.md",
+   "thema": "Fahrzeugzuordnung",
+   "art": "regel",
+   "kontext": "gemeinsame Nutzung",
+   "aussage": "Auch bei gemeinsamer Nutzung durch eine Gruppe bleibt ein Fahrzeug der Person zugeordnet, die es ursprünglich ausgeliehen hat.",
+   "zitat": "Auch bei gemeinsamer Nutzung bleibt das Fahrzeug der ausleihenden Person zugeordnet.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 104,
+   "datei": "AAR-2025-09-15-vehicles-multi-day-seminars.md",
+   "thema": "Rückgabe Dienstfahrzeuge",
+   "art": "regel",
+   "kontext": "",
+   "aussage": "Die Person, die das Fahrzeug ausgeliehen hat, gibt es zurück und bestätigt die Rückgabe bei der Fahrbereitschaft.",
+   "zitat": "Sie gibt das Fahrzeug zurück und bestätigt die Rückgabe gegenüber der Fahrbereitschaft.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 161,
+   "datei": "AAR-2025-09-23-sanitaetsdienst-schiessausbildung.md",
+   "thema": "Sanitätsdienstliche Absicherung",
+   "art": "unklar",
+   "kontext": "Schießausbildung",
+   "aussage": "Jeder Schießtag wurde durch einen Sanitätsposten mit Sanitätsfahrzeug, einem Notfallsanitäter und einem Sanitätssoldaten abgesichert.",
+   "zitat": "Jeder Schießtag wurde durch einen Sanitätsposten mit Sanitätsfahrzeug, einem Notfallsanitäter und einem Sanitätssoldaten abgesichert",
+   "zitat_ok": 1
+  },
+  {
+   "id": 162,
+   "datei": "AAR-2025-09-23-sanitaetsdienst-schiessausbildung.md",
+   "thema": "Sanitätsdienstliche Absicherung",
+   "art": "unklar",
+   "kontext": "Gefechtsschießen",
+   "aussage": "An Tagen mit Gefechtsschießen war zusätzlich zum Sanitätsposten ein Arzt vor Ort.",
+   "zitat": "an den Tagen mit Gefechtsschießen war zusätzlich ein Arzt vor Ort.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 163,
+   "datei": "AAR-2025-09-23-sanitaetsdienst-schiessausbildung.md",
+   "thema": "Rettungskette",
+   "art": "regel",
+   "kontext": "Schießausbildung",
+   "aussage": "Die in der Schießanweisung festgelegte Rettungskette besteht aus Erstversorgung (Kameraden, Sanitätsposten), Transport zum Hubschrauberlandeplatz oder Krankenhaus und Alarmierung über die Leitstelle.",
+   "zitat": "Die Rettungskette war in der Schießanweisung festgelegt: Erstversorgung durch Kameraden und Sanitätsposten, Transport mit dem Sanitätsfahrzeug zum Hubschrauberlandeplatz oder direkt zum zivilen Krankenhaus, Alarmierung über die Leitstelle.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 164,
+   "datei": "AAR-2025-09-23-sanitaetsdienst-schiessausbildung.md",
+   "thema": "Koordinaten Landeplatz",
+   "art": "erfahrung",
+   "kontext": "Schießausbildung",
+   "aussage": "Bei einer unangekündigten Übung wurde festgestellt, dass die Koordinaten des Hubschrauberlandeplatzes in der Leitstelle nicht aktuell waren.",
+   "zitat": "Dabei zeigte sich, dass die Koordinaten des Landeplatzes in der Leitstelle nicht aktuell waren",
+   "zitat_ok": 1
+  },
+  {
+   "id": 165,
+   "datei": "AAR-2025-09-23-sanitaetsdienst-schiessausbildung.md",
+   "thema": "Hitzeerschöpfung",
+   "art": "erfahrung",
+   "kontext": "Schießausbildung",
+   "aussage": "Hitzeerschöpfungen traten fast ausschließlich am Nachmittag auf.",
+   "zitat": "Die Hitzeerschöpfungen traten fast ausschließlich am Nachmittag auf.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 166,
+   "datei": "AAR-2025-09-23-sanitaetsdienst-schiessausbildung.md",
+   "thema": "Maßnahmen bei Hitze",
+   "art": "erfahrung",
+   "kontext": "Schießausbildung",
+   "aussage": "Bei Hitze haben sich vom Leitenden durchgesetzte Trinkpausen alle 30 Minuten und ein schattiger Wartebereich bewährt.",
+   "zitat": "Bewährt haben sich Trinkpausen alle 30 Minuten, die vom Leitenden durchgesetzt werden, und ein schattiger Wartebereich hinter der Bahn.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 167,
+   "datei": "AAR-2025-09-23-sanitaetsdienst-schiessausbildung.md",
+   "thema": "Maßnahmen bei Hitze",
+   "art": "erfahrung",
+   "kontext": "Gefechtsschießen",
+   "aussage": "Bei Gefechtsschießen mit Temperaturen über 28 °C sollte erwogen werden, die Schutzweste zwischen den Durchgängen abzulegen, wobei die Meinungen der Leitenden hierzu auseinandergingen.",
+   "zitat": "Bei Gefechtsschießen sollte bei Temperaturen über 28 °C erwogen werden, die Schutzweste zwischen den Durchgängen abzulegen. Die Einschätzungen der Leitenden gingen hier auseinander",
+   "zitat_ok": 1
+  },
+  {
+   "id": 168,
+   "datei": "AAR-2025-09-23-sanitaetsdienst-schiessausbildung.md",
+   "thema": "Gehörschutz",
+   "art": "erfahrung",
+   "kontext": "Schießausbildung",
+   "aussage": "Fälle von Ohrgeräuschen nach dem Schießen wurden auf Gehörschutzstöpsel zurückgeführt, die nicht tief genug eingesetzt waren.",
+   "zitat": "Ohrgeräuschen nach dem Schießen, bei denen der Gehörschutz nicht richtig saß",
+   "zitat_ok": 1
+  },
+  {
+   "id": 169,
+   "datei": "AAR-2025-09-23-sanitaetsdienst-schiessausbildung.md",
+   "thema": "Gehörschutz",
+   "art": "regel",
+   "kontext": "Schießausbildung",
+   "aussage": "Seit dem 01.09.2025 führt der Aufsicht führende Soldat an jeder Bahn vor dem ersten Durchgang eine Sichtkontrolle des Gehörschutzes durch.",
+   "zitat": "Seit dem 01.09.2025 wird an jeder Bahn vor dem ersten Durchgang eine kurze Sichtkontrolle des Gehörschutzes durch den Aufsicht führenden Soldaten durchgeführt.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 170,
+   "datei": "AAR-2025-09-23-sanitaetsdienst-schiessausbildung.md",
+   "thema": "Gehörschutz",
+   "art": "erfahrung",
+   "kontext": "Schießausbildung",
+   "aussage": "Seit Einführung der Sichtkontrolle des Gehörschutzes gab es keine weiteren Fälle von Ohrgeräuschen.",
+   "zitat": "Seitdem gab es keine weiteren Fälle.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 171,
+   "datei": "AAR-2025-09-23-sanitaetsdienst-schiessausbildung.md",
+   "thema": "Erste-Hilfe-Kasten",
+   "art": "unklar",
+   "kontext": "Schießstände",
+   "aussage": "Die Erste-Hilfe-Kästen in den Schießständen wurden nach jedem Schießtag vom Sanitätsposten kontrolliert.",
+   "zitat": "Die Erste-Hilfe-Kästen in den Schießständen wurden nach jedem Schießtag durch den Sanitätsposten kontrolliert.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 172,
+   "datei": "AAR-2025-09-23-sanitaetsdienst-schiessausbildung.md",
+   "thema": "Meldung fehlender Teile",
+   "art": "regel",
+   "kontext": "Erste-Hilfe-Kästen",
+   "aussage": "Seit August 2025 werden fehlende Teile in Erste-Hilfe-Kästen nicht mehr per Papierformular, sondern über die digitale Mängelmeldung im Intranet (Kategorie „Erste Hilfe“) gemeldet.",
+   "zitat": "Fehlende Teile in Erste-Hilfe-Kästen werden seit August 2025 nicht mehr mit dem Papierformular an die Hausverwaltung gemeldet, sondern über die digitale Mängelmeldung im Intranet, Kategorie „Erste Hilfe“",
+   "zitat_ok": 1
+  },
+  {
+   "id": 173,
+   "datei": "AAR-2025-09-23-sanitaetsdienst-schiessausbildung.md",
+   "thema": "Meldung fehlender Teile",
+   "art": "regel",
+   "kontext": "alle Liegenschaften des Standorts",
+   "aussage": "Die Meldung fehlender Teile in Erste-Hilfe-Kästen über die digitale Mängelmeldung gilt für alle Liegenschaften des Standorts.",
+   "zitat": "das gilt für alle Liegenschaften des Standorts.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 174,
+   "datei": "AAR-2025-09-23-sanitaetsdienst-schiessausbildung.md",
+   "thema": "Meldung fehlender Teile",
+   "art": "erfahrung",
+   "kontext": "Erste-Hilfe-Kästen",
+   "aussage": "Durch die Umstellung auf die digitale Mängelmeldung dauert die Auffüllung von Material nur noch zwei bis drei Werktage.",
+   "zitat": "Die Auffüllung dauerte dadurch nur noch zwei bis drei Werktage.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 175,
+   "datei": "AAR-2025-09-23-sanitaetsdienst-schiessausbildung.md",
+   "thema": "Standort Sanitätsposten",
+   "art": "erfahrung",
+   "kontext": "Gefechtsschießen",
+   "aussage": "Beim Gefechtsschießen sollte der Sanitätsposten so positioniert werden, dass er Sicht auf die Schützen hat und nah an der Absperrung steht.",
+   "zitat": "Am Gefechtsschießen stand er zunächst zu weit von der Bahn entfernt und hatte keine Sicht auf die Schützen. Ab dem zweiten Tag wurde er näher an die Absperrung verlegt.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 176,
+   "datei": "AAR-2025-09-23-sanitaetsdienst-schiessausbildung.md",
+   "thema": "Zeitplanung Seminar",
+   "art": "erfahrung",
+   "kontext": "Schießausbildung im Hochsommer",
+   "aussage": "Es wird empfohlen, Schießausbildungen im Hochsommer möglichst auf den Vormittag zu legen.",
+   "zitat": "Schießausbildung im Hochsommer möglichst auf den Vormittag legen.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 177,
+   "datei": "AAR-2025-09-23-sanitaetsdienst-schiessausbildung.md",
+   "thema": "Maßnahmen bei Hitze",
+   "art": "erfahrung",
+   "kontext": "Schießausbildung",
+   "aussage": "Es wird empfohlen, Trinkpausen in die Schießanweisung aufzunehmen.",
+   "zitat": "Trinkpausen in die Schießanweisung aufnehmen.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 178,
+   "datei": "AAR-2025-09-23-sanitaetsdienst-schiessausbildung.md",
+   "thema": "Gehörschutz",
+   "art": "erfahrung",
+   "kontext": "Schießausbildung",
+   "aussage": "Es wird empfohlen, die eingeführte Sichtkontrolle des Gehörschutzes beizubehalten.",
+   "zitat": "Sichtkontrolle des Gehörschutzes beibehalten.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 179,
+   "datei": "AAR-2025-09-23-sanitaetsdienst-schiessausbildung.md",
+   "thema": "Koordinaten Landeplatz",
+   "art": "erfahrung",
+   "kontext": "",
+   "aussage": "Es wird empfohlen, die Koordinaten von Landeplätzen vor jeder Ausbildungsserie in der Leitstelle zu prüfen.",
+   "zitat": "Koordinaten von Landeplätzen vor jeder Ausbildungsserie in der Leitstelle prüfen.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 105,
+   "datei": "AAR-2025-10-07-projector-delivery.md",
+   "thema": "Reservierung Beamer",
+   "art": "regel",
+   "kontext": "Seminarbetrieb",
+   "aussage": "Beamer werden über den Raumkalender zusammen mit dem Seminarraum reserviert.",
+   "zitat": "Beamer werden über den Raumkalender zusammen mit dem Seminarraum reserviert.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 106,
+   "datei": "AAR-2025-10-07-projector-delivery.md",
+   "thema": "Seminartechnik",
+   "art": "regel",
+   "kontext": "Seminarbetrieb",
+   "aussage": "Das Seminarbüro stellt den Beamer vor Seminarbeginn im Raum bereit.",
+   "zitat": "Das Seminarbüro stellt den Beamer vor Seminarbeginn im Raum bereit",
+   "zitat_ok": 1
+  },
+  {
+   "id": 107,
+   "datei": "AAR-2025-10-07-projector-delivery.md",
+   "thema": "Rückgabe Beamer",
+   "art": "regel",
+   "kontext": "Seminarbetrieb",
+   "aussage": "Das Seminarbüro holt den Beamer nach dem Seminar aus dem Raum ab.",
+   "zitat": "...und holt ihn nach dem Seminar dort ab.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 108,
+   "datei": "AAR-2025-11-11-shared-group-rooms.md",
+   "thema": "Raumbuchung",
+   "art": "regel",
+   "kontext": "Gemeinsam genutzte Gruppenräume",
+   "aussage": "Bei gemeinsam genutzten Gruppenräumen muss sich jede Gruppe in die Belegungsliste an der Tür eintragen.",
+   "zitat": "trägt sich jede Gruppe in die Belegungsliste an der Tür ein.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 109,
+   "datei": "AAR-2025-11-11-shared-group-rooms.md",
+   "thema": "Nutzung Gruppenräume",
+   "art": "regel",
+   "kontext": "Gemeinsam genutzte Gruppenräume",
+   "aussage": "Die Gruppe, die einen Raum zuletzt nutzt, ist dafür verantwortlich, die Fenster zu schließen und das Licht auszuschalten.",
+   "zitat": "Die Gruppe, die den Raum zuletzt nutzt, schließt die Fenster und schaltet das Licht aus.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 180,
+   "datei": "AAR-2025-11-18-funkgeraete.md",
+   "thema": "Ausgabe Funkgeräte",
+   "art": "sonstiges",
+   "kontext": "Lehrgang Fernmeldeverbindungsdienst",
+   "aussage": "An die Lehrgangsteilnehmenden wurden tragbare Funkgeräte, Hör-Sprech-Garnituren und Ersatzakkus ausgegeben.",
+   "zitat": "wurden an 16 Lehrgangsteilnehmende tragbare Funkgeräte, Hör-Sprech-Garnituren und Ersatzakkus ausgegeben.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 181,
+   "datei": "AAR-2025-11-18-funkgeraete.md",
+   "thema": "Ausgabe Funkgeräte",
+   "art": "unklar",
+   "kontext": "Lehrgang Fernmeldeverbindungsdienst",
+   "aussage": "Die Ausgabe der Funkgeräte erfolgte am ersten Lehrgangstag in der Fernmeldewerkstatt.",
+   "zitat": "Die Ausgabe erfolgte am ersten Lehrgangstag in der Fernmeldewerkstatt.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 182,
+   "datei": "AAR-2025-11-18-funkgeraete.md",
+   "thema": "Ausgabe Funkgeräte",
+   "art": "unklar",
+   "kontext": "",
+   "aussage": "Jedes Funkgerät ist nummeriert und wird einer Person auf einer Empfangsliste zugeordnet, die den Erhalt mit Unterschrift quittiert.",
+   "zitat": "Jedes Gerät ist einzeln nummeriert und wurde der Person auf einer Empfangsliste zugeordnet, die mit Unterschrift quittiert hat.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 183,
+   "datei": "AAR-2025-11-18-funkgeraete.md",
+   "thema": "Ausgabe Funkgeräte",
+   "art": "erfahrung",
+   "kontext": "Lehrgang Fernmeldeverbindungsdienst",
+   "aussage": "Die Ausgabe von Funkgeräten an 16 Personen dauerte knapp eine Stunde, weil zu jedem Gerät ein Funktionstest gemacht wurde.",
+   "zitat": "Das dauerte für 16 Personen knapp eine Stunde, weil zu jedem Gerät ein Funktionstest gemacht wurde.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 184,
+   "datei": "AAR-2025-11-18-funkgeraete.md",
+   "thema": "Ausgabe Funkgeräte",
+   "art": "erfahrung",
+   "kontext": "",
+   "aussage": "Ein Funktionstest bei der Ausgabe von Funkgeräten hat sich bewährt, da defekte Geräte (z.B. Antennenanschluss) sofort erkannt und getauscht werden konnten.",
+   "zitat": "Der Funktionstest hat sich gelohnt: Zwei Geräte hatten einen defekten Antennenanschluss und wurden sofort getauscht.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 185,
+   "datei": "AAR-2025-11-18-funkgeraete.md",
+   "thema": "Rückgabe Funkgeräte",
+   "art": "regel",
+   "kontext": "",
+   "aussage": "Seit dem 01.11.2025 gilt die Regelung nicht mehr, dass Akkus getrennt von den Geräten ausgegeben und gesammelt an der Materialausgabe zurückgegeben werden.",
+   "zitat": "Diese Regelung gilt seit dem 01.11.2025 nicht mehr.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 186,
+   "datei": "AAR-2025-11-18-funkgeraete.md",
+   "thema": "Rückgabe Funkgeräte",
+   "art": "regel",
+   "kontext": "",
+   "aussage": "Akkus werden jetzt zusammen mit dem Funkgerät in der Fernmeldewerkstatt zurückgegeben.",
+   "zitat": "Akkus werden jetzt zusammen mit dem Gerät in der Fernmeldewerkstatt zurückgegeben",
+   "zitat_ok": 1
+  },
+  {
+   "id": 187,
+   "datei": "AAR-2025-11-18-funkgeraete.md",
+   "thema": "Prüfung Funkgeräte-Akkus",
+   "art": "regel",
+   "kontext": "",
+   "aussage": "Bei der Rückgabe werden Funkgeräte-Akkus einzeln auf ihre Restkapazität geprüft.",
+   "zitat": "und dort einzeln auf Restkapazität geprüft;",
+   "zitat_ok": 1
+  },
+  {
+   "id": 188,
+   "datei": "AAR-2025-11-18-funkgeraete.md",
+   "thema": "Prüfung Funkgeräte-Akkus",
+   "art": "regel",
+   "kontext": "",
+   "aussage": "Akkus mit einer Restkapazität unter 70 Prozent werden ausgesondert.",
+   "zitat": "Akkus unter 70 Prozent werden ausgesondert.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 189,
+   "datei": "AAR-2025-11-18-funkgeraete.md",
+   "thema": "Prüfung Funkgeräte-Akkus",
+   "art": "sonstiges",
+   "kontext": "",
+   "aussage": "Die neue Regel zur Akkuprüfung wurde eingeführt, weil im Sommer mehrfach Akkus mit zu geringer Kapazität ausgegeben wurden.",
+   "zitat": "Grund war, dass im Sommer mehrfach Akkus mit zu geringer Kapazität in die Ausbildung gingen.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 190,
+   "datei": "AAR-2025-11-18-funkgeraete.md",
+   "thema": "Ausbildung Funkdisziplin",
+   "art": "erfahrung",
+   "kontext": "",
+   "aussage": "Es hat sich gezeigt, dass Funkdisziplin geübt werden muss, bevor die Teilnehmenden im Gelände eingesetzt werden.",
+   "zitat": "hat sich gezeigt, dass Funkdisziplin geübt werden muss, bevor die Teilnehmenden im Gelände eingesetzt werden.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 191,
+   "datei": "AAR-2025-11-18-funkgeraete.md",
+   "thema": "Ausbildung Funkdisziplin",
+   "art": "erfahrung",
+   "kontext": "Lehrgang Fernmeldeverbindungsdienst",
+   "aussage": "Ohne vorherige Übung zur Funkdisziplin waren die Funksprüche zu lang, Rufnamen wurden verwechselt und der Kanal war zeitweise dauerhaft belegt.",
+   "zitat": "Am ersten Geländetag waren die Funksprüche zu lang, Rufnamen wurden verwechselt, und der Kanal war zeitweise dauerhaft belegt.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 192,
+   "datei": "AAR-2025-11-18-funkgeraete.md",
+   "thema": "Ausbildung Funkdisziplin",
+   "art": "erfahrung",
+   "kontext": "",
+   "aussage": "Eine zusätzliche Übungseinheit zur Funkdisziplin im Lehrsaal mit festen Spruchmustern hat sich als sehr wirksam erwiesen.",
+   "zitat": "Nach einer zusätzlichen Übungseinheit im Lehrsaal mit festen Spruchmustern lief es am zweiten Geländetag deutlich besser.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 193,
+   "datei": "AAR-2025-11-18-funkgeraete.md",
+   "thema": "Ausbildung Funkdisziplin",
+   "art": "erfahrung",
+   "kontext": "",
+   "aussage": "Es wird empfohlen, eine Übungseinheit zur Funkdisziplin fest vor den ersten Geländetag zu legen.",
+   "zitat": "Wir empfehlen, diese Einheit fest vor den ersten Geländetag zu legen.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 194,
+   "datei": "AAR-2025-11-18-funkgeraete.md",
+   "thema": "Rückgabe Funkgeräte",
+   "art": "regel",
+   "kontext": "",
+   "aussage": "Nach neuer Regelung gibt jede Person Gerät und Akkus selbst in der Fernmeldewerkstatt ab und bestätigt die Rückgabe auf der Empfangsliste.",
+   "zitat": "Jetzt gibt jede Person Gerät und Akkus selbst in der Fernmeldewerkstatt ab und bestätigt die Rückgabe auf der Empfangsliste.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 195,
+   "datei": "AAR-2025-11-18-funkgeraete.md",
+   "thema": "Rückgabe Funkgeräte",
+   "art": "erfahrung",
+   "kontext": "",
+   "aussage": "Die individuelle Rückgabe von Funkgeräten inklusive Akkuprüfung führte zu einer Warteschlange von etwa 40 Minuten.",
+   "zitat": "Dadurch entstand eine Warteschlange von etwa 40 Minuten, weil die Akkuprüfung Zeit braucht.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 196,
+   "datei": "AAR-2025-11-18-funkgeraete.md",
+   "thema": "Rückgabe Funkgeräte",
+   "art": "erfahrung",
+   "kontext": "künftige Lehrgänge",
+   "aussage": "Es wird empfohlen, die Rückgabe der Funkgeräte gestaffelt nach Hörsälen zu planen, um Wartezeiten zu vermeiden.",
+   "zitat": "Für künftige Lehrgänge sollte die Rückgabe gestaffelt nach Hörsälen geplant werden.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 197,
+   "datei": "AAR-2025-11-18-funkgeraete.md",
+   "thema": "Erfassung Geräteschäden",
+   "art": "unklar",
+   "kontext": "Lehrgang Fernmeldeverbindungsdienst",
+   "aussage": "Ein Schaden an einem Funkgerät (Riss im Gehäuse) wurde mit Gerätenummer und Datum auf der Empfangsliste vermerkt.",
+   "zitat": "Der Schaden wurde mit Gerätenummer und Datum auf der Empfangsliste vermerkt",
+   "zitat_ok": 1
+  },
+  {
+   "id": 198,
+   "datei": "AAR-2025-11-18-funkgeraete.md",
+   "thema": "Meldung von Schäden",
+   "art": "unklar",
+   "kontext": "Lehrgang Fernmeldeverbindungsdienst",
+   "aussage": "Ein Schaden an einem Funkgerät wurde der Fernmeldewerkstatt gemeldet.",
+   "zitat": "und der Fernmeldewerkstatt gemeldet.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 110,
+   "datei": "AAR-2025-12-02-photo-consent-seminar.md",
+   "thema": "Anmeldung zu Seminaren",
+   "art": "erfahrung",
+   "kontext": "Tagesseminar „Präsentieren“",
+   "aussage": "Das Seminar war über das Seminarportal schnell ausgebucht und hatte eine Warteliste, von der zwei Personen nachrückten.",
+   "zitat": "Das Seminar war über das Seminarportal schnell ausgebucht; sechs Personen standen auf der Warteliste, zwei davon rückten kurzfristig nach.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 111,
+   "datei": "AAR-2025-12-02-photo-consent-seminar.md",
+   "thema": "Fotos von Teilnehmern",
+   "art": "regel",
+   "kontext": "Seminar",
+   "aussage": "Fotos während eines Seminars dürfen nur mit Zustimmung der abgebildeten Personen gemacht werden.",
+   "zitat": "Fotos während des Seminars werden nur mit Zustimmung der abgebildeten Personen gemacht.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 112,
+   "datei": "AAR-2025-12-02-photo-consent-seminar.md",
+   "thema": "Fotos von Teilnehmern",
+   "art": "erfahrung",
+   "kontext": "Seminar",
+   "aussage": "Die Zustimmung zum Fotografieren wurde mündlich eingeholt, da es dafür bisher kein Formular gibt.",
+   "zitat": "Die Zustimmung haben wir zu Beginn mündlich eingeholt; ein Formular dafür gibt es bisher nicht.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 113,
+   "datei": "AAR-2025-12-02-photo-consent-seminar.md",
+   "thema": "Seminartechnik",
+   "art": "unklar",
+   "kontext": "Tagesseminar",
+   "aussage": "Der Beamer wurde vom Seminarbüro im Raum bereitgestellt und nach dem Seminar wieder abgeholt.",
+   "zitat": "Der Beamer stand bei unserer Ankunft bereits im Raum und wurde nach dem Seminar vom Seminarbüro abgeholt.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 114,
+   "datei": "AAR-2025-12-02-photo-consent-seminar.md",
+   "thema": "Seminarinhalt",
+   "art": "erfahrung",
+   "kontext": "Tagesseminar „Präsentieren“",
+   "aussage": "Die Präsentationsübungen dauerten länger als geplant, weshalb die Abschlussrunde knapp ausfiel.",
+   "zitat": "Die Präsentationsübungen dauerten länger als geplant, deshalb fiel die Abschlussrunde knapp aus.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 115,
+   "datei": "AAR-2025-12-10-winter-socks-and-jackets.md",
+   "thema": "Winterkleidung",
+   "art": "erfahrung",
+   "kontext": "mehrtägiges Außenseminar",
+   "aussage": "Wollsocken haben sich besser bewährt als Baumwollsocken.",
+   "zitat": "Wollsocken haben sich bei unserem mehrtägigen Außenseminar besser bewährt als Baumwollsocken",
+   "zitat_ok": 1
+  },
+  {
+   "id": 116,
+   "datei": "AAR-2025-12-10-winter-socks-and-jackets.md",
+   "thema": "Winterkleidung",
+   "art": "erfahrung",
+   "kontext": "mehrtägiges Außenseminar",
+   "aussage": "Es wurden häufig Ersatzsocken gebraucht.",
+   "zitat": "Ersatzsocken wurden häufig gebraucht.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 117,
+   "datei": "AAR-2025-12-10-winter-socks-and-jackets.md",
+   "thema": "Winterkleidung",
+   "art": "erfahrung",
+   "kontext": "mehrtägiges Außenseminar",
+   "aussage": "Bei Jacken gab es unterschiedliche Vorlieben: Einige Teilnehmende bevorzugten Daunenjacken, andere mehrere dünne Schichten.",
+   "zitat": "Bei den Jacken waren die Teilnehmenden uneinig: Einige bevorzugten eine Daunenjacke, andere mehrere dünne Schichten.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 118,
+   "datei": "AAR-2025-12-10-winter-socks-and-jackets.md",
+   "thema": "Winterkleidung",
+   "art": "regel",
+   "kontext": "mehrtägiges Außenseminar",
+   "aussage": "Eine wasserdichte Überjacke ist für alle Teilnehmenden vorgeschrieben.",
+   "zitat": "Eine wasserdichte Überjacke ist für alle Teilnehmenden vorgeschrieben.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 119,
+   "datei": "AAR-2026-01-14-winter-service.md",
+   "thema": "Winterdienst",
+   "art": "regel",
+   "kontext": "Schnee und Glätte",
+   "aussage": "Der Hausdienst räumt bei Schnee und Glätte die Zugänge zum Seminargebäude bis 7 Uhr.",
+   "zitat": "Bei Schnee und Glätte räumt der Hausdienst die Zugänge zum Seminargebäude bis 7 Uhr.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 120,
+   "datei": "AAR-2026-01-14-winter-service.md",
+   "thema": "Gebäudezugang",
+   "art": "regel",
+   "kontext": "Winterseminare bei Glätte",
+   "aussage": "Bei Glätte bleibt der Nebeneingang geschlossen; Teilnehmende müssen dann den Haupteingang nutzen.",
+   "zitat": "Der Nebeneingang bleibt bei Glätte geschlossen; Teilnehmende von Winterseminaren nutzen dann den Haupteingang.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 199,
+   "datei": "AAR-2026-01-23-winterbiwak.md",
+   "thema": "Zeitplanung Stellungsbau",
+   "art": "erfahrung",
+   "kontext": "Stellungsbau bei gefrorenem Boden",
+   "aussage": "Die Zeit, die für den Stellungsbau unter normalen Bedingungen angesetzt wird, reicht bei gefrorenem Boden nicht aus und sollte mindestens verdoppelt werden.",
+   "zitat": "Bei gefrorenem Boden reicht die Zeit, die für den Stellungsbau unter normalen Bedingungen angesetzt wird, nicht aus.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 200,
+   "datei": "AAR-2026-01-23-winterbiwak.md",
+   "thema": "Stellungsbau",
+   "art": "erfahrung",
+   "kontext": "Stellungsbau bei gefrorenem Boden",
+   "aussage": "Anstatt sofort in die Tiefe zu graben, hat es sich bei gefrorenem Boden bewährt, zunächst Schnee als Brustwehr aufzuschichten und zu verdichten.",
+   "zitat": "Der 2. Zug hat gute Erfahrungen damit gemacht, den Schnee zunächst als Brustwehr aufzuschichten und zu verdichten, statt sofort in die Tiefe zu graben.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 201,
+   "datei": "AAR-2026-01-23-winterbiwak.md",
+   "thema": "Tarnung",
+   "art": "erfahrung",
+   "kontext": "Stellung bei Neuschnee",
+   "aussage": "Spuren im Neuschnee können eine Stellung verraten.",
+   "zitat": "die Spuren im Neuschnee haben die Stellung aber gegenüber dem Übungsgegner verraten.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 202,
+   "datei": "AAR-2026-01-23-winterbiwak.md",
+   "thema": "Tarnung",
+   "art": "erfahrung",
+   "kontext": "Stellung bei Neuschnee",
+   "aussage": "Um verräterische Spuren zu vermeiden, sollten Wege zu Kampfständen vor Neuschnee festgelegt und danach nicht verlassen werden.",
+   "zitat": "Wege zu den Kampfständen sollten deshalb vor Neuschnee festgelegt und danach nicht verlassen werden.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 203,
+   "datei": "AAR-2026-01-23-winterbiwak.md",
+   "thema": "Wachdienst",
+   "art": "erfahrung",
+   "kontext": "Übung im Winter bei starkem Frost",
+   "aussage": "Ein Ablöserhythmus von zwei Stunden führte bei starker Kälte zum Auskühlen der Alarmposten.",
+   "zitat": "Die Alarmposten wurden zunächst im Zweistundenrhythmus abgelöst. In der ersten Nacht kühlten die Posten dabei so stark aus",
+   "zitat_ok": 1
+  },
+  {
+   "id": 204,
+   "datei": "AAR-2026-01-23-winterbiwak.md",
+   "thema": "Wachdienst",
+   "art": "erfahrung",
+   "kontext": "Übung im Winter bei starkem Frost",
+   "aussage": "Eine Verkürzung der Wachablösung auf 60 Minuten bei starker Kälte hat sich bewährt, da die Posten aufmerksamer blieben.",
+   "zitat": "ab der zweiten Nacht vom Kompaniechef für die Dauer der Übung eine Ablösung nach 60 Minuten angeordnet wurde. Das hat sich bewährt; die Posten blieben aufmerksamer.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 205,
+   "datei": "AAR-2026-01-23-winterbiwak.md",
+   "thema": "Wachdienst",
+   "art": "unklar",
+   "kontext": "Übung im Winter",
+   "aussage": "Es ist nicht entschieden, ob die Verkürzung der Wachablösung auf 60 Minuten bei starker Kälte generell für künftige Übungen gelten soll.",
+   "zitat": "Ob das auch für künftige Übungen gelten soll, ist nicht entschieden.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 206,
+   "datei": "AAR-2026-01-23-winterbiwak.md",
+   "thema": "Winterkleidung",
+   "art": "erfahrung",
+   "kontext": "Körperliche Arbeit im Winter (z.B. Stellungsbau)",
+   "aussage": "Bei körperlicher Arbeit im Winter können dicke Jacken zu Schweiß und anschließender Auskühlung führen; hier bewährt sich das Schichtenprinzip.",
+   "zitat": "Beim Stellungsbau hätten dicke Jacken zu Schweiß und danach zu Auskühlung geführt.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 207,
+   "datei": "AAR-2026-01-23-winterbiwak.md",
+   "thema": "Winterkleidung",
+   "art": "erfahrung",
+   "kontext": "Langer Stillstand in der Nacht bei Kälte",
+   "aussage": "Bei langem Stillstand in der Kälte kann auch mit allen Bekleidungsschichten Frieren auftreten, sodass eine zusätzliche, dick gefütterte Jacke nötig sein kann.",
+   "zitat": "wurde berichtet, dass die Soldaten in der Stellung, also bei langem Stillstand in der Nacht, auch mit allen Lagen gefroren haben und eine zusätzliche, dick gefütterte Jacke für die Posten notwendig gewesen wäre.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 208,
+   "datei": "AAR-2026-01-23-winterbiwak.md",
+   "thema": "Winterkleidung",
+   "art": "erfahrung",
+   "kontext": "Übung im Winter",
+   "aussage": "Die Wahl der richtigen Winterkleidung ist vom Auftrag abhängig (Bewegung versus Stillstand).",
+   "zitat": "Beide Einschätzungen sind nachvollziehbar und hängen vom Auftrag ab.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 209,
+   "datei": "AAR-2026-01-23-winterbiwak.md",
+   "thema": "Winterkleidung",
+   "art": "erfahrung",
+   "kontext": "Übung im Winter",
+   "aussage": "Wollsocken und ein zweites Paar Handschuhe wurden als unverzichtbar bei Kälte bezeichnet.",
+   "zitat": "Wollsocken und ein zweites Paar Handschuhe wurden von nahezu allen als unverzichtbar bezeichnet.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 210,
+   "datei": "AAR-2026-01-23-winterbiwak.md",
+   "thema": "Kälteschutz",
+   "art": "erfahrung",
+   "kontext": "Übung im Winter",
+   "aussage": "Nasse Socken waren die häufigste Ursache für kalte Füße.",
+   "zitat": "Nasse Socken waren die häufigste Ursache für Klagen über kalte Füße.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 211,
+   "datei": "AAR-2026-01-23-winterbiwak.md",
+   "thema": "Verpflegung",
+   "art": "erfahrung",
+   "kontext": "mehrtägige Winterübung",
+   "aussage": "Eine tägliche warme Mahlzeit aus der Feldküche war für die Moral entscheidend.",
+   "zitat": "Die warme Mahlzeit war für die Moral entscheidend.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 212,
+   "datei": "AAR-2026-01-23-winterbiwak.md",
+   "thema": "Verpflegung",
+   "art": "erfahrung",
+   "kontext": "Verpflegung aus Feldküche",
+   "aussage": "Um lange Wartezeiten zu vermeiden, müssen die Essenträger der Züge pünktlich am Ausgabepunkt sein.",
+   "zitat": "Die Ausgabe dauerte allerdings über eine Stunde, weil die Essenträger der Züge zu spät am Ausgabepunkt waren.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 213,
+   "datei": "AAR-2026-01-23-winterbiwak.md",
+   "thema": "Verpflegung",
+   "art": "erfahrung",
+   "kontext": "Übung im Winter",
+   "aussage": "In Thermobehältern verteilte Heißgetränke waren nach etwa zwei Stunden nur noch lauwarm.",
+   "zitat": "Heißgetränke wurden in Thermobehältern verteilt und waren nach etwa zwei Stunden nur noch lauwarm.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 214,
+   "datei": "AAR-2026-01-23-winterbiwak.md",
+   "thema": "Waffenwartung bei Kälte",
+   "art": "erfahrung",
+   "kontext": "Einsatz bei Kälte",
+   "aussage": "Um die Funktionssicherheit von Gewehren bei Kälte zu gewährleisten, sollte überschüssiges Öl vor dem Einsatz entfernt werden.",
+   "zitat": "Die Gewehre funktionierten bei den Temperaturen zuverlässig, nachdem überschüssiges Öl vor der Übung entfernt worden war.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 215,
+   "datei": "AAR-2026-01-23-winterbiwak.md",
+   "thema": "Waffenhandhabung bei Kälte",
+   "art": "erfahrung",
+   "kontext": "Winterbiwak",
+   "aussage": "Das Mitführen der Waffe unter dem Biwaksack in der Nacht hat sich bewährt, um Kondenswasserbildung beim Bringen in warme Zelte zu vermeiden.",
+   "zitat": "In der Stellung wurden die Waffen nachts unter dem Biwaksack mitgeführt, damit sich kein Kondenswasser bildet, wenn sie in warme Zelte gebracht werden; das hat sich bewährt.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 216,
+   "datei": "AAR-2026-01-23-winterbiwak.md",
+   "thema": "Akkunutzung bei Kälte",
+   "art": "erfahrung",
+   "kontext": "Einsatz bei Kälte",
+   "aussage": "Bei niedrigen Temperaturen entladen sich Akkus von Funk- und Nachtsichtgeräten deutlich schneller als üblich.",
+   "zitat": "Die Akkus der Funkgeräte und Nachtsichtgeräte entluden sich deutlich schneller als üblich.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 217,
+   "datei": "AAR-2026-01-23-winterbiwak.md",
+   "thema": "Akkunutzung bei Kälte",
+   "art": "erfahrung",
+   "kontext": "Einsatz bei Kälte",
+   "aussage": "Das Tragen von Ersatzakkus am Körper verlängert deren Laufzeit bei Kälte merklich.",
+   "zitat": "Ersatzakkus wurden am Körper getragen, was die Laufzeit merklich verlängerte.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 218,
+   "datei": "AAR-2026-01-23-winterbiwak.md",
+   "thema": "Feldkabel",
+   "art": "erfahrung",
+   "kontext": "Einsatz bei Frost",
+   "aussage": "Feldkabel kann bei Frost spröde werden und beim Verlegen reißen.",
+   "zitat": "Das Feldkabel war bei Frost spröde und riss zweimal beim Verlegen;",
+   "zitat_ok": 1
+  },
+  {
+   "id": 219,
+   "datei": "AAR-2026-01-23-winterbiwak.md",
+   "thema": "Feldkabel",
+   "art": "erfahrung",
+   "kontext": "Einsatz bei Frost",
+   "aussage": "Um Risse bei Frost zu vermeiden, hat es sich bewährt, Feldkabel in Schlaufen zu verlegen und an Bäumen hochzuführen.",
+   "zitat": "danach wurde es in Schlaufen verlegt und an Bäumen hochgeführt, was gehalten hat.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 220,
+   "datei": "AAR-2026-01-23-winterbiwak.md",
+   "thema": "Funkverbindung",
+   "art": "erfahrung",
+   "kontext": "geländebedingte Funkprobleme",
+   "aussage": "In Senken kann es wiederholt zu Abbrüchen der Funkverbindung kommen.",
+   "zitat": "Die Funkverbindung brach in der Senke vor dem 2. Zug wiederholt ab.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 221,
+   "datei": "AAR-2026-01-23-winterbiwak.md",
+   "thema": "Funkverbindung",
+   "art": "erfahrung",
+   "kontext": "geländebedingte Funkprobleme",
+   "aussage": "Eine Relaisstelle auf einer Anhöhe kann die Funkverbindung in Senken verbessern.",
+   "zitat": "Eine Relaisstelle auf der Kuppe hinter dem Zug hätte das vermutlich behoben",
+   "zitat_ok": 1
+  },
+  {
+   "id": 222,
+   "datei": "AAR-2026-01-23-winterbiwak.md",
+   "thema": "Meldeschema",
+   "art": "erfahrung",
+   "kontext": "Führung im Einsatz",
+   "aussage": "Ein festes Meldeschema zu festen Zeiten mit definierten Inhalten (Lage, Personal, etc.) vereinfacht die Führung und spart Funkzeit.",
+   "zitat": "Ab dem dritten Tag wurde ein festes Meldeschema zu jeder vollen Stunde eingeführt (Lage, Personal, Ausfälle, Bedarf). Das hat die Führung deutlich vereinfacht und Funkzeit gespart.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 223,
+   "datei": "AAR-2026-01-23-winterbiwak.md",
+   "thema": "Sicherung",
+   "art": "erfahrung",
+   "kontext": "Sicherung einer Stellung",
+   "aussage": "Das Auslegen von Stolperdrähten mit Knallkörpern hat sich für die frühzeitige Erkennung von Annäherungen bewährt.",
+   "zitat": "Der 1. Zug erkannte die Annäherung durch die Alarmposten rechtzeitig, weil die Posten am Vortag Stolperdrähte mit Knallkörpern vor dem Waldrand ausgelegt hatten.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 224,
+   "datei": "AAR-2026-01-23-winterbiwak.md",
+   "thema": "Meldung von Ausfällen",
+   "art": "erfahrung",
+   "kontext": "Einsatz in der Stellung",
+   "aussage": "Personelle Ausfälle müssen sofort gemeldet und die Sicherung muss neu eingeteilt werden, um Lücken zu vermeiden.",
+   "zitat": "Ausfälle sofort gemeldet und die Sicherung neu eingeteilt werden muss, statt Lücken stillschweigend hinzunehmen.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 225,
+   "datei": "AAR-2026-01-23-winterbiwak.md",
+   "thema": "Ablösung in Stellung",
+   "art": "erfahrung",
+   "kontext": "nächtliche Ablösung",
+   "aussage": "Eine nächtliche Ablösung in einer Stellung ohne vorherige Einweisung vor Ort kann zu Verwechslungen führen.",
+   "zitat": "Bei der nächtlichen Ablösung der Stellung kam es zu Verwechslungen, weil die Ablösung im Dunkeln ohne vorherige Einweisung vor Ort stattfand.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 226,
+   "datei": "AAR-2026-01-23-winterbiwak.md",
+   "thema": "Ablösung in Stellung",
+   "art": "erfahrung",
+   "kontext": "nächtliche Ablösung",
+   "aussage": "Es wird empfohlen, Ablösungen bei Tageslicht vorzubereiten, indem die Führer der ablösenden Einheit die Stellung vorher abgehen.",
+   "zitat": "Die Zugführer empfehlen, Ablösungen bei Tageslicht vorzubereiten: Führer der ablösenden Einheit gehen die Stellung vorher ab",
+   "zitat_ok": 1
+  },
+  {
+   "id": 227,
+   "datei": "AAR-2026-01-23-winterbiwak.md",
+   "thema": "Ablösung in Stellung",
+   "art": "erfahrung",
+   "kontext": "nächtliche Ablösung",
+   "aussage": "Zur Vorbereitung einer nächtlichen Ablösung können Kampfstände mit Leuchtmarkierungen gekennzeichnet werden, die nur aus Richtung der eigenen Truppe sichtbar sind.",
+   "zitat": "Kampfstände werden mit Leuchtmarkierungen gekennzeichnet, die nur aus Richtung der eigenen Truppe sichtbar sind.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 228,
+   "datei": "AAR-2026-01-23-winterbiwak.md",
+   "thema": "Kälteschutz",
+   "art": "erfahrung",
+   "kontext": "Winterbiwak",
+   "aussage": "Der Truppenarzt empfiehlt, dass jeder Soldat bei Winterübungen abends die Füße kontrolliert und die Socken wechselt.",
+   "zitat": "Der Truppenarzt empfiehlt, dass jeder Soldat abends die Füße kontrolliert und die Socken wechselt",
+   "zitat_ok": 1
+  },
+  {
+   "id": 229,
+   "datei": "AAR-2026-01-23-winterbiwak.md",
+   "thema": "Kälteschutz",
+   "art": "erfahrung",
+   "kontext": "Winterbiwak",
+   "aussage": "Die Überprüfung der Fußpflege (abendliche Kontrolle, Sockenwechsel) durch Gruppenführer hat sich zur Vermeidung von Fußproblemen bei Kälte bewährt.",
+   "zitat": "im 2. Zug wurde das von den Gruppenführern überprüft, im 1. Zug nicht, und alle Fußprobleme traten im 1. Zug auf.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 121,
+   "datei": "AAR-2026-02-03-visitor-badges.md",
+   "thema": "Rückgabe Besucherausweise",
+   "art": "regel",
+   "kontext": "",
+   "aussage": "Besucherausweise sind beim Verlassen des Gebäudes an der Pforte abzugeben.",
+   "zitat": "Besucherausweise werden beim Verlassen des Gebäudes an der Pforte abgegeben.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 122,
+   "datei": "AAR-2026-02-03-visitor-badges.md",
+   "thema": "Verlust Besucherausweis",
+   "art": "regel",
+   "kontext": "",
+   "aussage": "Der Verlust eines Besucherausweises muss am selben Tag beim Empfang gemeldet werden.",
+   "zitat": "Wer den Ausweis verliert, meldet das am selben Tag beim Empfang.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 230,
+   "datei": "AAR-2026-02-27-gruppenfuehrer-truppenuebungsplatz.md",
+   "thema": "Unterkunftsplanung",
+   "art": "erfahrung",
+   "kontext": "Lehrgang Gruppenführer auf Truppenübungsplatz",
+   "aussage": "Die Belegungsliste für Unterkünfte sollte nach Hörsälen statt alphabetisch geführt werden, um die Stubenzuweisung zu vereinfachen.",
+   "zitat": "Für die Planung hat sich bewährt, die Belegungsliste nach Hörsälen und nicht alphabetisch zu führen; so konnten die Stuben ohne Nacharbeit zugewiesen werden.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 231,
+   "datei": "AAR-2026-02-27-gruppenfuehrer-truppenuebungsplatz.md",
+   "thema": "Verpflegung",
+   "art": "regel",
+   "kontext": "Truppenübungsplatz",
+   "aussage": "Die Bestellung von Lunchpaketen bei der Truppenküche muss bis spätestens Mittwoch der Vorwoche erfolgen.",
+   "zitat": "Die Bestellung muss nach Auskunft der Truppenküche bis spätestens Mittwoch der Vorwoche vorliegen",
+   "zitat_ok": 1
+  },
+  {
+   "id": 232,
+   "datei": "AAR-2026-02-27-gruppenfuehrer-truppenuebungsplatz.md",
+   "thema": "Schlüsselausgabe",
+   "art": "unklar",
+   "kontext": "Truppenübungsplatz",
+   "aussage": "Auf dem Truppenübungsplatz wurden die Schlüssel für die Unterkünfte nur an die jeweiligen Stubenältesten gegen Unterschrift auf einer Liste ausgegeben.",
+   "zitat": "weil die Schlüssel nur gegen eine Liste mit Unterschrift jedes Stubenältesten ausgegeben wurden.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 233,
+   "datei": "AAR-2026-02-27-gruppenfuehrer-truppenuebungsplatz.md",
+   "thema": "Zeitplanung Ankunft",
+   "art": "erfahrung",
+   "kontext": "Truppenübungsplatz",
+   "aussage": "Für die Schlüsselausgabe bei der Ankunft sollten künftig mindestens 45 Minuten eingeplant werden.",
+   "zitat": "Das sollte in der Zeitplanung künftig mit mindestens 45 Minuten berücksichtigt werden.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 234,
+   "datei": "AAR-2026-02-27-gruppenfuehrer-truppenuebungsplatz.md",
+   "thema": "Meldung von Ausfällen",
+   "art": "sonstiges",
+   "kontext": "Truppenübungsplatz",
+   "aussage": "Ein Warmwasserausfall im Unterkunftsgebäude wurde über die Kommandantur gemeldet und am nächsten Vormittag behoben.",
+   "zitat": "In einem Gebäude fiel am zweiten Abend für einige Stunden das Warmwasser aus; die Störung wurde über die Kommandantur gemeldet und am nächsten Vormittag behoben.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 235,
+   "datei": "AAR-2026-02-27-gruppenfuehrer-truppenuebungsplatz.md",
+   "thema": "Zeitplanung Seminar",
+   "art": "erfahrung",
+   "kontext": "Lehrgang Gruppenführer auf Truppenübungsplatz",
+   "aussage": "Ein Tagesablauf mit Wecken um 05:45 Uhr, Frühstück um 06:15 Uhr und Ausbildungsbeginn um 07:30 Uhr hat sich bewährt.",
+   "zitat": "Der Tagesablauf mit Wecken um 05:45 Uhr, Frühstück um 06:15 Uhr und Ausbildungsbeginn um 07:30 Uhr hat sich bewährt.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 236,
+   "datei": "AAR-2026-02-27-gruppenfuehrer-truppenuebungsplatz.md",
+   "thema": "Kälteschutz",
+   "art": "erfahrung",
+   "kontext": "Geländeausbildung bei Kälte",
+   "aussage": "Bei Bewegung hat sich das Zwiebelprinzip mit mehreren dünnen Kleidungsschichten bewährt.",
+   "zitat": "hat sich das Zwiebelprinzip mit mehreren dünnen Lagen bei Bewegung bewährt.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 237,
+   "datei": "AAR-2026-02-27-gruppenfuehrer-truppenuebungsplatz.md",
+   "thema": "Kälteschutz",
+   "art": "erfahrung",
+   "kontext": "Geländeausbildung bei Kälte",
+   "aussage": "Um bei längeren Standzeiten nicht zu frieren, sollte die Kälteschutzjacke griffbereit im Rucksack mitgeführt werden.",
+   "zitat": "hier half es, die Kälteschutzjacke griffbereit im Rucksack mitzuführen.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 238,
+   "datei": "AAR-2026-02-27-gruppenfuehrer-truppenuebungsplatz.md",
+   "thema": "Kälteschutz",
+   "art": "erfahrung",
+   "kontext": "Geländeausbildung bei Kälte",
+   "aussage": "Es ist sinnvoll, zwei Paar Handschuhe mitzuführen, da nasse Handschuhe tagsüber nicht trocknen.",
+   "zitat": "dass zwei Paar Handschuhe zum Wechseln sinnvoll seien, weil nasse Handschuhe tagsüber nicht trockneten.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 239,
+   "datei": "AAR-2026-02-27-gruppenfuehrer-truppenuebungsplatz.md",
+   "thema": "Erfassung Fahrzeugschäden",
+   "art": "sonstiges",
+   "kontext": "Dienstfahrzeuge",
+   "aussage": "Eine aufleuchtende Warnleuchte für den Reifendruck wurde vom Kraftfahrer auf dem Schadensformular erfasst, obwohl kein Schaden festgestellt wurde.",
+   "zitat": "zeigte ein Fahrzeug eine Warnleuchte für den Reifendruck; der Kraftfahrer hat das Fahrzeug am Abend im Schadensformular erfasst",
+   "zitat_ok": 1
+  },
+  {
+   "id": 240,
+   "datei": "AAR-2026-02-27-gruppenfuehrer-truppenuebungsplatz.md",
+   "thema": "Reservierung Fahrzeuge",
+   "art": "regel",
+   "kontext": "Dienstfahrzeuge",
+   "aussage": "Seit dem 01.02.2026 müssen Fahrzeuge der Fahrbereitschaft standortweit ausschließlich über das Fahrzeugportal im Intranet angefordert werden.",
+   "zitat": "dass seit dem 01.02.2026 Fahrzeuge der Fahrbereitschaft standortweit ausschließlich über das Fahrzeugportal im Intranet angefordert werden",
+   "zitat_ok": 1
+  },
+  {
+   "id": 241,
+   "datei": "AAR-2026-02-27-gruppenfuehrer-truppenuebungsplatz.md",
+   "thema": "Reservierung Fahrzeuge",
+   "art": "regel",
+   "kontext": "Dienstfahrzeuge",
+   "aussage": "Die Anforderung von Fahrzeugen muss mindestens drei Werktage vor Fahrtbeginn erfolgen.",
+   "zitat": "und zwar mindestens drei Werktage vor Fahrtbeginn.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 242,
+   "datei": "AAR-2026-02-27-gruppenfuehrer-truppenuebungsplatz.md",
+   "thema": "Reservierung Fahrzeuge",
+   "art": "regel",
+   "kontext": "Dienstfahrzeuge",
+   "aussage": "Telefonische Anforderungen für Fahrzeuge werden nicht mehr angenommen.",
+   "zitat": "Telefonische Anforderungen werden seitdem nicht mehr angenommen.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 243,
+   "datei": "AAR-2026-02-27-gruppenfuehrer-truppenuebungsplatz.md",
+   "thema": "Rückgabe Schlüssel",
+   "art": "erfahrung",
+   "kontext": "Truppenübungsplatz",
+   "aussage": "Die gesammelte Rückgabe der Unterkunftsschlüssel durch die Hörsaalleiter war deutlich schneller als die einzelne Ausgabe bei Ankunft.",
+   "zitat": "Die Schlüssel wurden gesammelt durch die Hörsaalleiter zurückgegeben, was deutlich schneller ging als die einzelne Ausgabe bei der Ankunft.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 244,
+   "datei": "AAR-2026-02-27-gruppenfuehrer-truppenuebungsplatz.md",
+   "thema": "Erfassung Geräteschäden",
+   "art": "sonstiges",
+   "kontext": "Ausbildungsmaterial",
+   "aussage": "Eine beschädigte Kartentasche wurde mit Set-Kennung und Datum im Abweichungsprotokoll vermerkt.",
+   "zitat": "Eine Kartentasche war beschädigt und wurde mit Set-Kennung und Datum im Abweichungsprotokoll vermerkt.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 245,
+   "datei": "AAR-2026-02-27-gruppenfuehrer-truppenuebungsplatz.md",
+   "thema": "Checkliste Hörsaalleitung",
+   "art": "erfahrung",
+   "kontext": "Lehrgangsplanung",
+   "aussage": "Die Erkenntnisse aus dem Bericht sollten in die Checkliste der Hörsaalleitungen aufgenommen werden.",
+   "zitat": "Die Hinweise aus den Lessons Learned sollten in die Checkliste der Hörsaalleitungen aufgenommen werden.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 123,
+   "datei": "AAR-2026-03-10-attendance-certificates.md",
+   "thema": "Teilnahmebescheinigungen",
+   "art": "regel",
+   "kontext": "",
+   "aussage": "Teilnahmebescheinigungen werden innerhalb von zehn Werktagen nach Seminarende per E-Mail verschickt.",
+   "zitat": "Teilnahmebescheinigungen werden innerhalb von zehn Werktagen nach Seminarende per E-Mail verschickt.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 124,
+   "datei": "AAR-2026-03-10-attendance-certificates.md",
+   "thema": "Teilnahmebescheinigungen",
+   "art": "regel",
+   "kontext": "",
+   "aussage": "Wenn eine Teilnahmebescheinigung nicht ankommt, soll sich der betreffende Teilnehmer an die Seminarorganisation wenden.",
+   "zitat": "Wer keine Bescheinigung erhalten hat, meldet sich bei der Seminarorganisation.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 246,
+   "datei": "AAR-2026-03-19-kfz-dienst-uebung.md",
+   "thema": "Abweichende Regelungen Übungsbetrieb",
+   "art": "regel",
+   "kontext": "Übungsbetrieb auf dem Truppenübungsplatz",
+   "aussage": "Die Abläufe für Betankung und Fahrtenbuch weichen von den Regeln am Standort ab, die von der Fahrbereitschaft vorgegeben sind.",
+   "zitat": "gelten nur für den Übungsbetrieb auf dem Truppenübungsplatz; am Standort gelten weiterhin die Regeln der Fahrbereitschaft.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 247,
+   "datei": "AAR-2026-03-19-kfz-dienst-uebung.md",
+   "thema": "Fahrzeugübernahme",
+   "art": "unklar",
+   "kontext": "Übernahme von Dienstfahrzeugen",
+   "aussage": "Bei der Fahrzeugübernahme werden Kilometerstand, Tankstand und Vorschäden gemeinsam mit dem Kraftfahrer im Übergabeprotokoll erfasst.",
+   "zitat": "Dabei wurden Kilometerstand, Tankstand und Vorschäden gemeinsam mit dem Kraftfahrer im Übergabeprotokoll erfasst.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 248,
+   "datei": "AAR-2026-03-19-kfz-dienst-uebung.md",
+   "thema": "Fahrzeugzuordnung",
+   "art": "erfahrung",
+   "kontext": "",
+   "aussage": "Die feste Zuordnung eines Kraftfahrers pro Fahrzeug hat sich bewährt, da die Fahrer ihre Fahrzeuge besser kennen und Mängel schneller bemerken.",
+   "zitat": "Das hat sich bewährt, weil die Kraftfahrer ihr Fahrzeug und dessen Eigenheiten kannten und Mängel schneller bemerkten.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 249,
+   "datei": "AAR-2026-03-19-kfz-dienst-uebung.md",
+   "thema": "Marschorganisation",
+   "art": "unklar",
+   "kontext": "Marsch im Verband",
+   "aussage": "Der Abstand zwischen den Fahrzeugen betrug auf der Landstraße 50 Meter und auf der Autobahn 100 Meter.",
+   "zitat": "Abstand zwischen den Fahrzeugen auf der Landstraße 50 Meter, auf der Autobahn 100 Meter.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 250,
+   "datei": "AAR-2026-03-19-kfz-dienst-uebung.md",
+   "thema": "Marschorganisation",
+   "art": "erfahrung",
+   "kontext": "Marsch im Verband",
+   "aussage": "Es sollten Verbindungspunkte vor jeder größeren Abzweigung festgelegt werden, um zu verhindern, dass Fahrzeuge den Anschluss verlieren.",
+   "zitat": "Für künftige Märsche sollten Verbindungspunkte vor jeder größeren Abzweigung festgelegt werden.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 251,
+   "datei": "AAR-2026-03-19-kfz-dienst-uebung.md",
+   "thema": "Ausbildung Fahren mit Tarnlicht",
+   "art": "erfahrung",
+   "kontext": "Nachtfahrt",
+   "aussage": "Eine Einweisung mit kurzer Probefahrt am Nachmittag vor einer Nachtfahrt mit Tarnlicht sollte fest eingeplant werden, um die Unsicherheit ungeübter Fahrer zu reduzieren.",
+   "zitat": "Eine Einweisung mit kurzer Probefahrt am Nachmittag vor der Nachtfahrt hat geholfen und sollte fest eingeplant werden.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 252,
+   "datei": "AAR-2026-03-19-kfz-dienst-uebung.md",
+   "thema": "Betankung Dienstfahrzeuge",
+   "art": "regel",
+   "kontext": "Übungsbetrieb auf dem Truppenübungsplatz",
+   "aussage": "Kraftfahrer betanken ihre Fahrzeuge an der Feldtankstelle selbst und tragen die getankte Menge mit Datum und Unterschrift in das Fahrtenbuch ein.",
+   "zitat": "Die Kraftfahrer tankten ihre Fahrzeuge selbst an der Feldtankstelle der Übungsplatzkommandantur und trugen die getankte Menge mit Datum und Unterschrift in das Fahrtenbuch ein.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 253,
+   "datei": "AAR-2026-03-19-kfz-dienst-uebung.md",
+   "thema": "Rückgabe Dienstfahrzeuge",
+   "art": "regel",
+   "kontext": "Übungsbetrieb auf dem Truppenübungsplatz",
+   "aussage": "Vor der Rückgabe an die Fahrbereitschaft muss jedes Fahrzeug vollgetankt sein.",
+   "zitat": "Vor der Rückgabe an die Fahrbereitschaft war jedes Fahrzeug vollgetankt abzugeben",
+   "zitat_ok": 1
+  },
+  {
+   "id": 254,
+   "datei": "AAR-2026-03-19-kfz-dienst-uebung.md",
+   "thema": "Fahrtenbuch",
+   "art": "unklar",
+   "kontext": "Übungsbetrieb",
+   "aussage": "Das Fahrtenbuch wird täglich vom Kraftfahrer geführt und abends vom Kfz-Feldwebel geprüft.",
+   "zitat": "Das Fahrtenbuch wurde täglich vom Kraftfahrer geführt und abends vom Kfz-Feldwebel geprüft.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 255,
+   "datei": "AAR-2026-03-19-kfz-dienst-uebung.md",
+   "thema": "Fahrtenbuch",
+   "art": "erfahrung",
+   "kontext": "Übungsbetrieb auf dem Truppenübungsplatz",
+   "aussage": "Die Zulassung des pauschalen Eintrags „Pendelverkehr Platz“ für Pendelfahrten hat die Führung des Fahrtenbuchs vereinfacht.",
+   "zitat": "hat der Kfz-Feldwebel für Pendelfahrten den Eintrag „Pendelverkehr Platz“ zugelassen; das hat die Führung des Fahrtenbuchs vereinfacht.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 256,
+   "datei": "AAR-2026-03-19-kfz-dienst-uebung.md",
+   "thema": "Munitionstransport",
+   "art": "regel",
+   "kontext": "",
+   "aussage": "Munition darf nur auf einem dafür zugelassenen Lkw mit Gefahrgutkennzeichnung befördert werden.",
+   "zitat": "Munition wurde nur auf dem dafür zugelassenen Lkw mit Gefahrgutkennzeichnung befördert",
+   "zitat_ok": 1
+  },
+  {
+   "id": 257,
+   "datei": "AAR-2026-03-19-kfz-dienst-uebung.md",
+   "thema": "Munitionstransport",
+   "art": "regel",
+   "kontext": "",
+   "aussage": "Der Kraftfahrer für einen Munitionstransport muss eine entsprechende Unterweisung haben.",
+   "zitat": "der Kraftfahrer hatte die entsprechende Unterweisung.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 258,
+   "datei": "AAR-2026-03-19-kfz-dienst-uebung.md",
+   "thema": "Ladungssicherung",
+   "art": "erfahrung",
+   "kontext": "Transport von Munitionskisten",
+   "aussage": "Munitionskisten sollten zusätzlich mit Antirutschmatten und mindestens vier Gurten gesichert werden, da zwei Gurte bei einer Vollbremsung nicht ausreichten.",
+   "zitat": "verrutschte bei einer Vollbremsung; ab dem zweiten Tag wurden die Kisten zusätzlich mit Antirutschmatten und vier Gurten gesichert.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 259,
+   "datei": "AAR-2026-03-19-kfz-dienst-uebung.md",
+   "thema": "Munitionsausgabe",
+   "art": "unklar",
+   "kontext": "Übungsbetrieb",
+   "aussage": "Die Munitionsausgabe an Ausbildungsorten erfolgt gegen Unterschrift des Leitenden; nicht verbrauchte Munition wird abends zurückgenommen und im Nachweis abgeglichen.",
+   "zitat": "Die Munitionsausgabe an den Ausbildungsräumen erfolgte gegen Unterschrift des Leitenden; nicht verbrauchte Munition wurde am Abend zurückgenommen und im Nachweis abgeglichen.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 260,
+   "datei": "AAR-2026-03-19-kfz-dienst-uebung.md",
+   "thema": "Ausbildung Fahrzeugtechnik",
+   "art": "erfahrung",
+   "kontext": "Übung im Gelände",
+   "aussage": "Die Einweisung in die Reifendruckregelanlage sollte vor jeder Übung im Gelände wiederholt werden, da junge Kraftfahrer sie oft nicht kennen.",
+   "zitat": "Die Einweisung in die Reifendruckregelanlage sollte vor jeder Übung im Gelände wiederholt werden.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 261,
+   "datei": "AAR-2026-03-19-kfz-dienst-uebung.md",
+   "thema": "Ausbildung Kraftfahrer",
+   "art": "erfahrung",
+   "kontext": "",
+   "aussage": "Die Zuteilung eines erfahrenen Beifahrers für junge Kraftfahrer bei fordernden Fahrten (Nacht/Gelände) hat sich bewährt und Unfälle verhindert.",
+   "zitat": "jedem jungen Kraftfahrer einen erfahrenen Beifahrer zugeteilt. Unfälle gab es danach keine mehr.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 262,
+   "datei": "AAR-2026-03-19-kfz-dienst-uebung.md",
+   "thema": "Ruhezeiten Kraftfahrer",
+   "art": "erfahrung",
+   "kontext": "Übungsbetrieb",
+   "aussage": "Es wird empfohlen, eine Übersicht der Fahr- und Ruhezeiten von Übungsbeginn an zu führen, um eine Überlastung der Kraftfahrer zu vermeiden.",
+   "zitat": "Die Kompanie empfiehlt, diese Übersicht künftig von Übungsbeginn an zu führen.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 263,
+   "datei": "AAR-2026-03-19-kfz-dienst-uebung.md",
+   "thema": "Erfassung Fahrzeugschäden",
+   "art": "unklar",
+   "kontext": "",
+   "aussage": "Ein am Fahrzeug entstandener Schaden wird mit Kennzeichen und Datum im Schadensformular erfasst und bei der Rückgabe bei der Fahrbereitschaft abgegeben.",
+   "zitat": "Der Schaden wurde mit Kennzeichen und Datum im Schadensformular erfasst und bei der Rückgabe mit dem Fahrzeugschlüssel bei der Fahrbereitschaft abgegeben.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 264,
+   "datei": "AAR-2026-03-19-kfz-dienst-uebung.md",
+   "thema": "Einweisen von Fahrzeugen",
+   "art": "regel",
+   "kontext": "Rangieren",
+   "aussage": "Ein Einweiser muss beim Rangieren immer im Sichtfeld des Kraftfahrers bleiben.",
+   "zitat": "Ein Einweiser muss beim Rangieren immer im Sichtfeld des Kraftfahrers bleiben",
+   "zitat_ok": 1
+  },
+  {
+   "id": 265,
+   "datei": "AAR-2026-03-19-kfz-dienst-uebung.md",
+   "thema": "Rückgabe Dienstfahrzeuge",
+   "art": "unklar",
+   "kontext": "",
+   "aussage": "Bei der Fahrzeugrückgabe prüft die Fahrbereitschaft Tankstand, Kilometerstand und Schäden anhand des Übergabeprotokolls.",
+   "zitat": "Die Fahrbereitschaft prüfte Tankstand, Kilometerstand und Schäden anhand des Übergabeprotokolls.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 266,
+   "datei": "AAR-2026-03-19-kfz-dienst-uebung.md",
+   "thema": "Übungsvorbereitung",
+   "art": "erfahrung",
+   "kontext": "",
+   "aussage": "Kraftfahrer müssen vor einer Übung über abweichende Regelungen (z.B. zur Betankung) informiert werden, die vom normalen Standortbetrieb abweichen.",
+   "zitat": "muss den Kraftfahrern aber vor der Übung erklärt werden, weil sie vom Standort abweicht.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 125,
+   "datei": "AAR-2026-03-24-external-guests-day.md",
+   "thema": "Ausgabe Besucherausweise",
+   "art": "sonstiges",
+   "kontext": "Tagesseminar mit externen Gästen",
+   "aussage": "Externe Gäste erhielten am Empfang Besucherausweise.",
+   "zitat": "Die Gäste erhielten am Empfang Besucherausweise",
+   "zitat_ok": 1
+  },
+  {
+   "id": 126,
+   "datei": "AAR-2026-03-24-external-guests-day.md",
+   "thema": "WLAN-Zugang für Gäste",
+   "art": "sonstiges",
+   "kontext": "Tagesseminar mit externen Gästen",
+   "aussage": "Externe Gäste erhielten am Empfang WLAN-Zugangsdaten.",
+   "zitat": "Die Gäste erhielten am Empfang ... WLAN-Zugangsdaten",
+   "zitat_ok": 1
+  },
+  {
+   "id": 127,
+   "datei": "AAR-2026-03-24-external-guests-day.md",
+   "thema": "Rückgabe Besucherausweise",
+   "art": "sonstiges",
+   "kontext": "Tagesseminar mit externen Gästen",
+   "aussage": "Gäste gaben die Besucherausweise beim Verlassen an der Pforte wieder ab.",
+   "zitat": "gaben die Ausweise beim Verlassen an der Pforte wieder ab",
+   "zitat_ok": 1
+  },
+  {
+   "id": 128,
+   "datei": "AAR-2026-03-24-external-guests-day.md",
+   "thema": "Reservierung Besucherparkplätze",
+   "art": "sonstiges",
+   "kontext": "Tagesseminar mit externen Gästen",
+   "aussage": "Für Gäste, die mit dem Auto kamen, wurden die Besucherparkplätze am Vortag reserviert.",
+   "zitat": "die Besucherparkplätze waren am Vortag reserviert worden",
+   "zitat_ok": 1
+  },
+  {
+   "id": 129,
+   "datei": "AAR-2026-03-24-external-guests-day.md",
+   "thema": "Reservierung Besucherparkplätze",
+   "art": "erfahrung",
+   "kontext": "Tagesseminar mit externen Gästen",
+   "aussage": "Auch ein Gast, der erst nach 9 Uhr ankam, fand noch einen Besucherparkplatz.",
+   "zitat": "Ein Gast kam erst nach 9 Uhr und fand trotzdem noch einen Platz.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 130,
+   "datei": "AAR-2026-03-24-external-guests-day.md",
+   "thema": "Fundsachen",
+   "art": "sonstiges",
+   "kontext": "Tagesseminar mit externen Gästen",
+   "aussage": "Ein im Seminarraum liegengebliebener Schal wurde am Empfang als Fundsache abgegeben.",
+   "zitat": "Nach dem Seminar blieb ein Schal im Seminarraum liegen. Er wurde am Empfang als Fundsache abgegeben.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 131,
+   "datei": "AAR-2026-03-24-external-guests-day.md",
+   "thema": "Teilnehmerfeedback",
+   "art": "erfahrung",
+   "kontext": "Tagesseminar mit externen Gästen",
+   "aussage": "Die Mischung aus internen und externen Teilnehmenden wurde in den Rückmeldungen positiv bewertet.",
+   "zitat": "Die Mischung aus internen und externen Teilnehmenden wurde in den Rückmeldungen positiv bewertet.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 132,
+   "datei": "AAR-2026-03-24-external-guests-day.md",
+   "thema": "Seminarinhalt",
+   "art": "erfahrung",
+   "kontext": "Tagesseminar mit externen Gästen",
+   "aussage": "Bei einer gemischten Gruppe aus internen und externen Teilnehmenden waren 20 Minuten für die Vorstellungsrunde zu wenig Zeit.",
+   "zitat": "Für die Vorstellungsrunde war mit 20 Minuten zu wenig Zeit eingeplant.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 133,
+   "datei": "AAR-2026-04-21-seminar-day-preparation.md",
+   "thema": "Raumbuchung",
+   "art": "sonstiges",
+   "kontext": "Seminartag",
+   "aussage": "Der Raum für den Seminartag wurde über den Raumkalender gebucht.",
+   "zitat": "Der Raum war über den Raumkalender rechtzeitig gebucht",
+   "zitat_ok": 1
+  },
+  {
+   "id": 134,
+   "datei": "AAR-2026-04-21-seminar-day-preparation.md",
+   "thema": "Verpflegung",
+   "art": "unklar",
+   "kontext": "Seminartag",
+   "aussage": "Das Mittagessen wurde am Vortag vor 12 Uhr bei der Kantine angemeldet.",
+   "zitat": "das Mittagessen hatten wir am Vortag vor 12 Uhr bei der Kantine angemeldet.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 135,
+   "datei": "AAR-2026-04-21-seminar-day-preparation.md",
+   "thema": "Teilnehmerunterlagen",
+   "art": "regel",
+   "kontext": "Seminar",
+   "aussage": "Teilnehmerunterlagen werden nur noch als Download im Seminarportal bereitgestellt und nicht mehr ausgeteilt.",
+   "zitat": "Die Teilnehmerunterlagen stellen wir inzwischen nur noch als Download im Seminarportal bereit, sodass zu Beginn nichts mehr ausgeteilt werden muss.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 136,
+   "datei": "AAR-2026-04-21-seminar-day-preparation.md",
+   "thema": "Pausenplanung",
+   "art": "erfahrung",
+   "kontext": "Seminartag",
+   "aussage": "Die Nachmittagspause sollte von 15 auf 20 Minuten verlängert werden, da die Zeit knapp war.",
+   "zitat": "Etwas knapp war die Zeit für die Pause am Nachmittag; beim nächsten Mal planen wir dafür 20 statt 15 Minuten ein.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 267,
+   "datei": "AAR-2026-04-30-besuchertag.md",
+   "thema": "Gästeanmeldung",
+   "art": "regel",
+   "kontext": "Besuchertag",
+   "aussage": "Gäste müssen bis fünf Werktage vor dem Besuchertag namentlich mit Geburtsdatum angemeldet werden.",
+   "zitat": "Gäste mussten bis fünf Werktage vor dem Besuchertag namentlich mit Geburtsdatum angemeldet werden;",
+   "zitat_ok": 1
+  },
+  {
+   "id": 268,
+   "datei": "AAR-2026-04-30-besuchertag.md",
+   "thema": "Gästeanmeldung",
+   "art": "erfahrung",
+   "kontext": "Besuchertag",
+   "aussage": "Nachmeldungen nach Fristende wurden von der Wache nicht angenommen, was am Tor zu Verzögerungen führte.",
+   "zitat": "Elf Nachmeldungen nach Fristende wurden von der Wache nicht mehr angenommen. Die betroffenen Gäste konnten am Besuchertag nur mit Begleitung durch einen Offizier und nach Rücksprache mit dem Wachhabenden eingelassen werden, was am Tor zu Verzögerungen führte.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 269,
+   "datei": "AAR-2026-04-30-besuchertag.md",
+   "thema": "Parken Gäste",
+   "art": "erfahrung",
+   "kontext": "Besuchertag",
+   "aussage": "Der für Gäste vorgesehene Parkplatz P3 war schnell voll, woraufhin Gäste am Straßenrand und auf dem Gelände eines Sportvereins parkten, was zu einer Beschwerde führte.",
+   "zitat": "Der Parkplatz war um 09:15 Uhr voll. Weitere Gäste parkten am Straßenrand und auf dem Gelände des benachbarten Sportvereins, was zu einer Beschwerde führte.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 270,
+   "datei": "AAR-2026-04-30-besuchertag.md",
+   "thema": "Parken Gäste",
+   "art": "erfahrung",
+   "kontext": "Besuchertag",
+   "aussage": "Für künftige Besuchertage wird empfohlen, zusätzlich den Parkplatz P5 freizugeben und einen Pendelverkehr einzurichten.",
+   "zitat": "Für künftige Besuchstage sollte zusätzlich der Parkplatz P5 freigegeben und ein Pendelverkehr eingerichtet werden.",
+   "zitat_ok": 0
+  },
+  {
+   "id": 271,
+   "datei": "AAR-2026-04-30-besuchertag.md",
+   "thema": "Parken Gäste",
+   "art": "regel",
+   "kontext": "Besuchertag",
+   "aussage": "Innerhalb der Kaserne war das Parken für Gäste nicht erlaubt.",
+   "zitat": "Innerhalb der Kaserne war das Parken für Gäste nicht erlaubt;",
+   "zitat_ok": 1
+  },
+  {
+   "id": 272,
+   "datei": "AAR-2026-04-30-besuchertag.md",
+   "thema": "Parken Gäste",
+   "art": "regel",
+   "kontext": "Besuchertag",
+   "aussage": "Gäste mit Schwerbehindertenausweis erhielten am Tor ausnahmsweise einen Parkschein für den Parkplatz am Stabsgebäude.",
+   "zitat": "Ausnahmen gab es nur für Gäste mit Schwerbehindertenausweis, die am Tor einen Parkschein für den Parkplatz am Stabsgebäude erhielten.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 273,
+   "datei": "AAR-2026-04-30-besuchertag.md",
+   "thema": "Ausgabe Besucherausweise",
+   "art": "regel",
+   "kontext": "Besuchertag",
+   "aussage": "Jeder Gast erhielt einen roten Besucherausweis, der sichtbar zu tragen war.",
+   "zitat": "Jeder Gast erhielt einen roten Besucherausweis, der sichtbar zu tragen war.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 274,
+   "datei": "AAR-2026-04-30-besuchertag.md",
+   "thema": "Ausgabe Besucherausweise",
+   "art": "regel",
+   "kontext": "Besuchertag",
+   "aussage": "Kinder unter 14 Jahren erhielten keinen eigenen Besucherausweis, sondern wurden auf dem Ausweis eines Erwachsenen vermerkt.",
+   "zitat": "Kinder unter 14 Jahren erhielten keinen eigenen Ausweis, sondern wurden auf dem Ausweis eines Erwachsenen vermerkt.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 275,
+   "datei": "AAR-2026-04-30-besuchertag.md",
+   "thema": "Gebäudezugang",
+   "art": "erfahrung",
+   "kontext": "Besuchertag",
+   "aussage": "Da am Tor anfangs nur eine Kontrollspur geöffnet war, kam es zu langen Wartezeiten. Nach Öffnung einer zweiten Spur lief der Einlass zügig.",
+   "zitat": "Der Einlass dauerte zu Spitzenzeiten bis zu 25 Minuten, weil nur eine Spur geöffnet war. Ab 09:30 Uhr wurde eine zweite Kontrollspur mit zwei zusätzlichen Soldaten der Wache geöffnet, danach lief es zügig.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 276,
+   "datei": "AAR-2026-04-30-besuchertag.md",
+   "thema": "Begleitung von Gästen",
+   "art": "regel",
+   "kontext": "Besuchertag",
+   "aussage": "Gäste durften sich in der Kaserne nur in Begleitung bewegen.",
+   "zitat": "Gäste durften sich in der Kaserne nur in Begleitung bewegen.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 277,
+   "datei": "AAR-2026-04-30-besuchertag.md",
+   "thema": "Begleitung von Gästen",
+   "art": "erfahrung",
+   "kontext": "Besuchertag",
+   "aussage": "Die Einteilung eines Lehrgangsteilnehmenden als Begleiter für jeweils bis zu 15 Gäste hat sich bewährt.",
+   "zitat": "Für jeweils bis zu 15 Gäste wurde ein Lehrgangsteilnehmender als Begleiter eingeteilt; die Gruppen wurden am Tor gebildet. Das hat sich bewährt.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 278,
+   "datei": "AAR-2026-04-30-besuchertag.md",
+   "thema": "Begleitung von Gästen",
+   "art": "erfahrung",
+   "kontext": "Besuchertag",
+   "aussage": "Begleitgruppen sollten nach Angehörigen gebildet werden, nicht nach Ankunftszeit, um den Wunsch von Gästen nach Gruppenwechseln zu vermeiden.",
+   "zitat": "Schwierig wurde es, als einzelne Gäste die Gruppe wechseln wollten, um zu ihren Angehörigen zu kommen. Künftig sollten die Gruppen nach Angehörigen gebildet werden, nicht nach Ankunftszeit.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 279,
+   "datei": "AAR-2026-04-30-besuchertag.md",
+   "thema": "Waffenschau",
+   "art": "regel",
+   "kontext": "Besuchertag",
+   "aussage": "Bei der Waffenschau waren alle Waffen entladen, mit Sicherungskabeln an Tischen befestigt und wurden ständig beaufsichtigt.",
+   "zitat": "Alle Waffen waren entladen, mit Sicherungskabeln an den Tischen befestigt und ständig von einem Lehrgangsteilnehmenden beaufsichtigt.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 280,
+   "datei": "AAR-2026-04-30-besuchertag.md",
+   "thema": "Waffenschau",
+   "art": "regel",
+   "kontext": "Besuchertag",
+   "aussage": "Das Anfassen der ausgestellten Waffen war unter Aufsicht erlaubt, das Anlegen und Zielen auf Personen jedoch nicht.",
+   "zitat": "Das Anfassen der Waffen war unter Aufsicht erlaubt, das Anlegen und Zielen auf Personen nicht.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 281,
+   "datei": "AAR-2026-04-30-besuchertag.md",
+   "thema": "Waffenschau",
+   "art": "regel",
+   "kontext": "Besuchertag",
+   "aussage": "Bei der Waffenschau wurde keine Munition, auch keine Übungsmunition, ausgestellt.",
+   "zitat": "Munition, auch Übungsmunition, wurde nicht ausgestellt.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 282,
+   "datei": "AAR-2026-04-30-besuchertag.md",
+   "thema": "Geräteschau",
+   "art": "erfahrung",
+   "kontext": "Besuchertag",
+   "aussage": "An den Fahrzeugen der Geräteschau bildeten sich lange Schlangen; eine zeitliche Begrenzung je Gruppe im Fahrzeuginneren hätte geholfen.",
+   "zitat": "An den Fahrzeugen bildeten sich lange Schlangen. Eine zeitliche Begrenzung von fünf Minuten je Gruppe im Fahrzeuginneren hätte geholfen.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 283,
+   "datei": "AAR-2026-04-30-besuchertag.md",
+   "thema": "Gefechtsvorführung",
+   "art": "regel",
+   "kontext": "Besuchertag",
+   "aussage": "Bei der Vorführung im Gefechtsdienst wurde nicht geschossen, auch nicht mit Manövermunition, da Kinder anwesend waren.",
+   "zitat": "Geschossen wurde nicht, auch nicht mit Manövermunition, weil Kinder anwesend waren.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 284,
+   "datei": "AAR-2026-04-30-besuchertag.md",
+   "thema": "Gefechtsvorführung",
+   "art": "erfahrung",
+   "kontext": "Besuchertag",
+   "aussage": "Die Lautsprecheranlage zur Kommentierung der Vorführung war zu schwach; es sollte eine stärkere Anlage oder ein zweiter Lautsprecher eingesetzt werden.",
+   "zitat": "Die Lautsprecheranlage war für den Wind zu schwach; die hinteren Reihen haben wenig verstanden. Hier sollte eine stärkere Anlage oder ein zweiter Lautsprecher eingesetzt werden.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 285,
+   "datei": "AAR-2026-04-30-besuchertag.md",
+   "thema": "Fotografierverbot",
+   "art": "regel",
+   "kontext": "Besuchertag",
+   "aussage": "Fotografieren war im Bereich der Wache, im Stabsgebäude und an den Unterkunftsgebäuden verboten.",
+   "zitat": "Im Bereich der Wache, im Stabsgebäude und an den Unterkunftsgebäuden war es verboten.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 286,
+   "datei": "AAR-2026-04-30-besuchertag.md",
+   "thema": "Fotografierverbot",
+   "art": "erfahrung",
+   "kontext": "Besuchertag",
+   "aussage": "Auf das Fotografierverbot sollte bereits am Tor und im Programm hingewiesen werden, da Hinweisschilder an einzelnen Gebäuden nicht ausreichten.",
+   "zitat": "Hinweisschilder gab es nur am Stabsgebäude. Mehrere Gäste fotografierten an der Wache und wurden von Wachsoldaten angesprochen. Künftig sollte auf das Fotografierverbot bereits am Tor und auf dem Programmzettel hingewiesen werden.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 287,
+   "datei": "AAR-2026-04-30-besuchertag.md",
+   "thema": "Verpflegung",
+   "art": "erfahrung",
+   "kontext": "Besuchertag",
+   "aussage": "Da beim Mittagessen keine Kartenzahlung möglich war, sollte in der Einladung künftig darauf hingewiesen werden, dass bar bezahlt werden muss.",
+   "zitat": "Kartenzahlung war nicht möglich, was mehrere Gäste überrascht hat. Künftig sollte darauf in der Einladung hingewiesen werden.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 288,
+   "datei": "AAR-2026-04-30-besuchertag.md",
+   "thema": "Fundsachen",
+   "art": "unklar",
+   "kontext": "Besuchertag",
+   "aussage": "Fundsachen wurden an der Wache abgegeben.",
+   "zitat": "Die Fundsachen wurden an der Wache abgegeben.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 289,
+   "datei": "AAR-2026-04-30-besuchertag.md",
+   "thema": "Verlust Besucherausweis",
+   "art": "unklar",
+   "kontext": "Besuchertag",
+   "aussage": "Gäste, die ihren Besucherausweis verloren hatten, meldeten dies bei der Ausfahrt an der Wache.",
+   "zitat": "Zwei Gäste hatten ihren Besucherausweis verloren; das wurde bei der Ausfahrt an der Wache gemeldet und mit der Gästeliste abgeglichen.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 290,
+   "datei": "AAR-2026-04-30-besuchertag.md",
+   "thema": "Rückgabe Besucherausweise",
+   "art": "regel",
+   "kontext": "Besuchertag",
+   "aussage": "Besucherausweise mussten beim Verlassen der Kaserne an der Wache zurückgegeben werden.",
+   "zitat": "Alle übrigen Besucherausweise wurden beim Verlassen der Kaserne an der Wache zurückgegeben.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 291,
+   "datei": "AAR-2026-04-30-besuchertag.md",
+   "thema": "Sanitätsdienstliche Absicherung",
+   "art": "erfahrung",
+   "kontext": "Besuchertag",
+   "aussage": "Es wird ein zweiter Sanitätstrupp am Standortübungsplatz empfohlen, da die Verlegezeit vom Sanitätsposten am Sportzentrum dorthin zu lang war.",
+   "zitat": "Für künftige Besuchertage wird ein zweiter Sanitätstrupp am Standortübungsplatz empfohlen, weil der Weg vom Sportzentrum dorthin mit dem Fahrzeug acht Minuten dauerte.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 292,
+   "datei": "AAR-2026-04-30-besuchertag.md",
+   "thema": "Gebäudezugang",
+   "art": "regel",
+   "kontext": "Besuchertag",
+   "aussage": "Gäste dürfen Unterkunftsgebäude nicht betreten.",
+   "zitat": "Gäste dürfen Unterkunftsgebäude nicht betreten; Ausnahmen gab es nicht.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 293,
+   "datei": "AAR-2026-04-30-besuchertag.md",
+   "thema": "Fotos von Teilnehmern",
+   "art": "regel",
+   "kontext": "Besuchertag",
+   "aussage": "Fotos von Lehrgangsteilnehmenden durften nur mit deren Einverständnis veröffentlicht werden.",
+   "zitat": "Fotos von Lehrgangsteilnehmenden durften nur mit deren Einverständnis veröffentlicht werden;",
+   "zitat_ok": 1
+  },
+  {
+   "id": 294,
+   "datei": "AAR-2026-04-30-besuchertag.md",
+   "thema": "Fotos von Teilnehmern",
+   "art": "erfahrung",
+   "kontext": "Besuchertag",
+   "aussage": "Die Kennzeichnung von Teilnehmern, die nicht fotografiert werden wollten, mittels gelbem Band am Ärmel war für die Betroffenen unangenehm und sollte durch eine unauffälligere Lösung ersetzt werden.",
+   "zitat": "Das hat funktioniert, war aber für die Betroffenen unangenehm. Künftig sollte eine weniger auffällige Lösung gefunden werden.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 295,
+   "datei": "AAR-2026-04-30-besuchertag.md",
+   "thema": "Gästefeedback",
+   "art": "erfahrung",
+   "kontext": "Besuchertag",
+   "aussage": "Die häufigsten Kritikpunkte der Gäste waren das Parken, die Wartezeit am Tor und die fehlende Möglichkeit zur Kartenzahlung.",
+   "zitat": "Kritisiert wurden das Parken (31), die Wartezeit am Tor (18) und die fehlende Kartenzahlung (12).",
+   "zitat_ok": 1
+  },
+  {
+   "id": 296,
+   "datei": "AAR-2026-04-30-besuchertag.md",
+   "thema": "Besuchertag",
+   "art": "erfahrung",
+   "kontext": "Lehrgang Unteroffizier",
+   "aussage": "Aufgrund des Erfolgs und des positiven Feedbacks sollte zum Abschluss jedes Unteroffizierlehrgangs ein Besuchertag fest eingeplant werden.",
+   "zitat": "Ein Besuchertag sollte zum Abschluss jedes Lehrgangs Unteroffizier fest eingeplant werden.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 297,
+   "datei": "AAR-2026-05-12-stubenabnahme.md",
+   "thema": "Stubenabnahme",
+   "art": "sonstiges",
+   "kontext": "Lehrgangsende",
+   "aussage": "Der Ablauf der Stubenabnahme wurde erstmals nach der neuen Hausordnung organisiert.",
+   "zitat": "Der Ablauf war zum ersten Mal nach der neuen Hausordnung organisiert.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 298,
+   "datei": "AAR-2026-05-12-stubenabnahme.md",
+   "thema": "Stubenabnahme",
+   "art": "unklar",
+   "kontext": "Lehrgangsende",
+   "aussage": "Die Stubenabnahme beginnt um 07:00 Uhr und wird stubenweise durch den Kompaniefeldwebel und den Unteroffizier vom Dienst durchgeführt.",
+   "zitat": "Die Stubenabnahme fand ab 07:00 Uhr stubenweise durch den Kompaniefeldwebel und den Unteroffizier vom Dienst statt.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 299,
+   "datei": "AAR-2026-05-12-stubenabnahme.md",
+   "thema": "Waffenabgabe",
+   "art": "regel",
+   "kontext": "Stubenabnahme zum Lehrgangsende",
+   "aussage": "Vor der Stubenabnahme müssen alle Waffen in der Waffenkammer abgegeben sein.",
+   "zitat": "Vor der Abnahme mussten alle Waffen in der Waffenkammer abgegeben sein",
+   "zitat_ok": 1
+  },
+  {
+   "id": 300,
+   "datei": "AAR-2026-05-12-stubenabnahme.md",
+   "thema": "Waffenabgabe",
+   "art": "unklar",
+   "kontext": "Stubenabnahme zum Lehrgangsende",
+   "aussage": "Für die Waffenabgabe vor der Stubenabnahme ist die Waffenkammer ab 06:00 Uhr geöffnet.",
+   "zitat": "die Waffenkammer war dafür ab 06:00 Uhr geöffnet.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 301,
+   "datei": "AAR-2026-05-12-stubenabnahme.md",
+   "thema": "Stubenabnahme",
+   "art": "sonstiges",
+   "kontext": "Lehrgangsende",
+   "aussage": "Weil zwei Lehrgangsteilnehmer ihre Waffen zu spät abgaben, wurde die Abnahme ihrer Stuben ans Ende verschoben.",
+   "zitat": "Zwei Lehrgangsteilnehmende kamen erst um 07:20 Uhr zur Waffenkammer, weshalb ihre Stuben ans Ende der Abnahme verschoben wurden.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 302,
+   "datei": "AAR-2026-05-12-stubenabnahme.md",
+   "thema": "Rückgabe Schlüssel",
+   "art": "regel",
+   "kontext": "Stubenabnahme zum Lehrgangsende",
+   "aussage": "Nach erfolgreicher Stubenabnahme muss der Stubenälteste die Stubenschlüssel persönlich an den Unteroffizier vom Dienst übergeben.",
+   "zitat": "Nach erfolgreicher Abnahme übergibt der Stubenälteste die Stubenschlüssel persönlich dem Unteroffizier vom Dienst",
+   "zitat_ok": 1
+  },
+  {
+   "id": 303,
+   "datei": "AAR-2026-05-12-stubenabnahme.md",
+   "thema": "Schlüsselbuch",
+   "art": "regel",
+   "kontext": "Stubenabnahme zum Lehrgangsende",
+   "aussage": "Der Unteroffizier vom Dienst trägt die Rückgabe der Stubenschlüssel im Schlüsselbuch der Kompanie ein.",
+   "zitat": "der die Rückgabe im Schlüsselbuch der Kompanie einträgt.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 304,
+   "datei": "AAR-2026-05-12-stubenabnahme.md",
+   "thema": "Rückgabe Schlüssel",
+   "art": "regel",
+   "kontext": "Lehrgangsende",
+   "aussage": "Stubenschlüssel dürfen nicht in den Schlüsselkasten am Eingang eingeworfen werden.",
+   "zitat": "Schlüssel dürfen nicht im Schlüsselkasten am Eingang eingeworfen werden",
+   "zitat_ok": 1
+  },
+  {
+   "id": 305,
+   "datei": "AAR-2026-05-12-stubenabnahme.md",
+   "thema": "Rückgabe Schlüssel",
+   "art": "regel",
+   "kontext": "Gästeunterkünfte",
+   "aussage": "Der Schlüsselkasten am Eingang ist nur für die Rückgabe von Schlüsseln aus Gästeunterkünften vorgesehen.",
+   "zitat": "der Kasten ist nur für Gästeunterkünfte vorgesehen.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 306,
+   "datei": "AAR-2026-05-12-stubenabnahme.md",
+   "thema": "Erfassung von Schäden",
+   "art": "unklar",
+   "kontext": "Stubenabnahme",
+   "aussage": "Bei der Stubenabnahme festgestellte Schäden werden im Übergabeprotokoll vermerkt.",
+   "zitat": "Die Schäden wurden im Übergabeprotokoll vermerkt.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 307,
+   "datei": "AAR-2026-05-12-stubenabnahme.md",
+   "thema": "Erfassung fehlender Teile",
+   "art": "sonstiges",
+   "kontext": "Stubenabnahme",
+   "aussage": "Ein bei der Stubenabnahme als fehlend vermerkter Stuhl wurde später im Aufenthaltsraum gefunden.",
+   "zitat": "Der fehlende Stuhl fand sich im Aufenthaltsraum wieder.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 308,
+   "datei": "AAR-2026-05-12-stubenabnahme.md",
+   "thema": "Stubenabnahme",
+   "art": "erfahrung",
+   "kontext": "Lehrgangsende",
+   "aussage": "Die Durchführung der Stubenabnahme in festen Zeitfenstern von 15 Minuten je Stube hat sich bewährt.",
+   "zitat": "Die Abnahme in festen Zeitfenstern je Stube (15 Minuten) hat gut funktioniert.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 309,
+   "datei": "AAR-2026-05-12-stubenabnahme.md",
+   "thema": "Stubenabnahme",
+   "art": "erfahrung",
+   "kontext": "Lehrgangsende",
+   "aussage": "Eine Probeabnahme, die am Vortag durch die Stubenältesten selbst durchgeführt wird, hat sich bewährt und führt zu weniger Beanstandungen.",
+   "zitat": "Bewährt hat sich auch, am Vortag eine Probeabnahme durch die Stubenältesten selbst durchführen zu lassen; dadurch gab es deutlich weniger Beanstandungen",
+   "zitat_ok": 1
+  },
+  {
+   "id": 310,
+   "datei": "AAR-2026-05-12-stubenabnahme.md",
+   "thema": "Waffenabgabe",
+   "art": "erfahrung",
+   "kontext": "Stubenabnahme zum Lehrgangsende",
+   "aussage": "Es wird empfohlen, die Waffenkammer am Tag der Stubenabnahme früher zu öffnen (05:30 Uhr).",
+   "zitat": "Die Waffenkammer am Abnahmetag früher öffnen (05:30 Uhr)",
+   "zitat_ok": 1
+  },
+  {
+   "id": 311,
+   "datei": "AAR-2026-05-12-stubenabnahme.md",
+   "thema": "Waffenabgabe",
+   "art": "erfahrung",
+   "kontext": "Stubenabnahme zum Lehrgangsende",
+   "aussage": "Es wird empfohlen, für die Waffenabgabe feste Abgabezeiten je Hörsaal festzulegen.",
+   "zitat": "die Abgabezeiten je Hörsaal festlegen.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 137,
+   "datei": "AAR-2026-06-16-project-planning-evening.md",
+   "thema": "Seminarvorbereitung",
+   "art": "sonstiges",
+   "kontext": "Abendseminar",
+   "aussage": "Für das Abendseminar „Projektplanung“ fand ein Vorbereitungstreffen statt, bei dem Ablauf und Rollen abgestimmt wurden.",
+   "zitat": "Beim Vorbereitungstreffen am 02.06.2026 haben wir Ablauf und Rollen abgestimmt.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 138,
+   "datei": "AAR-2026-06-16-project-planning-evening.md",
+   "thema": "Empfang Gastreferenten",
+   "art": "unklar",
+   "kontext": "Abendseminar",
+   "aussage": "Gastreferierende melden sich bei ihrer Ankunft am Empfang an und werden dort von der Seminarleitung abgeholt.",
+   "zitat": "Gastreferierende melden sich bei ihrer Ankunft am Empfang an und werden dort von der Seminarleitung abgeholt.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 139,
+   "datei": "AAR-2026-06-16-project-planning-evening.md",
+   "thema": "WLAN-Zugang für Gäste",
+   "art": "unklar",
+   "kontext": "Abendseminar",
+   "aussage": "Gastreferierende erhalten ihre WLAN-Zugangsdaten am Empfang.",
+   "zitat": "Die Gastreferentin erhielt am Empfang auch ihre WLAN-Zugangsdaten.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 140,
+   "datei": "AAR-2026-06-16-project-planning-evening.md",
+   "thema": "Empfang Gastreferenten",
+   "art": "erfahrung",
+   "kontext": "Abendseminar",
+   "aussage": "Die Seminarleitung sollte zehn Minuten früher am Empfang sein, um Gastreferierende abzuholen.",
+   "zitat": "Das hat gut funktioniert, allerdings sollte die Seminarleitung zehn Minuten früher am Empfang sein.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 141,
+   "datei": "AAR-2026-06-16-project-planning-evening.md",
+   "thema": "Seminarinhalt",
+   "art": "erfahrung",
+   "kontext": "Abendseminar „Projektplanung“",
+   "aussage": "Der Teil zur Zeitplanung wurde von den Teilnehmenden am besten angenommen.",
+   "zitat": "Inhaltlich kam der Teil zur Zeitplanung am besten an.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 142,
+   "datei": "AAR-2026-06-16-project-planning-evening.md",
+   "thema": "Zeitplanung Seminar",
+   "art": "sonstiges",
+   "kontext": "Abendseminar",
+   "aussage": "Die Gruppenarbeit dauerte länger als geplant, weshalb die Abschlussrunde kurz ausfiel.",
+   "zitat": "Die Gruppenarbeit dauerte länger als geplant, sodass die Abschlussrunde kurz ausfiel.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 143,
+   "datei": "AAR-2026-06-16-project-planning-evening.md",
+   "thema": "Teilnehmerfeedback",
+   "art": "unklar",
+   "kontext": "Abendseminar",
+   "aussage": "Feedbackbögen werden am Ende des Seminars ausgefüllt und an die Seminarorganisation weitergegeben.",
+   "zitat": "Die Feedbackbögen wurden am Ende ausgefüllt und an die Seminarorganisation weitergegeben.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 312,
+   "datei": "AAR-2026-06-24-truppenverpflegung.md",
+   "thema": "Verpflegungsanmeldung",
+   "art": "erfahrung",
+   "kontext": "Übungen und Geländeausbildung",
+   "aussage": "Die bisherige Praxis, Lunchpakete und Feldverpflegung formlos per E-Mail bis Mittwoch der Vorwoche anzumelden, hat sich nicht bewährt.",
+   "zitat": "Die bisherige Praxis, Lunchpakete und Feldverpflegung formlos per E-Mail bis Mittwoch der Vorwoche anzumelden, hat sich nicht bewährt.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 313,
+   "datei": "AAR-2026-06-24-truppenverpflegung.md",
+   "thema": "Verpflegungsanmeldung",
+   "art": "sonstiges",
+   "kontext": "Übungen und Geländeausbildung",
+   "aussage": "In der Vergangenheit kamen Verpflegungsanmeldungen per E-Mail häufig zu spät oder unvollständig an, z.B. ohne Personenzahlen oder Ausgabeorte.",
+   "zitat": "In vier von sieben Fällen kamen Anmeldungen zu spät oder unvollständig an; teils fehlten Personenzahlen für einzelne Tage, teils die Ausgabeorte.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 314,
+   "datei": "AAR-2026-06-24-truppenverpflegung.md",
+   "thema": "Verpflegung",
+   "art": "sonstiges",
+   "kontext": "mehrtägige Übungen",
+   "aussage": "Bei allen mehrtägigen Übungen wurde eine warme Mahlzeit pro Tag aus der Feldküche ausgegeben.",
+   "zitat": "Bei allen mehrtägigen Übungen wurde eine warme Mahlzeit pro Tag aus der Feldküche ausgegeben.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 315,
+   "datei": "AAR-2026-06-24-truppenverpflegung.md",
+   "thema": "Verpflegung",
+   "art": "erfahrung",
+   "kontext": "mehrtägige Übungen",
+   "aussage": "Eine warme Mahlzeit pro Tag ist laut Rückmeldungen der Einheiten für die Moral sehr wichtig.",
+   "zitat": "Die Rückmeldungen der Einheiten zeigen übereinstimmend, dass die warme Mahlzeit für die Moral sehr wichtig ist.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 316,
+   "datei": "AAR-2026-06-24-truppenverpflegung.md",
+   "thema": "Verpflegung",
+   "art": "erfahrung",
+   "kontext": "Übung",
+   "aussage": "Es hat sich bewährt, die Ausgabe warmer Mahlzeiten zugweise in festen Zeitfenstern von 20 Minuten durchzuführen, um lange Wartezeiten zu vermeiden.",
+   "zitat": "Bewährt hat sich bei der Übung „Märzsturm“, die Ausgabe zugweise in festen Zeitfenstern von 20 Minuten durchzuführen.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 317,
+   "datei": "AAR-2026-06-24-truppenverpflegung.md",
+   "thema": "Heißgetränke",
+   "art": "erfahrung",
+   "kontext": "Winter",
+   "aussage": "Heißgetränke in Standard-Thermobehältern blieben im Winter nur etwa zwei Stunden heiß.",
+   "zitat": "Heißgetränke in Thermobehältern blieben im Winter nur etwa zwei Stunden heiß.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 318,
+   "datei": "AAR-2026-06-24-truppenverpflegung.md",
+   "thema": "Heißgetränke",
+   "art": "erfahrung",
+   "kontext": "",
+   "aussage": "Getestete Isolierkannen mit doppelter Wandung hielten Getränke etwa vier Stunden warm.",
+   "zitat": "Isolierkannen mit doppelter Wandung getestet; sie hielten die Getränke etwa vier Stunden warm.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 319,
+   "datei": "AAR-2026-06-24-truppenverpflegung.md",
+   "thema": "Heißgetränke",
+   "art": "sonstiges",
+   "kontext": "",
+   "aussage": "Die Truppenküche beschafft weitere doppelwandige Isolierkannen.",
+   "zitat": "Die Truppenküche beschafft weitere Kannen dieses Typs.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 320,
+   "datei": "AAR-2026-06-24-truppenverpflegung.md",
+   "thema": "Sonderkost",
+   "art": "erfahrung",
+   "kontext": "Übungen",
+   "aussage": "Die pauschale Mitlieferung einer geschätzten Menge an Sonderkost (vegetarisch, Unverträglichkeiten) führte regelmäßig zu Überschüssen oder Fehlmengen.",
+   "zitat": "Dabei blieb regelmäßig zu viel übrig, während an anderen Tagen Portionen fehlten.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 321,
+   "datei": "AAR-2026-06-24-truppenverpflegung.md",
+   "thema": "Verpflegungsanmeldung",
+   "art": "regel",
+   "kontext": "Übungen und Geländeausbildung",
+   "aussage": "Ab dem 01.07.2026 muss Verpflegung für Übungen und Geländeausbildung nur noch mit dem Formular VA-3, spätestens zehn Werktage vor Beginn, angemeldet werden.",
+   "zitat": "Verpflegung für Übungen und Geländeausbildung wird ab dem 01.07.2026 nur noch mit dem Formular VA-3 angemeldet, spätestens zehn Werktage vor Beginn.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 322,
+   "datei": "AAR-2026-06-24-truppenverpflegung.md",
+   "thema": "Verpflegungsanmeldung",
+   "art": "regel",
+   "kontext": "Übungen und Geländeausbildung",
+   "aussage": "Im Anmeldeformular VA-3 müssen für jeden Tag Personenzahl, Ausgabeort und Ausgabezeit eingetragen werden.",
+   "zitat": "Im Formular werden für jeden Tag Personenzahl, Ausgabeort und Ausgabezeit eingetragen.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 323,
+   "datei": "AAR-2026-06-24-truppenverpflegung.md",
+   "thema": "Verpflegungsanmeldung",
+   "art": "regel",
+   "kontext": "Übungen und Geländeausbildung",
+   "aussage": "Ab dem 01.07.2026 entfällt die Möglichkeit, Verpflegung per E-Mail anzumelden.",
+   "zitat": "Die bisherige Anmeldung per E-Mail bis Mittwoch der Vorwoche entfällt.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 324,
+   "datei": "AAR-2026-06-24-truppenverpflegung.md",
+   "thema": "Sonderkost",
+   "art": "regel",
+   "kontext": "Übungen",
+   "aussage": "Vegetarische Kost und Sonderkost werden nur noch nach namentlicher Anmeldung im Formular VA-3 geliefert, nicht mehr in einer pauschalen Menge.",
+   "zitat": "Vegetarische Kost und Sonderkost werden bei Übungen nur noch auf namentliche Anmeldung im Formular VA-3 geliefert; eine pauschale Menge wird nicht mehr mitgeschickt.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 325,
+   "datei": "AAR-2026-06-24-truppenverpflegung.md",
+   "thema": "Verpflegung",
+   "art": "sonstiges",
+   "kontext": "",
+   "aussage": "Die Regelungen für die Verpflegung in der Kantine am Standort ändern sich nicht.",
+   "zitat": "Für die Verpflegung in der Kantine am Standort ändert sich nichts.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 326,
+   "datei": "AAR-2026-06-24-truppenverpflegung.md",
+   "thema": "Ausgabe Einmannpackungen",
+   "art": "regel",
+   "kontext": "",
+   "aussage": "Einmannpackungen werden über die Materialausgabe ausgegeben, nicht über die Truppenküche.",
+   "zitat": "Einmannpackungen werden weiterhin über die Materialausgabe ausgegeben, nicht über die Truppenküche.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 327,
+   "datei": "AAR-2026-06-24-truppenverpflegung.md",
+   "thema": "Rückgabe Einmannpackungen",
+   "art": "regel",
+   "kontext": "",
+   "aussage": "Nicht verbrauchte Einmannpackungen müssen bei der Materialausgabe zurückgegeben werden; angebrochene Packungen werden nicht zurückgenommen.",
+   "zitat": "Die Rückgabe nicht verbrauchter Einmannpackungen erfolgt dort ebenfalls; angebrochene Packungen werden nicht zurückgenommen.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 328,
+   "datei": "AAR-2026-06-24-truppenverpflegung.md",
+   "thema": "Umgang mit Lunchpaketen",
+   "art": "regel",
+   "kontext": "Temperaturen über 25 °C",
+   "aussage": "Bei Temperaturen über 25 °C dürfen Lunchpakete mit Wurst- oder Käsebelag maximal vier Stunden ohne Kühlung aufbewahrt werden.",
+   "zitat": "Bei Temperaturen über 25 °C dürfen Lunchpakete mit Wurst- oder Käsebelag nicht länger als vier Stunden ohne Kühlung aufbewahrt werden.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 329,
+   "datei": "AAR-2026-06-24-truppenverpflegung.md",
+   "thema": "Umgang mit Lunchpaketen",
+   "art": "erfahrung",
+   "kontext": "Hohe Temperaturen",
+   "aussage": "Bei hohen Temperaturen hat es sich bewährt, Lunchpakete erst zur Mittagszeit mit einem Kühlfahrzeug auszuliefern.",
+   "zitat": "Bei der Übung im Juni hat sich bewährt, Lunchpakete erst zur Mittagszeit mit einem Kühlfahrzeug nachzuführen.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 330,
+   "datei": "AAR-2026-07-21-externe-ausbilder.md",
+   "thema": "Anforderung externe Ausbilder",
+   "art": "sonstiges",
+   "kontext": "Einsatz externer Ausbilder",
+   "aussage": "Reservisten wurden über eine Reservistendienstleistung herangezogen, ein Ausbilder einer anderen Dienststelle über eine Amtshilfeanfrage.",
+   "zitat": "Die beiden Reservisten wurden über eine Reservistendienstleistung herangezogen, der dritte Ausbilder über eine Amtshilfeanfrage an seine Dienststelle.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 331,
+   "datei": "AAR-2026-07-21-externe-ausbilder.md",
+   "thema": "Zugang externe Ausbilder",
+   "art": "unklar",
+   "kontext": "Reservisten",
+   "aussage": "Reservisten erhielten an der Wache einen Truppenausweis auf Zeit, wenn sie ihren Heranziehungsbescheid vorlegten.",
+   "zitat": "Die Reservisten erhielten an der Wache gegen Vorlage ihres Heranziehungsbescheids einen Truppenausweis auf Zeit.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 332,
+   "datei": "AAR-2026-07-21-externe-ausbilder.md",
+   "thema": "Zugang externe Ausbilder",
+   "art": "regel",
+   "kontext": "Truppenübungsplatz",
+   "aussage": "Für den Zugang zur Übungsanlage auf einem Truppenübungsplatz müssen alle externen Ausbilder auf der Zugangsliste der Kommandantur stehen.",
+   "zitat": "Für den Zugang zur Übungsanlage auf dem Truppenübungsplatz mussten alle drei zusätzlich auf der Zugangsliste der Kommandantur stehen.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 333,
+   "datei": "AAR-2026-07-21-externe-ausbilder.md",
+   "thema": "Zugang externe Ausbilder",
+   "art": "erfahrung",
+   "kontext": "externe Ausbilder",
+   "aussage": "Ein fehlender Eintrag auf der Zugangsliste der Kommandantur für einen externen Ausbilder führte zu einer halbstündigen Verzögerung.",
+   "zitat": "Bei einem Reservisten fehlte der Eintrag, er konnte erst nach einer halben Stunde Klärung hinein.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 334,
+   "datei": "AAR-2026-07-21-externe-ausbilder.md",
+   "thema": "Verpflegungsanmeldung",
+   "art": "regel",
+   "kontext": "externe Ausbilder",
+   "aussage": "Externe Ausbilder, die an der Truppenverpflegung teilnehmen, müssen namentlich im Formular VA-3 angemeldet werden.",
+   "zitat": "Sie waren im Formular VA-3 namentlich angemeldet.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 335,
+   "datei": "AAR-2026-07-21-externe-ausbilder.md",
+   "thema": "Abrechnung Reisekosten",
+   "art": "regel",
+   "kontext": "Reservisten",
+   "aussage": "Das Reisekostenformular von Reservisten muss innerhalb von sechs Monaten nach Reiseende eingereicht werden.",
+   "zitat": "das innerhalb von sechs Monaten nach Reiseende eingereicht werden muss.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 336,
+   "datei": "AAR-2026-07-21-externe-ausbilder.md",
+   "thema": "Abrechnung Reisekosten",
+   "art": "regel",
+   "kontext": "Reservisten",
+   "aussage": "Fahrtkosten mit dem eigenen Fahrzeug werden bei Reservisten nur erstattet, wenn die Nutzung zuvor genehmigt wurde.",
+   "zitat": "Fahrtkosten mit dem eigenen Fahrzeug werden nur erstattet, wenn die Nutzung vorher genehmigt wurde",
+   "zitat_ok": 1
+  },
+  {
+   "id": 337,
+   "datei": "AAR-2026-07-21-externe-ausbilder.md",
+   "thema": "Kommunikation im Ortskampf",
+   "art": "erfahrung",
+   "kontext": "Ortskampf",
+   "aussage": "Da Funk in Gebäuden oft unzuverlässig ist, müssen Handzeichen und kurze, festgelegte Zurufe sicher beherrscht werden.",
+   "zitat": "Funk sei in Gebäuden oft unzuverlässig, deshalb müssten Handzeichen und kurze, festgelegte Zurufe sicher beherrscht werden.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 338,
+   "datei": "AAR-2026-07-21-externe-ausbilder.md",
+   "thema": "Taktik Ortskampf",
+   "art": "erfahrung",
+   "kontext": "Ortskampf",
+   "aussage": "Je nach Lage kann im Ortskampf sowohl ein langsames, gründliches Vorgehen als auch ein zügiges Vorgehen richtig sein.",
+   "zitat": "wurde erklärt, dass beides je nach Lage richtig sein kann.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 339,
+   "datei": "AAR-2026-07-21-externe-ausbilder.md",
+   "thema": "Anforderung externe Ausbilder",
+   "art": "erfahrung",
+   "kontext": "externe Ausbilder",
+   "aussage": "Externe Ausbilder sollten mindestens vier Wochen im Voraus angefordert werden, da besonders die Reservistendienstleistung Vorlauf benötigt.",
+   "zitat": "Externe Ausbilder mindestens vier Wochen vorher anfordern; die Reservistendienstleistung braucht Vorlauf.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 340,
+   "datei": "AAR-2026-07-21-externe-ausbilder.md",
+   "thema": "Zugang externe Ausbilder",
+   "art": "erfahrung",
+   "kontext": "externe Ausbilder",
+   "aussage": "Es wird empfohlen, die Zugangslisten der Kommandantur für externe Ausbilder zwei Wochen vor Beginn zu prüfen.",
+   "zitat": "Zugangslisten der Kommandantur für externe Ausbilder zwei Wochen vorher prüfen.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 341,
+   "datei": "AAR-2026-07-21-externe-ausbilder.md",
+   "thema": "Abstimmung Ausbilder",
+   "art": "erfahrung",
+   "kontext": "Einsatz externer Ausbilder",
+   "aussage": "Vor einem Ausbildungsabschnitt sollte ein Abstimmungstermin zwischen internen und externen Ausbildern angesetzt werden, um widersprüchliche Vorgaben zu vermeiden.",
+   "zitat": "Vor dem Abschnitt einen Abstimmungstermin zwischen internen und externen Ausbildern ansetzen, damit die Teilnehmenden keine widersprüchlichen Vorgaben erhalten.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 342,
+   "datei": "AAR-2026-07-21-externe-ausbilder.md",
+   "thema": "Einsatz externer Ausbilder",
+   "art": "erfahrung",
+   "kontext": "Ortskampf",
+   "aussage": "Der Einsatz von externen Ausbildern für die Ausbildung im Ortskampf hat sich bewährt und sollte beibehalten werden.",
+   "zitat": "Den Einsatz externer Ausbilder für den Ortskampf beibehalten; der Mehrwert war deutlich.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 144,
+   "datei": "AAR-2026-09-29-evening-negotiation.md",
+   "thema": "Teilnehmerunterlagen",
+   "art": "unklar",
+   "kontext": "",
+   "aussage": "Die Seminarunterlagen werden als Download im Seminarportal bereitgestellt.",
+   "zitat": "Die Unterlagen standen wie üblich als Download im Seminarportal bereit",
+   "zitat_ok": 1
+  },
+  {
+   "id": 145,
+   "datei": "AAR-2026-09-29-evening-negotiation.md",
+   "thema": "Teilnehmerunterlagen",
+   "art": "sonstiges",
+   "kontext": "Abendseminar",
+   "aussage": "Zwei Teilnehmende hatten die Unterlagen vor dem Seminar nicht heruntergeladen und lasen stattdessen auf dem Smartphone mit.",
+   "zitat": "zwei Personen hatten sie vorher nicht heruntergeladen und lasen am Smartphone mit.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 146,
+   "datei": "AAR-2026-09-29-evening-negotiation.md",
+   "thema": "Getränke in Seminarräumen",
+   "art": "regel",
+   "kontext": "Seminarräume",
+   "aussage": "In Seminarräumen sind Getränke nur in verschließbaren Flaschen erlaubt.",
+   "zitat": "In den Seminarräumen sind Getränke nur in verschließbaren Flaschen erlaubt.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 147,
+   "datei": "AAR-2026-09-29-evening-negotiation.md",
+   "thema": "Getränke in Seminarräumen",
+   "art": "erfahrung",
+   "kontext": "Seminarräume",
+   "aussage": "Die Regel, dass offene Becher vor dem Raum bleiben müssen, überraschte einige Teilnehmende.",
+   "zitat": "Offene Becher aus der Kantine mussten deshalb vor dem Raum bleiben, was einige überrascht hat.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 148,
+   "datei": "AAR-2026-09-29-evening-negotiation.md",
+   "thema": "Seminarinhalt",
+   "art": "erfahrung",
+   "kontext": "Abendseminar Verhandlungsführung",
+   "aussage": "Die Rollenspiele wurden als der stärkste Teil des Seminars bewertet.",
+   "zitat": "Die Rollenspiele waren der stärkste Teil des Abends.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 149,
+   "datei": "AAR-2026-09-29-evening-negotiation.md",
+   "thema": "Zeitplanung Seminar",
+   "art": "erfahrung",
+   "kontext": "Abendseminar Verhandlungsführung",
+   "aussage": "Für die Auswertung der Rollenspiele war die eingeplante Zeit zu kurz.",
+   "zitat": "Für die Auswertung der Rollenspiele war zu wenig Zeit",
+   "zitat_ok": 1
+  },
+  {
+   "id": 150,
+   "datei": "AAR-2026-09-29-evening-negotiation.md",
+   "thema": "Zeitplanung Seminar",
+   "art": "regel",
+   "kontext": "",
+   "aussage": "Für die Auswertung von Rollenspielen soll künftig eine halbe Stunde eingeplant werden.",
+   "zitat": "künftig planen wir dafür eine halbe Stunde ein.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 151,
+   "datei": "AAR-2026-09-29-evening-negotiation.md",
+   "thema": "Teilnahmebescheinigungen",
+   "art": "unklar",
+   "kontext": "",
+   "aussage": "Teilnahmebescheinigungen werden per E-Mail verschickt.",
+   "zitat": "Die Teilnahmebescheinigungen werden wie üblich per E-Mail verschickt.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 360,
+   "datei": "AAR-2026-10-06-lehrsaaltechnik.md",
+   "thema": "Seminartechnik",
+   "art": "erfahrung",
+   "kontext": "Lehrsäle 3.01 bis 3.06",
+   "aussage": "Die fest installierten Displays in den Lehrsälen 3.01 bis 3.06 funktionierten zuverlässig und ohne Ausfälle.",
+   "zitat": "Die fest installierten Displays in den Lehrsälen 3.01 bis 3.06 funktionieren zuverlässig; Ausfälle gab es keine.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 361,
+   "datei": "AAR-2026-10-06-lehrsaaltechnik.md",
+   "thema": "Seminartechnik",
+   "art": "erfahrung",
+   "kontext": "",
+   "aussage": "Die drahtlose Bildschirmübertragung von Dienstlaptops funktioniert nach einer kurzen Einweisung problemlos.",
+   "zitat": "Die drahtlose Bildschirmübertragung von Dienstlaptops klappt nach einer kurzen Einweisung problemlos.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 362,
+   "datei": "AAR-2026-10-06-lehrsaaltechnik.md",
+   "thema": "Seminartechnik",
+   "art": "erfahrung",
+   "kontext": "große Säle",
+   "aussage": "Die neuen Raummikrofone in den großen Sälen wurden von Ausbildern und Teilnehmenden positiv bewertet.",
+   "zitat": "Die neuen Raummikrofone in den großen Sälen wurden von Ausbildern und Teilnehmenden positiv bewertet.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 363,
+   "datei": "AAR-2026-10-06-lehrsaaltechnik.md",
+   "thema": "Seminartechnik",
+   "art": "erfahrung",
+   "kontext": "",
+   "aussage": "Private Geräte können nicht mit der Drahtlosübertragung für Bildschirminhalte verbunden werden.",
+   "zitat": "Private Geräte lassen sich nicht mit der Drahtlosübertragung verbinden.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 364,
+   "datei": "AAR-2026-10-06-lehrsaaltechnik.md",
+   "thema": "Präsentationen externer Referenten",
+   "art": "regel",
+   "kontext": "externe Vortragende",
+   "aussage": "Externe Vortragende müssen ihre Präsentation vorab auf einem Dienstlaptop bereitstellen lassen.",
+   "zitat": "Sie müssen ihre Präsentation vorab auf einem Dienstlaptop bereitstellen lassen.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 365,
+   "datei": "AAR-2026-10-06-lehrsaaltechnik.md",
+   "thema": "Raumausstattung",
+   "art": "sonstiges",
+   "kontext": "kleine Seminarräume",
+   "aussage": "In kleinen Seminarräumen ohne fest installiertes Display werden weiterhin mobile Beamer benötigt.",
+   "zitat": "In den kleinen Seminarräumen ohne fest installiertes Display sind weiterhin mobile Beamer nötig.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 366,
+   "datei": "AAR-2026-10-06-lehrsaaltechnik.md",
+   "thema": "Reservierung Beamer",
+   "art": "regel",
+   "kontext": "alle Lehr- und Seminarräume des Standorts",
+   "aussage": "Beamer und mobile Lautsprecher müssen über ein Ticket im IT-Serviceportal angefordert werden.",
+   "zitat": "Beamer und mobile Lautsprecher für alle Lehr- und Seminarräume des Standorts, auch außerhalb von Gebäude 3, werden über ein Ticket im IT-Serviceportal angefordert",
+   "zitat_ok": 1
+  },
+  {
+   "id": 367,
+   "datei": "AAR-2026-10-06-lehrsaaltechnik.md",
+   "thema": "Seminarvorbereitung",
+   "art": "regel",
+   "kontext": "",
+   "aussage": "Der IT-Service baut angeforderte mobile Technik (Beamer, Lautsprecher) vor Beginn auf und nach Ende wieder ab.",
+   "zitat": "der IT-Service baut die Geräte vor Beginn auf und nach Ende wieder ab.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 368,
+   "datei": "AAR-2026-10-06-lehrsaaltechnik.md",
+   "thema": "Reservierung Beamer",
+   "art": "erfahrung",
+   "kontext": "",
+   "aussage": "Tickets für mobile Technik, die am Vortag nach 14 Uhr gestellt wurden, konnten nicht mehr berücksichtigt werden.",
+   "zitat": "In drei Fällen war das Ticket am Vortag nach 14 Uhr gestellt worden und konnte nicht mehr berücksichtigt werden.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 369,
+   "datei": "AAR-2026-10-06-lehrsaaltechnik.md",
+   "thema": "Seminartechnik",
+   "art": "sonstiges",
+   "kontext": "Saal 3.06",
+   "aussage": "Ein Brummen der Tonanlage im Saal 3.06, verursacht durch ein falsch verlegtes Kabel, wurde am 28.07.2026 behoben.",
+   "zitat": "Die Tonanlage im Saal 3.06 hat in den ersten zwei Wochen gebrummt. Ursache war ein falsch verlegtes Kabel; behoben am 28.07.2026.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 370,
+   "datei": "AAR-2026-10-06-lehrsaaltechnik.md",
+   "thema": "Reservierung Beamer",
+   "art": "regel",
+   "kontext": "Hörsaalleitungen",
+   "aussage": "Tickets für mobile Technik müssen spätestens am Vortag bis 14 Uhr gestellt werden.",
+   "zitat": "Tickets für mobile Technik spätestens am Vortag bis 14 Uhr stellen.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 371,
+   "datei": "AAR-2026-10-06-lehrsaaltechnik.md",
+   "thema": "Präsentationen externer Referenten",
+   "art": "regel",
+   "kontext": "Hörsaalleitungen",
+   "aussage": "Präsentationen von externen Vortragenden müssen spätestens zwei Werktage vorher an den IT-Service geschickt werden.",
+   "zitat": "Präsentationen externer Vortragender spätestens zwei Werktage vorher an den IT-Service schicken.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 372,
+   "datei": "AAR-2026-10-06-lehrsaaltechnik.md",
+   "thema": "Meldung von Ausfällen",
+   "art": "regel",
+   "kontext": "Hörsaalleitungen",
+   "aussage": "Bei technischen Störungen ist die Hotline des IT-Service anzurufen, nicht das Seminarbüro.",
+   "zitat": "Bei Störungen die Hotline des IT-Service anrufen, nicht das Seminarbüro",
+   "zitat_ok": 1
+  },
+  {
+   "id": 373,
+   "datei": "AAR-2026-10-06-lehrsaaltechnik.md",
+   "thema": "Meldung von Ausfällen",
+   "art": "sonstiges",
+   "kontext": "",
+   "aussage": "Das Seminarbüro hat keinen Zugriff auf die Technik.",
+   "zitat": "das Seminarbüro hat keinen Zugriff auf die Technik.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 374,
+   "datei": "AAR-2026-10-06-lehrsaaltechnik.md",
+   "thema": "Raumausstattung",
+   "art": "sonstiges",
+   "kontext": "kleine Seminarräume",
+   "aussage": "Es ist noch nicht entschieden, ob die kleinen Seminarräume 2027 ebenfalls Displays erhalten.",
+   "zitat": "Ob die kleinen Seminarräume 2027 ebenfalls Displays erhalten, ist noch nicht entschieden.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 375,
+   "datei": "AAR-2026-10-06-lehrsaaltechnik.md",
+   "thema": "Seminartechnik",
+   "art": "sonstiges",
+   "kontext": "",
+   "aussage": "Es fehlt bisher eine freigegebene Lösung für Videokonferenzen mit externen Stellen.",
+   "zitat": "Für Videokonferenzen mit externen Stellen fehlt bisher eine freigegebene Lösung.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 152,
+   "datei": "AAR-evening-keys-a.md",
+   "thema": "Rückgabe Schlüssel",
+   "art": "regel",
+   "kontext": "Abendseminare",
+   "aussage": "Nach Abendseminaren werden die Raumschlüssel im Schlüsselkasten des Seminarbüros abgelegt.",
+   "zitat": "Nach Abendseminaren werden die Raumschlüssel im Schlüsselkasten des Seminarbüros abgelegt.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 153,
+   "datei": "AAR-evening-keys-a.md",
+   "thema": "Schlüsselbuch",
+   "art": "regel",
+   "kontext": "Abendseminare",
+   "aussage": "Die Seminarleitung trägt die Rückgabe der Schlüssel in die Schlüsselliste ein.",
+   "zitat": "Die Seminarleitung trägt die Rückgabe in die Schlüsselliste ein.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 154,
+   "datei": "AAR-evening-keys-b.md",
+   "thema": "Rückgabe Schlüssel",
+   "art": "regel",
+   "kontext": "Abendseminare",
+   "aussage": "Nach Abendseminaren sind die Raumschlüssel an der Pforte abzugeben.",
+   "zitat": "Nach Abendseminaren werden die Raumschlüssel an der Pforte abgegeben.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 155,
+   "datei": "AAR-evening-keys-b.md",
+   "thema": "Schlüsselbuch",
+   "art": "regel",
+   "kontext": "",
+   "aussage": "Die Pforte trägt die Rückgabe von Schlüsseln in die Schlüsselliste ein.",
+   "zitat": "Die Pforte trägt die Rückgabe in die Schlüsselliste ein.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 156,
+   "datei": "AAR-parking-visitors.md",
+   "thema": "Reservierung Besucherparkplätze",
+   "art": "regel",
+   "kontext": "",
+   "aussage": "Besucherparkplätze müssen mindestens einen Tag im Voraus beim Empfang reserviert werden.",
+   "zitat": "Besucherparkplätze werden mindestens einen Tag vorher beim Empfang reserviert.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 157,
+   "datei": "AAR-parking-visitors.md",
+   "thema": "Reservierung Besucherparkplätze",
+   "art": "regel",
+   "kontext": "",
+   "aussage": "Nicht reservierte Besucherparkplätze werden ab 9 Uhr freigegeben.",
+   "zitat": "Nicht reservierte Besucherparkplätze werden ab 9 Uhr freigegeben.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 158,
+   "datei": "AAR-projectors-office.md",
+   "thema": "Ausleihe Beamer",
+   "art": "regel",
+   "kontext": "",
+   "aussage": "Beamer werden im Seminarbüro ausgegeben.",
+   "zitat": "werden Beamer im Seminarbüro ausgegeben",
+   "zitat_ok": 1
+  },
+  {
+   "id": 159,
+   "datei": "AAR-projectors-office.md",
+   "thema": "Rückgabe Beamer",
+   "art": "regel",
+   "kontext": "",
+   "aussage": "Beamer müssen nach dem Seminar wieder im Seminarbüro abgegeben werden.",
+   "zitat": "und dort nach dem Seminar wieder abgegeben.",
+   "zitat_ok": 1
+  },
+  {
+   "id": 160,
+   "datei": "AAR-projectors-office.md",
+   "thema": "Rückgabe Beamer",
+   "art": "regel",
+   "kontext": "",
+   "aussage": "Bei der Rückgabe eines Beamers prüft das Seminarbüro, ob Fernbedienung und Kabel vollständig sind.",
+   "zitat": "Das Seminarbüro prüft bei der Abgabe, ob Fernbedienung und Kabel vollständig sind.",
+   "zitat_ok": 1
+  }
+ ]
+}
