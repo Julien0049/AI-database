@@ -71,6 +71,34 @@ print("\nvollständig@k (Anteil der", len(scored), "Fragen mit nötigen Berichte
 for m, v in summary.items():
     print(f"   {m:22}", "  ".join(f"@{k}: {v[f'vollständig@{k}']:.0%}" for k in KS))
 
+# v14b: Themensuche. Die M besten Aussagen bestimmen die Themen; geliefert werden ALLE Aussagen dieser Themen
+# (alle Berichte, alle Stände). Gemessen: vollständig (ohne festes k) und wie viel dafür mitgeliefert wird.
+topic_of = [r["thema"] for r in db.execute("SELECT thema FROM aussagen ORDER BY id")]
+MS = (1, 3, 5, 10)
+
+
+def topic_search(question, m):
+    q = model.encode(f"query: {question}", normalize_embeddings=True)
+    order = sorted(range(len(units)), key=lambda j: -float(vectors[j] @ q))
+    chosen = {topic_of[j] for j in order[:m]}
+    picked = [j for j in range(len(units)) if topic_of[j] in chosen]
+    return {"themen": sorted(chosen), "berichte": sorted({units[j][0] for j in picked}), "aussagen": len(picked)}
+
+
+topic_results = {m: {i: topic_search(q, m) for i, q in enumerate(QUESTIONS, 1)} for m in MS}
+topic_summary = {}
+print("\nThemensuche: M beste Aussagen -> alle Aussagen ihrer Themen")
+for m in MS:
+    res = topic_results[m]
+    topic_summary[f"M={m}"] = {
+        "vollständig": round(sum(set(NEEDED[i]) <= set(res[i]["berichte"]) for i in scored) / len(scored), 2),
+        "berichte_mittel": round(sum(len(res[i]["berichte"]) for i in res) / len(res), 1),
+        "aussagen_mittel": round(sum(res[i]["aussagen"] for i in res) / len(res), 1)}
+    t = topic_summary[f"M={m}"]
+    missing = [i for i in scored if not set(NEEDED[i]) <= set(res[i]["berichte"])]
+    print(f"   M={m:<3} vollständig {t['vollständig']:.0%}  | im Mittel {t['berichte_mittel']} Berichte, "
+          f"{t['aussagen_mittel']} Aussagen | unvollständig: Fragen {missing}")
+
 rows = [dict(r) for r in db.execute("SELECT a.*, d.titel, d.datum FROM aussagen a JOIN dokumente d USING (datei) ORDER BY a.id")]
 stats = {"berichte": n_reports, "aussagen": len(rows), "themen": len({r["thema"] for r in rows}),
          "arten": dict(Counter(r["art"] for r in rows)),
@@ -83,7 +111,8 @@ out = pathlib.Path(args.ausgabe)
 (out / f"ergebnisse_aussagen_suche_{today}_{args.version}.json").write_text(json.dumps(
     {"versuch": f"Prüftest Aussagen-Datenbank {args.version}", "zeitpunkt": datetime.datetime.now().isoformat(timespec="seconds"),
      "embedding_modell": "intfloat/multilingual-e5-small", "statistik": stats, "kennzahlen": summary,
-     "noetig": NEEDED, "ranglisten": rankings}, ensure_ascii=False, indent=1))
+     "noetig": NEEDED, "ranglisten": rankings,
+     "themensuche": {"kennzahlen": topic_summary, "treffer": topic_results}}, ensure_ascii=False, indent=1))
 
 lines = [f"# Sichtprüfung Aussagen {args.version} ({n_reports} Berichte)", "",
          "Aussagen der nötigen Berichte je Frage. Prüfen: Ist die Aussage erfasst, die die Frage beantwortet, "

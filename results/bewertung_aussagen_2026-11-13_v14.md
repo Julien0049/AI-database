@@ -37,3 +37,31 @@ Dateien: `aussagen_google_gemini-2.5-pro_2026-11-13_v14.json` (Datenbankinhalt),
 ## Grenzen
 
 48 kurze synthetische Berichte; ein Lauf; Sichtprüfung der Erfassung durch den Nutzer steht aus; kein Antwortlauf.
+
+---
+
+# Nachtrag v14b: Themensuche und Zitatprüfung (kostenlos, gleiche Datenbank, 48 Berichte)
+
+**Zitatprüfung:** Auslassungen („...“) sind jetzt erlaubt, die Teile müssen in Reihenfolge vorkommen. Ergebnis: 160 von 160 Zitaten bestätigt (vorher 157).
+
+**Themensuche:** Die M besten Aussagen bestimmen die Themen; geliefert werden alle Aussagen dieser Themen (alle Berichte, alle Stände). Datei: `ergebnisse_aussagen_suche_2026-11-13_v14b.json`.
+
+| Variante | vollständig | Berichte im Mittel | fehlt bei Frage |
+|---|---|---|---|
+| Themen der besten 3 Aussagen | 71 % | 3,8 | 2, 5, 8, 9, 14, 16, 25 |
+| Themen der besten 5 Aussagen | 75 % | 5,3 | 2, 5, 8, 9, 14, 25 |
+| Themen der besten 10 Aussagen | 88 % | 8,4 | 2, 5, 25 |
+| zum Vergleich: beste 5 / 10 Berichte nach bester Aussage (v14) | 83 % / 92 % | 5 / 10 | |
+
+**Zusatzauswertung:** die N besten Aussagen direkt (Bericht zählt als gefunden, wenn eine seiner Aussagen dabei ist):
+
+| N beste Aussagen | vollständig | Berichte im Mittel | fehlt bei Frage |
+|---|---|---|---|
+| 10 | 83 % | 5,4 | 2, 5, 16, 25 |
+| 20 | 92 % | 11,6 | 16, 25 |
+| 40 | 96 % | 20,0 | 25 |
+
+**Bewertung (Agent):**
+- Die Themensuche findet nicht mehr als die einfache Suche nach besten Aussagen bei gleicher Menge. Sie hat einen anderen Nutzen: Zu einem gefundenen Thema kommen alle Stände mit (Frage 22: alle sechs Berichte zu Teilnehmerunterlagen inkl. Download 2026), sodass ein überholter Stand nicht allein ankommt.
+- Frage 25 (Zusammenfassung über Gäste: Ausweise, WLAN, Parkplätze, Gastreferierende) wird von keiner Variante vollständig gefunden; die Aussagen verteilen sich auf viele Themen, die alle nur entfernt nach „Gästen und Besuchern“ klingen. Themenübergreifende Sammelfragen bleiben die Grenze der Suche.
+- Aussagen sind im Testdatensatz im Mittel 16 Wörter lang, Berichte nur etwa 47 Wörter (sehr kurze Testberichte). Der Vorteil, statt weniger langer Berichte viele kurze Aussagen mitzuschicken, ist bei echten, mehrseitigen Berichten deutlich größer, aber mit diesen Daten nicht messbar.

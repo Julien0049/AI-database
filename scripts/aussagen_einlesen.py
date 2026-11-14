@@ -37,6 +37,7 @@ db = aussagen.connect(args.db)
 start = time.time()
 summary = aussagen.sync(args.ordner, db, aussagen.extract_model if args.modell else aussagen.extract_dummy,
                         key=key, limit=args.max)
+aussagen.recheck_quotes(db, args.ordner)  # kostenlos; erfasst auch Änderungen an der Zitatprüfung
 summary["dauer_s"] = round(time.time() - start, 1)
 summary["themen"] = len(aussagen.topics(db))
 summary["aussagen_gesamt"] = db.execute("SELECT COUNT(*) FROM aussagen").fetchone()[0]

@@ -74,6 +74,27 @@ def extract_dummy(text, topic_list, key=None):
     return [{"thema": title, "art": "sonstiges", "kontext": "", "aussage": s, "zitat": s} for s in sentences], 0.0
 
 
+def quote_ok(zitat, text):
+    """Zitat wörtlich im Text; Auslassungen ("..." oder "…") erlaubt, die Teile müssen in dieser Reihenfolge vorkommen."""
+    parts = [aidb.norm(p) for p in re.split(r"\.\.\.|…", zitat or "") if aidb.norm(p)]
+    hay, pos = aidb.norm(text), 0
+    for part in parts:
+        pos = hay.find(part, pos)
+        if pos < 0:
+            return False
+        pos += len(part)
+    return bool(parts)
+
+
+def recheck_quotes(db, folder):
+    """Prüft alle gespeicherten Zitate erneut gegen die aktuellen Dateien (ohne Modell, ohne Kosten)."""
+    texts = {p.name: aidb.read_file(p) for p in aidb.report_files(folder)}
+    for r in db.execute("SELECT id, datei, zitat FROM aussagen").fetchall():
+        ok = r["datei"] in texts and quote_ok(r["zitat"], texts[r["datei"]])
+        db.execute("UPDATE aussagen SET zitat_ok = ? WHERE id = ?", (int(ok), r["id"]))
+    db.commit()
+
+
 def fingerprint(path):
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
@@ -114,7 +135,7 @@ def sync(folder, db, extract, key=None, log=print, limit=None):
         db.execute("DELETE FROM aussagen WHERE datei = ?", (name,))
         for it in items:
             zitat = it.get("zitat", "")
-            ok = bool(zitat) and aidb.norm(zitat) in aidb.norm(text)
+            ok = quote_ok(zitat, text)
             art = it.get("art", "").lower()
             db.execute("INSERT INTO aussagen (datei, thema, art, kontext, aussage, zitat, zitat_ok) VALUES (?,?,?,?,?,?,?)",
                        (name, it.get("thema", "").strip(), art if art in ARTEN else "unklar",
