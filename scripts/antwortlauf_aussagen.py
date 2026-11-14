@@ -1,4 +1,8 @@
-"""Antwortlauf v15: Das Modell bekommt statt ganzer Berichte die N besten Aussagen aus der Aussagen-Datenbank.
+"""Antwortlauf v15/v16 über die Aussagen-Datenbank.
+
+v15: Das Modell bekommt statt ganzer Berichte die N besten Aussagen aus der Aussagen-Datenbank.
+v16 (--volltext): Die N besten Aussagen bestimmen nur, welche Berichte relevant sind; das Modell bekommt diese
+     Berichte vollständig ("Aussagen zum Finden, Berichte zum Antworten").
 
 Einzige Änderung gegenüber v11–v13: der Inhalt der Anfrage. Antwort-Prompt (app/prompt_antwort.txt), Modell,
 Zitatprüfung und Fußnoten bleiben gleich. Aussagen werden nach Bericht gruppiert, mit Titel, Datum, Art und Kontext;
@@ -30,6 +34,7 @@ ap.add_argument("--nur", type=int, nargs="*", help="nur diese Fragennummern")
 ap.add_argument("--version", default="v15")
 ap.add_argument("--attrappe", action="store_true", help="ohne Modell (kostenlos)")
 ap.add_argument("--ausgabe", default=str(ROOT / "results"))
+ap.add_argument("--volltext", action="store_true", help="v16: gefundene Berichte vollständig statt nur Aussagen")
 args = ap.parse_args()
 
 key = None if args.attrappe else aidb.read_key(ROOT / ".env")
@@ -74,6 +79,8 @@ def ask(nr, run):
     question = questions[nr - 1]
     selected = select(question)
     corpus, rids = statement_corpus(selected)
+    if args.volltext:
+        corpus = aidb.corpus_for({rid: reports[rid] for rid in rids})
     start = time.time()
     entry = {"durchlauf": run, "nr": nr, "frage": question, "berichte_im_prompt": rids,
              "aussagen_im_prompt": [r["id"] for r in selected]}
@@ -114,7 +121,9 @@ with concurrent.futures.ThreadPoolExecutor(5) as pool:
 
 results.sort(key=lambda e: (e["durchlauf"], e["nr"]))
 total = sum(e.get("kosten") or 0 for e in results)
-out = {"versuch": f"Antwortlauf {args.version}: beste {args.n} Aussagen statt Berichte",
+label = "Berichte der" if args.volltext else "statt Berichte:"
+out = {"versuch": f"Antwortlauf {args.version}: {label} beste {args.n} Aussagen" + (" (Berichte vollständig)" if args.volltext else ""),
+       "volltext": args.volltext,
        "modell": "Attrappe" if args.attrappe else aidb.MODEL,
        "zeitpunkt": datetime.datetime.now().isoformat(timespec="seconds"), "durchlaeufe": args.durchlaeufe,
        "n_aussagen": args.n, "berichte": len(reports), "aussagen_in_db": len(rows),
