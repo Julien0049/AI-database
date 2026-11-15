@@ -1,6 +1,6 @@
 """Kernlogik der lokalen Oberfläche: Berichte einlesen, Modell fragen, Zitate prüfen, Fußnoten setzen.
 
-Übernommen aus notebooks/citation_check_v7.ipynb, Aufbau wie v11 (alle Berichte im Prompt).
+Übernommen aus verlauf/notebooks/citation_check_v7.ipynb, Aufbau wie v11 (alle Berichte im Prompt).
 Neu gegenüber dem Notebook: Folgefragen bekommen die bisherigen Fragen (nicht die Antworten) als Kontext.
 Der Antwort-Prompt in prompt_antwort.txt entspricht dem Notebook (Regeln 1–7, Stand v8–v17); Regel 8 (Kontext kennzeichnen) seit v18, verschärft in v19 (nur gefragter Kontext, zwei Ausnahmen).
 """

@@ -1,7 +1,7 @@
 # Bewertung: Gemini 2.5 Pro, siebter Test (Zitatprüfung)
 
 **Status:** Agentenbewertung (Claude), vom Nutzer noch zu prüfen.
-**Lauf:** [ergebnisse_google_gemini-2.5-pro_2026-11-04_v7.json](./ergebnisse_google_gemini-2.5-pro_2026-11-04_v7.json), 04.11.2026, Modell `google/gemini-2.5-pro` über OpenRouter, Notebook [citation_check_v7.ipynb](../notebooks/citation_check_v7.ipynb).
+**Lauf:** [ergebnisse_google_gemini-2.5-pro_2026-11-04_v7.json](./ergebnisse_google_gemini-2.5-pro_2026-11-04_v7.json), 04.11.2026, Modell `google/gemini-2.5-pro` über OpenRouter, Notebook [citation_check_v7.ipynb](../verlauf/notebooks/citation_check_v7.ipynb).
 **Aufbau:** Dreizehn Berichte (Kennungen B1–B13) vollständig im Prompt, keine Suche, drei Durchläufe, bis zu fünf Anfragen parallel. Änderung gegenüber v6: Ausgabe als JSON; jeder Satz wird mit Berichtskennung und wörtlichem Zitat belegt; das Notebook prüft die Zitate und erzeugt die Quellenliste aus den Berichtsdaten. Die Antwortregeln sind inhaltlich gleich; in Regel 3 entfällt nur die Vorgabe, Titel und Datum in den Text zu schreiben.
 **Maßstab:** Wie v6 ([test_questions.md](../data/synthetic_reports/test_questions.md)). Die Zuordnung einer Sichtweise oder eines Stands zu einem Bericht gilt als erfüllt, wenn der betreffende Satz mit dem passenden Bericht belegt ist (siehe Grenze zur Darstellung unten).
 

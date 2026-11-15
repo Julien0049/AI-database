@@ -1,7 +1,7 @@
 # Bewertung: Gemini 2.5 Pro, v13 (Sichtung aller Berichte in Paketen)
 
 **Status:** Agentenbewertung (Claude), vom Nutzer noch zu prüfen.
-**Lauf:** [ergebnisse_google_gemini-2.5-pro_2026-11-05_v13.json](./ergebnisse_google_gemini-2.5-pro_2026-11-05_v13.json), 05.11.2026, neuer Schlüssel, Notebook [citation_check_v7.ipynb](../notebooks/citation_check_v7.ipynb), drei Durchläufe, 25 Fragen, 48 Berichte. Der abgebrochene erste Versuch ist in [bewertung_…_v13_abgebrochen.md](./bewertung_google_gemini-2.5-pro_2026-11-05_v13_abgebrochen.md) beschrieben.
+**Lauf:** [ergebnisse_google_gemini-2.5-pro_2026-11-05_v13.json](./ergebnisse_google_gemini-2.5-pro_2026-11-05_v13.json), 05.11.2026, neuer Schlüssel, Notebook [citation_check_v7.ipynb](../verlauf/notebooks/citation_check_v7.ipynb), drei Durchläufe, 25 Fragen, 48 Berichte. Der abgebrochene erste Versuch (Budget erschöpft) und seine Bewertung wurden am 15.11.2026 entfernt; sie sind in der Git-Historie abrufbar.
 **Aufbau:** Einzige Änderung gegenüber v12: statt der Suche sichtet das Modell alle Berichte in 5 Paketen zu je höchstens 10 und gibt die relevanten Kennungen zurück (Prompt `SICHTUNG`); nur diese gehen in den Antwortschritt (Regeln und Zitatprüfung unverändert). Die Fragen werden einzeln nacheinander bearbeitet, je zwei gleichzeitig.
 **Maßstab:** wie v11/v12 (Störinhalte = teilweise, überholter Stand als aktuell oder erfundene Regel = nicht erfüllt).
 

@@ -1,7 +1,7 @@
 # Bewertung: Suchtest s2 (Abschnitte aus zwei Sätzen)
 
 **Status:** Agentenauswertung (Claude), vom Nutzer noch zu prüfen. Die Kennzahlen sind gemessen; die Deutung ist eine Einschätzung.
-**Lauf:** [ergebnisse_suche_2026-11-05_s2.json](./ergebnisse_suche_2026-11-05_s2.json), 05.11.2026, Notebook [retrieval_test.ipynb](../notebooks/retrieval_test.ipynb). Kein Sprachmodell beteiligt.
+**Lauf:** [ergebnisse_suche_2026-11-05_s2.json](./ergebnisse_suche_2026-11-05_s2.json), 05.11.2026, Notebook [retrieval_test.ipynb](../verlauf/notebooks/retrieval_test.ipynb). Kein Sprachmodell beteiligt.
 **Änderung gegenüber s1:** Zusätzlich zur Suche nach ganzen Berichten wird nach Abschnitten aus je zwei aufeinanderfolgenden Sätzen gesucht (89 Abschnitte aus 48 Berichten); ein Bericht erhält den Wert seines besten Abschnitts. Geplant war eine Suche nach Absätzen, aber die meisten Berichte bestehen nur aus einem Absatz. Die Kombination beider Methoden wurde entfernt (in s1 schlechter).
 
 ## Ergebnis

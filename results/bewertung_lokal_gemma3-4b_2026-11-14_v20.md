@@ -1,7 +1,7 @@
 # Bewertung: lokales Modell Gemma 3 4B, v20 (offline auf dem eigenen Mac)
 
 **Status:** Agentenbewertung (Claude), vom Nutzer noch zu prüfen.
-**Lauf:** [ergebnisse_lokal_gemma3-4b_2026-11-14_v20.json](./ergebnisse_lokal_gemma3-4b_2026-11-14_v20.json), 14.11.2026, 21:38–22:30, ein Durchlauf, 34 Fragen, 58 Berichte. Netzprotokoll: [netzprotokoll_v20_2026-11-14.txt](./netzprotokoll_v20_2026-11-14.txt), Laufprotokoll `lauf_v20.log`. Ein erster Start wurde abgebrochen, weil das WLAN zwischendurch wieder an war (Dateien `…_abgebrochen`); Probe mit zwei Fragen: `…_v20_test.json`.
+**Lauf:** [ergebnisse_lokal_gemma3-4b_2026-11-14_v20.json](./ergebnisse_lokal_gemma3-4b_2026-11-14_v20.json), 14.11.2026, 21:38–22:30, ein Durchlauf, 34 Fragen, 58 Berichte. Netzprotokoll: [netzprotokoll_v20_2026-11-14.txt](./netzprotokoll_v20_2026-11-14.txt), Laufprotokoll `lauf_v20.log`. Ein erster Start wurde abgebrochen, weil das WLAN zwischendurch wieder an war (Dateien `…_abgebrochen`, am 15.11.2026 entfernt, in der Git-Historie); Probe mit zwei Fragen: `…_v20_test.json` (Probelauf, am 15.11.2026 entfernt, in der Git-Historie).
 **Aufbau:** wie v19 (gleiche Aussagen-Datenbank, gleiche Auswahl der Berichte, gleiche Antwortregeln 1–8); einzige Änderung: Antwortmodell **Gemma 3 4B** (Google, 3,9 Mrd. Parameter, Q4_K_M, 3,4 GB, Lizenz „Gemma Terms of Use“) über Ollama 0.40.16 auf `127.0.0.1`, Kontext 12.288 Tokens, JSON-Ausgabe erzwungen, Anfragen nacheinander. Hardware: Apple M2, 8 GB Arbeitsspeicher.
 **Maßstab:** wie v19; zusätzlich gilt eine Antwort ohne bestätigten Beleg (keine Quellenangabe) höchstens als teilweise erfüllt.
 

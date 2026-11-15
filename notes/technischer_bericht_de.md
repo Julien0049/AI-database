@@ -326,7 +326,7 @@ Für echte Antworten wird ein OpenRouter-Schlüssel in `.env` benötigt; Läufe 
 
 ### 11.3 Versuchsübersicht
 
-Vollständige Tabelle aller Versionen mit Änderung und Ergebnis: `notes/policy_brief_notes.md`, Abschnitt „Versuchsübersicht“; Einzelbewertungen in `results/bewertung_*.md`.
+Vollständige Tabelle aller Versionen mit Änderung und Ergebnis: `notes/policy_brief_notes.md`, Abschnitt „Versuchsübersicht“; Einzelbewertungen in `results/bewertung_*.md`. Frühe Arbeitsmaterialien (Interview-Rohnotizen, erster Architekturvorschlag, Colab-Notebooks der Versuche v1–v13) liegen im Ordner `verlauf/`.
 
 ### 11.4 Netzprotokoll des Offline-Laufs
 

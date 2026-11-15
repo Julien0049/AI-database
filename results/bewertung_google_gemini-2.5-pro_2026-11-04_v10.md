@@ -1,7 +1,7 @@
 # Bewertung: Gemini 2.5 Pro, zehnter Test (Widerspruch nur über das Datum auflösbar)
 
 **Status:** Agentenbewertung (Claude), vom Nutzer noch zu prüfen.
-**Lauf:** [ergebnisse_google_gemini-2.5-pro_2026-11-04_v10.json](./ergebnisse_google_gemini-2.5-pro_2026-11-04_v10.json), 04.11.2026, Modell `google/gemini-2.5-pro` über OpenRouter, Notebook [citation_check_v7.ipynb](../notebooks/citation_check_v7.ipynb), drei Durchläufe, nur Fragen 18 und 19.
+**Lauf:** [ergebnisse_google_gemini-2.5-pro_2026-11-04_v10.json](./ergebnisse_google_gemini-2.5-pro_2026-11-04_v10.json), 04.11.2026, Modell `google/gemini-2.5-pro` über OpenRouter, Notebook [citation_check_v7.ipynb](../verlauf/notebooks/citation_check_v7.ipynb), drei Durchläufe, nur Fragen 18 und 19.
 **Aufbau:** Wie v9, plus zwei Berichte zur Schlüsselrückgabe nach Abendseminaren, die sich ohne sprachlichen Hinweis auf die Reihenfolge widersprechen. Der neuere Bericht (14.10.2025) steht in der Sammlung vor dem älteren (03.04.2024) und hat die kleinere Kennung (B14 vor B15).
 **Maßstab:** Fragen 18 und 19 in [test_questions.md](../data/synthetic_reports/test_questions.md).
 

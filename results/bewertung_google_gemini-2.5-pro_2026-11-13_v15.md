@@ -1,7 +1,7 @@
 # Bewertung: Gemini 2.5 Pro, v15 (Antworten aus der Aussagen-Datenbank)
 
 **Status:** Agentenbewertung (Claude), vom Nutzer noch zu prüfen. Grenzfälle sind unten markiert.
-**Lauf:** [ergebnisse_google_gemini-2.5-pro_2026-11-13_v15.json](./ergebnisse_google_gemini-2.5-pro_2026-11-13_v15.json), 13.11.2026, Skript `scripts/antwortlauf_aussagen.py`, drei Durchläufe, 25 Fragen, 48 Berichte (160 Aussagen aus v14). Kostenprobe vorab: `…_v15_test.json` (Fragen 22, 25; 0,048 USD).
+**Lauf:** [ergebnisse_google_gemini-2.5-pro_2026-11-13_v15.json](./ergebnisse_google_gemini-2.5-pro_2026-11-13_v15.json), 13.11.2026, Skript `scripts/antwortlauf_aussagen.py`, drei Durchläufe, 25 Fragen, 48 Berichte (160 Aussagen aus v14). Kostenprobe vorab: `…_v15_test.json` (Probelauf, am 15.11.2026 entfernt, in der Git-Historie) (Fragen 22, 25; 0,048 USD).
 **Aufbau:** Einzige Änderung gegenüber v11–v13: Das Modell bekommt statt ganzer Berichte die 40 besten Aussagen der Suche nach Bedeutung (e5-small), nach Bericht gruppiert, mit Titel und Datum (vom Programm), Art, Kontext und Originalstelle. Antwort-Prompt, Modell und Fußnoten unverändert. Zitatprüfung seit v15 mit erlaubten Auslassungen („...“).
 **Maßstab:** wie v11–v13 (Störinhalte = teilweise, überholter Stand als aktuell = nicht erfüllt).
 

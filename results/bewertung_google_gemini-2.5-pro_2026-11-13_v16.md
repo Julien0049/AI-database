@@ -1,7 +1,7 @@
 # Bewertung: Gemini 2.5 Pro, v16 (Aussagen zum Finden, Berichte zum Antworten)
 
 **Status:** Agentenbewertung (Claude), vom Nutzer noch zu prüfen.
-**Lauf:** [ergebnisse_google_gemini-2.5-pro_2026-11-13_v16.json](./ergebnisse_google_gemini-2.5-pro_2026-11-13_v16.json), 13.11.2026, `scripts/antwortlauf_aussagen.py --volltext`, drei Durchläufe, 25 Fragen, 48 Berichte. Kostenprobe: `…_v16_test.json` (Fragen 1, 25; 0,054 USD).
+**Lauf:** [ergebnisse_google_gemini-2.5-pro_2026-11-13_v16.json](./ergebnisse_google_gemini-2.5-pro_2026-11-13_v16.json), 13.11.2026, `scripts/antwortlauf_aussagen.py --volltext`, drei Durchläufe, 25 Fragen, 48 Berichte. Kostenprobe: `…_v16_test.json` (Probelauf, am 15.11.2026 entfernt, in der Git-Historie) (Fragen 1, 25; 0,054 USD).
 **Aufbau:** Einzige Änderung gegenüber v15: Die 40 besten Aussagen (e5-small) bestimmen nur, welche Berichte relevant sind; das Modell bekommt diese Berichte vollständig (im Mittel 19,7 von 48). Prompt, Modell, Zitatprüfung, Fußnoten unverändert.
 **Maßstab:** wie v11–v15 (Störinhalte = teilweise, überholter Stand als aktuell = nicht erfüllt).
 

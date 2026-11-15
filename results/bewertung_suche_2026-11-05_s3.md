@@ -1,7 +1,7 @@
 # Bewertung: Suchtest s3 (Thema erweitern)
 
 **Status:** Agentenauswertung (Claude), vom Nutzer noch zu prüfen. Die Kennzahlen sind gemessen; die Deutung ist eine Einschätzung.
-**Lauf:** [ergebnisse_suche_2026-11-05_s3.json](./ergebnisse_suche_2026-11-05_s3.json), 05.11.2026, Notebook [retrieval_test.ipynb](../notebooks/retrieval_test.ipynb). Kein Sprachmodell beteiligt.
+**Lauf:** [ergebnisse_suche_2026-11-05_s3.json](./ergebnisse_suche_2026-11-05_s3.json), 05.11.2026, Notebook [retrieval_test.ipynb](../verlauf/notebooks/retrieval_test.ipynb). Kein Sprachmodell beteiligt.
 **Änderung gegenüber s1:** Einheit ganzer Bericht (Abschnitte aus s2 entfernt). Zu jedem der drei besten Treffer der Suche nach Bedeutung werden seine 1 bzw. 2 ähnlichsten Berichte direkt dahinter eingereiht; danach folgt die ursprüngliche Rangliste. Die Zahl der Berichte für das Modell bleibt gleich.
 
 ## Ergebnis

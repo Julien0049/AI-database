@@ -1,7 +1,7 @@
 # Bewertung: Gemini 2.5 Pro, neunter Test (variiertes Berichtsformat)
 
 **Status:** Agentenbewertung (Claude), vom Nutzer noch zu prüfen.
-**Lauf:** [ergebnisse_google_gemini-2.5-pro_2026-11-04_v9.json](./ergebnisse_google_gemini-2.5-pro_2026-11-04_v9.json), 04.11.2026, Modell `google/gemini-2.5-pro` über OpenRouter, Notebook [citation_check_v7.ipynb](../notebooks/citation_check_v7.ipynb), drei Durchläufe.
+**Lauf:** [ergebnisse_google_gemini-2.5-pro_2026-11-04_v9.json](./ergebnisse_google_gemini-2.5-pro_2026-11-04_v9.json), 04.11.2026, Modell `google/gemini-2.5-pro` über OpenRouter, Notebook [citation_check_v7.ipynb](../verlauf/notebooks/citation_check_v7.ipynb), drei Durchläufe.
 **Aufbau:** Wie v8 (Prompt mit Regel 7). Einzige Änderung: Vier Berichte mit gleichem Inhalt, aber abweichendem Format (siehe [README](../data/synthetic_reports/README.md)): Fahrtenbuch-Formular (B10), Rückgabe gemeinsamer Sets (B8), Reservierung (B4, ohne Datum), Kleidung im Winter (B2). Titel und Datum liest das Programm aus.
 **Maßstab:** Wie v8, mit dem angepassten Kriterium zu Frage 17 (Stand von 2022 darf fehlen).
 

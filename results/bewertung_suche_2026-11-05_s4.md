@@ -1,7 +1,7 @@
 # Bewertung: Suchtest s4 (größeres Embedding-Modell)
 
 **Status:** Agentenauswertung (Claude), vom Nutzer noch zu prüfen. Die Kennzahlen sind gemessen; die Deutung ist eine Einschätzung.
-**Lauf:** [ergebnisse_suche_2026-11-05_s4.json](./ergebnisse_suche_2026-11-05_s4.json), 05.11.2026, Notebook [retrieval_test.ipynb](../notebooks/retrieval_test.ipynb). Kein Sprachmodell beteiligt.
+**Lauf:** [ergebnisse_suche_2026-11-05_s4.json](./ergebnisse_suche_2026-11-05_s4.json), 05.11.2026, Notebook [retrieval_test.ipynb](../verlauf/notebooks/retrieval_test.ipynb). Kein Sprachmodell beteiligt.
 **Änderung gegenüber s1:** Zusätzlich zum kleinen Modell `intfloat/multilingual-e5-small` (ca. 470 MB, 12 Schichten) das große Modell `intfloat/multilingual-e5-large` (ca. 2,2 GB, 24 Schichten). Einheit ganzer Bericht, keine Erweiterung.
 
 ## Ergebnis

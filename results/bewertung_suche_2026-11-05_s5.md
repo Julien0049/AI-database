@@ -1,7 +1,7 @@
 # Bewertung: Suchtest s5 (Rang aller nötigen Berichte)
 
 **Status:** Agentenauswertung (Claude), vom Nutzer noch zu prüfen. Die Kennzahlen sind gemessen; die Deutung ist eine Einschätzung.
-**Lauf:** [ergebnisse_suche_2026-11-05_s5.json](./ergebnisse_suche_2026-11-05_s5.json), 05.11.2026, Notebook [retrieval_test.ipynb](../notebooks/retrieval_test.ipynb). Kein Sprachmodell beteiligt.
+**Lauf:** [ergebnisse_suche_2026-11-05_s5.json](./ergebnisse_suche_2026-11-05_s5.json), 05.11.2026, Notebook [retrieval_test.ipynb](../verlauf/notebooks/retrieval_test.ipynb). Kein Sprachmodell beteiligt.
 **Aufbau:** Wie s1 (ganzer Bericht, BM25 und `intfloat/multilingual-e5-small`). Einzige Änderung: Ranglisten vollständig gespeichert, vollständig@k bis k = 30.
 **Ziel:** Abschätzen, wie groß eine Vorauswahl für Zusammenfassungen sein müsste.
 

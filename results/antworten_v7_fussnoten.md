@@ -1,6 +1,6 @@
 # Antworten v7 mit Fußnoten
 
-Darstellung der gespeicherten Antworten aus [ergebnisse_google_gemini-2.5-pro_2026-11-04_v7.json](./ergebnisse_google_gemini-2.5-pro_2026-11-04_v7.json) mit der Funktion `render` aus [citation_check_v7.ipynb](../notebooks/citation_check_v7.ipynb). Kein neuer Modelllauf; nur die Anzeige ist neu.
+Darstellung der gespeicherten Antworten aus [ergebnisse_google_gemini-2.5-pro_2026-11-04_v7.json](./ergebnisse_google_gemini-2.5-pro_2026-11-04_v7.json) mit der Funktion `render` aus [citation_check_v7.ipynb](../verlauf/notebooks/citation_check_v7.ipynb). Kein neuer Modelllauf; nur die Anzeige ist neu.
 
 ## Frage 1
 

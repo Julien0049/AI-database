@@ -1,7 +1,7 @@
 # Bewertung: Gemini 2.5 Pro, achter Test (knappe Antworten)
 
 **Status:** Agentenbewertung (Claude), vom Nutzer noch zu prüfen.
-**Lauf:** [ergebnisse_google_gemini-2.5-pro_2026-11-04_v8.json](./ergebnisse_google_gemini-2.5-pro_2026-11-04_v8.json), 04.11.2026, Modell `google/gemini-2.5-pro` über OpenRouter, Notebook [citation_check_v7.ipynb](../notebooks/citation_check_v7.ipynb).
+**Lauf:** [ergebnisse_google_gemini-2.5-pro_2026-11-04_v8.json](./ergebnisse_google_gemini-2.5-pro_2026-11-04_v8.json), 04.11.2026, Modell `google/gemini-2.5-pro` über OpenRouter, Notebook [citation_check_v7.ipynb](../verlauf/notebooks/citation_check_v7.ipynb).
 **Aufbau:** Wie v7 (dreizehn Berichte im einheitlichen Format, Datenstand `dataset-v2`). Einzige Änderung: Regel 7 (exakt und knapp, ohne Einleitung und Wiederholungen, keine Verweise wie „ein Bericht“ im Text; Hinweise auf abweichende Berichte und Lücken bleiben). Geplant war ein Durchlauf als Sichtprüfung; die Datei enthält drei Durchläufe.
 **Maßstab:** Wie v7.
 

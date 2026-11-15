@@ -1,7 +1,7 @@
 # Bewertung: Gemini 2.5 Pro, v17 (Aufbau v16 auf `dataset-v4`, 58 Berichte)
 
 **Status:** Agentenbewertung (Claude), vom Nutzer noch zu prüfen. Grenzfälle markiert.
-**Lauf:** [ergebnisse_google_gemini-2.5-pro_2026-11-14_v17.json](./ergebnisse_google_gemini-2.5-pro_2026-11-14_v17.json), 14.11.2026, `scripts/antwortlauf_aussagen.py --volltext`, drei Durchläufe, 34 Fragen, 58 Berichte (359 Aussagen). Kostenprobe: `…_v17_test.json` (Fragen 10, 32). Einlesen der zehn neuen Berichte (Nachtragstest): `aussagen_google_gemini-2.5-pro_2026-11-14_v17.json`.
+**Lauf:** [ergebnisse_google_gemini-2.5-pro_2026-11-14_v17.json](./ergebnisse_google_gemini-2.5-pro_2026-11-14_v17.json), 14.11.2026, `scripts/antwortlauf_aussagen.py --volltext`, drei Durchläufe, 34 Fragen, 58 Berichte (359 Aussagen). Kostenprobe: `…_v17_test.json` (Probelauf, am 15.11.2026 entfernt, in der Git-Historie) (Fragen 10, 32). Einlesen der zehn neuen Berichte (Nachtragstest): `aussagen_google_gemini-2.5-pro_2026-11-14_v17.json`.
 **Aufbau:** unverändert gegenüber v16 (40 beste Aussagen bestimmen die Berichte, diese gehen vollständig ins Modell). Geändert ist nur der Datensatz: zehn lange, fiktive Berichte aus militärischem Lehrgangs- und Übungsbetrieb, Fragen 26–34, Varianten 10b, 14b, 21b. Außerdem liest das Programm seit dataset-v4 das Berichtsdatum anders (Zeile „Datum:“, sonst Unterschrift).
 **Maßstab:** wie v11–v16 (Störinhalte oder Inhalte aus anderem Kontext ohne Kennzeichnung = teilweise, überholter Stand als aktuell = nicht erfüllt).
 

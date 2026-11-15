@@ -1,7 +1,7 @@
 # Bewertung: Suchtest s1 (Stichwortsuche, Suche nach Bedeutung, Kombination)
 
 **Status:** Agentenauswertung (Claude), vom Nutzer noch zu prüfen. Die Kennzahlen sind gemessen; die Deutung ist eine Einschätzung.
-**Lauf:** [ergebnisse_suche_2026-11-05_s1.json](./ergebnisse_suche_2026-11-05_s1.json), 05.11.2026, Notebook [retrieval_test.ipynb](../notebooks/retrieval_test.ipynb). Kein Sprachmodell beteiligt.
+**Lauf:** [ergebnisse_suche_2026-11-05_s1.json](./ergebnisse_suche_2026-11-05_s1.json), 05.11.2026, Notebook [retrieval_test.ipynb](../verlauf/notebooks/retrieval_test.ipynb). Kein Sprachmodell beteiligt.
 **Aufbau:** 48 Berichte, 25 Fragen (`dataset-v3`). Einheit der Suche: ganzer Bericht. Stichwortsuche BM25 (eigene Umsetzung, ohne Grundformbildung), Suche nach Bedeutung mit `intfloat/multilingual-e5-small`, Kombination per Reciprocal Rank Fusion.
 **Kennzahl:** vollständig@k = Anteil der 24 Fragen mit nötigen Berichten, bei denen *alle* nötigen Berichte unter den ersten k Treffern liegen (Frage 13 hat keine nötigen Berichte).
 

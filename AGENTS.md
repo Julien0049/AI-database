@@ -1,76 +1,91 @@
-# Projektkontext und Arbeitsweise
+# AGENTS.md – Übergabe und Arbeitsanweisungen
 
-## Projektziel
+Diese Datei lesen KI-Agenten beim Laden des Repositorys automatisch. Sie beschreibt Stand, Aufbau, Regeln und nächste Schritte so, dass ein Agent ohne Vorwissen weiterarbeiten kann. Ausführliche Begründungen und alle Messungen: `notes/technischer_bericht_de.md`. Einstieg für Menschen: `README.md`.
 
-Die Semesterarbeit soll einen Proof of Concept (PoC) einer AI Database hervorbringen. Einzelne Nutzer sollen Fragen zu einer Sammlung von After-Action-Reports (AARs) stellen können. Der PoC soll passende Aussagen aus mehreren Dokumenten zusammenführen, zeitliche Änderungen berücksichtigen und die verwendeten Quellen knapp nennen.
+## 1. Projekt in Kürze
 
-Für den PoC wird vorläufig Gemini 2.5 Pro (`google/gemini-2.5-pro`) über OpenRouter verwendet, bezahlt aus einem vorhandenen Guthaben; darüber hinaus sollen keine eigenen Kosten entstehen. Anfragen laufen damit über zwei Anbieter (OpenRouter und Google). Der API-Schlüssel wird nur lokal (Umgebungsvariable oder `.env`) gespeichert und nie ins Repository übernommen. Der PoC darf zur Laufzeit Internet für die Modell-API nutzen. Offlinebetrieb mit einem lokalen, mittelgroßen Modell ist eine spätere Ausbaustufe, nicht Teil des PoC. Die Entwicklung begann mit einem kleinen Datensatz fiktiver Berichte (anfangs zehn), um die Antwortregeln zu prüfen; danach wird der Datensatz schrittweise vergrößert, um zu sehen, wie der PoC mit größeren Mengen umgeht. Der aktuelle Stand liegt in `data/synthetic_reports/`. Die Berichte sind Testdaten, keine echten Berichte, gültige Doktrin oder fachlich geprüfte Empfehlungen.
+Proof of Concept (PoC) einer „AI Database“: Nutzer stellen Fragen in Alltagssprache zu einer Sammlung von After-Action-Reports (AARs). Der Assistent führt passende Aussagen aus mehreren Berichten zusammen, beachtet zeitliche Änderungen und Kontext, nennt die Quellen mit Titel und Datum und sagt offen, wenn die Berichte nichts enthalten. Entstanden als Semesterarbeit (Abgabe 14.12.2026) mit Policy Brief an einen militärischen Vorgesetzten und technischem Bericht.
 
-## Bestätigte Anforderungen
+**Stand 15.11.2026:** PoC abgeschlossen. Aufbau v19 (Aussagen-Datenbank, Auswahl der Berichte, Antwortregeln 1–8, Zitat- und Aktualitätsprüfung) läuft in der Oberfläche. Offline-Betrieb und Modellgrößen-Vergleich gemessen (v20, v21). Alle Daten sind fiktiv (`dataset-v4`, 58 Berichte, 34 Testfragen).
 
-- Die lokale Dokumentensammlung ist die einzige Wissensquelle für Antworten. Keine Websuche und kein nicht belegtes Ergänzen aus Modellwissen. Das gilt auch, wenn das Antwortmodell über eine Cloud-API läuft.
-- Bei Regeln und Verfahren bestimmt der jüngste vergleichbare Stand die Antwort. Bei Erfahrungen und Einschätzungen werden unterschiedliche Sichtweisen mit Quelle und Datum nebeneinander genannt, mit dem Hinweis, dass die Berichte auseinandergehen; das Datum allein begründet dort keine Priorität.
-- Zusammenfassungen aller Inhalte zu einem Thema müssen möglich sein. Sie geben bei Regeln und Verfahren nur den jüngsten vergleichbaren Stand wieder; frühere Stände erscheinen nur, wenn ausdrücklich nach Änderungen gefragt wird. Erfahrungen werden wie oben mit abweichenden Sichtweisen wiedergegeben.
-- Für Regeln und Verfahren gilt außerdem: Die Nutzerantwort soll keine älteren Verfahren als gleichrangige Alternativen auflisten; sie nennt knapp die Quellen, die die Antwort stützen. Die Erkennung älterer Widersprüche wird separat in der Evaluation bewertet. Keine Quelle als formell gültig oder verbindlich bezeichnen, wenn das Material das nicht belegt.
-- Wenn Dokumente unterschiedliche Kontexte betreffen oder keine sichere Priorisierung zulassen, darf der Agent keine Priorität behaupten. Ein jüngeres Dokument beweist nicht, dass eine Aussage wahr oder verbindlich ist.
-- Aussagen aus einem anderen Kontext als dem gefragten (andere Veranstaltung, Lage, Ort) dürfen nur mit ausdrücklicher Kennzeichnung des Kontexts in die Antwort; unmarkiert gelten sie als Fehler, auch wenn sie belegt sind (Nutzer, 14.11.2026). Verwandtes, aber nicht Gefragtes gehört nicht in die Antwort. Ausnahmen (Nutzer, 14.11.2026): Die Frage lässt den Kontext offen und die Berichte unterscheiden sich je Kontext, oder zum gefragten Kontext gibt es nichts; dann Lücke nennen plus ein gekennzeichneter Hinweis auf den nächstliegenden Kontext, weil Nutzer ihre Frage nicht immer genau genug stellen.
-- Ergänzende Aussagen aus mehreren Quellen dürfen zu einer klaren Antwort zusammengeführt werden. Die Antwort steht im Vordergrund; kompakte Quellenhinweise folgen am Ende, mindestens mit Titel und Datum des Berichts; das Datum allein reicht nicht, da an einem Tag viele Berichte entstehen können. Fußnotennummern im Text verweisen auf diese Liste, damit erkennbar ist, welche Aussage aus welchem Bericht stammt.
-- Antworten sollen exakt und schlank sein: nur was zur Frage gehört, ohne Einleitung und Wiederholungen.
-- Bei unzureichender Evidenz muss der Prototyp dies offen sagen und darf Lücken nicht auffüllen.
-- Für die erste Version sind Markdown-/Textdateien vorgesehen. Neue oder geänderte Dokumente in einem festgelegten Ordner werden automatisch erfasst und sind ohne manuellen Import bei der nächsten Suche berücksichtigt. Jedes Dokument wird dabei nur einmal verarbeitet. (Geändert am 13.11.2026; vorher: Import gezielt starten.)
-- Als erste Oberfläche ist eine einfache lokale Browser-Chat-Oberfläche vorgesehen. Anwendung, Dokumente und Index laufen auf dem eigenen Mac/Computer ohne zusätzliche GPU; nur die Antwortgenerierung läuft über die Modell-API.
-- Vergleich mit einem lokalen Offline-Modell ist Teil des PoC (Nutzer, 14.11.2026): Wie viel schlechter antwortet ein lokal laufendes Modell als Gemini 2.5 Pro auf denselben Fragen? Gemessen auf dem eigenen Rechner (Apple M2, 8 GB Arbeitsspeicher); das Ergebnis unterschätzt einen Server im geschlossenen Netz.
-- Spätere Ausbaustufen (nicht Teil des PoC): Betrieb mit einem lokalen Modell auf Serverhardware; Mehrnutzerbetrieb mit Anmeldung und Zugriffsrechten (im Brief als notwendiger späterer Schritt nennen, im PoC nicht getestet; Nutzer, 14.11.2026); optional Aussagen-Klassifikator.
-- Skalierung bedeutet zunächst mehr Dokumente. Ergebnisse gelten nur für die getestete Datensatzgröße; jede Vergrößerung muss separat geprüft werden. In Bewertungen und Notizen die Anzahl der Berichte des jeweiligen Laufs angeben.
+## 2. Bestätigte Anforderungen
 
-## Projektdateien und Provenienz
+- Die lokale Dokumentensammlung ist die **einzige Wissensquelle**. Keine Websuche, kein unbelegtes Ergänzen aus Modellwissen – auch nicht, wenn das Modell über eine Cloud-API läuft.
+- **Regeln und Verfahren:** Der jüngste vergleichbare Stand bestimmt die Antwort. Ältere Verfahren nicht als gleichrangige Alternativen nennen; frühere Stände nur, wenn ausdrücklich nach Änderungen gefragt wird. Keine Quelle als formell gültig oder verbindlich bezeichnen, wenn das Material das nicht belegt.
+- **Erfahrungen und Einschätzungen:** unterschiedliche Sichtweisen mit Quelle und Datum nebeneinander, mit Hinweis, dass die Berichte auseinandergehen; das Datum allein begründet keinen Vorrang.
+- **Zusammenfassungen** zu einem Thema müssen möglich sein und folgen denselben Regeln.
+- **Kontext:** Wenn Dokumente unterschiedliche Kontexte betreffen oder keine sichere Priorisierung zulassen, keine Priorität behaupten. Aussagen aus einem anderen Kontext als dem gefragten (andere Veranstaltung, Lage, Ort) gehören nicht in die Antwort; unmarkiert gelten sie als Fehler. Ausnahmen, je höchstens ein gekennzeichneter Satz: die Frage lässt den Kontext offen und die Berichte unterscheiden sich je Kontext; oder zum gefragten Kontext gibt es nichts (dann erst die Lücke, dann der nächstliegende Kontext).
+- **Belege:** Antwort zuerst, kompakte Quellen am Ende mit Titel und Datum (Datum allein reicht nicht); Fußnotennummern im Text.
+- **Knapp:** nur was zur Frage gehört, ohne Einleitung und Wiederholungen.
+- **Lücken:** Bei unzureichender Evidenz offen sagen, nichts auffüllen – auch bei Teilfragen.
+- **Automatische Erfassung:** Neue oder geänderte Dokumente im Ablageordner werden ohne manuellen Import bei der nächsten Suche berücksichtigt; jedes Dokument wird nur einmal verarbeitet.
+- **Skalierung:** Ergebnisse gelten nur für die getestete Datensatzgröße; in Bewertungen immer die Zahl der Berichte angeben.
 
-- `project_brainstorming.md` enthält die ursprüngliche Kurzbeschreibung.
-- `KI-Projektideen.md` enthält einen langen Gemini-Dialog mit mehreren iterativ überarbeiteten Projekt- und Beispieldokument-Entwürfen. Diese Fassungen sind Arbeitsmaterial, nicht automatisch eine konsistente oder verbindliche Spezifikation.
-- Interview-Rohnotizen und Agentenentwürfe sollen getrennt aufbewahrt werden. Rohnotizen nicht stillschweigend umformulieren; abgeleitete Anforderungen und Vorschläge als solche kennzeichnen.
+## 3. Aufbau
 
-## Projektstruktur
+Datenfluss: Ablageordner → Abgleich über Fingerabdrücke → Zerlegung neuer Berichte in Aussagen (Thema, Art, Kontext, wörtliches Zitat; Titel und Datum vom Programm) → Suche der 40 besten Aussagen (lokal, `intfloat/multilingual-e5-small`) → deren Berichte vollständig an das Antwortmodell → Zitatprüfung, Fußnoten, Warnung bei möglicherweise überholten Aussagen → Oberfläche.
 
-- `app/` – lokale Streamlit-Oberfläche (`app.py`); Kernlogik `aidb.py` (Lesen, Antwort, Zitatprüfung), `aussagen.py` (Aussagen-Datenbank, automatischer Abgleich), `suche.py` (Auswahl der Berichte, Prüfung auf überholte Aussagen); Prompts `prompt_antwort.txt`, `prompt_aussagen.txt`; Details in `app/README.md`.
-- `index/` – lokale Aussagen-Datenbanken (von Git ignoriert).
-- `data/synthetic_reports/` – fiktive Testberichte (AAR-*.md); `data/format_test/` – erzeugte Word/PDF-Kopien aus dem Importtest (von Git ignoriert).
-- `notebooks/` – Versuche (Gemini-Ersttest, Retrieval, Zitatprüfung v7).
-- `scripts/` – `import_test.py` (Word-/PDF-Import, kostenlos); `aussagen_einlesen.py` (Abgleich Ordner → Aussagen-Datenbank); `aussagen_pruefen.py` (Suchtest, kostenlos); `antwortlauf_aussagen.py` (Antwortläufe v15–v19, kostenpflichtig); `aktualitaet_pruefen.py` (Programmprüfung an vorhandenen Antworten, kostenlos).
-- `results/` – Rohantworten und Bewertungen je Versuchslauf (versioniert, z.B. `_v10`); nicht überschreiben, neue Läufe mit neuer Versionsnummer ablegen.
-- `notes/` – Interview-Rohnotizen, Prototyp-Vorschlag, Policy-Brief-Notizen und -Entwurf.
-- `protokoll/` – lokales Frage-/Antwortprotokoll der Oberfläche (von Git ignoriert).
+Grundsatz: **Was sich nachprüfen lässt (Daten, Zitate, Vorhandensein, Aktualität), gehört ins Programm; Sprachverständnis bleibt beim Modell.**
 
-## Befehle
+| Pfad | Inhalt |
+|---|---|
+| `app/app.py` | Streamlit-Oberfläche; Abgleich vor jeder Frage; Attrappe (kostenlos, eigene DB) oder Gemini |
+| `app/aidb.py` | Lesen (md, txt, docx, pdf), Titel/Datum, Antwort anfordern, robustes JSON, Zitatprüfung, Fußnoten |
+| `app/aussagen.py` | Aussagen-Datenbank (SQLite in `index/`, von Git ignoriert), Abgleich, Zerlegung |
+| `app/suche.py` | Auswahl der Berichte, Aktualitätsprüfung (Schwellen an v17–v19 abgestimmt) |
+| `app/prompt_antwort.txt` | Antwortregeln 1–8 (Stand v19) |
+| `app/prompt_aussagen.txt` | Anweisung zur Zerlegung in Aussagen |
+| `scripts/aussagen_einlesen.py` | Ordner mit der Datenbank abgleichen (mit `--modell` kostenpflichtig) |
+| `scripts/antwortlauf_aussagen.py` | Antwortläufe über alle Testfragen; `--volltext` (Aufbau v16+), `--modell` (anderes OpenRouter-Modell), `--lokal` (Ollama) |
+| `scripts/regelbewertung.py` | regelbasierte Bewertung (Pflicht-/verbotene Inhalte je Frage) |
+| `scripts/aussagen_pruefen.py`, `aktualitaet_pruefen.py` | Suchtest und Aktualitätsprüfung an vorhandenen Antworten (kostenlos) |
+| `scripts/grafik_modellgroesse.py` | Abbildung Modellvergleich (DE/EN) |
+| `scripts/offline_lauf.sh` | Offline-Lauf mit lokalem Modell und Netzprotokoll |
+| `scripts/import_test.py` | Word/PDF-Importtest (kostenlos) |
+| `data/synthetic_reports/` | 58 fiktive Berichte, `test_questions.md` (Kriterien), `noetig_v4.json` (nötige Berichte je Frage), `README.md` (Fallenkatalog) |
+| `results/` | Rohantworten und Bewertungen je Lauf (`_v1`…`_v21`, `_s1`…`_s5`) |
+| `notes/` | technischer Bericht, Policy-Brief-Arbeitsdateien, Abbildungen |
+| `verlauf/` | frühe Materialien (Interview, Ideen, Notebooks v1–v13); nicht der aktuelle Stand |
 
-Alle Befehle im Projektordner ausführen.
+Datenstände als Git-Tags `dataset-v1` … `dataset-v4`.
+
+## 4. Befehle
+
+Alle Befehle im Projektordner.
 
 - Einrichten: `python3 -m venv .venv && .venv/bin/pip install -r app/requirements.txt`
-- Oberfläche starten: `.venv/bin/streamlit run app/app.py` (http://localhost:8501; Standard ist die kostenlose Attrappe, echte Antworten erst nach Umschalten auf Gemini 2.5 Pro)
-- Importtest: `.venv/bin/pip install -r scripts/requirements-importtest.txt`, dann `.venv/bin/python scripts/import_test.py`
-- Läufe mit echtem Modell kosten Guthaben: vorher mit dem Nutzer abstimmen.
+- Oberfläche: `.venv/bin/streamlit run app/app.py` (http://localhost:8501; Standard Attrappe)
+- Abgleich mit Modell: `.venv/bin/python scripts/aussagen_einlesen.py --modell`
+- Antwortlauf: `.venv/bin/python scripts/antwortlauf_aussagen.py --volltext --version vNN --durchlaeufe 3` (zuerst Kostenprobe mit `--nur <Fragen>`)
+- Bewertung: `.venv/bin/python scripts/regelbewertung.py -n results/ergebnisse_*_vNN.json`
+- Offline: Ollama installieren, Modell laden, `bash scripts/offline_lauf.sh <modell> vNN`
+- API-Schlüssel nur lokal in `.env` (`OPENROUTER_API_KEY=...`), nie committen.
 
-## Arbeitsweise für Agenten
+## 5. Regeln für Agenten
 
-- Arbeite schrittweise und erkläre Fachbegriffe sowie technische Entscheidungen in verständlichem Deutsch.
-- Unterscheide bestätigte Anforderungen, Vorschläge und ungeprüfte Annahmen. Frage bei wesentlichen Scope- oder Designentscheidungen nach; triff kleine, reversible Entscheidungen begründet.
-- Unterstütze nachvollziehbare Entscheidungen und den Lernprozess. Erzeuge keine großen Mengen an Code oder Daten, bevor Projektfrage und Versuchsaufbau geklärt sind.
-- Lege Abhängigkeiten, Datenquellen und Modellanforderungen offen, bevor du sie einführst. Behaupte keine Evaluationsergebnisse, bevor sie gemessen wurden.
-- Halte Dokumentation knapp, aktuell und ohne doppelte oder widersprüchliche Anweisungen.
-- Abgabe voraussichtlich am 14.12.2026.
-- Policy Brief: Adressat ist ein militärischer Vorgesetzter, der den Vorschlag befürworten und weitertragen soll; bewertet wird er von der Kursleitung. Ton und Argumentation auf den Entscheider ausrichten, fachlich so belastbar, dass er der Bewertung standhält.
-- Abgabedokumente (Nutzer, 15.11.2026): Policy Brief (Kurzfassung, vom Nutzer auf Englisch ausformuliert aus den englischen Stichpunkten `notes/policy_brief_stichpunkte.md`, Gliederung nach den Kursvorgaben `notes/policy_brief_vorgaben_kurs.md`; am Ende ins Deutsche übersetzt) und technischer Bericht als Langfassung (vom Agenten verfasst, Gliederung `notes/technischer_bericht_gliederung.md`, Deutsch und Englisch).
-- Am Ende steht ein Policy Brief. Trage neue Erkenntnisse, Grenzen, Empfehlungen und nächste Schritte nach jedem Versuch oder jeder Entscheidung direkt in `notes/policy_brief_notes.md` ein, gegliedert wie das Brief und mit Kennzeichnung der Herkunft (Messung, Nutzer, Vorschlag), sodass der Nutzer die Abschnitte ohne erneute Aufarbeitung übernehmen kann.
+- **Nur fiktive oder ausdrücklich offene Daten.** Keine eingestuften Inhalte in Agenten, Modell- oder Webdiensten; der PoC sendet Berichtstext an eine Cloud-API.
+- Beispiele und Antworten auf Informationsabruf, Quellen, Zeitbezug, Widerspruchserkennung und Evaluation ausrichten, nicht auf die praktische Durchführung militärischer oder gewaltsamer Handlungen.
+- **Kosten:** Läufe mit echtem Modell kosten Guthaben – vorher mit dem Projektinhaber abstimmen, Kostenprobe mit zwei Fragen.
+- **Messen statt behaupten:** Keine Evaluationsergebnisse ohne Messung; eine Änderung je Version; in der Regel drei Durchläufe.
+- **Ergebnisse:** `results/` nie überschreiben; neue Läufe mit neuer Versionsnummer; Bewertung als `bewertung_*.md` mit Aufbau, Maßstab, Kennzahlen, Grenzen und Zahl der Berichte.
+- **Löschen:** nie endgültig; Dateien mit `trash` verschieben (Ersatz: `.trash/` im Projektordner, von Git ignoriert, nichts überschreiben). Rohdaten, Ergebnisse und Interview-Notizen nur mit ausdrücklicher Zustimmung verschieben oder ersetzen.
+- Abhängigkeiten, Datenquellen und Modelle offenlegen, bevor sie eingeführt werden; Lizenzen prüfen.
+- Bestätigte Anforderungen, Vorschläge und ungeprüfte Annahmen unterscheiden; bei Scope- oder Designentscheidungen nachfragen.
+- Dokumentation knapp, aktuell und ohne Dopplungen halten; Veraltetes nach `verlauf/` oder entfernen statt liegen lassen.
+- Lizenz: noch keine gewählt (nach Rücksprache); bis dahin keine Lizenzdatei anlegen.
 
-## Dateien löschen
+## 6. Offene nächste Schritte
 
-- Nie endgültig löschen; Dateien mit `trash` in den Papierkorb verschieben.
-- Ersatz-Papierkorb, falls `trash` nicht verfügbar ist oder fehlschlägt: `.trash/` im Projektordner (von Git ignoriert). Nie ein vorhandenes Element überschreiben; bei Namensgleichheit einen Zeitstempel anhängen (z.B. `notes_2026-11-12T1530.md`) und den Wiederherstellungsort melden.
-- Rohdaten, Testergebnisse (`results/`) und Interview-Rohnotizen nie ohne ausdrückliche Bestätigung verschieben oder ersetzen.
+1. Pilot mit echten, offenen AARs eines Bereichs auf eigener Hardware im geschlossenen Netz; offenes Modell der ~120-Mrd.-Klasse; Antwortregeln auf das Zielmodell abstimmen; gleiche Messgrößen (Testfragen wiederverwendbar).
+2. Mehrnutzerbetrieb mit Anmeldung, Zugriffsrechten nach Einstufung und Personenkreis, Lasttest.
+3. Themenübergreifende Sammelfragen verbessern (Gäste-Frage findet nicht alle Berichte).
+4. Aktualitätsprüfung für andere Modelle neu abstimmen (erkennt dort nur 30–56 % der Fehler).
+5. Texterkennung für eingescannte Berichte; Anbindung an vorhandene Ablagesysteme.
+6. Optional: Klassifikator „ergänzend / widersprüchlich / anderer Kontext“; Datumsvergleich und Priorisierung bleiben transparente Programmregeln.
 
-## Inhaltliche und Evaluationsleitplanken
+## 7. Arbeitsweise mit dem Projektinhaber bis zur Abgabe (14.12.2026)
 
-- Verwende für Prototyp und Experimente ausschließlich ausdrücklich fiktive oder unklassifizierte Beispieldaten. Keine eingestuften Inhalte in Agenten, Modell- oder Webdiensten verwenden. Da der PoC Dokumentpassagen an eine Cloud-API sendet, gilt das besonders für alle importierten Dokumente.
-- Richte Beispiele und Antworten auf Informationsabruf, Quellenbelege, Zeitbezug, Widerspruchserkennung und Evaluation aus, nicht auf die praktische Durchführung militärischer oder gewaltsamer Handlungen.
-- Prüfe getrennt, ob relevante Quellen gefunden, Aussagen ausreichend belegt, zeitliche Konflikte erkannt und unbelegte Fragen korrekt zurückgewiesen werden.
-- Berichte die Grenzen des kleinen synthetischen Datensatzes und der verwendeten Metriken.
-- Als mögliche, noch nicht festgelegte spätere Modellarbeit (nicht Teil des PoC) wird ein kleiner Klassifikator erwogen, der zwei Textstellen als ergänzend, widersprüchlich oder unterschiedlichen Kontexten zugehörig einordnet. Datumsvergleich und Priorisierung bleiben davon getrennte, transparente Programmregeln.
+- Schrittweise arbeiten, Fachbegriffe und Entscheidungen in verständlichem Deutsch erklären.
+- Policy Brief: Adressat ist ein militärischer Vorgesetzter, der den Vorschlag befürworten und weitertragen soll; bewertet von der Kursleitung. Der Projektinhaber schreibt das Brief auf Englisch aus `notes/policy_brief_stichpunkte.md` (Gliederung nach `notes/policy_brief_vorgaben_kurs.md`), am Ende Übersetzung ins Deutsche. Technischer Bericht vom Agenten, Deutsch und Englisch.
+- Neue Erkenntnisse, Grenzen und Empfehlungen nach jedem Versuch oder jeder Entscheidung in `notes/policy_brief_notes.md` eintragen, gegliedert wie das Brief, mit Herkunft (Messung, Nutzer, Vorschlag).
+- Nach der Abgabe: Brief-Arbeitsdateien aufräumen, Endfassungen ablegen, diesen Abschnitt entfernen.

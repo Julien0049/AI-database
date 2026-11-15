@@ -1,7 +1,7 @@
 # Bewertung: Gemini 2.5 Pro, v11 (alle 48 Berichte) und v12 (Suche, 5 Treffer)
 
 **Status:** Agentenbewertung (Claude), vom Nutzer noch zu prüfen.
-**Läufe:** [v11](./ergebnisse_google_gemini-2.5-pro_2026-11-05_v11.json) und [v12](./ergebnisse_google_gemini-2.5-pro_2026-11-05_v12.json), 05.11.2026, Modell `google/gemini-2.5-pro` über OpenRouter, Notebook [citation_check_v7.ipynb](../notebooks/citation_check_v7.ipynb), je drei Durchläufe, 25 Fragen, 48 Berichte (`dataset-v3`).
+**Läufe:** [v11](./ergebnisse_google_gemini-2.5-pro_2026-11-05_v11.json) und [v12](./ergebnisse_google_gemini-2.5-pro_2026-11-05_v12.json), 05.11.2026, Modell `google/gemini-2.5-pro` über OpenRouter, Notebook [citation_check_v7.ipynb](../verlauf/notebooks/citation_check_v7.ipynb), je drei Durchläufe, 25 Fragen, 48 Berichte (`dataset-v3`).
 **Aufbau:** Prompt wie v8–v10 (Regel 7). v11: alle 48 Berichte im Prompt (Vergleichsbasis). v12, einzige Änderung: je Frage nur die 5 Berichte, die der Frage nach Bedeutung am ähnlichsten sind (`intfloat/multilingual-e5-small`, wie Suchtest s1).
 **Maßstab:** Kriterien in [test_questions.md](../data/synthetic_reports/test_questions.md). Neu ist die Stufe „nicht erfüllt“ für Antworten, die einen überholten Stand als aktuell ausgeben. Inhalte aus Störberichten in der Antwort zählen als „teilweise“, auch wenn sie richtig eingeordnet sind (Regel „exakt und schlank“).
 
