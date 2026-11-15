@@ -233,13 +233,13 @@ def render(answer, reports):
 
 
 def answer(question, reports, key=None, previous=()):
-    """Beantwortet eine Frage mit allen Berichten; `previous` sind die bisherigen Fragen des Gesprächs.
+    """Beantwortet eine Frage mit den übergebenen Berichten (Oberfläche: Auswahl über die Aussagen-Datenbank); `previous` sind die bisherigen Fragen des Gesprächs.
     Ohne Schlüssel antwortet die Attrappe. Gibt ein Wörterbuch mit Text, Quellen, Problemen, Dauer,
     Kosten oder Fehler zurück."""
     start = time.time()
     result = {"berichte": len(reports), "modell": MODEL if key else "Attrappe", "vorherige_fragen": list(previous)}
     if not reports:  # ohne Berichte nicht fragen: in v13 erfand das Modell dann eine Regel samt Zitat
-        result.update(text="Es sind keine Berichte importiert.", quellen=[], probleme=[], dauer_s=0.0)
+        result.update(text="Zu dieser Frage wurden keine passenden Berichte gefunden.", quellen=[], probleme=[], dauer_s=0.0)
         return result
     try:
         raw, cost = ask_model(question, reports, key, previous) if key else ask_dummy(question, reports, previous)

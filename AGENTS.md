@@ -30,10 +30,11 @@ Für den PoC wird vorläufig Gemini 2.5 Pro (`google/gemini-2.5-pro`) über Open
 
 ## Projektstruktur
 
-- `app/` – lokale Streamlit-Oberfläche (`app.py`) und Kernlogik (`aidb.py`: Import, Antwort, Zitatprüfung); Antwort-Prompt in `prompt_antwort.txt`; Details in `app/README.md`.
+- `app/` – lokale Streamlit-Oberfläche (`app.py`); Kernlogik `aidb.py` (Lesen, Antwort, Zitatprüfung), `aussagen.py` (Aussagen-Datenbank, automatischer Abgleich), `suche.py` (Auswahl der Berichte, Prüfung auf überholte Aussagen); Prompts `prompt_antwort.txt`, `prompt_aussagen.txt`; Details in `app/README.md`.
+- `index/` – lokale Aussagen-Datenbanken (von Git ignoriert).
 - `data/synthetic_reports/` – fiktive Testberichte (AAR-*.md); `data/format_test/` – erzeugte Word/PDF-Kopien aus dem Importtest (von Git ignoriert).
 - `notebooks/` – Versuche (Gemini-Ersttest, Retrieval, Zitatprüfung v7).
-- `scripts/` – `import_test.py` prüft Word-/PDF-Import gegen Markdown (ohne Modell, ohne Kosten).
+- `scripts/` – `import_test.py` (Word-/PDF-Import, kostenlos); `aussagen_einlesen.py` (Abgleich Ordner → Aussagen-Datenbank); `aussagen_pruefen.py` (Suchtest, kostenlos); `antwortlauf_aussagen.py` (Antwortläufe v15–v19, kostenpflichtig); `aktualitaet_pruefen.py` (Programmprüfung an vorhandenen Antworten, kostenlos).
 - `results/` – Rohantworten und Bewertungen je Versuchslauf (versioniert, z.B. `_v10`); nicht überschreiben, neue Läufe mit neuer Versionsnummer ablegen.
 - `notes/` – Interview-Rohnotizen, Prototyp-Vorschlag, Policy-Brief-Notizen und -Entwurf.
 - `protokoll/` – lokales Frage-/Antwortprotokoll der Oberfläche (von Git ignoriert).
