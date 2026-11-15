@@ -58,7 +58,7 @@ Alle Befehle im Projektordner ausführen.
 - Halte Dokumentation knapp, aktuell und ohne doppelte oder widersprüchliche Anweisungen.
 - Abgabe voraussichtlich am 14.12.2026.
 - Policy Brief: Adressat ist ein militärischer Vorgesetzter, der den Vorschlag befürworten und weitertragen soll; bewertet wird er von der Kursleitung. Ton und Argumentation auf den Entscheider ausrichten, fachlich so belastbar, dass er der Bewertung standhält.
-- Abgabedokumente (Nutzer, 15.11.2026): Policy Brief (Kurzfassung, vom Nutzer ausformuliert aus `notes/policy_brief_stichpunkte.md`) und technischer Bericht als Langfassung (vom Agenten verfasst, Gliederung `notes/technischer_bericht_gliederung.md`), jeweils auf Deutsch und Englisch.
+- Abgabedokumente (Nutzer, 15.11.2026): Policy Brief (Kurzfassung, vom Nutzer auf Englisch ausformuliert aus den englischen Stichpunkten `notes/policy_brief_stichpunkte.md`, Gliederung nach den Kursvorgaben `notes/policy_brief_vorgaben_kurs.md`; am Ende ins Deutsche übersetzt) und technischer Bericht als Langfassung (vom Agenten verfasst, Gliederung `notes/technischer_bericht_gliederung.md`, Deutsch und Englisch).
 - Am Ende steht ein Policy Brief. Trage neue Erkenntnisse, Grenzen, Empfehlungen und nächste Schritte nach jedem Versuch oder jeder Entscheidung direkt in `notes/policy_brief_notes.md` ein, gegliedert wie das Brief und mit Kennzeichnung der Herkunft (Messung, Nutzer, Vorschlag), sodass der Nutzer die Abschnitte ohne erneute Aufarbeitung übernehmen kann.
 
 ## Dateien löschen
