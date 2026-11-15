@@ -1,6 +1,6 @@
 # KI-gestützte Datenbank für After-Action-Reports – Technischer Bericht zum Proof of Concept
 
-*Langfassung zum Policy Brief. Stand: 15. November 2026. Für Leserinnen und Leser, die Aufbau, Versuche und Grenzen im Detail nachvollziehen oder die Arbeit fortsetzen wollen. Alle Zahlen sind gemessen, sofern nicht als Schätzung oder Vorschlag gekennzeichnet. Rohdaten und Einzelbewertungen liegen im Projektordner unter `results/`.*
+*Langfassung zum Policy Brief. Stand: 15. November 2026. Für Leserinnen und Leser, die Aufbau, Versuche und Grenzen im Detail nachvollziehen oder die Arbeit fortsetzen wollen. Alle Zahlen sind gemessen, sofern nicht als Schätzung oder Vorschlag gekennzeichnet. Quellcode, Testberichte, Rohdaten und Einzelbewertungen sind öffentlich auf GitHub abrufbar: https://github.com/Julien0049/AI-database (Pfadangaben in diesem Bericht beziehen sich auf dieses Repository; Ergebnisse unter `results/`).*
 
 ---
 
@@ -300,7 +300,7 @@ Die Preisangaben stammen aus Händler- und Fachquellen von 2026 und widerspreche
 
 ### 11.1 Reproduktion
 
-Im Projektordner:
+Alle Dateien – Programm, Testberichte, Testfragen, Ergebnisse und Bewertungen – liegen im öffentlichen Repository **https://github.com/Julien0049/AI-database**. Herunterladen mit `git clone https://github.com/Julien0049/AI-database.git`, danach im Projektordner:
 
 ```bash
 python3 -m venv .venv && .venv/bin/pip install -r app/requirements.txt
