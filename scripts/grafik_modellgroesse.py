@@ -29,11 +29,11 @@ TEXT = {
     "de": {"title": "Größere offene Modelle machen weniger Fehler –\nab etwa 100 Mrd. Parametern flacht die Kurve ab",
            "y": "Unbrauchbare Antworten (falsch oder ohne Antwort)", "x": "Modellgröße in Milliarden Parametern (logarithmisch)",
            "gemini": "Gemini 2.5 Pro (Cloud, Größe nicht veröffentlicht)", "local": "lokal, 1 Durchlauf",
-           "note": "34 Testfragen, 58 fiktive Berichte, je 3 Durchläufe (Gemma 3 4B: 1). Bewertung regelbasiert. Hardware: grobe Größenordnung für Eigenbetrieb."},
+           "note": "34 Testfragen, 58 fiktive Berichte. Jedes Modell 3 Durchläufe, nur Gemma 3 4B (lokal auf dem Laptop) 1 Durchlauf. Bewertung regelbasiert. Hardware: grobe Größenordnung für Eigenbetrieb."},
     "en": {"title": "Larger open models make fewer errors –\nthe curve flattens above roughly 100B parameters",
            "y": "Unusable answers (wrong or no answer)", "x": "Model size in billions of parameters (log scale)",
            "gemini": "Gemini 2.5 Pro (cloud, size not disclosed)", "local": "local, 1 run",
-           "note": "34 test questions, 58 fictional reports, 3 runs each (Gemma 3 4B: 1). Rule-based scoring. Hardware: rough order of magnitude for self-hosting."},
+           "note": "34 test questions, 58 fictional reports. Every model 3 runs, only Gemma 3 4B (local on the laptop) 1 run. Rule-based scoring. Hardware: rough order of magnitude for self-hosting."},
 }
 INK, INK2, SERIES, GRID, SURFACE = "#0b0b0b", "#52514e", "#2a78d6", "#e4e3df", "#fcfcfb"
 
@@ -80,8 +80,9 @@ for lang, t in TEXT.items():
     for side in ("left", "bottom"):
         ax.spines[side].set_color(GRID)
     ax.tick_params(colors=INK2, labelsize=8)
-    fig.text(0.01, 0.01, t["note"], color=INK2, fontsize=7)
-    fig.tight_layout(rect=(0, 0.03, 1, 1))
+    import textwrap
+    fig.text(0.01, 0.01, textwrap.fill(t["note"], 150), color=INK2, fontsize=7, va="bottom")
+    fig.tight_layout(rect=(0, 0.05, 1, 1))
     path = out / f"modellgroesse_fehler_{lang}.png"
     fig.savefig(path, facecolor=SURFACE)
     print(path)
