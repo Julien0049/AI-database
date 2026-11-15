@@ -1,6 +1,6 @@
 # Policy Brief – bullet points for writing (English)
 
-*Status 15 Nov 2026. Structure follows the course guidance (`policy_brief_vorgaben_kurs.md`): Summary – Context – Project/Approach – Findings – Implications – Recommendations; one problem per paragraph; the context only raises problems that are answered later. The author writes the brief in English from these bullets; a German version is translated at the end. Figures are measured unless marked as estimate. Sources of every figure: `policy_brief_notes.md`, `results/`. Earlier draft (5 Nov, superseded): `policy_brief_draft_en.md`.*
+*Status 15 Nov 2026. Structure follows the course guidance (`policy_brief_vorgaben_kurs.md`): Summary – Context – Project/Approach – Findings – Implications – Recommendations; one problem per paragraph; the context only raises problems that are answered later. The author writes the brief in English from these bullets; a German version is translated at the end. Figures are measured unless marked as estimate. Sources of every figure: `policy_brief_notes.md`, `results/`. Earlier draft of 5 Nov removed on 15 Nov (in git history, commit 147bfd5).*
 
 ## Audience (for the author, not part of the brief)
 
