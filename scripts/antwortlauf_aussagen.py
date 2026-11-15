@@ -35,10 +35,12 @@ ap.add_argument("--version", default="v15")
 ap.add_argument("--attrappe", action="store_true", help="ohne Modell (kostenlos)")
 ap.add_argument("--ausgabe", default=str(ROOT / "results"))
 ap.add_argument("--volltext", action="store_true", help="v16: gefundene Berichte vollständig statt nur Aussagen")
+ap.add_argument("--lokal", default=None, help="v20: lokales Modell über Ollama auf 127.0.0.1, z. B. gemma3:4b (offline, kostenlos)")
+ap.add_argument("--kontext", type=int, default=12288, help="Kontextlänge für das lokale Modell (Tokens)")
 args = ap.parse_args()
 
-key = None if args.attrappe else aidb.read_key(ROOT / ".env")
-if not args.attrappe and not key:
+key = None if (args.attrappe or args.lokal) else aidb.read_key(ROOT / ".env")
+if not (args.attrappe or args.lokal) and not key:
     sys.exit("Kein OPENROUTER_API_KEY gefunden.")
 
 reports, _ = aidb.load_reports(args.ordner)          # B-Kennungen wie in v11–v13
@@ -75,6 +77,24 @@ def statement_corpus(selected):
     return "\n\n".join(blocks), sorted(by_rid, key=lambda x: int(x[1:]))
 
 
+LAST_COUNTS = {}
+
+
+def ask_local(user_text):
+    """Antwort von einem lokalen Modell über die Ollama-Schnittstelle auf diesem Rechner (keine Internetverbindung nötig).
+    num_ctx muss gesetzt werden, sonst kürzt Ollama lange Anfragen stillschweigend; format=json erzwingt gültiges JSON."""
+    import urllib.request
+    body = json.dumps({"model": args.lokal, "stream": False, "format": "json",
+                       "options": {"num_ctx": args.kontext},
+                       "messages": [{"role": "system", "content": aidb.PROMPT},
+                                    {"role": "user", "content": user_text}]}).encode()
+    req = urllib.request.Request("http://127.0.0.1:11434/api/chat", data=body, headers={"Content-Type": "application/json"})
+    with urllib.request.urlopen(req, timeout=1800) as r:
+        data = json.loads(r.read())
+    LAST_COUNTS.update(p=data.get("prompt_eval_count"), a=data.get("eval_count"))
+    return data["message"]["content"]
+
+
 def ask(nr, run):
     question = questions[nr - 1]
     selected = select(question)
@@ -87,6 +107,9 @@ def ask(nr, run):
     try:
         if args.attrappe:
             raw, cost = aidb.ask_dummy(question, {rid: reports[rid] for rid in rids})
+        elif args.lokal:
+            raw, cost = ask_local(f"{corpus}\n\nFrage: {question}"), 0.0
+            entry["prompt_tokens"], entry["antwort_tokens"] = LAST_COUNTS.get("p"), LAST_COUNTS.get("a")
         else:
             from openai import OpenAI
             client = OpenAI(base_url="https://openrouter.ai/api/v1", api_key=key, timeout=180, max_retries=2)  # seit v19: hängende Anfragen abbrechen
@@ -108,9 +131,10 @@ nrs = args.nur or list(range(1, len(questions) + 1))
 jobs = [(nr, run) for run in range(1, args.durchlaeufe + 1) for nr in nrs]
 start, results, stop = time.time(), [], False
 suffix = "_test" if args.nur else ""
-name = pathlib.Path(args.ausgabe) / f"ergebnisse_{'attrappe' if args.attrappe else 'google_gemini-2.5-pro'}_{datetime.date.today()}_{args.version}{suffix}.json"
+modelname = "attrappe" if args.attrappe else ("lokal_" + args.lokal.replace(":", "-") if args.lokal else "google_gemini-2.5-pro")
+name = pathlib.Path(args.ausgabe) / f"ergebnisse_{modelname}_{datetime.date.today()}_{args.version}{suffix}.json"
 partial = name.with_suffix(".teil.jsonl")  # Zwischenspeicher: jede Antwort sofort sichern (seit v19)
-with concurrent.futures.ThreadPoolExecutor(5) as pool:
+with concurrent.futures.ThreadPoolExecutor(1 if args.lokal else 5) as pool:  # lokal: nacheinander
     futures = [pool.submit(ask, nr, run) for nr, run in jobs]
     for f in concurrent.futures.as_completed(futures):
         e = f.result()
@@ -129,7 +153,7 @@ total = sum(e.get("kosten") or 0 for e in results)
 label = "Berichte der" if args.volltext else "statt Berichte:"
 out = {"versuch": f"Antwortlauf {args.version}: {label} beste {args.n} Aussagen" + (" (Berichte vollständig)" if args.volltext else ""),
        "volltext": args.volltext,
-       "modell": "Attrappe" if args.attrappe else aidb.MODEL,
+       "modell": "Attrappe" if args.attrappe else (f"{args.lokal} (lokal, Ollama, num_ctx {args.kontext})" if args.lokal else aidb.MODEL),
        "zeitpunkt": datetime.datetime.now().isoformat(timespec="seconds"), "durchlaeufe": args.durchlaeufe,
        "n_aussagen": args.n, "berichte": len(reports), "aussagen_in_db": len(rows),
        "kosten_usd": round(total, 4), "dauer_s": round(time.time() - start, 1),

@@ -1,0 +1,6 @@
+Offline-Lauf v20 mit gemma3:4b – Protokoll gestartet 2026-11-14 21:36:56
+Warte auf getrennte Internetverbindung …
+2026-11-14 21:38:21 Internet nicht erreichbar – Lauf startet
+2026-11-14 22:29:59 Lauf beendet (Exit 0)
+Verbindungen nach außen insgesamt: 0
+Internet zwischendurch erreichbar: 0 Mal

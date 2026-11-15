@@ -1,0 +1,37 @@
+/Users/julienmehler/Documents/GitHub/AI-database/.venv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+D1 Frage 1: 27.7 s, 0.0000 USD
+D1 Frage 2: 43.5 s, 0.0000 USD
+D1 Frage 3: 44.2 s, 0.0000 USD
+D1 Frage 4: 31.3 s, 0.0000 USD
+D1 Frage 5: 27.0 s, 0.0000 USD
+D1 Frage 6: 16.1 s, 0.0000 USD
+D1 Frage 7: 39.4 s, 0.0000 USD
+D1 Frage 8: 34.2 s, 0.0000 USD
+D1 Frage 9: 43.4 s, 0.0000 USD
+D1 Frage 10: 61.2 s, 0.0000 USD
+D1 Frage 11: 66.4 s, 0.0000 USD
+D1 Frage 12: 44.4 s, 0.0000 USD
+D1 Frage 13: 45.5 s, 0.0000 USD
+D1 Frage 14: 578.7 s, 0.0000 USD  FEHLER Unterminated string starting at: line 118 column 10 (char 16349)
+D1 Frage 15: 61.1 s, 0.0000 USD
+D1 Frage 16: 44.9 s, 0.0000 USD  FEHLER HTTP Error 500: Internal Server Error
+D1 Frage 17: 45.7 s, 0.0000 USD  FEHLER 'list' object has no attribute 'get'
+D1 Frage 18: 29.5 s, 0.0000 USD
+D1 Frage 19: 42.7 s, 0.0000 USD  FEHLER HTTP Error 500: Internal Server Error
+D1 Frage 20: 27.2 s, 0.0000 USD
+D1 Frage 21: 31.0 s, 0.0000 USD
+D1 Frage 22: 36.6 s, 0.0000 USD
+D1 Frage 23: 56.1 s, 0.0000 USD  FEHLER HTTP Error 500: Internal Server Error
+D1 Frage 24: 77.6 s, 0.0000 USD
+D1 Frage 25: 57.7 s, 0.0000 USD  FEHLER HTTP Error 500: Internal Server Error
+D1 Frage 26: 79.5 s, 0.0000 USD
+D1 Frage 27: 49.4 s, 0.0000 USD
+D1 Frage 28: 63.6 s, 0.0000 USD
+D1 Frage 29: 45.0 s, 0.0000 USD  FEHLER 'saetze'
+D1 Frage 30: 39.6 s, 0.0000 USD
+D1 Frage 31: 72.9 s, 0.0000 USD
+D1 Frage 32: 411.2 s, 0.0000 USD  FEHLER Unterminated string starting at: line 2 column 12 (char 24)
+D1 Frage 33: 78.0 s, 0.0000 USD
+D1 Frage 34: 64.0 s, 0.0000 USD
+34 Antworten, 0.0000 USD, 3018.5 s -> /Users/julienmehler/Documents/GitHub/AI-database/results/ergebnisse_lokal_gemma3-4b_2026-11-14_v20.json

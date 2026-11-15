@@ -19,7 +19,8 @@ Für den PoC wird vorläufig Gemini 2.5 Pro (`google/gemini-2.5-pro`) über Open
 - Bei unzureichender Evidenz muss der Prototyp dies offen sagen und darf Lücken nicht auffüllen.
 - Für die erste Version sind Markdown-/Textdateien vorgesehen. Neue oder geänderte Dokumente in einem festgelegten Ordner werden automatisch erfasst und sind ohne manuellen Import bei der nächsten Suche berücksichtigt. Jedes Dokument wird dabei nur einmal verarbeitet. (Geändert am 13.11.2026; vorher: Import gezielt starten.)
 - Als erste Oberfläche ist eine einfache lokale Browser-Chat-Oberfläche vorgesehen. Anwendung, Dokumente und Index laufen auf dem eigenen Mac/Computer ohne zusätzliche GPU; nur die Antwortgenerierung läuft über die Modell-API.
-- Spätere Ausbaustufen (nicht Teil des PoC): Umstieg auf ein lokales, mittelgroßes Modell mit Offlinebetrieb und Vergleich gegen die Frontier-Ergebnisse; optional Aussagen-Klassifikator und lokaler Mehrnutzerbetrieb.
+- Vergleich mit einem lokalen Offline-Modell ist Teil des PoC (Nutzer, 14.11.2026): Wie viel schlechter antwortet ein lokal laufendes Modell als Gemini 2.5 Pro auf denselben Fragen? Gemessen auf dem eigenen Rechner (Apple M2, 8 GB Arbeitsspeicher); das Ergebnis unterschätzt einen Server im geschlossenen Netz.
+- Spätere Ausbaustufen (nicht Teil des PoC): Betrieb mit einem lokalen Modell auf Serverhardware; Mehrnutzerbetrieb mit Anmeldung und Zugriffsrechten (im Brief als notwendiger späterer Schritt nennen, im PoC nicht getestet; Nutzer, 14.11.2026); optional Aussagen-Klassifikator.
 - Skalierung bedeutet zunächst mehr Dokumente. Ergebnisse gelten nur für die getestete Datensatzgröße; jede Vergrößerung muss separat geprüft werden. In Bewertungen und Notizen die Anzahl der Berichte des jeweiligen Laufs angeben.
 
 ## Projektdateien und Provenienz
