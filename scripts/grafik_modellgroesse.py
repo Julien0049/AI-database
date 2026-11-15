@@ -30,7 +30,7 @@ TEXT = {
            "y": "Unbrauchbare Antworten (falsch oder ohne Antwort)", "x": "Modellgröße in Milliarden Parametern (logarithmisch)",
            "gemini": "Gemini 2.5 Pro (Cloud, Größe nicht veröffentlicht)", "local": "lokal, 1 Durchlauf",
            "note": "34 Testfragen, 58 fiktive Berichte. Jedes Modell 3 Durchläufe, nur Gemma 3 4B (lokal auf dem Laptop) 1 Durchlauf. Bewertung regelbasiert. Hardware: grobe Größenordnung für Eigenbetrieb."},
-    "en": {"title": "Open AI model comparison",
+    "en": {"title": "Comparison of open AI models",
            "y": "Unusable answers (wrong or no answer)", "x": "Model size in billions of parameters (log scale)",
            "gemini": "Gemini 2.5 Pro (cloud, size not disclosed)", "local": "local, 1 run",
            "note": "34 test questions, 58 fictional reports. Every model 3 runs, only Gemma 3 4B (local on the laptop) 1 run. Rule-based scoring. Hardware: rough order of magnitude for self-hosting."},
