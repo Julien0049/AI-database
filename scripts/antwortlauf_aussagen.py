@@ -89,7 +89,7 @@ def ask(nr, run):
             raw, cost = aidb.ask_dummy(question, {rid: reports[rid] for rid in rids})
         else:
             from openai import OpenAI
-            client = OpenAI(base_url="https://openrouter.ai/api/v1", api_key=key)
+            client = OpenAI(base_url="https://openrouter.ai/api/v1", api_key=key, timeout=180, max_retries=2)  # seit v19: hängende Anfragen abbrechen
             resp = client.chat.completions.create(model=aidb.MODEL, messages=[
                 {"role": "system", "content": aidb.PROMPT},
                 {"role": "user", "content": f"{corpus}\n\nFrage: {question}"}])
@@ -107,13 +107,18 @@ def ask(nr, run):
 nrs = args.nur or list(range(1, len(questions) + 1))
 jobs = [(nr, run) for run in range(1, args.durchlaeufe + 1) for nr in nrs]
 start, results, stop = time.time(), [], False
+suffix = "_test" if args.nur else ""
+name = pathlib.Path(args.ausgabe) / f"ergebnisse_{'attrappe' if args.attrappe else 'google_gemini-2.5-pro'}_{datetime.date.today()}_{args.version}{suffix}.json"
+partial = name.with_suffix(".teil.jsonl")  # Zwischenspeicher: jede Antwort sofort sichern (seit v19)
 with concurrent.futures.ThreadPoolExecutor(5) as pool:
     futures = [pool.submit(ask, nr, run) for nr, run in jobs]
     for f in concurrent.futures.as_completed(futures):
         e = f.result()
         results.append(e)
+        with partial.open("a") as fh:
+            fh.write(json.dumps(e, ensure_ascii=False) + "\n")
         print(f"D{e['durchlauf']} Frage {e['nr']}: {e['dauer_s']} s, {e.get('kosten') or 0:.4f} USD"
-              + (f"  FEHLER {e['fehler'][:120]}" if "fehler" in e else ""))
+              + (f"  FEHLER {e['fehler'][:120]}" if "fehler" in e else ""), flush=True)
         if e.get("status_code") in (402, 403) and not stop:
             stop = True
             for other in futures:
@@ -129,7 +134,5 @@ out = {"versuch": f"Antwortlauf {args.version}: {label} beste {args.n} Aussagen"
        "n_aussagen": args.n, "berichte": len(reports), "aussagen_in_db": len(rows),
        "kosten_usd": round(total, 4), "dauer_s": round(time.time() - start, 1),
        "systemprompt": aidb.PROMPT, "ergebnisse": results}
-suffix = "_test" if args.nur else ""
-name = pathlib.Path(args.ausgabe) / f"ergebnisse_{'attrappe' if args.attrappe else 'google_gemini-2.5-pro'}_{datetime.date.today()}_{args.version}{suffix}.json"
 name.write_text(json.dumps(out, ensure_ascii=False, indent=1))
 print(f"{len(results)} Antworten, {total:.4f} USD, {out['dauer_s']} s -> {name}")

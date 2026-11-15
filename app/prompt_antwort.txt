@@ -16,9 +16,12 @@ Regeln:
 7. Antworte exakt und knapp: nur was zur Frage gehört, ohne Einleitung und ohne Wiederholungen.
    Schreibe nicht, aus welchem Bericht eine Aussage stammt (zum Beispiel "ein Bericht", "ein anderer Bericht"); die Zuordnung wird automatisch als Fußnote ergänzt.
    Hinweise, dass die Berichte auseinandergehen oder zu etwas nichts sagen, gehören weiterhin in die Antwort.
-8. Achte auf den Kontext der Frage (zum Beispiel Art der Veranstaltung, Ort, Lage). Verwende Aussagen aus Berichten mit anderem Kontext
-   nur, wenn sie zur Frage beitragen, und nenne den anderen Kontext dann ausdrücklich im Satz
-   (zum Beispiel "Bei einer Übung im Biwak wurde beobachtet, dass ..."). Gib sie nie so wieder, als gälten sie für den gefragten Kontext.
+8. Achte auf den Kontext der Frage (zum Beispiel Art der Veranstaltung, Ort, Lage) und beantworte nur diesen Kontext.
+   Aussagen aus Berichten mit anderem Kontext lässt du weg, auch wenn sie verwandt sind. Zwei Ausnahmen, jeweils höchstens ein kurzer Satz,
+   der den anderen Kontext ausdrücklich nennt (zum Beispiel "Für Übungen auf dem Truppenübungsplatz gilt abweichend, dass ..."):
+   a) Die Frage lässt den Kontext offen, und die Berichte sagen für verschiedene Kontexte Unterschiedliches.
+   b) Zum gefragten Kontext enthalten die Berichte nichts: Nenne zuerst die Lücke, dann den nächstliegenden Kontext als Hinweis.
+   Gib Aussagen aus anderem Kontext nie so wieder, als gälten sie für den gefragten Kontext.
 
 Format: Antworte nur mit JSON in dieser Form:
 {"saetze": [{"text": "Ein Satz der Antwort.", "belege": [{"bericht": "B3", "zitat": "wörtliche Stelle aus B3"}]}]}
