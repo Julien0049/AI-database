@@ -26,11 +26,11 @@ RUNS = [  # (Datei, Parameter in Mrd., Name, Hardware DE, Hardware EN, lokal)
 GEMINI = "google_gemini-2.5-pro_2026-11-14_v19"
 
 TEXT = {
-    "de": {"title": "Größere offene Modelle machen weniger Fehler –\nab etwa 100 Mrd. Parametern flacht die Kurve ab",
+    "de": {"title": "Unbrauchbare Antworten nach Modellgröße",
            "y": "Unbrauchbare Antworten (falsch oder ohne Antwort)", "x": "Modellgröße in Milliarden Parametern (logarithmisch)",
            "gemini": "Gemini 2.5 Pro (Cloud, Größe nicht veröffentlicht)", "local": "lokal, 1 Durchlauf",
            "note": "34 Testfragen, 58 fiktive Berichte. Jedes Modell 3 Durchläufe, nur Gemma 3 4B (lokal auf dem Laptop) 1 Durchlauf. Bewertung regelbasiert. Hardware: grobe Größenordnung für Eigenbetrieb."},
-    "en": {"title": "Larger open models make fewer errors –\nthe curve flattens above roughly 100B parameters",
+    "en": {"title": "Unusable answers by model size",
            "y": "Unusable answers (wrong or no answer)", "x": "Model size in billions of parameters (log scale)",
            "gemini": "Gemini 2.5 Pro (cloud, size not disclosed)", "local": "local, 1 run",
            "note": "34 test questions, 58 fictional reports. Every model 3 runs, only Gemma 3 4B (local on the laptop) 1 run. Rule-based scoring. Hardware: rough order of magnitude for self-hosting."},
@@ -73,7 +73,7 @@ for lang, t in TEXT.items():
     ax.yaxis.set_major_formatter(FuncFormatter(lambda v, _: f"{v:.0f} %"))
     ax.set_xlabel(t["x"], color=INK2, fontsize=9)
     ax.set_ylabel(t["y"], color=INK2, fontsize=9)
-    ax.set_title(t["title"], color=INK, fontsize=11, loc="left", pad=12)
+    ax.set_title(t["title"], color=INK, fontsize=13, fontweight="bold", loc="left", pad=12)
     ax.grid(axis="y", color=GRID, linewidth=0.8)
     for side in ("top", "right"):
         ax.spines[side].set_visible(False)
