@@ -52,6 +52,7 @@
 - Ein Spitzenmodell in der Cloud ist nicht für eingestufte Inhalte geeignet; Eigenbetrieb nur gemessen über gleichwertige Modelle, nicht auf eigener Serverhardware.
 - Mehrere gleichzeitige Nutzer und Zugriffsrechte nicht getestet.
 - Hardwarepreise widersprüchlich, nur Spannen.
+- Die Antwortregeln wurden am Cloud-Modell geschärft; offene Modelle liefen ohne Anpassung. Der Abstand ist daher eher kleiner als gemessen; die Abstimmung auf das spätere Zielmodell gehört in den Pilot.
 
 ## 7. Empfehlungen
 
