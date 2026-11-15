@@ -298,6 +298,15 @@ Die Preisangaben stammen aus Händler- und Fachquellen von 2026 und widerspreche
 
 ## 11. Anhang
 
+### 11.0 Weiterarbeiten: so ist das Repository aufgebaut
+
+Das Projekt ist so abgelegt, dass Menschen und KI-Agenten ohne Vorgespräch weiterarbeiten können:
+
+- **Einstieg für Menschen:** `README.md` im Repository (https://github.com/Julien0049/AI-database) – was das System tut, Ergebnisse, Schnellstart, Karte der Ordner.
+- **Übergabe an KI-Agenten:** `AGENTS.md` – Stand, bestätigte Anforderungen, Aufbau mit Dateikarte, Befehle, Regeln (nur fiktive oder offene Daten, Kosten vorher abstimmen, Ergebnisse nicht überschreiben) und offene nächste Schritte. Die meisten KI-Werkzeuge lesen diese Datei beim Laden des Repositorys automatisch (Claude über `CLAUDE.md`, die `AGENTS.md` einbindet). Es genügt daher, einem Agenten zu sagen: „Lade das Repository https://github.com/Julien0049/AI-database und arbeite an Schritt X aus AGENTS.md weiter.“
+- **Nachvollziehbarkeit:** Jeder Versuch hat in `results/` seine Rohantworten und eine Bewertung; die Testdatenstände sind als Git-Tags `dataset-v1` bis `dataset-v4` abrufbar; frühe Materialien liegen in `verlauf/`.
+- **Lizenz:** noch nicht festgelegt (nach Rücksprache); bis dahin vor einer Wiederverwendung nachfragen.
+
 ### 11.1 Reproduktion
 
 Alle Dateien – Programm, Testberichte, Testfragen, Ergebnisse und Bewertungen – liegen im öffentlichen Repository **https://github.com/Julien0049/AI-database**. Herunterladen mit `git clone https://github.com/Julien0049/AI-database.git`, danach im Projektordner:
