@@ -37,6 +37,7 @@ ap.add_argument("--ausgabe", default=str(ROOT / "results"))
 ap.add_argument("--volltext", action="store_true", help="v16: gefundene Berichte vollständig statt nur Aussagen")
 ap.add_argument("--lokal", default=None, help="v20: lokales Modell über Ollama auf 127.0.0.1, z. B. gemma3:4b (offline, kostenlos)")
 ap.add_argument("--kontext", type=int, default=12288, help="Kontextlänge für das lokale Modell (Tokens)")
+ap.add_argument("--modell", default=None, help="v21: anderes Modell über OpenRouter, z. B. openai/gpt-oss-120b (Standard: aidb.MODEL)")
 args = ap.parse_args()
 
 key = None if (args.attrappe or args.lokal) else aidb.read_key(ROOT / ".env")
@@ -113,10 +114,12 @@ def ask(nr, run):
         else:
             from openai import OpenAI
             client = OpenAI(base_url="https://openrouter.ai/api/v1", api_key=key, timeout=180, max_retries=2)  # seit v19: hängende Anfragen abbrechen
-            resp = client.chat.completions.create(model=aidb.MODEL, messages=[
+            resp = client.chat.completions.create(model=args.modell or aidb.MODEL, messages=[
                 {"role": "system", "content": aidb.PROMPT},
                 {"role": "user", "content": f"{corpus}\n\nFrage: {question}"}])
             raw, cost = resp.choices[0].message.content, getattr(resp.usage, "cost", None)
+            entry["anbieter"] = (resp.model_extra or {}).get("provider")  # welcher Anbieter bei OpenRouter geantwortet hat
+            entry["prompt_tokens"], entry["antwort_tokens"] = resp.usage.prompt_tokens, resp.usage.completion_tokens
         entry.update(roh=raw, kosten=cost)
         text, sources, problems = aidb.render(aidb.check(aidb.parse(raw), reports), reports)
         entry["antwort"] = {"text": text, "quellen": sources, "probleme": problems}
@@ -131,7 +134,8 @@ nrs = args.nur or list(range(1, len(questions) + 1))
 jobs = [(nr, run) for run in range(1, args.durchlaeufe + 1) for nr in nrs]
 start, results, stop = time.time(), [], False
 suffix = "_test" if args.nur else ""
-modelname = "attrappe" if args.attrappe else ("lokal_" + args.lokal.replace(":", "-") if args.lokal else "google_gemini-2.5-pro")
+modelname = "attrappe" if args.attrappe else ("lokal_" + args.lokal.replace(":", "-") if args.lokal
+                                          else (args.modell or "google/gemini-2.5-pro").replace("/", "_"))
 name = pathlib.Path(args.ausgabe) / f"ergebnisse_{modelname}_{datetime.date.today()}_{args.version}{suffix}.json"
 partial = name.with_suffix(".teil.jsonl")  # Zwischenspeicher: jede Antwort sofort sichern (seit v19)
 with concurrent.futures.ThreadPoolExecutor(1 if args.lokal else 5) as pool:  # lokal: nacheinander
@@ -153,7 +157,7 @@ total = sum(e.get("kosten") or 0 for e in results)
 label = "Berichte der" if args.volltext else "statt Berichte:"
 out = {"versuch": f"Antwortlauf {args.version}: {label} beste {args.n} Aussagen" + (" (Berichte vollständig)" if args.volltext else ""),
        "volltext": args.volltext,
-       "modell": "Attrappe" if args.attrappe else (f"{args.lokal} (lokal, Ollama, num_ctx {args.kontext})" if args.lokal else aidb.MODEL),
+       "modell": "Attrappe" if args.attrappe else (f"{args.lokal} (lokal, Ollama, num_ctx {args.kontext})" if args.lokal else (args.modell or aidb.MODEL)),
        "zeitpunkt": datetime.datetime.now().isoformat(timespec="seconds"), "durchlaeufe": args.durchlaeufe,
        "n_aussagen": args.n, "berichte": len(reports), "aussagen_in_db": len(rows),
        "kosten_usd": round(total, 4), "dauer_s": round(time.time() - start, 1),

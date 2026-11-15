@@ -175,8 +175,14 @@ def norm(s):
 
 
 def parse(raw):
-    raw = re.sub(r"^```(?:json)?\s*|\s*```$", "", raw.strip())
-    return json.loads(raw)
+    """JSON aus der Modellantwort. Seit v21 robust gegen einen häufigen Formatfehler offener Modelle:
+    deutsches Anführungszeichen unten, aber gerades Zeichen oben („Winterbiwak") – das gerade Zeichen beendet sonst
+    den JSON-Text. Es wird durch das deutsche Schlusszeichen ersetzt; der Inhalt bleibt unverändert."""
+    raw = re.sub(r"^```(?:json)?\s*|\s*```$", "", (raw or "").strip())
+    try:
+        return json.loads(raw)
+    except json.JSONDecodeError:
+        return json.loads(re.sub(r'„([^"“”\n]{0,120})"', "„\\1“", raw))
 
 
 def quote_in(zitat, text):
