@@ -233,6 +233,8 @@ Häufigster Fehler aller Modelle: ein älterer Stand als gültig oder gleichrang
 | Automatische Erfassung | nur neue/geänderte Berichte, einmalig 2–9 Cent je Bericht | Nachtragstest bestanden |
 | Kosten und Dauer je Frage | ca. 3 Cent, ca. 20 Sekunden | unabhängig von der Sammlungsgröße |
 
+Einordnung gegenüber einer Suche von Hand (Einschätzung des Auftraggebers, nicht gemessen): Alle passenden Berichte von Hand zu finden und zu lesen dauert leicht eine Stunde, sofern man sie überhaupt findet; auch Menschen übersehen dabei unter Zeitdruck den neuesten Stand. Der Assistent antwortet in rund 20 Sekunden. Seine Fehler sehen aber anders aus: Er nennt einen überholten Stand mit voller Sicherheit. Deshalb sind Fußnoten und Warnungen zentral – die Prüfung einer Quelle dauert Sekunden, die Zeitersparnis bleibt.
+
 Bekannte Schwächen über alle Läufe:
 
 - Verantwortlichkeit wird meist nur indirekt verneint („aus dem Fehlen allein wird keine persönliche Verantwortung abgeleitet“) statt ausdrücklich als offen benannt.

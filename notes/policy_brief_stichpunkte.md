@@ -52,6 +52,8 @@
 
 - **The idea is feasible now,** not a future technology: the core functions work and are measurable.
 - **Hardware is a manageable investment (estimate):** a model in the ≈120-billion class runs on one graphics card with 80–96 GB memory (card roughly 15,000–25,000 USD, plus server, operation and approval). Going to the 400-billion class (eight-card server, roughly 285,000–530,000 USD) adds little.
+- **Faster than a manual search, and not worse than one (author's assessment, not measured):** finding and reading all relevant reports by hand takes an hour or more – if they are found at all. The assistant answers in about 20 seconds; users can do other work meanwhile. People make mistakes too: under time pressure and with hundreds of reports, a manual search also misses the newest rule. Better a good answer in seconds than a perhaps equally good one after an hour.
+- **But its errors look different:** the AI states an outdated rule with full confidence. That is why footnotes and warnings matter – checking a cited source takes seconds, so the time saving holds.
 - **Expect a residual error rate** of roughly one in ten answers with such a model; source footnotes and warnings let users check. The assistant guides users to the reports; it does not replace them.
 - **How we file reports matters:** a fixed header with title and date makes the timeline reliable; scanned documents need extra effort.
 - **Open questions sit outside the unit:** security approval, access rights in the network, model licences.

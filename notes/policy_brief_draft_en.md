@@ -50,7 +50,9 @@ The reports contained deliberate traps: rules that change without saying so, a n
 
 **The hardware is a manageable investment.** A model in the class that performed well runs on one graphics card with 80 to 96 gigabytes of memory, roughly 15,000 to 25,000 US dollars for the card, plus server, operation and approval. Moving to a far larger model on an eight-card server – roughly 285,000 to 530,000 dollars – adds little in quality.
 
-**We must expect a residual error rate.** With such a model, roughly one answer in ten may contain an error, most often an outdated rule. Footnotes and warnings let users check every statement. The assistant points users to the right reports; it does not replace reading them.
+**It is faster than a manual search – and not necessarily less accurate.** Finding and reading every relevant report by hand easily takes an hour, if the reports are found at all. The assistant answers in about twenty seconds, and the user can do other work while it searches. People make mistakes as well: with hundreds of reports and little time, a manual search also misses the newest rule. A good answer in seconds is worth more than a perhaps equally good one after an hour.
+
+**We must expect a residual error rate.** With such a model, roughly one answer in ten may contain an error, most often an outdated rule. The assistant's errors look different from human ones: it states an outdated rule with full confidence. Footnotes and warnings therefore matter – checking a cited report takes seconds, so the time saving holds. The assistant points users to the right reports; it does not replace reading them.
 
 **How we file reports matters.** A fixed header with title and date makes the timeline reliable. Scanned documents need extra effort.
 

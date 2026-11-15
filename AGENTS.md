@@ -87,5 +87,6 @@ Alle Befehle im Projektordner.
 
 - Schrittweise arbeiten, Fachbegriffe und Entscheidungen in verständlichem Deutsch erklären.
 - Policy Brief: Adressat ist ein militärischer Vorgesetzter, der den Vorschlag befürworten und weitertragen soll; bewertet von der Kursleitung. Der Projektinhaber schreibt das Brief auf Englisch aus `notes/policy_brief_stichpunkte.md` (Gliederung nach `notes/policy_brief_vorgaben_kurs.md`), am Ende Übersetzung ins Deutsche. Technischer Bericht vom Agenten, Deutsch und Englisch.
+- Abgabeform (Nutzer, 15.11.2026): ein finales PDF – Policy Brief, als Anlagen der technische Bericht und die Demo-Seite (aufgezeichnete Antworten; interaktiv unter claude.ai, für das PDF als statische Fassung). Zwei Fassungen: englisches PDF mit englischem Bericht und englischer Demo, deutsches PDF mit deutschem Bericht und deutscher Demo.
 - Neue Erkenntnisse, Grenzen und Empfehlungen nach jedem Versuch oder jeder Entscheidung in `notes/policy_brief_notes.md` eintragen, gegliedert wie das Brief, mit Herkunft (Messung, Nutzer, Vorschlag).
 - Nach der Abgabe: Brief-Arbeitsdateien aufräumen, Endfassungen ablegen, diesen Abschnitt entfernen.
