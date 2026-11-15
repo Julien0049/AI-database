@@ -163,4 +163,10 @@ out = {"versuch": f"Antwortlauf {args.version}: {label} beste {args.n} Aussagen"
        "kosten_usd": round(total, 4), "dauer_s": round(time.time() - start, 1),
        "systemprompt": aidb.PROMPT, "ergebnisse": results}
 name.write_text(json.dumps(out, ensure_ascii=False, indent=1))
+# Zwischenspeicher nach erfolgreichem Lauf in den Papierkorb (Nutzerentscheidung 15.11.2026): die fertige Datei
+# enthält alle Antworten. Bei Abbruch bleibt er erhalten. Nie endgültig löschen, nur `trash`.
+if partial.exists() and len(results) == len(jobs):
+    import subprocess
+    if subprocess.run(["trash", str(partial)]).returncode != 0:
+        print("Hinweis: Zwischenspeicher nicht in den Papierkorb verschoben:", partial)
 print(f"{len(results)} Antworten, {total:.4f} USD, {out['dauer_s']} s -> {name}")
