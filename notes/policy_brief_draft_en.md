@@ -2,6 +2,8 @@
 
 *Draft for the author's review. Based on `notes/policy_brief_notes.md`, status 5 November 2026. Figures are measured unless marked otherwise.*
 
+> **Überholt (15.11.2026):** Aktueller Stand in `policy_brief_stichpunkte.md` (58 Berichte, Aussagen-Datenbank, Offline- und Modellgrößen-Messung). Diese Fassung bleibt als früherer Entwurf erhalten.
+
 ## Bottom line up front
 
 - An AI assistant can answer plain-language questions about a collection of after-action reports (AARs). In 25 test questions × 3 runs, each answer showed its sources and every quote was checked automatically.

@@ -13,7 +13,7 @@
 
 | Modell | Parameter (gesamt / aktiv) | Lizenz | inhaltlich falsch | technisch ausgefallen | erfüllt (Regel, Obergrenze) | Ø Dauer | Kosten 102 Antworten |
 |---|---|---|---|---|---|---|---|
-| Gemma 3 4B, lokal (v20, 34 Antworten) | 4 Mrd. | Gemma | ≈ 50 % | 24 % | 12 % | 74 s | 0 |
+| Gemma 3 4B, lokal (v20, 34 Antworten) | 4 Mrd. | Gemma | 35 % | 24 % | 12 % | 74 s | 0 |
 | Gemma 3 27B | 27 Mrd. | Gemma | **29 %** (30) | 1 | 43 % | 16 s | 0,07 USD |
 | gpt-oss-120b | 117 / 5 Mrd. | Apache 2.0 | **11 %** (11) | 2 | 68 % | 35 s | 0,06 USD |
 | Qwen3.5-397B-A17B | 403 / 17 Mrd. | Apache 2.0 | **9 %** (9) | 2 | 82 % | 69 s | 1,56 USD |
